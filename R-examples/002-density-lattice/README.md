@@ -10,7 +10,7 @@ tags: [R, lattice, density-plot]
 ### Features of plot:
 1. Use of faceting to show different subsets of the data (condition on diet).
 2. Data displayed by group (group by time).
-3. Means and intervals for $\pm$ 1 SD are annotated and shaded. 
+3. Means and intervals for +/- 1 SD are annotated and shaded. 
 
 ### Code:
 ```r
