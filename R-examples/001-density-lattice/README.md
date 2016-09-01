@@ -16,7 +16,7 @@ August 31, 2016
 pacman::p_load(dplyr, tidyr, lattice, latticeExtra, ggplot2, datasets)
 
 # data - subset to measurements on Days 0 and Day 8
-dd <- ChickWeight %>% 
+dd <- read.csv('data/ChickWeight.csv') %>% 
   filter(Time %in% c(0,8)) %>% 
   mutate(Diet = as.factor(Diet))
 levels(dd$Diet) <- paste0('Diet #', levels(dd$Diet))
