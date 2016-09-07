@@ -1,17 +1,11 @@
-<center> <h2>R Example 001: Density plot using Lattice</h2> </center> 
-<center> <h3>*Becca Krouse, August 31, 2016*</h3> </center> 
+###########################################################################
+#
+# title: "R Example 001: Density plot using Lattice"
+# author: "Becca Krouse"
+# date: "August 31, 2016"
+#
+###########################################################################
 
-![](./001-density-lattice.png)
-
-### This is a trellis plot of densities by group created using R [Lattice](https://cran.r-project.org/web/packages/lattice/lattice.pdf).  In this example, we compare chick weight between day 0 (birth) and day 8 by diet.
-
-### Features of plot:
-1. Use of faceting to show different subsets of the data (condition on diet).
-2. Data displayed by group (group by time).
-3. Means and intervals for +/- 1 SD are annotated and shaded. 
-
-### Code:
-```r
 # load packages
 pacman::p_load(dplyr, tidyr, lattice, latticeExtra, ggplot2, datasets)
 
@@ -84,8 +78,3 @@ densityplot(~weight|Diet,   # 1. Condition on diet
             })
 
 dev.off()
-```
-
-
-
-
