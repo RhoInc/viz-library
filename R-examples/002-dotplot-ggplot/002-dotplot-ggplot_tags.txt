@@ -1,1 +1,1 @@
-dotplot, r, ggplot2, facet, median, highlight, stack points
+dotplot, r, ggplot2, facet, median, highlight, stack points, discrete
