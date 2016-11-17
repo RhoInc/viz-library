@@ -1,4 +1,4 @@
-## R Example 003: Pirate Plot using yarrr 
+## R Example 0004: Pirate Plot using yarrr 
 ### *Agustin Calatroni, October 11, 2016* 
   
 ![](./003-pirateplot-yarrr.png)

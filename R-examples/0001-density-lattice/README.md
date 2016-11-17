@@ -1,4 +1,4 @@
-<center> <h2>R Example 001: Density plot using Lattice</h2> </center> 
+<center> <h2>R Example 0001: Density plot using Lattice</h2> </center> 
 <center> <h3>*Becca Krouse, August 31, 2016*</h3> </center> 
 
 ![](./001-density-lattice.png)

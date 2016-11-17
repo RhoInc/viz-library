@@ -1,4 +1,4 @@
-## R Example 002: Dotplot plot using Lattice 
+## R Example 0002: Dotplot plot using Lattice 
 ### *Becca Krouse, September 14, 2016* 
   
 ![](./002-dotplot-ggplot.png)
