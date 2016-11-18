@@ -31,7 +31,7 @@ createFigure <- function(name, example_type='R-examples') {
   if (example_type=='R-examples'){
     
     # create new R file from template		
-    readLines(file.path("templates", "example_R.R")) %>% 
+    readLines(file.path("templates", "template_R.R")) %>% 
       str_replace('new_fig_dir <- "path"', 
            paste0('new_fig_dir <- "', new_fig_dir, '"')) %>% 
       str_replace('new_fig_name <- "0001-new-fig"', 
