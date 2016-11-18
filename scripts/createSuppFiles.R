@@ -17,7 +17,7 @@ createSuppFiles <- function(new_fig_name, example_type='R-examples') {
     name <- str_split(txt[4],':') %>%  map(2) %>%  str_trim
     features <- str_split(txt[8],':') %>% map(2) %>% str_trim
     
-    readLines('templates/example_README.md') %>% 
+    readLines('templates/template_README.md') %>% 
       str_replace('R Example 001: My New Figure',
                   paste0('R Example: ',toupper(gsub("-", " ", new_fig_name)))) %>% 
       str_replace('Name, Date',paste0(name,', ',Sys.Date())) %>% 
