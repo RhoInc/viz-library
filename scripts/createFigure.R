@@ -40,6 +40,20 @@ createFigure <- function(name, example_type='R-examples') {
            paste0('title: ', toupper(gsub("-", " ", name)))) %>% 
       writeLines(., file.path(new_fig_dir, c(paste0(new_fig_name, ".R"))))
   }
-  else{ ## TO-DO: SAS TEMPLATE}
+  else if (example_type=='SAS-examples'){ 
+    
+    # create new SAS file from template		
+    readLines(file.path("templates", "template_SAS.sas")) %>% 
+      str_replace('ods listing gpath = "new-fig-dir";',  
+                  paste0('ods listing gpath = "', new_fig_dir,'";')) %>% 
+      str_replace('imagename = "new_fig_name"', 
+                  paste0('imagename = "',new_fig_name,'"')) %>% 
+      str_replace('title: "My New Figure"', 
+                  paste0('title: ', toupper(gsub("-", " ", name)))) %>% 
+      writeLines(., file.path(new_fig_dir, c(paste0(new_fig_name, ".sas"))))
+    
+  }
+  else{ # In case someone is not using SAS or R}
   }
 }
+

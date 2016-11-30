@@ -3,11 +3,14 @@
   
 ![](path/new_fig_name.png)
 
-### description  
+### Description  
 
-### features  
+### Features  
 
 ### Code:
 ```r
-readLines('path/new_fig_name.R') 
+Code goes here
 ```
+
+
+

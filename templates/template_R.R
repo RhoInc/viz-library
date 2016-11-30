@@ -17,10 +17,9 @@ new_fig_name <- "0001-new-fig"
 #  *** save your figure object as "p" 
 #      and output as PNG for last step ***
 
+# Figure code
 p <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) +
   geom_point()
-
-p
 
 # Save image of figure (choose one of lattice/ggplot):
 # ggplot save
