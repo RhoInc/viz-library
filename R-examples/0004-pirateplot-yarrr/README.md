@@ -1,7 +1,7 @@
 ## R Example 0004: Pirate Plot using yarrr 
 ### *Agustin Calatroni, October 11, 2016* 
   
-![](./003-pirateplot-yarrr.png)
+![](003-pirateplot-yarrr.png)
 
 ### What is a pirateplot()?
 

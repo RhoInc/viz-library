@@ -19,7 +19,7 @@ createSuppFiles <- function(new_fig_name, example_type='R-examples') {
     code <- paste(readLines(paste0(new_fig_dir,'/',new_fig_name,'.R')), collapse='\n') %>% 
       str_split('Figure code') %>% 
       map(2) %>% 
-      str_split('Save image') %>% 
+      str_split('# Save image') %>% 
       map(1)
     
     readLines('templates/template_README.md') %>% 
