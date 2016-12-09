@@ -1,7 +1,7 @@
 ## R Example 001: My New Figure
 ### *Name, Date* 
   
-![](path/new_fig_name.png)
+![](new_fig_name.png)
 
 ### Description  
 

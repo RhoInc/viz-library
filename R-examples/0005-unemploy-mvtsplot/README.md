@@ -1,7 +1,7 @@
 ## R Example: 0005 UNEMPLOY MVTSPLOT
 ### *B Krouse / A Calatroni, 2016-12-09* 
   
-![](H:/GitHub/viz-library/R-examples/0005-unemploy-mvtsplot/0005-unemploy-mvtsplot.png)
+![](0005-unemploy-mvtsplot.png)
 
 ### Description: Mutivariate time series plot using MVTSPLOT package and Unemployment data  
 
