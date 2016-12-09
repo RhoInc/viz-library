@@ -21,10 +21,7 @@ new_fig_name <- "0001-new-fig"
 p <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) +
   geom_point()
 
-# Save image of figure (choose one of lattice/ggplot):
-# ggplot save
-ggsave(filename = paste0(new_fig_dir,'/',new_fig_name, ".png"), p, width = 6, height = 5)
-# lattice save
+# Save image of figure:
 png(filename = paste0(new_fig_dir,'/',new_fig_name, ".png"), width = 6, height = 5)
 p
 dev.off()
