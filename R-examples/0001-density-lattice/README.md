@@ -1,7 +1,7 @@
 <center> <h2>R Example 0001: Density plot using Lattice</h2> </center> 
 <center> <h3>*Becca Krouse, August 31, 2016*</h3> </center> 
 
-![](001-density-lattice.png)
+![](0001-density-lattice.png)
 
 ### This is a trellis plot of densities by group created using R [Lattice](https://cran.r-project.org/web/packages/lattice/lattice.pdf).  In this example, we compare chick weight between day 0 (birth) and day 8 by diet.
 
