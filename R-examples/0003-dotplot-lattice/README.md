@@ -1,7 +1,7 @@
 ## R Example 0003: Dotplot plot using Lattice 
 ### *Becca Krouse, September 14, 2016* 
   
-![](0002-dotplot-lattice.png)
+![](0003-dotplot-lattice.png)
 
 ### This is a trellis plot of dotplots by group created using R [Lattice](https://cran.r-project.org/web/packages/lattice/lattice.pdf).  In this example, we plot discrete x values by category.
 
