@@ -2,13 +2,7 @@
 <html>
     <head>
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-
         <script src='https://d3js.org/d3.v3.min.js'></script>
-        <script src='./util/web/data/examples.json'></script>
-        <script src='./util/web/src/buildExampleList.js'></script>
-        <script src='./util/web/src/buildFilters.js'></script>
-
-
         <link rel='stylesheet' href='./util/web/css/viz-library.css'>
     </head>
 
@@ -18,10 +12,6 @@
         <div class="controls"></div>
         <div class="examples"></div>
     </body>
+    <script src='./util/web/build/viz-library.js'></script>
 
-    <script>
-      console.log(examples)      
-      buildFilters(examples,["repository","technology"],".controls")
-      buildExampleList(examples,".examples")
-    </script>
 </html>
