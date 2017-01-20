@@ -1,0 +1,50 @@
+var examples = [
+	{
+		"name":"0001-density-lattice",
+		"repository":"lattice",
+		"technology":"R",
+		"url":"/0001-density-lattice",
+		"thumbnail":"default.png",
+		"description":"This is a sweet description" 
+	},
+	{
+		"name":"0002-dotplot-ggplot",
+		"repository":"ggplot",
+		"technology":"R",
+		"url":"/0002-dotplot-ggplot",
+		"thumbnail":"default.png",
+		"description":"This is a sweet description" 
+	}
+	{
+		"name":"0003-dotplot-lattice",
+		"repository":"lattice",
+		"technology":"R",
+		"url":"/0003-dotplot-lattice",
+		"thumbnail":"default.png",
+		"description":"This is a sweet description" 
+	},
+	{
+		"name":"0004-pirateplot-yarrr",
+		"repository":"lattice",
+		"technology":"R",
+		"url":"/0004-pirateplot-yarrr",
+		"thumbnail":"default.png",
+		"description":"This is a sweet description" 
+	},
+	{
+		"name":"0005-unemploy-mvtsplot",
+		"repository":"lattice",
+		"technology":"R",
+		"url":"/0005-unemploy-mvtsplot",
+		"thumbnail":"default.png",
+		"description":"This is a sweet description" 
+	},
+	{
+		"name":"0006-precip-levelplot-lattice",
+		"repository":"lattice",
+		"technology":"R",
+		"url":"/0006-precip-levelplot-lattice",
+		"thumbnail":"default.png",
+		"description":"This is a sweet description" 
+	},
+]
