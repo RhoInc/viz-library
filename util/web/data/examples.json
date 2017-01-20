@@ -1,50 +1,56 @@
 var examples = [
 	{
-		"name":"0001-density-lattice",
+		"id":"0001-density-lattice",
+		"title":"Density plot",
 		"repository":"lattice",
 		"technology":"R",
 		"url":"/0001-density-lattice",
-		"thumbnail":"default.png",
+		"thumbnail":"./util/web/img/defaultchart.png",
 		"description":"This is a sweet description" 
 	},
 	{
-		"name":"0002-dotplot-ggplot",
+		"id":"0002-dotplot-ggplot",
+		"title":"Dotplot",
 		"repository":"ggplot",
 		"technology":"R",
 		"url":"/0002-dotplot-ggplot",
-		"thumbnail":"default.png",
+		"thumbnail":"./util/web/img/defaultchart.png",
 		"description":"This is a sweet description" 
-	}
+	},
 	{
-		"name":"0003-dotplot-lattice",
+		"id":"0003-dotplot-lattice",
+		"title":"Dotplot",
 		"repository":"lattice",
 		"technology":"R",
 		"url":"/0003-dotplot-lattice",
-		"thumbnail":"default.png",
+		"thumbnail":"./util/web/img/defaultchart.png",
 		"description":"This is a sweet description" 
 	},
 	{
-		"name":"0004-pirateplot-yarrr",
+		"id":"0004-pirateplot-yarrr",
+		"title":"Pirate plot",
 		"repository":"lattice",
 		"technology":"R",
 		"url":"/0004-pirateplot-yarrr",
-		"thumbnail":"default.png",
+		"thumbnail":"./util/web/img/defaultchart.png",
 		"description":"This is a sweet description" 
 	},
 	{
-		"name":"0005-unemploy-mvtsplot",
+		"id":"0005-unemploy-mvtsplot",
+		"title":"MVTS Plot",
 		"repository":"lattice",
 		"technology":"R",
 		"url":"/0005-unemploy-mvtsplot",
-		"thumbnail":"default.png",
+		"thumbnail":"./util/web/img/defaultchart.png",
 		"description":"This is a sweet description" 
 	},
 	{
-		"name":"0006-precip-levelplot-lattice",
+		"id":"0006-precip-levelplot-lattice",
+		"title":"Level Plot",
 		"repository":"lattice",
 		"technology":"R",
 		"url":"/0006-precip-levelplot-lattice",
-		"thumbnail":"default.png",
+		"thumbnail":"./util/web/img/defaultchart.png",
 		"description":"This is a sweet description" 
-	},
+	}
 ]

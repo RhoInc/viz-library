@@ -4,9 +4,10 @@
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 
         <script src='https://d3js.org/d3.v3.min.js'></script>
-        <script src='./examples/examples.json'></script>
+        <script src='./util/web/data/examples.json'></script>
+        <script src='./util/web/src/buildExampleList.js'></script>
 
-        <link rel='stylesheet' href='./css/viz-library.css'>
+        <link rel='stylesheet' href='./util/web/css/viz-library.css'>
     </head>
 
     <body>
@@ -16,20 +17,8 @@
         <div class="examples"></div>
     </body>
 
-<div class="media-tile">
-    <a href="../projects/150">
-        <img src="../img/thumbs/P150_thumb.png" width="300" height="200" alt="SOPPRANO Dashboard">
-    </a>
-    <a href="../projects/150" class="text-wrap">
-        <p>
-            <span class="media-title">SOPPRANO Dashboard</span>
-        </p>
-    </a>
-</div>
     <script>
       console.log(examples)      
-      function makeExampleLink(meta){
-
-      }
+      buildExampleList(examples,".examples")
     </script>
 </html>
