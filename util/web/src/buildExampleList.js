@@ -41,7 +41,7 @@ function buildExampleList(meta, parentElement){
 
 	//append image
 	items.append("a")
-	.attr("href",d=>d.url)
+	.attr("href",d => d.url) 
 	.append("img")
 		.attr({
 			width:300,
