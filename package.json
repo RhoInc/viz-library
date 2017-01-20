@@ -1,0 +1,16 @@
+{
+  "name": "viz-library",
+  "version": "0.1.0",
+  "description": "Examples of statistical graphics created at Rho",
+  "main": "./index.html",
+  "scripts": {
+    "build": "",
+  },
+  "author": "Rho, Inc.",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^3.5.14"
+  },
+  "devDependencies": {
+  }
+}
