@@ -10,10 +10,11 @@
 
 
 
-new_fig_dir <- "H:/GitHub/viz-library/R-examples/0005-unemploy-mvtsplot"
+new_fig_dir <- "H:/GitHub/viz-library/examples/0005-unemploy-mvtsplot"
 new_fig_name <- "0005-unemploy-mvtsplot"
 
 # Figure code
+
 pacman::p_load(mvtsplot)
 
 dd <- read.csv(paste0(new_fig_dir,'/blsunemployment.csv'))
@@ -40,5 +41,5 @@ mvtsplot(dd[,-c(1,54)], xtime = dd[,1],
 dev.off()
 
 # Create tags and README.md
-source('scripts/createSuppFiles.R')
+source('util/r_scripts/createSuppFiles.R')
 createSuppFiles(new_fig_name, example_type='R-examples')

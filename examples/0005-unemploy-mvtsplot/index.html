@@ -1,14 +1,17 @@
-## R Example: 0005 UNEMPLOY MVTSPLOT
-### *B Krouse / A Calatroni, 2017-01-20* 
+<!DOCTYPE HTML>
+
+<h2>R Example: 0005 UNEMPLOY MVTSPLOT</h2> 
+<h3><i>B Krouse / A Calatroni, 2017-01-20</i></h3>
   
-![](0005-unemploy-mvtsplot.png)
+<img src="0005-unemploy-mvtsplot.png" width=700>
+ 
 
-### Description: Mutivariate time series plot using MVTSPLOT package and Unemployment data  
+<h3>Description: Mutivariate time series plot using MVTSPLOT package and Unemployment data</h3>  
 
-### Features: multivariate, time series, heatmap, monthly  
+<h3>Features: multivariate, time series, heatmap, monthly</h3>  
 
-### Code:
-```r
+<h3>Code:</h3> 
+<pre style='color:#000000;background:#ffffff;font-size: 15px'>
 
 
 pacman::p_load(mvtsplot)
@@ -25,7 +28,5 @@ mvtsplot(dd[,-c(1,54)], xtime = dd[,1],
          bottom.ylim=c(0,12))
 
 
-```
-
-
+</pre>
 

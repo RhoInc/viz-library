@@ -1,5 +1,5 @@
 ## R Example: 0006 PRECIP LEVELPLOT LATTICE
-### *A. Calatroni/B Krouse, 2016-12-16* 
+### *A. Calatroni/B Krouse, 2017-01-20* 
   
 ![](0006-precip-levelplot-lattice.png)
 

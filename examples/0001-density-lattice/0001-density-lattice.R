@@ -1,16 +1,23 @@
-###########################################################################
-#
-# title: "R Example 001: Density plot using Lattice"
-# author: "Becca Krouse"
-# date: "August 31, 2016"
-#
-###########################################################################
+#' ---
+#' title: DENSITY LATTICE
+#' description: Density plot using lattice
+#' author: B Krouse
+#' language: R
+#' package: lattice
+#' plot type: density plot
+#' features: density plot, lattice, r, groups, means, annotated, faceted
+#' ---
+
+new_fig_dir <- "H:/GitHub/viz-library/examples/0001-density-lattice"
+new_fig_name <- "0001-density-lattice"
+
+# Figure code
 
 # load packages
 pacman::p_load(dplyr, tidyr, lattice, latticeExtra, ggplot2, datasets)
 
 # data - subset to measurements on Days 0 and Day 8
-dd <- read.csv('./data/ChickWeight.csv') %>% 
+dd <- read.csv('examples/0000-sample-data/ChickWeight.csv') %>% 
   filter(Time %in% c(0,8)) %>% 
   mutate(Diet = as.factor(Diet))
 levels(dd$Diet) <- paste0('Diet #', levels(dd$Diet))
@@ -50,31 +57,35 @@ panel.annotate_density <- function(x, group.number, subscripts){
              cex=0.7)
 }
 
+p <- densityplot(~weight|Diet,   # 1. Condition on diet
+                 data=dd,  group=Time, #2. Group by time
+                 alpha=0.7, plot.points=F, bw=10, col=cols, lwd=2,
+                 as.table=T, between=list(x=1, y=0),
+                 xlim=c(0, 160), xlab='Chick Weight (gm)',
+                 ylim=c(0,0.045), ylab='',
+                 scales=list(alternating=F, tck=c(1,0), axs='i',
+                             x=list(relation='free', at=seq(0,160,40)),
+                             y=list(tck=c(0,0), labels=NULL)),
+                 par.settings=list(strip.background=list(col='gray80')),
+                 panel.groups = function(x, group.number, subscripts, ...) {
+                   
+                   # Plot density curves as defined above
+                   panel.densityplot(x,...)
+                   
+                   # Annotate density
+                   panel.annotate_density(x,group.number, subscripts)
+                   
+                 },
+                 panel = function (x, groups,...){
+                   panel.superpose(x, groups=groups, ...)
+                 })
+
 
 # plot function & output as PNG
-png(file='./R-examples/001-density-lattice/001-density-lattice.png',height = 8, width = 10, units = 'in', res = 300)
-
-densityplot(~weight|Diet,   # 1. Condition on diet
-            data=dd,  group=Time, #2. Group by time
-            alpha=0.7, plot.points=F, bw=10, col=cols, lwd=2,
-            as.table=T, between=list(x=1, y=0),
-            xlim=c(0, 160), xlab='Chick Weight (gm)',
-            ylim=c(0,0.045), ylab='',
-            scales=list(alternating=F, tck=c(1,0), axs='i',
-                        x=list(relation='free', at=seq(0,160,40)),
-                        y=list(tck=c(0,0), labels=NULL)),
-            par.settings=list(strip.background=list(col='gray80')),
-            panel.groups = function(x, group.number, subscripts, ...) {
-              
-              # Plot density curves as defined above
-              panel.densityplot(x,...)
-              
-              # Annotate density
-              panel.annotate_density(x,group.number, subscripts)
-              
-            },
-            panel = function (x, groups,...){
-              panel.superpose(x, groups=groups, ...)
-            })
-
+png(file='./examples/0001-density-lattice/0001-density-lattice.png',height = 8, width = 10, units = 'in', res = 300)
+p
 dev.off()
+
+# Create tags and README.md
+source('util/r_scripts/createSuppFiles.R')
+createSuppFiles(new_fig_name, example_type='R-examples')

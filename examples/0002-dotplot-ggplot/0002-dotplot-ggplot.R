@@ -1,17 +1,23 @@
-###########################################################################
-#
-# title: "R Example 002: Discrete data dotplot using ggplot2"
-# author: "Becca Krouse"
-# date: "September 14, 2016"
-#
-###########################################################################
+#' ---
+#' title: DOTPLOT GGPLOT
+#' description: Discrete data dotplot using ggplot
+#' author: B Krouse
+#' language: R
+#' package: ggplot2
+#' plot type: dotplot
+#' features: dotplot, r, ggplot2, facet, median, highlight, stack points, discrete 
+#' ---
+
+new_fig_dir <- "H:/GitHub/viz-library/examples/0002-dotplot-ggplot"
+new_fig_name <- "0002-dotplot-ggplot"
+
+# Figure code 
 
 # load packages
-install.packages('pacman')
 pacman::p_load(dplyr, tidyr, ggplot2)
 
 # read in data
-data <- read.csv('./data/discrete_scores.csv')
+data <- read.csv('examples/0000-sample-data/discrete_scores.csv')
 
 # create column containing median score for each category
 data <- data %>% 
@@ -21,9 +27,7 @@ data <- data %>%
 
 
 # plot function
-png(file='./R-examples/002-dotplot-ggplot/002-dotplot-ggplot.png',height = 8, width = 8, units = 'in', res = 300)
-
-ggplot(data, aes(x=score)) +
+p <- ggplot(data, aes(x=score)) +
   geom_vline(aes(xintercept = m, color='red'), size=1, data=data) +
   geom_dotplot(aes(x=score), fill="gray30", color="gray30",stackdir='center', binwidth=1, dotsize=1.1, stackratio=1.5) +
   facet_wrap(~category, ncol=1, scales='free_x') +
@@ -47,5 +51,12 @@ ggplot(data, aes(x=score)) +
     legend.position = "none"
   )
 
-
+# Save image of figure
+png(file='./examples/0002-dotplot-ggplot/0002-dotplot-ggplot.png',height = 8, width = 8, units = 'in', res = 300)
+p
 dev.off()
+
+
+# Create tags and README.md
+source('util/r_scripts/createSuppFiles.R')
+createSuppFiles(new_fig_name, example_type='R-examples')
