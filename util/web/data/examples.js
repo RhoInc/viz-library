@@ -1,4 +1,5 @@
-var examples = [
+export default
+[
 	{
 		"id":"0001-density-lattice",
 		"title":"Density plot",

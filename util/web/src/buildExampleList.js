@@ -30,7 +30,7 @@ Sample Output rendered to DOM (one per object in meta:
 </div>
    ---------------------------------------------------- */
 
-function buildExampleList(meta, parentElement){
+export default function buildExampleList(meta, parentElement){
 	var parentDiv = d3.select(parentElement)
 	var wrap = parentDiv.append("div").attr("class","media-list")
 	var items = wrap.selectAll("div")

@@ -4,7 +4,8 @@
   "description": "Examples of statistical graphics created at Rho",
   "main": "./index.html",
   "scripts": {
-    "build": "",
+    "build": "rollup -c ./scripts/rollup.config.js | babel > ./util/web/build/viz-library.js",
+    "test-thumb": "thumb examples/0001-density-lattice/ examples/0001-density-lattice/ -w 300"
   },
   "author": "Rho, Inc.",
   "license": "MIT",
@@ -12,5 +13,10 @@
     "d3": "^3.5.14"
   },
   "devDependencies": {
+    "jimp": "^0.2.27",
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "rollup": "^0.25.3",
+    "rollup-plugin-babel": "^2.3.9"
   }
 }

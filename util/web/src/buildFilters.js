@@ -5,7 +5,7 @@
  [{colName:"attr1",label:"Attribute #1"},{colName:"attr2",label:"Attribute #2"}]
  ----------------------------------------------------- */
 
-function buildFilters(meta, measures, parentElement){
+export default function buildFilters(meta, measures, parentElement){
 
 	measures = measures.map(function(m){
 		console.log(m.length)
