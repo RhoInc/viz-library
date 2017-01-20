@@ -1,1 +1,0 @@
-density plot, lattice, r, groups, means, annotated, faceted

@@ -1,0 +1,60 @@
+/* Controls */
+.controls{
+	padding:10px;
+}
+
+.controlWrap{
+	display:inline-block;
+	padding-right:10px;
+}
+
+.controlWrap .controlLabel{
+	font-size:0.8em;
+}
+
+
+/* Media Tile */
+
+.media-tile.hidden{
+	display: none
+}
+
+.media-tile{
+	display: inline-block;
+	position: relative;
+	padding: .5rem;
+	border: 1px solid #ccc;
+	margin: 0 1rem 1rem 0;
+	transition: border-color .3s ease-in-out;
+}
+.media-tile:hover{
+	border-color: rgb(108, 207, 253);
+}
+.media-tile img{
+	max-width: 100%;
+}
+.media-tile .text-wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: inherit;
+	background-color: rgba(255,255,255,0.9);
+	padding: .5em;
+}
+.media-tile a.text-wrap:hover{
+	color: inherit;
+}
+.media-tile .text-wrap p{
+	margin: .5em;
+}
+.media-tile .text-wrap p:first-of-type{
+	font-weight: bold;
+	margin-top: 0;
+}
+.media-tile .text-wrap p+p{
+	display: none;
+}
+.media-tile:hover .text-wrap p+p{
+	display: block;
+}
