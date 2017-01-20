@@ -10,7 +10,8 @@ pacman::p_load(tidyverse, stringr)
 createFigure <- function(name, example_type='R-examples') {
   
   # get existing figure folder names
-  folders <- dir(file.path(getwd(),example_type))
+  folders <- dir(file.path(getwd(),'examples'))  
+  folders <- folders[!folders=='examples.json']  ## temporary ignore
   
   # determine next number in sequence
   if(length(folders)>0) {
@@ -25,7 +26,7 @@ createFigure <- function(name, example_type='R-examples') {
   
   # create a folder for new figure
   new_fig_name <- paste0(new_fig, "-", name)
-  new_fig_dir <- file.path(getwd(), example_type, new_fig_name)
+  new_fig_dir <- file.path(getwd(), 'examples', new_fig_name)
   dir.create(new_fig_dir)
   
   if (example_type=='R-examples'){
