@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<h2>R Example: 0004 PIRATEPLOT YARRR</h2> 
+<h3><i>A. Calatroni, 2017-01-20</i></h3>
+  
+<img src="0004-pirateplot-yarrr.png" width=700>
+ 
+
+<h3>Description: Pirate plot using yarrr package</h3>  
+
+<h3>Features: Ordered, heatmap, annotation, boxplot, violinplot, facet, median, colors, jitter, discrete</h3>  
+
+<h3>Code:</h3> 
+<pre style='color:#000000;background:#ffffff;font-size: 15px'>
+ 
+
+# load packages
+pacman::p_load(dplyr, tidyr, yarrr)
+
+# load data from online
+dd <- read.csv('https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv') 
+
+# plot function  
+p <- pirateplot(formula = weight ~ feed,
+                data = dd,
+                pal =  "basel")
+
+
+
+
+</pre>
+

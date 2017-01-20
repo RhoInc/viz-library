@@ -1,17 +1,23 @@
-###########################################################################
-#
-# title: "R Example 002: Discrete data dotplot using Lattice"
-# author: "Becca Krouse"
-# date: "September 14, 2016"
-#
-###########################################################################
+#' ---
+#' title: DOTPLOT LATTICE
+#' description: Discrete data dotplot using Lattice
+#' author: B Krouse
+#' language: R
+#' package: Lattice, latticeExtra, HH
+#' plot type: dotplot
+#' features: dotplot, r, lattice, facet, median, highlight, stack points, discrete 
+#' ---
 
-# load packages
-install.packages('pacman')
+new_fig_dir <- "H:/GitHub/viz-library/examples/0003-dotplot-lattice"
+new_fig_name <- "0003-dotplot-lattice"
+
+# Figure code
+
+# load packages 
 pacman::p_load(dplyr, tidyr, lattice, latticeExtra, HH)
 
 # read in data
-data <- read.csv('./data/discrete_scores.csv')
+data <- read.csv('examples/0000-sample-data/discrete_scores.csv')
 
 # define function to customize vertical lines & associated axis tick labels
 # by coloring median values red, and the rest gray
@@ -25,9 +31,7 @@ panel.dotplot_highlightMedian <- function(x, l){  # l = vector of axis tick valu
 }
 
 # plot function
-png(file='./R-examples/002-dotplot-lattice/002-dotplot-lattice.png',height = 8, width = 8, units = 'in', res = 300)
-
-dotplot(~score|category, 
+p <- dotplot(~score|category, 
         data=data, 
         col.symbol="gray50",
         asp=0.2, layout=c(1,4),as.table=T,
@@ -50,4 +54,11 @@ dotplot(~score|category,
         }                    
 )
 
+# Save image of figure:
+png(file='examples/0003-dotplot-lattice/0003-dotplot-lattice.png',height = 8, width = 8, units = 'in', res = 300)
+p
 dev.off()
+
+# Create tags and README.md
+source('util/r_scripts/createSuppFiles.R')
+createSuppFiles(new_fig_name, example_type='R-examples')
