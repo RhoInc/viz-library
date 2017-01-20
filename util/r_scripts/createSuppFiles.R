@@ -22,7 +22,7 @@ createSuppFiles <- function(new_fig_name, example_type='R-examples') {
       str_split('# Save image') %>% 
       map(1)
     
-    readLines('templates/template_README.md') %>% 
+    readLines('util/r_templates/template_README.md') %>% 
       str_replace('R Example 001: My New Figure',
                   paste0('R Example: ',toupper(gsub("-", " ", new_fig_name)))) %>% 
       str_replace('Name, Date',paste0(name,', ',Sys.Date())) %>% 
@@ -33,7 +33,7 @@ createSuppFiles <- function(new_fig_name, example_type='R-examples') {
       str_replace('Code goes here', code)  %>% 
       writeLines(., paste0(new_fig_dir, "/README.md")) 
     
-    readLines('templates/template_index.html') %>% 
+    readLines('util/r_templates/template_index.html') %>% 
       str_replace('R Example 001: My New Figure',
                   paste0('R Example: ',toupper(gsub("-", " ", new_fig_name)))) %>% 
       str_replace('Name, Date',paste0(name,', ',Sys.Date())) %>% 
@@ -41,7 +41,7 @@ createSuppFiles <- function(new_fig_name, example_type='R-examples') {
       str_replace('Features',paste0('Features: ',features)) %>% 
   #    str_replace('path', paste(new_fig_dir)) %>% 
       str_replace('new_fig_name', paste(new_fig_name)) %>% 
-      str_replace('Code goes here', code)  %>% 
+      str_replace('code goes here', code)  %>% 
       writeLines(., paste0(new_fig_dir, "/index.html"))
     
   }

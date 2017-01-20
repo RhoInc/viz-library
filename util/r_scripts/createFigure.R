@@ -11,7 +11,6 @@ createFigure <- function(name, example_type='R-examples') {
   
   # get existing figure folder names
   folders <- dir(file.path(getwd(),'examples'))  
-  folders <- folders[!folders=='examples.json']  ## temporary ignore
   
   # determine next number in sequence
   if(length(folders)>0) {
@@ -32,7 +31,7 @@ createFigure <- function(name, example_type='R-examples') {
   if (example_type=='R-examples'){
     
     # create new R file from template		
-    readLines(file.path("templates", "template_R.R")) %>% 
+    readLines("util/r_templates/template_R.R") %>% 
       str_replace('new_fig_dir <- "path"', 
            paste0('new_fig_dir <- "', new_fig_dir, '"')) %>% 
       str_replace('new_fig_name <- "0001-new-fig"', 
@@ -44,7 +43,7 @@ createFigure <- function(name, example_type='R-examples') {
   else if (example_type=='SAS-examples'){ 
     
     # create new SAS file from template		
-    readLines(file.path("templates", "template_SAS.sas")) %>% 
+    readLines("util/sas_templates/template_SAS.sas") %>% 
       str_replace('ods listing gpath = "new-fig-dir";',  
                   paste0('ods listing gpath = "', new_fig_dir,'";')) %>% 
       str_replace('imagename = "new_fig_name"', 

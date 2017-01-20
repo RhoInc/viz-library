@@ -28,5 +28,5 @@ p
 dev.off()
 
 # Create tags and README.md
-source('scripts/createSuppFiles.R')
+source('util/r_scripts/createSuppFiles.R')
 createSuppFiles(new_fig_name, example_type='R-examples')
