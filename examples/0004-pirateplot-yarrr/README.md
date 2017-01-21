@@ -1,5 +1,14 @@
-## R Example 0004: Pirate Plot using yarrr 
-### *Agustin Calatroni, October 11, 2016* 
+**Title:** Pirate plot using Yarrr
+
+**Languages:** R
+
+**Libraries:** yarrr
+
+**Description:** Combines a box-and-whisker plot with overlaid density plots to show clear comparisons of distributions across groups; a good choice for  displaying the relationship between 1 or two categorical independent variables, and one continuous dependent variable.
+
+**Tags:** pirateplot, boxplot, density plot, violin plot
+
+*Agustin Calatroni, October 11, 2016* 
   
 ![](0004-pirateplot-yarrr.png)
 

@@ -1,11 +1,16 @@
-## R Example: 0006 PRECIP LEVELPLOT LATTICE
-### *A. Calatroni/B Krouse, 2017-01-20* 
+**Title:**  Orderered Precipitation Heatmap
+
+**Languages:** R
+
+**Libraries:** lattice
+
+**Description:** Heatmap with ordered columns and rows using monthly precipitation data   
+
+**Tags:** Ordered, heatmap, annotation
+
+*A. Calatroni/B Krouse, 2017-01-20* 
   
 ![](0006-precip-levelplot-lattice.png)
-
-### Description: Heatmap with ordered columns and rows using monthly precipitation data  
-
-### Features: Ordered, heatmap, annotation  
 
 ### Code:
 ```r

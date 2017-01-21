@@ -2,7 +2,7 @@
 
 **Languages:** R
 
-**Libraries:** lattice, latticeExtra
+**Libraries:** lattice
 
 **Description:** Customized density plot created using lattice combining paneling, grouping, custom annotations and some simple data manipulation.
 

@@ -1,11 +1,20 @@
-## R Example: 0003 DOTPLOT LATTICE
-### *B Krouse, 2017-01-20* 
+**Title:** Stacked Dot Plot #2
+
+**Languages:** R
+
+**Libraries:** lattice
+
+**Description:** Stacked dot plot created using ggplot2 combining paneling, custom annotations and simple data manipulation. Similar to <a href="../0002-dotplot-lattice">this example</a> made with lattice.
+
+**Tags:** dotplot, r, lattice, facet, median, highlight, stack points, discrete  
+
+*B Krouse, 2017-01-20* 
   
 ![](0003-dotplot-lattice.png)
 
 ### Description: Discrete data dotplot using Lattice  
 
-### Features: dotplot, r, lattice, facet, median, highlight, stack points, discrete  
+### Features: 
 
 ### Code:
 ```r

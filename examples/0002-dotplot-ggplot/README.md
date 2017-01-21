@@ -1,11 +1,16 @@
-## R Example: 0002 DOTPLOT GGPLOT
-### *B Krouse, 2017-01-20* 
+**Title:** Stacked Dot Plot #1
+
+**Languages:** R
+
+**Libraries:** ggplot2
+
+**Description:** Stacked dot plot created using ggplot2 combining paneling, custom annotations and some simple data manipulation.
+
+**Tags:** dotplot, r, ggplot2, facet, median, highlight, stack points, discrete  
+
+*B Krouse, 2017-01-20* 
   
 ![](0002-dotplot-ggplot.png)
-
-### Description: Discrete data dotplot using ggplot  
-
-### Features: dotplot, r, ggplot2, facet, median, highlight, stack points, discrete  
 
 ### Code:
 ```r
