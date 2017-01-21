@@ -8,6 +8,8 @@
 
 **Tags:** Ordered, heatmap, annotation
 
+[comment]: <> (---END OF HEADER---)
+
 *A. Calatroni/B Krouse, 2017-01-20* 
   
 ![](0006-precip-levelplot-lattice.png)

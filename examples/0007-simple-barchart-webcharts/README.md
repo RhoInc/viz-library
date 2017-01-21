@@ -7,3 +7,5 @@
 **Description:** This is a simple bar chart showing counts of medals won by country at the 2012 summer Olympics. Made with Webcharts.
 
 **Tags:** interactive, bar chart 
+
+[comment]: <> (---END OF HEADER---)

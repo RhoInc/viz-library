@@ -8,6 +8,8 @@
 
 **Tags:** density plot, lattice, r, groups, means, annotated, faceted  
 
+[comment]: <> (---END OF HEADER---)
+
 *B Krouse, 2017-01-20*
   
 ![](0001-density-lattice.png)

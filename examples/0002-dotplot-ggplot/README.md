@@ -8,6 +8,8 @@
 
 **Tags:** dotplot, r, ggplot2, facet, median, highlight, stack points, discrete  
 
+[comment]: <> (---END OF HEADER---)
+
 *B Krouse, 2017-01-20* 
   
 ![](0002-dotplot-ggplot.png)

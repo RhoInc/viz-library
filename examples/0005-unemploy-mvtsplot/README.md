@@ -8,6 +8,8 @@
 
 **Tags:** multivariate, time series, heatmap, monthly 
 
+[comment]: <> (---END OF HEADER---)
+
 *B Krouse / A Calatroni, 2017-01-20* 
   
 ![](0005-unemploy-mvtsplot.png)

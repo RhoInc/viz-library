@@ -8,6 +8,8 @@
 
 **Tags:** pirateplot, boxplot, density plot, violin plot
 
+[comment]: <> (---END OF HEADER---)
+
 *Agustin Calatroni, October 11, 2016* 
   
 ![](0004-pirateplot-yarrr.png)
