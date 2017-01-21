@@ -1,4 +1,4 @@
-import examples from '../data/examples.js'
+import examples from '../data/examples_demo.js'
 import buildFilters from './buildFilters.js'
 import buildExampleList from './buildExampleList.js'
 

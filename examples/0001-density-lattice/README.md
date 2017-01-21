@@ -1,11 +1,12 @@
-## R Example: 0001 DENSITY LATTICE
-### *B Krouse, 2017-01-20* 
+**Title:** Density Plot 
+**Languages:** R
+**Libraries:** lattice, latticeExtra
+**Description:** Customized density plot created using lattice combining paneling, grouping, custom annotations and some simple data manipulation.
+**Tags:** density plot, lattice, r, groups, means, annotated, faceted  
+
+*B Krouse, 2017-01-20*
   
 ![](0001-density-lattice.png)
-
-### Description: Density plot using lattice  
-
-### Features: density plot, lattice, r, groups, means, annotated, faceted  
 
 ### Code:
 ```r
