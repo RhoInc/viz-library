@@ -1,1 +1,9 @@
-Documentation for the data sources used in **viz-library**.
+**Title:** Sample Data Sets 
+
+**Languages:** NA
+
+**Libraries:** NA
+
+**Description:** Library of sample data sets that can be used in examples. 
+
+**Tags:** data  

@@ -41,13 +41,13 @@ export default function buildExampleList(meta, parentElement){
 
 	//append image
 	items.append("a")
-	.attr("href",d => d.url) 
+	.attr("href",d => "./examples/"+d.dir) 
 	.append("img")
 		.attr({
 			width:300,
 			height:200,
 			alt:d => d.id,
-			src:d => d.thumbnail
+			src:d => "./examples/"+d.dir+"/thumb.png"
 		})
 
 	//append text title

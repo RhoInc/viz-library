@@ -1,7 +1,7 @@
-import examples from '../data/examples_demo.js'
+import examples from '../data/examples.js'
 import buildFilters from './buildFilters.js'
 import buildExampleList from './buildExampleList.js'
 
 console.log(examples)      
-buildFilters(examples,["repository","technology"],".controls")
+buildFilters(examples,["languages","libraries"],".controls")
 buildExampleList(examples,".examples")

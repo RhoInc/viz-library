@@ -1,7 +1,8 @@
 var fs = require('fs');
+var Jimp = require("jimp");
 
 //get example directories
-var exampleRoot = "../examples"
+var exampleRoot = "./examples"
 var exampleRoot_index = "./examples"
 var examples =fs.readdirSync(exampleRoot)
 .filter(function(f){return f.charAt(0)!="."})
@@ -20,7 +21,7 @@ var chartAttributes = [
 examples.forEach(function(ex){
 	//get example files
 	ex.files = fs.readdirSync(exampleRoot+"/"+ex.dir)
-
+	.filter(function(f){return f.charAt(0)!="."})
 	//get readme.md text
 	ex.readme = {}
 	ex.readme.index = ex.files.map(function(f) {
@@ -40,10 +41,31 @@ examples.forEach(function(ex){
 	}
 
 	//Make thumbnails
+	var imgs = ex.files
+	.map(function(f) {
+		return f.toLowerCase();
+	}).filter(function(file){
+		var ext = file.match(/\.[0-9a-z]+$/)[0]
+		return [".png",".jpeg",".jpg"].indexOf(ext)>-1
+	})
+	
+	if(imgs.indexOf("thumb.png")==-1 & imgs.length>0){
+		console.log("making a thumb for "+ex.dir)
+		var imgFile = exampleRoot+"/"+ex.dir+"/"+imgs[0]
+		var thumbFile = exampleRoot+"/"+ex.dir+"/thumb.png"
+	
+		Jimp.read(imgFile, function (err, lenna) {
+	    	if (err) throw err;
+		    lenna.resize(300, 200)            // resize 
+		         .quality(60)                 // set JPEG quality 
+		         .write(thumbFile); // save 
+		});
+	}
+
 })
 
 //write examples to disk
 var json_data = JSON.stringify(examples);
 var js_data = "export default"+json_data
-fs.writeFile('../util/web/data/examples.js', js_data);
+fs.writeFile('./util/web/data/examples.js', js_data);
 //console.log(examples)
