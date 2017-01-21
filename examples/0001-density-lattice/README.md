@@ -1,7 +1,11 @@
 **Title:** Density Plot 
+
 **Languages:** R
+
 **Libraries:** lattice, latticeExtra
+
 **Description:** Customized density plot created using lattice combining paneling, grouping, custom annotations and some simple data manipulation.
+
 **Tags:** density plot, lattice, r, groups, means, annotated, faceted  
 
 *B Krouse, 2017-01-20*
