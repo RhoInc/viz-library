@@ -22,6 +22,7 @@ examples.forEach(function(ex){
 	//get example files
 	ex.files = fs.readdirSync(exampleRoot+"/"+ex.dir)
 	.filter(function(f){return f.charAt(0)!="."})
+	
 	//get readme.md text
 	ex.readme = {}
 	ex.readme.index = ex.files.map(function(f) {
