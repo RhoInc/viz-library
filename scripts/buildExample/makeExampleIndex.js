@@ -58,7 +58,7 @@ exports.makeExampleIndex = function(ex){
     		header.append("div").text(ex.description).style("margin-bottom","0.5em")
     		
     		// Show the example
-    		var webExampleContent = '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src='+ex.paths.example+' marginwidth="0" marginheight="0" style="height:600px; width:960px;" scrolling="no"></iframe>'
+    		var webExampleContent = '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src='+ex.paths.example+' marginwidth="0" marginheight="0" style="height:600px; width:960px;"></iframe>'
     		var staticExampleContent = '<div style="border:1px solid black; padding:0.1em;"><img src="'+ex.paths.example+'" width=960></div>'
     		var exampleExt = ex.paths.example.split('.').pop()
     		var exampleContent_html = exampleExt=="html" ? 
