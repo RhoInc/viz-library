@@ -29,17 +29,15 @@ var sampleExample = {
 	"data":"OlympicMedals2012.csv"
 }*/
 
-exports.makeExampleIndex = function(ex){
-	
+exports.makeExampleIndex = function(ex){		
 	var fs = require('fs'), 
 	d3 = require('d3'),
     jsdom = require('jsdom'),
     showdown = require('showdown')
 
 	var stub = 	fs.readFileSync("./scripts/buildExample/indexStub.html").toString()	
-	var readme = fs.readFileSync(ex.paths.readme).toString()
-	if(ex.paths.code.length>0)
-		var code = fs.readFileSync(ex.paths.code).toString()
+	var readme = fs.readFileSync(ex.paths.root+"/"+ex.paths.readme).toString()
+	var code = fs.readFileSync(ex.paths.root+"/"+ex.paths.code).toString()
 
 	// pass the html stub to jsDom 
 	// via https://mango-is.com/blog/engineering/pre-render-d3-js-charts-at-server-side/
@@ -58,32 +56,29 @@ exports.makeExampleIndex = function(ex){
     		var header = window.d3.select(".header");
     		header.append("h1").text(ex.title).style("margin-bottom","0.1em");
     		header.append("div").text(ex.description).style("margin-bottom","0.5em")
+    		
     		// Show the example
-    		var webExampleContent = '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:960px;" scrolling="no"></iframe>'
-    		var staticExampleContent = '<img src="example.png" width=960>'
-    		var exampleContent_html = ex.files.indexOf("example.html")>-1 ? 
-    		webExampleContent : 
-				ex.files.indexOf("example.png")>-1 ? 
-				staticExampleContent : 
-				"No Example Found  :("
+    		var webExampleContent = '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src='+ex.paths.example+' marginwidth="0" marginheight="0" style="height:600px; width:960px;" scrolling="no"></iframe>'
+    		var staticExampleContent = '<div style="border:1px solid black; padding:0.1em;"><img src="'+ex.paths.example+'" width=960></div>'
+    		var exampleExt = ex.paths.example.split('.').pop()
+    		var exampleContent_html = exampleExt=="html" ? 
+				webExampleContent : 
+				staticExampleContent 
 
 			window.d3.select(".chart").html(exampleContent_html)
 
 			// Add the details 
     		//add sections
-			var detailVars = ["languages","libraries","tags","data"];
-    		
+			var detailVars = ["languages","libraries","tags","data","results"];
+    		console.log(ex)
+
     		var detailInfo = window.d3.select(".details")
     		.append("div")
-
     		.selectAll("div")
     		.data(detailVars)
     		.enter()
     		.append("div")
     		.attr("style","display:inline-block; padding-right:1em;")
-
-    		//.style("border-right","1px solid gray")
-			
 
     		//via http://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
 			function capitalizeFirstLetter(string) {
@@ -97,7 +92,11 @@ exports.makeExampleIndex = function(ex){
     		.style("color","#aaa")
     		.attr("padding-right","0.2em")
 
-    		detailInfo.append("span").html(d => d=="data"?"<a href='"+ex[d]+"'>"+ex[d]+"</a>":ex[d])
+    		detailInfo.append("span")
+    		.html(
+    			d => d=="data" || d=="results"?
+    			"<a href='"+ex[d]+"'>"+ex[d]+"</a>":
+    			ex[d])
 
     		// parse any extra readme content
 			var detailRegex = /(\[comment\]: <> \(---END OF HEADER---\))[\s\S]*$/
@@ -106,13 +105,12 @@ exports.makeExampleIndex = function(ex){
     		ex.details = converter.makeHtml(detailContent_markdown);
     		window.d3.select(".details").append("div").html(ex.details)
 
-
-
-			// Show the code - parse the code file.  
+			// Show the code - parse the code file. 
 			window.d3.select("code").text(code)
 
-			//write the index file    		
-			fs.writeFileSync(ex.paths.index, window.document.documentElement.outerHTML) 
+			//write the index file   
+			console.log("Created example for : "+ex.dir) 		
+			fs.writeFileSync(ex.paths.root+"/"+ex.paths.index, window.document.documentElement.outerHTML) 
 		}
 	});
 }

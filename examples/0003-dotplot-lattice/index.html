@@ -1,28 +1,44 @@
-<!DOCTYPE HTML>
+<html lang="en"><head>
+  <title>Stacked Dot Plot #2</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
 
-<h2>R Example: 0003 DOTPLOT LATTICE</h2> 
-<h3><i>B Krouse, 2017-01-20</i></h3>
-  
-<img src="0003-dotplot-lattice.png" width=700>
- 
+<body style="padding:1em;">
+	<span style="position:absolute;top:1em;right:1em;">
+		<a href="../../">🏠</a>
+	</span>
+	<div class="header section"><h1 style="margin-bottom: 0.1em;">Stacked Dot Plot #2</h1><div style="margin-bottom: 0.5em;">Stacked dot plot created using ggplot2 combining paneling, custom annotations and simple data manipulation. Similar to &lt;a href="../0002-dotplot-lattice"&gt;this example&lt;/a&gt; made with lattice.</div></div>
+	<div class="chart section"><div style="border:1px solid black; padding:0.1em;"><img src="0003-dotplot-lattice.png" width="960"></div></div>	
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>lattice</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>dotplot, r, lattice, facet, median, highlight, stack points, discrete</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../examples/0000-sample-data/discrete_scores.csv">../examples/0000-sample-data/discrete_scores.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0003-dotplot-lattice.png">0003-dotplot-lattice.png</a></span></div></div><div><p><em>B Krouse, 2017-01-20</em> </p></div></div>
+	<div class="code section">
+		<h2>Code</h2>
+		<pre><code class="hljs">#' ---
+#' title: DOTPLOT LATTICE
+#' description: Discrete data dotplot using Lattice
+#' author: B Krouse
+#' language: R
+#' package: Lattice, latticeExtra, HH
+#' plot type: dotplot
+#' features: dotplot, r, lattice, facet, median, highlight, stack points, discrete 
+#' ---
 
-<h3>Description: Discrete data dotplot using Lattice</h3>  
+new_fig_dir &lt;- "H:/GitHub/viz-library/examples/0003-dotplot-lattice"
+new_fig_name &lt;- "0003-dotplot-lattice"
 
-<h3>Features: dotplot, r, lattice, facet, median, highlight, stack points, discrete</h3>  
-
-<h3>Code:</h3> 
-<pre style='color:#000000;background:#ffffff;font-size: 15px'>
-
+# Figure code
 
 # load packages 
 pacman::p_load(dplyr, tidyr, lattice, latticeExtra, HH)
 
 # read in data
-data <- read.csv('examples/0000-sample-data/discrete_scores.csv')
+data &lt;- read.csv('examples/0000-sample-data/discrete_scores.csv')
 
-# define function to customize vertical lines & associated axis tick labels
+# define function to customize vertical lines &amp; associated axis tick labels
 # by coloring median values red, and the rest gray
-panel.dotplot_highlightMedian <- function(x, l){  # l = vector of axis tick values
+panel.dotplot_highlightMedian &lt;- function(x, l){  # l = vector of axis tick values
   
   panel.segments(l,0.6,l,1.5,col="gray70")          
   panel.text(l,0.55,l,col="gray70",cex=0.7)
@@ -32,7 +48,7 @@ panel.dotplot_highlightMedian <- function(x, l){  # l = vector of axis tick valu
 }
 
 # plot function
-p <- dotplot(~score|category, 
+p &lt;- dotplot(~score|category, 
         data=data, 
         col.symbol="gray50",
         asp=0.2, layout=c(1,4),as.table=T,
@@ -47,7 +63,7 @@ p <- dotplot(~score|category,
         panel=function(x,y,...){
           
           # highlight median values red, while the rest of the lines/values are gray
-          l <- seq(0,100,20)
+          l &lt;- seq(0,100,20)
           panel.dotplot_highlightMedian(x,l)
           
           # Plot dotplot - multiple hits on a specific x value are stacked
@@ -55,6 +71,14 @@ p <- dotplot(~score|category,
         }                    
 )
 
+# Save image of figure:
+png(file='examples/0003-dotplot-lattice/0003-dotplot-lattice.png',height = 8, width = 8, units = 'in', res = 300)
+p
+dev.off()
 
-</pre>
+# Create tags and README.md
+source('util/r_scripts/createSuppFiles.R')
+createSuppFiles(new_fig_name, example_type='R-examples')</code></pre>
+	</div>	
 
+</body></html>
