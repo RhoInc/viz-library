@@ -1,34 +1,50 @@
-<!DOCTYPE HTML>
+<html lang="en"><head>
+  <title>Stacked Dot Plot #1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
 
-<h2>R Example: 0002 DOTPLOT GGPLOT</h2> 
-<h3><i>B Krouse, 2017-01-20</i></h3>
-  
-<img src="0002-dotplot-ggplot.png" width=700>
- 
+<body style="padding:1em;">
+	<span style="position:absolute;top:1em;right:1em;">
+		<a href="../../">🏠</a>
+	</span>
+	<div class="header section"><h1 style="margin-bottom: 0.1em;">Stacked Dot Plot #1</h1><div style="margin-bottom: 0.5em;">Stacked dot plot created using ggplot2 combining paneling, custom annotations and some simple data manipulation.</div></div>
+	<div class="chart section"><div style="border:1px solid black; padding:0.1em;"><img src="0002-dotplot-ggplot.png" width="960"></div></div>	
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>ggplot2</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>dotplot, r, ggplot2, facet, median, highlight, stack points, discrete</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../examples/0000-sample-data/discrete_scores.csv">../examples/0000-sample-data/discrete_scores.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0002-dotplot-ggplot.png">0002-dotplot-ggplot.png</a></span></div></div><div><p><em>B Krouse, 2017-01-20</em> </p></div></div>
+	<div class="code section">
+		<h2>Code</h2>
+		<pre><code class="hljs">#' ---
+#' title: DOTPLOT GGPLOT
+#' description: Discrete data dotplot using ggplot
+#' author: B Krouse
+#' language: R
+#' package: ggplot2
+#' plot type: dotplot
+#' features: dotplot, r, ggplot2, facet, median, highlight, stack points, discrete 
+#' ---
 
-<h3>Description: Discrete data dotplot using ggplot</h3>  
+new_fig_dir &lt;- "H:/GitHub/viz-library/examples/0002-dotplot-ggplot"
+new_fig_name &lt;- "0002-dotplot-ggplot"
 
-<h3>Features: dotplot, r, ggplot2, facet, median, highlight, stack points, discrete</h3>  
-
-<h3>Code:</h3> 
-<pre style='color:#000000;background:#ffffff;font-size: 15px'>
- 
+# Figure code 
 
 # load packages
 pacman::p_load(dplyr, tidyr, ggplot2)
 
 # read in data
-data <- read.csv('examples/0000-sample-data/discrete_scores.csv')
+data &lt;- read.csv('examples/0000-sample-data/discrete_scores.csv')
 
 # create column containing median score for each category
-data <- data %>% 
-  group_by(category) %>% 
+data &lt;- data %&gt;% 
+  group_by(category) %&gt;% 
   mutate(m=median(score),
          lab=c('gray60','red')[I(score==m)+1])
 
 
 # plot function
-p <- ggplot(data, aes(x=score)) +
+p &lt;- ggplot(data, aes(x=score)) +
   geom_vline(aes(xintercept = m, color='red'), size=1, data=data) +
   geom_dotplot(aes(x=score), fill="gray30", color="gray30",stackdir='center', binwidth=1, dotsize=1.1, stackratio=1.5) +
   facet_wrap(~category, ncol=1, scales='free_x') +
@@ -52,6 +68,15 @@ p <- ggplot(data, aes(x=score)) +
     legend.position = "none"
   )
 
+# Save image of figure
+png(file='./examples/0002-dotplot-ggplot/0002-dotplot-ggplot.png',height = 8, width = 8, units = 'in', res = 300)
+p
+dev.off()
 
-</pre>
 
+# Create tags and README.md
+source('util/r_scripts/createSuppFiles.R')
+createSuppFiles(new_fig_name, example_type='R-examples')</code></pre>
+	</div>	
+
+</body></html>

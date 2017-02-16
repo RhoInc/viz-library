@@ -1,18 +1,34 @@
-<!DOCTYPE HTML>
+<html lang="en"><head>
+  <title>Orderered Precipitation Heatmap</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
 
-<h2>R Example: 0006 PRECIP LEVELPLOT LATTICE</h2> 
-<h3><i>A. Calatroni/B Krouse, 2017-01-20</i></h3>
-  
-<img src="0006-precip-levelplot-lattice.png" width=700>
- 
+<body style="padding:1em;">
+	<span style="position:absolute;top:1em;right:1em;">
+		<a href="../../">🏠</a>
+	</span>
+	<div class="header section"><h1 style="margin-bottom: 0.1em;">Orderered Precipitation Heatmap</h1><div style="margin-bottom: 0.5em;">Heatmap with ordered columns and rows using monthly precipitation data</div></div>
+	<div class="chart section"><div style="border:1px solid black; padding:0.1em;"><img src="0006-precip-levelplot-lattice.png" width="960"></div></div>	
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>lattice</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>Ordered, heatmap, annotation</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="blsunemployment.csv">blsunemployment.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0006-precip-levelplot-lattice.png">0006-precip-levelplot-lattice.png</a></span></div></div><div><p><em>A. Calatroni/B Krouse, 2017-01-20</em> </p></div></div>
+	<div class="code section">
+		<h2>Code</h2>
+		<pre><code class="hljs">#' ---
+#' title: PRECIP LEVELPLOT LATTICE
+#' description: Heatmap with ordered columns and rows using monthly precipitation data
+#' author: A. Calatroni/B Krouse
+#' language: R
+#' package: Lattice, R Color Brewer, Seriation
+#' plot type: heatmap, levelplot
+#' features: Ordered, heatmap, annotation
+#' ---
 
-<h3>Description: Heatmap with ordered columns and rows using monthly precipitation data</h3>  
+new_fig_dir &lt;- "H:/GitHub/viz-library/examples/0006-precip-levelplot-lattice"
+new_fig_name &lt;- "0006-precip-levelplot-lattice"
 
-<h3>Features: Ordered, heatmap, annotation</h3>  
-
-<h3>Code:</h3> 
-<pre style='color:#000000;background:#ffffff;font-size: 15px'>
-
+# Figure code
 
 # load packages
 pacman::p_load(lattice)
@@ -20,22 +36,22 @@ pacman::p_load(RColorBrewer)
 pacman::p_load(seriation)
 
 # load data
-p <- read.csv(paste0(new_fig_dir,"/Precipitations.csv"), header=F, skip=5, nrows=71)
-names(p) <- c("State","City","ST","Code","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"," Dec","Tot")
+p &lt;- read.csv(paste0(new_fig_dir,"/Precipitations.csv"), header=F, skip=5, nrows=71)
+names(p) &lt;- c("State","City","ST","Code","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"," Dec","Tot")
 
 # create matrix
-p1 <- p[,c(5:16)]
-p1 <- as.matrix(p1)
-p1 <- t(p1)
-colnames(p1) <-  with(p, paste(City," (",ST,")",sep='')) 
+p1 &lt;- p[,c(5:16)]
+p1 &lt;- as.matrix(p1)
+p1 &lt;- t(p1)
+colnames(p1) &lt;-  with(p, paste(City," (",ST,")",sep='')) 
 
 # use seriate to calculate dissimilarity
-o <- seriate(p1,method= "BEA_TSP")
+o &lt;- seriate(p1,method= "BEA_TSP")
 
 # plot heatmap w/ ordered columns and rows
-levs <- as.vector(quantile(p1,seq(0,1,0.1)))
+levs &lt;- as.vector(quantile(p1,seq(0,1,0.1)))
 
-p <- levelplot(p1[get_order(o, 1),get_order(o,2)],
+p &lt;- levelplot(p1[get_order(o, 1),get_order(o,2)],
           as.table=F,aspect="fill",
           scales=list(tck=c(0,0),
                       x=list(alternating=2)),
@@ -53,6 +69,15 @@ p <- levelplot(p1[get_order(o, 1),get_order(o,2)],
           }
 )  
 
+# Save image of figure:
+png(filename = paste0(new_fig_dir,'/',new_fig_name, ".png"), height=11, width=8.5, units='in', res=300)
+p
+dev.off()
 
-</pre>
+# Create tags and README.md
+source('util/r_scripts/createSuppFiles.R')
+createSuppFiles(new_fig_name, example_type='R-examples')
+</code></pre>
+	</div>	
 
+</body></html>

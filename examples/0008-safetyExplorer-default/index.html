@@ -1,0 +1,70 @@
+<html lang="en"><head>
+  <title>Safety Explorer - Default Configuration</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body style="padding:1em;">
+	<span style="position:absolute;top:1em;right:1em;">
+		<a href="../../">🏠</a>
+	</span>
+	<div class="header section"><h1 style="margin-bottom: 0.1em;">Safety Explorer - Default Configuration</h1><div style="margin-bottom: 0.5em;">The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials.  This instance demonstrates each graphic with default settings.</div></div>
+	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="chart.html" marginwidth="0" marginheight="0" style="height:600px; width:960px;" scrolling="no"></iframe></div>	
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webcharts, safety-histogram, safety-results-over-time, safety-shift-plot, safety-outlier-explorer, ae-timeline, ae-explorer</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, webcharts, adverse events, safety explorer</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../0000-sample-data/safetyData/">../0000-sample-data/safetyData/</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="chart.html">chart.html</a></span></div></div><div><p>The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials.  This instance demonstrates each graphic with default settings.</p></div></div>
+	<div class="code section">
+		<h2>Code</h2>
+		<pre><code class="hljs">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta
+            http-equiv = 'Content-Type'
+            content = 'text/html; charset = utf-8'&gt;
+
+        &lt;title&gt;Safety Explorer - Default&lt;/title&gt;
+        &lt;div id = 'title'&gt;Safety Explorer - Default&lt;/div&gt;
+
+        &lt;script type = 'text/javascript'
+            src = 'https://d3js.org/d3.v3.min.js'&gt;&lt;/script&gt;
+        &lt;script type = 'text/javascript'
+            src = 'aeTable.js'&gt;&lt;/script&gt;
+
+        &lt;link type = 'text/css'
+            rel = 'stylesheet'
+            href = 'aeTable.css'&gt;
+        &lt;link type = 'text/css'
+            href = '../safetyExplorer.css'
+            rel = 'stylesheet'&gt;
+
+        &lt;ul class = 'nav nav-tabs'&gt;
+            &lt;li role = 'presentation' class = 'active'&gt;&lt;a href = '../ae-table'&gt;AE Table&lt;/a&gt;&lt;/li&gt;
+            &lt;li role = 'presentation'&gt;&lt;a href = '../ae-timelines'&gt;AE Timelines&lt;/a&gt;&lt;/li&gt;
+            &lt;li role = 'presentation'&gt;&lt;a href = '../safety-results-over-time'&gt;Results over Time&lt;/a&gt;&lt;/li&gt;
+            &lt;li role = 'presentation'&gt;&lt;a href = '../safety-histogram'&gt;Histogram&lt;/a&gt;&lt;/li&gt;
+            &lt;li role = 'presentation'&gt;&lt;a href = '../safety-outlier-explorer'&gt;Outlier Explorer&lt;/a&gt;&lt;/li&gt;
+            &lt;li role = 'presentation'&gt;&lt;a href = '../safety-shift-plot'&gt;Shift Plot&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;div class = 'safetyExplorerChart'
+            id = 'ae-table'&gt;
+            &lt;div class = 'header'&gt;&lt;/div&gt;
+            &lt;div class = 'content'&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+
+    &lt;script&gt;
+        const settings = {};
+
+        d3.csv('../../0000-sample-data/safetyData/ADAE.csv', function(data) {
+            aeTable.createChart('#ae-table .content', settings)
+                .init(data);
+        });
+    &lt;/script&gt;
+&lt;/html&gt;
+</code></pre>
+	</div>	
+
+</body></html>

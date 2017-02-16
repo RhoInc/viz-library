@@ -8,4 +8,10 @@
 
 **Tags:** interactive, bar chart 
 
+**Data:** OlympicMedals2012.csv
+
+**Code:** simpleBarChart.js
+
 [comment]: <> (---END OF HEADER---)
+
+It's a barchart. Simple enough.
