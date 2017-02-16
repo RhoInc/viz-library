@@ -9,6 +9,7 @@
 **Tags:** density plot, lattice, r, groups, means, annotated, faceted  
 
 [comment]: <> (---END OF HEADER---)
+[comment]: <> (---NO AUTO INDEX---)
 
 *B Krouse, 2017-01-20*
   

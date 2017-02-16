@@ -9,6 +9,7 @@
 **Tags:** dotplot, r, lattice, facet, median, highlight, stack points, discrete  
 
 [comment]: <> (---END OF HEADER---)
+[comment]: <> (---NO AUTO INDEX---)
 
 *B Krouse, 2017-01-20* 
   

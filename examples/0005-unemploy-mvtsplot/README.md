@@ -9,6 +9,7 @@
 **Tags:** multivariate, time series, heatmap, monthly 
 
 [comment]: <> (---END OF HEADER---)
+[comment]: <> (---NO AUTO INDEX---)
 
 *B Krouse / A Calatroni, 2017-01-20* 
   

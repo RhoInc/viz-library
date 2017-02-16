@@ -9,6 +9,7 @@
 **Tags:** pirateplot, boxplot, density plot, violin plot
 
 [comment]: <> (---END OF HEADER---)
+[comment]: <> (---NO AUTO INDEX---)
 
 *Agustin Calatroni, October 11, 2016* 
   
