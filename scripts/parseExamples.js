@@ -49,13 +49,8 @@ examples.forEach(function(ex){
 	//index.html
 	ex.paths.index = "index.html"
 
-	//thumbnail.png
-	var thumbN = ex.files.map(function(f) {
-		return f.toLowerCase();
-	}).indexOf("thumb.png")
-	ex.paths.thumbnail = thumbN > -1 ?
-	ex.files[thumbN]:
-	null	
+	//thumb.png
+	ex.paths.thumb = "thumb.png"
 
 	//get readme.md text
 	ex.readme = {}
@@ -94,19 +89,24 @@ examples.forEach(function(ex){
 	null
 
 	//Make thumbnails
+
 	var imgs = ex.files
 	.map(function(f) {
 		return f.toLowerCase();
 	}).filter(function(file){
-		var ext = file.match(/\.[0-9a-z]+$/)[0]
-		return [".png",".jpeg",".jpg"].indexOf(ext)>-1
+		var ext = file.match(/\.[0-9a-z]+$/)
+		if(ext){
+			return [".png",".jpeg",".jpg"].indexOf(ext[0])>-1	
+		} else {
+			return false
+		}
+		
 	})
-	
+
 	if(imgs.indexOf("thumb.png")==-1 & imgs.length>0){
-		console.log("making a thumb for "+ex.dir)
-		var imgFile = exampleRoot+"/"+ex.dir+"/"+imgs[0]
-		var thumbFile = ex.paths.thumb
-	
+		var imgFile = ex.paths.root+imgs[0]
+		var thumbFile = ex.paths.root+ex.paths.thumb
+		console.log(thumbFile)
 		Jimp.read(imgFile, function (err, lenna) {
 	    	if (err) throw err;
 		    lenna.resize(300, 200)            // resize 

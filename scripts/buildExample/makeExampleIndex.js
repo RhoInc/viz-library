@@ -70,8 +70,7 @@ exports.makeExampleIndex = function(ex){
 			// Add the details 
     		//add sections
 			var detailVars = ["languages","libraries","tags","data","results"];
-    		console.log(ex)
-
+			
     		var detailInfo = window.d3.select(".details")
     		.append("div")
     		.selectAll("div")
