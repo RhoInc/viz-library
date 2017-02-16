@@ -9,3 +9,5 @@
 **Tags:** interactive, bar chart 
 
 [comment]: <> (---END OF HEADER---)
+
+Simple enough. 
