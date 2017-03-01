@@ -1,6 +1,6 @@
 {
   "name": "viz-library",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Examples of statistical graphics created at Rho",
   "main": "./index.html",
   "scripts": {
