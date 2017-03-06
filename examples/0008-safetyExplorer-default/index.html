@@ -29,11 +29,11 @@
         &lt;script type = 'text/javascript'
             src = 'https://d3js.org/d3.v3.min.js'&gt;&lt;/script&gt;
         &lt;script type = 'text/javascript'
-            src = 'aeTable.js'&gt;&lt;/script&gt;
+            src = 'https://cdn.rawgit.com/RhoInc/aeexplorer/v3.0.0/build/aeTable.js'&gt;&lt;/script&gt;
 
         &lt;link type = 'text/css'
             rel = 'stylesheet'
-            href = 'aeTable.css'&gt;
+            href = 'https://cdn.rawgit.com/RhoInc/aeexplorer/v3.0.0/css/aeTable.css'&gt;
         &lt;link type = 'text/css'
             href = '../safetyExplorer.css'
             rel = 'stylesheet'&gt;
@@ -57,7 +57,14 @@
     &lt;/body&gt;
 
     &lt;script&gt;
-        const settings = {};
+        const settings = {
+            defaults:{
+                placeholderFlag:{
+                    value_col:"AEBODSYS",
+                    values:[""]
+                }
+            }
+        };
 
         d3.csv('../../0000-sample-data/safetyData/ADAE.csv', function(data) {
             aeTable.createChart('#ae-table .content', settings)
