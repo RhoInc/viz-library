@@ -8,7 +8,7 @@
 
 **Tags:** interactive, webcharts, adverse events, safety explorer, queries
 
-**Data:** ../0000-sample-data/safetyData/
+**Data:** ../0000-sample-data/safetyData-queries/
 
 **Code:** ae-table/index.html
 
