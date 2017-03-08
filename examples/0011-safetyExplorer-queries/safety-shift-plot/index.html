@@ -5,15 +5,15 @@
             http-equiv = 'Content-Type'
             content = 'text/html; charset = utf-8'>
 
-        <title>Safety Explorer - Default</title>
-        <div id = 'title'>Safety Explorer - Default</div>
+        <title>Safety Explorer Charts with Queries</title>
+        <div id = 'title'>Safety Explorer Charts with Queries</div>
 
         <script type = 'text/javascript'
             src = 'https://d3js.org/d3.v3.min.js'></script>
         <script type = 'text/javascript'
             src = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'></script>
         <script type = 'text/javascript'
-            src = 'https://cdn.rawgit.com/RhoInc/safety-results-over-time/c985a5ece9d6a77ffaf5fd74406449a5382917c0/build/safetyResultsOverTime.js'></script>
+            src = 'https://cdn.rawgit.com/RhoInc/safety-shift-plot/v2.0.0/build/safetyShiftPlot.js'></script>
 
         <link type = 'text/css'
             rel = 'stylesheet'
@@ -25,26 +25,43 @@
         <ul class = 'nav nav-tabs'>
             <li role = 'presentation'><a href = '../ae-table'>AE Table</a></li>
             <li role = 'presentation'><a href = '../ae-timelines'>AE Timelines</a></li>
-            <li role = 'presentation' class = 'active'><a href = '../safety-results-over-time'>Results over Time</a></li>
+            <li role = 'presentation'><a href = '../safety-results-over-time'>Results over Time</a></li>
             <li role = 'presentation'><a href = '../safety-histogram'>Histogram</a></li>
             <li role = 'presentation'><a href = '../safety-outlier-explorer'>Outlier Explorer</a></li>
-            <li role = 'presentation'><a href = '../safety-shift-plot'>Shift Plot</a></li>
+            <li role = 'presentation' class = 'active'><a href = '../safety-shift-plot'>Shift Plot</a></li>
         </ul>
+
+        <style>
+            #safety-shift-plot .content > * {
+                width: 35%;
+                margin: 0 auto;
+            }
+        </style>
     </head>
 
     <body>
         <div class = 'safetyExplorerChart'
-            id = 'safety-results-over-time'>
+            id = 'safety-shift-plot'>
             <div class = 'header'></div>
             <div class = 'content'></div>
         </div>
     </body>
 
     <script>
-        const settings = {};
+        const settings =
+            {time_col: 'VISIT'
+            ,x_params: {visits: ['Screening'], stat: 'min'}
+            ,y_params: {visits: ['End of Study'], stat: 'max'}
+            ,filters:
+            [   {value_col: 'ARM', label: 'Arm'}
+            ,   {value_col: 'SITEID', label: 'Site ID'}
+            ,   {value_col: 'SEX', label: 'Sex'}
+            ,   {value_col: 'RACE', label: 'Race'}
+            ,   {value_col: 'QUERYFL', label: 'Open Query?'}]
+        };
 
-        d3.csv('../../0000-sample-data/safetyData/ADBDS.csv', function(data) {
-            safetyResultsOverTime('#safety-results-over-time .content', settings)
+        d3.csv('../../0000-sample-data/safetyData-queries/ADBDS.csv', function(data) {
+            safetyShiftPlot('#safety-shift-plot .content', settings)
                 .init(data);
         });
     </script>

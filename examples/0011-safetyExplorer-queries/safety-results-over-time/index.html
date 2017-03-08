@@ -5,15 +5,15 @@
             http-equiv = 'Content-Type'
             content = 'text/html; charset = utf-8'>
 
-        <title>Safety Explorer - Default</title>
-        <div id = 'title'>Safety Explorer - Default</div>
+        <title>Safety Explorer Charts with Queries</title>
+        <div id = 'title'>Safety Explorer Charts with Queries</div>
 
         <script type = 'text/javascript'
             src = 'https://d3js.org/d3.v3.min.js'></script>
         <script type = 'text/javascript'
             src = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'></script>
         <script type = 'text/javascript'
-            src = 'https://cdn.rawgit.com/RhoInc/safety-results-over-time/c985a5ece9d6a77ffaf5fd74406449a5382917c0/build/safetyResultsOverTime.js'></script>
+            src = 'https://cdn.rawgit.com/RhoInc/safety-results-over-time/v2.0.0/build/safetyResultsOverTime.js'></script>
 
         <link type = 'text/css'
             rel = 'stylesheet'
@@ -41,9 +41,28 @@
     </body>
 
     <script>
-        const settings = {};
-
-        d3.csv('../../0000-sample-data/safetyData/ADBDS.csv', function(data) {
+        var settings =
+            {time_settings:
+                {value_col: 'VISIT'
+                ,label: 'Visit'
+                ,order: null // x-axis domain order (array)
+                ,rotate_tick_labels: true
+                ,vertical_space: 100}
+            ,groups:
+                [   
+                    {value_col: 'NONE', label: 'None'}
+                ,   {value_col: 'RACE', label: 'Race'}
+                ,   {value_col: 'ARM' , label: 'Arm'}
+                ,   {value_col: 'SEX' , label: 'Sex'}
+                ]
+            ,filters:
+            [   {value_col: 'ARM', label: 'Arm'}
+            ,   {value_col: 'SITEID', label: 'Site ID'}
+            ,   {value_col: 'SEX', label: 'Sex'}
+            ,   {value_col: 'RACE', label: 'Race'}
+            ,   {value_col: 'QUERYFL', label: 'Open Query?'}]
+            };
+        d3.csv('../../0000-sample-data/safetyData-queries/ADBDS.csv', function(data) {
             safetyResultsOverTime('#safety-results-over-time .content', settings)
                 .init(data);
         });
