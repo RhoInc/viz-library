@@ -1,515 +1,585 @@
 "USUBJID","AEBODSYS","AEPTCD","AEDECOD","AETERM","AESTDY","AEENDY","AESER","AESEV","AEREL","AEOUT","AESTDT","AEENDT","AESEQ"
-"01-001","Gastrointestinal disorders","10002176","Anal stenosis","Narrowing of the anal cana",154,252,"N","SEVERE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-04-11,2016-07-18,1
-"01-001","Nervous system disorders","10022763","Intracranial hemorrhage","Bleeding in the brain",196,270,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-05-23,2016-08-05,2
-"01-001","Hepatobiliary disorders","10017639","Gallbladder perforation","Hole in the gallbladder wal",204,279,"N","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2016-05-31,2016-08-14,3
-"01-001","Cardiac disorders","10028596","Myocardial infarction","Heart attack caused by a blockage or decreased blood supply to
-the heart",234,234,"Y","SEVERE","UNLIKELY RELATED","RECOVERED",2016-06-30,2016-06-30,4
-"01-001","Reproductive system and breast disorders","10061339","Perineal pain","Pain in the perineum (the area between the anus and the rear par
-of the external genitalia)",285,314,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-08-20,2016-09-18,5
-"01-002","Blood and lymphatic system disorders","10019515","Hemolytic uremic syndrome","Collection of signs including hemolytic anemia (destruction of red
-blood cells), kidney failure and a low platelet (a type of blood cell that helps to clot blood) count",63,267,"N","SEVERE","NOT RELATED","RECOVERED",2015-06-29,2016-01-19,1
-"01-002","Psychiatric disorders","10057066","Delayed orgasm","Delay in orgasm (climax)",65,205,"N","SEVERE","UNLIKELY RELATED","RECOVERED",2015-07-01,2015-11-18,2
-"01-002","Gastrointestinal disorders","10021305","Ileal perforation","Hole in an area of the small bowel (ileum",285,352,"N","SEVERE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-06,2016-04-13,3
-"01-002","Gastrointestinal disorders","10017853","Gastritis","Inflammation (swelling and redness) of the stomach linin",348,354,"N","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2016-04-09,2016-04-15,4
-"01-003","Injury, poisoning and procedural
-complications","10065829","Intraoperative musculoskeletal injury","Damage to a muscle during surgery",88,140,"Y","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-22,2016-04-14,1
-"01-003","Gastrointestinal disorders","10018286","Gingival pain","Pain in the gums",229,346,"Y","SEVERE","POSSIBLY RELATED","RECOVERED",2016-07-12,2016-11-06,2
-"01-005","Skin and subcutaneous tissue disorders","10033474","Pain of skin","Pain of the skin",16,17,"N","MILD","NOT RELATED","RECOVERED",2015-07-09,2015-07-10,1
-"01-005","Blood and lymphatic system disorders","10048580","Bone marrow hypocellula","Decreased number of blood cells in the bone marrow",100,156,"N","MODERATE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-01,2015-11-26,2
-"01-005","Nervous system disorders","10044391","Transient ischemic attacks","Stroke that comes and goes quickly (a mini stroke) with no lasting
-effects.  They can be a warning of future stroke.",178,257,"Y","MILD","DEFINITELY RELEATED","RECOVERED",2015-12-18,2016-03-06,3
-"01-005","Gastrointestinal disorders","10013950","Dysphagia","Difficulty swallowing",227,300,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-05,2016-04-18,4
-"01-005","Psychiatric disorders","10012378","Depression","Feelings of sadness, worthlessness, thoughts of suicide or death
-(depression)",292,301,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-04-10,2016-04-19,5
-"01-006","Immune system disorders","10001718","Allergic reaction","Allergic reaction by your body to the drug product that can occur
-immediately or may be delayed.  The reaction may include hives, low blood pressure, wheezing, swelling of the throat, and difficulty breathing.",178,337,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-08-28,2016-02-03,1
-"01-006","Infections and infestations","10014621","Encephalomyelitis infection","Brain and spinal cord infection",200,206,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-09-19,2015-09-25,2
-"01-007","Respiratory, thoracic and mediastinal
-disorders","10065746","Bronchopulmonary hemorrhage","Bleeding from the lungs",29,286,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-07-17,2016-03-30,1
-"01-007","Respiratory, thoracic and mediastinal
-disorders","10038695","Respiratory failure","Failure of the lungs (respiratory system) to perform it's function of
-taking in oxygen and giving off carbon dioxide",158,181,"N","SEVERE","NOT RELATED","RECOVERED",2015-11-23,2015-12-16,2
-"01-007","Musculoskeletal and connective tissue disorders","10023509","Kyphosis","Abnormally increased outward curving of the spine at the level of
-the ribs that causes a bowing of the back, which leads to a hunchback or slouching posture",240,328,"N","MILD","NOT RELATED","RECOVERED",2016-02-13,2016-05-11,3
-"01-008","Psychiatric disorders","10002652","Anorgasmia","Inability to achieve orgasm (climax)",68,230,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-04-25,2015-10-04,1
-"01-009","Infections and infestations","10051472","Periorbital infection","Infection of the soft tissues around the eye socke",116,301,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-06-14,2015-12-16,1
-"01-009","Cardiac disorders","10034474","Pericardial effusion","Fluid in the sac around the hear",276,278,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-11-21,2015-11-23,2
-"01-010","Gastrointestinal disorders","10038079","Rectal stenosis","Narrowing of the rectum",68,97,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-08-16,2015-09-14,1
-"01-010","Musculoskeletal and connective tissue
-disorders","10028836","Neck pain","Neck pain",93,103,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-09-10,2015-09-20,2
-"01-010","Gastrointestinal disorders","10013946","Dyspepsia","Heartburn",133,178,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-20,2015-12-04,3
-"01-010","Hepatobiliary disorders","10017638","Gallbladder pain","Pain in or around the gallbladde",220,347,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-01-15,2016-05-21,4
-"01-011","Gastrointestinal disorders","10002156","Anal fistula","Hole between anus and another orga",36,332,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-02-19,2015-12-12,1
-"01-011","Renal and urinary disorders","10065368","Urinary fistula","Abnormal hole between part of the urinary system and another
-organ or tissue",223,277,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-08-25,2015-10-18,2
-"01-012","Renal and urinary disorders","10064848","Chronic kidney disease","Gradual (and usually permanent) loss of kidney functio",57,312,"N","SEVERE","PROBABLY RELATED","RECOVERED",2015-09-03,2016-05-15,1
-"01-013","Blood and lymphatic system disorders","10043648","Thrombotic thrombocytopenic purpura","Formation of blood clots in small blood vessels around the body
-that leads to a low platelet (a type of blood cell that helps to clot blood) count",12,191,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-02-08,2015-08-06,1
-"01-013","Gastrointestinal disorders","10013828","Duodenal fistula","Hole between an area in the small bowel (duodenum) and anothe
-organ",35,108,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-03-03,2015-05-15,2
-"01-013","Endocrine disorders","10018746","Growth accelerated","Growth greater than expected for age",84,87,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-04-21,2015-04-24,3
-"01-013","Eye disorders","10029404","Night blindness","Inability to see in dim light (night blindness",288,342,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-11,2016-01-04,4
-"01-013","Gastrointestinal disorders","10065713","Gastric fistula","Hole between the stomach and another organ",308,344,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-12-01,2016-01-06,5
-"01-014","Gastrointestinal disorders","10065727","Esophageal necrosis","Death of tissue in the esophagus (gullet or the tube that goes from
-mouth to stomach through which food passes)",72,347,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-08,2016-11-09,1
-"01-014","Injury, poisoning and procedural
-complications","10055322","Postoperative hemorrhage","Bleeding after surgery",105,149,"N","SEVERE","NOT RELATED","RECOVERED",2016-03-12,2016-04-25,2
-"01-014","Musculoskeletal and connective tissue
-disorders","10065800","Joint range of motion decreased lumbar
-spine","Stiff lower back",270,299,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-08-24,2016-09-22,3
-"01-014","Infections and infestations","10044302","Tracheitis","Windpipe infection",295,322,"N","MILD","PROBABLY RELATED","RECOVERED",2016-09-18,2016-10-15,4
-"01-015","Gastrointestinal disorders","10013946","Dyspepsia","Heartburn",62,280,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-06-10,2016-01-14,1
-"01-015","Gastrointestinal disorders","10015384","Esophageal hemorrhage","Bleeding in the esophagus (gullet or the tube that goes from the
-mouth to the stomach)",143,361,"Y","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-30,2016-04-04,2
-"01-015","Injury, poisoning and procedural
-complications","10065845","Intraoperative renal injury","Damage to the kidney during surgery",223,324,"Y","MILD","DEFINITELY RELEATED","RECOVERED",2015-11-18,2016-02-27,3
-"01-015","Musculoskeletal and connective tissue
-disorders","10048677","Buttock pain","Buttock pain",257,299,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-12-22,2016-02-02,4
-"01-015","Reproductive system and breast disorders","10046789","Uterine hemorrhage","Bleeding in the uterus (womb)",319,359,"Y","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-02-22,2016-04-02,5
-"01-016","Skin and subcutaneous tissue disorders","10037549","Purpura","Area of bleeding within the skin causing a reddish purple
-discoloration",18,321,"N","MILD","PROBABLY RELATED","RECOVERED",2015-04-11,2016-02-08,1
-"01-016","Eye disorders","10033703","Papilledema","Swelling around the nerve responsible for sigh",35,130,"N","SEVERE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-04-28,2015-08-01,2
-"01-016","Gastrointestinal disorders","10065704","Peritoneal necrosis","Problem of the gums ranging from simple inflammation (swelling
-and redness) to major damage to the soft tissue and bone that support the teeth.  In the worst cases, teeth are lost.",185,351,"N","SEVERE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-09-25,2016-03-09,3
-"01-017","Investigations","10016596","Fibrinogen decreased","Decreased level of a blood protein needed for blood clottin",105,170,"N","SEVERE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-30,2016-03-04,1
-"01-017","General disorders and administration site
-conditions","10021113","Hypothermia","Low body temperature",151,228,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-02-14,2016-05-01,2
-"01-017","General disorders and administration site
-conditions","10014222","Edema face","Swelling of the face",216,315,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-04-19,2016-07-27,3
-"01-017","Eye disorders","10061510","Scleral disorder","Problem affecting the sclera (the white of the eye)",303,306,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-07-15,2016-07-18,4
-"01-017","Infections and infestations","10033072","Otitis externa","Infection of the outer ear and ear cana",351,362,"N","MODERATE","NOT RELATED","RECOVERED",2016-09-01,2016-09-12,5
-"01-018","Nervous system disorders","10029864","Nystagmus","Rapid, jerky involuntary movements of the eye",25,110,"N","MILD","PROBABLY RELATED","RECOVERED",2015-12-05,2016-02-28,1
-"01-018","Nervous system disorders","10063761","Reversible posterior leukoencephalopathy syndrome","Abnormal changes in the brain that can cause a collection of
-symptoms including headache, confusion, seizures, and vision loss associated with MRI imaging findings (RPLS)",55,300,"N","MILD","NOT RELATED","RECOVERED",2016-01-04,2016-09-05,2
-"01-018","Injury, poisoning and procedural
-complications","10061103","Dermatitis radiation","Redness, flaking or shedding of skin in the radiation treatment area",95,135,"N","MODERATE","PROBABLY RELATED","RECOVERED",2016-02-13,2016-03-24,3
-"01-018","Gastrointestinal disorders","10065730","Ileal obstruction","Blockage in an area of the small bowel (ileum",149,341,"N","MODERATE","NOT RELATED","RECOVERED",2016-04-07,2016-10-16,4
-"01-019","Investigations","10035528","Platelet count decreased","Decreased number of a type of blood cell that helps to clot blood
-(platelet)",187,292,"N","MODERATE","NOT RELATED","RESOLVED WITH SEQUELAE",2016-05-08,2016-08-21,1
-"01-019","Gastrointestinal disorders","10015461","Esophagitis","Inflammation (swelling and redness) of the esophagus (gullet or the tube that goes from mouth to stomach through which food passes)",238,240,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-06-28,2016-06-30,2
-"01-020","Respiratory, thoracic and mediastinal
-disorders","10015090","Epistaxis","Nose bleed",242,255,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-08-02,2016-08-15,1
-"01-021","General disorders and administration site
-conditions","10014222","Edema face","Swelling of the face",333,349,"N","MILD","NOT RELATED","RECOVERED",2016-04-05,2016-04-21,1
-"01-023","Endocrine disorders","10020705","Hyperparathyroidism","High level of hormone of the parathyroid glands causing high blood
-calcium levels (hypercalemia) and low blood phosphate (hypophosphaemia)",342,362,"N","MILD","PROBABLY RELATED","RECOVERED",2016-08-12,2016-09-01,1
-"01-025","Gastrointestinal disorders","10047700","Vomiting","Vomiting",14,171,"N","MODERATE","PROBABLY RELATED","RESOLVED WITH SEQUELAE",2015-06-05,2015-11-09,1
-"01-025","Nervous system disorders","10003074","Arachnoiditis","Inflammation (swelling and redness) of the arachnoid membrane
-(one of the membranes that surround and protect the nerves of the central nervous system, including the brain and spinal cord)",217,348,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-25,2016-05-04,2
-"01-025","Infections and infestations","10059827","Rhinitis infective","Infection of the lining of the nose",260,326,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-02-06,2016-04-12,3
-"01-025","Nervous system disorders","10044391","Transient ischemic attacks","Stroke that comes and goes quickly (a mini stroke) with no lasting
-effects.  They can be a warning of future stroke.",365,2,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-05-21,2015-05-24,4
-"01-026","Reproductive system and breast disorders","10036968","Prostatic pain","Pain in the prostate",112,346,"N","MILD","NOT RELATED","RECOVERED",2015-06-02,2016-01-22,1
-"01-026","Gastrointestinal disorders","10065710","Small intestinal mucositis","Irritation or sores in the lining of the small bowe",271,332,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-08,2016-01-08,2
-"01-026","Cardiac disorders","10033557","Palpitations","Unpleasant sensation of irregular and/or forceful beating of the
-heart",304,360,"N","SEVERE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-12-11,2016-02-05,3
-"01-027","Musculoskeletal and connective tissue
-disorders","10065780","Muscle weakness left-sided","Muscle weakness of the left side of the body",81,327,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-09-21,2016-05-24,1
-"01-027","Musculoskeletal and connective tissue disorders","10023509","Kyphosis","Abnormally increased outward curving of the spine at the level of
-the ribs that causes a bowing of the back, which leads to a hunchback or slouching posture",187,235,"N","MILD","PROBABLY RELATED","RECOVERED",2016-01-05,2016-02-22,2
-"01-028","Infections and infestations","10050662","Prostate infection","Prostate infection",78,270,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-08-14,2016-02-22,1
-"01-028","Reproductive system and breast disorders","10013934","Dysmenorrhea","Severe abdominal cramps duing a women's period",79,345,"N","MILD","NOT RELATED","RECOVERED",2015-08-15,2016-05-07,2
-"01-028","General disorders and administration site
-conditions","10062501","Non-cardiac chest pain","Chest pain not heart-related",171,194,"N","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-11-15,2015-12-08,3
-"01-028","Infections and infestations","10005047","Bladder infection","Bladder infection",199,270,"Y","MILD","NOT RELATED","RECOVERED",2015-12-13,2016-02-22,4
+"01-001","Musculoskeletal and connective tissue
+disorders","10065738","Unequal limb length","Difference between the lengths of the arms and/or legs",57,86,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-07-16,2015-08-14,1
+"01-002","Reproductive system and breast disorders","10039757","Scrotal pain","Pain of  the scrotum or its contents (testes)",126,269,"N","MILD","DEFINITELY RELEATED","RECOVERED",2015-10-02,2016-02-22,1
+"01-002","Infections and infestations","10046914","Vaginal infection","Vaginal infection",333,349,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-04-26,2016-05-12,2
+"01-002","Musculoskeletal and connective tissue
+disorders","10065783","Musculoskeletal deformity","Deformity of the musculoskeletal system (relating to muscles and
+the skeleton)",351,352,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-05-14,2016-05-15,3
+"01-003","Cardiac disorders","10034040","Paroxysmal atrial tachycardia","Period of very rapid and regular heartbeats that begins and ends
+suddenly",29,202,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-09-10,2016-03-01,1
+"01-003","Gastrointestinal disorders","10036774","Proctitis","Inflammation (swelling and redness) of the lining of the rectum",34,48,"N","SEVERE","PROBABLY RELATED","RECOVERED",2015-09-15,2015-09-29,2
+"01-003","Infections and infestations","10062233","Uterine infection","Infection of the uterus (womb)",95,316,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-11-15,2016-06-23,3
+"01-003","Immune system disorders","10040400","Serum sickness","Allergic reaction to certain medications, injected proteins, or
+antisera (blood product) used to treat certain medical conditions (such as an infectious or poisonous substance)",216,274,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-03-15,2016-05-12,4
+"01-003","Gastrointestinal disorders","10065707","Rectal obstruction","Blockage of the rectum",232,340,"N","MILD","NOT RELATED","RECOVERED",2016-03-31,2016-07-17,5
+"01-004","Reproductive system and breast disorders","10039757","Scrotal pain","Pain of  the scrotum or its contents (testes)",91,270,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-04-12,2015-10-08,1
+"01-004","Gastrointestinal disorders","10010001","Colonic perforation","Hole in the large bowe",247,281,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-09-15,2015-10-19,2
+"01-004","Skin and subcutaneous tissue disorders","10034966","Photosensitivity","Increased skin sensitivity to sunligh",356,363,"N","MILD","NOT RELATED","RECOVERED",2016-01-02,2016-01-09,3
+"01-005","Eye disorders","10018304","Glaucoma","Increased pressure in the eyeball (glaucoma",59,315,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2016-01-08,2016-09-20,1
+"01-009","Infections and infestations","10056522","Hepatic infection","Liver infection",84,181,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-02-16,2016-05-23,1
+"01-009","Gastrointestinal disorders","10055291","Intra-abdominal hemorrhage","Bleeding in the belly",150,253,"Y","MODERATE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-04-22,2016-08-03,2
+"01-009","Gastrointestinal disorders","10038981","Retroperitoneal hemorrhage","bleeding in the retroperitoneal area (the space in the belly behind the peritoneum (the tissue that hold the organs in the abdomen)",164,282,"N","MILD","DEFINITELY RELEATED","RESOLVED WITH SEQUELAE",2016-05-06,2016-09-01,3
+"01-009","Injury, poisoning and procedural
+complications","10065828","Intraoperative urinary injury","Damage to the urinary tract during surgery",178,299,"N","MILD","NOT RELATED","RECOVERED",2016-05-20,2016-09-18,4
+"01-009","Gastrointestinal disorders","10041103","Small intestinal perforation","Hole in the small bowe",275,328,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-08-25,2016-10-17,5
+"01-010","Gastrointestinal disorders","10015388","Esophageal pain","Pain in the esophagus (gullet or the tube that goes from mouth to
+stomach through which food passes)",7,148,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-01-12,2015-06-02,1
+"01-010","Eye disorders","10013774","Dry eye","Dry eye",8,243,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-01-13,2015-09-05,2
+"01-010","Renal and urinary disorders","10038419","Renal colic","Type of short and frequent severe pain in the flank (side",210,261,"N","MODERATE","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-08-03,2015-09-23,3
+"01-010","Gastrointestinal disorders","10065709","Rectal necrosis","Death of tissue of the rectum",226,346,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2015-08-19,2015-12-17,4
+"01-010","Gastrointestinal disorders","10025476","Malabsorption","Inability to absorb nutrients (certain sugars, fats, proteins, or
+vitamins from food).  It can also involve a general inability to absorb food.",268,347,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-09-30,2015-12-18,5
+"01-011","Respiratory, thoracic and mediastinal
+disorders","10034825","Pharyngeal fistula","Hole between the throat and another organ",26,190,"N","MILD","NOT RELATED","RECOVERED",2015-10-29,2016-04-10,1
+"01-011","Gastrointestinal disorders","10030980","Oral hemorrhage","Bleeding in or from the mouth",103,210,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-01-14,2016-04-30,2
+"01-011","Eye disorders","10015829","Extraocular muscle paresis","Loss of muscle function of an extraocular muscle (one of the
+muscles that control movement of the eye)",166,206,"N","SEVERE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-03-17,2016-04-26,3
+"01-011","Respiratory, thoracic and mediastinal
+disorders","10023838","Laryngeal edema","Swelling of the voice box",241,244,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-05-31,2016-06-03,4
+"01-011","Respiratory, thoracic and mediastinal
+disorders","10020201","Hoarseness","Hoarseness",326,338,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-08-24,2016-09-05,5
+"01-012","Gastrointestinal disorders","10010004","Colonic stenosis","Narrowing of the large bowe",208,312,"N","MILD","NOT RELATED","RECOVERED",2015-11-11,2016-02-23,1
+"01-012","Injury, poisoning and procedural
+complications","10048031","Wound dehiscence","Premature opening of a wound along surgical stitches after surgery",226,348,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-29,2016-03-30,2
+"01-012","Injury, poisoning and procedural
+complications","10065822","Prolapse of urostomy","Bulge of the stoma (artificial opening) in the urinary system",283,314,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-01-25,2016-02-25,3
+"01-012","Gastrointestinal disorders","10028813","Nausea","Nausea or the urge to vomit",287,306,"Y","MILD","POSSIBLY RELATED","RECOVERED",2016-01-29,2016-02-17,4
+"01-013","Cardiac disorders","10019279","Heart failure","Heart failure:  inability of the heart to adequately pump blood to
+supply oxygen to the body",22,47,"N","MILD","DEFINITELY RELEATED","RESOLVED WITH SEQUELAE",2015-08-05,2015-08-30,1
+"01-013","Infections and infestations","10062233","Uterine infection","Infection of the uterus (womb)",153,322,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-12-14,2016-05-31,2
+"01-013","Blood and lymphatic system disorders","10019491","Hemolysis","Destruction of red blood cells",268,337,"N","SEVERE","PROBABLY RELATED","RESOLVED, RECOVERED",2016-04-07,2016-06-15,3
+"01-013","Nervous system disorders","10061928","Radiculitis","Inflammation (swelling and redness) involving a nerve root (the
+initial segment of a nerve leaving the central nervous system)",363,364,"Y","MODERATE","PROBABLY RELATED","RESOLVED WITH SEQUELAE",2016-07-11,2016-07-12,4
+"01-014","Metabolism and nutrition disorders","10001680","Alkalosis","Less acid than normal in the blood",42,300,"N","SEVERE","PROBABLY RELATED","RECOVERED",2015-09-03,2016-05-18,1
+"01-015","Renal and urinary disorders","10061574","Urinary tract obstruction","Blockage of the normal flow of contents of the urinary trac",16,260,"N","MODERATE","PROBABLY RELATED","RESOLVED, RECOVERED",2015-05-13,2016-01-12,1
+"01-015","Cardiac disorders","10047302","Ventricular tachycardia","Rapid heartbeat of one of the lower chambers (ventricle) of the
+heart; regular rhythm but potentially life-threatening, needs immediate attention",17,130,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-05-14,2015-09-04,2
+"01-015","Gastrointestinal disorders","10010006","Colonic ulcer","Sore (ulcer) in the lining of the large bowe",294,336,"N","MODERATE","DEFINITELY RELEATED","RECOVERED",2016-02-15,2016-03-28,3
+"01-015","Ear and labyrinth disorders","10065838","Middle ear inflammation","Inflammation (swelling and redness) to the middle ea",338,360,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-03-30,2016-04-21,4
+"01-017","Infections and infestations","10018784","Gum infection","Infection of the gums",4,322,"N","MILD","DEFINITELY RELEATED","RECOVERED",2015-02-15,2015-12-30,1
+"01-017","Infections and infestations","10023424","Kidney infection","Kidney infection",264,271,"N","MILD","NOT RELATED","RECOVERED",2015-11-02,2015-11-09,2
+"01-018","Nervous system disorders","10003591","Ataxia","Loss of muscle coordination; awkward, uncoordinated walking;
+unsteadiness when walking",71,265,"N","MILD","NOT RELATED","RECOVERED",2015-04-24,2015-11-04,1
+"01-018","Metabolism and nutrition disorders","10020943","Hypoalbuminemia","Decreased levels of a blood protein called albumin",223,314,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-09-23,2015-12-23,2
+"01-018","Gastrointestinal disorders","10018286","Gingival pain","Pain in the gums",265,267,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-11-04,2015-11-06,3
+"01-019","Reproductive system and breast disorders","10061261","Lactation disorder","Change in ability to produce breast milk",134,307,"Y","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-09-04,2016-02-24,1
+"01-019","Cardiac disorders","10042604","Supraventricular tachycardia","Fast heartbeat usually originating in an area located above the
+ventricles",196,221,"N","MODERATE","NOT RELATED","RESOLVED WITH SEQUELAE",2015-11-05,2015-11-30,2
+"01-019","Injury, poisoning and procedural
+complications","10065887","Vaginal anastomotic leak","Leakage from the vagina due to breakdown of a anastomosis
+(surgical connection between two body structures)",269,329,"N","MODERATE","NOT RELATED","RECOVERED",2016-01-17,2016-03-17,3
+"01-019","Metabolism and nutrition disorders","10052426","Glucose intolerance","Abnormal control of blood sugar leve",294,344,"N","SEVERE","PROBABLY RELATED","RECOVERED",2016-02-11,2016-04-01,4
+"01-021","Cardiac disorders","10028596","Myocardial infarction","Heart attack caused by a blockage or decreased blood supply to
+the heart",235,271,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-05-25,2016-06-30,1
+"01-021","Skin and subcutaneous tissue disorders","10037847","Rash acneiform","Acne",337,348,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-09-04,2016-09-15,2
+"01-023","Cardiac disorders","10003658","Atrial fibrillation","Abnormally fast irregular heartbeat involving the upper chambers of
+the heart (atria)",164,281,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-09-08,2016-01-03,1
+"01-023","Gastrointestinal disorders","10042112","Stomach pain","Stomach pain",220,276,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-11-03,2015-12-29,2
+"01-023","Injury, poisoning and procedural
+complications","10044291","Tracheal obstruction","Blockage of the trachea (windpipe)",225,352,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-11-08,2016-03-14,3
+"01-024","Gastrointestinal disorders","10017822","Gastric ulcer","Sore (ulcer) in the lining of the stomach",280,306,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-01-27,2016-02-22,1
+"01-026","Injury, poisoning and procedural
+complications","10016173","Fall","Fall",101,256,"Y","MILD","NOT RELATED","RECOVERED",2015-05-30,2015-11-01,1
+"01-026","Gastrointestinal disorders","10061970","Gastric stenosis","Narrowing of the stomach",188,189,"Y","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-08-25,2015-08-26,2
+"01-026","Respiratory, thoracic and mediastinal
+disorders","10050816","Tracheal stenosis","Narrowing of the windpipe",298,305,"N","MODERATE","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-12-13,2015-12-20,3
+"01-026","Gastrointestinal disorders","10010774","Constipation","Constipation",310,338,"N","MILD","DEFINITELY RELEATED","RECOVERED",2015-12-25,2016-01-22,4
+"01-027","Cardiac disorders","10034040","Paroxysmal atrial tachycardia","Period of very rapid and regular heartbeats that begins and ends
+suddenly",328,333,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2016-04-23,2016-04-28,1
+"01-027","Gastrointestinal disorders","10016296","Fecal incontinence","Inability to control bowel movements thus allowing the escape of
+feces from the rectum",355,364,"N","SEVERE","NOT RELATED","RECOVERED",2016-05-20,2016-05-29,2
+"01-027","Renal and urinary disorders","10063575","Bladder perforation","Hole in the bladder",360,362,"N","MILD","DEFINITELY RELEATED","RESOLVED WITH SEQUELAE",2016-05-25,2016-05-27,3
+"01-028","Renal and urinary disorders","10063575","Bladder perforation","Hole in the bladder",72,272,"N","MODERATE","NOT RELATED","RECOVERED",2016-01-22,2016-08-09,1
+"01-028","Respiratory, thoracic and mediastinal
+disorders","10003598","Atelectasis","Partial lung collapse",134,191,"Y","MODERATE","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-03-24,2016-05-20,2
+"01-028","Injury, poisoning and procedural
+complications","10022213","Injury to inferior vena cava","Damage to the large blood vessel that carries blood to the heart
+(inferior vena cava)",161,361,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-04-20,2016-11-06,3
+"01-028","Gastrointestinal disorders","10038981","Retroperitoneal hemorrhage","bleeding in the retroperitoneal area (the space in the belly behind the peritoneum (the tissue that hold the organs in the abdomen)",252,280,"Y","MODERATE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-07-20,2016-08-17,4
+"01-028","Gastrointestinal disorders","10045271","Typhlitis","Imflammation (swelling and redness) and/or necrosis (death of
+tissue) of the appendix. cecum, and/or ileum (both areas of the large bowel)",258,273,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-07-26,2016-08-10,5
+"01-029","Musculoskeletal and connective tissue
+disorders","10023215","Joint effusion","Excess fluid in a joint",31,96,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-07-10,2015-09-13,1
 "01-029","Respiratory, thoracic and mediastinal
-disorders","10042241","Stridor","Abnormal, high-pitched, musical breathing sound caused by a
-blockage in the throat or voice box",45,204,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-11-20,2016-04-27,1
-"01-029","Nervous system disorders","10053661","Oculomotor nerve disorder","Abnormal function of the nerve that is responsible for eyelid
-movement and for controling the size of the pupil",147,249,"N","MILD","NOT RELATED","RECOVERED",2016-03-01,2016-06-11,2
-"01-029","Cardiac disorders","10003673","Atrioventricular block complete","Irregular heartbeat.  A complete blockage of electrical signals from
-the upper chambers of the heart (atria) to the lower chambers. (ventricle)",197,333,"N","SEVERE","NOT RELATED","RECOVERED",2016-04-20,2016-09-03,3
-"01-029","Gastrointestinal disorders","10038072","Rectal pain","Rectal pain",295,312,"N","MODERATE","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2016-07-27,2016-08-13,4
-"01-030","Nervous system disorders","10003074","Arachnoiditis","Inflammation (swelling and redness) of the arachnoid membrane
-(one of the membranes that surround and protect the nerves of the central nervous system, including the brain and spinal cord)",189,339,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-05-08,2016-10-05,1
-"01-030","Investigations","10029366","Neutrophil count decreased","Decreased number of a type of white blood cell
-(neutrophil/granulocyte)",234,259,"N","MILD","PROBABLY RELATED","RECOVERED",2016-06-22,2016-07-17,2
-"01-030","Investigations","10000636","Activated partial thromboplastin time
-prolonged","Test that shows a problem in blood clotting",281,332,"N","MILD","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2016-08-08,2016-09-28,3
-"02-002","General disorders and administration site
-conditions","10016256","Fatigue","Fatigue or tiredness",111,174,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-10-08,2015-12-10,1
-"02-002","Eye disorders","10048492","Corneal ulcer","Open sore in the cornea (the transparent area at the front of the
-eyeball)",200,270,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-01-05,2016-03-15,2
-"02-003","Nervous system disorders","10056238","Phantom pain","Pain in a limb or organ that has been amputated",4,340,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-02-03,2016-01-05,1
-"02-003","Ear and labyrinth disorders","10047386","Vestibular disorder","Problem of the inner ear that can cause dizziness, imbalance,
-nausea, and vision problems",78,128,"N","SEVERE","PROBABLY RELATED","RECOVERED",2015-04-18,2015-06-07,2
-"02-003","Reproductive system and breast disorders","10043345","Testicular pain","Pain in the testis",85,103,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-04-25,2015-05-13,3
-"02-003","Musculoskeletal and connective tissue
-disorders","10003246","Arthritis","Inflammation (swelling and redness) in a joint (arthritis)",269,282,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2015-10-26,2015-11-08,4
-"02-003","Renal and urinary disorders","10069339","Acute kidney injury","Sudden decrease of kidney function",334,337,"N","MILD","PROBABLY RELATED","RESOLVED WITH SEQUELAE",2015-12-30,2016-01-02,5
-"02-004","Vascular disorders","10048642","Lymphocele","Mass surrounded by an abnormal sac that contains lymph (the clea
-luid that is collected from tissues throughout the body)",85,365,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-04-01,2016-01-06,1
-"02-004","Reproductive system and breast disorders","10030300","Oligospermia","Decreased number of sperm in semen",248,330,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-09-11,2015-12-02,2
-"02-004","Respiratory, thoracic and mediastinal
-disorders","10023838","Laryngeal edema","Swelling of the voice box",293,296,"N","MODERATE","NOT RELATED","RESOLVED WITH SEQUELAE",2015-10-26,2015-10-29,3
-"02-005","Nervous system disorders","10044565","Tremor","Uncontrolled trembling or shaking movements in one or more parts
-of your body",16,134,"N","SEVERE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-02-27,2015-06-25,1
-"02-006","Infections and infestations","10065761","Cecal infection","Infection of area of large bowel (cecum)",191,311,"N","MODERATE","PROBABLY RELATED","RECOVERED",2016-04-26,2016-08-24,1
-"02-006","Reproductive system and breast disorders","10053496","Vaginal stricture","Narrowing of a tube or passage in the vagina",229,284,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-06-03,2016-07-28,2
-"02-006","Nervous system disorders","10012373","Depressed level of consciousness","Sleepiness",243,282,"Y","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-06-17,2016-07-26,3
-"02-007","Injury, poisoning and procedural
-complications","10059094","Intestinal stoma obstruction","Blockage of an ostomy site (a surgically created opening in the
-digestive tract for the discharge of body wastes)",26,120,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-08-29,2015-12-01,1
-"02-007","Musculoskeletal and connective tissue
-disorders","10065800","Joint range of motion decreased lumbar
-spine","Stiff lower back",365,198,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-08-02,2016-02-17,2
-"02-008","Nervous system disorders","10053662","Abducens nerve disorder","Abnormal function of the nerve responsible for moving the eye to
-the side",292,355,"N","MILD","NOT RELATED","RECOVERED",2016-07-18,2016-09-19,1
-"02-009","Skin and subcutaneous tissue disorders","10062315","Lipohypertrophy","Accumulation of fat under the skin",4,314,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-05-25,2016-03-30,1
-"02-009","Gastrointestinal disorders","10015388","Esophageal pain","Pain in the esophagus (gullet or the tube that goes from mouth to
-stomach through which food passes)",91,242,"N","SEVERE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-20,2016-01-18,2
-"02-009","Endocrine disorders","10020850","Hyperthyroidism","Abnormally high level of thyroid gland hormon",142,279,"N","MODERATE","DEFINITELY RELEATED","RECOVERED",2015-10-10,2016-02-24,3
-"02-009","Infections and infestations","10051472","Periorbital infection","Infection of the soft tissues around the eye socke",179,236,"Y","SEVERE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-11-16,2016-01-12,4
-"02-010","Ear and labyrinth disorders","10065838","Middle ear inflammation","Inflammation (swelling and redness) to the middle ea",20,102,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-12-23,2016-03-14,1
-"02-010","Injury, poisoning and procedural
-complications","10065844","Intraoperative ear injury","Damage to the ear during surgery",20,142,"Y","MODERATE","POSSIBLY RELATED","RECOVERED",2015-12-23,2016-04-23,2
-"02-010","Skin and subcutaneous tissue disorders","10037868","Rash maculo-papular","Skin rash with the presence of macules (flat discolored area) and
-papules (raised bump)",98,333,"N","SEVERE","PROBABLY RELATED","RECOVERED",2016-03-10,2016-10-31,3
-"02-010","Metabolism and nutrition disorders","10020670","Hypermagnesemia","Increased blood level of magnesium",238,314,"N","MILD","NOT RELATED","RECOVERED",2016-07-28,2016-10-12,4
-"02-010","Reproductive system and breast disorders","10065805","Spermatic cord obstruction","Blockage of the spermatic cord (a structure resembling a cord that
-suspends the testis within the scrotum and contains the vas deferens [the tube that carries sperm] and other vessels and nerves)",269,333,"N","MILD","NOT RELATED","RECOVERED",2016-08-28,2016-10-31,5
-"02-012","Infections and infestations","10062233","Uterine infection","Infection of the uterus (womb)",250,360,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-01-13,2016-05-02,1
-"02-012","Musculoskeletal and connective tissue
-disorders","10003239","Arthralgia","Joint pain",271,331,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-02-03,2016-04-03,2
-"02-012","Injury, poisoning and procedural complications","10065745","Prolapse of intestinal stoma","Bulge of the ostomy site (a surgically created opening in the
-digestive tract for the discharge of body wastes) above the surface of the belly",358,364,"N","SEVERE","NOT RELATED","RESOLVED, RECOVERED",2016-04-30,2016-05-06,3
-"02-013","Nervous system disorders","10042244","Stroke","Stoppage of blood flow to your brain",1,81,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-06-26,2015-09-14,1
-"02-013","Infections and infestations","10023216","Joint infection","Joint infection",182,189,"Y","SEVERE","PROBABLY RELATED","RECOVERED",2015-12-24,2015-12-31,2
-"02-013","Respiratory, thoracic and mediastinal
-disorders","10011224","Cough","Cough",220,247,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-01-31,2016-02-27,3
-"02-013","Psychiatric disorders","10019077","Hallucinations","Seeing or sensing things that aren't there while a person is awake
-and conscious (such as hearing voices)",274,360,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-03-25,2016-06-19,4
-"02-013","Gastrointestinal disorders","10065703","Pancreatic duct stenosis","Narrowing of the pancreatic duc",304,346,"N","MODERATE","DEFINITELY RELEATED","RESOLVED WITH SEQUELAE",2016-04-24,2016-06-05,5
-"02-014","Musculoskeletal and connective tissue
-disorders","10048677","Buttock pain","Buttock pain",361,364,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2016-12-25,2016-12-28,1
-"02-016","Blood and lymphatic system disorders","10019491","Hemolysis","Destruction of red blood cells",167,182,"N","MODERATE","NOT RELATED","RESOLVED WITH SEQUELAE",2016-06-10,2016-06-25,1
-"02-016","Nervous system disorders","10038130","Recurrent laryngeal nerve palsy","Paralysis (loss of muscle function) of the recurrent laryngeal nerve
-(a branch of a nerve that supplies the heart, trachea (windpipe) and esophagus (gullet or the tube that goes from mouth to stomach through which food passes)",213,279,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-07-26,2016-09-30,2
-"02-016","Reproductive system and breast disorders","10065818","Vaginal perforation","Hole in the vaginal wall",237,279,"Y","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-08-19,2016-09-30,3
-"02-016","Skin and subcutaneous tissue disorders","10062283","Nail ridging","Appearance of vertical or horizontal ridges on the finger or toenails",346,356,"N","SEVERE","POSSIBLY RELATED","RECOVERED",2016-12-06,2016-12-16,4
-"02-017","Musculoskeletal and connective tissue
-disorders","10065799","Fibrosis deep connective tissue","Scar or thickening of the layer below the superficial fat and includes
-muscle and all connective tissue down to bone",80,344,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-09-13,2016-06-03,1
-"02-017","Injury, poisoning and procedural
-complications","10048049","Wrist fracture","Broken wrist bone",102,251,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-10-05,2016-03-02,2
-"02-017","Musculoskeletal and connective tissue
-disorders","10006002","Bone pain","Bone pain",108,145,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-11,2015-11-17,3
-"02-018","Skin and subcutaneous tissue disorders","10049281","Nail loss","Loss of some or all of the finger or toenails",40,47,"N","MODERATE","DEFINITELY RELEATED","RECOVERED",2015-07-17,2015-07-24,1
-"02-018","Injury, poisoning and procedural
-complications","10065846","Intraoperative skin injury","Damage to the skin during surgery",79,251,"Y","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-25,2016-02-13,2
-"02-018","Gastrointestinal disorders","10025476","Malabsorption","Inability to absorb nutrients (certain sugars, fats, proteins, or
-vitamins from food).  It can also involve a general inability to absorb food.",245,304,"N","MILD","NOT RELATED","RECOVERED",2016-02-07,2016-04-06,3
-"02-019","Reproductive system and breast disorders","10055026","Prostatic obstruction","Blockage of the prostate",134,251,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-08-01,2015-11-26,1
-"02-019","Reproductive system and breast disorders","10065811","Uterine fistula","Hole between uterus (womb) and another organ",238,275,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-11-13,2015-12-20,2
-"02-019","Respiratory, thoracic and mediastinal
-disorders","10002972","Apnea","Stopping of breathing",277,336,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-12-22,2016-02-19,3
-"02-019","General disorders and administration site
-conditions","10016791","Flu like symptoms","Flu-type symptoms (including body aches, fever, chills, tiredness,
-loss of appetite, cough)",351,351,"N","MODERATE","NOT RELATED","RECOVERED",2016-03-05,2016-03-05,4
-"02-021","Gastrointestinal disorders","10065709","Rectal necrosis","Death of tissue of the rectum",88,246,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-08-27,2016-02-01,1
+disorders","10037383","Pulmonary fibrosis","Scarring of the lungs that can cause shortness of breath and
+interfere with breathing",91,118,"N","MODERATE","NOT RELATED","RESOLVED WITH SEQUELAE",2015-09-08,2015-10-05,2
+"01-029","Reproductive system and breast disorders","10061149","Female genital tract fistula","Hole between a female reproductive organ and another organ",177,244,"N","SEVERE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-03,2016-02-08,3
+"02-002","Injury, poisoning and procedural
+complications","10065893","Gastric anastomotic leak","Leakage from stomach due to breakdown of a anastomosis
+(surgical connection of two separate body structures)",75,321,"N","MILD","NOT RELATED","RECOVERED",2015-05-29,2016-01-30,1
+"02-002","Reproductive system and breast disorders","10018146","Genital edema","Swelling in the genitals",114,156,"N","MILD","NOT RELATED","RECOVERED",2015-07-07,2015-08-18,2
+"02-002","Eye disorders","10010741","Conjunctivitis","Inflammation (swelling and redness) of the conjunctiva (the
+outermost layer of the eye and the inner surface of the eyelids). Commonly called ""pink eye"".",153,165,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-08-15,2015-08-27,3
+"02-003","Nervous system disorders","10024264","Lethargy","Abnormal drowsiness or sluggishness, an unusual lack of energy",18,188,"Y","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-05-14,2015-10-31,1
+"02-003","Nervous system disorders","10044565","Tremor","Uncontrolled trembling or shaking movements in one or more parts
+of your body",19,108,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-05-15,2015-08-12,2
+"02-003","Infections and infestations","10046914","Vaginal infection","Vaginal infection",161,313,"Y","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-04,2016-03-04,3
+"02-003","Respiratory, thoracic and mediastinal
+disorders","10065880","Laryngeal mucositis","Irritation or sores in the lining of the voice box",226,328,"Y","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-12-08,2016-03-19,4
+"02-003","Nervous system disorders","10065784","Central nervous system necrosis","Destruction or death of tissue of the brain and/or spinal cor",258,311,"Y","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-01-09,2016-03-02,5
+"02-005","Gastrointestinal disorders","10010006","Colonic ulcer","Sore (ulcer) in the lining of the large bowe",255,327,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-08-23,2016-11-03,1
+"02-006","Infections and infestations","10065755","Lip infection","Infection of the lip or area around the mouth",60,253,"N","MILD","NOT RELATED","RECOVERED",2015-08-01,2016-02-10,1
+"02-006","Nervous system disorders","10041349","Somnolence","Sleepiness, the state of feeling drowsy, ready to fall aslee",267,295,"N","MILD","PROBABLY RELATED","RECOVERED",2016-02-24,2016-03-23,2
+"02-006","Endocrine disorders","10020705","Hyperparathyroidism","High level of hormone of the parathyroid glands causing high blood
+calcium levels (hypercalemia) and low blood phosphate (hypophosphaemia)",268,269,"Y","MILD","NOT RELATED","RECOVERED",2016-02-25,2016-02-26,3
+"02-006","Respiratory, thoracic and mediastinal
+disorders","10035623","Pleuritic pain","Pain in the lining of the chest cavity and/or lungs",330,345,"N","MODERATE","DEFINITELY RELEATED","RESOLVED WITH SEQUELAE",2016-04-27,2016-05-12,4
+"02-008","Gastrointestinal disorders","10023176","Jejunal stenosis","Narrowing of a area of the small bowel (jejunum",79,91,"Y","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-11-03,2015-11-15,1
+"02-008","Investigations","10062646","Pancreatic enzymes decreased","Decreased levels of pancreatic enzymes in a biological specimen",112,133,"N","MILD","NOT RELATED","RECOVERED",2015-12-06,2015-12-27,2
+"02-008","Nervous system disorders","10028041","Movements involuntary","Involuntary movements",119,359,"N","MILD","NOT RELATED","RECOVERED",2015-12-13,2016-08-09,3
+"02-008","Renal and urinary disorders","10065368","Urinary fistula","Abnormal hole between part of the urinary system and another
+organ or tissue",170,291,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-02-02,2016-06-02,4
+"02-009","Pregnancy, puerperium and perinatal
+conditions","10036595","Premature delivery","Birth before the 9th month of pregnancy (the normal length of
+pregnancy)",33,152,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-01-14,2016-05-12,1
+"02-009","Skin and subcutaneous tissue disorders","10016241","Fat atrophy","Shrinking of body fat",77,176,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-02-27,2016-06-05,2
+"02-009","Respiratory, thoracic and mediastinal
+disorders","10040975","Sleep apnea","Stoppage of breathing for short periods while sleeping",125,259,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-04-15,2016-08-27,3
+"02-009","Renal and urinary disorders","10037032","Proteinuria","More protein leaking into the urine than usual, often a sign of kidney
+disease",144,323,"N","MILD","NOT RELATED","RECOVERED",2016-05-04,2016-10-30,4
+"02-010","Renal and urinary disorders","10046543","Urinary incontinence","Inability to control the flow of urine from the bladde",28,144,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-22,2015-12-16,1
+"02-010","Infections and infestations","10064505","Stoma site infection","Infection involving a stoma (surgically created opening in the
+surface of the body)",75,289,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2015-10-08,2016-05-09,2
+"02-010","Gastrointestinal disorders","10065730","Ileal obstruction","Blockage in an area of the small bowel (ileum",361,364,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2016-07-20,2016-07-23,3
+"02-011","Injury, poisoning and procedural
+complications","10065828","Intraoperative urinary injury","Damage to the urinary tract during surgery",62,268,"Y","MILD","PROBABLY RELATED","RECOVERED",2015-12-08,2016-07-01,1
+"02-011","Metabolism and nutrition disorders","10012174","Dehydration","Dehydration (when your body does not have as much water and
+fluid as it should)",210,331,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2016-05-04,2016-09-02,2
+"02-011","Injury, poisoning and procedural
+complications","10006504","Bruising","Bruising",232,313,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-05-26,2016-08-15,3
+"02-011","Infections and infestations","10046914","Vaginal infection","Vaginal infection",333,359,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-09-04,2016-09-30,4
+"02-012","Cardiac disorders","10003586","Asystole","Type of cardiac arrest",318,322,"N","SEVERE","POSSIBLY RELATED","RECOVERED",2016-08-12,2016-08-16,1
+"02-013","Cardiac disorders","10003662","Atrial flutter","Abnormally fast regular heartbeat involving the upper chambers of
+the heart (atria)",48,298,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-02-14,2016-10-21,1
+"02-013","Injury, poisoning and procedural
+complications","10002544","Ankle fracture","Broken ankle bone",251,359,"N","MILD","PROBABLY RELATED","RECOVERED",2016-09-04,2016-12-21,2
+"02-013","Investigations","10029366","Neutrophil count decreased","Decreased number of a type of white blood cell
+(neutrophil/granulocyte)",284,315,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-10-07,2016-11-07,3
+"02-017","Infections and infestations","10064687","Device related infection","Infection at lthe location of a medical device",129,167,"N","MODERATE","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2015-08-12,2015-09-19,1
+"02-017","Hepatobiliary disorders","10004665","Biliary fistula","Hole between bile ducts and another orga",156,289,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-09-08,2016-01-19,2
+"02-017","Gastrointestinal disorders","10055291","Intra-abdominal hemorrhage","Bleeding in the belly",359,361,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-03-29,2016-03-31,3
+"02-018","Injury, poisoning and procedural complications","10065814","Ureteric anastomotic leak","Leakage from the ureter (a tube that carries urine down from the
+kidney to the bladder) due to breakdown of a anastomosis (surgical connection between two body structures)",2,179,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-11-24,2016-05-19,1
+"02-018","Gastrointestinal disorders","10038080","Rectal ulcer","Sore (ulcer) in the lining of the rectum",60,108,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-01-21,2016-03-09,2
+"02-018","Skin and subcutaneous tissue disorders","10006556","Bullous dermatitis","Skin condition with fluid-filled blister",170,216,"Y","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-05-10,2016-06-25,3
+"02-018","Psychiatric disorders","10022437","Insomnia","Difficulty sleeping or falling asleep",193,338,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-06-02,2016-10-25,4
+"02-018","Reproductive system and breast disorders","10018146","Genital edema","Swelling in the genitals",265,322,"N","MODERATE","PROBABLY RELATED","RECOVERED",2016-08-13,2016-10-09,5
+"02-019","Injury, poisoning and procedural complications","10065705","Pharyngeal anastomotic leak","Leakage from the pharynx (throat) due to breakdown of a anastomosis (surgical connection between two body structures)",69,241,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-04-25,2015-10-14,1
+"02-019","Gastrointestinal disorders","10065732","Jejunal obstruction","Blockage in an area of the small bowel (jejunum",111,245,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-06-06,2015-10-18,2
+"02-020","Infections and infestations","10014678","Endocarditis infective","Infection of the the endocardial layer of the heart (the innermost
+layer of tissue that lines the chambers of the heart)",79,133,"Y","MODERATE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-09-30,2015-11-23,1
+"02-020","Gastrointestinal disorders","10021328","Ileus","Partial or complete blockage of the small and/or large bowel.  Ileus
+is a functional rather than actual blockage of the bowel.",251,319,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-03-20,2016-05-27,2
+"02-020","Injury, poisoning and procedural
+complications","10065845","Intraoperative renal injury","Damage to the kidney during surgery",261,278,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-03-30,2016-04-16,3
+"02-020","Nervous system disorders","10002953","Aphonia","Inability to speak",274,278,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-04-12,2016-04-16,4
+"02-021","Eye disorders","10015829","Extraocular muscle paresis","Loss of muscle function of an extraocular muscle (one of the
+muscles that control movement of the eye)",1,340,"N","MODERATE","NOT RELATED","RECOVERED",2015-10-01,2016-09-04,1
+"02-021","Skin and subcutaneous tissue disorders","10028691","Nail discoloration","Change in finger or toenail colo",81,123,"N","MILD","DEFINITELY RELEATED","RECOVERED",2015-12-20,2016-01-31,2
 "02-021","Injury, poisoning and procedural
-complications","10065829","Intraoperative musculoskeletal injury","Damage to a muscle during surgery",155,178,"N","SEVERE","NOT RELATED","RESOLVED, RECOVERED",2015-11-02,2015-11-25,2
-"02-021","Respiratory, thoracic and mediastinal disorders","10038921","Retinoic acid syndrome","A collection of symptoms including fever, difficulty breathing, chest
-pain, fluid in the lung (seen on chest X-ray), fluid around the lungs and heart, and lack of oxygen first seen in patients receiving the drug retinoic acid",158,255,"N","MODERATE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-05,2016-02-10,3
-"02-021","Gastrointestinal disorders","10038072","Rectal pain","Rectal pain",264,322,"N","SEVERE","UNLIKELY RELATED","RECOVERED",2016-02-19,2016-04-17,4
-"02-022","Infections and infestations","10046571","Urinary tract infection","Urinary tract infection",13,236,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2016-01-11,2016-08-21,1
-"02-022","Gastrointestinal disorders","10038981","Retroperitoneal hemorrhage","bleeding in the retroperitoneal area (the space in the belly behind the peritoneum (the tissue that hold the organs in the abdomen)",336,359,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-11-29,2016-12-22,2
-"02-023","Cardiac disorders","10033557","Palpitations","Unpleasant sensation of irregular and/or forceful beating of the
-heart",117,199,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-11-16,2016-02-06,1
-"02-023","Respiratory, thoracic and mediastinal
-disorders","10035742","Pneumonitis","Inflammation of the lungs that may cause difficulty breathing and
-can be life-threatening",127,142,"N","MODERATE","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-11-26,2015-12-11,2
-"02-023","Gastrointestinal disorders","10055356","Upper gastrointestinal hemorrhage","Bleeding in the upper digestive tract (mouth, pharynx, esophagus
-[gullet or the tube that goes from mouth to stomach through which food passes], and stomach)",309,320,"N","SEVERE","PROBABLY RELATED","RECOVERED",2016-05-26,2016-06-06,3
-"02-024","Cardiac disorders","10034484","Pericarditis","Inflammation (swelling and redness) of the sac around the hear",98,291,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-03-24,2016-10-03,1
-"02-024","Injury, poisoning and procedural
-complications","10016173","Fall","Fall",123,227,"N","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2016-04-18,2016-07-31,2
-"02-026","Reproductive system and breast disorders","10006298","Breast pain","Breast pain",116,246,"Y","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-02-04,2016-06-13,1
-"02-027","Gastrointestinal disorders","10038064","Rectal hemorrhage","Bleeding in or from the rectum",60,142,"Y","SEVERE","POSSIBLY RELATED","RECOVERED",2016-01-15,2016-04-06,1
-"02-027","Cardiac disorders","10040639","Sick sinus syndrome","Collection of heart rhythm signs/symptoms that include: Sinus
-bradycardia (a slow heartbeat, Tachycardias (a fast heartbeat), Bradycardia-tachycardia (an alternating slow and fast heart rhythms)",87,296,"N","MODERATE","NOT RELATED","RECOVERED",2016-02-11,2016-09-07,2
-"02-027","Metabolism and nutrition disorders","10020639","Hyperglycemia","Increased blood sugar leve",305,335,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-09-16,2016-10-16,3
-"02-027","Nervous system disorders","10001949","Amnesia","Memory loss",315,316,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-09-26,2016-09-27,4
-"02-028","Respiratory, thoracic and mediastinal
-disorders","10023862","Laryngeal stenosis","Narrowing of the voice box",22,344,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-06-24,2016-05-11,1
-"02-028","Cardiac disorders","10034484","Pericarditis","Inflammation (swelling and redness) of the sac around the hear",161,193,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-10,2015-12-12,2
-"02-028","General disorders and administration site
-conditions","10058720","Edema trunk","Swelling of the trunk of the body",256,280,"Y","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-02-13,2016-03-08,3
-"03-001","Nervous system disorders","10053661","Oculomotor nerve disorder","Abnormal function of the nerve that is responsible for eyelid
-movement and for controling the size of the pupil",165,181,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2016-01-16,2016-02-01,1
-"03-001","Infections and infestations","10051472","Periorbital infection","Infection of the soft tissues around the eye socke",186,330,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-02-06,2016-06-29,2
-"03-001","Reproductive system and breast disorders","10018146","Genital edema","Swelling in the genitals",192,303,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2016-02-12,2016-06-02,3
-"03-001","Injury, poisoning and procedural complications","10065802","Bladder anastomotic leak","Leakage from bladder due to breakdown of a bladder anastomosis (surgical connection between two body structures)",347,356,"Y","MODERATE","NOT RELATED","RECOVERED",2016-07-16,2016-07-25,4
-"03-003","Nervous system disorders","10041349","Somnolence","Sleepiness, the state of feeling drowsy, ready to fall aslee",11,339,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-04-04,2016-02-26,1
-"03-004","Injury, poisoning and procedural
-complications","10065834","Intraoperative endocrine injury","Damage to the endocrine gland during surgery",284,299,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-01-15,2016-01-30,1
-"03-005","Infections and infestations","10059827","Rhinitis infective","Infection of the lining of the nose",158,214,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-08-25,2015-10-20,1
-"03-005","Cardiac disorders","10034040","Paroxysmal atrial tachycardia","Period of very rapid and regular heartbeats that begins and ends
-suddenly",333,353,"N","MODERATE","PROBABLY RELATED","RESOLVED, RECOVERED",2016-02-16,2016-03-07,2
-"03-009","Renal and urinary disorders","10037032","Proteinuria","More protein leaking into the urine than usual, often a sign of kidney
-disease",44,299,"N","MILD","NOT RELATED","RECOVERED",2015-11-24,2016-08-05,1
-"03-009","Investigations","10029366","Neutrophil count decreased","Decreased number of a type of white blood cell
-(neutrophil/granulocyte)",145,273,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-03-04,2016-07-10,2
-"03-011","Injury, poisoning and procedural
-complications","10041569","Spinal fracture","Broken bone in the spinal column",53,251,"N","MILD","NOT RELATED","RECOVERED",2015-08-17,2016-03-02,1
-"03-011","Nervous system disorders","10036653","Presyncope","Episode of near-fainting which may include lightheadedness
-dizziness, severe weakness, blurred vision, which may come before a fainting episode",55,252,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-19,2016-03-03,2
-"03-011","Reproductive system and breast disorders","10027313","Menorrhagia","Abnormally heavy bleeding during a women's period",298,365,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-04-18,2016-06-24,3
-"03-011","Injury, poisoning and procedural
-complications","10065831","Intraoperative breast injury","Damage to the breast tissue during surgery",338,348,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2016-05-28,2016-06-07,4
-"03-013","Respiratory, thoracic and mediastinal
-disorders","10021143","Hypoxia","Decrease in the oxygen supply to a tissue",57,204,"N","MODERATE","NOT RELATED","RECOVERED",2015-11-09,2016-04-04,1
-"03-013","Infections and infestations","10062632","Gallbladder infection","Gallbladder infection",63,217,"Y","MILD","NOT RELATED","RECOVERED",2015-11-15,2016-04-17,2
-"03-013","Gastrointestinal disorders","10045271","Typhlitis","Imflammation (swelling and redness) and/or necrosis (death of
-tissue) of the appendix. cecum, and/or ileum (both areas of the large bowel)",160,182,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-20,2016-03-13,3
-"03-013","Nervous system disorders","10036653","Presyncope","Episode of near-fainting which may include lightheadedness
-dizziness, severe weakness, blurred vision, which may come before a fainting episode",177,243,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-03-08,2016-05-13,4
-"03-013","Vascular disorders","10034578","Peripheral ischemia","Poor blood supply to extremities (arms and/or legs)",322,329,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-07-31,2016-08-07,5
-"03-014","Nervous system disorders","10063761","Reversible posterior leukoencephalopathy syndrome","Abnormal changes in the brain that can cause a collection of
-symptoms including headache, confusion, seizures, and vision loss associated with MRI imaging findings (RPLS)",274,343,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-05-31,2016-08-08,1
-"03-016","Renal and urinary disorders","10037032","Proteinuria","More protein leaking into the urine than usual, often a sign of kidney
-disease",319,320,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-06-08,2016-06-09,1
-"03-017","Gastrointestinal disorders","10055242","Duodenal hemorrhage","Bleeding in or from an area of the small bowel (duodenum",37,184,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-08-18,2016-01-12,1
-"03-017","Infections and infestations","10040872","Skin infection","Infection of the skin",103,268,"Y","MILD","UNLIKELY RELATED","RECOVERED",2015-10-23,2016-04-05,2
-"03-017","General disorders and administration site
-conditions","10062466","Localized edema","Swelling localized to some part of the body",216,329,"N","MILD","DEFINITELY RELEATED","RESOLVED WITH SEQUELAE",2016-02-13,2016-06-05,3
-"03-017","Cardiac disorders","10027786","Mobitz (type) II atrioventricular block","Irregular heartbeat.  A delay or blockage of electrical signals from
-one part of the heart (atrium) to another (ventricle).  Missed heartbeats occur suddenly and unexpectedly. Determined by EKG pattern.",245,327,"N","MILD","NOT RELATED","RECOVERED",2016-03-13,2016-06-03,4
-"03-018","Investigations","10014383","Electrocardiogram QT corrected interval
-prolonged","Abnormal electrical conduction within the heart",30,261,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-02-27,2015-10-16,1
-"03-018","Infections and infestations","10006259","Breast infection","Breast infection",301,310,"N","SEVERE","UNLIKELY RELATED","RECOVERED",2015-11-25,2015-12-04,2
-"03-018","Gastrointestinal disorders","10065730","Ileal obstruction","Blockage in an area of the small bowel (ileum",303,349,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-11-27,2016-01-12,3
-"03-018","Nervous system disorders","10020508","Hydrocephalus","Excess fluid in brain",337,359,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-12-31,2016-01-22,4
-"03-019","Gastrointestinal disorders","10050094","Duodenal stenosis","Narrowing of an area of the small bowel (duodenum",37,361,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-05-29,2016-04-17,1
-"03-019","Skin and subcutaneous tissue disorders","10046735","Urticaria","Hives",75,342,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2015-07-06,2016-03-29,2
-"03-020","Nervous system disorders","10060929","Accessory nerve disorder","Abnormal function of the nerve responsible for movement of the
-shoulders and turning of the head",81,222,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-04-29,2015-09-17,1
-"03-020","General disorders and administration site
-conditions","10017577","Gait disturbance","Limp or difficulty walking",313,341,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-12-17,2016-01-14,2
-"03-023","Gastrointestinal disorders","10012318","Dental caries","Cavities or tooth decay",96,338,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-08-08,2016-04-06,1
-"03-025","Gastrointestinal disorders","10021307","Ileal stenosis","Narrowing of a area of the small bowel (ileum",57,231,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-10-25,2016-04-16,1
-"03-025","Reproductive system and breast disorders","10064026","Pelvic floor muscle weakness","Weakness in the “pelvic floor”  (the group of muscles that form a
-sling or hammock across the opening of a woman’s pelvis)",123,127,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-12-30,2016-01-03,2
-"03-025","Gastrointestinal disorders","10054520","Oral dysesthesia","Burning or tingling sensation on the lips, tongue, or entire mouth",171,255,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-02-16,2016-05-10,3
-"03-025","Hepatobiliary disorders","10004665","Biliary fistula","Hole between bile ducts and another orga",229,300,"N","MILD","NOT RELATED","RECOVERED",2016-04-14,2016-06-24,4
-"03-025","Gastrointestinal disorders","10056681","Salivary duct inflammation","Inflammation (swelling and redness) of the salivary duct (a tube
-through which saliva (spit) is carried from the salivary gland to the mouth)",365,163,"N","SEVERE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-08-28,2016-02-08,5
-"03-026","Metabolism and nutrition disorders","10020639","Hyperglycemia","Increased blood sugar leve",115,221,"N","MILD","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2016-03-11,2016-06-25,1
-"03-026","Nervous system disorders","10028041","Movements involuntary","Involuntary movements",129,304,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-03-25,2016-09-16,2
-"03-026","Cardiac disorders","10040741","Sinus bradycardia","Slow heartbeat; regular rhythm",312,343,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-09-24,2016-10-25,3
-"03-026","Infections and infestations","10061640","Anorectal infection","Infection of the anal or rectal area",343,345,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-10-25,2016-10-27,4
-"03-026","Musculoskeletal and connective tissue
-disorders","10031282","Osteoporosis","Bone thinning",361,361,"N","MILD","PROBABLY RELATED","RECOVERED",2016-11-12,2016-11-12,5
-"03-027","Injury, poisoning and procedural
-complications","10065790","Fallopian tube perforation","Hole in the wall of the fallopian tube (tube between ovary to uterus
-[womb])",181,216,"N","SEVERE","POSSIBLY RELATED","RECOVERED",2016-06-17,2016-07-22,1
-"03-027","Infections and infestations","10034835","Pharyngitis","Infection in the throat",183,189,"N","MILD","NOT RELATED","RECOVERED",2016-06-19,2016-06-25,2
-"03-027","Respiratory, thoracic and mediastinal
-disorders","10065746","Bronchopulmonary hemorrhage","Bleeding from the lungs",242,342,"N","MILD","NOT RELATED","RECOVERED",2016-08-17,2016-11-25,3
-"03-027","Respiratory, thoracic and mediastinal
-disorders","10011224","Cough","Cough",250,324,"N","MILD","NOT RELATED","RECOVERED",2016-08-25,2016-11-07,4
-"03-028","Musculoskeletal and connective tissue
-disorders","10065794","Muscle weakness right-sided","Muscle weakness of the right side of the body",57,66,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-06-10,2015-06-19,1
-"03-028","Hepatobiliary disorders","10019705","Hepatic pain","Liver pain",70,96,"N","MODERATE","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2015-06-23,2015-07-19,2
-"03-028","Gastrointestinal disorders","10017877","Gastrointestinal fistula","Gastrointestinal fistula:  Abnormal hole between an organ of the
-digestive tract and another organ or tissue",294,345,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-02,2016-03-24,3
-"03-028","Hepatobiliary disorders","10004665","Biliary fistula","Hole between bile ducts and another orga",322,348,"N","SEVERE","PROBABLY RELATED","RECOVERED",2016-03-01,2016-03-27,4
-"04-001","Gastrointestinal disorders","10065747","Cecal hemorrhage","Bleeding in the cecum (a portion of the large bowel",86,204,"N","MILD","DEFINITELY RELEATED","RECOVERED",2015-03-30,2015-07-26,1
-"04-001","Gastrointestinal disorders","10065721","Anal mucositis","Irritation or sores in the lining of the anu",137,271,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-05-20,2015-10-01,2
-"04-001","Nervous system disorders","10013573","Dizziness","Dizziness (or sensation of lightheadedness, unsteadiness, or
-giddiness)",233,269,"N","MODERATE","PROBABLY RELATED","RESOLVED, RECOVERED",2015-08-24,2015-09-29,3
-"04-001","Immune system disorders","10052015","Cytokine release syndrome","Potentially life-threatening condition during a drug infusion which may cause low blood pressure, rash, fever, chills, difficulty breathing, rapid heartbeat, nausea, and kidney damage",337,348,"Y","MODERATE","PROBABLY RELATED","RECOVERED",2015-12-06,2015-12-17,4
-"04-004","Injury, poisoning and procedural
-complications","10056745","Postoperative thoracic procedure
-complication","Problem that occurs in the chest cavity as a result of surgery",27,129,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-09-07,2015-12-18,1
-"04-005","Musculoskeletal and connective tissue
-disorders","10048706","Joint range of motion decreased","Joint stiffness",11,200,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-05-20,2015-11-25,1
-"04-005","Respiratory, thoracic and mediastinal
-disorders","10035623","Pleuritic pain","Pain in the lining of the chest cavity and/or lungs",16,57,"Y","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-05-25,2015-07-05,2
-"04-005","Gastrointestinal disorders","10058096","Pancreatic necrosis","Death of pancreas tissue",231,311,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-12-26,2016-03-15,3
-"04-005","Cardiac disorders","10028606","Myocarditis","Inflammation (swelling and redness) of the heart muscle",299,325,"N","MILD","NOT RELATED","RECOVERED",2016-03-03,2016-03-29,4
-"04-007","Respiratory, thoracic and mediastinal
-disorders","10065786","Laryngeal fistula","Hole between the voice box and another organ",65,320,"Y","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-04,2016-06-15,1
-"04-007","Skin and subcutaneous tissue disorders","10021013","Hypohidrosis","Reduced sweating",91,207,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-10-30,2016-02-23,2
-"04-007","Injury, poisoning and procedural
-complications","10065849","Injury to jugular vein","Damage to a neck vein that bring deoxygenated blood from the
-head back to the heart (jugular vein)",176,330,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-01-23,2016-06-25,3
-"04-007","Reproductive system and breast disorders","10046809","Uterine pain","Pain in the uterus (womb)",197,239,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-02-13,2016-03-26,4
-"04-008","Eye disorders","10013774","Dry eye","Dry eye",290,298,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-03-05,2016-03-13,1
-"04-009","Respiratory, thoracic and mediastinal
-disorders","10037375","Pulmonary edema","Abnormal build up of fluid in the lungs",2,171,"Y","MODERATE","DEFINITELY RELEATED","RECOVERED",2015-08-29,2016-02-14,1
-"04-009","Infections and infestations","10050823","Lymph gland infection","Infection of lymph node/gland",93,178,"N","SEVERE","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-11-28,2016-02-21,2
-"04-009","Cardiac disorders","10010783","Constrictive pericarditis","Inflammation (swelling and redness) of the sac-like covering of the
-heart (the pericardium) causing abnormal heart function",322,344,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-07-14,2016-08-05,3
-"04-010","Psychiatric disorders","10042458","Suicidal ideation","Thoughts of taking ones own life",60,90,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-04-14,2015-05-14,1
-"04-010","Musculoskeletal and connective tissue
-disorders","10065799","Fibrosis deep connective tissue","Scar or thickening of the layer below the superficial fat and includes
-muscle and all connective tissue down to bone",128,286,"N","MILD","NOT RELATED","RECOVERED",2015-06-21,2015-11-26,2
-"04-010","Injury, poisoning and procedural
-complications","10003162","Arterial injury","Damage to an artery (a blood vessel that carries blood from the
-heart to the rest of the body)",239,266,"N","MILD","PROBABLY RELATED","RECOVERED",2015-10-10,2015-11-06,3
-"04-011","Hepatobiliary disorders","10008612","Cholecystitis","Inflammation (swelling and redness) of the gallbladder possibly
-associated with gallstones",273,302,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-06-26,2016-07-25,1
-"04-011","Gastrointestinal disorders","10013832","Duodenal perforation","Hole in an area of the small bowel (duodenum",336,341,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-08-28,2016-09-02,2
-"04-012","Investigations","10007613","Cardiac troponin T increased","Increased blood level of a heart muscle protein (troponin T)
-indicating damage to the heart muscle",89,123,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-15,2015-09-18,1
-"04-012","Immune system disorders","10040400","Serum sickness","Allergic reaction to certain medications, injected proteins, or
-antisera (blood product) used to treat certain medical conditions (such as an infectious or poisonous substance)",169,266,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-11-03,2016-02-08,2
-"04-012","Investigations","10001551","Alanine aminotransferase increased","Increased blood level of a liver enzyme (ALT/SGPT",239,259,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2016-01-12,2016-02-01,3
-"04-012","Gastrointestinal disorders","10018043","Gastroparesis","Partial paralysis or loss of muscle function (paresis) of the stomach
-(""gastro-""), resulting in food remaining in the stomach for a longer period of time than normal",296,338,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-03-09,2016-04-20,4
-"04-013","Nervous system disorders","10003074","Arachnoiditis","Inflammation (swelling and redness) of the arachnoid membrane
-(one of the membranes that surround and protect the nerves of the central nervous system, including the brain and spinal cord)",169,173,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-07-09,2015-07-13,1
-"04-013","Injury, poisoning and procedural complications","10065788","Fallopian tube anastomotic leak","Leakage due to breakdown of a fallopian tube (tube between ovary
-to uterus [womb]) anastomosis (surgical connection of two separate body structures)",216,339,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-08-25,2015-12-26,2
-"04-013","Metabolism and nutrition disorders","10001680","Alkalosis","Less acid than normal in the blood",317,326,"N","SEVERE","NOT RELATED","RECOVERED",2015-12-04,2015-12-13,3
-"04-013","Metabolism and nutrition disorders","10029883","Obesity","Overweight by 20% or more of your ideal body weight/height ratio.
-Also having a high amount of body fat.",332,342,"Y","MODERATE","NOT RELATED","RECOVERED",2015-12-19,2015-12-29,4
-"04-013","Nervous system disorders","10028524","Myelitis","Inflammation (swelling and redness) of the spinal cor",362,365,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-01-18,2016-01-21,5
-"04-014","Gastrointestinal disorders","10055356","Upper gastrointestinal hemorrhage","Bleeding in the upper digestive tract (mouth, pharynx, esophagus
-[gullet or the tube that goes from mouth to stomach through which food passes], and stomach)",179,351,"N","MILD","PROBABLY RELATED","RECOVERED",2016-05-12,2016-10-31,1
-"04-016","Musculoskeletal and connective tissue
-disorders","10044684","Trismus","Difficulty or limitation in ability to open mouth",205,311,"N","MODERATE","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-19,2016-02-02,1
-"04-016","Cardiac disorders","10034040","Paroxysmal atrial tachycardia","Period of very rapid and regular heartbeats that begins and ends
-suddenly",230,265,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-11-13,2015-12-18,2
-"04-016","Respiratory, thoracic and mediastinal
-disorders","10023862","Laryngeal stenosis","Narrowing of the voice box",230,364,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-11-13,2016-03-26,3
-"04-016","Nervous system disorders","10013911","Dysgeusia","Taste changes",301,301,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-01-23,2016-01-23,4
-"04-017","Infections and infestations","10069138","Papulopustular rash","Rash made up of papules (a small, raised pimple) and pustules (a
-small pus filled blister), typically appearing in face, scalp, and upper chest",14,122,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-12-06,2016-03-23,1
-"04-017","General disorders and administration site
-conditions","10033371","Pain","Pain",163,225,"N","SEVERE","DEFINITELY RELEATED","RECOVERED",2016-05-03,2016-07-04,2
-"04-017","Respiratory, thoracic and mediastinal
-disorders","10053481","Bronchopleural fistula","Abnormal hole between the lower breathing tube and the body
-cavity that surrounds the lungs",182,231,"N","MILD","NOT RELATED","RECOVERED",2016-05-22,2016-07-10,3
-"04-017","Ear and labyrinth disorders","10065838","Middle ear inflammation","Inflammation (swelling and redness) to the middle ea",283,364,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-08-31,2016-11-20,4
-"04-017","General disorders and administration site
-conditions","10011914","Death NOS","Death of unknown cause",317,355,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-10-04,2016-11-11,5
-"04-018","Gastrointestinal disorders","10047700","Vomiting","Vomiting",46,227,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-09,2016-05-08,1
-"04-018","Injury, poisoning and procedural complications","10065788","Fallopian tube anastomotic leak","Leakage due to breakdown of a fallopian tube (tube between ovary
-to uterus [womb]) anastomosis (surgical connection of two separate body structures)",92,287,"Y","MODERATE","UNLIKELY RELATED","RECOVERED",2015-12-25,2016-07-07,2
-"04-018","Vascular disorders","10025233","Lymphedema","Swelling of tissues due to excessive collection of lymph (the clear
-fluid that is collected from tissues throughout the body) due to a blockage in the lymphatic vessels",173,236,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-03-15,2016-05-17,3
-"04-018","Investigations","10005561","Blood gonadotrophin abnormal","Abnormal blood level of gonadotrophin (any hormone that stimulates the gonads [the organs that produce sperm or eggs])",230,255,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2016-05-11,2016-06-05,4
-"04-019","Metabolism and nutrition disorders","10052426","Glucose intolerance","Abnormal control of blood sugar leve",3,146,"Y","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-07-18,2015-12-08,1
-"04-019","Gastrointestinal disorders","10065851","Esophageal fistula","Hole between the esophagus (gullet or the tube that goes from mouth to stomach through which food passes) and another organ",153,234,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-15,2016-03-05,2
-"04-019","Gastrointestinal disorders","10055300","Jejunal hemorrhage","Bleeding in an area of the small bowel (jejunum",194,233,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2016-01-25,2016-03-04,3
-"04-019","Endocrine disorders","10012205","Delayed puberty","Unusually late sexual maturit",306,362,"N","MODERATE","NOT RELATED","RECOVERED",2016-05-16,2016-07-11,4
-"04-020","Neoplasms benign, malignant and
-unspecified (incl cysts and polyps)","10028533","Myelodysplastic syndrome","Decreased production of blood cells by the bone marrow",78,95,"N","SEVERE","DEFINITELY RELEATED","RECOVERED",2016-02-03,2016-02-20,1
-"04-021","Nervous system disorders","10044565","Tremor","Uncontrolled trembling or shaking movements in one or more parts
-of your body",42,54,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-01-28,2016-02-09,1
-"04-021","Investigations","10005452","Blood corticotrophin decreased","Decreased blood level of corticotrophin (a hormone produced by
-the pituitary gland)",61,247,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-16,2016-08-20,2
-"04-021","Eye disorders","10046851","Uveitis","Inflammation (swelling and redness) of the middle layer of the eye
-(uvea)",194,211,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-06-28,2016-07-15,3
-"04-021","Gastrointestinal disorders","10062570","Enterovesical fistula","Hole between the urinary bladder and some part of the intestines",205,336,"Y","MODERATE","UNLIKELY RELATED","RECOVERED",2016-07-09,2016-11-17,4
-"04-021","Infections and infestations","10023874","Laryngitis","Inflammation (swelling and redness) of the voice box (larynx) that is
-usually associated with hoarseness or loss of voice",215,234,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-07-19,2016-08-07,5
-"04-024","Hepatobiliary disorders","10036206","Portal vein thrombosis","Blood clot in hepatic (liver) portal vein (a major blood vessel in the
-abdominal cavity that drains blood from the digestive tract and spleen)",39,348,"N","MILD","PROBABLY RELATED","RECOVERED",2015-12-02,2016-10-06,1
-"04-024","Nervous system disorders","10061457","Facial nerve disorder","Abnormal function of the nerve that controls facial expressio",129,218,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-03-01,2016-05-29,2
-"04-024","Gastrointestinal disorders","10013830","Duodenal obstruction","Blockage of an area of the small bowel (duodenum",204,249,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-05-15,2016-06-29,3
-"04-024","Nervous system disorders","10065836","IVth nerve disorder","Abnormal function of the nerve that is responsible for eyelid
-movement",266,325,"N","MILD","PROBABLY RELATED","RESOLVED WITH SEQUELAE",2016-07-16,2016-09-13,4
-"04-025","Injury, poisoning and procedural
-complications","10040102","Seroma","Pocket of clear fluid that sometimes develops in the body after
-surgery",75,229,"N","MILD","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2015-06-24,2015-11-25,1
-"04-025","Musculoskeletal and connective tissue
-disorders","10003988","Back pain","Back pain",162,233,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-09-19,2015-11-29,2
-"04-026","Musculoskeletal and connective tissue
-disorders","10016750","Flank pain","Pain in the area on the side of the body in the region below the ribs
-and above the hip",32,308,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-04-26,2016-01-27,1
-"04-026","Gastrointestinal disorders","10031009","Oral pain","Mouth pain",184,249,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-09-25,2015-11-29,2
-"04-027","Skin and subcutaneous tissue disorders","10046735","Urticaria","Hives",49,356,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-02,2016-09-04,1
-"04-027","Gastrointestinal disorders","10010001","Colonic perforation","Hole in the large bowe",358,362,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-09-06,2016-09-10,2
-"05-002","Neoplasms benign, malignant and
-unspecified (incl cysts and polyps)","10045158","Tumor pain","Pain in the area of the tumor",255,346,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-10-07,2016-01-06,1
-"05-003","Nervous system disorders","10041349","Somnolence","Sleepiness, the state of feeling drowsy, ready to fall aslee",55,106,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-25,2016-01-15,1
-"05-003","Psychiatric disorders","10024421","Libido increased","Increased sexual desire",75,268,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-12-15,2016-06-25,2
-"05-003","Injury, poisoning and procedural
-complications","10065848","Intraoperative venous injury","Damage to a vein (a blood vessel that carries blood to the heart)
-during surgery",172,229,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-03-21,2016-05-17,3
-"05-003","Injury, poisoning and procedural
-complications","10046810","Uterine perforation","Hole in the uterus (womb)",208,365,"N","MILD","NOT RELATED","RECOVERED",2016-04-26,2016-09-30,4
-"05-005","Investigations","10040139","Serum amylase increased","Increased blood level of a digestive enzyme (amylase",45,95,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-11-07,2015-12-27,1
-"05-005","Investigations","10005332","Blood antidiuretic hormone abnormal","Abnomal level of antidiuretic hormone (a hormone that regulates th
-body's retention of water)",169,365,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-03-10,2016-09-22,2
-"05-007","Respiratory, thoracic and mediastinal
-disorders","10037400","Pulmonary hypertension","High blood pressure of the blood vessels in the lungs",199,326,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-01,2016-02-05,1
-"05-008","General disorders and administration site
-conditions","10028154","Multi-organ failure","Progressive failure of the lungs, liver, kidney, and clotting
-mechanisms",232,326,"N","MILD","PROBABLY RELATED","RECOVERED",2016-05-25,2016-08-27,1
-"05-009","Endocrine disorders","10011655","Cushingoid","Problem characterized by signs that resemble Cushing's disease or
-syndrome due to too much steroids",34,143,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-01-02,2016-04-20,1
-"05-009","Gastrointestinal disorders","10051886","Gastric necrosis","Death of tissue of the stomach lining",289,331,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-09-13,2016-10-25,2
-"05-009","Reproductive system and breast disorders","10018801","Gynecomastia","Enlarged breasts in males",333,356,"Y","MILD","NOT RELATED","RECOVERED",2016-10-27,2016-11-19,3
-"05-011","Respiratory, thoracic and mediastinal
-disorders","10037375","Pulmonary edema","Abnormal build up of fluid in the lungs",43,99,"Y","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-04-24,2015-06-19,1
-"05-011","Gastrointestinal disorders","10065719","Jejunal fistula","Hole between an area in the small bowel (jejunum) and another
-organ",322,322,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-01-28,2016-01-28,2
-"05-012","Renal and urinary disorders","10064848","Chronic kidney disease","Gradual (and usually permanent) loss of kidney functio",80,337,"N","MODERATE","DEFINITELY RELEATED","RECOVERED",2015-10-20,2016-07-03,1
-"05-013","Cardiac disorders","10061389","Tricuspid valve disease","Defect in the function of the tricuspid valve (a valve between the
-right upper [atria] and lower chambers [ventricles] of the heart)",51,336,"N","SEVERE","UNLIKELY RELATED","RECOVERED",2015-12-05,2016-09-15,1
-"05-013","Renal and urinary disorders","10048994","Bladder spasm","Sudden and involuntary contraction of the bladde",113,349,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-05,2016-09-28,2
-"05-013","Gastrointestinal disorders","10012727","Diarrhea","Diarrhea",147,316,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-03-10,2016-08-26,3
-"05-013","Infections and infestations","10039413","Salivary gland infection","Salivary gland infection",358,363,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2016-10-07,2016-10-12,4
-"05-014","Gastrointestinal disorders","10038062","Rectal fistula","Hole between rectum and another organ",365,2,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-05-24,2015-05-27,1
-"05-015","Reproductive system and breast disorders","10065791","Fallopian tube stenosis","Narrowing of Fallopian tube (tube between ovary to uterus [womb])",100,182,"N","MILD","NOT RELATED","RECOVERED",2016-02-12,2016-05-04,1
-"05-015","Cardiac disorders","10003586","Asystole","Type of cardiac arrest",179,218,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-05-01,2016-06-09,2
-"05-015","Gastrointestinal disorders","10003445","Ascites","Fluid collection in the abdomen",365,247,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-11-03,2016-07-08,3
-"05-016","General disorders and administration site
-conditions","10016059","Facial pain","Face pain",49,64,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-09-04,2015-09-19,1
-"05-016","Vascular disorders","10042569","Superior vena cava syndrome","Blockage of blood flow in the superior vena cava (the large vein tha
-carries blood from the upper body to the heart)",215,262,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-02-17,2016-04-04,2
-"05-016","Infections and infestations","10014801","Endophthalmitis","Inflammation (swelling and redness) of the internal parts of the eye",317,334,"N","MILD","DEFINITELY RELEATED","RECOVERED",2016-05-29,2016-06-15,3
-"05-018","Infections and infestations","10015929","Eye infection","Infection of the eye",185,280,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-06-03,2016-09-06,1
-"05-019","Nervous system disorders","10015832","Extrapyramidal disorder","Restless, repetitive, or involuntary movements and rapid speech",160,257,"Y","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-04-25,2016-07-31,1
-"05-020","Reproductive system and breast disorders","10039757","Scrotal pain","Pain of  the scrotum or its contents (testes)",133,330,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-07-10,2016-01-23,1
-"05-021","Cardiac disorders","10010783","Constrictive pericarditis","Inflammation (swelling and redness) of the sac-like covering of the
-heart (the pericardium) causing abnormal heart function",204,279,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-05-27,2016-08-10,1
-"05-022","Nervous system disorders","10019211","Headache","Headache or head pain",127,241,"N","MILD","NOT RELATED","RECOVERED",2015-07-27,2015-11-18,1
-"05-022","Hepatobiliary disorders","10017636","Gallbladder obstruction","Blockage in the bile ducts",177,309,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-09-15,2016-01-25,2
-"05-022","Infections and infestations","10065765","Cranial nerve infection","Infection of the nerves that come from the brain and exit through
-openings in the skull",216,316,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-10-24,2016-02-01,3
-"05-022","General disorders and administration site
-conditions","10042435","Sudden death NOS","Sudden death of unknown cause(s)",246,314,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-23,2016-01-30,4
-"05-023","Skin and subcutaneous tissue disorders","10034966","Photosensitivity","Increased skin sensitivity to sunligh",22,32,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-07-12,2015-07-22,1
-"05-023","Injury, poisoning and procedural
+complications","10065749","Tracheostomy site bleeding","bleeding in the site of a surgical procedure to create an opening
+through the neck into the trachea (windpipe)",173,308,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-03-21,2016-08-03,3
+"02-021","Psychiatric disorders","10026749","Mania","Extremely elevated mood, energy, unusual thought patterns, and
+sometimes psychosis (mental state often described as involving a ""loss of contact with reality"")",293,361,"Y","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-07-19,2016-09-25,4
+"02-022","Vascular disorders","10020772","Hypertension","High blood pressure",294,329,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-10-15,2016-11-19,1
+"02-023","Injury, poisoning and procedural
+complications","10065887","Vaginal anastomotic leak","Leakage from the vagina due to breakdown of a anastomosis
+(surgical connection between two body structures)",131,351,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-04-14,2016-11-20,1
+"02-023","Investigations","10003481","Aspartate aminotransferase increased","Increased blood level of a liver enzyme (AST/SGOT",232,336,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-07-24,2016-11-05,2
+"02-023","Psychiatric disorders","10012218","Delirium","Sudden severe confusion and rapid changes in brain function tha
+occur with physical or mental illness",242,328,"Y","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-08-03,2016-10-28,3
+"02-024","Hepatobiliary disorders","10019705","Hepatic pain","Liver pain",78,177,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-05-16,2015-08-23,1
+"02-024","Infections and infestations","10037888","Rash pustular","Skin rash characterized by pus-containing blister",214,356,"Y","MODERATE","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-09-29,2016-02-18,2
+"02-026","Reproductive system and breast disorders","10065813","Vaginal fistula","Abnormal hole between the vagina and another organ or tissue",45,314,"N","SEVERE","NOT RELATED","RESOLVED, RECOVERED",2015-05-17,2016-02-10,1
+"02-026","Musculoskeletal and connective tissue
+disorders","10065800","Joint range of motion decreased lumbar
+spine","Stiff lower back",57,273,"N","MILD","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2015-05-29,2015-12-31,2
+"02-026","Investigations","10055599","Hemoglobin increased","Decrease of a red blood cell protein (hemoglobin) that carries
+oxygen in the body",189,227,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-10-08,2015-11-15,3
+"02-026","Infections and infestations","10062255","Soft tissue infection","Infection of soft body tissue",201,307,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-20,2016-02-03,4
+"02-026","Reproductive system and breast disorders","10043345","Testicular pain","Pain in the testis",220,220,"N","MODERATE","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-08,2015-11-08,5
+"02-027","Gastrointestinal disorders","10009998","Colonic hemorrhage","Bleeding in the large bowe",145,351,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2015-07-30,2016-02-21,1
+"02-027","Cardiac disorders","10053565","Pericardial tamponade","Compression of the heart that occurs when blood or fluid builds up
+in the space between the myocardium (the muscle of the heart) and the pericardium (the outer covering sac of the heart) preventing enough blood delivery",159,254,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-08-13,2015-11-16,2
+"02-027","Infections and infestations","10027199","Meningitis","Inflammation (swelling and redness) of the connective tissue surrounding the brain and spinal cord usually a result of infection",171,217,"N","SEVERE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-08-25,2015-10-10,3
+"02-027","General disorders and administration site
+conditions","10033371","Pain","Pain",283,304,"Y","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-15,2016-01-05,4
+"02-028","Nervous system disorders","10056238","Phantom pain","Pain in a limb or organ that has been amputated",114,171,"N","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-08-16,2015-10-12,1
+"02-028","Musculoskeletal and connective tissue
+disorders","10065777","Soft tissue necrosis lower limb","Death of soft tissue of the legs",207,310,"Y","MODERATE","NOT RELATED","RECOVERED",2015-11-17,2016-02-28,2
+"02-028","Injury, poisoning and procedural
+complications","10042127","Stomal ulcer","Open sore surronding a stoma (a surgically created opening in the
+digestive tract for the discharge of body wastes)",309,325,"Y","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2016-02-27,2016-03-14,3
+"02-029","Infections and infestations","10062112","Splenic infection","Infection of the spleen",273,326,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-01-23,2016-03-16,1
+"02-029","Injury, poisoning and procedural
+complications","10065887","Vaginal anastomotic leak","Leakage from the vagina due to breakdown of a anastomosis
+(surgical connection between two body structures)",311,322,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-03-01,2016-03-12,2
+"03-001","Nervous system disorders","10060890","Trigeminal nerve disorder","Abnormal function of the nerve responsible for feeling in the face
+and control of the muscles for chewing",151,298,"N","MODERATE","NOT RELATED","RESOLVED WITH SEQUELAE",2015-09-21,2016-02-15,1
+"03-001","Gastrointestinal disorders","10065727","Esophageal necrosis","Death of tissue in the esophagus (gullet or the tube that goes from
+mouth to stomach through which food passes)",234,295,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-12-13,2016-02-12,2
+"03-001","Injury, poisoning and procedural
+complications","10006634","Burn","Burn",296,362,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-02-13,2016-04-19,3
+"03-002","Investigations","10005778","Blood prolactin abnormal","Abnormal blood level of prolactin (a hormone secreted by the
+pituitary gland that stimulates milk production)",39,289,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-10-10,2016-06-16,1
+"03-002","Renal and urinary disorders","10019450","Hematuria","Blood in the urine",67,289,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-11-07,2016-06-16,2
+"03-002","Respiratory, thoracic and mediastinal
+disorders","10065735","Laryngeal inflammation","Swelling and redness involving the voice box",140,271,"N","MILD","PROBABLY RELATED","RECOVERED",2016-01-19,2016-05-29,3
+"03-002","Cardiac disorders","10069501","Left ventricular systolic dysfunction","Decrease in heart's ability to pump blood during the ""active"" phase
+of the heartbeat (systole)",263,321,"N","MILD","PROBABLY RELATED","RECOVERED",2016-05-21,2016-07-18,4
+"03-004","Gastrointestinal disorders","10010774","Constipation","Constipation",62,96,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-02,2016-03-07,1
+"03-004","Blood and lymphatic system disorders","10024378","Leukocytosis","Increased number of white blood cells (leukocytes) in the periphera
+blood",73,194,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-02-13,2016-06-13,2
+"03-004","Metabolism and nutrition disorders","10020670","Hypermagnesemia","Increased blood level of magnesium",81,134,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-02-21,2016-04-14,3
+"03-004","Investigations","10005364","Blood bilirubin increased","Increased blood level of a liver pigment (bilirubin) often a sign of
+liver problems",156,317,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2016-05-06,2016-10-14,4
+"03-004","Eye disorders","10047656","Vitreous hemorrhage","Rupture of blood vessels in the retina causing bleeding into the
+vitreous humor (the clear gel/fluid that fills the eyeball)",361,361,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-11-27,2016-11-27,5
+"03-005","Investigations","10035528","Platelet count decreased","Decreased number of a type of blood cell that helps to clot blood
+(platelet)",67,115,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-06-20,2015-08-07,1
+"03-005","Investigations","10011368","Creatinine increased","Increased blood level of creatinine (a substance normally eliminated
+by the kidneys into the urine)",239,247,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-12-09,2015-12-17,2
+"03-005","Injury, poisoning and procedural
 complications","10037767","Radiation recall reaction (dermatologic)","Inflammation (swelling and redness) of the skin caused by drugs
-after radiation therapy",56,341,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-08-15,2016-05-26,2
-"05-023","Blood and lymphatic system disorders","10019491","Hemolysis","Destruction of red blood cells",75,254,"N","MODERATE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-09-03,2016-02-29,3
-"05-023","Gastrointestinal disorders","10009887","Colitis","Inflammation (swelling and redness) of the large bowel (colon",172,239,"Y","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-12-09,2016-02-14,4
-"05-024","Immune system disorders","10002218","Anaphylaxis","Serious, life-threatening allergic reaction requiring immediate
-medical treatment by your doctor.  The reaction may include extremely low blood pressure, swelling of the throat, difficulty breathing, and loss of consciousness.",317,346,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-04-28,2016-05-27,1
-"05-025","Gastrointestinal disorders","10063190","Rectal mucositis","Irritation or sores in the lining of the rectum",45,330,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-12-29,2016-10-09,1
-"05-025","Cardiac disorders","10034484","Pericarditis","Inflammation (swelling and redness) of the sac around the hear",266,358,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-08-06,2016-11-06,2
-"05-025","Gastrointestinal disorders","10010774","Constipation","Constipation",293,298,"N","MILD","NOT RELATED","RECOVERED",2016-09-02,2016-09-07,3
-"05-026","Musculoskeletal and connective tissue
-disorders","10003239","Arthralgia","Joint pain",117,337,"N","MILD","NOT RELATED","RECOVERED",2015-08-08,2016-03-15,1
-"05-026","Injury, poisoning and procedural
-complications","10065840","Intraoperative reproductive tract injury","Damage to the reproductive organs during surgery",275,323,"Y","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-01-13,2016-03-01,2
-"05-027","Nervous system disorders","10028524","Myelitis","Inflammation (swelling and redness) of the spinal cor",11,272,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-03-16,2015-12-02,1
-"05-027","Cardiac disorders","10051592","Acute coronary syndrome","Collection of signs and symptoms that indicate sudden heart
-disease in which the heart does not get enough oxygen. Sudden symptoms such as chest pain, shortness of breath, or fainting could indicate heart disease and should be reported right away.  Signs such as abnormal EKG and blood tests can confirm damage to the heart.",35,89,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-04-09,2015-06-02,2
-"05-027","Respiratory, thoracic and mediastinal
-disorders","10041367","Sore throat","Sore throat",142,314,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-07-25,2016-01-13,3
-"05-027","General disorders and administration site
-conditions","10017577","Gait disturbance","Limp or difficulty walking",160,161,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-12,2015-08-13,4
-"05-027","Gastrointestinal disorders","10031009","Oral pain","Mouth pain",339,363,"Y","SEVERE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2016-02-07,2016-03-02,5
-"05-028","Respiratory, thoracic and mediastinal
-disorders","10056356","Mediastinal hemorrhage","Bleeding in the central area of the chest",42,132,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-01-12,2016-04-11,1
-"05-028","Vascular disorders","10021097","Hypotension","Low blood pressure",161,323,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-05-10,2016-10-19,2
-"05-028","Musculoskeletal and connective tissue
-disorders","10039722","Scoliosis","Abnormal side-to-side curvature of the spine",177,321,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-05-26,2016-10-17,3
-"05-028","Respiratory, thoracic and mediastinal
+after radiation therapy",283,316,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-01-22,2016-02-24,3
+"03-005","Nervous system disorders","10051272","Facial muscle weakness","Weakness of facial muscles",292,296,"Y","MILD","DEFINITELY RELEATED","RECOVERED",2016-01-31,2016-02-04,4
+"03-006","Renal and urinary disorders","10063057","Cystitis noninfective","Inflammation (swelling and redness) of the bladder not due to
+urinary tract infection",83,239,"Y","MODERATE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2015-08-14,2016-01-17,1
+"03-006","Injury, poisoning and procedural
+complications","10047228","Venous injury","Damage to a vein (a blood vessel that carries blood low in oxygen
+content from the body back to the heart)",90,215,"N","MILD","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2015-08-21,2015-12-24,2
+"03-006","Respiratory, thoracic and mediastinal
+disorders","10041232","Sneezing","Sneezing",133,253,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-10-03,2016-01-31,3
+"03-006","Eye disorders","10016778","Floaters","Seeing spots before the eyes (floaters)",208,235,"Y","MILD","UNLIKELY RELATED","RECOVERED",2015-12-17,2016-01-13,4
+"03-007","Infections and infestations","10027199","Meningitis","Inflammation (swelling and redness) of the connective tissue surrounding the brain and spinal cord usually a result of infection",136,263,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-31,2016-05-06,1
+"03-009","Nervous system disorders","10020765","Hypersomnia","Excessive sleepiness during the daytime",65,247,"Y","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-01-18,2016-07-18,1
+"03-009","Gastrointestinal disorders","10005265","Bloating","Feeling of fullness and tightness in the bell",155,234,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-04-17,2016-07-05,2
+"03-009","Nervous system disorders","10002953","Aphonia","Inability to speak",189,245,"N","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-05-21,2016-07-16,3
+"03-009","Respiratory, thoracic and mediastinal
+disorders","10059639","Laryngeal obstruction","Blockage of or in the voice box",244,307,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-07-15,2016-09-16,4
+"03-011","Gastrointestinal disorders","10044055","Toothache","Toothache",74,357,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-01-28,2016-11-06,1
+"03-011","Infections and infestations","10044302","Tracheitis","Windpipe infection",213,294,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-06-15,2016-09-04,2
+"03-012","Infections and infestations","10034835","Pharyngitis","Infection in the throat",148,339,"N","MILD","NOT RELATED","RECOVERED",2016-01-13,2016-07-22,1
+"03-013","General disorders and administration site
+conditions","10022998","Irritability","Irritability",235,237,"N","MODERATE","DEFINITELY RELEATED","RECOVERED",2016-06-18,2016-06-20,1
+"03-013","Injury, poisoning and procedural
+complications","10055298","Intraoperative hemorrhage","Uncontrolled bleeding during surgery",243,265,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-06-26,2016-07-18,2
+"03-014","Nervous system disorders","10029223","Neuralgia","Nerve pain",13,142,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2015-02-18,2015-06-27,1
+"03-014","Reproductive system and breast disorders","10046937","Vaginal pain","Pain in the vagina",160,254,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2015-07-15,2015-10-17,2
+"03-014","Injury, poisoning and procedural complications","10065705","Pharyngeal anastomotic leak","Leakage from the pharynx (throat) due to breakdown of a anastomosis (surgical connection between two body structures)",345,346,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-01-16,2016-01-17,3
+"03-014","Infections and infestations","10023216","Joint infection","Joint infection",365,365,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2016-02-05,2016-02-05,4
+"03-015","Reproductive system and breast disorders","10034310","Penile pain","Pain in the penis",32,213,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-21,2016-02-18,1
+"03-015","Respiratory, thoracic and mediastinal
+disorders","10023838","Laryngeal edema","Swelling of the voice box",246,297,"N","MODERATE","NOT RELATED","RECOVERED",2016-03-22,2016-05-12,2
+"03-015","Investigations","10055599","Hemoglobin increased","Decrease of a red blood cell protein (hemoglobin) that carries
+oxygen in the body",269,352,"N","SEVERE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-04-14,2016-07-06,3
+"03-016","Musculoskeletal and connective tissue
+disorders","10028836","Neck pain","Neck pain",128,157,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-09-08,2015-10-07,1
+"03-016","Gastrointestinal disorders","10015453","Esophageal varices hemorrhage","Bleeding in or from the blood vessels in the esophagus (gullet or
+the tube that goes from the mouth to the stomach) because of varices (enlargement of the veins of the esophagus)",199,253,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-11-18,2016-01-11,2
+"03-016","Respiratory, thoracic and mediastinal
 disorders","10063524","Bronchial stricture","Narrowing of the bronchus (an air tube from the windpipe to the
-lungs)",289,336,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-09-15,2016-11-01,4
+lungs)",303,352,"N","SEVERE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-03-01,2016-04-19,3
+"03-017","Nervous system disorders","10019211","Headache","Headache or head pain",123,253,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-10-26,2016-03-04,1
+"03-017","Infections and infestations","10065761","Cecal infection","Infection of area of large bowel (cecum)",146,178,"N","SEVERE","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-11-18,2015-12-20,2
+"03-017","Renal and urinary disorders","10064848","Chronic kidney disease","Gradual (and usually permanent) loss of kidney functio",195,232,"N","MODERATE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-01-06,2016-02-12,3
+"03-018","Reproductive system and breast disorders","10055026","Prostatic obstruction","Blockage of the prostate",209,322,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-24,2016-04-15,1
+"03-018","Injury, poisoning and procedural
+complications","10003162","Arterial injury","Damage to an artery (a blood vessel that carries blood from the
+heart to the rest of the body)",221,340,"N","MILD","NOT RELATED","RECOVERED",2016-01-05,2016-05-03,2
+"03-018","Injury, poisoning and procedural
+complications","10059095","Intestinal stoma leak","Leakage from ostomy site (a surgically created opening in the
+digestive tract for the discharge of body wastes)",283,286,"N","SEVERE","NOT RELATED","RESOLVED WITH SEQUELAE",2016-03-07,2016-03-10,3
+"03-019","Vascular disorders","10048642","Lymphocele","Mass surrounded by an abnormal sac that contains lymph (the clea
+luid that is collected from tissues throughout the body)",200,344,"N","MILD","NOT RELATED","RECOVERED",2016-05-23,2016-10-14,1
+"03-019","Infections and infestations","10058804","Esophageal infection","Infection of the esophagus (gullet or the tube that goes from the
+mouth to the stomach)",209,266,"N","MODERATE","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2016-06-01,2016-07-28,2
+"03-019","Cardiac disorders","10061389","Tricuspid valve disease","Defect in the function of the tricuspid valve (a valve between the
+right upper [atria] and lower chambers [ventricles] of the heart)",277,299,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-08-08,2016-08-30,3
+"03-020","Reproductive system and breast disorders","10065762","Spermatic cord hemorrhage","Bleeding in the spermatic cord (a structure resembling a cord that
+suspends the testis within the scrotum and contains the vas deferens [the tube that carries sperm] and other vessels and nerves)",329,347,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-07-02,2016-07-20,1
+"03-021","Respiratory, thoracic and mediastinal
+disorders","10065873","Pulmonary fistula","Hole between the lungs and some other organ",93,227,"N","MILD","NOT RELATED","RECOVERED",2015-12-22,2016-05-04,1
+"03-021","Gastrointestinal disorders","10017815","Gastric perforation","Hole in the stomach",108,263,"N","SEVERE","PROBABLY RELATED","RESOLVED, RECOVERED",2016-01-06,2016-06-09,2
+"03-021","Gastrointestinal disorders","10055226","Anal hemorrhage","bleeding in the anal region",198,207,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-04-05,2016-04-14,3
+"03-021","Respiratory, thoracic and mediastinal
+disorders","10015090","Epistaxis","Nose bleed",214,331,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-04-21,2016-08-16,4
+"03-022","Endocrine disorders","10058084","Precocious puberty","Unusually early onset of sexual maturation (puberty",26,329,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-06-08,2016-04-06,1
+"03-023","Immune system disorders","10040400","Serum sickness","Allergic reaction to certain medications, injected proteins, or
+antisera (blood product) used to treat certain medical conditions (such as an infectious or poisonous substance)",26,292,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-04-19,2016-01-10,1
+"03-023","Vascular disorders","10019428","Hematoma","Collection of blood in tissue (bruise",33,208,"Y","MILD","NOT RELATED","RECOVERED",2015-04-26,2015-10-18,2
+"03-025","Respiratory, thoracic and mediastinal
+disorders","10035742","Pneumonitis","Inflammation of the lungs that may cause difficulty breathing and
+can be life-threatening",7,131,"N","MODERATE","PROBABLY RELATED","RESOLVED WITH SEQUELAE",2015-05-05,2015-09-06,1
+"03-025","Gastrointestinal disorders","10042112","Stomach pain","Stomach pain",293,342,"N","SEVERE","PROBABLY RELATED","RECOVERED",2016-02-15,2016-04-04,2
+"03-026","Infections and infestations","10061351","Pleural infection","Infection of the lining of the chest cavity and cover the lung",90,292,"N","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2016-01-05,2016-07-25,1
+"03-026","Reproductive system and breast disorders","10006179","Breast atrophy","Underdevelopment of the breast",103,238,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-01-18,2016-06-01,2
+"03-026","Cardiac disorders","10019279","Heart failure","Heart failure:  inability of the heart to adequately pump blood to
+supply oxygen to the body",196,319,"N","MILD","NOT RELATED","RECOVERED",2016-04-20,2016-08-21,3
+"03-027","Injury, poisoning and procedural
+complications","10065883","Urostomy obstruction","Blockage from a urostoma (a surgically created opening for the
+discharge of urine)",72,334,"N","MILD","DEFINITELY RELEATED","RECOVERED",2015-07-20,2016-04-07,1
+"03-027","Renal and urinary disorders","10037032","Proteinuria","More protein leaking into the urine than usual, often a sign of kidney
+disease",143,322,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-09-29,2016-03-26,2
+"03-028","Cardiac disorders","10010783","Constrictive pericarditis","Inflammation (swelling and redness) of the sac-like covering of the
+heart (the pericardium) causing abnormal heart function",45,207,"N","SEVERE","UNLIKELY RELATED","RECOVERED",2015-04-21,2015-09-30,1
+"03-028","Blood and lymphatic system disorders","10025182","Lymph node pain","Painful sensation in a lymph nod",129,199,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-07-14,2015-09-22,2
+"03-028","Skin and subcutaneous tissue disorders","10046735","Urticaria","Hives",340,341,"N","MILD","PROBABLY RELATED","RECOVERED",2016-02-10,2016-02-11,3
+"03-030","Gastrointestinal disorders","10055287","Ileal hemorrhage","Bleeding in or from an area of the small bowel (ileum",77,109,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-06-14,2015-07-16,1
+"03-030","Infections and infestations","10057483","Mediastinal infection","Infection of the mediastinum (the ""middle"" section of the chest
+cavity which contains all of the chest organs except the lungs)",208,256,"N","MILD","NOT RELATED","RECOVERED",2015-10-23,2015-12-10,2
+"04-002","Injury, poisoning and procedural
+complications","10056745","Postoperative thoracic procedure
+complication","Problem that occurs in the chest cavity as a result of surgery",331,341,"N","MODERATE","NOT RELATED","RECOVERED",2016-05-14,2016-05-24,1
+"04-003","Metabolism and nutrition disorders","10020943","Hypoalbuminemia","Decreased levels of a blood protein called albumin",68,68,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-01-23,2016-01-23,1
+"04-003","Infections and infestations","10034835","Pharyngitis","Infection in the throat",194,247,"N","SEVERE","NOT RELATED","RESOLVED, RECOVERED",2016-05-28,2016-07-20,2
+"04-003","Pregnancy, puerperium and perinatal
+conditions","10054746","Fetal growth retardation","Inhibition of fetal growth resulting in the inability of the fetus to
+achieve its potential weight",204,326,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-06-07,2016-10-07,3
+"04-003","Infections and infestations","10064505","Stoma site infection","Infection involving a stoma (surgically created opening in the
+surface of the body)",339,357,"N","MODERATE","DEFINITELY RELEATED","RECOVERED",2016-10-20,2016-11-07,4
+"04-005","Gastrointestinal disorders","10049192","Pancreatic fistula","Hole between pancreas and another orga",76,155,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-31,2016-01-18,1
+"04-005","Musculoskeletal and connective tissue
+disorders","10065738","Unequal limb length","Difference between the lengths of the arms and/or legs",108,162,"N","MODERATE","NOT RELATED","RESOLVED WITH SEQUELAE",2015-12-02,2016-01-25,2
+"04-005","Infections and infestations","10027199","Meningitis","Inflammation (swelling and redness) of the connective tissue surrounding the brain and spinal cord usually a result of infection",327,349,"N","MILD","NOT RELATED","RECOVERED",2016-07-08,2016-07-30,3
+"04-009","Gastrointestinal disorders","10042112","Stomach pain","Stomach pain",27,47,"N","SEVERE","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2015-02-17,2015-03-09,1
+"04-009","Injury, poisoning and procedural
+complications","10062169","Vascular access complication","Problem that occurs when putting in a catheter or gaining access to
+a blood vessel",125,245,"Y","MILD","PROBABLY RELATED","RECOVERED",2015-05-26,2015-09-23,2
+"04-009","Injury, poisoning and procedural
+complications","10065841","Intraoperative ocular injury","Damage to an eye during surgery",154,251,"N","MODERATE","NOT RELATED","RECOVERED",2015-06-24,2015-09-29,3
+"04-009","Infections and infestations","10005047","Bladder infection","Bladder infection",232,353,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2015-09-10,2016-01-09,4
+"04-009","Gastrointestinal disorders","10009998","Colonic hemorrhage","Bleeding in the large bowe",344,351,"N","SEVERE","DEFINITELY RELEATED","RECOVERED",2015-12-31,2016-01-07,5
+"04-010","Vascular disorders","10047115","Vasculitis","Inflammation (swelling and redness) of the blood vessel",303,355,"N","MODERATE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-10-11,2016-12-02,1
+"04-011","Reproductive system and breast disorders","10043345","Testicular pain","Pain in the testis",87,142,"N","MILD","NOT RELATED","RECOVERED",2016-01-10,2016-03-05,1
+"04-011","Nervous system disorders","10029864","Nystagmus","Rapid, jerky involuntary movements of the eye",164,271,"N","MILD","PROBABLY RELATED","RECOVERED",2016-03-27,2016-07-12,2
+"04-012","Injury, poisoning and procedural
+complications","10065827","Intraoperative hepatobiliary injury","Damage to the liver during surgery",55,72,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-08-19,2015-09-05,1
+"04-012","Vascular disorders","10042554","Superficial thrombophlebitis","Blood clot in a vein near the surface of the skin in the extremities
+(arms and/or legs)",126,254,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-10-29,2016-03-05,2
+"04-013","Gastrointestinal disorders","10034536","Periodontal disease","Disease of the teeth or gums",10,201,"N","MILD","NOT RELATED","RECOVERED",2015-05-01,2015-11-08,1
+"04-013","Blood and lymphatic system disorders","10016288","Febrile neutropenia","Fever associated with dangerously low levels of a type of white
+blood cell (neutrophils)",35,172,"N","MODERATE","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-05-26,2015-10-10,2
+"04-013","Eye disorders","10034960","Photophobia","Fear of light",195,273,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-11-02,2016-01-19,3
+"04-014","Investigations","10055599","Hemoglobin increased","Decrease of a red blood cell protein (hemoglobin) that carries
+oxygen in the body",6,161,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-05-19,2015-10-21,1
+"04-014","Renal and urinary disorders","10046628","Urine discoloration","Change in color of the urine",202,276,"Y","MODERATE","UNLIKELY RELATED","RECOVERED",2015-12-01,2016-02-13,2
+"04-014","Neoplasms benign, malignant and
+unspecified (incl cysts and polyps)","10028533","Myelodysplastic syndrome","Decreased production of blood cells by the bone marrow",211,295,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2015-12-10,2016-03-03,3
+"04-014","Nervous system disorders","10002953","Aphonia","Inability to speak",249,278,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-01-17,2016-02-15,4
+"04-015","Nervous system disorders","10022763","Intracranial hemorrhage","Bleeding in the brain",48,56,"N","MILD","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2016-01-12,2016-01-20,1
+"04-015","Gastrointestinal disorders","10015384","Esophageal hemorrhage","Bleeding in the esophagus (gullet or the tube that goes from the
+mouth to the stomach)",78,154,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-02-11,2016-04-27,2
+"04-015","Injury, poisoning and procedural
+complications","10065828","Intraoperative urinary injury","Damage to the urinary tract during surgery",233,337,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2016-07-15,2016-10-27,3
+"04-015","Musculoskeletal and connective tissue
+disorders","10065775","Abdominal soft tissue necrosis","Death of tissue of the belly wall",304,329,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-09-24,2016-10-19,4
+"04-015","Gastrointestinal disorders","10055300","Jejunal hemorrhage","Bleeding in an area of the small bowel (jejunum",362,362,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2016-11-21,2016-11-21,5
+"04-016","Pregnancy, puerperium and perinatal
+conditions","10036595","Premature delivery","Birth before the 9th month of pregnancy (the normal length of
+pregnancy)",3,205,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-04-29,2015-11-17,1
+"04-016","Nervous system disorders","10034580","Peripheral motor neuropathy","Weakness or paralysis (loss of muscle function) caused by damage to peripheral nerves (those nerves outside of brain and spinal cord)",11,105,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-05-07,2015-08-09,2
+"04-016","Skin and subcutaneous tissue disorders","10046735","Urticaria","Hives",88,276,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-07-23,2016-01-27,3
+"04-016","Nervous system disorders","10061928","Radiculitis","Inflammation (swelling and redness) involving a nerve root (the
+initial segment of a nerve leaving the central nervous system)",89,212,"Y","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-07-24,2015-11-24,4
+"04-016","Musculoskeletal and connective tissue
+disorders","10039722","Scoliosis","Abnormal side-to-side curvature of the spine",330,332,"N","MODERATE","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-03-21,2016-03-23,5
+"04-021","General disorders and administration site
+conditions","10064774","Infusion site extravasation","Leaking of drug from blood vessel into tissue surrounding the
+injection site",7,192,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-06-26,2015-12-28,1
+"04-021","Infections and infestations","10058674","Pelvic infection","Infection of the pelvis",48,91,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-08-06,2015-09-18,2
+"04-021","Infections and infestations","10069138","Papulopustular rash","Rash made up of papules (a small, raised pimple) and pustules (a
+small pus filled blister), typically appearing in face, scalp, and upper chest",60,198,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-08-18,2016-01-03,3
+"04-021","Eye disorders","10016778","Floaters","Seeing spots before the eyes (floaters)",315,345,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2016-04-29,2016-05-29,4
+"04-021","Musculoskeletal and connective tissue
+disorders","10048677","Buttock pain","Buttock pain",364,365,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-06-17,2016-06-18,5
+"04-022","Injury, poisoning and procedural
+complications","10065825","Intraoperative gastrointestinal injury","Damage to the digestive tract during surgery",22,22,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-01-16,2016-01-16,1
+"04-022","Psychiatric disorders","10019077","Hallucinations","Seeing or sensing things that aren't there while a person is awake
+and conscious (such as hearing voices)",29,120,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-01-23,2016-04-23,2
+"04-022","Psychiatric disorders","10042464","Suicide attempt","Trying to takes ones own life",160,310,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-06-02,2016-10-30,3
+"04-024","Vascular disorders","10065773","Lymph leakage","Leakage of the clear fluid (lymph) that travels through the lymphatic
+vessels and carries cells that help fight infections and other diseases",22,133,"Y","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-05-26,2015-09-14,1
+"04-024","Injury, poisoning and procedural
+complications","10065827","Intraoperative hepatobiliary injury","Damage to the liver during surgery",99,318,"N","MILD","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2015-08-11,2016-03-17,2
+"04-024","Gastrointestinal disorders","10065728","Ileal fistula","Hole between an area in the small bowel (ileum) and another organ",211,249,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-12-01,2016-01-08,3
+"04-024","Musculoskeletal and connective tissue
+disorders","10066480","Avascular necrosis","Temporary or permanent loss of the blood supply to an area of
+bone resulting in the death of bone tissue",273,329,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-02-01,2016-03-28,4
+"04-024","General disorders and administration site
+conditions","10021113","Hypothermia","Low body temperature",339,354,"N","MILD","NOT RELATED","RECOVERED",2016-04-07,2016-04-22,5
+"04-025","Infections and infestations","10023216","Joint infection","Joint infection",173,315,"N","SEVERE","NOT RELATED","RESOLVED, RECOVERED",2016-01-27,2016-06-17,1
+"04-025","Gastrointestinal disorders","10021309","Ileal ulcer","Sore (ulcer) in the lining  in an area of the small bowel (ileum",364,364,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-08-05,2016-08-05,2
+"04-026","General disorders and administration site
+conditions","10054482","Neck edema","Swelling of the neck",50,235,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-08-20,2016-02-21,1
+"04-026","Gastrointestinal disorders","10023174","Jejunal perforation","Hole in an area of the small bowel (jejunum",53,128,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-08-23,2015-11-06,2
+"04-026","Reproductive system and breast disorders","10046809","Uterine pain","Pain in the uterus (womb)",308,309,"N","MILD","NOT RELATED","RECOVERED",2016-05-04,2016-05-05,3
+"04-027","Infections and infestations","10021918","Infective myositis","Infection of skeletal muscles",5,273,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-01-17,2015-10-12,1
+"04-027","Injury, poisoning and procedural
+complications","10065894","Rectal anastomotic leak","Leakage from the rectum due to breakdown of a anastomosis
+(surgical connection between two body structures)",36,80,"Y","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-02-17,2015-04-02,2
+"04-027","Eye disorders","10029404","Night blindness","Inability to see in dim light (night blindness",301,321,"N","MODERATE","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-11-09,2015-11-29,3
+"04-027","Endocrine disorders","10001367","Adrenal insufficiency","Inability of the adrenal glands (triangle-shaped glands located on top of the kidneys) to produce a normal quantity of hormones",323,345,"N","MILD","NOT RELATED","RECOVERED",2015-12-01,2015-12-23,4
+"04-027","Psychiatric disorders","10019077","Hallucinations","Seeing or sensing things that aren't there while a person is awake
+and conscious (such as hearing voices)",328,329,"N","SEVERE","NOT RELATED","RESOLVED, RECOVERED",2015-12-06,2015-12-07,5
+"04-028","General disorders and administration site
+conditions","10033371","Pain","Pain",142,178,"N","SEVERE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2015-06-13,2015-07-19,1
+"04-028","Nervous system disorders","10022763","Intracranial hemorrhage","Bleeding in the brain",223,231,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-09-02,2015-09-10,2
+"04-028","Investigations","10040139","Serum amylase increased","Increased blood level of a digestive enzyme (amylase",320,359,"N","SEVERE","DEFINITELY RELEATED","RECOVERED",2015-12-08,2016-01-16,3
+"04-029","Gastrointestinal disorders","10010004","Colonic stenosis","Narrowing of the large bowe",24,105,"N","SEVERE","POSSIBLY RELATED","RECOVERED",2015-06-04,2015-08-24,1
+"04-029","Renal and urinary disorders","10038463","Renal hemorrhage","Bleeding in the kidney",43,60,"N","MILD","PROBABLY RELATED","RESOLVED WITH SEQUELAE",2015-06-23,2015-07-10,2
+"04-030","Reproductive system and breast disorders","10065791","Fallopian tube stenosis","Narrowing of Fallopian tube (tube between ovary to uterus [womb])",219,252,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-29,2016-01-01,1
+"05-001","Musculoskeletal and connective tissue
+disorders","10065779","Head soft tissue necrosis","Death of soft tissue of the head",189,313,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-10-16,2016-02-17,1
+"05-001","Respiratory, thoracic and mediastinal
+disorders","10002972","Apnea","Stopping of breathing",308,361,"N","MODERATE","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-12,2016-04-05,2
+"05-001","Injury, poisoning and procedural complications","10065705","Pharyngeal anastomotic leak","Leakage from the pharynx (throat) due to breakdown of a anastomosis (surgical connection between two body structures)",320,365,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-24,2016-04-09,3
+"05-001","Investigations","10049182","White blood cell decreased","Decrease in the total number of white blood cells (leukocytes",328,357,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-03-03,2016-04-01,4
+"05-003","Injury, poisoning and procedural complications","10050458","Biliary anastomotic leak","Leakage of bile from any site in the biliary tree (liver, bile duct, cystic duct, or gallbladder due) to breakdown of a biliary anastomosis (surgical connection between two body structures)",111,235,"Y","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-01-14,2016-05-17,1
+"05-003","Metabolism and nutrition disorders","10020907","Hyperuricemia","Increased blood level of uric acid, a waste material from food
+digestion",207,335,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-04-19,2016-08-25,2
+"05-003","Nervous system disorders","10061457","Facial nerve disorder","Abnormal function of the nerve that controls facial expressio",209,294,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2016-04-21,2016-07-15,3
+"05-003","Musculoskeletal and connective tissue
+disorders","10016750","Flank pain","Pain in the area on the side of the body in the region below the ribs
+and above the hip",233,243,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-05-15,2016-05-25,4
+"05-004","Immune system disorders","10002218","Anaphylaxis","Serious, life-threatening allergic reaction requiring immediate
+medical treatment by your doctor.  The reaction may include extremely low blood pressure, swelling of the throat, difficulty breathing, and loss of consciousness.",280,298,"N","MILD","UNLIKELY RELATED","RECOVERED",2016-08-03,2016-08-21,1
+"05-004","Blood and lymphatic system disorders","10019515","Hemolytic uremic syndrome","Collection of signs including hemolytic anemia (destruction of red
+blood cells), kidney failure and a low platelet (a type of blood cell that helps to clot blood) count",312,325,"N","MILD","PROBABLY RELATED","RECOVERED",2016-09-04,2016-09-17,2
+"05-005","Injury, poisoning and procedural
+complications","10022161","Injury to carotid artery","Injury to the large blood vessels in the neck that supply blood to the
+brain (carotid artery)",26,231,"N","MODERATE","NOT RELATED","RECOVERED",2015-07-01,2016-01-22,1
+"05-005","Cardiac disorders","10047281","Ventricular arrhythmia","Irregular heartbeat resulting from an abnormality in the one of the
+lower chambers of the heart (ventricle)",296,331,"Y","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-03-27,2016-05-01,2
+"05-005","Gastrointestinal disorders","10002156","Anal fistula","Hole between anus and another orga",326,327,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-04-26,2016-04-27,3
+"05-005","Reproductive system and breast disorders","10061461","Erectile dysfunction","Impotence or the inability to have or maintain an erection during
+sexual intercourse",335,353,"N","SEVERE","NOT RELATED","RESOLVED WITH SEQUELAE",2016-05-05,2016-05-23,4
+"05-007","Gastrointestinal disorders","10014893","Enterocolitis","Inflammation (swelling and redness) of the small and large bowel",124,146,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-07,2015-11-29,1
+"05-007","Respiratory, thoracic and mediastinal
+disorders","10042241","Stridor","Abnormal, high-pitched, musical breathing sound caused by a
+blockage in the throat or voice box",152,189,"Y","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-12-05,2016-01-11,2
+"05-007","Respiratory, thoracic and mediastinal
+disorders","10037383","Pulmonary fibrosis","Scarring of the lungs that can cause shortness of breath and
+interfere with breathing",231,237,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-22,2016-02-28,3
+"05-007","Cardiac disorders","10051592","Acute coronary syndrome","Collection of signs and symptoms that indicate sudden heart
+disease in which the heart does not get enough oxygen. Sudden symptoms such as chest pain, shortness of breath, or fainting could indicate heart disease and should be reported right away.  Signs such as abnormal EKG and blood tests can confirm damage to the heart.",259,293,"Y","MILD","DEFINITELY RELEATED","RECOVERED",2016-03-21,2016-04-24,4
+"05-007","Nervous system disorders","10001540","Akathisia","Uncomfortable feeling of inner restlessness and a compelling need
+to be in constant motion",277,345,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-04-08,2016-06-15,5
+"05-008","Infections and infestations","10057483","Mediastinal infection","Infection of the mediastinum (the ""middle"" section of the chest
+cavity which contains all of the chest organs except the lungs)",224,239,"N","SEVERE","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-05-22,2016-06-06,1
+"05-008","Skin and subcutaneous tissue disorders","10016241","Fat atrophy","Shrinking of body fat",312,328,"Y","MODERATE","NOT RELATED","RESOLVED WITH SEQUELAE",2016-08-18,2016-09-03,2
+"05-008","Eye disorders","10047848","Watering eyes","Excessive tearing in the eyes",321,321,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-08-27,2016-08-27,3
+"05-008","General disorders and administration site
+conditions","10062501","Non-cardiac chest pain","Chest pain not heart-related",355,359,"Y","MILD","UNLIKELY RELATED","RECOVERED",2016-09-30,2016-10-04,4
+"05-008","Musculoskeletal and connective tissue
+disorders","10048677","Buttock pain","Buttock pain",363,365,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2016-10-08,2016-10-10,5
+"05-009","Psychiatric disorders","10024419","Libido decreased","Decreased sexual desire",72,203,"N","SEVERE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2016-02-25,2016-07-05,1
+"05-009","Investigations","10003481","Aspartate aminotransferase increased","Increased blood level of a liver enzyme (AST/SGOT",121,223,"N","SEVERE","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-04-14,2016-07-25,2
+"05-010","Hepatobiliary disorders","10019678","Hepatic hemorrhage","Bleeding in or from the liver",7,66,"N","MILD","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-02-12,2015-04-12,1
+"05-010","Respiratory, thoracic and mediastinal
+disorders","10065881","Pharyngeal mucositis","Irritation or sores in the lining of the throat",142,303,"N","MILD","NOT RELATED","RECOVERED",2015-06-27,2015-12-05,2
+"05-010","Respiratory, thoracic and mediastinal
+disorders","10065900","Tracheal mucositis","Irritation or sores in the lining of the windpipe",273,341,"N","MILD","DEFINITELY RELEATED","RECOVERED",2015-11-05,2016-01-12,3
+"05-010","Nervous system disorders","10013573","Dizziness","Dizziness (or sensation of lightheadedness, unsteadiness, or
+giddiness)",331,357,"N","MILD","PROBABLY RELATED","RECOVERED",2016-01-02,2016-01-28,4
+"05-011","Infections and infestations","10005047","Bladder infection","Bladder infection",102,249,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-05-16,2015-10-10,1
+"05-011","Musculoskeletal and connective tissue
+disorders","10064658","Osteonecrosis of jaw","Destruction or death of jawbone",185,328,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-08-07,2015-12-28,2
+"05-011","Immune system disorders","10040400","Serum sickness","Allergic reaction to certain medications, injected proteins, or
+antisera (blood product) used to treat certain medical conditions (such as an infectious or poisonous substance)",239,251,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-09-30,2015-10-12,3
+"05-012","Renal and urinary disorders","10063575","Bladder perforation","Hole in the bladder",38,49,"N","MODERATE","NOT RELATED","RECOVERED",2015-05-25,2015-06-05,1
+"05-012","Gastrointestinal disorders","10065732","Jejunal obstruction","Blockage in an area of the small bowel (jejunum",98,262,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-07-24,2016-01-04,2
+"05-012","Gastrointestinal disorders","10016296","Fecal incontinence","Inability to control bowel movements thus allowing the escape of
+feces from the rectum",260,269,"N","SEVERE","DEFINITELY RELEATED","RECOVERED",2016-01-02,2016-01-11,3
+"05-012","Infections and infestations","10065766","Peripheral nerve infection","Infection of the peripheral nerves (nerves in the face, arms, legs,
+torso, and some cranial nerves of the head)",270,270,"N","SEVERE","POSSIBLY RELATED","RECOVERED",2016-01-12,2016-01-12,4
+"05-012","Gastrointestinal disorders","10013836","Duodenal ulcer","Sore (ulcer) in the lining of an area of the small bowel (duodenum)",276,362,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-01-18,2016-04-13,5
+"05-013","Infections and infestations","10065752","Duodenal infection","Infection of the duodenum (area of small bowel",30,196,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-11-20,2016-05-04,1
+"05-014","Investigations","10025256","Lymphocyte count decreased","Decreased number of a type of white blood cell (lymphocyte",10,71,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-07-10,2015-09-09,1
+"05-014","Injury, poisoning and procedural
+complications","10065841","Intraoperative ocular injury","Damage to an eye during surgery",85,223,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-09-23,2016-02-08,2
+"05-015","Injury, poisoning and procedural
+complications","10053692","Wound complication","Problems at the site of an existing wound",18,348,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-01-28,2015-12-24,1
+"05-016","Infections and infestations","10014678","Endocarditis infective","Infection of the the endocardial layer of the heart (the innermost
+layer of tissue that lines the chambers of the heart)",20,128,"N","MILD","DEFINITELY RELEATED","RESOLVED, RECOVERED",2015-07-04,2015-10-20,1
+"05-016","Renal and urinary disorders","10046628","Urine discoloration","Change in color of the urine",84,168,"N","SEVERE","PROBABLY RELATED","RECOVERED",2015-09-06,2015-11-29,2
+"05-016","Investigations","10018748","Growth hormone abnorma","Abnormal level of growth hormone",105,155,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-09-27,2015-11-16,3
+"05-017","Eye disorders","10061322","Optic nerve disorder","Abnormal function of the nerve responsible for sigh",101,103,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2015-10-11,2015-10-13,1
+"05-017","Infections and infestations","10064687","Device related infection","Infection at lthe location of a medical device",353,364,"Y","MILD","NOT RELATED","RECOVERED",2016-06-19,2016-06-30,2
+"05-018","Ear and labyrinth disorders","10065837","External ear inflammation","Inflammation (swelling and redness) of the skin of outer ear and
+canal",102,193,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-03-24,2016-06-23,1
+"05-019","Respiratory, thoracic and mediastinal
+disorders","10023891","Laryngospasm","Uncontrolled contractions of the muscles of the vocal cords",55,196,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-07-06,2015-11-24,1
+"05-019","Renal and urinary disorders","10048994","Bladder spasm","Sudden and involuntary contraction of the bladde",120,158,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-09-09,2015-10-17,2
+"05-019","Respiratory, thoracic and mediastinal
+disorders","10006482","Bronchospasm","Sudden constriction of the small airways of the lung that can cause
+wheezing and shortness of breath",216,299,"N","MILD","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-14,2016-03-06,3
+"05-020","Cardiac disorders","10028596","Myocardial infarction","Heart attack caused by a blockage or decreased blood supply to
+the heart",114,338,"N","MILD","UNLIKELY RELATED","RECOVERED",2015-08-12,2016-03-23,1
+"05-020","Respiratory, thoracic and mediastinal
+disorders","10065746","Bronchopulmonary hemorrhage","Bleeding from the lungs",123,321,"Y","MILD","NOT RELATED","RECOVERED",2015-08-21,2016-03-06,2
+"05-020","Respiratory, thoracic and mediastinal
+disorders","10036402","Postnasal drip","Excess fluid dripping in the back of the throat and/or the nose",182,254,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-10-19,2015-12-30,3
+"05-020","Injury, poisoning and procedural
+complications","10065831","Intraoperative breast injury","Damage to the breast tissue during surgery",207,330,"N","MODERATE","NOT RELATED","RECOVERED",2015-11-13,2016-03-15,4
+"05-020","Gastrointestinal disorders","10060640","Hemorrhoidal hemorrhage","bleeding in hemorrhoids (swollen or irritated blood vessels in the
+anus and rectum, also known as piles)",261,298,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2016-01-06,2016-02-12,5
+"05-021","Infections and infestations","10034835","Pharyngitis","Infection in the throat",4,32,"N","MODERATE","DEFINITELY RELEATED","RECOVERED",2015-01-23,2015-02-20,1
+"05-021","Psychiatric disorders","10042458","Suicidal ideation","Thoughts of taking ones own life",155,296,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2015-06-23,2015-11-11,2
+"05-022","Eye disorders","10038923","Retinopathy","Problem of the retina (a multi-layered sensory tissue that lines the
+back of the eye responsible for sight)",67,197,"N","MODERATE","POSSIBLY RELATED","RECOVERED",2015-03-17,2015-07-25,1
+"05-022","Metabolism and nutrition disorders","10000486","Acidosis","More acid than normal in the blood",122,272,"N","MILD","NOT RELATED","RESOLVED WITH SEQUELAE",2015-05-11,2015-10-08,2
+"05-022","Musculoskeletal and connective tissue
+disorders","10065775","Abdominal soft tissue necrosis","Death of tissue of the belly wall",161,198,"N","MILD","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-06-19,2015-07-26,3
+"05-022","Gastrointestinal disorders","10065728","Ileal fistula","Hole between an area in the small bowel (ileum) and another organ",178,322,"N","MODERATE","PROBABLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-07-06,2015-11-27,4
+"05-022","Vascular disorders","10042569","Superior vena cava syndrome","Blockage of blood flow in the superior vena cava (the large vein tha
+carries blood from the upper body to the heart)",203,323,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2015-07-31,2015-11-28,5
+"05-023","Hepatobiliary disorders","10019663","Hepatic failure","Liver failure",29,319,"Y","MILD","POSSIBLY RELATED","RECOVERED",2015-09-12,2016-06-28,1
+"05-023","Gastrointestinal disorders","10042112","Stomach pain","Stomach pain",277,283,"N","MILD","PROBABLY RELATED","RESOLVED WITH SEQUELAE",2016-05-17,2016-05-23,2
+"05-023","Musculoskeletal and connective tissue
+disorders","10064658","Osteonecrosis of jaw","Destruction or death of jawbone",296,312,"N","SEVERE","NOT RELATED","RECOVERED",2016-06-05,2016-06-21,3
+"05-024","Injury, poisoning and procedural
+complications","10065712","Gastrointestinal stoma necrosis","Death of tissue (necrosis) of the digestive tract",7,133,"N","MODERATE","NOT RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-23,2016-03-28,1
+"05-024","Investigations","10007839","CD4 lymphocytes decreased","Decreased number of a type of white blood cell (lymphocyte",161,202,"N","MILD","UNLIKELY RELATED","RESOLVED WITH SEQUELAE",2016-04-25,2016-06-05,2
+"05-024","Hepatobiliary disorders","10019692","Hepatic necrosis","Death of liver tissue",240,281,"Y","MILD","NOT RELATED","RECOVERED",2016-07-13,2016-08-23,3
+"05-024","Vascular disorders","10021097","Hypotension","Low blood pressure",307,308,"N","MILD","PROBABLY RELATED","RECOVERED",2016-09-18,2016-09-19,4
+"05-025","Blood and lymphatic system disorders","10019515","Hemolytic uremic syndrome","Collection of signs including hemolytic anemia (destruction of red
+blood cells), kidney failure and a low platelet (a type of blood cell that helps to clot blood) count",94,227,"N","SEVERE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-06-01,2015-10-12,1
+"05-025","Metabolism and nutrition disorders","10021018","Hypokalemia","Decreased blood level of potassium",237,292,"Y","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-10-22,2015-12-16,2
+"05-025","Injury, poisoning and procedural
+complications","10065830","Intraoperative neurological injury","Damage to the nervous system during surgery",256,315,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-11-10,2016-01-08,3
+"05-025","Skin and subcutaneous tissue disorders","10034966","Photosensitivity","Increased skin sensitivity to sunligh",276,317,"N","MODERATE","POSSIBLY RELATED","RESOLVED WITHOUT SEQUELAE",2015-11-30,2016-01-10,4
+"05-025","Injury, poisoning and procedural
+complications","10059095","Intestinal stoma leak","Leakage from ostomy site (a surgically created opening in the
+digestive tract for the discharge of body wastes)",332,356,"Y","MILD","NOT RELATED","RECOVERED",2016-01-25,2016-02-18,5
+"05-026","Investigations","10055599","Hemoglobin increased","Decrease of a red blood cell protein (hemoglobin) that carries
+oxygen in the body",23,162,"N","MODERATE","UNLIKELY RELATED","RECOVERED",2015-02-17,2015-07-06,1
+"05-026","Cardiac disorders","10058597","Right ventricular dysfunction","Failure of the right lower chamber of the heart (ventricle) caused by
+long-term high blood pressure in the lungs",43,105,"N","MILD","POSSIBLY RELATED","RESOLVED WITH SEQUELAE",2015-03-09,2015-05-10,2
+"05-026","Reproductive system and breast disorders","10043306","Testicular disorder","Abnormality of the testis",80,107,"N","MILD","POSSIBLY RELATED","RESOLVED, RECOVERED",2015-04-15,2015-05-12,3
+"05-026","Ear and labyrinth disorders","10019245","Hearing impaired","Hearing loss",248,364,"N","MILD","UNLIKELY RELATED","RESOLVED, RECOVERED",2015-09-30,2016-01-24,4
+"05-028","Injury, poisoning and procedural complications","10065788","Fallopian tube anastomotic leak","Leakage due to breakdown of a fallopian tube (tube between ovary
+to uterus [womb]) anastomosis (surgical connection of two separate body structures)",4,141,"N","MILD","POSSIBLY RELATED","RECOVERED",2015-12-04,2016-04-19,1
+"05-028","Skin and subcutaneous tissue disorders","10037549","Purpura","Area of bleeding within the skin causing a reddish purple
+discoloration",22,139,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2015-12-22,2016-04-17,2
+"05-028","Blood and lymphatic system disorders","10019515","Hemolytic uremic syndrome","Collection of signs including hemolytic anemia (destruction of red
+blood cells), kidney failure and a low platelet (a type of blood cell that helps to clot blood) count",36,147,"N","MODERATE","NOT RELATED","RECOVERED",2016-01-05,2016-04-25,3
+"05-028","Nervous system disorders","10034580","Peripheral motor neuropathy","Weakness or paralysis (loss of muscle function) caused by damage to peripheral nerves (those nerves outside of brain and spinal cord)",41,228,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-01-10,2016-07-15,4
+"05-028","Vascular disorders","10043565","Thromboembolic event","Formation of a blood clot that plugs the blood vessel; blood clots may break loose and travel to another place, such as the lung",65,112,"N","SEVERE","NOT RELATED","RESOLVED, RECOVERED",2016-02-03,2016-03-21,5
+"05-029","Investigations","10025256","Lymphocyte count decreased","Decreased number of a type of white blood cell (lymphocyte",50,337,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2015-11-20,2016-09-02,1
+"05-029","Hepatobiliary disorders","10036206","Portal vein thrombosis","Blood clot in hepatic (liver) portal vein (a major blood vessel in the
+abdominal cavity that drains blood from the digestive tract and spleen)",158,234,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-03-07,2016-05-22,2
+"05-029","Cardiac disorders","10042604","Supraventricular tachycardia","Fast heartbeat usually originating in an area located above the
+ventricles",166,259,"N","MILD","POSSIBLY RELATED","RECOVERED",2016-03-15,2016-06-16,3
+"05-029","Gastrointestinal disorders","10000081","Abdominal pain","Belly pain",249,288,"N","MILD","PROBABLY RELATED","RESOLVED, RECOVERED",2016-06-06,2016-07-15,4
+"05-029","Cardiac disorders","10040741","Sinus bradycardia","Slow heartbeat; regular rhythm",286,340,"Y","MODERATE","DEFINITELY RELEATED","RESOLVED WITHOUT SEQUELAE",2016-07-13,2016-09-05,5
+"05-030","Musculoskeletal and connective tissue
+disorders","10065783","Musculoskeletal deformity","Deformity of the musculoskeletal system (relating to muscles and
+the skeleton)",82,324,"N","MODERATE","NOT RELATED","RECOVERED",2016-02-02,2016-10-01,1
 "05-030","Respiratory, thoracic and mediastinal
-disorders","10003504","Aspiration","Breathing in of solids or liquids into the lungs",93,260,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2015-09-09,2016-02-23,1
-"05-030","Gastrointestinal disorders","10015451","Esophageal ulcer","Sore (ulcer) in the lining of the esophagus (gullet or the tube that
-goes from mouth to stomach through which food passes)",124,233,"Y","MILD","NOT RELATED","RECOVERED",2015-10-10,2016-01-27,2
-"05-030","Respiratory, thoracic and mediastinal
-disorders","10020039","Hiccups","Hiccups",206,304,"N","SEVERE","PROBABLY RELATED","RECOVERED",2015-12-31,2016-04-07,3
-"05-030","Nervous system disorders","10065836","IVth nerve disorder","Abnormal function of the nerve that is responsible for eyelid
-movement",213,225,"N","MODERATE","NOT RELATED","RESOLVED, RECOVERED",2016-01-07,2016-01-19,4
+disorders","10035759","Pneumothorax","Accumulation of air in the pleural cavity (the space that surrounds
+the lungs) causing the lung to collapse",247,334,"N","MILD","UNLIKELY RELATED","RESOLVED WITHOUT SEQUELAE",2016-07-16,2016-10-11,2
+"05-030","Skin and subcutaneous tissue disorders","10040799","Skin atrophy","Thinning of the skin",271,335,"N","MODERATE","UNLIKELY RELATED","RESOLVED, RECOVERED",2016-08-09,2016-10-12,3
+"05-030","Gastrointestinal disorders","10042112","Stomach pain","Stomach pain",347,365,"Y","MODERATE","POSSIBLY RELATED","RESOLVED, RECOVERED",2016-10-24,2016-11-11,4
+"05-030","Renal and urinary disorders","10063575","Bladder perforation","Hole in the bladder",352,365,"N","MILD","NOT RELATED","RESOLVED, RECOVERED",2016-10-29,2016-11-11,5

@@ -1,4 +1,5 @@
 library(tidyverse)
+set.seed(2357)
 
 ### Input data
     DM <- read.csv('DM.csv', colClasses = 'character') %>% select(USUBJID, SAFFL, RFSTDTC)
@@ -31,7 +32,9 @@ library(tidyverse)
             
             for (j in 1:nrow(sampledAEs)) {
                 sampledAEs[j,'AESTDY'] = sample(AESTDY, 1)
-                sampledAEs[j,'AEENDY'] = sample(sampledAEs[j,'AESTDY']:365, 1)
+                sampledAEs[j,'AEENDY'] = ifelse(sampledAEs[j,'AESTDY'] < 365,
+                    sample(sampledAEs[j,'AESTDY']:365, 1),
+                    365)
                 sampledAEs[j,'AESER'] = sample(AESER, 1, prob = AESERprobs)
                 sampledAEs[j,'AESEV'] = sample(AESEV, 1, prob = AESEVprobs)
                 sampledAEs[j,'AEREL'] = sample(AEREL, 1, prob = AERELprobs)

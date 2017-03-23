@@ -1,4 +1,5 @@
 library(tidyverse)
+set.seed(2357)
 
 ## All possibilities to sample from
 df <- crossing(age = seq(18,55,1),
