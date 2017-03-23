@@ -48,9 +48,3 @@ set.seed(2357)
             row.names = FALSE,
             na = ''
         )
-        write.csv(
-            LB,
-            '../../233/data/LB.csv',
-            row.names = FALSE,
-            na = ''
-        )

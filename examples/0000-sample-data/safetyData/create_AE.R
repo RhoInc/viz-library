@@ -63,9 +63,3 @@ set.seed(2357)
         row.names = FALSE,
         na = ''
     )
-    write.csv(
-        AE,
-        '../../233/data/AE.csv',
-        row.names = FALSE,
-        na = ''
-    )

@@ -55,10 +55,3 @@ set.seed(2357)
             row.names = FALSE,
             na = ''
         )
-        write.csv(
-            VS,
-            '../../233/data/VS.csv',
-            row.names = FALSE,
-            na = ''
-        )
-    
