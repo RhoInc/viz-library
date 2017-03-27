@@ -20,12 +20,6 @@ library(tidyverse)
                 row.names = FALSE,
                 na = ''
             )
-            write.csv(
-                ADAE,
-                '../../233/data/ADAE.csv',
-                row.names = FALSE,
-                na = ''
-            )
 
     ### ADBDS
         names(LB) <- sapply(names(LB), function(name) {
@@ -48,12 +42,6 @@ library(tidyverse)
         write.csv(
             ADBDS,
             'ADBDS.csv',
-            row.names = FALSE,
-            na = ''
-        )
-        write.csv(
-            ADBDS,
-            '../../233/data/ADBDS.csv',
             row.names = FALSE,
             na = ''
         )

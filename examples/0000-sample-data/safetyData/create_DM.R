@@ -1,4 +1,5 @@
 library(tidyverse)
+set.seed(2357)
 
 ## All possibilities to sample from
 df <- crossing(age = seq(18,55,1),
@@ -24,4 +25,3 @@ dd <- crossing(siteid = sprintf('%02d', seq(1,5,1)),
 names(dd) <- toupper(names(dd))
 
 write.csv(dd, 'DM.csv', row.names=F)
-write.csv(dd, '../../233/data/DM.csv', row.names=F)

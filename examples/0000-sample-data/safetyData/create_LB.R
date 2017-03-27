@@ -1,4 +1,5 @@
 library(tidyverse)
+set.seed(2357)
 
 ### Input data
     DM <- read.csv('DM.csv', colClasses = 'character') %>% select(USUBJID, SAFFL, RFSTDTC)
@@ -26,7 +27,9 @@ library(tidyverse)
             for (j in 1:nrow(lb_vis)) {
                 LBSTNRLO <- as.numeric(lb_vis[j,'LBSTNRLO'])
                 LBSTNRHI <- as.numeric(lb_vis[j,'LBSTNRHI'])
-                lb_vis[j,'LBSTRESN'] <- runif(1, LBSTNRLO*.75, LBSTNRHI*1.25)
+                mean <- (LBSTNRHI + LBSTNRLO)/2
+                std <- (LBSTNRHI - LBSTNRLO)/2
+                lb_vis[j,'LBSTRESN'] <- max(rnorm(1, mean, std), 0)
             }
             
             LB <- plyr::rbind.fill(LB, merge(id, lb_vis, all = TRUE))
@@ -42,12 +45,6 @@ library(tidyverse)
         write.csv(
             LB,
             'LB.csv',
-            row.names = FALSE,
-            na = ''
-        )
-        write.csv(
-            LB,
-            '../../233/data/LB.csv',
             row.names = FALSE,
             na = ''
         )
