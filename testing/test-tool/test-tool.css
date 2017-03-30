@@ -1,0 +1,35 @@
+#title{
+  border-bottom:1px solid black;
+  border-top:1px solid black;
+  font-size:1.2em
+}
+
+#controls{
+background:#ccc
+}
+
+#controls .control-wrap{
+  margin: .5em;
+  padding:.5em;
+}
+
+#controls button.submit{
+  cursor:pointer;
+  margin-right:1em;
+  margin-top:1em;
+  float:right;
+  vertical-align:bottom;
+  color:black;
+  border:none;
+  border-radius:3px;
+  padding:0.5em;
+  font-size:1.2em;
+  background-color:white;
+  border:2px solid #7BAFD4;
+
+}
+#controls button.submit:hover{
+  background-color:#7BAFD4;
+  color:white;
+
+}
