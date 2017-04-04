@@ -110,40 +110,57 @@
 
       //on submit
 
-      //load the right version of the renderer
-      function loadRenderer(path) {
-          var script = document.createElement("script");
-          script.src = path;
-          script.type = "text/javascript";
-          document.getElementsByTagName("head")[0].appendChild(script);
+      //load the right version of the renderer asynchronously
+      function loadRenderer(src, callback) {
+        var s,
+            r,
+            t;
+        r = false;
+        s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = src;
+        s.onload = s.onreadystatechange = function() {
+          if ( !r && (!this.readyState || this.readyState == 'complete') )
+          {
+            r = true;
+            callback();
+          }
+        };
+        t = document.getElementsByTagName('script')[0];
+        t.parentNode.insertBefore(s, t);
       }
 
       submitButton.on("click",function(){
-        var rendererObj = rendererSelect.selectAll("option:checked").data()[0]
-        var version = versionSelect.node().value
-        var rendererPath = settings.rootURL+"/"+rendererObj.name+"/"+version+"/build/"+rendererObj.main+".js"
+        var rendererObj = rendererSelect.selectAll("option:checked").data()[0];
+        var version = versionSelect.node().value;
+        var rendererPath = settings.rootURL+"/"+rendererObj.name+"/"+version+"/build/"+rendererObj.main+".js";
 
-        console.log(rendererPath)
-        loadRenderer(rendererPath)
+        function renderChart() {
+            console.clear();
+            console.log('Renderer: ' + rendererObj.name);
+            console.log('  Version: ' + version);
+            console.log('  URL: ' + rendererPath);
 
-        //wipe the chart area
-        d3.select("#chart").selectAll("*").remove()
+            d3.select("#chart").selectAll("*").remove()
 
-        //render the new chart with the current settings
-        var dataFile = dataFileSelect.node().value
-        var dataFilePath = settings.dataURL + dataFile
-        console.log(settingsInput.node().value)
-        var chartSettings = JSON.parse(settingsInput.node().value);
-        d3.csv(dataFilePath, function(data) {
-          console.log(chartSettings)
-          if(rendererObj.sub){
-            var myChart = window[rendererObj.main][rendererObj.sub]("#chart",chartSettings);
-          }else{
-            var myChart = window[rendererObj.main]("#chart",chartSettings);
-          }
+          //render the new chart with the current settings
+            var dataFile = dataFileSelect.node().value
+            var dataFilePath = settings.dataURL + dataFile
+            var chartSettings = JSON.parse(settingsInput.node().value);
+            console.log('  Settings: ' + settingsInput.node().value.replace(/\t/g, ' ').replace(/\n| +(?= )/g, ''));
+            console.log('  Data: ' + dataFile);
+            d3.csv(dataFilePath, function(data) {
+              if(rendererObj.sub){
+                var myChart = window[rendererObj.main][rendererObj.sub]("#chart",chartSettings);
+              }else{
+                var myChart = window[rendererObj.main]("#chart",chartSettings);
+              }
 
-          myChart.init(data)
-        });
+              myChart.init(data)
+            });
+        }
+
+        loadRenderer(rendererPath, renderChart)
       })
     </script>
 </html>
