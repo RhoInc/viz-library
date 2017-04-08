@@ -1,0 +1,28 @@
+VSCAT,VSTEST,VSAGELO,VSAGEHI,VSSTNRLO,VSSTNRHI,VSSTRESU
+Vital Signs,Heart Rate,0,0,100,160,beats/minute
+Vital Signs,Heart Rate,0,0.5,90,150,beats/minute
+Vital Signs,Heart Rate,0.5,1,80,140,beats/minute
+Vital Signs,Heart Rate,1,3,80,130,beats/minute
+Vital Signs,Heart Rate,3,5,80,120,beats/minute
+Vital Signs,Heart Rate,6,10,70,110,beats/minute
+Vital Signs,Heart Rate,11,14,60,105,beats/minute
+Vital Signs,Heart Rate,15,20,60,100,beats/minute
+Vital Signs,Heart Rate,20,999,50,80,beats/minute
+Vital Signs,Respiratory Rate,0,0,30,50,breaths/minute
+Vital Signs,Respiratory Rate,0,0.5,25,40,breaths/minute
+Vital Signs,Respiratory Rate,0.5,5,20,30,breaths/minute
+Vital Signs,Respiratory Rate,6,10,15,30,breaths/minute
+Vital Signs,Respiratory Rate,11,14,12,20,breaths/minute
+Vital Signs,Respiratory Rate,15,20,12,30,breaths/minute
+Vital Signs,Respiratory Rate,20,999,16,20,breaths/minute
+Vital Signs,Systolic Blood Pressure,0,1,75,100,mmHg
+Vital Signs,Systolic Blood Pressure,1,5,80,110,mmHg
+Vital Signs,Systolic Blood Pressure,6,13,85,120,mmHg
+Vital Signs,Systolic Blood Pressure,13,18,95,140,mmHg
+Vital Signs,Systolic Blood Pressure,18,999,90,120,mmHg
+Vital Signs,Diastolic Blood Pressure,0,1,50,70,mmHg
+Vital Signs,Diastolic Blood Pressure,1,5,50,80,mmHg
+Vital Signs,Diastolic Blood Pressure,6,13,55,80,mmHg
+Vital Signs,Diastolic Blood Pressure,13,18,60,90,mmHg
+Vital Signs,Diastolic Blood Pressure,18,999,60,80,mmHg
+Vital Signs,Temperature,,,36.6,37,°C

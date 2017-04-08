@@ -1,0 +1,9 @@
+VISITNUM,VISIT,STDY,ENDY
+0,Screening,1,1
+1,Visit 1,49,63
+2,Visit 2,105,119
+3,Visit 3,161,175
+4,Visit 4,217,231
+5,Visit 5,273,287
+6,Visit 6,329,343
+7,End of Study,355,375
