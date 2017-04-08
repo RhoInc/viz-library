@@ -5,23 +5,23 @@
 #' language: R
 #' package: ggplot2
 #' plot type: dotplot
-#' features: dotplot, r, ggplot2, facet, median, highlight, stack points, discrete 
+#' features: dotplot, r, ggplot2, facet, median, highlight, stack points, discrete
 #' ---
 
 new_fig_dir <- "H:/GitHub/viz-library/examples/0002-dotplot-ggplot"
 new_fig_name <- "0002-dotplot-ggplot"
 
-# Figure code 
+# Figure code
 
 # load packages
 pacman::p_load(dplyr, tidyr, ggplot2)
 
 # read in data
-data <- read.csv('examples/0000-sample-data/discrete_scores.csv')
+data <- read.csv('data/discrete_scores.csv')
 
 # create column containing median score for each category
-data <- data %>% 
-  group_by(category) %>% 
+data <- data %>%
+  group_by(category) %>%
   mutate(m=median(score),
          lab=c('gray60','red')[I(score==m)+1])
 
@@ -39,8 +39,8 @@ p <- ggplot(data, aes(x=score)) +
     plot.background = element_blank(),
     panel.grid.major.y = element_blank(),
     panel.grid.minor.y = element_blank(),
-    panel.grid.major.x = element_line(color='gray60'), 
-    panel.grid.minor.x = element_blank(), 
+    panel.grid.major.x = element_line(color='gray60'),
+    panel.grid.minor.x = element_blank(),
     panel.border = element_blank(),
     axis.title=element_blank(),
     axis.text.y=element_blank(),

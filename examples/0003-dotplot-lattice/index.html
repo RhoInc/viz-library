@@ -12,7 +12,7 @@
 	</span>
 	<div class="header section"><h1 style="margin-bottom: 0.1em;">Stacked Dot Plot #2</h1><div style="margin-bottom: 0.5em;">Stacked dot plot created using ggplot2 combining paneling, custom annotations and simple data manipulation. Similar to &lt;a href="../0002-dotplot-lattice"&gt;this example&lt;/a&gt; made with lattice.</div></div>
 	<div class="chart section"><div style="border:1px solid black; padding:0.1em;"><img src="0003-dotplot-lattice.png" width="960"></div></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>lattice</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>dotplot, r, lattice, facet, median, highlight, stack points, discrete</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../examples/0000-sample-data/discrete_scores.csv">../examples/0000-sample-data/discrete_scores.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0003-dotplot-lattice.png">0003-dotplot-lattice.png</a></span></div></div><div><p><em>B Krouse, 2017-01-20</em> </p></div></div>
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>lattice</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>dotplot, r, lattice, facet, median, highlight, stack points, discrete</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/discrete_scores.csv">../../data/discrete_scores.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0003-dotplot-lattice.png">0003-dotplot-lattice.png</a></span></div></div><div><p><em>B Krouse, 2017-01-20</em></p></div></div>
 	<div class="code section">
 		<h2>Code</h2>
 		<pre><code class="hljs">#' ---
@@ -22,7 +22,7 @@
 #' language: R
 #' package: Lattice, latticeExtra, HH
 #' plot type: dotplot
-#' features: dotplot, r, lattice, facet, median, highlight, stack points, discrete 
+#' features: dotplot, r, lattice, facet, median, highlight, stack points, discrete
 #' ---
 
 new_fig_dir &lt;- "H:/GitHub/viz-library/examples/0003-dotplot-lattice"
@@ -30,29 +30,29 @@ new_fig_name &lt;- "0003-dotplot-lattice"
 
 # Figure code
 
-# load packages 
+# load packages
 pacman::p_load(dplyr, tidyr, lattice, latticeExtra, HH)
 
 # read in data
-data &lt;- read.csv('examples/0000-sample-data/discrete_scores.csv')
+data &lt;- read.csv('data/discrete_scores.csv')
 
 # define function to customize vertical lines &amp; associated axis tick labels
 # by coloring median values red, and the rest gray
 panel.dotplot_highlightMedian &lt;- function(x, l){  # l = vector of axis tick values
-  
-  panel.segments(l,0.6,l,1.5,col="gray70")          
+
+  panel.segments(l,0.6,l,1.5,col="gray70")
   panel.text(l,0.55,l,col="gray70",cex=0.7)
-  
+
   panel.segments(quantile(x,0.5,type=4),0.6,quantile(x,0.5,type=4),1.5,col="red")
   panel.text(quantile(x,0.5,type=4),0.55,quantile(x,0.5,type=4),col="red",cex=0.7)
 }
 
 # plot function
-p &lt;- dotplot(~score|category, 
-        data=data, 
+p &lt;- dotplot(~score|category,
+        data=data,
         col.symbol="gray50",
         asp=0.2, layout=c(1,4),as.table=T,
-        ylab=" ", xlab="", 
+        ylab=" ", xlab="",
         scales=list(x = list(draw=F), y=list(draw=F)),
         par.strip.text = list(cex=0.8),
         par.settings=list(strip.background=list(col="gray90"),
@@ -61,14 +61,14 @@ p &lt;- dotplot(~score|category,
         main="Discrete Scores by Category",
         prepanel=function(...) list(xlim=c(0,100)),
         panel=function(x,y,...){
-          
+
           # highlight median values red, while the rest of the lines/values are gray
           l &lt;- seq(0,100,20)
           panel.dotplot_highlightMedian(x,l)
-          
+
           # Plot dotplot - multiple hits on a specific x value are stacked
           HH::panel.dotplot.tb(x,y,factor=0.5,col.line="transparent",...)
-        }                    
+        }
 )
 
 # Save image of figure:
@@ -78,7 +78,8 @@ dev.off()
 
 # Create tags and README.md
 source('util/r_scripts/createSuppFiles.R')
-createSuppFiles(new_fig_name, example_type='R-examples')</code></pre>
+createSuppFiles(new_fig_name, example_type='R-examples')
+</code></pre>
 	</div>	
 
 </body></html>

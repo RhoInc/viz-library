@@ -8,7 +8,7 @@
 
 **Tags:** dotplot, r, lattice, facet, median, highlight, stack points, discrete  
 
-**Data:** ../examples/0000-sample-data/discrete_scores.csv
+**Data:** ../../data/discrete_scores.csv
 
 **Code:** 0003-dotplot-lattice.R
 
@@ -16,8 +16,4 @@
 
 [comment]: <> (---END OF HEADER---)
 
-*B Krouse, 2017-01-20* 
-  
-
-
-
+*B Krouse, 2017-01-20*

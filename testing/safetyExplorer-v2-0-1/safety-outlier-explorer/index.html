@@ -42,7 +42,7 @@
 
     <script>
     var settings =
-        {time_cols: 
+        {time_cols:
             [
                 {value_col: 'VISITN'
                 ,type: 'ordinal'
@@ -73,7 +73,7 @@
             ,   {value_col: 'AGE', label: 'Age'}
             ,   {value_col: 'SEX', label: 'Sex'}
             ,   {value_col: 'RACE', label: 'Race'}]
-        ,custom_marks: 
+        ,custom_marks:
             [
                 {
                     per: ['USUBJID', 'VISITN', 'STRESN'],
@@ -90,7 +90,7 @@
         ,multiples_sizing: {width: 250,height: 75}
     };
 
-        d3.csv('../../../examples/0000-sample-data/safetyData-queries/ADBDS.csv', function(data) {
+        d3.csv('../../../data/safetyData-queries/ADBDS.csv', function(data) {
             data.forEach(function(d){
                 d.SEX = ""
             })

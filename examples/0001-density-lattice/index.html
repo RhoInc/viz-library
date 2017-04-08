@@ -12,7 +12,7 @@
 	</span>
 	<div class="header section"><h1 style="margin-bottom: 0.1em;">Density Plot</h1><div style="margin-bottom: 0.5em;">Customized density plot created using lattice combining paneling, grouping, custom annotations and some simple data manipulation.</div></div>
 	<div class="chart section"><div style="border:1px solid black; padding:0.1em;"><img src="0001-density-lattice.png" width="960"></div></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>lattice</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>density plot, lattice, r, groups, means, annotated, faceted</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../examples/0000-sample-data/ChickWeight.csv">../examples/0000-sample-data/ChickWeight.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0001-density-lattice.png">0001-density-lattice.png</a></span></div></div><div><p><em>B Krouse, 2017-01-20</em></p></div></div>
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>lattice</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>density plot, lattice, r, groups, means, annotated, faceted</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/ChickWeight.csv">../../data/ChickWeight.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0001-density-lattice.png">0001-density-lattice.png</a></span></div></div><div><p><em>B Krouse, 2017-01-20</em></p></div></div>
 	<div class="code section">
 		<h2>Code</h2>
 		<pre><code class="hljs">#' ---
@@ -34,8 +34,8 @@ new_fig_name &lt;- "0001-density-lattice"
 pacman::p_load(dplyr, tidyr, lattice, latticeExtra, ggplot2, datasets)
 
 # data - subset to measurements on Days 0 and Day 8
-dd &lt;- read.csv('examples/0000-sample-data/ChickWeight.csv') %&gt;% 
-  filter(Time %in% c(0,8)) %&gt;% 
+dd &lt;- read.csv('data/ChickWeight.csv') %&gt;% 
+  filter(Time %in% c(0,8)) %&gt;%
   mutate(Diet = as.factor(Diet))
 levels(dd$Diet) &lt;- paste0('Diet #', levels(dd$Diet))
 
@@ -46,27 +46,27 @@ cols2&lt;- c("#E41A1C11","#377EB811")
 
 # define function to caclulate &amp; annotate mean +/- 1 SD in density plot
 panel.annotate_density &lt;- function(x, group.number, subscripts){
-  
+
   # Determine mean/SD for filling the Area under the Curve for Mean +/- 1 SD
   mean  &lt;- mean(x,na.rm=T)
   sd    &lt;- sd(x,na.rm=T)
   f    &lt;- 0.5
   d    &lt;- density(x,cut=0.5, bw=10)
-  
+
   # Define position of shaded region
   ytop  &lt;- d$y[d$x&lt;mean+f*sd &amp; d$x&gt;mean-f*sd]
   xtop  &lt;- d$x[d$x&lt;mean+f*sd &amp; d$x&gt;mean-f*sd]
   xx  &lt;- c(mean-f*sd,xtop,mean+f*sd)
   yy  &lt;- c(0,ytop,0)
-  
+
   # Define position of mean line
   diffs  &lt;-abs(d$x-mean)
   lx  &lt;- d$x[diffs==min(diffs)]
   ly  &lt;- d$y[diffs==min(diffs)]
-  
+
   # Shade Mean +/- 1 SD, draw dotted line at Mean, Annotate values
   panel.polygon(x=xx,y=yy,col=cols2[group.number],border=F)
-  panel.lines(x=c(lx,lx),y=c(0,ly),col=cols[group.number],lty=2)  
+  panel.lines(x=c(lx,lx),y=c(0,ly),col=cols[group.number],lty=2)
   panel.text(lx,ly,
              labels=paste("Day ",dd[subscripts,]$Time[1]," - ",round(mean(x),1)," (",round(sd(x),1),")",sep=""),
              adj=c(-0.1,-0.1),
@@ -85,13 +85,13 @@ p &lt;- densityplot(~weight|Diet,   # 1. Condition on diet
                              y=list(tck=c(0,0), labels=NULL)),
                  par.settings=list(strip.background=list(col='gray80')),
                  panel.groups = function(x, group.number, subscripts, ...) {
-                   
+
                    # Plot density curves as defined above
                    panel.densityplot(x,...)
-                   
+
                    # Annotate density
                    panel.annotate_density(x,group.number, subscripts)
-                   
+
                  },
                  panel = function (x, groups,...){
                    panel.superpose(x, groups=groups, ...)

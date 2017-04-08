@@ -12,7 +12,7 @@
 	</span>
 	<div class="header section"><h1 style="margin-bottom: 0.1em;">Safety Explorer with Query Data</h1><div style="margin-bottom: 0.5em;">The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials.  This instance demonstrates customized versions of each graphic including added filters and/or highlights for query data.</div></div>
 	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="ae-table/index.html" marginwidth="0" marginheight="0" style="height:600px; width:960px;"></iframe></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webcharts, safety-histogram, safety-results-over-time, safety-shift-plot, safety-outlier-explorer, ae-timeline, ae-explorer</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, webcharts, adverse events, safety explorer, queries</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../0000-sample-data/safetyData-queries/">../0000-sample-data/safetyData-queries/</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="ae-table/index.html">ae-table/index.html</a></span></div></div><div></div></div>
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webcharts, safety-histogram, safety-results-over-time, safety-shift-plot, safety-outlier-explorer, ae-timeline, ae-explorer</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, webcharts, adverse events, safety explorer, queries</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData-queries/">../../data/safetyData-queries/</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="ae-table/index.html">ae-table/index.html</a></span></div></div><div></div></div>
 	<div class="code section">
 		<h2>Code</h2>
 		<pre><code class="hljs">&lt;!DOCTYPE html&gt;
@@ -61,11 +61,11 @@
         'variables': {
             'group': 'ARM',
             'filters': [
-                { 'value_col': 'AESER', 'label': 'Serious?', 'type': 'event' }, 
-                { 'value_col': 'AESEV', 'label': 'Severity','type': 'event' }, 
-                { 'value_col': 'AEREL', 'label': 'Relationship','type': 'event' }, 
-                { 'value_col': 'AEOUT','label': 'Outcome','type': 'event' }, 
-                { 'value_col': 'SITEID', 'label': 'Site ID','type': 'participant' }, 
+                { 'value_col': 'AESER', 'label': 'Serious?', 'type': 'event' },
+                { 'value_col': 'AESEV', 'label': 'Severity','type': 'event' },
+                { 'value_col': 'AEREL', 'label': 'Relationship','type': 'event' },
+                { 'value_col': 'AEOUT','label': 'Outcome','type': 'event' },
+                { 'value_col': 'SITEID', 'label': 'Site ID','type': 'participant' },
                 { 'value_col': 'ARM', 'label': 'Arm','type': 'participant' },
                 { 'value_col': 'SEX', 'label': 'Sex','type': 'participant' },
                 { 'value_col': 'RACE', 'label': 'Race','type': 'participant' },
@@ -78,7 +78,7 @@
             'maxGroups': 7,
             'totalCol': true,
             'diffCol': true,
-            'prefTerms': false 
+            'prefTerms': false
         },
         'plotSettings': { 'h': 15,
             'w': 200,
@@ -88,7 +88,7 @@
         };
 
 
-        d3.csv('../../0000-sample-data/safetyData-queries/ADAE.csv', function(data) {
+        d3.csv('../../../data/safetyData-queries/ADAE.csv', function(data) {
             aeTable.createChart('#ae-table .content', settings)
                 .init(data);
         });

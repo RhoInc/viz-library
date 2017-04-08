@@ -4,7 +4,7 @@ const settings =
     ,margin:
         {left: 125}};
 
-d3.csv('../0000-sample-data/safetyData/ADBDS.csv', function(data) {
+d3.csv('../../data/safetyData/ADBDS.csv', function(data) {
     spikeHistogram('#container .chart .content', settings)
         .init(data
             .filter(function(d) {
