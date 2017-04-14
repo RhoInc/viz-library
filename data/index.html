@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <script src='https://d3js.org/d3.v3.min.js'>
+        </script>
+        <link rel='stylesheet' href='../util/web/css/viz-library.css'>
+
+    </head>
+
+    <body>
+        <h1>Rho's Data Visualization Example Gallery</h1>
+        <h2>Data Sets</h2>
+        <p> List of Commonly used data sets</p>
+        <ul class="fileList"></ul>
+
+    </body>
+    <script src='../util/web/data/dataFiles.js'></script>
+    <script>
+      d3.select(".fileList").selectAll("li")
+      .data(dataFiles)
+      .enter()
+      .append("li")
+      .append("a")
+      .attr("href",function(d){return d.path})
+      .text(function(d){return d.path})
+    </script>
+
+</html>
