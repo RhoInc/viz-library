@@ -49,7 +49,7 @@
                 ,rotate_tick_labels: true
                 ,vertical_space: 100}
             ,groups:
-                [   
+                [
                     {value_col: 'NONE', label: 'None'}
                 ,   {value_col: 'RACE', label: 'Race'}
                 ,   {value_col: 'ARM' , label: 'Arm'}
@@ -62,7 +62,7 @@
             ,   {value_col: 'RACE', label: 'Race'}
             ,   {value_col: 'QUERYFL', label: 'Open Query?'}]
             };
-        d3.csv('../../../examples/0000-sample-data/safetyData-queries/ADBDS.csv', function(data) {
+        d3.csv('../../../data/safetyData-queries/ADBDS.csv', function(data) {
             data.forEach(function(d){
                 d.SEX = ""
             })

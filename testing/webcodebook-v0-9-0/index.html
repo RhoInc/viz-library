@@ -27,7 +27,7 @@
     <script>
     var settings = {}
     var codebook = webcodebook.createChart('body', settings);
-    d3.csv('../../examples/0000-sample-data/safetyData-queries/ADAE.csv', function(error, data){
+    d3.csv('../../data/safetyData-queries/ADAE.csv', function(error, data){
         codebook.init(data);
     });
     </script>

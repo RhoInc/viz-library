@@ -8,7 +8,7 @@
 
 **Tags:** interactive, histogram, spike
 
-**Data:** ../0000-sample-data/safetyData/
+**Data:** ../../data/safetyData/
 
 **Code:** paneledSpikeHistogram.js
 

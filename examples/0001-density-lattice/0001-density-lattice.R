@@ -17,8 +17,8 @@ new_fig_name <- "0001-density-lattice"
 pacman::p_load(dplyr, tidyr, lattice, latticeExtra, ggplot2, datasets)
 
 # data - subset to measurements on Days 0 and Day 8
-dd <- read.csv('examples/0000-sample-data/ChickWeight.csv') %>% 
-  filter(Time %in% c(0,8)) %>% 
+dd <- read.csv('data/ChickWeight.csv') %>% 
+  filter(Time %in% c(0,8)) %>%
   mutate(Diet = as.factor(Diet))
 levels(dd$Diet) <- paste0('Diet #', levels(dd$Diet))
 
@@ -29,27 +29,27 @@ cols2<- c("#E41A1C11","#377EB811")
 
 # define function to caclulate & annotate mean +/- 1 SD in density plot
 panel.annotate_density <- function(x, group.number, subscripts){
-  
+
   # Determine mean/SD for filling the Area under the Curve for Mean +/- 1 SD
   mean  <- mean(x,na.rm=T)
   sd    <- sd(x,na.rm=T)
   f    <- 0.5
   d    <- density(x,cut=0.5, bw=10)
-  
+
   # Define position of shaded region
   ytop  <- d$y[d$x<mean+f*sd & d$x>mean-f*sd]
   xtop  <- d$x[d$x<mean+f*sd & d$x>mean-f*sd]
   xx  <- c(mean-f*sd,xtop,mean+f*sd)
   yy  <- c(0,ytop,0)
-  
+
   # Define position of mean line
   diffs  <-abs(d$x-mean)
   lx  <- d$x[diffs==min(diffs)]
   ly  <- d$y[diffs==min(diffs)]
-  
+
   # Shade Mean +/- 1 SD, draw dotted line at Mean, Annotate values
   panel.polygon(x=xx,y=yy,col=cols2[group.number],border=F)
-  panel.lines(x=c(lx,lx),y=c(0,ly),col=cols[group.number],lty=2)  
+  panel.lines(x=c(lx,lx),y=c(0,ly),col=cols[group.number],lty=2)
   panel.text(lx,ly,
              labels=paste("Day ",dd[subscripts,]$Time[1]," - ",round(mean(x),1)," (",round(sd(x),1),")",sep=""),
              adj=c(-0.1,-0.1),
@@ -68,13 +68,13 @@ p <- densityplot(~weight|Diet,   # 1. Condition on diet
                              y=list(tck=c(0,0), labels=NULL)),
                  par.settings=list(strip.background=list(col='gray80')),
                  panel.groups = function(x, group.number, subscripts, ...) {
-                   
+
                    # Plot density curves as defined above
                    panel.densityplot(x,...)
-                   
+
                    # Annotate density
                    panel.annotate_density(x,group.number, subscripts)
-                   
+
                  },
                  panel = function (x, groups,...){
                    panel.superpose(x, groups=groups, ...)

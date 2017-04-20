@@ -8,7 +8,7 @@
 
 **Tags:** interactive, codebook
 
-**Data:** ../0000-sample-data/safetyData/
+**Data:** ../../data/safetyData/
 
 **Code:** webCodebookDemo.js
 
