@@ -1,0 +1,43 @@
+.wrap .section{
+  display:inline-block;
+  vertical-align: top;
+}
+
+.file-list{
+}
+
+.file-list tr{
+  border-top:1px solid #999
+}
+
+.data-preview{
+  max-width:800px;
+  margin-left:1em;
+
+}
+
+.data-table{
+  padding-top:1em;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  padding: 0 0.2em;
+}
+.data-table table{
+  border-bottom:1px solid #999;
+}
+
+.data-table table td{
+  border-top:1px solid #999;
+}
+
+tr.selected{
+  background:#ccc;
+}
+button{
+  margin-left:1em
+}
