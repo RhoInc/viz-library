@@ -2,7 +2,7 @@ var fs = require('fs');
 var Jimp = require("jimp");
 var makeindex = require("./buildExample/makeExampleIndex.js")
 /*
-var fs = require('fs'), 
+var fs = require('fs'),
 	d3 = require('d3'),
     jsdom = require('jsdom'),
     showdown = require('showdown')
@@ -31,10 +31,10 @@ examples.forEach(function(ex){
 	////get list of files////
 	ex.files = fs.readdirSync(exampleRoot+"/"+ex.dir)
 	.filter(function(f){return f.charAt(0)!="."})
-	
+
 	////get paths of required files////
 	ex.paths = {}
-	
+
 	//root path
 	ex.paths.root = exampleRoot + "/" + ex.dir + "/"
 
@@ -42,10 +42,10 @@ examples.forEach(function(ex){
 	var readmeN = ex.files.map(function(f) {
 		return f.toLowerCase();
 	}).indexOf("readme.md")
-	ex.paths.readme = readmeN > -1 ? 
+	ex.paths.readme = readmeN > -1 ?
 		ex.files[readmeN]:
 		null
-	
+
 	//index.html
 	ex.paths.index = "index.html"
 
@@ -57,7 +57,7 @@ examples.forEach(function(ex){
 
 	//Pull in the raw readme data and look for attributes
 	if(ex.paths.readme){
-		var lines = fs.readFileSync(ex.paths.root+ex.paths.readme,'utf8').toString().split("\n")	
+		var lines = fs.readFileSync(ex.paths.root+ex.paths.readme,'utf8').toString().split("\n")
 
 		//look for chart attributes in the readme
 		chartAttributes.forEach(function(c){
@@ -69,22 +69,22 @@ examples.forEach(function(ex){
 	////get paths of data and code////
 	ex.paths.data = ex.data
 	ex.paths.code = ex.code
-	
+
 	//example
 	var webExampleN = ex.files.map(function(f) {
 		return f.toLowerCase();
 	}).indexOf("example.html")
-	
+
 	var imgExampleN = ex.files.map(function(f) {
 		return f.toLowerCase();
-	}).indexOf("example.png") 
+	}).indexOf("example.png")
 
-	ex.paths.example = 
-	ex.results ? 
-	ex.results : 
-	webExampleN > -1 ? 
+	ex.paths.example =
+	ex.results ?
+	ex.results :
+	webExampleN > -1 ?
 	ex.files[webExampleN] :
-	imgExampleN > -1 ? 
+	imgExampleN > -1 ?
 	ex.files[imgExampleN] :
 	null
 
@@ -96,11 +96,11 @@ examples.forEach(function(ex){
 	}).filter(function(file){
 		var ext = file.match(/\.[0-9a-z]+$/)
 		if(ext){
-			return [".png",".jpeg",".jpg"].indexOf(ext[0])>-1	
+			return [".png",".jpeg",".jpg"].indexOf(ext[0])>-1
 		} else {
 			return false
 		}
-		
+
 	})
 
 	if(imgs.indexOf("thumb.png")==-1 & imgs.length>0){
@@ -109,21 +109,21 @@ examples.forEach(function(ex){
 		console.log(thumbFile)
 		Jimp.read(imgFile, function (err, lenna) {
 	    	if (err) throw err;
-		    lenna.resize(300, 200)            // resize 
-		         .quality(60)                 // set JPEG quality 
-		         .write(thumbFile); // save 
+		    lenna.resize(300, 200)            // resize
+		         .quality(60)                 // set JPEG quality
+		         .write(thumbFile); // save
 		});
 	}
 
 	//Make example pages (unless readme says not to)
 	var makeIndexRegex = /(\[comment\]: <> \(---NO AUTO INDEX---\))/
 	var makeIndexLines = lines.filter(function(line){return makeIndexRegex.test(line)})
-	ex.makeIndex = makeIndexLines.length == 0 	
+	ex.makeIndex = makeIndexLines.length == 0
 
 	if(ex.makeIndex) makeindex.makeExampleIndex(ex)
 })
 
 //write examples to disk
 var json_data = JSON.stringify(examples);
-var js_data = "export default"+json_data
+var js_data = "var examples ="+json_data
 fs.writeFile('./util/web/data/examples.js', js_data);

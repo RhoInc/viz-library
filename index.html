@@ -15,7 +15,10 @@
         <div class="controls"></div>
         <div class="examples"></div>
     </body>
-    <script src='./util/web/build/viz-library.js'>
+    <script src='./util/web/data/examples.js'></script>
+    <script src='./util/web/build/vizLibrary.js'></script>
+    <script>
+      vizLibrary.buildFilters(examples,["languages","libraries"],".controls")
+      vizLibrary.buildExampleList(examples,".examples")
     </script>
-
 </html>
