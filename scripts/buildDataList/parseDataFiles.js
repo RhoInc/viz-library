@@ -1,8 +1,8 @@
-var fs = require('fs');
-var path = require('path');
+var fs = require("fs");
+var path = require("path");
 
 //get example directories
-var dataRoot = './data';
+var dataRoot = "./data";
 
 //Fucntion to iteratively 'walk' through the ./data directory from:
 // http://stackoverflow.com/questions/5827612/node-js-fs-readdir-recursive-directory-search
@@ -29,15 +29,15 @@ var walk = function(dir, done) {
   });
 };
 
-const csvFilePath = '<path to csv file>';
-const csv = require('csvtojson');
+const csvFilePath = "<path to csv file>";
+const csv = require("csvtojson");
 
 walk(dataRoot, function(err, allFiles) {
   if (err) throw err;
   var dataFiles = allFiles
     .map(function(local_path) {
       //filename
-      var filename = local_path.replace(/^.*[\\\/]/, '');
+      var filename = local_path.replace(/^.*[\\\/]/, "");
 
       //extension
       var ext_re = /(?:\.([^.]+))?$/;
@@ -45,7 +45,7 @@ walk(dataRoot, function(err, allFiles) {
 
       //root
       var rel_path_re = /\/data\/(?!.*\/data)(.*$)/;
-      var rel_path = './' + rel_path_re.exec(local_path)[1];
+      var rel_path = "./" + rel_path_re.exec(local_path)[1];
 
       return {
         local_path: local_path,
@@ -56,12 +56,12 @@ walk(dataRoot, function(err, allFiles) {
     })
     //just keep csvs
     .filter(function(file) {
-      return file.ext == 'csv';
+      return file.ext == "csv";
     });
 
   //get dimensions
   console.log(
-    'Found ' + dataFiles.length + ' files - counting rows and columns ...'
+    "Found " + dataFiles.length + " files - counting rows and columns ..."
   );
 
   var processed = 0;
@@ -70,32 +70,32 @@ walk(dataRoot, function(err, allFiles) {
     file.cols = 0;
     csv()
       .fromFile(file.local_path)
-      .on('json', jsonObj => {
+      .on("json", jsonObj => {
         file.rows += 1;
         if (!file.cols) {
           file.cols = Object.keys(jsonObj).length;
         }
       })
-      .on('done', error => {
+      .on("done", error => {
         processed += 1;
         console.log(
           processed +
-            ' of ' +
+            " of " +
             dataFiles.length +
-            ' complete: ' +
+            " complete: " +
             file.rel_path +
-            ' has ' +
+            " has " +
             file.rows +
-            ' rows and ' +
+            " rows and " +
             file.cols +
-            ' columns.'
+            " columns."
         );
 
         if (processed == dataFiles.length) {
-          var outpath = "./util/web/data/dataFiles.js"
-          console.log('Saving file summaries to '+outpath);
+          var outpath = "./util/web/data/dataFiles.js";
+          console.log("Saving file summaries to " + outpath);
           var json_data = JSON.stringify(dataFiles);
-          var js_data = 'var dataFiles = ' + json_data;
+          var js_data = "var dataFiles = " + json_data;
           fs.writeFile(outpath, js_data);
         }
       });
