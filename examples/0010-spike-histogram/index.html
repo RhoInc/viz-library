@@ -15,17 +15,18 @@
 	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>spike-histogram</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, histogram, spike</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData/">../../data/safetyData/</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div></div></div>
 	<div class="code section">
 		<h2>Code</h2>
-		<pre><code class="hljs">const settings =
-    {measure: 'STRESN'
-    ,panel: 'RACE'
-    ,margin:
-        {left: 125}};
+		<pre><code class="hljs">const settings = {
+  measure: "STRESN",
+  panel: "RACE",
+  margin: { left: 125 }
+};
 
-d3.csv('../../data/safetyData/ADBDS.csv', function(data) {
-    spikeHistogram('#container .chart .content', settings)
-        .init(data
-            .filter(function(d) {
-                return d.TEST === 'Albumin'; }));
+d3.csv("../../data/safetyData/ADBDS.csv", function(data) {
+  spikeHistogram("#container .chart .content", settings).init(
+    data.filter(function(d) {
+      return d.TEST === "Albumin";
+    })
+  );
 });
 </code></pre>
 	</div>	
