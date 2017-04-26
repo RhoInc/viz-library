@@ -16,40 +16,39 @@
 	<div class="code section">
 		<h2>Code</h2>
 		<pre><code class="hljs">var settings = {
-  "max_width":"500",
-  "x":{
-    "label":"Total",
-    "type":"linear",
-    "column":"Total",
+  max_width: "500",
+  x: {
+    label: "Total",
+    type: "linear",
+    column: "Total",
     domain: [0, null]
   },
-  "y":{
-    "type":"ordinal",
-    "column":"Country",
-    "sort":"total-descending"
+  y: {
+    type: "ordinal",
+    column: "Country",
+    sort: "total-descending"
   },
-  "marks":[
+  marks: [
     {
-      "type":"bar",
-      "per":["Country"],
-      "tooltip":"[Country] won [Total] medals"
+      type: "bar",
+      per: ["Country"],
+      tooltip: "[Country] won [Total] medals"
     }
   ],
-  "gridlines":"x"
+  gridlines: "x"
 };
-    
-var medalChart = webCharts.createChart('body', settings);
 
-d3.csv('OlympicMedals2012.csv', function(error, data){
-      
-  //just keep the countries with the 10 most medals 
-  var sub = data.filter(function(d,i){
+var medalChart = webCharts.createChart("body", settings);
+
+d3.csv("OlympicMedals2012.csv", function(error, data) {
+  //just keep the countries with the 10 most medals
+  var sub = data.filter(function(d, i) {
     return i &lt;= 11;
   });
 
   medalChart.init(sub);
-
-});</code></pre>
+});
+</code></pre>
 	</div>	
 
 </body></html>
