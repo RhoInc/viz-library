@@ -1,0 +1,56 @@
+form,field,description
+SCRN,SCRNDT,Date of Visit
+SCRN,INFCYN,Did Participant sign the Informed Consent?
+SCRN,PROTOCOL,Protocol Version
+SCRN,SFYN,Was the participant a screen failure?
+SCRN,SFRSN,Screen failure reason
+DM,BIRTHDT,Date of Birth
+DM,SEX,Sex
+DM,ETHNIC,Ethnicity
+DM,RACE,Race
+MH,MHSTDT,Start Date of Condition
+MH,MHENDT,End Date of Condition
+MH,MHBODSYS,Body System
+MH,MHTERM,Medical History Term
+VS,VSDT,Date of Visit
+VS,SYSBP,Systolic Blood Pressure
+VS,DIABP,Diastolic Blood Pressure
+VS,TEMP,Temperature
+VS,PULSE,Pulse
+VS,RESP,Respiratory Rate
+VS,WEIGHT,Weight
+VS,HEIGHT,Height
+HEMA,HEMADT,Date of Visit
+HEMA,HEMATEST,Test
+HEMA,HEMAORRES,Result
+HEMA,HEMAORRESU,Unit
+CHEM,CHEMDT,Date of Visit
+CHEM,CHEMTEST,Test
+CHEM,CHEMORRES,Result
+CHEM,CHEMORRESU,Unit
+CM,CMSTDT,Start Date of Concomitant Medication
+CM,CMENDT,End Date of Concomitant Medication
+CM,CMTRT,Medication
+CM,CMIND,Indication
+CM,CMDOSE,Dose
+CM,CMUNIT,Units
+CM,CMFREQ,Frequency
+CM,CMROUTE,Route
+AE,AESTDT,Start Date of Adverse Event
+AE,AEENDT,End Date of Adverse Event
+AE,AETERM,Adverse Event
+AE,ONGOING,Ongoing?
+AE,AEOUT,Outcome
+AE,AETRT,Treatment Required
+AE,AETOXGR,CTCAE Severity Grade
+SAE,AESTDT,Start Date of Adverse Event
+SAE,AEENDT,End Date of Adverse Event
+SAE,AETERM,Adverse Event
+SAE,SAEDT,Date AE Became Serious
+SAE,ONGOING,Ongoing?
+PREG,PREGDT,Pregnancy Date
+PREG,AMNIO,Amniocentesis
+PREG,ULTRA,Ultrasound
+DV,DVDT,Date of Protocol Deviation
+DV,DVTYPE,Deviation Type
+DV,DVCONT,Will the participant continue the study?

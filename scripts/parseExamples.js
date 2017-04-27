@@ -1,5 +1,6 @@
 var fs = require("fs");
 var Jimp = require("jimp");
+var codebookExplorer = require("./buildExample/0012-web-codebook-explorer.js");
 var makeindex = require("./buildExample/makeExampleIndex.js");
 /*
 var fs = require('fs'),
