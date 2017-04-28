@@ -9,7 +9,8 @@
     "scrape-dataFiles":"node ./scripts/buildDataList/parseDataFiles.js",
     "scrape-all":"npm run scrape-examples && npm run scrape-dataFiles",
     "build-web": "npm run format && rollup -c ./scripts/rollup.config.js | babel > ./util/web/build/vizLibrary.js",
-    "build":"npm run scrape-all && npm run build-web"
+    "build":"npm run scrape-all && npm run build-web",
+    "test": "node ./testing/test.js"
   },
   "author": "Rho, Inc.",
   "license": "MIT",
