@@ -37,7 +37,7 @@ walk(dataRoot, function(err, allFiles) {
   var dataFiles = allFiles
     .map(function(local_path) {
       //Replace backslashes (Windows) with forward slashes (every other OS).
-      local_path = local_path.replace(/\\/g, '/');
+      local_path = local_path.replace(/\\/g, "/");
 
       //filename
       var filename = local_path.replace(/^.*[\\\/]/, "");
