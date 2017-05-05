@@ -1,11 +1,12 @@
 /* -----------------------------------------------------
- Takes a meta data and an array of properties for which 
- standard filters (<select> elements) are created. Measures 
- can take the form [attr1, attr2] or 
+ Takes a meta data and an array of properties for which
+ standard filters (<select> elements) are created. Measures
+ can take the form [attr1, attr2] or
  [{colName:"attr1",label:"Attribute #1"},{colName:"attr2",label:"Attribute #2"}]
  ----------------------------------------------------- */
 
 export default function buildFilters(meta, measures, parentElement) {
+  console.log(examples);
   measures = measures.map(function(m) {
     console.log(m.length);
     return m.length ? { colName: m, label: m } : m;
@@ -28,9 +29,10 @@ export default function buildFilters(meta, measures, parentElement) {
     .data(function(d) {
       // gets a list of values for the measure
       var measureName = d.colName;
-      var values = d3.set(meta.map(metaRow => metaRow[measureName])).values();
-      var allvalues = d3.merge([["All"], values]);
-      return allvalues;
+      var valueArrays = meta.map(metaRow => metaRow[measureName]);
+      var allValues = [].concat.apply([], valueArrays);
+      var uniqueValues = d3.set(allValues).values();
+      return d3.merge([["All"], uniqueValues]);
     })
     .enter()
     .append("option")
@@ -45,7 +47,11 @@ export default function buildFilters(meta, measures, parentElement) {
       var measure = e.colName;
       console.log(value + "=" + measure);
       if (value != "All")
-        elements.filter(d => d[measure] != value).classed("hidden", true);
+        elements
+          .filter(function(d) {
+            return d[measure].indexOf(value) == -1;
+          })
+          .classed("hidden", true);
     });
   });
 }

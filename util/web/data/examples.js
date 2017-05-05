@@ -21,12 +21,13 @@ var examples = [
     readme: {},
     title: "Density Plot",
     languages: "R",
-    libraries: "lattice",
+    libraries: ["lattice"],
     description: "Customized density plot created using lattice combining paneling, grouping, custom annotations and some simple data manipulation.",
     data: "../../data/ChickWeight.csv",
     code: "0001-density-lattice.R",
     results: "0001-density-lattice.png",
     tags: "density plot, lattice, r, groups, means, annotated, faceted",
+    langages: ["R"],
     makeIndex: true
   },
   {
@@ -50,12 +51,13 @@ var examples = [
     readme: {},
     title: "Stacked Dot Plot #1",
     languages: "R",
-    libraries: "ggplot2",
+    libraries: ["ggplot2"],
     description: "Stacked dot plot created using ggplot2 combining paneling, custom annotations and some simple data manipulation.",
     data: "../../data/discrete_scores.csv",
     code: "0002-dotplot-ggplot.R",
     results: "0002-dotplot-ggplot.png",
     tags: "dotplot, r, ggplot2, facet, median, highlight, stack points, discrete",
+    langages: ["R"],
     makeIndex: true
   },
   {
@@ -80,12 +82,13 @@ var examples = [
     readme: {},
     title: "Stacked Dot Plot #2",
     languages: "R",
-    libraries: "lattice",
+    libraries: ["lattice"],
     description: 'Stacked dot plot created using ggplot2 combining paneling, custom annotations and simple data manipulation. Similar to <a href="../0002-dotplot-lattice">this example</a> made with lattice.',
     data: "../../data/discrete_scores.csv",
     code: "0003-dotplot-lattice.R",
     results: "0003-dotplot-lattice.png",
     tags: "dotplot, r, lattice, facet, median, highlight, stack points, discrete",
+    langages: ["R"],
     makeIndex: true
   },
   {
@@ -110,12 +113,13 @@ var examples = [
     readme: {},
     title: "Pirate plot using Yarrr",
     languages: "R",
-    libraries: "yarrr",
+    libraries: ["yarrr"],
     description: "Combines a box-and-whisker plot with overlaid density plots to show clear comparisons of distributions across groups; a good choice for  displaying the relationship between 1 or two categorical independent variables, and one continuous dependent variable.",
     data: "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv",
     code: "0004-pirateplot-yarrr.R",
     results: "0004-pirateplot-yarrr.png",
     tags: "pirateplot, boxplot, density plot, violin plot",
+    langages: ["R"],
     makeIndex: true
   },
   {
@@ -140,12 +144,13 @@ var examples = [
     readme: {},
     title: "Unemployment Trends with a Multivariate Time Series",
     languages: "R",
-    libraries: "mvtsplot",
+    libraries: ["mvtsplot"],
     description: "Mutivariate time series plot using MVTSPLOT package and Unemployment data",
     data: "Precipitations.csv",
     code: "0005-unemploy-mvtsplot.R",
     results: "0005-unemploy-mvtsplot.png",
     tags: "multivariate, time series, heatmap, monthly",
+    langages: ["R"],
     makeIndex: true
   },
   {
@@ -170,12 +175,13 @@ var examples = [
     readme: {},
     title: "Orderered Precipitation Heatmap",
     languages: "R",
-    libraries: "lattice",
+    libraries: ["lattice"],
     description: "Heatmap with ordered columns and rows using monthly precipitation data",
     data: "blsunemployment.csv",
     code: "0006-precip-levelplot-lattice.R",
     results: "0006-precip-levelplot-lattice.png",
     tags: "Ordered, heatmap, annotation",
+    langages: ["R"],
     makeIndex: true
   },
   {
@@ -200,12 +206,13 @@ var examples = [
     readme: {},
     title: "Simple Interactive Bar Chart",
     languages: "javascript",
-    libraries: "webcharts",
+    libraries: ["webcharts"],
     description: "This is a simple bar chart showing counts of medals won by country at the 2012 summer Olympics. Made with Webcharts.",
     data: "OlympicMedals2012.csv",
     code: "simpleBarChart.js",
     results: null,
     tags: "interactive, bar chart",
+    langages: ["javascript"],
     makeIndex: true
   },
   {
@@ -236,12 +243,21 @@ var examples = [
     readme: {},
     title: "Safety Explorer - Default Configuration",
     languages: "javascript",
-    libraries: "webcharts, safety-histogram, safety-results-over-time, safety-shift-plot, safety-outlier-explorer, ae-timeline, ae-explorer",
+    libraries: [
+      "webcharts",
+      "safety-histogram",
+      "safety-results-over-time",
+      "safety-shift-plot",
+      "safety-outlier-explorer",
+      "ae-timeline",
+      "ae-explorer"
+    ],
     description: "The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials.  This instance demonstrates each graphic with default settings.",
     data: "../../data/safetyData/",
     code: "ae-table/index.html",
     results: "ae-table/index.html",
     tags: "interactive, webcharts, adverse events, safety explorer",
+    langages: ["javascript"],
     makeIndex: true
   },
   {
@@ -267,12 +283,13 @@ var examples = [
     readme: {},
     title: "Web Codebook Demo",
     languages: "javascript",
-    libraries: "web-codebook",
+    libraries: ["web-codebook"],
     description: "Demonstration of the web-based data summaries using web-codebook.",
     data: "../../data/safetyData/",
     code: "webCodebookDemo.js",
     results: "example.html",
     tags: "interactive, codebook",
+    langages: ["javascript"],
     makeIndex: true
   },
   {
@@ -297,12 +314,13 @@ var examples = [
     readme: {},
     title: "Spike Histogram Demo",
     languages: "javascript",
-    libraries: "spike-histogram",
+    libraries: ["spike-histogram"],
     description: "Demonstration of a web-based spike histogram with paneling capability and modals.",
     data: "../../data/safetyData/",
     code: "paneledSpikeHistogram.js",
     results: "example.html",
     tags: "interactive, histogram, spike",
+    langages: ["javascript"],
     makeIndex: true
   },
   {
@@ -333,12 +351,21 @@ var examples = [
     readme: {},
     title: "Safety Explorer with Query Data",
     languages: "javascript",
-    libraries: "webcharts, safety-histogram, safety-results-over-time, safety-shift-plot, safety-outlier-explorer, ae-timeline, ae-explorer",
+    libraries: [
+      "webcharts",
+      "safety-histogram",
+      "safety-results-over-time",
+      "safety-shift-plot",
+      "safety-outlier-explorer",
+      "ae-timeline",
+      "ae-explorer"
+    ],
     description: "The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials.  This instance demonstrates customized versions of each graphic including added filters and/or highlights for query data.",
     data: "../../data/safetyData-queries/",
     code: "ae-table/index.html",
     results: "ae-table/index.html",
     tags: "interactive, webcharts, adverse events, safety explorer, queries",
+    langages: ["javascript"],
     makeIndex: true
   },
   {
@@ -364,12 +391,13 @@ var examples = [
     readme: {},
     title: "Web Codebook Explorer",
     languages: "javascript",
-    libraries: "web-codebook",
+    libraries: ["web-codebook"],
     description: "Demonstration of the web-based data summaries using web-codebook.",
     data: "../../data/safetyData/",
     code: "webCodebookExplorer.js",
     results: "example.html",
     tags: "interactive, codebook",
+    langages: ["javascript"],
     makeIndex: true
   },
   {
@@ -395,12 +423,13 @@ var examples = [
     readme: {},
     title: "Query Overview",
     languages: "javascript",
-    libraries: "query-overview",
+    libraries: ["query-overview"],
     description: "Explorer clinical trial query data using the query-overview library.",
     data: "../../data/queries/queries.csv",
     code: "example.html",
     results: "example.html",
     tags: "interactive, queries",
+    langages: ["javascript"],
     makeIndex: true
   }
 ];
