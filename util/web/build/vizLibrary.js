@@ -2,13 +2,14 @@ var vizLibrary = function () {
   'use strict';
 
   /* -----------------------------------------------------
-   Takes a meta data and an array of properties for which 
-   standard filters (<select> elements) are created. Measures 
-   can take the form [attr1, attr2] or 
+   Takes a meta data and an array of properties for which
+   standard filters (<select> elements) are created. Measures
+   can take the form [attr1, attr2] or
    [{colName:"attr1",label:"Attribute #1"},{colName:"attr2",label:"Attribute #2"}]
    ----------------------------------------------------- */
 
   function buildFilters(meta, measures, parentElement) {
+    console.log(examples);
     measures = measures.map(function (m) {
       console.log(m.length);
       return m.length ? { colName: m, label: m } : m;
@@ -23,9 +24,10 @@ var vizLibrary = function () {
     selects.selectAll("option").data(function (d) {
       // gets a list of values for the measure
       var measureName = d.colName;
-      var values = d3.set(meta.map(metaRow => metaRow[measureName])).values();
-      var allvalues = d3.merge([["All"], values]);
-      return allvalues;
+      var valueArrays = meta.map(metaRow => metaRow[measureName]);
+      var allValues = [].concat.apply([], valueArrays);
+      var uniqueValues = d3.set(allValues).values();
+      return d3.merge([["All"], uniqueValues]);
     }).enter().append("option").text(d => d);
 
     //add event listener for the filters
@@ -36,7 +38,10 @@ var vizLibrary = function () {
         var value = this.value;
         var measure = e.colName;
         console.log(value + "=" + measure);
-        if (value != "All") elements.filter(d => d[measure] != value).classed("hidden", true);
+        if (value != "All") elements.filter(function (d) {
+          console.log(d[measure]);
+          return d[measure].indexOf(value) == -1;
+        }).classed("hidden", true);
       });
     });
   }
@@ -45,7 +50,7 @@ var vizLibrary = function () {
    Takes an array of metadata object (see sample input) and 
    a valid css selector (`parentDiv`)  and renders divs
    styled for for the example gallery (see sample output)
-    Sample Input for `meta`: 
+   Sample Input for `meta`: 
   	[
   		{
   			"id":"0001-density-lattice",
@@ -58,7 +63,7 @@ var vizLibrary = function () {
   		},
   		... //add more objects here as desired
   	]
-    Sample Output rendered to DOM (one per object in meta: 
+   Sample Output rendered to DOM (one per object in meta: 
   <div class="media-tile">
       <a href="./examples/0001-density-lattice">
           <img src="./examples/0001-density-lattice/thumbnail.png" width="300" height="200" alt="0001-density-lattice">

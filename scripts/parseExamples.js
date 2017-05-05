@@ -1,13 +1,6 @@
 var fs = require("fs");
 var Jimp = require("jimp");
-var codebookExplorer = require("./buildExample/0012-web-codebook-explorer.js");
 var makeindex = require("./buildExample/makeExampleIndex.js");
-/*
-var fs = require('fs'),
-	d3 = require('d3'),
-    jsdom = require('jsdom'),
-    showdown = require('showdown')
-*/
 
 //get example directories
 var exampleRoot = "./examples";
@@ -78,8 +71,13 @@ examples.forEach(function(ex) {
         ? attrMatch[0].match(/([^(**)]+$)/)[0].trim()
         : null;
     });
+
+    //parse langauges and libraries to arrays
+    ex.langages = ex.languages.split(",").map(d => d.trim());
+    ex.libraries = ex.libraries.split(",").map(d => d.trim());
   }
 
+  //
   ////get paths of data and code////
   ex.paths.data = ex.data;
   ex.paths.code = ex.code;
@@ -104,7 +102,6 @@ examples.forEach(function(ex) {
         : imgExampleN > -1 ? ex.files[imgExampleN] : null;
 
   //Make thumbnails
-
   var imgs = ex.files
     .map(function(f) {
       return f.toLowerCase();
