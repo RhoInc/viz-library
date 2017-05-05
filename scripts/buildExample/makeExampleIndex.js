@@ -1,4 +1,4 @@
-/* 
+/*
 
 Create an index.html file for a given example
 Input: an Example Object created by parseExamples.js
@@ -65,7 +65,7 @@ exports.makeExampleIndex = function(ex) {
       var webExampleContent =
         '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src=' +
         ex.paths.example +
-        ' marginwidth="0" marginheight="0" style="height:600px; width:960px;"></iframe>';
+        ' marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe>';
       var staticExampleContent =
         '<div style="border:1px solid black; padding:0.1em;"><img src="' +
         ex.paths.example +
