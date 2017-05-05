@@ -433,4 +433,3 @@ var examples = [
     makeIndex: true
   }
 ];
-

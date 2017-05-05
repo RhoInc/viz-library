@@ -39,7 +39,6 @@ var vizLibrary = function () {
         var measure = e.colName;
         console.log(value + "=" + measure);
         if (value != "All") elements.filter(function (d) {
-          console.log(d[measure]);
           return d[measure].indexOf(value) == -1;
         }).classed("hidden", true);
       });
