@@ -121,7 +121,7 @@ var vizLibrary = function () {
         d3.select(".data-preview").select(".data-table").selectAll("*").remove();
       });
 
-      d3.csv(d.rel_path, function (error, data) {
+      d3.csv("./data" + d.rel_path.substring(1), function (error, data) {
         var sub = data.filter(function (d, i) {
           return i < 10;
         });
@@ -136,10 +136,23 @@ var vizLibrary = function () {
     }).html("&#8595;").attr("title", "Download the data").style("cursor", "pointer");
   }
 
+  function buildGistList(meta, parentElement) {
+    var parentDiv = d3.select(parentElement);
+    var list = parentDiv.append("ul");
+    var items = list.selectAll("li").data(meta).enter().append("li");
+
+    //id
+    items.append("a").attr("href", d => "./bin/gists/" + d.id).text(d => d.description ? d.description : "<no description available>");
+
+    //owner
+    items.append("small").text(d => " " + d.owner.login);
+  }
+
   var index = {
     buildFilters: buildFilters,
     buildExampleList: buildExampleList,
-    dataPreview: dataPreview
+    dataPreview: dataPreview,
+    buildGistList: buildGistList
   };
 
   return index;

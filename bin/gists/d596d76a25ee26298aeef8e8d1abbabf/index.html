@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            http-equiv = 'Content-Type'
+            content = 'text/html; charset = utf-8'>
+
+        <script
+            src = 'https://d3js.org/d3.v3.min.js'></script>
+        <script
+            src = 'https://graphics.rhoworld.com/src/webcharts/webcharts.v1.6.0.js'></script>
+        <!--script
+            src = '../../safety-results-over-time/build/safetyResultsOverTime.js'></script-->
+        <script
+            src = 'https://cdn.rawgit.com/RhoInc/safety-results-over-time/custom-filters/build/safetyResultsOverTime.js'></script>
+
+        <link
+            rel = 'stylesheet'
+            href = 'https://graphics.rhoworld.com/src/webcharts/webcharts.v1.4.0.css'>
+    </head>
+
+    <body></body>
+
+    <script>
+        const settings =
+            {start_value: 'POTASSIUM'
+            ,groups: ['ARM', 'SEX', 'RACE']
+            ,filters:
+                [   {value_col: 'SITEID', label: 'Site ID'},
+                ,   {value_col: 'SAFFL', label: 'Safety Population?'},
+                ,   {value_col: 'QUERYFL', label: 'Open Query?'}
+                ]};
+
+        d3.csv('ADBDS.csv', function (data) {
+            data.forEach(d => {
+                d.QUERYFL = (d.STRESN < d.STNRLO || d.STRESN > d.STNRHI)
+                    ? 'Y'
+                    : 'N';
+                d.queryDetails = d.QUERYFL === 'Y'
+                    ? `Query occurred on study day ${d.DY}.  Participant behaved querulously, registering a query-inducing ${d.STRESN}.`
+                    : ' ';
+            });
+            safetyResultsOverTime('body', settings)
+                .init(data);
+        });
+    </script>
+</html>

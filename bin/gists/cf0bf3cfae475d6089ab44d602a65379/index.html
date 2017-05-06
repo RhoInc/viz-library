@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+</head>
+<body>
+    <div id="chart"></div>
+</body>
+<script src="https://fb.me/react-0.14.7.js"></script>
+<script src="https://fb.me/react-dom-0.14.7.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.5.0.js"></script> 
+<script src="https://rawgit.com/RhoInc/safety-shift-plot/reorg/build/safetyShiftPlot-chf.js"></script>
+
+
+<script>
+// path to data file
+var dataFile = 'labs_vitals_sub.csv';
+// props for React component in the format provided by ChartFoundry
+var props = {
+    id: 'id',
+    chartProperties: {
+        start_value:"Albumin",            
+    }, 
+    dataMappings: {
+        time_col: "VISITDY",
+        measure_col: "test",
+        value_col: "stresn",
+        unit_col: "stresu"
+    },
+    template: { chartProperties: {}, dataMappings: {}, controls: [] }
+};
+
+d3.csv(dataFile, function (data){
+    // add data to props
+    props.data = data;
+
+    // render to DOM
+    ReactDOM.render(
+        React.createElement(safetyShiftPlot, props),
+        document.getElementById('chart')
+    );
+});
+</script>
+</html>

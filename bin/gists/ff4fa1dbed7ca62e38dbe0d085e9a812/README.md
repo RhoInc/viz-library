@@ -1,0 +1,1 @@
+This example shows how to destroy a table using the `chart.destroy` method introduced in v1.7. The example was created using [webcharts](https://github.com/RhoInc/Webcharts/).

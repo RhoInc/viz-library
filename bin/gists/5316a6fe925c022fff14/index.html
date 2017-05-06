@@ -1,0 +1,26 @@
+<html lang="en">
+<title>Webcharts Template - Simple Histogram</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css">
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>
+<script src="https://rawgit.com/RhoInc/Webcharts-templates/master/build/webcharts-templates.js"></script>
+<script src="https://rawgit.com/RhoInc/Webcharts-templates/master/lib/simpleHistogram.js"></script>
+
+</head>
+
+<body style="padding:1em;">
+</body>
+<script>
+	//load the template
+	webCharts.loadTemplates({name:"simpleHistogram",tmpl:simpleHistogram})
+
+	//draw the chart
+	var myHist = webCharts.createTemplatedChart("body", {start_value:"AB"}, null, "simpleHistogram")
+	d3.csv('baseball.csv', function(error, data){
+  		myHist.init(data);
+	});
+</script>
+</html>

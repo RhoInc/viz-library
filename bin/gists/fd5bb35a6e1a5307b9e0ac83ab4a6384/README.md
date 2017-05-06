@@ -1,0 +1,1 @@
+This chart demostrates how to destory and then re-create a chart made with webCharts using the chart.destroy() method and the associated .on("destroy") callback. Made with [Webcharts](https://github.com/RhoInc/Webcharts).

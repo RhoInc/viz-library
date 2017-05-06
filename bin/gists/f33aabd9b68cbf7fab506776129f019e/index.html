@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.4.0.js"></script>
+    <script src="https://rawgit.com/RhoInc/safety-histogram/master/build/safetyHistogram.js"></script>  
+	<link rel="stylesheet" href="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.4.0.css">
+</head>
+<body></body>
+<script>
+    var div = 'body';
+    var settings = {
+        time_col: "VISITNUM",
+        measure_col: "test",
+        value_col: "stresn",
+        unit_col: "stresu"
+    };
+
+    var dataFile = 'labs_vitals_sub.csv';
+    d3.csv(dataFile, function (data){
+        safetyHistogram(div, settings).init(data);
+    });
+</script>
+</html>

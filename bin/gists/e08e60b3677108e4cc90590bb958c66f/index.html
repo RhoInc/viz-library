@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            http-equiv = 'Content-Type'
+            content = 'text/html; charset = utf-8'>
+        <title>Codebook</title>
+        <h1 id = 'title'>Codebook</h1>
+
+        <script type = 'text/javascript'
+            src = 'https://d3js.org/d3.v3.min.js'></script>
+        <script type = 'text/javascript'
+            src = 'https://graphics.rhoworld.com/src/webcharts/webcharts.v1.6.1.js'></script>
+
+        <link type = 'text/css'
+            rel = 'stylesheet'
+            href = 'https://graphics.rhoworld.com/src/webcharts/webcharts.v1.6.1.css'>
+
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+            }
+
+            #title {
+                width: 96%;
+                margin: 2%;
+                border-bottom: 1px solid lightgray;
+                font-weight: lighter;
+                font-size: 250%;
+            }
+            #container {
+                width: 96%;
+                margin: 0 2% 0 2%;
+            }
+            #container .chart {
+                width: 100%;
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = 'container'>
+            <div class = 'chart' id = ''>
+                <div class = 'header'></div>
+                <div class = 'content'></div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function clone(obj) {
+            let copy;
+
+          //boolean, number, string, null, undefined
+            if ('object' != typeof obj || null == obj)
+                return obj;
+
+          //date
+            if (obj instanceof Date) {
+                copy = new Date();
+                copy.setTime(obj.getTime());
+                return copy;
+            }
+
+          //array
+            if (obj instanceof Array) {
+                copy = [];
+                for (var i = 0, len = obj.length; i < len; i++) {
+                    copy[i] = clone(obj[i]);
+                }
+                return copy;
+            }
+
+          //object
+            if (obj instanceof Object) {
+                copy = {};
+                for (var attr in obj) {
+                    if (obj.hasOwnProperty(attr))
+                        copy[attr] = clone(obj[attr]);
+                }
+                return copy;
+            }
+
+            throw new Error('Unable to copy [obj]! Its type is not supported.');
+        }
+
+        const container = '#container .chart';
+        const measure = 'STRESN';
+        const panel = 'SITEID';
+        d3.select(container + ' .header').text('Paneled by ' + panel);
+        const settings =
+            {x: {column: measure
+                ,type: 'linear'
+                ,label: ''
+                ,bin: 100}
+            ,y: {column: measure
+                ,type: 'linear'
+                ,label: ''
+                ,domain: [0,null]}
+            ,marks:
+                [   {type: 'bar'
+                    ,per: [measure]
+                    ,summarizeX: 'mean'
+                    ,summarizeY: 'count'}
+                ]
+            ,gridlines: 'y'
+            ,resizable: true
+            ,aspect: 25
+            ,group_col: panel
+            ,margin:
+                {left: 125}
+            };
+        const webChart = new webCharts.createChart
+            (container + ' .content'
+            ,settings);
+
+        d3.csv('ADBDS.csv', function(data) {
+            const filteredData = data.filter(d => d.TEST === 'Albumin');
+
+          //Define x-axis domain as the range of the measure, regardless of subgrouping.
+            settings.x.domain = d3.extent(filteredData, d => +d[settings.x.column]);
+
+          //Define y-axis domain as the maximum number of observations in a single bin within a subgrouping.
+            const nestedData = d3.nest()
+                .key(d => d[settings.group_col])
+                .entries(filteredData);
+            let max = 0;
+            nestedData.forEach(group => {
+                const domain = d3.extent(group.values, d => +d[settings.x.column]);
+                const binWidth = (domain[1] - domain[0])/(settings.x.bin);
+                group.values
+                    .forEach(d => {
+                        d.bin = Math.floor((+d[settings.x.column] - domain[0])/binWidth) - (+d[settings.x.column] === domain[1])*1;
+                    });
+                const bins = d3.nest()
+                    .key(d => d.bin)
+                    .rollup(d => d.length)
+                    .entries(group.values);
+                max = Math.max(max, d3.max(bins, d => d.values));
+            });
+
+          //Plot the chart for all groups.
+            const allData = clone(filteredData);
+            allData.forEach(d => d.SITEID = 'All');
+            webChart.init(allData);
+
+          //Plot the chart for each group.
+            settings.y.domain = [0,max];
+            const groups = d3.set(
+                    filteredData.map(d => d[settings.group_col]))
+                .values();
+            groups
+                .forEach((group,i) => {
+                    webChart.init(filteredData.filter(d => d[settings.group_col] === group));
+                });
+        });
+
+        /***--------------------------------------------------------------------------------------\
+          Callbacks
+        \--------------------------------------------------------------------------------------***/
+
+            webChart.on('init', function() {
+                this.values = this.raw_data
+                    .map(d => +d[this.config.x.column])
+                    .sort();
+                this.config.y.label = this.raw_data[0][this.config.group_col];
+            });
+
+            webChart.on('resize', function() {
+                const context = this;
+                const format = d3.format(',.2f');
+
+              //Clear custom marks.
+                this.svg.selectAll('rect.wc-data-mark').style('display', 'none');
+                this.svg.selectAll('line.spike').remove();
+                this.svg.selectAll('.statistic').remove();
+
+              //Replace rects with lines.
+                this.svg
+                    .selectAll('g.bar-group')
+                    .each(function(d) {
+                        d.midpoint = (d.rangeHigh + d.rangeLow)/2;
+                        const spike = d3.select(this)
+                            .append('line')
+                            .datum(d)
+                            .attr(
+                                {'class': 'spike'
+                                ,'x1': context.x(d.midpoint)
+                                ,'y1': context.plot_height
+                                ,'x2': context.x(d.midpoint)
+                                ,'y2': context.y(d.total)})
+                            .style(
+                                {'stroke': 'black'
+                                ,'stroke-width': '3px'});
+                            spike.append('title').text(`Range: ${format(d.rangeLow)}-${format(d.rangeHigh)}\nn=${d.total}`);
+                        d3.select(this).select('rect.wc-data-mark').style('display', 'none');
+                    });
+
+              //Annotate quantiles
+                const quantiles = [
+                    {probability: .05, label: '5th percentile'},
+                    {probability: .25, label: '1st quartile'},
+                    {probability: .50, label: 'Median'},
+                    {probability: .75, label: '3rd quartile'},
+                    {probability: .95, label: '95th percentile'}];
+
+                for (const item in quantiles) {
+                    const quantile = quantiles[item];
+                    quantile.quantile = d3.quantile(this.values, quantile.probability);
+
+                  //Horizontal lines
+                    if ([.05, .75].indexOf(quantile.probability) > -1) {
+                        const rProbability = quantiles[+item + 1].probability;
+                        const rQuantile = d3.quantile(this.values.sort(), rProbability);
+                        const whisker = this.svg
+                            .append('line')
+                            .attr(
+                                {'class': 'statistic'
+                                ,'x1': this.x(quantile.quantile)
+                                ,'y1': this.plot_height + 4
+                                ,'x2': this.x(rQuantile)
+                                ,'y2': this.plot_height + 4})
+                            .style(
+                                {'stroke': 'red'
+                                ,'stroke-width': '2px'
+                                ,'opacity': .25});
+                        whisker
+                            .append('title')
+                            .text(`Q${quantile.probability}-Q${rProbability}: ${format(quantile.quantile)}-${format(rQuantile)}`);
+                    }
+
+                  //Box
+                    if (quantile.probability === .25) {
+                        const q3 = d3.quantile(this.values, .75);
+                        const interQ = this.svg
+                            .append('rect')
+                            .attr(
+                                {'class': 'statistic'
+                                ,'x': this.x(quantile.quantile)
+                                ,'y': this.plot_height
+                                ,'width': this.x(q3) - this.x(quantile.quantile)
+                                ,'height': 8})
+                            .style(
+                                {'fill': 'blue'
+                                ,'opacity': .25});
+                        interQ
+                            .append('title')
+                            .text(`Interquartile range: ${format(quantile.quantile)}-${format(q3)}`);
+                    }
+
+                  //Vertical lines
+                    quantile.mark = this.svg
+                        .append('line')
+                        .attr(
+                            {'class': 'statistic'
+                            ,'x1': this.x(quantile.quantile)
+                            ,'y1': this.plot_height
+                            ,'x2': this.x(quantile.quantile)
+                            ,'y2': this.plot_height + 8})
+                        .style(
+                            {'stroke': [.05,.95].indexOf(quantile.probability) > -1
+                                ? 'red'
+                                : [.25,.75].indexOf(quantile.probability) > -1
+                                    ? 'blue'
+                                    : 'black'
+                            ,'stroke-width': '3px'})
+                    quantile.mark
+                        .append('title')
+                        .text(`${quantile.label}: ${format(quantile.quantile)}`);
+                }
+
+              //Annotate mean.
+                const mean = d3.mean(this.values);
+                const sd = d3.deviation(this.values);
+                const meanMark = this.svg
+                    .append('circle')
+                    .attr(
+                        {'class': 'statistic'
+                        ,'cx': this.x(mean)
+                        ,'cy': this.plot_height + 4
+                        ,'r': 3})
+                    .style(
+                        {'fill': '#ccc'
+                        ,'stroke': 'black'
+                        ,'stroke-width': '1px'})
+                meanMark
+                    .append('title')
+                    .text(`Mean: ${format(mean)}\nSD: ${format(sd)}\nn: ${this.values.length}`);
+
+              //Rotate y-axis labels.
+                this.svg.select('g.y.axis text.axis-title').remove();
+                this.svg.select('g.y.axis')
+                    .insert('text', ':first-child')
+                    .attr(
+                        {'class': 'axis-title'
+                        ,'x': 0
+                        ,'y': this.plot_height/2
+                        ,'dx': '-2.5em'})
+                    .style('text-anchor', 'end')
+                    .text(this.config.y.label);
+
+              //Hide legends.
+                this.wrap.select('ul.legend').remove();
+
+              //Shift x-axis tick labels downward.
+                this.svg.select('.x.axis').selectAll('g.tick text').attr('dy', '1em');
+
+              //Add modal to nearest mark.
+                const spikes = this.svg.selectAll('.spike');
+                const statistics = this.svg.selectAll('.statistic');
+                this.svg
+                    .on('mousemove', function() {
+                        const mouse = d3.mouse(this);
+                        const x = context.x.invert(mouse[0]);
+                        const y = context.y.invert(mouse[1]);
+                        let minimum;
+                        let spike = {};
+                        spikes
+                            .each(function(d,i) {
+                                d.distance = Math.abs(d.midpoint - x);
+                                if (i === 0 || d.distance < minimum) {
+                                    minimum = d.distance;
+                                    spike = d;
+                                }
+                            })
+                            .style('stroke', 'black');
+                        const closest = spikes
+                            .filter(d => d.distance === minimum)
+                            .filter((d,i) => i === 0)
+                            .style('stroke', 'red');
+                    })
+                .on('mouseout', function() {
+                    spikes.style('stroke', 'black');
+                });
+            });
+
+    </script>
+</html>

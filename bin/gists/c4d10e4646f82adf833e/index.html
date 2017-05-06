@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Per Capita Income by State</title>
+      <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+      <style type="text/css">
+         
+        body {
+            background-color: white;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+         
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+         
+        p {
+            font-size: 14px;
+            margin: 10px 0 0 0;
+        }
+
+        svg {
+            background-color: black;
+        }
+
+        circle:hover {
+            fill: white;
+        }
+         
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: white;
+            shape-rendering: crispEdges;
+        }
+         
+        .axis text {
+            font-family: sans-serif;
+            font-size: 11px;
+            stroke: white;
+        }
+
+        .line {
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+        }
+
+      </style>
+   </head>
+   <body>
+   
+    <h1>Change in Per Capita Income from 2000 to 2014 by State</h1>
+    
+    <p>This chart plots 2014 per capita income against 2000 per capita income with each dot representing an individual state, as compiled by <a href = 'https://en.wikipedia.org/wiki/List_of_U.S._states_by_income'>Wikipedia's List of U.S. states by income</a>.</p>
+    <br>
+
+      <script type="text/javascript">
+
+        var w       = 750;
+        var h       = 750;
+        var padding = [ 10, 30, 75, 100 ]; // top, right, bottom, left
+
+        var svg = d3
+                .select('body')
+                .append('svg')
+                .attr('width', w)
+                .attr('height', h);
+
+        var xScale  = d3.scale.linear().range([ padding[3], w - padding[1] - padding[3] ]);
+        var yScale  = d3.scale.linear().range([ padding[0], h - padding[2] ]);
+
+        var xAxis   = d3.svg.axis().scale(xScale).orient('bottom');
+        var yAxis   = d3.svg.axis().scale(yScale).orient('left');
+
+        d3.csv("PerCapitaStateIncome.csv", function(data) {
+
+            xScale.domain([
+                d3.min(data, function(d) {
+                    return +d['2014'];
+                }),
+                d3.max(data, function(d) {
+                    return +d['2014'];
+                })
+            ]);
+            
+            yScale.domain([
+                d3.max(data, function(d) {
+                    return +d['2000'];
+                }),
+                d3.min(data, function(d) {
+                    return +d['2000'];
+                })
+            ]);
+
+            svg
+                .selectAll('line.horizontalGrid')
+                .data(yScale.ticks(11))
+                .enter()
+                .append('line')
+                .attr(
+                        {
+                            'class': 'horizontalGrid',
+                            'x1': padding[3],
+                            'x2': w - padding[1] - padding[3],
+                            'y1': function(d) { return yScale(d); },
+                            'y2': function(d) { return yScale(d); },
+                            'fill': 'none',
+                            'shape-rendering': 'crispEdges',
+                            'stroke': 'white',
+                            'stroke-width': '1px'
+                        });
+
+            svg
+                .selectAll('line.verticalGrid')
+                .data(xScale.ticks(7))
+                .enter()
+                .append('line')
+                .attr(
+                        {
+                            'class': 'verticalGrid',
+                            'y1': padding[0],
+                            'y2': h - padding[0] - padding[2],
+                            'x1': function(d) { return xScale(d); },
+                            'x2': function(d) { return xScale(d); },
+                            'fill': 'none',
+                            'shape-rendering': 'crispEdges',
+                            'stroke': 'white',
+                            'stroke-width': '1px'
+                        });
+
+            var circles = svg
+                    .selectAll('circle')
+                    .data(data)
+                    .enter()
+                    .append('circle');
+
+            circles
+                .attr('cx', function(d) {
+                    return xScale(d['2014']);
+                })
+                .attr('cy', function(d) {
+                    return yScale(d['2000']);
+                })
+                .attr('r', 0.1)
+                .attr('fill', 'darkred')
+                .append('title')
+                .text(function(d) {
+                    return d.State + "'s 2000 and 2014 per capita incomes are " + d['2000'] + ' and ' + d['2014'] + '.';
+                });
+
+            circles
+                .sort(function(a, b) {
+                    return d3.ascending(+a['2014'], +b['2014']);
+                })
+                .transition()
+                .delay(function(d, i) {
+                    return i * 50;
+                })
+                .duration(2000)
+                .attr('r', 4);
+
+            svg
+                .append('g')
+                .attr('class', 'x axis')
+                .attr('transform', 'translate(0, ' + (h - padding[2] + 10) + ')')
+                .call(xAxis);
+
+            svg
+                .append('g')
+                .attr('class', 'y axis')
+                .attr('transform', 'translate(' + (padding[3] - 10) + ', 0)')
+                .call(yAxis);
+
+            svg
+                .append('text')
+                .attr('class', 'x label')
+                .attr('text-anchor', 'start')
+                .attr('x', w/2.75)
+                .attr('y', h - 20)
+                .attr('stroke', 'white')
+                .text('2014 Per Capita Income');
+
+            svg
+                .append('text')
+                .attr('class', 'y label')
+                .attr('text-anchor', 'end')
+                .attr('x', -(h/3.5))
+                .attr('y', 25)
+                .attr('stroke', 'white')
+                .attr('transform', 'rotate(-90)')
+                .text('2000 Per Captia Income');
+
+         });
+
+      </script>
+
+   </body>
+</html>

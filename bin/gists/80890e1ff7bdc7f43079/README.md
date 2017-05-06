@@ -1,0 +1,3 @@
+This study monitoring dashboard shows common study metrics such as enrollment status, visit completion, and specimen and case report form status.  The figure combines 6 different chart objects, several of which have attached controls allowing users to filter by site and change the y-axis from a relative value to an absolute count. A simple callback function is used in the top left chart to customize the legend with overall counts and provide details for the y-axis in a tooltip. 
+
+This graphic was created using [webcharts](https://github.com/RhoInc/Webcharts) version 1.4.0

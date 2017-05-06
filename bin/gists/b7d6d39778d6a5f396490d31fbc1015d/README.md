@@ -1,0 +1,3 @@
+Just a little interactive histogram showing the score distribution for movies I've watched.
+
+Data sourced from [my google spreadsheet](https://docs.google.com/spreadsheets/d/1eufgWMGSF4lFDAkbqdgbH7peqP0qZmmmJbJM34xVGAI/edit#gid=0) using [tabletop.js](https://github.com/jsoma/tabletop). Chart created with [webcharts](https://github.com/RhoInc/Webcharts) (via [d3](https://d3js.org/)). Table via [datatables](https://datatables.net/)

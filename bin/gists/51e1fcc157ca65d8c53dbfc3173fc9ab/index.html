@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            http-equiv = 'Content-Type'
+            content = 'text/html; charset = utf-8'>
+
+        <script
+            src = 'https://d3js.org/d3.v3.min.js'></script>
+        <script
+            src = 'webcharts.v1.6.0.js'></script>
+        <script
+            src = 'safetyResultsOverTime.js'></script>
+
+        <link
+            rel = 'stylesheet'
+            href = 'https://graphics.rhoworld.com/src/webcharts/webcharts.v1.4.0.css'>
+    </head>
+
+    <body></body>
+
+    <script>
+        let settings =
+            {start_value: 'Calcium'
+            ,time_settings:
+                {value_col: 'VISIT'
+                ,label: 'Visit'
+                ,order: null // x-axis domain order (array)
+                ,rotate_tick_labels: true
+                ,vertical_space: 100}
+            ,groups:
+                [   {value_col: 'FIVE' , label: 'And Then There Were Five'}
+                ]
+            ,filters:
+                [   {value_col: 'SITEID', label: 'Site ID'},
+                ,   {value_col: 'SAFFL', label: 'Safety Population?'},
+                ,   {value_col: 'QUERYFL', label: 'Open Query?'}
+                ]
+            ,violins: false};
+        //settings = {};
+
+        d3.csv('ADBDS.csv', function(data) {
+            data.forEach((d,i) => {
+                d.QUERYFL = (+d.STRESN < +d.STNRLO || +d.STRESN > +d.STNRHI)
+                    ? 'Y'
+                    : 'N';
+                d.queryDetails = d.QUERYFL === 'Y'
+                    ? `Query occurred on study day ${d.DY}.  Participant behaved querulously, registering a query-inducing ${d.STRESN}.`
+                    : ' ';
+                d.FIVE =
+                    i % 5 === 0 ? 1 :
+                    i % 5 === 1 ? 2 :
+                    i % 5 === 2 ? 3 :
+                    i % 5 === 3 ? 4 : 5;
+            });
+            if (settings.time_settings)
+                settings.time_settings.order = d3.set(
+                        data.map(d => d.VISITN + '|' + d.VISIT))
+                    .values()
+                    .sort((a,b) => +a.split('|')[0] < +b.split('|')[0] ? -1 : 1)
+                    .map(d => d.split('|')[1]);
+            safetyResultsOverTime('body', settings)
+                .init(data);
+        });
+    </script>
+</html>

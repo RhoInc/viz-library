@@ -1,0 +1,1 @@
+This chart shows changes in lab measures, vital signs and other related measures for a simulated clinical trial, and is designed to be used with the (soon to be released) ChartFoundry platform. This page was created using [webcharts](https://github.com/RhoInc/Webcharts) and the associated [Safety Shift Plot](https://github.com/RhoInc/safety-shift-plot/). 

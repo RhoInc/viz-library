@@ -1,0 +1,445 @@
+STUDYID,SITEID,SITENAME,PHASEAS,AVISITAS,CAT
+sample,2,Site 02,2000,D0,In Window
+sample,2,Site 02,4002,W2,In Window
+sample,2,Site 02,2000,D0,In Window
+sample,2,Site 02,4002,W2,In Window
+sample,2,Site 02,4004,W4,In Window
+sample,2,Site 02,4008,W8,In Window
+sample,2,Site 02,4012,W12,In Window
+sample,2,Site 02,4016,W16,In Window
+sample,2,Site 02,4020,W20,In Window
+sample,2,Site 02,4024,W24,In Window
+sample,2,Site 02,4028,W28,In Window
+sample,2,Site 02,4032,W32,In Window
+sample,2,Site 02,4036,W36,In Window
+sample,2,Site 02,4040,W40,In Window
+sample,2,Site 02,4044,W44,In Window
+sample,2,Site 02,4048,W48,In Window
+sample,8,Site 08,2000,D0,In Window
+sample,8,Site 08,4002,W2,In Window
+sample,8,Site 08,4004,W4,In Window
+sample,8,Site 08,4008,W8,In Window
+sample,8,Site 08,4012,W12,In Window
+sample,8,Site 08,4016,W16,In Window
+sample,8,Site 08,4020,W20,In Window
+sample,8,Site 08,4024,W24,In Window
+sample,8,Site 08,4028,W28,In Window
+sample,8,Site 08,4032,W32,In Window
+sample,8,Site 08,4036,W36,In Window
+sample,8,Site 08,4040,W40,In Window
+sample,8,Site 08,4044,W44,In Window
+sample,8,Site 08,4048,W48,In Window
+sample,9,Site 09,2000,D0,In Window
+sample,9,Site 09,4002,W2,In Window
+sample,9,Site 09,4004,W4,In Window
+sample,9,Site 09,4008,W8,In Window
+sample,9,Site 09,4012,W12,In Window
+sample,9,Site 09,4016,W16,In Window
+sample,9,Site 09,4020,W20,In Window
+sample,9,Site 09,4024,W24,In Window
+sample,9,Site 09,4028,W28,In Window
+sample,9,Site 09,4032,W32,In Window
+sample,9,Site 09,4036,W36,In Window
+sample,9,Site 09,4040,W40,In Window
+sample,9,Site 09,4044,W44,In Window
+sample,9,Site 09,4048,W48,In Window
+sample,9,Site 09,2000,D0,In Window
+sample,9,Site 09,4002,W2,In Window
+sample,9,Site 09,4004,W4,In Window
+sample,9,Site 09,4008,W8,In Window
+sample,9,Site 09,4012,W12,In Window
+sample,9,Site 09,4016,W16,In Window
+sample,9,Site 09,4020,W20,In Window
+sample,9,Site 09,4024,W24,In Window
+sample,9,Site 09,4028,W28,In Window
+sample,9,Site 09,4032,W32,In Window
+sample,9,Site 09,4036,W36,In Window
+sample,9,Site 09,4040,W40,In Window
+sample,9,Site 09,4044,W44,In Window
+sample,9,Site 09,4048,W48,In Window
+sample,9,Site 09,2000,D0,In Window
+sample,9,Site 09,4002,W2,In Window
+sample,9,Site 09,4004,W4,In Window
+sample,9,Site 09,4008,W8,Out of Window
+sample,9,Site 09,4012,W12,In Window
+sample,9,Site 09,4016,W16,In Window
+sample,9,Site 09,4020,W20,In Window
+sample,9,Site 09,4024,W24,Out of Window
+sample,9,Site 09,4028,W28,Out of Window
+sample,9,Site 09,4032,W32,In Window
+sample,9,Site 09,4036,W36,In Window
+sample,9,Site 09,4040,W40,In Window
+sample,9,Site 09,4044,W44,In Window
+sample,9,Site 09,4048,W48,In Window
+sample,9,Site 09,2000,D0,In Window
+sample,9,Site 09,4002,W2,In Window
+sample,9,Site 09,4004,W4,In Window
+sample,9,Site 09,4008,W8,In Window
+sample,9,Site 09,4012,W12,In Window
+sample,9,Site 09,4016,W16,In Window
+sample,9,Site 09,4020,W20,In Window
+sample,9,Site 09,4024,W24,In Window
+sample,9,Site 09,4028,W28,In Window
+sample,9,Site 09,4032,W32,Out of Window
+sample,9,Site 09,4036,W36,In Window
+sample,9,Site 09,4040,W40,In Window
+sample,9,Site 09,4044,W44,In Window
+sample,9,Site 09,4048,W48,In Window
+sample,9,Site 09,2000,D0,In Window
+sample,9,Site 09,4002,W2,In Window
+sample,9,Site 09,4004,W4,In Window
+sample,9,Site 09,4008,W8,In Window
+sample,9,Site 09,4012,W12,Out of Window
+sample,9,Site 09,4016,W16,In Window
+sample,9,Site 09,4020,W20,In Window
+sample,9,Site 09,4024,W24,In Window
+sample,9,Site 09,4028,W28,In Window
+sample,9,Site 09,4032,W32,In Window
+sample,9,Site 09,4036,W36,Out of Window
+sample,9,Site 09,4040,W40,In Window
+sample,9,Site 09,4044,W44,In Window
+sample,9,Site 09,4048,W48,In Window
+sample,9,Site 09,2000,D0,In Window
+sample,9,Site 09,4002,W2,In Window
+sample,9,Site 09,4004,W4,In Window
+sample,9,Site 09,4008,W8,In Window
+sample,9,Site 09,4012,W12,In Window
+sample,9,Site 09,4016,W16,In Window
+sample,9,Site 09,4020,W20,In Window
+sample,9,Site 09,4024,W24,Out of Window
+sample,9,Site 09,4028,W28,In Window
+sample,9,Site 09,4032,W32,In Window
+sample,9,Site 09,4036,W36,Out of Window
+sample,9,Site 09,4040,W40,In Window
+sample,9,Site 09,4044,W44,In Window
+sample,9,Site 09,4048,W48,In Window
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,In Window
+sample,10,Site 10,4004,W4,In Window
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,4012,W12,In Window
+sample,10,Site 10,4016,W16,In Window
+sample,10,Site 10,4020,W20,In Window
+sample,10,Site 10,4024,W24,In Window
+sample,10,Site 10,4028,W28,In Window
+sample,10,Site 10,4032,W32,In Window
+sample,10,Site 10,4036,W36,In Window
+sample,10,Site 10,4040,W40,In Window
+sample,10,Site 10,4044,W44,Missed
+sample,10,Site 10,4048,W48,In Window
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,Out of Window
+sample,10,Site 10,4004,W4,In Window
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,Out of Window
+sample,10,Site 10,4004,W4,In Window
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,4012,W12,In Window
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,In Window
+sample,10,Site 10,4004,W4,In Window
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,4012,W12,In Window
+sample,10,Site 10,4016,W16,In Window
+sample,10,Site 10,4020,W20,In Window
+sample,10,Site 10,4024,W24,In Window
+sample,10,Site 10,4028,W28,In Window
+sample,10,Site 10,4032,W32,In Window
+sample,10,Site 10,4036,W36,Out of Window
+sample,10,Site 10,4040,W40,In Window
+sample,10,Site 10,4044,W44,In Window
+sample,10,Site 10,4048,W48,In Window
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,In Window
+sample,10,Site 10,4004,W4,In Window
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,4012,W12,In Window
+sample,10,Site 10,4016,W16,In Window
+sample,10,Site 10,4020,W20,In Window
+sample,10,Site 10,4024,W24,In Window
+sample,10,Site 10,4028,W28,In Window
+sample,10,Site 10,4032,W32,In Window
+sample,10,Site 10,4036,W36,In Window
+sample,10,Site 10,4040,W40,In Window
+sample,10,Site 10,4044,W44,In Window
+sample,10,Site 10,4048,W48,In Window
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,In Window
+sample,10,Site 10,4004,W4,In Window
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,4012,W12,In Window
+sample,10,Site 10,4016,W16,Out of Window
+sample,10,Site 10,4020,W20,In Window
+sample,10,Site 10,4024,W24,In Window
+sample,10,Site 10,4028,W28,In Window
+sample,10,Site 10,4032,W32,In Window
+sample,10,Site 10,4036,W36,In Window
+sample,10,Site 10,4040,W40,In Window
+sample,10,Site 10,4044,W44,In Window
+sample,10,Site 10,4048,W48,In Window
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,In Window
+sample,10,Site 10,4004,W4,In Window
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,4012,W12,Out of Window
+sample,10,Site 10,4016,W16,In Window
+sample,10,Site 10,4020,W20,In Window
+sample,10,Site 10,4024,W24,In Window
+sample,10,Site 10,4028,W28,Overdue
+sample,10,Site 10,4032,W32,Overdue
+sample,10,Site 10,4036,W36,Expected
+sample,10,Site 10,4040,W40,Expected
+sample,10,Site 10,4044,W44,Expected
+sample,10,Site 10,4048,W48,Expected
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,In Window
+sample,10,Site 10,4004,W4,In Window
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,4012,W12,Out of Window
+sample,10,Site 10,4016,W16,In Window
+sample,10,Site 10,4020,W20,In Window
+sample,10,Site 10,4024,W24,In Window
+sample,10,Site 10,4028,W28,Expected
+sample,10,Site 10,4032,W32,Expected
+sample,10,Site 10,4036,W36,Expected
+sample,10,Site 10,4040,W40,Expected
+sample,10,Site 10,4044,W44,Expected
+sample,10,Site 10,4048,W48,Expected
+sample,10,Site 10,2000,D0,In Window
+sample,10,Site 10,4002,W2,In Window
+sample,10,Site 10,4004,W4,Overdue
+sample,10,Site 10,4008,W8,In Window
+sample,10,Site 10,4012,W12,In Window
+sample,10,Site 10,4016,W16,Expected
+sample,10,Site 10,4020,W20,Expected
+sample,10,Site 10,4024,W24,Expected
+sample,10,Site 10,4028,W28,Expected
+sample,10,Site 10,4032,W32,Expected
+sample,10,Site 10,4036,W36,Expected
+sample,10,Site 10,4040,W40,Expected
+sample,10,Site 10,4044,W44,Expected
+sample,10,Site 10,4048,W48,Expected
+sample,55,Site 55,2000,D0,In Window
+sample,55,Site 55,4002,W2,In Window
+sample,55,Site 55,4004,W4,In Window
+sample,55,Site 55,4008,W8,Out of Window
+sample,55,Site 55,4012,W12,In Window
+sample,55,Site 55,4016,W16,Out of Window
+sample,55,Site 55,4020,W20,In Window
+sample,55,Site 55,2000,D0,In Window
+sample,55,Site 55,4002,W2,Out of Window
+sample,55,Site 55,4004,W4,In Window
+sample,55,Site 55,4008,W8,In Window
+sample,55,Site 55,4012,W12,In Window
+sample,55,Site 55,4016,W16,In Window
+sample,55,Site 55,4020,W20,In Window
+sample,55,Site 55,4024,W24,In Window
+sample,55,Site 55,4028,W28,In Window
+sample,55,Site 55,4032,W32,In Window
+sample,55,Site 55,4036,W36,In Window
+sample,55,Site 55,4040,W40,In Window
+sample,55,Site 55,4044,W44,In Window
+sample,55,Site 55,4048,W48,In Window
+sample,55,Site 55,2000,D0,In Window
+sample,55,Site 55,4002,W2,In Window
+sample,55,Site 55,4004,W4,In Window
+sample,55,Site 55,4008,W8,In Window
+sample,55,Site 55,4012,W12,In Window
+sample,55,Site 55,4016,W16,In Window
+sample,55,Site 55,2000,D0,In Window
+sample,55,Site 55,4002,W2,In Window
+sample,55,Site 55,4004,W4,In Window
+sample,55,Site 55,4008,W8,In Window
+sample,55,Site 55,4012,W12,In Window
+sample,55,Site 55,4016,W16,In Window
+sample,55,Site 55,4020,W20,In Window
+sample,55,Site 55,4024,W24,In Window
+sample,55,Site 55,4028,W28,In Window
+sample,55,Site 55,4032,W32,In Window
+sample,55,Site 55,4036,W36,In Window
+sample,55,Site 55,4040,W40,In Window
+sample,55,Site 55,4044,W44,Out of Window
+sample,55,Site 55,4048,W48,In Window
+sample,55,Site 55,2000,D0,In Window
+sample,55,Site 55,4002,W2,In Window
+sample,55,Site 55,4004,W4,In Window
+sample,55,Site 55,4008,W8,In Window
+sample,55,Site 55,4012,W12,In Window
+sample,55,Site 55,4016,W16,In Window
+sample,55,Site 55,4020,W20,In Window
+sample,55,Site 55,4024,W24,In Window
+sample,55,Site 55,4028,W28,In Window
+sample,55,Site 55,4032,W32,In Window
+sample,55,Site 55,4036,W36,In Window
+sample,55,Site 55,4040,W40,In Window
+sample,55,Site 55,4044,W44,In Window
+sample,55,Site 55,4048,W48,In Window
+sample,55,Site 55,2000,D0,In Window
+sample,55,Site 55,4002,W2,In Window
+sample,55,Site 55,4004,W4,In Window
+sample,55,Site 55,4008,W8,In Window
+sample,55,Site 55,4012,W12,In Window
+sample,55,Site 55,4016,W16,In Window
+sample,55,Site 55,4020,W20,In Window
+sample,55,Site 55,4024,W24,In Window
+sample,55,Site 55,4028,W28,In Window
+sample,55,Site 55,4032,W32,In Window
+sample,55,Site 55,4036,W36,In Window
+sample,55,Site 55,4040,W40,In Window
+sample,55,Site 55,4044,W44,In Window
+sample,55,Site 55,4048,W48,In Window
+sample,55,Site 55,2000,D0,In Window
+sample,55,Site 55,4002,W2,In Window
+sample,55,Site 55,4004,W4,In Window
+sample,55,Site 55,4008,W8,In Window
+sample,55,Site 55,4012,W12,Out of Window
+sample,55,Site 55,4016,W16,In Window
+sample,55,Site 55,4020,W20,In Window
+sample,55,Site 55,4024,W24,In Window
+sample,55,Site 55,4028,W28,In Window
+sample,55,Site 55,4032,W32,In Window
+sample,55,Site 55,4036,W36,In Window
+sample,55,Site 55,4040,W40,In Window
+sample,55,Site 55,4044,W44,In Window
+sample,55,Site 55,4048,W48,In Window
+sample,60,Site 60,2000,D0,In Window
+sample,60,Site 60,4002,W2,In Window
+sample,60,Site 60,4004,W4,In Window
+sample,60,Site 60,4008,W8,In Window
+sample,60,Site 60,4012,W12,In Window
+sample,60,Site 60,4016,W16,In Window
+sample,60,Site 60,4020,W20,In Window
+sample,60,Site 60,4024,W24,In Window
+sample,60,Site 60,4028,W28,In Window
+sample,60,Site 60,4032,W32,In Window
+sample,60,Site 60,4036,W36,In Window
+sample,60,Site 60,4040,W40,In Window
+sample,60,Site 60,4044,W44,In Window
+sample,60,Site 60,4048,W48,In Window
+sample,70,Site 70,2000,D0,In Window
+sample,70,Site 70,4002,W2,In Window
+sample,70,Site 70,4004,W4,In Window
+sample,70,Site 70,4008,W8,In Window
+sample,70,Site 70,4012,W12,In Window
+sample,70,Site 70,4016,W16,In Window
+sample,70,Site 70,4020,W20,In Window
+sample,70,Site 70,4024,W24,In Window
+sample,70,Site 70,4028,W28,In Window
+sample,70,Site 70,4032,W32,In Window
+sample,70,Site 70,4036,W36,In Window
+sample,70,Site 70,4040,W40,Out of Window
+sample,70,Site 70,4044,W44,Out of Window
+sample,70,Site 70,4048,W48,In Window
+sample,70,Site 70,2000,D0,In Window
+sample,70,Site 70,4002,W2,In Window
+sample,70,Site 70,4004,W4,In Window
+sample,70,Site 70,4008,W8,In Window
+sample,70,Site 70,4012,W12,Out of Window
+sample,70,Site 70,4016,W16,In Window
+sample,70,Site 70,4020,W20,Missed
+sample,70,Site 70,4024,W24,In Window
+sample,70,Site 70,4028,W28,In Window
+sample,70,Site 70,4032,W32,In Window
+sample,70,Site 70,4036,W36,In Window
+sample,70,Site 70,4040,W40,In Window
+sample,70,Site 70,4044,W44,In Window
+sample,70,Site 70,4048,W48,In Window
+sample,70,Site 70,2000,D0,In Window
+sample,70,Site 70,4002,W2,In Window
+sample,70,Site 70,4004,W4,In Window
+sample,70,Site 70,4008,W8,In Window
+sample,70,Site 70,4012,W12,In Window
+sample,70,Site 70,4016,W16,In Window
+sample,70,Site 70,4020,W20,In Window
+sample,70,Site 70,4024,W24,In Window
+sample,70,Site 70,4028,W28,In Window
+sample,70,Site 70,4032,W32,In Window
+sample,70,Site 70,4036,W36,In Window
+sample,70,Site 70,4040,W40,Overdue
+sample,70,Site 70,4044,W44,Expected
+sample,70,Site 70,4048,W48,Expected
+sample,80,Site 80,2000,D0,In Window
+sample,80,Site 80,4002,W2,In Window
+sample,80,Site 80,4004,W4,In Window
+sample,80,Site 80,4008,W8,In Window
+sample,80,Site 80,4012,W12,In Window
+sample,80,Site 80,4016,W16,In Window
+sample,80,Site 80,4020,W20,In Window
+sample,80,Site 80,4024,W24,In Window
+sample,80,Site 80,4028,W28,In Window
+sample,80,Site 80,4032,W32,In Window
+sample,80,Site 80,4036,W36,In Window
+sample,80,Site 80,4040,W40,In Window
+sample,80,Site 80,4044,W44,In Window
+sample,80,Site 80,4048,W48,In Window
+sample,80,Site 80,2000,D0,In Window
+sample,80,Site 80,4002,W2,In Window
+sample,80,Site 80,4004,W4,In Window
+sample,80,Site 80,4008,W8,In Window
+sample,80,Site 80,4012,W12,In Window
+sample,80,Site 80,4016,W16,In Window
+sample,80,Site 80,4020,W20,In Window
+sample,80,Site 80,4024,W24,In Window
+sample,80,Site 80,4028,W28,In Window
+sample,80,Site 80,4032,W32,In Window
+sample,80,Site 80,4036,W36,In Window
+sample,80,Site 80,4040,W40,In Window
+sample,80,Site 80,4044,W44,In Window
+sample,80,Site 80,4048,W48,Out of Window
+sample,81,Site 81,2000,D0,In Window
+sample,81,Site 81,4002,W2,In Window
+sample,81,Site 81,4004,W4,In Window
+sample,81,Site 81,4008,W8,In Window
+sample,81,Site 81,4012,W12,In Window
+sample,81,Site 81,4016,W16,In Window
+sample,81,Site 81,4020,W20,In Window
+sample,81,Site 81,4024,W24,In Window
+sample,81,Site 81,4028,W28,In Window
+sample,81,Site 81,4032,W32,In Window
+sample,81,Site 81,4036,W36,In Window
+sample,81,Site 81,4040,W40,In Window
+sample,81,Site 81,4044,W44,In Window
+sample,81,Site 81,4048,W48,In Window
+sample,82,Site 82,2000,D0,In Window
+sample,82,Site 82,4002,W2,In Window
+sample,82,Site 82,4004,W4,Missed
+sample,82,Site 82,4008,W8,In Window
+sample,82,Site 82,4012,W12,In Window
+sample,82,Site 82,4016,W16,In Window
+sample,82,Site 82,4020,W20,In Window
+sample,82,Site 82,4024,W24,In Window
+sample,82,Site 82,4028,W28,In Window
+sample,82,Site 82,4032,W32,Missed
+sample,82,Site 82,4036,W36,Out of Window
+sample,82,Site 82,4040,W40,In Window
+sample,82,Site 82,4044,W44,Missed
+sample,82,Site 82,4048,W48,In Window
+sample,82,Site 82,2000,D0,In Window
+sample,82,Site 82,4002,W2,In Window
+sample,82,Site 82,4004,W4,In Window
+sample,82,Site 82,4008,W8,In Window
+sample,82,Site 82,4012,W12,In Window
+sample,82,Site 82,4016,W16,In Window
+sample,82,Site 82,4020,W20,Missed
+sample,82,Site 82,4024,W24,In Window
+sample,82,Site 82,4028,W28,In Window
+sample,82,Site 82,4032,W32,In Window
+sample,82,Site 82,4036,W36,In Window
+sample,82,Site 82,4040,W40,Missed
+sample,82,Site 82,4044,W44,Missed
+sample,90,Site 90,2000,D0,In Window
+sample,90,Site 90,4002,W2,In Window
+sample,90,Site 90,4004,W4,In Window
+sample,90,Site 90,4008,W8,In Window
+sample,90,Site 90,4012,W12,In Window
+sample,90,Site 90,4016,W16,Out of Window
+sample,90,Site 90,4020,W20,Out of Window
+sample,90,Site 90,4024,W24,Out of Window
+sample,90,Site 90,4028,W28,In Window
+sample,90,Site 90,4032,W32,In Window
+sample,90,Site 90,4036,W36,In Window
+sample,90,Site 90,4040,W40,In Window
+sample,90,Site 90,4044,W44,In Window
+sample,90,Site 90,4048,W48,Out of Window
+sample,95,Site 95,2000,D0,Out of Window

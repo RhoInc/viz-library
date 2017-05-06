@@ -1,0 +1,81 @@
+body{
+  padding:5px;
+}
+.ig-dashboard{
+  width: 1320px;
+  font-size: 12px;
+}
+
+.ig-dashboard .gg-dash-item{
+  float: left;
+  width: 420px;
+  margin: 0 30px 30px 0;
+}
+.ig-dashboard .gg-dash-item.left{
+  clear: left;
+}
+.ig-dashboard .gg-dash-item.right{
+  margin-right: 0;
+}
+.ig-dashboard .gg-dash-item.right.double-height{
+  float: right;
+}
+.ig-dashboard .gg-dash-item.double-wide{
+  width: 850px;
+}
+.ig-dashboard .gg-dash-item.triple-wide{
+  width: 100%;
+}
+.ig-dashboard .gg-dash-item.full-height{
+  height: 100%;
+}
+.ig-dashboard .gg-dash-item > .gg-dash-item-title{
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin:0;
+  margin-bottom: .5em;
+}
+
+.ig-dashboard .gg-dash-item > .gg-dash-item-title .wc-controls{
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+}
+
+.ig-dashboard .gg-dash-item  .wc-controls{
+  margin: 0;
+}
+
+.ig-dashboard .gg-dash-item .wc-controls .control-group{
+  margin: 0;
+}
+
+.ig-dashboard .gg-dash-item .wc-controls .control-group:not(:last-of-type){
+  margin: 0 10px 0 0;
+}
+
+.ig-dashboard .gg-dash-item .wc-controls .control-group > *{
+  display: inline-block;
+  margin: 0 3px 0 0;
+}
+
+.ig-dashboard .gg-dash-item .wc-controls .control-group > label.radio:not(:last-of-type){
+  margin-right: .5em;
+}
+
+.ig-dashboard .gg-dash-item .wc-controls .control-label{
+  display: inline;
+  margin-right: .5em;
+}
+
+.ig-dashboard .gg-dash-item .wc-controls .changer{
+  display: inline;
+  max-width: 100px;
+}
+
+.ig-dashboard .gg-dash-item .wc-chart .legend{
+  text-align: right;
+}

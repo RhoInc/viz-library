@@ -1,0 +1,1 @@
+This simple line chart is created with [Webcharts](https://github.com/RhoInc/Webcharts) and plots temperature over time between January 2014 and April 2015 in Wake County, NC. A line plots the average of the six station readings, each of which is represented by a circle. Data sourced from the [National Climatic Data Center](http://www.ncdc.noaa.gov/cdo-web/datasets#ANNUAL).

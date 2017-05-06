@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.6.1.js"></script>	
+	<script src="https://cdn.rawgit.com/RhoInc/ae-timelines/f5cc0ae614a356a9454bbb30701b7bcfd3859bde/build/aeTimeline.js"></script>	
+	<link rel="stylesheet" href="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.4.0.css">
+</head>
+<body></body>
+<script>
+var div = 'body';
+var settings = {
+        legend: {
+           location:"top",
+            order: ['MILD', 'MODERATE', 'SEVERE', 'NA']
+        },
+        colors: ['green', 'orange', 'red', '#444'],
+        stdy_col: 'AESTDY', //Overwrites default value
+        endy_col: 'AEENDY', //Overwrites default value
+        date_format:"%Y-%m-%d" //Overwrites default value
+    };
+
+    var dataFile = 'ae_explorer.csv';
+    d3.csv(dataFile, function (data){
+        var plot = aeTimelines(div, settings).init(data);
+    });
+</script>
+</html>

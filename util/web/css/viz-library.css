@@ -1,3 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
+
+/* Genreal formatting */
+html,body{
+	height: 100%;
+	font-size: 14px;
+}
+
+body{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom:0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size: 3rem;
+	font-weight: lighter;
+}
+h2{
+	font-size: 2rem;
+	font-weight: lighter;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	width:100%
+}
+
+h2 small{
+	font-size:0.5em
+}
+h3{
+	font-size: 1.5rem;
+}
+h4{
+	font-size: 1.25rem;
+}
+h5{
+	font-size: 1.13rem;
+}
+h6{
+	font-size: 1.0rem;
+	font-weight: bold;
+}
+
+p{
+	margin:0
+}
+
+/* header */
+.head{
+	text-align:center;
+	margin-bottom:1em
+}
+
 /* Controls */
 .controls{
 	padding:10px;
@@ -57,4 +114,55 @@
 }
 .media-tile:hover .text-wrap p+p{
 	display: block;
+}
+
+/* Data preview */
+
+.wrap {
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+}
+.wrap .section{
+  display:inline-block;
+  vertical-align: top;
+}
+
+.file-list{
+}
+
+.file-list tr{
+  border-top:1px solid #999
+}
+
+.data-preview{
+  max-width:800px;
+  margin-left:1em;
+
+}
+
+.data-table{
+  padding-top:1em;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  padding: 0 0.2em;
+}
+.data-table table{
+  border-bottom:1px solid #999;
+}
+
+.data-table table td{
+  border-top:1px solid #999;
+}
+
+tr.selected{
+  background:#ccc;
+}
+
+button{
+  margin-left:1em
 }

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<head>
+  <title>Movie Reviews</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type='text/javascript' src='http://graphics.rhoworld.com/src/webcharts/webcharts.v1.6.0.js'></script>
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">  
+  <link rel="stylesheet" href="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.4.0.css">
+  <link rel="stylesheet" type="text/css" href="movies.css">
+</head>
+
+<html>
+<body>
+  <h2>Movies with Friends</h2>
+  <div id="summary">
+    <select class="person"></select> has watched <count></count><span class="withJeremy hidden"> of <total></total> (<percent></percent>)</span> movies <span class="withJeremy hidden">with Jeremy </span><select class="time"></select><avg>, and <span class="withJeremy hidden">Jeremy has </span>given them an average score of <score></score></avg>.<span class="watchMore hidden"> Tell him to watch 5 or more so you can see a chart.</span> <span class="watchedAlone">He watched solo <alonePercent></alonePercent> of the time. 🙇   </span>
+  </div>
+
+  <div id="charts">
+    <div class="histwrapper">
+      <div class="hist"></div>
+      <div class="legend">
+        <ul>
+          <strong>Scoring Summary</strong>
+          <li><score>0 to 4.5</score>: <feeling>Bad</feeling></li>
+          <li><score>5 to 7.5</score>: <feeling>Good</feeling></li>
+          <li><score>8.0+</score>: <feeling><title></title>Excellent</feeling></li>
+        </ul>
+      </div>
+    </div>
+    <div class="overTime"></div>
+    <div class="detailTable"></div>
+    
+  </div>
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+  //constants and selectors
+  var public_spreadsheet_url = '1eufgWMGSF4lFDAkbqdgbH7peqP0qZmmmJbJM34xVGAI';
+  var summary_p = d3.select("#summary")
+  var personSelect = summary_p.select("select.person")
+  var timeSelect = summary_p.select("select.time")
+
+  //Histogram settings
+  var histSettings = {
+    "width":"800",
+    "height": "300",
+    resizable:false,
+    "x":{
+      "label":"Rating",
+      "type":"ordinal",
+      "column":"Rating",
+      "domain": d3.range(0,10.5,0.5).map(function(d){return d3.format("0.1f")(d)+""})
+    },
+    "y":{
+      "type":"linear",
+      "label":"# of Movies",
+      "column":null
+    },
+    "marks":[
+      {
+        "type":"bar",
+        "per":["Rating_n"],
+        "summarizeY":"count",
+        "attributes":{"fill":"white","stroke":"black"}
+      },
+      {
+        "type":"bar",
+        "per":["Rating_n"],
+        "summarizeY":"count",
+        "values": {"personMatch":[true]},
+        "attributes":{"fill":"green","stroke":"transparent"}
+      }
+    ],
+    "gridlines":"y"
+  };
+
+  ///////////////
+  // Functions //
+  ///////////////
+  function initData(raw){
+    //clean up the data
+    raw.forEach(function(d,i){
+      d.id=i;
+      d.Rating_n=+d.Rating
+      d.people = d.With.split(",")
+      d.people = d.people.filter(function(e){
+        return e!="-"
+      })
+      d.people = d.people.map(function(e){
+        return e.trim()
+      })
+
+      d.alone = d.With=="-"
+      d.people.push("Jeremy")
+      d.date=d3.time.format("%x").parse(d["Date watched"])
+      d.year=d3.time.format("%Y")(d.date) 
+      
+      d.Notes = d.Notes?d.Notes:"-None yet-"
+      //flag variables
+      d.personMatch = true
+      d.timingMatch = true
+      d.match=true
+    })
+    return raw
+  }
+
+  function filterMovies (raw, person, time){
+      var sub=raw.filter(function(d){
+        //person match? 
+        d.personMatch = d.people.indexOf(person)>-1
+
+        //timing match? 
+        var thisYear = new Date().getFullYear()
+        var thisMonth = new Date().getMonth()
+        d.timingMatch= time=="since November 2014" ? true: 
+          time=="this year" ? d.year == thisYear : 
+          time=="this month" ? d.year==thisYear && d.date.getMonth()==thisMonth : 
+          false
+
+        //both match? 
+        d.match = d.personMatch & d.timingMatch
+
+        return d.timingMatch
+      })
+
+      return sub
+  }
+    
+  function initControls(data, person, timing){
+    var person = person ? person : "Jeremy"
+    var timing = timing ? timing : "since November 2014"
+    
+    //set up the person select
+    var allViewers = d3.set(
+      d3.merge(
+        data.map(function(d){
+          return d.people
+        })
+      )
+    ).values()
+
+    var allViewers = allViewers.map(function(viewer){
+      var obj={}
+      obj.name = viewer
+      obj.count = data.filter(function(d){return d.people.indexOf(viewer)>-1}).length
+      obj.label = obj.name + " ("+obj.count+")"
+      return obj
+    }).sort(function(a,b){  
+      return b.count < a.count ? -1 : b.count > a.count ? 1 : b.count >= a.count ? 0 : NaN;
+    })
+    
+    function makeUpdates(){
+        var person = personSelect    
+        .selectAll("option")
+        .filter(function (d, i) { 
+          return this.selected; 
+        }).datum()["name"];
+        var timing = timeSelect.node().value;
+        var sub = filterMovies(data, person, timing)
+        var matches = sub.filter(function(d){return d.match})
+
+        updateStats(sub, person,timing)
+        d3.select("div#charts").classed("hidden",sub.length<=5)
+        hist.draw(sub)
+        drawTable(matches)
+
+        //Update the counts in the Person control
+        personSelect.selectAll("option")
+        .each(function(d){
+          d.count = sub.filter(function(e){return e.people.indexOf(d.name)>-1}).length
+          d.label = d.name + " ("+d.count+")"
+        })
+        .text(function(d){return d.label})
+    }
+
+    personSelect
+    .on("change", makeUpdates)
+    .selectAll("option")
+      .data(allViewers)
+      .enter()
+      .append("option")
+      .attr("selected",function(d){return d.name==person?"selected":null})
+      .text(function(d){return d.label})
+    
+    //set up the timing select
+    timeSelect
+    .on("change", makeUpdates)
+    .selectAll("option")
+      .data(["since November 2014","this year"])
+      .enter()
+      .append("option")
+      .attr("selected",function(d){return d.name==timing?"selected":null})
+      .text(function(d){return d})
+  }
+
+  //update the text
+  function updateStats(data, person, timing){
+    var stats = {
+      "total":data.length, 
+      "n":data.filter(function(d){return d.match}).length,
+      "avg":d3.mean(
+        data.filter(function(d){return d.match}),
+        function(d){return d.Rating_n}
+      ),
+      "friend":person,
+      alone:d3.mean(data,function(d){return d.alone})
+    }
+    summary_p.select("count").text(stats.n)
+    summary_p.select("score").text(d3.format("0.1f")(stats.avg))
+    summary_p.select("total").text(stats.total)
+    summary_p.select("percent").text(d3.format("0.1%")(stats.n/stats.total))
+    summary_p.select("alonePercent").text(d3.format("0.1%")(stats.alone))
+
+    summary_p.selectAll(".withJeremy").classed("hidden",stats.friend=="Jeremy")
+    summary_p.select(".watchMore").classed("hidden",data.length>=5)
+    summary_p.select("avg").classed("hidden",stats.n==0)
+    summary_p.select(".watchedAlone").classed("hidden",person!="Jeremy")
+  }
+
+  function drawTable(data){
+    d3.select(".detailTable").selectAll("*").remove();
+    if(data.length){
+      detailTable = webCharts.createTable(
+        '.detailTable', 
+        {cols:["Title","Year Released","Date watched","Rating","Notes","With"]}
+      );
+      detailTable.init([]);
+      detailTable.draw(data);
+      $(detailTable.table.node())
+      .addClass("compact")
+      .dataTable({ pagingType: "simple",lengthChange:false, order:[3,"desc"] })
+    }
+  }
+
+  function initPage(data, tabletop){
+    var clean = initData(data)
+
+    //initialize Controls
+    initControls(clean)
+
+    //initialize the stats section
+    updateStats(clean, "Jeremy", timeSelect.node().value);
+
+    //initialize the histogram
+    hist.init(clean);
+
+    //initialize dataTables
+    drawTable(clean)
+  }
+
+  var hist = webCharts.createChart(".hist", histSettings,null);
+  Tabletop.init({ 
+    key: public_spreadsheet_url,
+    callback: initPage,
+    simpleSheet: true 
+  })
+})
+
+</script>
+
+

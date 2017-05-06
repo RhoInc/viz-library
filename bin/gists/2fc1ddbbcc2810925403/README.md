@@ -1,0 +1,1 @@
+This is a bar chart showing counts of medals won by country at the 2012 summer Olympics. Bars are segmented by medal type. Made with [Webcharts](https://github.com/RhoInc/Webcharts).

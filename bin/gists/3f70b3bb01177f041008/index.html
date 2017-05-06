@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Average Global Temperature Change by Year</title>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+        <style type="text/css">
+            
+            body {
+                background-color: white;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                margin: 10px 0 0 0;
+            }
+
+            svg {
+                background-color: white;
+            }
+
+            circle:hover {
+                fill: orange;
+            }
+            
+            .axis path,
+            .axis line {
+                fill: none;
+                stroke: black;
+                shape-rendering: crispEdges;
+            }
+            
+            .axis text {
+                font-family: sans-serif;
+                font-size: 11px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Average Global Temperature Change by Year</h1>
+
+        <p>The <strong style="color: steelblue;">January</strong> and <strong style="color: red;">July</strong> change in global surface temperature relative to 1951-1980 average temperatures, 1880-2015.  Source: <a href="http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt">NASA</a>, 2014</p>
+
+        <script type="text/javascript">        
+
+
+            //Dimensions and padding
+            var w = 1500;
+            var h =  600;
+            var padding = [ 20, 10, 50, 100 ];  //Top, right, bottom, left
+
+
+
+            //Set up date formatting and years
+            var dateFormat = d3.time.format("%Y");
+
+
+
+            //Set up scales
+            var xScale = d3.time.scale()
+                                .range([ padding[3], w - padding[1] - padding[3] ]);
+            
+            var yScale = d3.scale.linear()
+                                .range([ padding[0], h - padding[2] ]);
+
+
+
+            //Configure axis generators
+            var xAxis = d3.svg.axis()
+                            .scale(xScale)
+                            .orient("bottom")
+                            .ticks(15)
+                            .tickFormat(function(d) {
+                                return dateFormat(d);
+                            });
+
+            var yAxis = d3.svg.axis()
+                            .scale(yScale)
+                            .orient("left");
+
+
+
+            //Configure line generator
+            var line1 = d3.svg.line()
+                .x(function(d) {
+                    return xScale(dateFormat.parse(d.Year));
+                })
+                .y(function(d) {
+                    return yScale(d.Jan/100);
+                });
+
+            var line2 = d3.svg.line()
+                .x(function(d) {
+                    return xScale(dateFormat.parse(d.Year));
+                })
+                .y(function(d) {
+                    return yScale(d.Jul/100);
+                });
+
+
+            //Create the empty SVG image
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+
+
+            //Load data
+            d3.csv("GlobalTemperatures.csv", function(data) {
+
+                    xScale.domain([ 
+                        d3.min(data, function(d) {
+                            return dateFormat.parse(d.Year);
+                        }),
+                        d3.max(data, function(d) {
+                            return dateFormat.parse(d.Year);
+                        })
+                    ]);
+
+                    yScale.domain([ 
+                        d3.max(data, function(d) {
+                            return Math.max(+d.Jan/100, +d.Jul/100);
+                        }),
+                        d3.min(data, function(d) {
+                            return Math.min(+d.Jan/100, +d.Jul/100);
+                        })
+                    ]);
+
+
+
+                    //Lines
+                    //
+                    // Note data is wrapped in another array, so all its
+                    // values are bound to a single element (the line!)
+                    //
+                    svg.data([ data ])
+                        .append("path")
+                        .attr("class", "line jan")
+                        .attr("d", line1)
+                        .attr("fill", "none")
+                        .attr("stroke", "steelblue")
+                        .attr("stroke-width", 2);
+
+                    svg.data([ data ])
+                        .append("path")
+                        .attr("class", "line jul")
+                        .attr("d", line2)
+                        .attr("fill", "none")
+                        .attr("stroke", "red")
+                        .attr("stroke-width", 2);
+
+
+                    //Axes
+                    svg.append("g")
+                        .attr("class", "x axis")
+                        .attr("transform", "translate(0," + (h - padding[2]) + ")")
+                        .call(xAxis);
+
+                    svg.append("g")
+                        .attr("class", "y axis")
+                        .attr("transform", "translate(" + (padding[3]) + ",0)")
+                        .call(yAxis);
+
+                    svg
+                        .append('text')
+                        .attr('class', 'x label')
+                        .attr('text-anchor', 'start')
+                        .attr('x', w/2.15)
+                        .attr('y', h - 10)
+                        .text('Year');
+
+                    svg
+                        .append('text')
+                        .attr('class', 'y label')
+                        .attr('text-anchor', 'end')
+                        .attr('x', -(h/5))
+                        .attr('y', 50)
+                        .attr('transform', 'rotate(-90)')
+                        .text('Difference from Base Period: 1951-1980 (\u00B0C)');
+            });
+
+        </script>
+    </body>
+</html>

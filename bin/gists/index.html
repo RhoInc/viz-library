@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <script src='https://d3js.org/d3.v3.min.js'></script>
+        <script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>
+        <link rel='stylesheet' href='../../util/web/css/viz-library.css'>
+    </head>
+
+    <body>
+        <h1>Rho's Data Visualization Example Gallery</h1>
+        <span style="position:absolute;top:1em;right:1em;">
+		        <a href="../">🏠</a>
+	         </span>
+        <p> Here are some older examples (originally created as github gists) that we haven't fully documented yet. (There could be some 🐜s) </p>
+        <div class="gistList"></div>
+    </body>
+    <script src='../../util/web/data/gists.js'></script>
+    <script src='../../util/web/build/vizLibrary.js'></script>
+    <script>
+      vizLibrary.buildGistList(gists,".gistList")
+    </script>
+
+</html>

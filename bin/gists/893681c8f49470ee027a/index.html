@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.4.0.js"></script>	
+	<script src="violin.js"></script>	
+    <script src="boxplot.js"></script>  
+
+	<link rel="stylesheet" href="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.4.0.css">
+</head>
+
+<body>
+<div class="graphic-wrapper">
+    <h6>Settings</h6>
+    <div class="controls-top"></div>
+    <h6>Overlays</h6>
+    <div class="controls-bottom"></div>
+    <div class="chart"></div>   
+
+    <p>This display is adapted from Figure 3 in the New England Journal of Medicine article, <a href="http://www.nejm.org/doi/pdf/10.1056/NEJMoa1414850">Randomized Trial of Peanut Consumption in Infants at Risk for Peanut Allergy</a>. The chart was originally created in response to <a href="http://www.nejm.org/doi/full/10.1056/NEJMc1504021">reader correspondence</a>, and was later updated to include follow up data in conjunction with a second article, <a href="http://www.nejm.org/doi/pdf/10.1056/NEJMoa1514209">Effect of Avoidance on Peanut Allergy after Early Peanut Consumption</a>.</p>
+
+    <p>This interactive version allows the user to select from 10 outcomes on the y-axis. Selections for sex, ethnicity, study population, skin prick test stratum, and peanut specific IgE at 60 and 72 months of age can be interactively chosen to filter the data and display subgroups of interest. Figure options (e.g. summary lines, box and violin plots) can be selected under the Overlays heading to alter the properties of the figure. Per Protocol population is shown by default. The Intent to Treat population includes all randomized partcipants and can be shown by selecting both Per Protocol and non-Per Protocol participants.</p>
+
+    <p>This page was created for the <a href="http://www.immunetolerance.org/">Immune Tolerance Network</a> by the <a href="http://graphics.rhoworld.com">Rho Center for Applied Data Visualization</a> using d3.js (<a href="http://www.d3js.org">1</a>,<a href="https://gist.github.com/z-m-k/5014368">2</a>) and <a href="https://github.com/RhoInc/Webcharts">webcharts.js</a>. </p>
+
+    <p>For more information about the LEAP study and to access to the full set of figures with underlying data and analysis code, please log into <a href="https://www.itntrialshare.org/project/Studies/ITN032ADPUBLIC/Study Data/begin.view?pageId=study.DATA_ANALYSIS">ITN TrialShare</a>. Creating a TrialShare account is free and simple. Click <a href="https://www.itntrialshare.org/selfregister">here</a> to get started. The graphic shown here was updated using webcharts <a href="https://github.com/RhoInc/Webcharts/releases/tag/v1.4.0">version 1.4.0</a>; the original chart was created using v0.1.3 and can be found on Trialshare. </p>
+
+</div>
+
+</body>
+<script>
+
+///////////////////////////////////////////////////////////////////////////
+// Basic Chart Configuration  
+///////////////////////////////////////////////////////////////////////////
+
+var dataElement = ".graphic-wrapper";
+var dataPath = "ADIG2.csv";
+var settings = {
+    "resizable": false,
+    "width": 600,
+    "margin": {"top": 20},
+    "y":{
+        "column":"Peanut-specific IgE (log 10)",
+        "type": "linear", 
+        "behavior": "firstfilter",
+        "format":".1f",
+        "label":""
+    }, 
+    "x":{
+        "column":"Visit Number",
+        "type": "ordinal",
+        "label": "Visit (Months of Age)",
+        "domain":["-1", "12", "30", "60", "72"]
+    },
+    "marks":[
+        //Line with points for each participant
+        {
+            "type":"line",
+            "per":["Subject ID"],
+            "summarizeY":"mean",
+            "attributes":{
+                "stroke-width":"1px",
+                "class":"person-line"
+            }
+        },
+        {
+            "type":"circle",
+            "per":["Subject ID","Visit Number"],
+            "summarizeY":"mean",
+            "attributes":{
+                "fill-opacity":"0",
+                "class":"person-point"
+            }
+        },
+        //Mean line
+        {
+            "type":"line",
+            "per":[],
+            "summarizeY":"mean",
+            "attributes":{
+                "stroke": "#4f4b5b", 
+                "stroke-width": 3,
+                "class":"overall-line"
+            }
+        },
+
+    ],
+    "legend":{
+        "label":"",
+        "order":["PASS OFC","FAIL OFC"]
+    },
+    "outer_pad": -.1,
+    "color_by": "Primary Outcome LEAP-On",
+    "colors": ["lightsteelblue", "orangered"],
+    "faillines": true,
+    "passlines": true,
+    "summarylines": true,
+    "boxplots": true,
+    "points": true,
+    "violins":false
+};
+
+///////////////////////////////////////////////////////////////////////////
+// Chart Controls
+///////////////////////////////////////////////////////////////////////////
+
+var controls = webCharts.createControls(
+    dataElement+" .controls-top",
+    {
+        location: "top",
+        inputs:[
+            {
+                type: "dropdown",
+                option: "y.column",
+                label: "Y Values",
+                values:[
+                    "Peanut-specific IgE (log 10)",
+                    "Peanut-specific IgG4 Result (log 10)",
+                    "Peanut-specific IgG Result (log 10)",
+                    "IgG4/IgE Ratio (log 10)",
+                    "Peanut Wheal (mm)",
+                    "ARAH1 (log 10)",
+                    "ARAH2 (log 10)",
+                    "ARAH3 (log 10)",
+                    "ARAH8 (log 10)",
+                    "ARAH9 (log 10)"
+                ],
+                require: true
+            },
+            {
+                type: "subsetter",
+                value_col: "peanutIgEbasecat",
+                label: "Peanut-specific IgE at Baseline",
+                multiple: true
+            },
+            {
+                type: "subsetter",
+                value_col: "peanutIgE60cat",
+                label: "Peanut-specific IgE at 60 Months",
+                multiple: true
+            },
+            {
+                type: "subsetter",
+                value_col: "peanutIgE72cat",
+                label: "Peanut-specific IgE at 72 Months",
+                multiple: true
+            },
+            {
+                type: "subsetter",
+                value_col: "Sex (char)",
+                label: "Sex"
+            },
+            {
+                type: "subsetter",
+                value_col: "Primary Ethnicity",
+                label: "Ethnicity"
+            },
+            {
+                type: "subsetter",
+                value_col: "Stratum (char)",
+                label: "SPT Stratum"
+            },
+            {
+                type: "dropdown",
+                option: "color_by",
+                label: "Color By",
+                require: true,
+                values: [
+                    'Primary Outcome LEAP-On', 
+                    'Primary Outcome LEAP'
+                ]
+            },
+            {
+                type: "subsetter",
+                value_col: "pp",
+                label: "LEAP Study Population",
+                multiple: true
+            },
+            {
+                type: "subsetter",
+                value_col: "ppon",
+                label: "LEAP-On Study Population",
+                multiple: true
+            }                
+        ]
+    }
+);
+
+var overlay_controls = webCharts.createControls(
+    dataElement+" .controls-bottom",
+    {
+        location: "top",
+        inputs:[
+            {
+                type: "checkbox",
+                option: "passlines",
+                label: "Trajectories for Participants without Peanut Allergy",
+                inline: true
+            },
+            {
+                type: "checkbox",
+                option: "faillines",
+                label: "Trajectories for Participants with Peanut Allergy",
+                inline: true
+            },
+            {
+                type: "checkbox",
+                option: "summarylines",
+                label: "Summary Lines",
+                inline: true
+            },
+            {
+                type: "checkbox",
+                option: "points",
+                label: "Points",
+                inline: true
+            },
+            {
+                type: "checkbox",
+                option: "violins",
+                label: "Violin Plots",
+                inline: true
+            },
+            {
+                type: "checkbox",
+                option: "boxplots",
+                label: "Box Plots",
+                inline: true
+            }
+        ]
+    }
+);
+
+///////////////////////////////////////////////////////////////////////////
+// Helper functions to draw custom overlays including Violin and box plots
+///////////////////////////////////////////////////////////////////////////
+
+//via http://stackoverflow.com/questions/14167863/how-can-i-bring-a-circle-to-the-front-with-d3
+d3.selection.prototype.moveToFront = function() {
+  return this.each(function(){
+    this.parentNode.appendChild(this);
+  });
+};
+
+function nestData(chart){
+    var raw = chart.filtered_data;
+    var nested = d3.nest()
+        .key(function(d){return d["Visit Number"];})
+        .rollup(function(d){return d.map(function(m){return +m[chart.config.y.column]})})
+        .entries(raw)
+    return nested
+}
+
+function addViolinCharts(chart){
+    //nest data by visit
+    var nested = nestData(chart)
+
+    //remove existing violin charts
+    chart.svg.selectAll(".violin-wrap").remove();
+
+    //add new violin plots
+    nested.forEach(function(e){
+        var results = e.values.sort(d3.ascending);
+        var g = chart.svg.append("g")
+            .attr("class", "violin-wrap")
+            .attr("transform", "translate("+chart.x(e.key)+","+0+")")
+            .attr("opacity"  , 0.8);
+        addViolin(
+            g,
+            results,
+            chart.plot_height,
+            chart.x.rangeBand(),
+            chart.y.domain(),
+            0.25,
+            "#ccc7d6"
+        );
+    });
+
+    //move violin charts to front
+    chart.svg.selectAll(".line-point").moveToFront();
+}
+
+function addBoxPlots(chart){
+    //nested data by visit
+    var nested = nestData(chart)
+
+    //remove existing boxplots
+    chart.svg.selectAll(".boxplot-wrap").remove();
+
+    //add new boxplots
+    nested.forEach(function(e){
+        var results = e.values.sort(d3.ascending);
+        var g = chart.svg.append("g").attr("class", "boxplot-wrap")
+            .attr("transform", "translate("+chart.x(e.key)+",0)")
+            .attr("opacity", 0.6);
+
+        addBoxPlot(
+            g,
+            results,
+            chart.plot_height,
+            chart.x.rangeBand(),
+            chart.y.domain(),
+            0.25,
+            "#4f4b5b",
+            "#fff"
+        );
+    });
+
+    //move boxplots to front
+    chart.svg.selectAll(".boxplot.median").moveToFront();
+}
+
+function addCounts(chart, nested){
+    //nested data by visit
+    var nested = nestData(chart)
+
+    //remove existing counts
+    chart.svg.selectAll(".count-note").remove();
+
+    //add counts
+    var counts = chart
+        .svg
+        .selectAll(".count-note")
+        .data(nested)
+        .enter()
+        .append("text")
+        .attr("class", "count-note")
+        .text(function(d) { return "N = "+d.values.length; } )
+        .attr("transform", function(d){
+            return "translate("+(chart.x(d.key)+chart.x.rangeBand()/2)+",0)";
+        })
+        .attr("text-anchor", "middle")
+        .style("font-size", ".75em")
+}
+
+///////////////////////////////////////////////////////////////////////////
+// Create the Chart Object and define custom callbacks
+///////////////////////////////////////////////////////////////////////////
+
+var outcomeChart = webCharts.createChart(dataElement+" .chart", settings, controls)
+
+outcomeChart.on("layout",function(){
+    //Initialize the 2nd set of controls. 
+    overlay_controls.targets.push(this);
+    overlay_controls.init(this.raw_data);
+});
+
+
+outcomeChart.on("resize",function() {
+    var chart=this;
+    //draw violin plots, boxplots and add counts
+    addViolinCharts(chart)
+    addBoxPlots(chart)
+    addCounts(chart)
+
+    //move the overall line to the front
+    if(this.filtered_data.length>0){
+        d3.select(chart.svg.select(".overall-line").node().parentNode.parentNode).moveToFront();
+    }
+
+
+    //show/hide elements based on user selections
+    chart.svg.selectAll(".person-line")
+    .filter(function(f){
+        return f.values[0].values.raw[0][chart.config.color_by] === "PASS OFC";
+    })
+    .style("display", chart.config.passlines ? null : "none");
+
+    chart.svg.selectAll(".person-line")
+    .filter(function(f){
+        return f.values[0].values.raw[0][chart.config.color_by] === "FAIL OFC";
+    })
+    .style("display", chart.config.faillines ? null : "none");
+
+    chart.svg.selectAll(".person-point")
+    .style("display", chart.config.points ? null : "none");
+    
+    chart.svg.selectAll(".violin-wrap")
+    .style("display", chart.config.violins ? null : "none");
+
+    chart.svg.selectAll(".boxplot")
+    .style("display", chart.config.boxplots ? null : "none");
+
+    chart.svg.selectAll(".overall-line")
+    .style("display", chart.config.summarylines ? null : "none");
+
+
+    //custom legend label
+    this.legend.selectAll(".legend-label")
+    .text(function(d){
+        return (
+            d.label === "PASS OFC" && chart.config.color_by === 'Primary Outcome LEAP' ? "Participants without Peanut Allergy at 60 mo" :
+            d.label === "FAIL OFC" && chart.config.color_by === 'Primary Outcome LEAP' ? "Participants with Peanut Allergy at 60 mo" :
+            d.label === "PASS OFC" && chart.config.color_by === 'Primary Outcome LEAP-On' ? "Participants without Peanut Allergy at 72 mo" :
+            "Participants with Peanut Allergy at 72 mo"
+        );
+    });
+});
+
+///////////////////////////////////////////////////////////////////////////
+// Load the raw data, derive needed data and initialize the chart
+///////////////////////////////////////////////////////////////////////////
+d3.csv(dataPath, function(error, csv){
+    csv.forEach(function(e){
+        // Drop records with no Pass/Fail status
+        csv = csv.filter(function(d){
+            return ["PASS OFC", "FAIL OFC"].indexOf(d["Primary Outcome LEAP-On"])>-1
+        })
+
+        //Relabel Per Protcol variables for filters
+        e.pp = e["LEAP Per Protocol"] === "Yes" ? "Per Protocol" : "Non-Per Protocol";
+        e.ppon = e["LEAP-On Per Protocol"] === "Yes" ? "Per Protocol" : "Non-Per Protocol";
+
+        //Derive Peanut IgE cutpoints at month 60
+        var match60 = csv.filter(function(f){
+            return f["Subject ID"] === e["Subject ID"] && f["Visit Number"] === "60";
+        });
+
+        e.ige_v60_n1  = !match60[0] ? null : +match60[0]["Peanut-specific IgE (log 10)"] >= -1;
+        e.ige_v60_35k = !match60[0] ? null : +match60[0]["Peanut-specific IgE (log 10)"] >= -0.456;
+        e.ige_v60_0   = !match60[0] ? null : +match60[0]["Peanut-specific IgE (log 10)"] >= 0;
+        e.ige_v60_1   = !match60[0] ? null : +match60[0]["Peanut-specific IgE (log 10)"] >= 1;
+        e.ige_v60_2   = !match60[0] ? null : +match60[0]["Peanut-specific IgE (log 10)"] >= 2;
+
+        //Derive Peanut IgE cutpoints at month 72
+        var match72 = csv.filter(function(f){
+            return f["Subject ID"] === e["Subject ID"] && f["Visit Number"] === "72";
+        });
+
+        e.ige_v72_n1  = !match72[0] ? null : +match72[0]["Peanut-specific IgE (log 10)"] >= -1;
+        e.ige_v72_35k = !match72[0] ? null : +match72[0]["Peanut-specific IgE (log 10)"] >= -0.456;
+        e.ige_v72_0   = !match72[0] ? null : +match72[0]["Peanut-specific IgE (log 10)"] >= 0;
+        e.ige_v72_1   = !match72[0] ? null : +match72[0]["Peanut-specific IgE (log 10)"] >= 1;
+        e.ige_v72_2   = !match72[0] ? null : +match72[0]["Peanut-specific IgE (log 10)"] >= 2;
+    });
+    
+    //Initialize the chart with one panel per Treatment Arm
+    webCharts.multiply(
+        outcomeChart, 
+        csv, 
+        "LEAP Treatment Group", 
+        ["Peanut Avoidance" ,"Peanut Consumption"]
+    );
+});
+
+</script>
+</html>

@@ -48,7 +48,7 @@ export default function dataPreview(dataFiles) {
           .remove();
       });
 
-      d3.csv(d.rel_path, function(error, data) {
+      d3.csv("./data" + d.rel_path.substring(1), function(error, data) {
         var sub = data.filter(function(d, i) {
           return i < 10;
         });
