@@ -1,4 +1,4 @@
-form,field,description
+Datastr,Field Name,Field
 SCRN,SCRNDT,Date of Visit
 SCRN,INFCYN,Did Participant sign the Informed Consent?
 SCRN,PROTOCOL,Protocol Version
