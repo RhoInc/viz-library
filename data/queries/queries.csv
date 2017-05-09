@@ -1,4 +1,4 @@
-"form","field","status","markingGroup","site","ID","visit","queryDate","queryText","formDescription","fieldDescription"
+"Datastr","Field Name","Query Status","Query Open By: Marking Group","Site Name","ID","Visit/Folder","Query Open Date","Query Text","Form","Field"
 "VS","PULSE","Closed","Site from System","Site 01","01-003","Visit 8",2015-12-31,"query text","Vital Signs","Pulse"
 "SCRN","INFCYN","Closed","Site from DM","Site 03","03-016","Visit 1",2015-09-08,"query text","Screening","Did Participant sign the Informed Consent?"
 "CM","CMIND","Closed","Site from System","Site 05","05-008","Visit 10",2016-01-06,"query text","Concomitant Medications","Indication"

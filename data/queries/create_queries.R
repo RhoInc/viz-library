@@ -6,8 +6,8 @@ nQueries <- 5000
 # Input data
 #-------------------------------------------------------------------------------------------------#
 
-    forms <- read.csv('forms.csv', colClasses = 'character')
-    fields <- read.csv('fields.csv', colClasses = 'character')
+    forms <- read.csv('forms.csv', colClasses = 'character', check.names = FALSE)
+    fields <- read.csv('fields.csv', colClasses = 'character', check.names = FALSE)
     statuses <- c('Open', 'Closed', 'Answered', 'Cancelled')
     statusProbs <- c(.1, .7, .1, .1)
     markingGroups <- c('Site from System', 'Site from DM', 'Site from CRA')
@@ -21,19 +21,20 @@ nQueries <- 5000
 #-------------------------------------------------------------------------------------------------#
 
     queries <- data.frame(
-            form = rep('', nQueries),
-            field = rep('', nQueries),
-            status = rep('', nQueries),
-            markingGroup = rep('', nQueries),
-            site = rep('', nQueries),
+            Datastr = rep('', nQueries),
+            `Field Name` = rep('', nQueries),
+            `Query Status` = rep('', nQueries),
+            `Query Open By: Marking Group` = rep('', nQueries),
+            `Site Name` = rep('', nQueries),
             ID = rep('', nQueries),
-            visit = rep('', nQueries),
-            queryDate = rep(Sys.Date(), nQueries),
-        stringsAsFactors = FALSE
+            `Visit/Folder` = rep('', nQueries),
+            `Query Open Date` = rep(Sys.Date(), nQueries),
+        stringsAsFactors = FALSE,
+        check.names = FALSE
     )
 
     for (i in 1:nQueries) {
-        query <- select(fields[sample(nrow(fields), 1),], -description)
+        query <- select(fields[sample(nrow(fields), 1),], -Field)
         queries[i,1] <- query[1,1]
         queries[i,2] <- query[1,2]
         queries[i,3] <- sample(statuses, 1, prob = statusProbs)
@@ -44,11 +45,11 @@ nQueries <- 5000
         queries[i,8] <- sample(queryDates, 1)
     }
 
-    queries$queryText <- 'query text'
+    queries$`Query Text` <- 'query text'
     
     queries1 <- queries %>%
-        left_join(rename(forms, formDescription = description)) %>%
-        left_join(rename(fields, fieldDescription = description))
+        left_join(forms) %>%
+        left_join(fields)
 
     write.csv(
         queries1,
