@@ -1,0 +1,14 @@
+body{
+  background:#bbb
+}
+
+div.testWrap{
+  border:2px solid black;
+  background:white;
+  padding:1em;
+  margin:1em;
+}
+
+div.testWrap h2{
+  margin-top:0
+}
