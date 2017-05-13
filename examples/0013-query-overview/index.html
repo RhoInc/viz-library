@@ -1,8 +1,9 @@
 <html lang="en"><head>
   <title>Query Overview</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body style="padding:1em;">
@@ -10,7 +11,7 @@
 		<a href="../../">🏠</a>
 	</span>
 	<div class="header section"><h1 style="margin-bottom: 0.1em;">Query Overview</h1><div style="margin-bottom: 0.5em;">Explorer clinical trial query data using the query-overview library.</div></div>
-	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe></div>
+	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe></div>	
 	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>query-overview</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, queries</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/queries/queries.csv">../../data/queries/queries.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div></div></div>
 	<div class="code section">
 		<h2>Code</h2>
@@ -20,7 +21,7 @@
 
 &lt;script src="https://d3js.org/d3.v3.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"&gt;&lt;/script&gt;
-&lt;script src="https://cdn.rawgit.com/RhoInc/query-overview/master/build/queryOverview.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.rawgit.com/RhoInc/query-overview/0285d7f0d6f3f06fe4c8b01730050ab7c8034b68/build/queryOverview.js"&gt;&lt;/script&gt;
 
 &lt;link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css"&gt;
 
@@ -33,14 +34,14 @@
 
 &lt;script defer&gt;
 var settings = {};
-var queryOverview = queryOverview(".chart", settings);
+var chart = queryOverview(".chart", settings);
 d3.csv("../../data/queries/queries.csv", function(error, data) {
-	queryOverview.init(data);
+	chart.init(data);
 });
 
 &lt;/script&gt;
 &lt;/html&gt;
 </code></pre>
-	</div>
+	</div>	
 
 </body></html>

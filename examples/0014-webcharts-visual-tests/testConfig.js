@@ -1,6 +1,7 @@
 var testConfig = [
   {
-    label: 'Simple Scatter plot - linear vs. linear',
+    label: 'Testing Axis Types - linear vs. linear',
+    notes: '',
     settings: {
       max_width:500,
       x: {
@@ -23,7 +24,8 @@ var testConfig = [
     dataPath: '../../data/elements.csv'
   },
   {
-    label: 'Simple Scatter Plot - linear vs. ordinal',
+    label: 'Testing Axis Types - linear vs. ordinal',
+    notes:'',
     settings: {
       max_width:500,
       x: {
@@ -46,7 +48,8 @@ var testConfig = [
     dataPath: '../../data/elements.csv'
   },
   {
-    label: 'Simple Scatter plot - ordinal vs. ordinal',
+    label: 'Testing Axis Types - ordinal vs. ordinal',
+    notes:'Opacity set to identify overlapping points. As shown, ordinal axis treat missing values as just another level to be plotted. (e.g. `group=""` or  `group=" "`)',
     settings: {
       max_width:500,
       x: {
@@ -70,7 +73,8 @@ var testConfig = [
     dataPath: '../../data/elements.csv'
   },
   {
-    label: 'Simple Scatter plot - log vs. log',
+    label: 'Testing Axis Types - log vs. log',
+    notes: 'log axes are buggy as of 1.7.1.',
     settings: {
       max_width:500,
       x: {
@@ -91,5 +95,31 @@ var testConfig = [
       ]
     },
     dataPath: '../../data/elements.csv'
+  },
+  {
+    label: 'Testing Axis Types - date vs. linear ',
+    notes: 'This charts shows the number of records at each given date. Note that no `y.column` is specified; instead, marks.summarizeY specifies a simple calculation.',
+    settings: {
+      max_width:500,
+      x: {
+        column: 'Query Open Date',
+        type: 'time',
+        format:'%y-%m'
+      },
+      y: {
+        type:'linear',
+        label:'count',
+        domain:[0]
+      },
+      date_format:"%Y-%m-%d",
+      marks: [
+        {
+          type: 'circle',
+          per: ['Query Open Date'],
+          summarizeY:'count'
+        }
+      ]
+    },
+    dataPath: '../../data/queries/queries.csv'
   }
 ];
