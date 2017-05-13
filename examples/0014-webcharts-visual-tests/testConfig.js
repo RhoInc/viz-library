@@ -68,5 +68,28 @@ var testConfig = [
       ]
     },
     dataPath: '../../data/elements.csv'
+  },
+  {
+    label: 'Simple Scatter plot - log vs. log',
+    settings: {
+      max_width:500,
+      x: {
+        column: 'Melt',
+        type: 'log',
+        label: 'Melting Point (K)'
+      },
+      y: {
+        column: 'Boil',
+        type: 'log',
+        label: 'Boiling Point (K)'
+      },
+      marks: [
+        {
+          type: 'circle',
+          per: ['Element']
+        }
+      ]
+    },
+    dataPath: '../../data/elements.csv'
   }
 ];

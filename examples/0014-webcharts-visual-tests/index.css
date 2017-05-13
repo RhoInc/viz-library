@@ -12,3 +12,7 @@ div.testWrap{
 div.testWrap h2{
   margin-top:0
 }
+
+.hidden{
+  display:none
+}

@@ -14,10 +14,21 @@ function renderTest(d, i) {
     .select(this)
     .append('div')
     .attr("class",'code test' + i)
-  settingsWrap.append("h4").text("Settings")
+
+  var settingsHead = settingsWrap.append("a")
+  .style({"color":"blue","text-decoration":"underline"})
+  .text("+ Settings")
+  .on("click",function(){
+    var wrap = this.parentNode
+    var code = d3.select(wrap).select("pre")
+    var status = code.classed("hidden")
+    code.classed("hidden",!status)
+    d3.select(this).text(status?"- Settings":"+ Settings")
+  })
 
   var code = settingsWrap
     .append("pre")
+    .attr("class","hidden")
     .append("code")
     .attr('class', "hljs")
     .html(JSON.stringify(d.settings, null, "  ").trim());
