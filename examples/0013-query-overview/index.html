@@ -21,7 +21,7 @@
 
 &lt;script src="https://d3js.org/d3.v3.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"&gt;&lt;/script&gt;
-&lt;script src="https://cdn.rawgit.com/RhoInc/query-overview/master/build/queryOverview.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.rawgit.com/RhoInc/query-overview/0285d7f0d6f3f06fe4c8b01730050ab7c8034b68/build/queryOverview.js"&gt;&lt;/script&gt;
 
 &lt;link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css"&gt;
 
@@ -34,9 +34,9 @@
 
 &lt;script defer&gt;
 var settings = {};
-var queryOverview = queryOverview(".chart", settings);
+var chart = queryOverview(".chart", settings);
 d3.csv("../../data/queries/queries.csv", function(error, data) {
-	queryOverview.init(data);
+	chart.init(data);
 });
 
 &lt;/script&gt;

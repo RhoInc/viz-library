@@ -431,5 +431,38 @@ var examples = [
     tags: "interactive, queries",
     langages: ["javascript"],
     makeIndex: true
+  },
+  {
+    dir: "0014-webcharts-visual-tests",
+    files: [
+      "README.md",
+      "example.html",
+      "index.css",
+      "index.html",
+      "screenshot.png",
+      "testConfig.js",
+      "thumb.png",
+      "webchartsTests.js"
+    ],
+    paths: {
+      root: "./examples/0014-webcharts-visual-tests/",
+      readme: "README.md",
+      index: "index.html",
+      thumb: "thumb.png",
+      data: "../../data/queries/elements.csv",
+      code: "webchartsTests.js",
+      example: "example.html"
+    },
+    readme: {},
+    title: "Webcharts Visual Test Sheet",
+    languages: "javascript",
+    libraries: ["webcharts"],
+    description: "A series of simple charts showing webcharts functionality. Used for demos and for testing new releases.",
+    data: "../../data/queries/elements.csv",
+    code: "webchartsTests.js",
+    results: "example.html",
+    tags: "interactive, graphics, testing",
+    langages: ["javascript"],
+    makeIndex: true
   }
 ];
