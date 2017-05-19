@@ -24,30 +24,6 @@ var dataFiles = [
     cols: 10
   },
   {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/fields.csv",
-    filename: "fields.csv",
-    ext: "csv",
-    rel_path: "./queries/fields.csv",
-    rows: 55,
-    cols: 3
-  },
-  {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/forms.csv",
-    filename: "forms.csv",
-    ext: "csv",
-    rel_path: "./queries/forms.csv",
-    rows: 11,
-    cols: 2
-  },
-  {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/queries.csv",
-    filename: "queries.csv",
-    ext: "csv",
-    rel_path: "./queries/queries.csv",
-    rows: 5000,
-    cols: 11
-  },
-  {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/ADAE.csv",
     filename: "ADAE.csv",
     ext: "csv",
@@ -64,20 +40,20 @@ var dataFiles = [
     cols: 18
   },
   {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/AE.csv",
-    filename: "AE.csv",
-    ext: "csv",
-    rel_path: "./safetyData/AE.csv",
-    rows: 368,
-    cols: 14
-  },
-  {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/DM.csv",
     filename: "DM.csv",
     ext: "csv",
     rel_path: "./safetyData/DM.csv",
     rows: 150,
     cols: 8
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/AE.csv",
+    filename: "AE.csv",
+    ext: "csv",
+    rel_path: "./safetyData/AE.csv",
+    rows: 368,
+    cols: 14
   },
   {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/LB.csv",
@@ -126,6 +102,30 @@ var dataFiles = [
     rel_path: "./safetyData/vitalSigns.csv",
     rows: 27,
     cols: 7
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/fields.csv",
+    filename: "fields.csv",
+    ext: "csv",
+    rel_path: "./queries/fields.csv",
+    rows: 55,
+    cols: 3
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/forms.csv",
+    filename: "forms.csv",
+    ext: "csv",
+    rel_path: "./queries/forms.csv",
+    rows: 11,
+    cols: 2
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/queries.csv",
+    filename: "queries.csv",
+    ext: "csv",
+    rel_path: "./queries/queries.csv",
+    rows: 5000,
+    cols: 11
   },
   {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADAE.csv",
