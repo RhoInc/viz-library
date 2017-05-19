@@ -464,5 +464,44 @@ var examples = [
     tags: "interactive, graphics, testing",
     langages: ["javascript"],
     makeIndex: true
+  },
+  {
+    dir: "0015-safety-explorer-single-page",
+    files: [
+      "README.md",
+      "Screenshot.png",
+      "example.html",
+      "index.html",
+      "thumb.png"
+    ],
+    paths: {
+      root: "./examples/0015-safety-explorer-single-page/",
+      readme: "README.md",
+      index: "index.html",
+      thumb: "thumb.png",
+      data: "../../data/safetyData-queries/",
+      code: "example.html",
+      example: "example.html"
+    },
+    readme: {},
+    title: "Safety Explorer Suite - Single Page",
+    languages: "javascript",
+    libraries: [
+      "safety-explorer-suite",
+      "webcharts",
+      "safety-histogram",
+      "safety-results-over-time",
+      "safety-shift-plot",
+      "safety-outlier-explorer",
+      "ae-timeline",
+      "ae-explorer"
+    ],
+    description: "Example of the safety explorer suite, a simple framework combining 6 interactive safety charts in to a single page.",
+    data: "../../data/safetyData-queries/",
+    code: "example.html",
+    results: "example.html",
+    tags: "interactive, queries",
+    langages: ["javascript"],
+    makeIndex: true
   }
 ];

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta
+            http-equiv = 'Content-Type'
+            content = 'text/html; charset = utf-8'>
+
+        <title>Safety Explorer Suite</title>
+
+        <script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'></script>
+        <script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>
+        <script src="https://rawgit.com/RhoInc/aeexplorer/master/build/aeTable.js"></script>
+        <script src="https://rawgit.com/RhoInc/ae-timelines/master/build/aeTimelines.js"></script>
+        <script src="https://rawgit.com/RhoInc/safety-histogram/master/build/safetyHistogram.js"></script>
+        <script src="https://rawgit.com/RhoInc/safety-outlier-explorer/master/build/safetyOutlierExplorer.js"></script>
+        <script src="https://rawgit.com/RhoInc/safety-results-over-time/master/build/safetyResultsOverTime.js"></script>
+        <script src="https://rawgit.com/RhoInc/safety-shift-plot/master/build/safetyShiftPlot.js"></script>
+
+
+        <script type = 'text/javascript' src = 'https://rawgit.com/RhoInc/safety-explorer-suite/master/build/safetyExplorerSuite.js'></script>
+
+        <link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/safety-explorer-suite/master/css/safetyExplorerSuite.css'>
+        <link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/webcharts/master/css/webcharts.css'>
+        <link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/aeexplorer/master/css/aeTable.css'>
+
+    </head>
+
+    <body>
+    </body>
+
+    <script>
+    var paths = [
+       {path:'../../data/safetyData-queries/ADAE.csv', type:"AEs"},
+       {path:'../../data/safetyData-queries/ADBDS.csv', type:"Labs"}
+    ]
+    var ses = safetyExplorerSuite.createExplorer('body', {});
+    ses.init(paths, loadcsv=true)
+
+    </script>
+</html>

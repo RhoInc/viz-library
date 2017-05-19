@@ -1,0 +1,62 @@
+<html lang="en"><head>
+  <title>Safety Explorer Suite - Single Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body style="padding:1em;">
+	<span style="position:absolute;top:1em;right:1em;">
+		<a href="../../">🏠</a>
+	</span>
+	<div class="header section"><h1 style="margin-bottom: 0.1em;">Safety Explorer Suite - Single Page</h1><div style="margin-bottom: 0.5em;">Example of the safety explorer suite, a simple framework combining 6 interactive safety charts in to a single page.</div></div>
+	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe></div>	
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>safety-explorer-suite,webcharts,safety-histogram,safety-results-over-time,safety-shift-plot,safety-outlier-explorer,ae-timeline,ae-explorer</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, queries</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData-queries/">../../data/safetyData-queries/</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div><p>The primary advantage to loading all 6 charts on a single page, is that the data only needs to be loaded once, and can then be re-used in all relevant charts. This example loads the data from csv (by specifying loadcsv:true in the .init() method), but the data can also be passed as json. </p></div></div>
+	<div class="code section">
+		<h2>Code</h2>
+		<pre><code class="hljs">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+    &lt;head&gt;
+        &lt;meta
+            http-equiv = 'Content-Type'
+            content = 'text/html; charset = utf-8'&gt;
+
+        &lt;title&gt;Safety Explorer Suite&lt;/title&gt;
+
+        &lt;script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'&gt;&lt;/script&gt;
+        &lt;script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"&gt;&lt;/script&gt;
+        &lt;script src="https://rawgit.com/RhoInc/aeexplorer/master/build/aeTable.js"&gt;&lt;/script&gt;
+        &lt;script src="https://rawgit.com/RhoInc/ae-timelines/master/build/aeTimelines.js"&gt;&lt;/script&gt;
+        &lt;script src="https://rawgit.com/RhoInc/safety-histogram/master/build/safetyHistogram.js"&gt;&lt;/script&gt;
+        &lt;script src="https://rawgit.com/RhoInc/safety-outlier-explorer/master/build/safetyOutlierExplorer.js"&gt;&lt;/script&gt;
+        &lt;script src="https://rawgit.com/RhoInc/safety-results-over-time/master/build/safetyResultsOverTime.js"&gt;&lt;/script&gt;
+        &lt;script src="https://rawgit.com/RhoInc/safety-shift-plot/master/build/safetyShiftPlot.js"&gt;&lt;/script&gt;
+
+
+        &lt;script type = 'text/javascript' src = 'https://rawgit.com/RhoInc/safety-explorer-suite/master/build/safetyExplorerSuite.js'&gt;&lt;/script&gt;
+
+        &lt;link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/safety-explorer-suite/master/css/safetyExplorerSuite.css'&gt;
+        &lt;link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/webcharts/master/css/webcharts.css'&gt;
+        &lt;link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/aeexplorer/master/css/aeTable.css'&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+    &lt;/body&gt;
+
+    &lt;script&gt;
+    var paths = [
+       {path:'../../data/safetyData-queries/ADAE.csv', type:"AEs"},
+       {path:'../../data/safetyData-queries/ADBDS.csv', type:"Labs"}
+    ]
+    var ses = safetyExplorerSuite.createExplorer('body', {});
+    ses.init(paths, loadcsv=true)
+
+    &lt;/script&gt;
+&lt;/html&gt;
+</code></pre>
+	</div>	
+
+</body></html>
