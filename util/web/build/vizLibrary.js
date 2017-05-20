@@ -121,7 +121,7 @@ var vizLibrary = function () {
         d3.select(".data-preview").select(".data-table").selectAll("*").remove();
       });
 
-      d3.csv("./data" + d.rel_path.substring(1), function (error, data) {
+      d3.csv(d.rel_path, function (error, data) {
         var sub = data.filter(function (d, i) {
           return i < 10;
         });

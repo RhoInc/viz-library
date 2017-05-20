@@ -48,7 +48,7 @@ walk(dataRoot, function(err, allFiles) {
 
       //root
       var rel_path_re = /\/data\/(?!.*\/data)(.*$)/;
-      var rel_path = "./" + rel_path_re.exec(local_path)[1];
+      var rel_path = "./data/" + rel_path_re.exec(local_path)[1];
 
       return {
         local_path: local_path,
