@@ -1,4 +1,5 @@
 library(tidyverse)
+set.seed(2357)
 
 #ADAE
 ADAE<-read.csv('../safetyData/ADAE.csv')%>%
