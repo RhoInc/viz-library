@@ -1,6 +1,7 @@
 function renderTest(d) {
   console.log("rendering test"+d.index+" - "+d.label)
   console.log(this)
+
   //draw title
   d3.select(this).append('h2').text(function(d) {
     return d.label;
@@ -19,6 +20,15 @@ function renderTest(d) {
     .text(function(d){return d.dataPath})
 
     notes.append("div").html(function(d){return d.notes ? "<strong>Notes: </strong>"+d.notes : "" })
+
+    d.tests = d.tests ? d.tests : ["No Tests Specified"]
+    var tests =  notes.append("div").html("<strong>Tests: </strong> ")
+    tests.append("ul")
+    .selectAll("li")
+    .data(d.tests)
+    .enter()
+    .append("li")
+    .text(function(d){return d})
 
 
 
