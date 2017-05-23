@@ -2,6 +2,12 @@ var testConfig = [
   {
     label: 'Testing Axis Types - linear vs. linear',
     notes: '',
+    tests: [
+      "Confirm that both axis are renderering with numeric values",
+           "Confirm that points are being drawn",
+            "Confirm that labels are being created as specified",
+            "Confirm that there is one circle per element being drawn"
+           ],
     settings: {
       max_width:500,
       x: {
@@ -117,6 +123,32 @@ var testConfig = [
           type: 'circle',
           per: ['Query Open Date'],
           summarizeY:'count'
+        }
+      ]
+    },
+    dataPath: '../../data/queries/queries.csv'
+  },
+    {
+    label: 'Testing Axis Types - linear vs. date ',
+    notes: 'This charts shows the number of records at each given date. Note that no `y.column` is specified; instead, marks.summarizeY specifies a simple calculation.',
+    settings: {
+      max_width:500,
+      y: {
+        column: 'Query Open Date',
+        type: 'time',
+        format:'%y-%m'
+      },
+      x: {
+        type:'linear',
+        label:'count',
+        domain:[0]
+      },
+      date_format:"%Y-%m-%d",
+      marks: [
+        {
+          type: 'circle',
+          per: ['Query Open Date'],
+          summarizeX:'count'
         }
       ]
     },
