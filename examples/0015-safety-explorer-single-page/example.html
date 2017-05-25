@@ -34,7 +34,17 @@
        {path:'../../data/safetyData-queries/ADAE.csv', type:"AEs"},
        {path:'../../data/safetyData-queries/ADBDS.csv', type:"Labs"}
     ]
-    var ses = safetyExplorerSuite.createExplorer('body', {});
+    var settings = {
+      custom_settings:[
+        {
+          "renderer_name":"aeexplorer",
+          "defaults":{
+            "placeholderFlag":{'value_col':"AEBODSYS", 'values':[" ",""]}
+          }
+        }
+      ]
+    }
+    var ses = safetyExplorerSuite.createExplorer('body', settings);
     ses.init(paths, loadcsv=true)
 
     </script>
