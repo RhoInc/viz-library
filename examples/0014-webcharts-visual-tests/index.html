@@ -18,6 +18,7 @@
 		<pre><code class="hljs">function renderTest(d) {
   console.log("rendering test"+d.index+" - "+d.label)
   console.log(this)
+
   //draw title
   d3.select(this).append('h2').text(function(d) {
     return d.label;
@@ -36,6 +37,15 @@
     .text(function(d){return d.dataPath})
 
     notes.append("div").html(function(d){return d.notes ? "&lt;strong&gt;Notes: &lt;/strong&gt;"+d.notes : "" })
+
+    d.tests = d.tests ? d.tests : ["No Tests Specified"]
+    var tests =  notes.append("div").html("&lt;strong&gt;Tests: &lt;/strong&gt; ")
+    tests.append("ul")
+    .selectAll("li")
+    .data(d.tests)
+    .enter()
+    .append("li")
+    .text(function(d){return d})
 
 
 
