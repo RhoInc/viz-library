@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            http-equiv = 'Content-Type'
+            content = 'text/html; charset = utf-8'>
+
+        <title>Safety Explorer - Default</title>
+        <div id = 'title'>Safety Explorer - Default</div>
+
+        <script type = 'text/javascript'
+            src = 'https://d3js.org/d3.v3.min.js'></script>
+        <script type = 'text/javascript'
+            src = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'></script>
+        <script type = 'text/javascript'
+            src = 'https://cdn.rawgit.com/RhoInc/safety-outlier-explorer/v2.0.1/build/safetyOutlierExplorer.js'></script>
+
+        <link type = 'text/css'
+            rel = 'stylesheet'
+            href = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css'>
+
+
+    </head>
+
+    <body>
+        <div class = 'safetyExplorerChart'
+            id = 'safety-outlier-explorer'>
+            <div class = 'header'></div>
+            <div class = 'content'></div>
+        </div>
+    </body>
+
+    <script>
+        const settings = {};
+
+        d3.csv('hy.csv', function(data) {
+            safetyOutlierExplorer('#safety-outlier-explorer .content', settings)
+                .init(data);
+        });
+    </script>
+</html>
