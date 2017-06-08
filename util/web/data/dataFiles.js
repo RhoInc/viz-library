@@ -8,6 +8,22 @@ var dataFiles = [
     cols: 5
   },
   {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/cars.csv",
+    filename: "cars.csv",
+    ext: "csv",
+    rel_path: "./data/cars.csv",
+    rows: 32,
+    cols: 12
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/climate_data.csv",
+    filename: "climate_data.csv",
+    ext: "csv",
+    rel_path: "./data/climate_data.csv",
+    rows: 95,
+    cols: 10
+  },
+  {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/discrete_scores.csv",
     filename: "discrete_scores.csv",
     ext: "csv",
@@ -46,22 +62,6 @@ var dataFiles = [
     rel_path: "./data/queries/queries.csv",
     rows: 5000,
     cols: 11
-  },
-  {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADAE.csv",
-    filename: "ADAE.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData-queries/ADAE.csv",
-    rows: 402,
-    cols: 23
-  },
-  {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADBDS.csv",
-    filename: "ADBDS.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData-queries/ADBDS.csv",
-    rows: 22695,
-    cols: 20
   },
   {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/ADAE.csv",
@@ -142,5 +142,21 @@ var dataFiles = [
     rel_path: "./data/safetyData/vitalSigns.csv",
     rows: 27,
     cols: 7
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADAE.csv",
+    filename: "ADAE.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData-queries/ADAE.csv",
+    rows: 402,
+    cols: 23
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADBDS.csv",
+    filename: "ADBDS.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData-queries/ADBDS.csv",
+    rows: 22695,
+    cols: 20
   }
 ];
