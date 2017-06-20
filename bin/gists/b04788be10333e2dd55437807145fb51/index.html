@@ -2,16 +2,16 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        
+
 	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<script src="https://cdn.rawgit.com/RhoInc/aeexplorer/master/table.js"></script>	
-	<link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/aeexplorer/master/table.css">
+	<script src="https://cdn.rawgit.com/RhoInc/aeexplorer/v2.0.1/table.js"></script>
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/RhoInc/aeexplorer/v2.0.1/table.css">
 </head>
 <script>
 //Location to render the table (must be valid css)
 var dataElement = "body";
 
-//File path for the adverse event data set with 1 record per AE with 
+//File path for the adverse event data set with 1 record per AE with
 //placeholder rows for participants with no exacerbations)
 var dataFile = "ae_explorer.csv"
 
@@ -28,7 +28,7 @@ var variables = {
 //Specify settings for groups, filters and display preferences
 var settings = {
     "groups": [
-       {"key":"Placebo","selected":true}, 
+       {"key":"Placebo","selected":true},
         {"key":"Xanomeline High Dose","selected":true},
         {"key":"Xanomeline Low Dose","selected":true}
     ],
@@ -39,7 +39,7 @@ var settings = {
 
 //Initialize the AE table
 d3.csv(dataFile, function (data){
-    aeTable.init(dataElement, data, variables, settings);    
+    aeTable.init(dataElement, data, variables, settings);
 })
 
 </script>
