@@ -501,5 +501,36 @@ var examples = [
     tags: "interactive, queries",
     langages: ["javascript"],
     makeIndex: true
+  },
+  {
+    dir: "0017-population-explorer",
+    files: [
+      "README.md",
+      "example.html",
+      "index.html",
+      "primary_outcome_determination_24NOV.csv",
+      "screen.png",
+      "thumb.png"
+    ],
+    paths: {
+      root: "./examples/0017-population-explorer/",
+      readme: "README.md",
+      index: "index.html",
+      thumb: "thumb.png",
+      data: "primary_outcome_determination_24NOV.csv",
+      code: "example.html",
+      example: "example.html"
+    },
+    readme: {},
+    title: "Population Explorer for LEAP and LEAP-ON",
+    languages: "javascript",
+    libraries: ["population explorer"],
+    description: "Example of the population explorer graphic using public data from the LEAP and LEAP-on Clinical Trials.",
+    data: "primary_outcome_determination_24NOV.csv",
+    code: "example.html",
+    results: "example.html",
+    tags: "interactive, data explorer",
+    langages: ["javascript"],
+    makeIndex: true
   }
 ];
