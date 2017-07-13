@@ -2,15 +2,15 @@
 
 **Languages:** javascript
 
-**Libraries:**
+**Libraries:** scatterPlotMatrix
 
 **Description:** A paneled series of scatter plots plotting every measure against every other measure
 
-**Tags:** interactive, scatter plot, lattice
+**Tags:** interactive, scatter plot, lattice, matrix, bivariate
 
-**Data:** ../../data/safetyData/VS.csv
+**Data:** ../../data/iris.csv, ../../data/safetyData/VS.csv, ../0016-safety-outlier-explorer-hys-law/hy.csv
 
-**Code:** example.html
+**Code:** index.js
 
 **Results:** example.html
 
