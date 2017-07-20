@@ -10,7 +10,7 @@
 
 **Data:** ../../data/safetyData/
 
-**Code:** webCodebookExplorer.js
+**Code:** example.html
 
 **Results:** example.html
 

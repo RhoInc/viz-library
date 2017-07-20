@@ -376,8 +376,7 @@ var examples = [
       "example.html",
       "index.html",
       "screen.png",
-      "thumb.png",
-      "webCodebookExplorer.js"
+      "thumb.png"
     ],
     paths: {
       root: "./examples/0012-web-codebook-explorer/",
@@ -385,7 +384,7 @@ var examples = [
       index: "index.html",
       thumb: "thumb.png",
       data: "../../data/safetyData/",
-      code: "webCodebookExplorer.js",
+      code: "example.html",
       example: "example.html"
     },
     readme: {},
@@ -394,7 +393,7 @@ var examples = [
     libraries: ["web-codebook"],
     description: "Demonstration of the web-based data summaries using web-codebook.",
     data: "../../data/safetyData/",
-    code: "webCodebookExplorer.js",
+    code: "example.html",
     results: "example.html",
     tags: "interactive, codebook",
     langages: ["javascript"],

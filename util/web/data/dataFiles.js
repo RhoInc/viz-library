@@ -64,22 +64,6 @@ var dataFiles = [
     cols: 11
   },
   {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADAE.csv",
-    filename: "ADAE.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData-queries/ADAE.csv",
-    rows: 402,
-    cols: 23
-  },
-  {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADBDS.csv",
-    filename: "ADBDS.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData-queries/ADBDS.csv",
-    rows: 22695,
-    cols: 20
-  },
-  {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/ADAE.csv",
     filename: "ADAE.csv",
     ext: "csv",
@@ -158,5 +142,21 @@ var dataFiles = [
     rel_path: "./data/safetyData/vitalSigns.csv",
     rows: 27,
     cols: 7
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADAE.csv",
+    filename: "ADAE.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData-queries/ADAE.csv",
+    rows: 402,
+    cols: 23
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData-queries/ADBDS.csv",
+    filename: "ADBDS.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData-queries/ADBDS.csv",
+    rows: 22695,
+    cols: 20
   }
 ];
