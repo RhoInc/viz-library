@@ -1,67 +1,442 @@
-<!DOCTYPE html>
-    <html>
-    <head>
-        <title>Paneled Outlier Explorer</title>
-        <div id = 'title'>Paneled Outlier Explorer</div>
-        <div id = 'subtitle'></div>
-        <meta http-equiv = 'Content-Type' content = 'text/html; charset = utf-8'>
+<html lang="en"><head>
+  <title>Brushable paneled outlier explorer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
 
-        <script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'></script>
-        <script type = 'text/javascript' src = 'https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'></script>
+<body style="padding:1em;">
+	<span style="position:absolute;top:1em;right:1em;">
+		<a href="../../">🏠</a>
+	</span>
+	<div class="header section"><h1 style="margin-bottom: 0.1em;">Brushable paneled outlier explorer</h1><div style="margin-bottom: 0.5em;">Example of the a brushable paneled outlier explorer that allows brushing of lines and points</div></div>
+	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe></div>	
+	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webCharts</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, outlier explorer, brushable, paneled</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData/ADBDS.csv">../../data/safetyData/ADBDS.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div></div></div>
+	<div class="code section">
+		<h2>Code</h2>
+		<pre><code class="hljs">    d3.selection.prototype.moveToFront = function() {  
+      return this.each(function(){
+        this.parentNode.appendChild(this);
+      });
+    };
 
-        <link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/Webcharts/master/css/webcharts.min.css'>
+    function clone(obj) {
+        let copy;
 
-        <style>
-            @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+      //boolean, number, string, null, undefined
+        if ('object' != typeof obj || null == obj)
+            return obj;
 
-            * {
-                padding: 0;
-                margin: 0;
-                font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-            }
+      //date
+        if (obj instanceof Date) {
+            copy = new Date();
+            copy.setTime(obj.getTime());
+            return copy;
+        }
 
-            #title {
-                width: 96%;
-                margin: 2% 2% 0 2%;
-                padding-bottom: .5%;
-                border-bottom: 2px solid lightgray;
-                font-weight: normal;
-                font-size: 250%;
-                position: relative;
+      //array
+        if (obj instanceof Array) {
+            copy = [];
+            for (var i = 0, len = obj.length; i &lt; len; i++) {
+                copy[i] = clone(obj[i]);
             }
-            #subtitle {
-                width: 96%;
-                margin: 0 2% 2% 2%;
-                padding-top: .5%;
-                font-weight: lighter;
-                font-size: 200%;
-            }
-            #container {
-                width: 96%;
-                margin: 0 2% 0 2%;
-            }
-            #container .chart {
-                width: 100%;
-                display: inline-block;
-                vertical-align: top;
-            }
-            #container .chart .wc-chart {
-                width: 31%;
-            }
-            .brushed {
-                fill: orange;
-            }
-        </style>
-    </head>
+            return copy;
+        }
 
-    <body>
-        <div id = 'container'>
-            <div class = 'chart' id = 'paneledOutlierExplorer'>
-                <div class = 'header'></div>
-                <div class = 'content'></div>
-            </div>
-        </div>
-    </body>
+      //object
+        if (obj instanceof Object) {
+            copy = {};
+            for (var attr in obj) {
+                if (obj.hasOwnProperty(attr))
+                    copy[attr] = clone(obj[attr]);
+            }
+            return copy;
+        }
 
-    <script type = 'text/javascript' src = 'index.js'></script>
-</html>
+        throw new Error('Unable to copy [obj]! Its type is not supported.');
+    }
+
+    function slope(line) {
+        line.slope = (line.y1 - line.y0)/(line.x1 - line.x0);
+    }
+
+/**
+ * @author Peter Kelley
+ * @author pgkelley4@gmail.com
+ */
+
+/**
+ * See if two line segments intersect. This uses the 
+ * vector cross product approach described below:
+ * http://stackoverflow.com/a/565282/786339
+ * 
+ * @param {Object} p point object with x and y coordinates
+ *  representing the start of the 1st line.
+ * @param {Object} p2 point object with x and y coordinates
+ *  representing the end of the 1st line.
+ * @param {Object} q point object with x and y coordinates
+ *  representing the start of the 2nd line.
+ * @param {Object} q2 point object with x and y coordinates
+ *  representing the end of the 2nd line.
+ */
+function doLineSegmentsIntersect(p, p2, q, q2) {
+	var r = subtractPoints(p2, p);
+	var s = subtractPoints(q2, q);
+
+	var uNumerator = crossProduct(subtractPoints(q, p), r);
+	var denominator = crossProduct(r, s);
+
+	if (uNumerator == 0 &amp;&amp; denominator == 0) {
+		// They are coLlinear
+		
+		// Do they touch? (Are any of the points equal?)
+		if (equalPoints(p, q) || equalPoints(p, q2) || equalPoints(p2, q) || equalPoints(p2, q2)) {
+			return true
+		}
+		// Do they overlap? (Are all the point differences in either direction the same sign)
+		return !allEqual(
+				(q.x - p.x &lt; 0),
+				(q.x - p2.x &lt; 0),
+				(q2.x - p.x &lt; 0),
+				(q2.x - p2.x &lt; 0)) ||
+			!allEqual(
+				(q.y - p.y &lt; 0),
+				(q.y - p2.y &lt; 0),
+				(q2.y - p.y &lt; 0),
+				(q2.y - p2.y &lt; 0));
+	}
+
+	if (denominator == 0) {
+		// lines are paralell
+		return false;
+	}
+
+	var u = uNumerator / denominator;
+	var t = crossProduct(subtractPoints(q, p), s) / denominator;
+
+	return (t &gt;= 0) &amp;&amp; (t &lt;= 1) &amp;&amp; (u &gt;= 0) &amp;&amp; (u &lt;= 1);
+}
+
+/**
+ * Calculate the cross product of the two points.
+ * 
+ * @param {Object} point1 point object with x and y coordinates
+ * @param {Object} point2 point object with x and y coordinates
+ * 
+ * @return the cross product result as a float
+ */
+function crossProduct(point1, point2) {
+	return point1.x * point2.y - point1.y * point2.x;
+}
+
+/**
+ * Subtract the second point from the first.
+ * 
+ * @param {Object} point1 point object with x and y coordinates
+ * @param {Object} point2 point object with x and y coordinates
+ * 
+ * @return the subtraction result as a point object
+ */ 
+function subtractPoints(point1, point2) {
+	var result = {};
+	result.x = point1.x - point2.x;
+	result.y = point1.y - point2.y;
+
+	return result;
+}
+
+/**
+ * See if the points are equal.
+ *
+ * @param {Object} point1 point object with x and y coordinates
+ * @param {Object} point2 point object with x and y coordinates
+ *
+ * @return if the points are equal
+ */
+function equalPoints(point1, point2) {
+	return (point1.x == point2.x) &amp;&amp; (point1.y == point2.y)
+}
+
+/**
+ * See if all arguments are equal.
+ *
+ * @param {...} args arguments that will be compared by '=='.
+ *
+ * @return if all arguments are equal
+ */
+function allEqual(args) {
+	var firstValue = arguments[0],
+		i;
+	for (i = 1; i &lt; arguments.length; i += 1) {
+		if (arguments[i] != firstValue) {
+			return false;
+		}
+	}
+	return true;
+}
+
+/*------------------------------------------------------------------------------------------------\
+  Chart
+\------------------------------------------------------------------------------------------------*/
+
+    const
+        settings =
+            {element: '#container .chart'
+            ,x: {type: 'linear'
+                ,column: 'DY'
+                ,label: 'Study day'}
+            ,y: {type: 'linear'
+                ,column: 'STRESN'
+                ,label: 'Result'}
+            ,marks:
+                [
+                    {type: 'line'
+                    ,per: ['USUBJID', 'TEST']
+                    ,attributes:
+                        {'stroke-width': .5
+                        ,'stroke-opacity': .5
+                        ,'stroke': '#999'}
+                    }
+                ,
+                    {type: 'circle'
+                    ,per: ['USUBJID', 'TEST', 'DY', 'STRESN']
+                    ,radius: 2
+                    ,attributes:
+                        {'stroke-width': .5
+                        ,'stroke-opacity': .5
+                        ,'fill-opacity': 1}
+                    }
+                ]
+            ,resizable: false
+            ,aspect: 1.5
+            ,panel: 'TEST'
+            ,keys: ['USUBJID', 'DY']
+            },
+        paneledOutlierExplorer = new webCharts.createChart
+            (settings.element + ' .content'
+            ,settings);
+        paneledOutlierExplorer.measures = {};
+
+    d3.csv('../../data/safetyData/ADBDS.csv', function(data) {
+      //Sort data by key variables.
+        const
+            vitals = data
+                .filter(d =&gt; d.CAT === 'Vital Signs')
+                .sort((a,b) =&gt; {
+                    let sort =
+                        a[settings.panel] &lt; b[settings.panel] ? -1 :
+                        a[settings.panel] &gt; b[settings.panel] ?  1 : 0;
+                    if (sort === 0) {
+                        settings.keys.forEach(key =&gt; {
+                            if (sort === 0)
+                                sort = a[key] &lt; b[key] ? -1 : a[key] &gt; b[key] ? 1 : 0;
+                        });
+                    }
+
+                    return sort;
+                });
+
+      //Define unique identifier.
+        let key;
+        vitals.forEach((d,i) =&gt; {
+            const previousMeasure = i &gt; 0
+                ? vitals[i-1][settings.panel]
+                : null;
+            if (d[settings.panel] !== previousMeasure)
+                key = 0;
+                key ++;
+            d.key = key;
+        });
+
+      //Call small multiples.
+        webCharts.multiply(
+            paneledOutlierExplorer,
+            vitals,
+            'TEST');
+    });
+
+    /**-------------------------------------------------------------------------------------------\
+      Callbacks
+    \-------------------------------------------------------------------------------------------**/
+
+        paneledOutlierExplorer.on('init', function() {
+            const chart = this;
+        });
+
+        paneledOutlierExplorer.on('layout', function() {
+            const chart = this;
+        });
+
+        paneledOutlierExplorer.on('preprocess', function() {
+            const chart = this;
+
+          //Set the y-domain individually for each measure.
+            this.currentMeasure = this.filters[0].val;
+            this.config.y.domain = d3.extent(
+                this.raw_data
+                    .filter(d =&gt; d.TEST === this.currentMeasure),
+                d =&gt; +d.STRESN);
+        });
+
+        paneledOutlierExplorer.on('datatransform', function() {
+            const chart = this;
+        });
+
+        paneledOutlierExplorer.on('draw', function() {
+            const chart = this;
+        });
+
+        paneledOutlierExplorer.on('resize', function() {
+            const chart = this;
+
+          //Capture each multiple's scale.
+            this.package = {
+                svg: this.svg,
+                value: this.currentMeasure,
+                domain: clone(this.config.y.domain),
+                xScale: clone(this.x),
+                yScale: clone(this.y),
+                brush: d3.svg.brush()
+                    .x(this.x)
+                    .y(this.y)
+            };
+            paneledOutlierExplorer.measures[this.currentMeasure] = this.package;
+
+          //Attach additional data to SVG and marks.
+            this.svg
+                .style('cursor', 'crosshair')
+                .datum({measure: this.currentMeasure});
+
+              //points
+                const
+                    points = this.svg
+                        .selectAll('.point-supergroup g.point circle');
+                    points
+                        .each(d =&gt; {
+                            d.key1 = d.values.raw[0].key;
+                        });
+
+              //lines
+                const
+                    lines = this.svg
+                        .selectAll('.line-supergroup g.line path');
+                    lines
+                        .each(function(d,i) {
+                            d.id = d.values[0].values.raw[0].USUBJID;
+                            d.lines = d.values.map((di,i) =&gt; {
+                                var line;
+                                if (i) {
+                                    line = {
+                                        x0: d.values[i - 1].values.x,
+                                        y0: d.values[i - 1].values.y,
+                                        x1: di.values.x,
+                                        y1: di.values.y
+                                    };
+                                    line.slope = slope(line);
+                                }
+                                return line;
+                            });
+                            d.lines.shift();
+                        });
+
+          //Apply brush.
+            paneledOutlierExplorer.measures[this.currentMeasure].brush
+                .on('brushstart', function() {
+                })
+                .on('brush', function() {
+                    const
+                        measure = d3.select(this).datum().measure;
+                    for (const prop in paneledOutlierExplorer.measures) {
+                        if (prop !== measure)
+                            paneledOutlierExplorer.measures[prop].svg
+                                .call(paneledOutlierExplorer.measures[prop].brush.clear());
+                    }
+
+                  //brush
+                    const
+                        extent = paneledOutlierExplorer.measures[measure].brush.extent(),
+                        x0 = extent[0][0], // top left x-coordinate
+                        y0 = extent[1][1], // top left y-coordinate
+                        x1 = extent[1][0], // bottom right x-coordinate
+                        y1 = extent[0][1], // bottom right y-coordinate
+                        top = {x0: x1, y0: y0, x1: x0, y1: y0},
+                        right = {x0: x1, y0: y1, x1: x1, y1: y0},
+                        bottom = {x0: x0, y0: y1, x1: x1, y1: y1},
+                        left = {x0: x0, y0: y0, x1: x0, y1: y1},
+                        sides = [top, right, bottom, left];
+                        left.slope = slope(left);
+                        bottom.slope = slope(bottom);
+                        right.slope = slope(right);
+                        top.slope = slope(top);
+
+                  //brushed points
+                    const
+                        brushedPoints = points
+                            .filter(d =&gt; {
+                                return (
+                                    x0 &lt;= d.values.x &amp;&amp;
+                                    y0 &gt;= d.values.y &amp;&amp;
+                                    x1 &gt;= d.values.x &amp;&amp;
+                                    y1 &lt;= d.values.y);
+                            })
+                            .data()
+                            .map(d =&gt; d.key1),
+                        allPoints = d3.select(chart.config.element)
+                            .selectAll('.point-supergroup g.point circle')
+                            .classed('brushed', false);
+                        allPoints
+                            .filter(d =&gt; brushedPoints.indexOf(d.key1) &gt; -1)
+                            .classed('brushed', true)
+                            .each(function() {
+                                d3.select(this.parentNode).moveToFront();
+                            });
+
+                  //brushed lines
+                    const
+                        brushedLines = lines
+                            .filter((d,i) =&gt; {
+                                let intersection = false;
+                                d.lines.forEach((line,j) =&gt; {
+                                    sides.forEach((side,k) =&gt; {
+                                        if (!intersection) {
+                                            intersection = doLineSegmentsIntersect(
+                                                {x: line.x0, y: line.y0},
+                                                {x: line.x1, y: line.y1},
+                                                {x: side.x0, y: side.y0},
+                                                {x: side.x1, y: side.y1}
+                                            );
+                                        }
+                                    });
+                                });
+                                return intersection;
+                            })
+                            .data()
+                            .map(d =&gt; d.id),
+                        allLines = d3.select(chart.config.element)
+                            .selectAll('.line-supergroup g.line path')
+                            .classed('brushed', false);
+                        allLines
+                            .filter(d =&gt; brushedLines.indexOf(d.id) &gt; -1)
+                            .classed('brushed', true)
+                            .each(function() {
+                                d3.select(this.parentNode).moveToFront();
+                            });
+                })
+                .on('brushend', function() {
+                });
+            this.svg
+                .call(this.package.brush);
+            //var bbox = this.svg.node().getBBox();
+            //this.svg
+            //    .insert('rect', ':first-child')
+            //    .attr("x", bbox.x)
+            //    .attr("y", bbox.y)
+            //    .attr("width", bbox.width)
+            //    .attr("height", bbox.height)
+            //    .style('fill', 'white');
+        });
+</code></pre>
+	</div>	
+
+</body></html>
