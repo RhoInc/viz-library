@@ -15,25 +15,47 @@
 	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>web-codebook</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, codebook</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData/">../../data/safetyData/</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div></div></div>
 	<div class="code section">
 		<h2>Code</h2>
-		<pre><code class="hljs">var settings = {files:
-    [{label: "ChickWeight", path: "../../data/ChickWeight.csv", settings: {}}
-    ,{label: "discrete_scores", path: "../../data/discrete_scores.csv", settings: {}}
-    ,{label: "fields", path: "../../data/queries/fields.csv", settings: {}}
-    ,{label: "forms", path: "../../data/queries/forms.csv", settings: {}}
-    ,{label: "queries", path: "../../data/queries/queries.csv", settings: {}}
-    ,{label: "ADAE", path: "../../data/safetyData-queries/ADAE.csv", settings: {}}
-    ,{label: "ADBDS", path: "../../data/safetyData-queries/ADBDS.csv", settings: {}}
-    ,{label: "ADAE", path: "../../data/safetyData/ADAE.csv", settings: {}}
-    ,{label: "ADBDS", path: "../../data/safetyData/ADBDS.csv", settings: {}}
-    ,{label: "adverseEvents", path: "../../data/safetyData/adverseEvents.csv", settings: {}}
-    ,{label: "AE", path: "../../data/safetyData/AE.csv", settings: {}}
-    ,{label: "DM", path: "../../data/safetyData/DM.csv", settings: {}}
-    ,{label: "labs", path: "../../data/safetyData/labs.csv", settings: {}}
-    ,{label: "LB", path: "../../data/safetyData/LB.csv", settings: {}}
-    ,{label: "scheduleOfEvents", path: "../../data/safetyData/scheduleOfEvents.csv", settings: {}}
-    ,{label: "vitalSigns", path: "../../data/safetyData/vitalSigns.csv", settings: {}}
-    ,{label: "VS", path: "../../data/safetyData/VS.csv", settings: {}}]};
-var explorer = webcodebook.createExplorer(".explorer", settings).init();</code></pre>
+		<pre><code class="hljs">&lt;html lang="en"&gt;
+&lt;title&gt;Web Codebook - Explorer&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+
+&lt;script src="https://d3js.org/d3.v3.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"&gt;&lt;/script&gt;
+&lt;script src="https://rawgit.com/RhoInc/web-codebook/4ed30623b3a444a686514edcc25443a5c1129011/build/webcodebook.js"&gt;&lt;/script&gt;
+
+&lt;link rel="stylesheet" href="https://rawgit.com/RhoInc/Webcharts/master/css/webcharts.css"&gt;
+&lt;link rel="stylesheet" href="https://rawgit.com/RhoInc/web-codebook/4ed30623b3a444a686514edcc25443a5c1129011/css/webcodebook.css"&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;div style="position:absolute;top:1em;right:1em;"&gt;&lt;a href="https://github.com/RhoInc/web-codebook"&gt;&lt;img src="GitHub-Mark-32px.png" height="16" width="16"&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;div class="controls"&gt;&lt;/div&gt;
+	&lt;div class="explorer"&gt;&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;script&gt;
+var settings = {
+	labelColumn:"label",
+	files:
+    [{label: "Chick Weight", path: "../../data/ChickWeight.csv", settings: {}}
+    ,{label: "Discrete Scores", path: "../../data/discrete_scores.csv", settings: {}}
+    ,{label: "Fields", path: "../../data/queries/fields.csv", settings: {}}
+    ,{label: "Forms", path: "../../data/queries/forms.csv", settings: {}}
+    ,{label: "Queries", path: "../../data/queries/queries.csv", settings: {}}
+    ,{label: "AEs with Queries", path: "../../data/safetyData-queries/ADAE.csv", settings: {}}
+    ,{label: "Labs/Vitals with Queries", path: "../../data/safetyData-queries/ADBDS.csv", settings: {}}
+    ,{label: "AEs", path: "../../data/safetyData/ADAE.csv", settings: {}}
+    ,{label: "Labs/Vitals", path: "../../data/safetyData/ADBDS.csv", settings: {}}
+    ,{label: "Demographics", path: "../../data/safetyData/DM.csv", settings: {}}
+    ,{label: "Schedule Of Events", path: "../../data/safetyData/scheduleOfEvents.csv", settings: {}}
+    ,{label: "Vital Signs", path: "../../data/safetyData/vitalSigns.csv", settings: {}}
+    ]};
+
+  var explorer = webcodebook.createExplorer(".explorer", settings).init();
+
+&lt;/script&gt;&lt;/html&gt;
+</code></pre>
 	</div>	
 
 </body></html>
