@@ -274,8 +274,11 @@ function allEqual(args) {
             const chart = this;
 
           //Capture each multiple's scale.
+            var bbox = this.svg.node().getBBox();
             this.package = {
-                svg: this.svg,
+                overlay: this.svg//.wrap.select('svg')
+                    .append('g')
+                    .classed('brush', true),
                 value: this.currentMeasure,
                 domain: clone(this.config.y.domain),
                 xScale: clone(this.x),
@@ -284,10 +287,18 @@ function allEqual(args) {
                     .x(this.x)
                     .y(this.y)
             };
+            this.package.overlay
+                .append('rect')
+                .attr(
+                    {'x': 0
+                    ,'y': 0
+                    ,'width': this.plot_width
+                    ,'height': this.plot_height
+                    ,'fill-opacity': 0});
             paneledOutlierExplorer.measures[this.currentMeasure] = this.package;
 
           //Attach additional data to SVG and marks.
-            this.svg
+            this.package.overlay
                 .style('cursor', 'crosshair')
                 .datum({measure: this.currentMeasure});
 
@@ -298,6 +309,7 @@ function allEqual(args) {
                     points
                         .each(d => {
                             d.key1 = d.values.raw[0].key;
+                            d.id = d.values.raw[0].USUBJID;
                         });
 
               //lines
@@ -332,7 +344,7 @@ function allEqual(args) {
                         measure = d3.select(this).datum().measure;
                     for (const prop in paneledOutlierExplorer.measures) {
                         if (prop !== measure)
-                            paneledOutlierExplorer.measures[prop].svg
+                            paneledOutlierExplorer.measures[prop].overlay
                                 .call(paneledOutlierExplorer.measures[prop].brush.clear());
                     }
 
@@ -367,7 +379,7 @@ function allEqual(args) {
                             .map(d => d.key1),
                         allPoints = d3.select(chart.config.element)
                             .selectAll('.point-supergroup g.point circle')
-                            .classed('brushed', false);
+                            .classed('brushed selected', false);
                         allPoints
                             .filter(d => brushedPoints.indexOf(d.key1) > -1)
                             .classed('brushed', true)
@@ -405,17 +417,15 @@ function allEqual(args) {
                             .each(function() {
                                 d3.select(this.parentNode).moveToFront();
                             });
+                        allPoints
+                            .filter(d => brushedLines.indexOf(d.id) > -1)
+                            .classed('selected', true)
+                            .each(function() {
+                                d3.select(this.parentNode).moveToFront();
+                            });
                 })
                 .on('brushend', function() {
                 });
-            this.svg
+            this.package.overlay
                 .call(this.package.brush);
-            //var bbox = this.svg.node().getBBox();
-            //this.svg
-            //    .insert('rect', ':first-child')
-            //    .attr("x", bbox.x)
-            //    .attr("y", bbox.y)
-            //    .attr("width", bbox.width)
-            //    .attr("height", bbox.height)
-            //    .style('fill', 'white');
         });
