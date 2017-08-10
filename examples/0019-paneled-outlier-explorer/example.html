@@ -8,6 +8,7 @@
 
         <script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'></script>
         <script type = 'text/javascript' src = 'https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'></script>
+        <script type = 'text/javascript' src = 'paneledOutlierExplorer.js'></script>
 
         <link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/Webcharts/master/css/webcharts.min.css'>
 
@@ -68,12 +69,18 @@
 
     <body>
         <div id = 'container'>
-            <div class = 'chart' id = 'paneledOutlierExplorer'>
-                <div class = 'header'></div>
-                <div class = 'content'></div>
-            </div>
         </div>
     </body>
 
-    <script type = 'text/javascript' src = 'index.js'></script>
+    <script type = 'text/javascript'>
+        let settings = {
+            measure_col: 'VSTEST',
+            time_col: 'VSDY',
+            value_col: 'VSSTRESN'
+        };
+        let chart = paneledOutlierExplorer('#container', settings);
+        d3.csv('../../data/safetyData/VS.csv', data => {
+            chart.init(data);
+        });
+    </script>
 </html>
