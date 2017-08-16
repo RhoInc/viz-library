@@ -1,0 +1,64 @@
+.hidden{
+  display:none;
+}
+
+body{
+  margin:0;
+  padding:0;
+  overflow-y:hidden;
+}
+.viz-example-header, .viz-example-chart, .viz-example-details{
+  padding:5px
+}
+
+div.viz-example-header, div.viz-example-details{
+  background: #eee;
+  border-bottom: 2px solid black;
+}
+
+div.viz-example-header #home{
+  position:absolute;
+  right:3em;
+  top:0;
+}
+
+div.viz-example-header #close{
+  position:absolute;
+  right:1em;
+  top:2px;
+  padding:0.1em;
+  border:1px solid black;
+  border-radius: 2px;
+  cursor:pointer;
+}
+
+div.viz-example-header h1{
+  margin:0;
+  padding:0.1em 0 0.1em 0;
+}
+
+div.viz-example-header ul.tags {
+  margin:0;
+  padding: 0 0 0.5em 0;
+}
+
+div.viz-example-header ul.tags li{
+  display:inline-block;
+  padding-right:0.5em;
+}
+
+body > div.viz-example-header.section > div > a.expandDetails{
+  text-decoration:underline;
+  text-decoration-style: dotted;
+  color:#999;
+  cursor:pointer;
+  padding-left:.3em;
+}
+
+div.viz-example-body{
+  overflow-y:auto;
+}
+
+div.viz-example-chart iframe{
+  border-width: 0;
+}

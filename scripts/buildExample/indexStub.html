@@ -2,21 +2,45 @@
 <head>
   <title></title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../util/web/css/examples.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
-<body style="padding:1em;">
-	<span style="position:absolute;top:1em;right:1em;">
-		<a href="../../">&#127968;</a>
-	</span>
-	<div class="header section"></div>
-	<div class="chart section"></div>	
-	<div class="details section"></div>
-	<div class="code section">
-		<h2>Code</h2>
-		<pre><code></code></pre>
-	</div>	
+<body>
+	<div class="viz-example-header section">
+    <span id="home">
+      <a href="../../">&#127968;</a>
+    </span>
+    <span id="close">&#10006;</span>
+    <h1></h1>
+	  <ul class="tags"></ul>
+    <div class="description"></div>
+  </div>
+  <div class="viz-example-body">
+    <div class="viz-example-details section hidden">
+    <h2>Readme.md</h2>
+  </div>
+	  <div class="viz-example-chart section"></div>
+  </div>
 </body>
+<script defer>
+
+  /*show/hide events*/
+  d3.select("#close").on("click",function(){
+    console.log('clicked')
+    d3.select(".viz-example-header").classed("hidden",true)
+    d3.select(".viz-example-details").classed("hidden",true)
+
+  })
+
+  d3.select(".expandDetails").on("click",function(){
+    console.log('clicked')
+    d3.select(".viz-example-details").classed("hidden",false)
+  })
+</script>
 </html>

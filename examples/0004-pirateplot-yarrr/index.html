@@ -1,18 +1,27 @@
 <html lang="en"><head>
   <title>Pirate plot using Yarrr</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../util/web/css/examples.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
-<body style="padding:1em;">
-	<span style="position:absolute;top:1em;right:1em;">
-		<a href="../../">🏠</a>
-	</span>
-	<div class="header section"><h1 style="margin-bottom: 0.1em;">Pirate plot using Yarrr</h1><div style="margin-bottom: 0.5em;">Combines a box-and-whisker plot with overlaid density plots to show clear comparisons of distributions across groups; a good choice for  displaying the relationship between 1 or two categorical independent variables, and one continuous dependent variable.</div></div>
-	<div class="chart section"><div style="border:1px solid black; padding:0.1em;"><img src="0004-pirateplot-yarrr.png" width="960"></div></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>yarrr</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>pirateplot, boxplot, density plot, violin plot</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv">https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0004-pirateplot-yarrr.png">0004-pirateplot-yarrr.png</a></span></div></div><div><p><em>Agustin Calatroni, October 11, 2016</em> </p>
+<body>
+	<div class="viz-example-header section">
+    <span id="home">
+      <a href="../../">🏠</a>
+    </span>
+    <span id="close">✖</span>
+    <h1>Pirate plot using Yarrr</h1>
+	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>yarrr</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>pirateplot, boxplot, density plot, violin plot</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv">https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0004-pirateplot-yarrr.png">0004-pirateplot-yarrr.png</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="0004-pirateplot-yarrr.R">0004-pirateplot-yarrr.R</a></span></li></ul>
+    <div class="description">Combines a box-and-whisker plot with overlaid density plots to show clear comparisons of distributions across groups; a good choice for  displaying the relationship between 1 or two categorical independent variables, and one continuous dependent variable.<a class="expandDetails">Show full readme.md.</a></div>
+  </div>
+  <div class="viz-example-body">
+    <div class="viz-example-details section hidden"><p><em>Agustin Calatroni, October 11, 2016</em> </p>
 <h3 id="whatisapirateplot">What is a pirateplot()?</h3>
 <p>A pirateplot, from the yarrr package is the RDI (<strong>Raw</strong> data, <strong>Descriptive</strong> statistics, and <strong>Inferential</strong> statistics) plotting choice of R pirates who are displaying the relationship between 1 or two categorical independent variables, and one continuous dependent variable.</p>
 <h3 id="elements">Elements</h3>
@@ -29,46 +38,24 @@
 <li>A Companion to the e-Book YaRrr!: <a href="http://nathanieldphillips.com/thepiratesguidetor/">The Pirate's Guide to R</a></li>
 <li><a href="https://CRAN.R-project.org/package=yarrr">yarrr package</a></li>
 <li>Github repo <a href="https://github.com/ndphillips/yarrr">ndphillips/yarrr</a></li>
-</ul></div></div>
-	<div class="code section">
-		<h2>Code</h2>
-		<pre><code class="hljs">#' ---
-#' title: PIRATEPLOT YARRR
-#' description:  Pirate plot using yarrr package
-#' author: A. Calatroni 
-#' language: R
-#' package: yarrr
-#' plot type: pirate plot
-#' features: Ordered, heatmap, annotation, boxplot, violinplot, facet, median, colors, jitter, discrete 
-#' ---
+</ul></div>
+	  <div class="viz-example-chart section"><div class="exampleImg"><img src="0004-pirateplot-yarrr.png" width="960"></div></div>
+  </div>
 
-new_fig_dir &lt;- "H:/GitHub/viz-library/examples/0004-pirateplot-yarrr"
-new_fig_name &lt;- "0004-pirateplot-yarrr"
+<script defer="">
 
-# Figure code 
+  /*show/hide events*/
+  d3.select("#close").on("click",function(){
+    console.log('clicked')
+    d3.select(".viz-example-header").classed("hidden",true)
+    d3.select(".viz-example-details").classed("hidden",true)
 
-# load packages
-pacman::p_load(dplyr, tidyr, yarrr)
+  })
 
-# load data from online
-dd &lt;- read.csv('https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv') 
-
-# plot function  
-p &lt;- pirateplot(formula = weight ~ feed,
-                data = dd,
-                pal =  "basel")
-
-
-
-# Save image of figure:
-png(file='examples/0004-pirateplot-yarrr/0004-pirateplot-yarrr.png',height = 8, width = 10, units = 'in', res = 300)
-
-p &lt;- pirateplot(formula = weight ~ feed,
-                data = dd,
-                pal =  "basel")
-
-dev.off()
-</code></pre>
-	</div>	
+  d3.select(".expandDetails").on("click",function(){
+    console.log('clicked')
+    d3.select(".viz-example-details").classed("hidden",false)
+  })
+</script>
 
 </body></html>

@@ -57,38 +57,27 @@ exports.makeExampleIndex = function(ex) {
       window.document.title = ex.title;
 
       // Add the header - parse the README.md header
-      var header = window.d3.select(".header");
-      header.append("h1").text(ex.title).style("margin-bottom", "0.1em");
-      header.append("div").text(ex.description).style("margin-bottom", "0.5em");
-
-      // Show the example
-      var webExampleContent =
-        '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src=' +
-        ex.paths.example +
-        ' marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe>';
-      var staticExampleContent =
-        '<div style="border:1px solid black; padding:0.1em;"><img src="' +
-        ex.paths.example +
-        '" width=960></div>';
-      var exampleExt = ex.paths.example.split(".").pop();
-      var exampleContent_html = exampleExt == "html"
-        ? webExampleContent
-        : staticExampleContent;
-
-      window.d3.select(".chart").html(exampleContent_html);
+      var header = window.d3.select(".viz-example-header");
+      header.select("h1").text(ex.title);
+      header.select("div.description").text(ex.description);
 
       // Add the details
       //add sections
-      var detailVars = ["languages", "libraries", "tags", "data", "results"];
+      var detailVars = [
+        "languages",
+        "libraries",
+        "tags",
+        "data",
+        "results",
+        "code"
+      ];
 
-      var detailInfo = window.d3
-        .select(".details")
-        .append("div")
-        .selectAll("div")
+      var detailInfo = header
+        .select("ul.tags")
+        .selectAll("li")
         .data(detailVars)
         .enter()
-        .append("div")
-        .attr("style", "display:inline-block; padding-right:1em;");
+        .append("li");
 
       //via http://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
       function capitalizeFirstLetter(string) {
@@ -107,7 +96,7 @@ exports.makeExampleIndex = function(ex) {
         .append("span")
         .html(
           d =>
-            (d == "data" || d == "results"
+            (d == "data" || d == "results" || d == "code"
               ? "<a href='" + ex[d] + "'>" + ex[d] + "</a>"
               : ex[d])
         );
@@ -117,11 +106,35 @@ exports.makeExampleIndex = function(ex) {
       var detailContent_markdown = readme.match(detailRegex)[0];
       var converter = new showdown.Converter();
       ex.details = converter.makeHtml(detailContent_markdown);
-      window.d3.select(".details").append("div").html(ex.details);
+      var details = window.d3.select(".viz-example-details").html(ex.details);
+      if (ex.details) {
+        header
+          .select("div.description")
+          .append("a")
+          .attr("class", "expandDetails")
+          .text("Show full readme.md.");
+      }
 
+      // Show the example
+      var webExampleContent =
+        '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src=' +
+        ex.paths.example +
+        ' marginwidth="0" marginheight="0" style="height:100%; width:100%;"></iframe>';
+      var staticExampleContent =
+        '<div class="exampleImg"><img src="' +
+        ex.paths.example +
+        '" width=960></div>';
+      var exampleExt = ex.paths.example.split(".").pop();
+      var exampleContent_html = exampleExt == "html"
+        ? webExampleContent
+        : staticExampleContent;
+
+      window.d3.select(".viz-example-chart").html(exampleContent_html);
+
+      /*
       // Show the code - parse the code file.
       window.d3.select("code").text(code);
-
+      */
       //write the index file
       console.log("Created example for : " + ex.dir);
       fs.writeFileSync(
