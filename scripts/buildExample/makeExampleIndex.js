@@ -129,6 +129,10 @@ exports.makeExampleIndex = function(ex) {
         ? webExampleContent
         : staticExampleContent;
 
+      window.d3
+        .select("body")
+        .style("overflow-y", exampleExt == "html" ? "hidden" : null);
+
       window.d3.select(".viz-example-chart").html(exampleContent_html);
 
       /*

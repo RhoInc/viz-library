@@ -5,10 +5,13 @@
 body{
   margin:0;
   padding:0;
-  overflow-y:hidden;
 }
 .viz-example-header, .viz-example-chart, .viz-example-details{
-  padding:5px
+  padding: 0 5px 0 5;
+}
+
+.viz-example-chart, .viz-example-details{
+  padding-top:5px
 }
 
 div.viz-example-header, div.viz-example-details{
@@ -30,6 +33,13 @@ div.viz-example-header #close{
   border:1px solid black;
   border-radius: 2px;
   cursor:pointer;
+}
+
+div.viz-example-header{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height:120px
 }
 
 div.viz-example-header h1{
@@ -56,6 +66,7 @@ body > div.viz-example-header.section > div > a.expandDetails{
 }
 
 div.viz-example-body{
+  margin-top:120px;
   overflow-y:auto;
 }
 
