@@ -106,20 +106,22 @@ exports.makeExampleIndex = function(ex) {
       var detailContent_markdown = readme.match(detailRegex)[0];
       var converter = new showdown.Converter();
       ex.details = converter.makeHtml(detailContent_markdown);
-      var details = window.d3.select(".viz-example-details").html(ex.details);
+      var details = window.d3
+        .select(".viz-example-details .detail-content")
+        .html(ex.details);
       if (ex.details) {
         header
           .select("div.description")
           .append("a")
           .attr("class", "expandDetails")
-          .text("Show full readme.md.");
+          .text("View README.md.");
       }
 
       // Show the example
       var webExampleContent =
         '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src=' +
         ex.paths.example +
-        ' marginwidth="0" marginheight="0" style="height:100%; width:100%;"></iframe>';
+        ' marginwidth="5px" marginheight="0" style="width:100%;"></iframe>';
       var staticExampleContent =
         '<div class="exampleImg"><img src="' +
         ex.paths.example +

@@ -12,31 +12,39 @@
 
 <body style="overflow-y: hidden;">
 	<div class="viz-example-header section">
-    <span id="home">
+    <span class="home">
       <a href="../../">🏠</a>
     </span>
-    <span id="close">✖</span>
+    <span class="close">✖</span>
     <h1>Safety Explorer with Query Data</h1>
 	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webcharts,safety-histogram,safety-results-over-time,safety-shift-plot,safety-outlier-explorer,ae-timeline,ae-explorer</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, webcharts, adverse events, safety explorer, queries</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData-queries/">../../data/safetyData-queries/</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="ae-table/index.html">ae-table/index.html</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="ae-table/index.html">ae-table/index.html</a></span></li></ul>
     <div class="description">The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials.  This instance demonstrates customized versions of each graphic including added filters and/or highlights for query data.</div>
   </div>
   <div class="viz-example-body">
-    <div class="viz-example-details section hidden"></div>
-	  <div class="viz-example-chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="ae-table/index.html" marginwidth="0" marginheight="0" style="height:100%; width:100%;"></iframe></div>
+    <div class="viz-example-details section hidden">
+      <div class="wrap">
+        <span class="close">✖</span>
+        <h2>Readme.md</h2>
+        <div class="detail-content"></div>
+      </div>
+    </div>
+	  <div class="viz-example-chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="ae-table/index.html" marginwidth="5px" marginheight="0" style="width:100%;"></iframe></div>
   </div>
 
 <script defer="">
 
   /*show/hide events*/
-  d3.select("#close").on("click",function(){
-    console.log('clicked')
+  d3.select(".viz-example-header .close").on("click",function(){
     d3.select(".viz-example-header").classed("hidden",true)
     d3.select(".viz-example-details").classed("hidden",true)
+    d3.select(".viz-example-body").style("height","100%")
+  })
 
+  d3.select(".viz-example-details .close").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",true)
   })
 
   d3.select(".expandDetails").on("click",function(){
-    console.log('clicked')
     d3.select(".viz-example-details").classed("hidden",false)
   })
 </script>

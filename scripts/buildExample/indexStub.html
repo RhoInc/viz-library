@@ -13,33 +13,39 @@
 
 <body>
 	<div class="viz-example-header section">
-    <span id="home">
+    <span class="home">
       <a href="../../">&#127968;</a>
     </span>
-    <span id="close">&#10006;</span>
+    <span class="close">&#10006;</span>
     <h1></h1>
 	  <ul class="tags"></ul>
     <div class="description"></div>
   </div>
   <div class="viz-example-body">
     <div class="viz-example-details section hidden">
-    <h2>Readme.md</h2>
-  </div>
+      <div class="wrap">
+        <span class="close">&#10006;</span>
+        <h2>Readme.md</h2>
+        <div class="detail-content"></div>
+      </div>
+    </div>
 	  <div class="viz-example-chart section"></div>
   </div>
 </body>
 <script defer>
 
   /*show/hide events*/
-  d3.select("#close").on("click",function(){
-    console.log('clicked')
+  d3.select(".viz-example-header .close").on("click",function(){
     d3.select(".viz-example-header").classed("hidden",true)
     d3.select(".viz-example-details").classed("hidden",true)
+    d3.select(".viz-example-body").style("height","100%")
+  })
 
+  d3.select(".viz-example-details .close").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",true)
   })
 
   d3.select(".expandDetails").on("click",function(){
-    console.log('clicked')
     d3.select(".viz-example-details").classed("hidden",false)
   })
 </script>

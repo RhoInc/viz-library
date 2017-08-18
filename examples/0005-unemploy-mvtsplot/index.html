@@ -12,31 +12,39 @@
 
 <body>
 	<div class="viz-example-header section">
-    <span id="home">
+    <span class="home">
       <a href="../../">🏠</a>
     </span>
-    <span id="close">✖</span>
+    <span class="close">✖</span>
     <h1>Unemployment Trends with a Multivariate Time Series</h1>
 	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>mvtsplot</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>multivariate, time series, heatmap, monthly</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="Precipitations.csv">Precipitations.csv</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0005-unemploy-mvtsplot.png">0005-unemploy-mvtsplot.png</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="0005-unemploy-mvtsplot.R">0005-unemploy-mvtsplot.R</a></span></li></ul>
-    <div class="description">Mutivariate time series plot using MVTSPLOT package and Unemployment data<a class="expandDetails">Show full readme.md.</a></div>
+    <div class="description">Mutivariate time series plot using MVTSPLOT package and Unemployment data<a class="expandDetails">View README.md.</a></div>
   </div>
   <div class="viz-example-body">
-    <div class="viz-example-details section hidden"><p><em>B Krouse / A Calatroni, 2017-01-20</em> </p></div>
+    <div class="viz-example-details section hidden">
+      <div class="wrap">
+        <span class="close">✖</span>
+        <h2>Readme.md</h2>
+        <div class="detail-content"><p><em>B Krouse / A Calatroni, 2017-01-20</em> </p></div>
+      </div>
+    </div>
 	  <div class="viz-example-chart section"><div class="exampleImg"><img src="0005-unemploy-mvtsplot.png" width="960"></div></div>
   </div>
 
 <script defer="">
 
   /*show/hide events*/
-  d3.select("#close").on("click",function(){
-    console.log('clicked')
+  d3.select(".viz-example-header .close").on("click",function(){
     d3.select(".viz-example-header").classed("hidden",true)
     d3.select(".viz-example-details").classed("hidden",true)
+    d3.select(".viz-example-body").style("height","100%")
+  })
 
+  d3.select(".viz-example-details .close").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",true)
   })
 
   d3.select(".expandDetails").on("click",function(){
-    console.log('clicked')
     d3.select(".viz-example-details").classed("hidden",false)
   })
 </script>
