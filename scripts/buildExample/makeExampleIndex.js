@@ -121,7 +121,7 @@ exports.makeExampleIndex = function(ex) {
       var webExampleContent =
         '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src=' +
         ex.paths.example +
-        ' marginwidth="5px" marginheight="0" style="width:100%;"></iframe>';
+        ' marginwidth="0" marginheight="0"></iframe>';
       var staticExampleContent =
         '<div class="exampleImg"><img src="' +
         ex.paths.example +
