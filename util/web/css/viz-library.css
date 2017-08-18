@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
 
 /* Genreal formatting */
+.hidden{
+	display:none;
+}
+
 html,body{
 	height: 100%;
 	font-size: 14px;
@@ -93,10 +97,14 @@ ul.nav-tabs li.active a, ul.nav-tabs li.active:hover a{
 	color:black;
 }
 
+/* Sections */
+.section  div.instructions {
+	font-size:0.8em;
+	margin-bottom:0.5em;
+}
 
 /* Controls */
 .controls{
-	padding:10px;
 }
 
 .controlWrap{
@@ -118,10 +126,9 @@ ul.nav-tabs li.active a, ul.nav-tabs li.active:hover a{
 .media-tile{
 	display: inline-block;
 	position: relative;
-	padding: .5rem;
-	border: 1px solid #ccc;
-	margin: 0 1rem 1rem 0;
-	transition: border-color .3s ease-in-out;
+	padding:.5em;
+	margin:.5em;
+	border:1px solid #bbb;
 }
 .media-tile:hover{
 	border-color: rgb(108, 207, 253);
@@ -131,18 +138,20 @@ ul.nav-tabs li.active a, ul.nav-tabs li.active:hover a{
 }
 .media-tile .text-wrap{
 	position: absolute;
-	top: 0;
+	margin: .5em;
+	bottom: 0;
 	left: 0;
-	width: 100%;
+	width:300px;
 	color: inherit;
 	background-color: rgba(255,255,255,0.9);
-	padding: .5em;
 }
+
+
 .media-tile a.text-wrap:hover{
 	color: inherit;
 }
 .media-tile .text-wrap p{
-	margin: .5em;
+	margin: 0;
 }
 .media-tile .text-wrap p:first-of-type{
 	font-weight: bold;
@@ -204,4 +213,8 @@ tr.selected{
 
 button{
   margin-left:1em
+}
+
+div.footer{
+	margin-bottom:1em;
 }
