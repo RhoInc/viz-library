@@ -24,7 +24,7 @@ div.viz-example-header{
 div.viz-example-header{
   width: 98%; /* Full width */
   height:15%;
-  overflow-y: visible;
+  overflow-y: scroll;
 }
 
 .viz-example-header .head{
