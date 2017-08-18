@@ -96,7 +96,7 @@ div.viz-example-details{
   left:0;
   top:0;
   margin:10%;
-  padding:1em;
+  padding:0 1em 0 1em;
   border:1px solid black;
   border-radius:0.5em;
   background: #eee;
