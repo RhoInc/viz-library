@@ -1,0 +1,108 @@
+.hidden{
+  display:none;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+.viz-example-header, .viz-example-body{
+  padding: 0 1% 0 1%;
+}
+
+.viz-example-chart{
+  padding: .5% 0 .5% 0
+}
+
+div.viz-example-header{
+  background: #eee;
+  border-bottom: 2px solid black;
+  opacity:0.8;
+}
+
+
+div.viz-example-header{
+  width: 98%; /* Full width */
+  height:15%;
+  overflow-y: scroll;
+}
+
+.viz-example-header .head{
+  height:15%
+}
+
+div.viz-example-body{
+  height:84%;
+  width:98%;
+}
+
+iframe{
+  width:98%;
+  height:98%;
+}
+
+
+div.viz-example-header .home{
+  position:absolute;
+  right:3em;
+  top:0;
+}
+
+span.close{
+  position:absolute;
+  right:1em;
+  top:2px;
+  padding:1px;
+  border:1px solid black;
+  border-radius: 2px;
+  width:12px;
+  height:12px;
+  font-size:12px;
+  text-align: center;
+  vertical-align:middle;
+  cursor:pointer;
+}
+
+div.viz-example-header h1{
+  margin:0;
+  padding:0.1em 0 0.1em 0;
+}
+
+div.viz-example-header ul.tags {
+  margin:0;
+  padding: 0 0 0.5em 0;
+}
+
+div.viz-example-header ul.tags li{
+  display:inline-block;
+  padding-right:0.5em;
+}
+
+body div.viz-example-header.section a.expandDetails{
+  text-decoration:underline;
+  text-decoration-style: dotted;
+  color:#999;
+  cursor:pointer;
+  padding-left:.3em;
+}
+
+div.viz-example-chart iframe{
+  border-width: 0;
+}
+
+div.viz-example-details{
+  width:80%;
+  position:absolute;
+  left:0;
+  top:0;
+  margin:10%;
+  padding:0 1em 0 1em;
+  border:1px solid black;
+  border-radius:0.5em;
+  background: #eee;
+  opacity:0.98;
+}
+
+div.viz-example-details .wrap{
+  position:relative;
+}

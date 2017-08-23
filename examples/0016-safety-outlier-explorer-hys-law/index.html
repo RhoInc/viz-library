@@ -1,62 +1,52 @@
 <html lang="en"><head>
   <title>Safety Outlier Explorer - Hy's Law</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../util/web/css/examples.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
-<body style="padding:1em;">
-	<span style="position:absolute;top:1em;right:1em;">
-		<a href="../../">🏠</a>
-	</span>
-	<div class="header section"><h1 style="margin-bottom: 0.1em;">Safety Outlier Explorer - Hy's Law</h1><div style="margin-bottom: 0.5em;">Example of the safety outlier explorer chart for a small mock study where a single participant meets the criteria for Hy's law.</div></div>
-	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webcharts,safety-outlier-explorer</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, queries</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="hy.csv">hy.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div></div></div>
-	<div class="code section">
-		<h2>Code</h2>
-		<pre><code class="hljs">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta
-            http-equiv = 'Content-Type'
-            content = 'text/html; charset = utf-8'&gt;
+<body style="overflow-y: hidden;">
+	<div class="viz-example-header section">
+    <span class="home">
+      <a href="../../">🏠</a>
+    </span>
+    <span class="close">✖</span>
+    <h1>Safety Outlier Explorer - Hy's Law</h1>
+	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webcharts,safety-outlier-explorer</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, queries</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="hy.csv">hy.csv</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="example.html">example.html</a></span></li></ul>
+    <div class="description">Example of the safety outlier explorer chart for a small mock study where a single participant meets the criteria for Hy's law.</div>
+  </div>
+  <div class="viz-example-body">
+    <div class="viz-example-details section hidden">
+      <div class="wrap">
+        <span class="close">✖</span>
+        <h2>Readme.md</h2>
+        <div class="detail-content"></div>
+      </div>
+    </div>
+	  <div class="viz-example-chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0"></iframe></div>
+  </div>
 
-        &lt;title&gt;Safety Explorer - Default&lt;/title&gt;
-        &lt;div id = 'title'&gt;Safety Explorer - Default&lt;/div&gt;
+<script defer="">
 
-        &lt;script type = 'text/javascript'
-            src = 'https://d3js.org/d3.v3.min.js'&gt;&lt;/script&gt;
-        &lt;script type = 'text/javascript'
-            src = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'&gt;&lt;/script&gt;
-        &lt;script type = 'text/javascript'
-            src = 'https://cdn.rawgit.com/RhoInc/safety-outlier-explorer/v2.0.1/build/safetyOutlierExplorer.js'&gt;&lt;/script&gt;
+  /*show/hide events*/
+  d3.select(".viz-example-header .close").on("click",function(){
+    d3.select(".viz-example-header").classed("hidden",true)
+    d3.select(".viz-example-details").classed("hidden",true)
+    d3.select(".viz-example-body").style("height","100%")
+  })
 
-        &lt;link type = 'text/css'
-            rel = 'stylesheet'
-            href = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css'&gt;
+  d3.select(".viz-example-details .close").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",true)
+  })
 
-
-    &lt;/head&gt;
-
-    &lt;body&gt;
-        &lt;div class = 'safetyExplorerChart'
-            id = 'safety-outlier-explorer'&gt;
-            &lt;div class = 'header'&gt;&lt;/div&gt;
-            &lt;div class = 'content'&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/body&gt;
-
-    &lt;script&gt;
-        const settings = {};
-
-        d3.csv('hy.csv', function(data) {
-            safetyOutlierExplorer('#safety-outlier-explorer .content', settings)
-                .init(data);
-        });
-    &lt;/script&gt;
-&lt;/html&gt;
-</code></pre>
-	</div>	
+  d3.select(".expandDetails").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",false)
+  })
+</script>
 
 </body></html>

@@ -1,107 +1,52 @@
 <html lang="en"><head>
   <title>Brushable paneled outlier explorer</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../util/web/css/examples.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
-<body style="padding:1em;">
-	<span style="position:absolute;top:1em;right:1em;">
-		<a href="../../">🏠</a>
-	</span>
-	<div class="header section"><h1 style="margin-bottom: 0.1em;">Brushable paneled outlier explorer</h1><div style="margin-bottom: 0.5em;">Example of the a brushable paneled outlier explorer that allows brushing of lines and points</div></div>
-	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webCharts</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, outlier explorer, brushable, paneled</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData/ADBDS.csv">../../data/safetyData/ADBDS.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div></div></div>
-	<div class="code section">
-		<h2>Code</h2>
-		<pre><code class="hljs">&lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Paneled Outlier Explorer&lt;/title&gt;
-        &lt;div id = 'title'&gt;Paneled Outlier Explorer&lt;/div&gt;
-        &lt;div id = 'subtitle'&gt;&lt;/div&gt;
-        &lt;meta http-equiv = 'Content-Type' content = 'text/html; charset = utf-8'&gt;
+<body style="overflow-y: hidden;">
+	<div class="viz-example-header section">
+    <span class="home">
+      <a href="../../">🏠</a>
+    </span>
+    <span class="close">✖</span>
+    <h1>Brushable paneled outlier explorer</h1>
+	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>webCharts</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, outlier explorer, brushable, paneled</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData/ADBDS.csv">../../data/safetyData/ADBDS.csv</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="example.html">example.html</a></span></li></ul>
+    <div class="description">Example of the a brushable paneled outlier explorer that allows brushing of lines and points</div>
+  </div>
+  <div class="viz-example-body">
+    <div class="viz-example-details section hidden">
+      <div class="wrap">
+        <span class="close">✖</span>
+        <h2>Readme.md</h2>
+        <div class="detail-content"></div>
+      </div>
+    </div>
+	  <div class="viz-example-chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0"></iframe></div>
+  </div>
 
-        &lt;script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'&gt;&lt;/script&gt;
-        &lt;script type = 'text/javascript' src = 'https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'&gt;&lt;/script&gt;
-        &lt;script type = 'text/javascript' src = 'paneledOutlierExplorer.js'&gt;&lt;/script&gt;
+<script defer="">
 
-        &lt;link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/Webcharts/master/css/webcharts.min.css'&gt;
+  /*show/hide events*/
+  d3.select(".viz-example-header .close").on("click",function(){
+    d3.select(".viz-example-header").classed("hidden",true)
+    d3.select(".viz-example-details").classed("hidden",true)
+    d3.select(".viz-example-body").style("height","100%")
+  })
 
-        &lt;style&gt;
-            @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+  d3.select(".viz-example-details .close").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",true)
+  })
 
-            * {
-                padding: 0;
-                margin: 0;
-                font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-            }
-
-            #title {
-                width: 96%;
-                margin: 2% 2% 0 2%;
-                padding-bottom: .5%;
-                border-bottom: 2px solid lightgray;
-                font-weight: normal;
-                font-size: 250%;
-                position: relative;
-            }
-            #subtitle {
-                width: 96%;
-                margin: 0 2% 2% 2%;
-                padding-top: .5%;
-                font-weight: lighter;
-                font-size: 200%;
-            }
-            #container {
-                width: 96%;
-                margin: 0 2% 0 2%;
-            }
-            #container .chart {
-                width: 100%;
-                display: inline-block;
-                vertical-align: top;
-            }
-            #container .chart .wc-chart {
-                width: 31%;
-            }
-            circle.brushed {
-                stroke: orange;
-                stroke-width: 2px;
-                fill: black;
-                r: 4px;
-            }
-            path.brushed {
-                stroke: orange;
-                stroke-width: 3px;
-                stroke-opacity: 1;
-            }
-            circle.selected {
-                stroke: orange;
-                fill: black;
-            }
-        &lt;/style&gt;
-    &lt;/head&gt;
-
-    &lt;body&gt;
-        &lt;div id = 'container'&gt;
-        &lt;/div&gt;
-    &lt;/body&gt;
-
-    &lt;script type = 'text/javascript'&gt;
-        let settings = {
-            measure_col: 'VSTEST',
-            time_col: 'VSDY',
-            value_col: 'VSSTRESN'
-        };
-        let chart = paneledOutlierExplorer('#container', settings);
-        d3.csv('../../data/safetyData/VS.csv', data =&gt; {
-            chart.init(data);
-        });
-    &lt;/script&gt;
-&lt;/html&gt;
-</code></pre>
-	</div>	
+  d3.select(".expandDetails").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",false)
+  })
+</script>
 
 </body></html>

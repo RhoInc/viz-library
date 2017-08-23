@@ -1,66 +1,52 @@
 <html lang="en"><head>
   <title>Unemployment Trends with a Multivariate Time Series</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../util/web/css/examples.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
-<body style="padding:1em;">
-	<span style="position:absolute;top:1em;right:1em;">
-		<a href="../../">🏠</a>
-	</span>
-	<div class="header section"><h1 style="margin-bottom: 0.1em;">Unemployment Trends with a Multivariate Time Series</h1><div style="margin-bottom: 0.5em;">Mutivariate time series plot using MVTSPLOT package and Unemployment data</div></div>
-	<div class="chart section"><div style="border:1px solid black; padding:0.1em;"><img src="0005-unemploy-mvtsplot.png" width="960"></div></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>mvtsplot</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>multivariate, time series, heatmap, monthly</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="Precipitations.csv">Precipitations.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0005-unemploy-mvtsplot.png">0005-unemploy-mvtsplot.png</a></span></div></div><div><p><em>B Krouse / A Calatroni, 2017-01-20</em> </p></div></div>
-	<div class="code section">
-		<h2>Code</h2>
-		<pre><code class="hljs">#' ---
-#' title: UNEMPLOY MVTSPLOT
-#' description: Mutivariate time series plot using MVTSPLOT package and Unemployment data
-#' author: B Krouse / A Calatroni
-#' language: R
-#' package: MVTSPLOT
-#' plot type: mutivariate time series
-#' features: multivariate, time series, heatmap, monthly
-#' ---
+<body>
+	<div class="viz-example-header section">
+    <span class="home">
+      <a href="../../">🏠</a>
+    </span>
+    <span class="close">✖</span>
+    <h1>Unemployment Trends with a Multivariate Time Series</h1>
+	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>mvtsplot</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>multivariate, time series, heatmap, monthly</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="Precipitations.csv">Precipitations.csv</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0005-unemploy-mvtsplot.png">0005-unemploy-mvtsplot.png</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="0005-unemploy-mvtsplot.R">0005-unemploy-mvtsplot.R</a></span></li></ul>
+    <div class="description">Mutivariate time series plot using MVTSPLOT package and Unemployment data<a class="expandDetails">View README.md.</a></div>
+  </div>
+  <div class="viz-example-body">
+    <div class="viz-example-details section hidden">
+      <div class="wrap">
+        <span class="close">✖</span>
+        <h2>Readme.md</h2>
+        <div class="detail-content"><p><em>B Krouse / A Calatroni, 2017-01-20</em> </p></div>
+      </div>
+    </div>
+	  <div class="viz-example-chart section"><div class="exampleImg"><img src="0005-unemploy-mvtsplot.png" width="960"></div></div>
+  </div>
 
+<script defer="">
 
+  /*show/hide events*/
+  d3.select(".viz-example-header .close").on("click",function(){
+    d3.select(".viz-example-header").classed("hidden",true)
+    d3.select(".viz-example-details").classed("hidden",true)
+    d3.select(".viz-example-body").style("height","100%")
+  })
 
-new_fig_dir &lt;- "H:/GitHub/viz-library/examples/0005-unemploy-mvtsplot"
-new_fig_name &lt;- "0005-unemploy-mvtsplot"
+  d3.select(".viz-example-details .close").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",true)
+  })
 
-# Figure code
-
-pacman::p_load(mvtsplot)
-
-dd &lt;- read.csv(paste0(new_fig_dir,'/blsunemployment.csv'))
-dd[,1] &lt;- as.Date(strptime(paste(dd[,1],"01",sep="-"),"%Y-%m-%d"))
-
-mvtsplot(dd[,-c(1,54)], xtime = dd[,1],
-         sort="median",
-         palette = "RdYlGn",
-         #  rowstat= function(...) dd[,54],
-         main="Monthly \n Unemployment \n(Jan 1976-\nApr 2009)",
-         levels=11,
-         bottom.ylim=c(0,12))
-
-# Save image of figure:
-png(filename = paste0(new_fig_dir,'/',new_fig_name, ".png"), width = 7, height = 6, units='in', res=300)
-mvtsplot(dd[,-c(1,54)], xtime = dd[,1],
-         sort="median",
-         palette = "RdYlGn",
-         #  rowstat= function(...) dd[,54],
-         main="Monthly \n Unemployment \n(Jan 1976-\nApr 2009)",
-         levels=11,
-         bottom.ylim=c(0,12))
-
-dev.off()
-
-# Create tags and README.md
-source('util/r_scripts/createSuppFiles.R')
-createSuppFiles(new_fig_name, example_type='R-examples')
-</code></pre>
-	</div>	
+  d3.select(".expandDetails").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",false)
+  })
+</script>
 
 </body></html>

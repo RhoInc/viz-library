@@ -1,61 +1,52 @@
 <html lang="en"><head>
   <title>Web Codebook Explorer</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../util/web/css/examples.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
-<body style="padding:1em;">
-	<span style="position:absolute;top:1em;right:1em;">
-		<a href="../../">🏠</a>
-	</span>
-	<div class="header section"><h1 style="margin-bottom: 0.1em;">Web Codebook Explorer</h1><div style="margin-bottom: 0.5em;">Demonstration of the web-based data summaries using web-codebook.</div></div>
-	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>web-codebook</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, codebook</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData/">../../data/safetyData/</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div></div></div>
-	<div class="code section">
-		<h2>Code</h2>
-		<pre><code class="hljs">&lt;html lang="en"&gt;
-&lt;title&gt;Web Codebook - Explorer&lt;/title&gt;
-&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+<body style="overflow-y: hidden;">
+	<div class="viz-example-header section">
+    <span class="home">
+      <a href="../../">🏠</a>
+    </span>
+    <span class="close">✖</span>
+    <h1>Web Codebook Explorer</h1>
+	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>web-codebook</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, codebook</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/safetyData/">../../data/safetyData/</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="example.html">example.html</a></span></li></ul>
+    <div class="description">Demonstration of the web-based data summaries using web-codebook.</div>
+  </div>
+  <div class="viz-example-body">
+    <div class="viz-example-details section hidden">
+      <div class="wrap">
+        <span class="close">✖</span>
+        <h2>Readme.md</h2>
+        <div class="detail-content"></div>
+      </div>
+    </div>
+	  <div class="viz-example-chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0"></iframe></div>
+  </div>
 
-&lt;script src="https://d3js.org/d3.v3.min.js"&gt;&lt;/script&gt;
-&lt;script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"&gt;&lt;/script&gt;
-&lt;script src="https://rawgit.com/RhoInc/web-codebook/030c9c99581392a3df74c57ac56f0ed59b089c74/build/webcodebook.js"&gt;&lt;/script&gt;
+<script defer="">
 
-&lt;link rel="stylesheet" href="https://rawgit.com/RhoInc/Webcharts/master/css/webcharts.css"&gt;
-&lt;link rel="stylesheet" href="https://rawgit.com/RhoInc/web-codebook/030c9c99581392a3df74c57ac56f0ed59b089c74/css/webcodebook.css"&gt;
+  /*show/hide events*/
+  d3.select(".viz-example-header .close").on("click",function(){
+    d3.select(".viz-example-header").classed("hidden",true)
+    d3.select(".viz-example-details").classed("hidden",true)
+    d3.select(".viz-example-body").style("height","100%")
+  })
 
-&lt;/head&gt;
+  d3.select(".viz-example-details .close").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",true)
+  })
 
-&lt;body&gt;
-	&lt;div style="position:absolute;top:1em;right:1em;"&gt;&lt;a href="https://github.com/RhoInc/web-codebook"&gt;&lt;img src="GitHub-Mark-32px.png" height="16" width="16"&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class="controls"&gt;&lt;/div&gt;
-	&lt;div class="explorer"&gt;&lt;/div&gt;
-&lt;/body&gt;
-
-&lt;script&gt;
-var settings = {
-	labelColumn:"label",
-	files:
-    [{label: "Chick Weight", path: "../../data/ChickWeight.csv", settings: {}}
-    ,{label: "Discrete Scores", path: "../../data/discrete_scores.csv", settings: {}}
-    ,{label: "Fields", path: "../../data/queries/fields.csv", settings: {}}
-    ,{label: "Forms", path: "../../data/queries/forms.csv", settings: {}}
-    ,{label: "Queries", path: "../../data/queries/queries.csv", settings: {}}
-    ,{label: "AEs with Queries", path: "../../data/safetyData-queries/ADAE.csv", settings: {}}
-    ,{label: "Labs/Vitals with Queries", path: "../../data/safetyData-queries/ADBDS.csv", settings: {}}
-    ,{label: "AEs", path: "../../data/safetyData/ADAE.csv", settings: {}}
-    ,{label: "Labs/Vitals", path: "../../data/safetyData/ADBDS.csv", settings: {}}
-    ,{label: "Demographics", path: "../../data/safetyData/DM.csv", settings: {}}
-    ,{label: "Schedule Of Events", path: "../../data/safetyData/scheduleOfEvents.csv", settings: {}}
-    ,{label: "Vital Signs", path: "../../data/safetyData/vitalSigns.csv", settings: {}}
-    ]};
-
-  var explorer = webcodebook.createExplorer(".explorer", settings).init();
-
-&lt;/script&gt;&lt;/html&gt;
-</code></pre>
-	</div>	
+  d3.select(".expandDetails").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",false)
+  })
+</script>
 
 </body></html>

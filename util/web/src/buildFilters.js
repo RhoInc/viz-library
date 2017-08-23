@@ -21,7 +21,10 @@ export default function buildFilters(meta, measures, parentElement) {
     .attr("class", "controlWrap");
 
   //create the select for the filter
-  wraps.append("div").attr("class", "controlLabel").text(d => d.label);
+  wraps
+    .append("div")
+    .attr("class", "controlLabel")
+    .text(d => d.label.charAt(0).toUpperCase() + d.label.slice(1));
 
   var selects = wraps.append("select");
   selects

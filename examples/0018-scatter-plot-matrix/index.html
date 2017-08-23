@@ -1,111 +1,52 @@
 <html lang="en"><head>
   <title>Interactive Scatter Plot Lattice with Vital Signs Data</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../util/web/css/examples.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
-<body style="padding:1em;">
-	<span style="position:absolute;top:1em;right:1em;">
-		<a href="../../">🏠</a>
-	</span>
-	<div class="header section"><h1 style="margin-bottom: 0.1em;">Interactive Scatter Plot Lattice with Vital Signs Data</h1><div style="margin-bottom: 0.5em;">A paneled series of scatter plots plotting every measure against every other measure</div></div>
-	<div class="chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0" style="height:600px; width:100%;"></iframe></div>	
-	<div class="details section"><div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>scatterPlotMatrix</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, scatter plot, lattice, matrix, bivariate</span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/iris.csv, ../../data/safetyData/VS.csv, ../0016-safety-outlier-explorer-hys-law/hy.csv">../../data/iris.csv, ../../data/safetyData/VS.csv, ../0016-safety-outlier-explorer-hys-law/hy.csv</a></span></div><div style="display:inline-block; padding-right:1em;"><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></div></div><div></div></div>
-	<div class="code section">
-		<h2>Code</h2>
-		<pre><code class="hljs">/*------------------------------------------------------------------------------------------------\
-  Iris Measurements
-\------------------------------------------------------------------------------------------------*/
+<body style="overflow-y: hidden;">
+	<div class="viz-example-header section">
+    <span class="home">
+      <a href="../../">🏠</a>
+    </span>
+    <span class="close">✖</span>
+    <h1>Interactive Scatter Plot Lattice with Vital Signs Data</h1>
+	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>javascript</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>scatterPlotMatrix</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>interactive, scatter plot, lattice, matrix, bivariate</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/iris.csv, ../../data/safetyData/VS.csv, ../0016-safety-outlier-explorer-hys-law/hy.csv">../../data/iris.csv, ../../data/safetyData/VS.csv, ../0016-safety-outlier-explorer-hys-law/hy.csv</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="example.html">example.html</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="index.js">index.js</a></span></li></ul>
+    <div class="description">A paneled series of scatter plots plotting every measure against every other measure</div>
+  </div>
+  <div class="viz-example-body">
+    <div class="viz-example-details section hidden">
+      <div class="wrap">
+        <span class="close">✖</span>
+        <h2>Readme.md</h2>
+        <div class="detail-content"></div>
+      </div>
+    </div>
+	  <div class="viz-example-chart section"><iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src="example.html" marginwidth="0" marginheight="0"></iframe></div>
+  </div>
 
-    var element3 = '#iris';
-    var dataPath3 = '../../data/iris.csv';
-    var settings3 = {
-        keys: ['observation'],
-        measure_col: 'dimension',
-        measures: ['sepal length', 'sepal width', 'petal length', 'petal width'],
-        result_col: 'length',
-        group_col: 'species',
-        size: 200,
-        padding: 20};
+<script defer="">
 
-    d3.csv(dataPath3, function(data) {
-        var transposed = [];
-        data.forEach((d,i) =&gt; {
-                settings3.measures.forEach(measure =&gt; {
-                    transposed.push(
-                        {observation: i
-                        ,dimension: measure
-                        ,length: d[measure]
-                        ,species: d.species});
-                });
-            });
+  /*show/hide events*/
+  d3.select(".viz-example-header .close").on("click",function(){
+    d3.select(".viz-example-header").classed("hidden",true)
+    d3.select(".viz-example-details").classed("hidden",true)
+    d3.select(".viz-example-body").style("height","100%")
+  })
 
-        scatterPlotMatrix
-            (element3
-            ,transposed
-            ,settings3);
-    });
+  d3.select(".viz-example-details .close").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",true)
+  })
 
-/*------------------------------------------------------------------------------------------------\
-  Vital Signs
-\------------------------------------------------------------------------------------------------*/
-
-    var element1 = '#VS';
-    var dataPath1 = '../../data/safetyData/VS.csv';
-    var settings1 = {
-        keys: ['USUBJID', 'VISIT'],
-        measure_col: 'VSTEST',
-        result_col: 'VSSTRESN',
-        group_col: 'site',
-        size: 200,
-        padding: 20};
-
-    d3.csv(dataPath1, function(data) {
-        data.forEach(function(d) {
-                d.VSSTRESN = +d.VSSTRESN;
-                d.site = d.USUBJID.split('-')[0];
-                d.VSSTNRLO = +d.VSSTNRLO;
-                d.VSSTNRHI = +d.VSSTNRHI;
-                d.level = d.VSSTRESN &gt;= d.VSSTNRLO &amp;&amp; d.VSSTRESN &lt;= d.VSSTNRHI
-                    ? 'Normal'
-                    : d.VSSTRESN &lt; d.VSSTNRLO
-                        ? 'Low'
-                        : 'High';
-            });
-
-        scatterPlotMatrix
-            (element1
-            ,data.filter(d =&gt; d.VISIT === 'Screening')
-            ,settings1);
-    });
-
-/*------------------------------------------------------------------------------------------------\
-  Liver Function Tests
-\------------------------------------------------------------------------------------------------*/
-
-    var element2 = '#hy';
-    var dataPath2 = '../0016-safety-outlier-explorer-hys-law/hy.csv';
-    var settings2 = {
-        keys: ['USUBJID', 'VISIT'],
-        measure_col: 'TEST',
-        result_col: 'STRESN',
-        group_col: 'VISIT',
-        size: 200,
-        padding: 20};
-
-    d3.csv(dataPath2, function(data) {
-        data.forEach(function(d) {
-                d.site = d.USUBJID.split('-')[0];
-            });
-
-        scatterPlotMatrix
-            (element2
-            ,data
-            ,settings2);
-    });
-</code></pre>
-	</div>	
+  d3.select(".expandDetails").on("click",function(){
+    d3.select(".viz-example-details").classed("hidden",false)
+  })
+</script>
 
 </body></html>
