@@ -8,63 +8,9 @@
 
         <script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'></script>
         <script type = 'text/javascript' src = 'https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'></script>
-        <script type = 'text/javascript' src = 'paneledOutlierExplorer.js'></script>
+        <script type = 'text/javascript' src = 'https://rawgit.com/RhoInc/paneled-outlier-explorer/master/build/paneledOutlierExplorer.js'></script>
 
         <link type = 'text/css' rel = 'stylesheet' href = 'https://rawgit.com/RhoInc/Webcharts/master/css/webcharts.min.css'>
-
-        <style>
-            @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-
-            * {
-                padding: 0;
-                margin: 0;
-                font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-            }
-
-            #title {
-                width: 96%;
-                margin: 2% 2% 0 2%;
-                padding-bottom: .5%;
-                border-bottom: 2px solid lightgray;
-                font-weight: normal;
-                font-size: 250%;
-                position: relative;
-            }
-            #subtitle {
-                width: 96%;
-                margin: 0 2% 2% 2%;
-                padding-top: .5%;
-                font-weight: lighter;
-                font-size: 200%;
-            }
-            #container {
-                width: 96%;
-                margin: 0 2% 0 2%;
-            }
-            #container .chart {
-                width: 100%;
-                display: inline-block;
-                vertical-align: top;
-            }
-            #container .chart .wc-chart {
-                width: 31%;
-            }
-            circle.brushed {
-                stroke: orange;
-                stroke-width: 2px;
-                fill: black;
-                r: 4px;
-            }
-            path.brushed {
-                stroke: orange;
-                stroke-width: 3px;
-                stroke-opacity: 1;
-            }
-            circle.selected {
-                stroke: orange;
-                fill: black;
-            }
-        </style>
     </head>
 
     <body>
@@ -78,8 +24,8 @@
             time_col: 'VSDY',
             value_col: 'VSSTRESN'
         };
-        let chart = paneledOutlierExplorer('#container', settings);
-        d3.csv('../../data/safetyData/VS.csv', data => {
+        let chart = paneledOutlierExplorer('#container', {});
+        d3.csv('../../data/hys_law.csv', data => {
             chart.init(data);
         });
     </script>
