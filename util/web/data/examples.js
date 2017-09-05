@@ -566,14 +566,7 @@ var examples = [
   },
   {
     dir: "0019-paneled-outlier-explorer",
-    files: [
-      "README.md",
-      "example.html",
-      "index.html",
-      "paneledOutlierExplorer.js",
-      "screen.png",
-      "thumb.png"
-    ],
+    files: ["README.md", "example.html", "index.html", "screen.png"],
     paths: {
       root: "./examples/0019-paneled-outlier-explorer/",
       readme: "README.md",
