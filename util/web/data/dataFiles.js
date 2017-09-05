@@ -56,20 +56,20 @@ var dataFiles = [
     cols: 5
   },
   {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/forms.csv",
-    filename: "forms.csv",
-    ext: "csv",
-    rel_path: "./data/queries/forms.csv",
-    rows: 11,
-    cols: 2
-  },
-  {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/fields.csv",
     filename: "fields.csv",
     ext: "csv",
     rel_path: "./data/queries/fields.csv",
     rows: 55,
     cols: 3
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/forms.csv",
+    filename: "forms.csv",
+    ext: "csv",
+    rel_path: "./data/queries/forms.csv",
+    rows: 11,
+    cols: 2
   },
   {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/queries/queries.csv",
