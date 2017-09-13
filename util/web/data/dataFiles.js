@@ -40,6 +40,14 @@ var dataFiles = [
     cols: 10
   },
   {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/hys_law.csv",
+    filename: "hys_law.csv",
+    ext: "csv",
+    rel_path: "./data/hys_law.csv",
+    rows: 320,
+    cols: 18
+  },
+  {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/iris.csv",
     filename: "iris.csv",
     ext: "csv",

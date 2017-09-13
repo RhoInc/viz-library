@@ -570,7 +570,6 @@ var examples = [
       "README.md",
       "example.html",
       "index.html",
-      "paneledOutlierExplorer.js",
       "screen.png",
       "thumb.png"
     ],
