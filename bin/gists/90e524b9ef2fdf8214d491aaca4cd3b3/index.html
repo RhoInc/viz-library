@@ -4,8 +4,8 @@
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 
         <script src='https://d3js.org/d3.v3.min.js'></script>
-        <script src='https://cdn.rawgit.com/RhoInc/aeexplorer/refactor/build/aeTable.js'></script>
-        <link rel='stylesheet' href='https://cdn.rawgit.com/RhoInc/aeexplorer/refactor/css/aeTable.css'>
+        <script src='https://cdn.rawgit.com/RhoInc/aeexplorer/v3.0.2/build/aeTable.js'></script>
+        <link rel='stylesheet' href='https://cdn.rawgit.com/RhoInc/aeexplorer/v3.0.2/css/aeTable.css'>
     </head>
 
     <body></body>
@@ -14,7 +14,7 @@
         //Location to render the table (must be valid css)
         var dataElement = 'body';
 
-        //File path for the adverse event data set with 1 record per AE with 
+        //File path for the adverse event data set with 1 record per AE with
         //placeholder rows for participants with no exacerbations)
         var dataFile = 'ae_explorer.csv'
 
@@ -55,8 +55,8 @@
                     ,'prefTerms': 'Hide'
                     ,'maxPrevalence': 0}
                 };
-            var aeTable = aeTable(dataElement, settings);
-            
+            var aeTable = aeTable.createChart(dataElement, settings);
+
             d3.csv(dataFile, function(error, data) {
                 aeTable.init(data);
             });
