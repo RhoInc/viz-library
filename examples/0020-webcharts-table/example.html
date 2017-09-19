@@ -1,0 +1,41 @@
+<html lang="en">
+<title>Webcharts - Table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/Webcharts/v1.9/css/webcharts.css">
+<style>
+.controls{
+  background:#ccc;
+  border:1px solid black;
+  border-radius:.2em;
+  padding:.5em;
+  width:inherit;
+  display:inline-block;
+  padding-bottom:1em;
+}
+
+.controls > div > input{
+  display:block
+}
+
+.controls > div{
+  display:inline-block;
+  vertical-align: top;
+  padding-left:1em;
+  padding-right:1em;
+}
+</style>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://rawgit.com/RhoInc/Webcharts/v1.9/build/webcharts.js"></script>
+</head>
+
+<body style="padding:1em;">
+  <div class="controls">
+    <div>Pagination? <input class="pagination" type="checkbox" checked></input> </div>
+    <div># of items per page: <input class="items" value=10></input></div>
+    <div># of page links: <input class="pages" value=5></input></div>
+  </div>
+  <div class="chart"></div>
+</body>
+<script src="simpleTable.js" defer></script>
+</html>
