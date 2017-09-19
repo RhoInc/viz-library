@@ -593,5 +593,35 @@ var examples = [
     tags: "interactive, outlier explorer, brushable, paneled",
     langages: ["javascript"],
     makeIndex: true
+  },
+  {
+    dir: "0020-webcharts-table",
+    files: [
+      "README.md",
+      "Screen Shot 2017-09-19 at 8.12.29 AM.png",
+      "example.html",
+      "index.html",
+      "simpleTable.js"
+    ],
+    paths: {
+      root: "./examples/0020-webcharts-table/",
+      readme: "README.md",
+      index: "index.html",
+      thumb: "thumb.png",
+      data: "elements.csv",
+      code: "simpleTable.js",
+      example: "example.html"
+    },
+    readme: {},
+    title: "Webcharts Table",
+    languages: "javascript",
+    libraries: ["webcharts"],
+    description: "This is a simple listing of elemental data. Created using the improved table functionality in webcharts v1.9.0",
+    data: "elements.csv",
+    code: "simpleTable.js",
+    results: null,
+    tags: "interactive, table",
+    langages: ["javascript"],
+    makeIndex: true
   }
 ];
