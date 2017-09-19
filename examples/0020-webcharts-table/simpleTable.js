@@ -1,7 +1,7 @@
 var settings = {
   "pagination":true,
   "nRowsPerPage":10,
-  "nPageLinksDisplayed":10
+  "nPageLinksDisplayed":5
 };
 
 var controls = webCharts.createControls(".chart",	{
