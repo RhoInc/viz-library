@@ -1,0 +1,35 @@
+<html lang="en">
+<title>Webcharts - Countdown to destroy a table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<link rel="stylesheet" href="https://rawgit.com/RhoInc/Webcharts/6b06e5e4c192567eb5f2a82dd30a8d03dd83c563/css/webcharts.css">
+<script src='https://rawgit.com/RhoInc/Webcharts/6b06e5e4c192567eb5f2a82dd30a8d03dd83c563/build/webcharts.js'></script>
+
+</head>
+
+<body style="padding:1em;">
+	<h3 class="message"></h3>
+	<div class="chart"></div>
+</body>
+<script >
+var coolTable = webCharts.createTable('div.chart',{pagination:true});
+d3.csv('../../data/elements.csv', function(e,d){
+  coolTable.init(d);
+  var counter=5;
+  interval = setInterval(function() {
+    counter--;
+    if(counter < 0) {
+      coolTable.destroy();
+      coolChart=null;
+      d3.select('body').select(".message").html("💥The table has been destroyed💥. <br><button onClick='window.location.reload()'>Reload</button>")
+      clearInterval(interval)
+    } else {
+      d3.select('body').select(".message").text("This table will self-destruct in in " + counter.toString() + " seconds.")
+    }
+  }, 1000);
+})
+</script>
+</html>
