@@ -601,7 +601,8 @@ var examples = [
       "Screen Shot 2017-09-19 at 8.12.29 AM.png",
       "example.html",
       "index.html",
-      "simpleTable.js"
+      "simpleTable.js",
+      "thumb.png"
     ],
     paths: {
       root: "./examples/0020-webcharts-table/",
@@ -621,6 +622,35 @@ var examples = [
     code: "simpleTable.js",
     results: null,
     tags: "interactive, table",
+    langages: ["javascript"],
+    makeIndex: true
+  },
+  {
+    dir: "0021-webcharts-destroy-table",
+    files: [
+      "README.md",
+      "Screen Shot 2017-09-21 at 8.25.55 AM.png",
+      "example.html",
+      "index.html"
+    ],
+    paths: {
+      root: "./examples/0021-webcharts-destroy-table/",
+      readme: "README.md",
+      index: "index.html",
+      thumb: "thumb.png",
+      data: "elements.csv",
+      code: "example.html",
+      example: "example.html"
+    },
+    readme: {},
+    title: "Destroy a Webcharts Table",
+    languages: "javascript",
+    libraries: ["webcharts"],
+    description: ".",
+    data: "elements.csv",
+    code: "example.html",
+    results: null,
+    tags: "interactive, table, destroy",
     langages: ["javascript"],
     makeIndex: true
   }
