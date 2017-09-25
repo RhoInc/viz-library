@@ -631,7 +631,8 @@ var examples = [
       "README.md",
       "Screen Shot 2017-09-21 at 8.25.55 AM.png",
       "example.html",
-      "index.html"
+      "index.html",
+      "thumb.png"
     ],
     paths: {
       root: "./examples/0021-webcharts-destroy-table/",
