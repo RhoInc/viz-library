@@ -18,8 +18,8 @@ d3.csv("../../data/elements.csv", function(error, data) {
 
   d3.selectAll(".controls input").on("change",function(){
     settings.pagination = d3.select("input.pagination").property("checked")
-    settings.nRowsPerPage = d3.select("input.items").node().value
-    settings.nPageLinksDisplayed = d3.select("input.pages").node().value
+    settings.nRowsPerPage = +d3.select("input.items").node().value
+    settings.nPageLinksDisplayed = +d3.select("input.pages").node().value
     settings.applyCSS = d3.select("input.applyCSS").property("checked")
     console.log(settings)
     d3.select(".chart").selectAll("*").remove()
