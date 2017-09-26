@@ -6,7 +6,7 @@ var publications = [
     keyValues: [{ value: "Agustin Calatroni, Jeremy Wildfire" }],
     links: [
       {
-        href: "http://www.jacionline.org/article/S0091-6749(17)31019-9",
+        href: "http://www.jacionline.org/article/S0091-6749(17)31019-9/abstract",
         type: "paper"
       },
       {
