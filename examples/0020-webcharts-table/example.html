@@ -2,9 +2,10 @@
 <title>Webcharts - Table</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/Webcharts/f7b30af166e96c7aee65f8c0cac16eaf635e1b70/css/webcharts.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/Webcharts/8a2c3584d7ef4dc6eb4ec3edbd49960ca10e3aaa/css/webcharts.css">
 <script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://rawgit.com/RhoInc/Webcharts/f7b30af166e96c7aee65f8c0cac16eaf635e1b70/build/webcharts.js"></script>
+<script src="https://rawgit.com/RhoInc/Webcharts/8a2c3584d7ef4dc6eb4ec3edbd49960ca10e3aaa/build/webcharts.js"></script>
+<script src="xlsx.full.min.js"></script>
 
 <style>
 .controls{
@@ -33,12 +34,13 @@
 
 <body style="padding:1em;">
   <div class="controls">
+    <div>Sortable: <input class="sortable" type="checkbox" checked></input></div>
+    <div>Searchable: <input class="searchable" type="checkbox" checked></input></div>
+    <div>Exportable: <input class="exportable" type="checkbox" checked></input></div>
     <div>Pagination? <input class="pagination" type="checkbox" checked></input> </div>
     <div># of items per page: <input class="items" value=10></input></div>
     <div># of page links: <input class="pages" value=5></input></div>
-    <div>Apply css?: <input class="applyCSS" type="checkbox" checked></input></div>
-    <div>Searchable: <input class="searchable" type="checkbox" checked></input></div>
-    <div>Sortable: <input class="sort" type="checkbox" checked></input></div>
+    <div>Apply CSS?: <input class="applyCSS" type="checkbox" checked></input></div>
   </div>
   <div class="chart"></div>
 </body>
