@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Wide Receiver Passes Defended versus Fantasy Points Allowed by Team</title>
-        <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3.v3.js"></script>
         <style type="text/css">
 
         body {
@@ -62,8 +62,8 @@
         </style>
     </head>
     <body>
-   
-        <div id = 'container'> 
+
+        <div id = 'container'>
             <h1>Wide Receiver Passes Defended versus Fantasy Points Allowed by Team</h1>
             <p>This chart plots wide receiver passes defended against fantasy points allowed by NFL team.  Data courtesy of <a href = 'http://games.espn.go.com/ffl/pointsagainst?positionId=3'>ESPN</a>.</p>
             <br>
@@ -102,7 +102,7 @@
                         return +d.WRTAR;
                     })
                 ]);
-                
+
                 yScale.domain([
                     d3.max(data, function(d) {
                         return +d.WRAVG;

@@ -3,19 +3,19 @@
    <head>
       <meta charset="utf-8">
       <title>Per Capita Income by State</title>
-      <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+      <script type="text/javascript" src="https://d3js.org/d3.v3.js"></script>
       <style type="text/css">
-         
+
         body {
             background-color: white;
             font-family: Helvetica, Arial, sans-serif;
         }
-         
+
         h1 {
             font-size: 24px;
             margin: 0;
         }
-         
+
         p {
             font-size: 14px;
             margin: 10px 0 0 0;
@@ -28,14 +28,14 @@
         circle:hover {
             fill: white;
         }
-         
+
         .axis path,
         .axis line {
             fill: none;
             stroke: white;
             shape-rendering: crispEdges;
         }
-         
+
         .axis text {
             font-family: sans-serif;
             font-size: 11px;
@@ -51,9 +51,9 @@
       </style>
    </head>
    <body>
-   
+
     <h1>Change in Per Capita Income from 2000 to 2014 by State</h1>
-    
+
     <p>This chart plots 2014 per capita income against 2000 per capita income with each dot representing an individual state, as compiled by <a href = 'https://en.wikipedia.org/wiki/List_of_U.S._states_by_income'>Wikipedia's List of U.S. states by income</a>.</p>
     <br>
 
@@ -85,7 +85,7 @@
                     return +d['2014'];
                 })
             ]);
-            
+
             yScale.domain([
                 d3.max(data, function(d) {
                     return +d['2000'];

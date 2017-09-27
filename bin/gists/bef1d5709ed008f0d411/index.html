@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>South Carolina Per Capita Income by County</title>
-        <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3.v3.js"></script>
         <style type="text/css">
 
 
@@ -104,7 +104,7 @@
 
                     //Load in cities data
                     d3.csv("cities.csv", function(data) {
-                        
+
                         //Create a circle for each city
                         svg.selectAll("circle")
                            .data(data)
@@ -122,13 +122,13 @@
                            })
                            .style("fill", "blue")
                            .style("opacity", 0.75);
-                        
+
                     });
-        
+
             });
 
 
-        
+
         </script>
     </body>
 </html>
