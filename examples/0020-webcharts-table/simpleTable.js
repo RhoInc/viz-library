@@ -21,10 +21,12 @@ d3.csv("../../data/elements.csv", function(error, data) {
 
   //Randomize columns.
     d3.select('button.randomize-columns')
-        .on('click', () => {
+        .on('click', function() {
             table.config.cols = Object.keys(data[0])
                 .reverse()
-                .filter(d => Math.random() >= .5);
+                .filter(function(d) {
+                    return Math.random() >= .5;
+                });
             table.config.headers = table.config.cols;
             console.log(table.config.cols);
             table.draw(data);
@@ -32,9 +34,9 @@ d3.csv("../../data/elements.csv", function(error, data) {
 
   //Randomize headers.
     d3.select('button.randomize-headers')
-        .on('click', () => {
+        .on('click', function() {
             table.config.headers = table.config.cols
-                .map(key => {
+                .map(function(key) {
                     const
                         strArr = [];
 
