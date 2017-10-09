@@ -18,6 +18,39 @@ var controls = webCharts.createControls(".chart",	{
 
 d3.csv("../../data/elements.csv", function(error, data) {
   var table = webCharts.createTable(".chart", settings,controls);
+
+  //Randomize columns.
+    d3.select('button.randomize-columns')
+        .on('click', () => {
+            table.config.cols = Object.keys(data[0])
+                .reverse()
+                .filter(d => Math.random() >= .5);
+            table.config.headers = table.config.cols;
+            console.log(table.config.cols);
+            table.draw(data);
+        });
+
+  //Randomize headers.
+    d3.select('button.randomize-headers')
+        .on('click', () => {
+            table.config.headers = table.config.cols
+                .map(key => {
+                    const
+                        strArr = [];
+
+                    for (let i = 0; i < key.length; i++) {
+                        strArr.push(
+                            Math.random() >= .5
+                                ? key.substring(i,i+1).toUpperCase()
+                                : key.substring(i,i+1).toLowerCase());
+                    }
+
+                    return strArr.join('');
+                });
+            console.log(table.config.headers);
+            table.draw(data);
+        });
+
   table.init(data);
 
   d3.selectAll(".controls input").on("change",function(){
