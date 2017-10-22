@@ -1,0 +1,29 @@
+<html lang = 'en'>
+    <head>
+        <title>Clinical Timelines v0.1</title>
+        <meta http-equiv = 'Content-Type' content = 'text/html; charset = utf-8'>
+
+        <script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'></script>
+        <script type = 'text/javascript' src = 'https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'></script>
+        <script type = 'text/javascript' src = 'https://cdn.rawgit.com/RhoInc/clinical-timelines/92b43b5cda24052ccc008264fbea3fc2d507637c/build/clinicalTimelines.js'></script>
+
+        <link type = 'text/css' rel = 'stylesheet' href = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css'>
+    </head>
+
+    <body>
+        <div style = 'position:absolute;top:1em;right:1em;'>
+            <a href = 'https://github.com/RhoInc/clinical-timelines'>
+                <img src = 'GitHub-Mark-32px.png' height = '16' width = '16'>
+            </a>
+        </div>
+
+        <div class = 'chart'></div>
+    </body>
+
+    <script defer>
+        d3.csv('../../data/safetyData/ADTIMELINES.csv', function(data) {
+            clinicalTimelines('.chart', {})
+                .init(data);
+        });
+    </script>
+</html>
