@@ -2,8 +2,8 @@ library(tidyverse)
 set.seed(2357)
 
 ### Input data
-    DM <- read.csv('DM.csv', colClasses = 'character') %>% select(USUBJID, SAFFL, RFSTDTC)
-    AEs <- read.csv('adverseEvents.csv', colClasses = 'character')
+    DM <- read.csv('../SDTM/DM.csv', colClasses = 'character') %>% select(USUBJID, SAFFL, RFSTDTC)
+    AEs <- read.csv('../raw/adverseEvents.csv', colClasses = 'character')
 
 ### Output data
     AE <- NULL
@@ -59,7 +59,7 @@ set.seed(2357)
         select(-one)
     write.csv(
         AE,
-        'AE.csv',
+        '../SDTM/AE.csv',
         row.names = FALSE,
         na = ''
     )

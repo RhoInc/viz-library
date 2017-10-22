@@ -68,6 +68,6 @@ library(XML)
                 LBSTRESU = units_si)
         write.csv(
             labs2,
-            'labs.csv',
+            '../raw/labs.csv',
             row.names = FALSE,
             na = '')
