@@ -1,0 +1,22 @@
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 3.3.3 
+Joining, by = "USUBJID"
+Joining, by = "USUBJID"
+Joining, by = "USUBJID"
+Warning message:
+package 'bindrcpp' was built under R version 3.3.3 
+Joining, by = "USUBJID"
+> proc.time()
+   user  system elapsed 
+   1.20    0.03    1.23 

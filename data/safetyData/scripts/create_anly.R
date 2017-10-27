@@ -1,4 +1,4 @@
-library(tidyverse)
+library(dplyr)
 
 ### Input data
     DM <- read.csv('../SDTM/DM.csv', colClasses = 'character')
@@ -38,52 +38,60 @@ library(tidyverse)
             )
             
     ### ADTIMELINES
-        ADTIMELINES = rbind(
-            select(DM, USUBJID) %>%
-                mutate(
-                    DOMAIN = 'Enrollment',
-                    SEQ = 1,
-                    STDY = 1,
-                    ENDY = 1
-                ) %>%
-                select(USUBJID, DOMAIN, SEQ, STDY, ENDY),
-            select(AE, USUBJID, AESTDY, AEENDY, AESEQ) %>%
-                mutate(
-                    DOMAIN = 'Adverse Events'
-                ) %>%
-                rename(
-                    SEQ = AESEQ,
-                    STDY = AESTDY,
-                    ENDY = AEENDY
-                ) %>%
-                select(USUBJID, DOMAIN, SEQ, STDY, ENDY),
-            select(CM, USUBJID, CMSTDY, CMENDY, CMSEQ) %>%
-                mutate(
-                    DOMAIN = 'Concomitant Medications'
-                ) %>%
-                rename(
-                    SEQ = CMSEQ,
-                    STDY = CMSTDY,
-                    ENDY = CMENDY
-                ) %>%
-                select(USUBJID, DOMAIN, SEQ, STDY, ENDY),
-            filter(SV, VISIT == 'Visit 1') %>%
-                mutate(
-                    DOMAIN = 'Randomization',
-                    SEQ = 1,
-                    STDY = SVDY,
-                    ENDY = SVDY
-                ) %>%
-                select(USUBJID, DOMAIN, SEQ, STDY, ENDY),
-            filter(SV, VISIT == 'End of Study') %>%
-                mutate(
-                    DOMAIN = 'Study Completion',
-                    SEQ = 1,
-                    STDY = SVDY,
-                    ENDY = SVDY
-                ) %>%
-                select(USUBJID, DOMAIN, SEQ, STDY, ENDY)
-        ) %>%
+        ADTIMELINES = DM %>%
+            full_join(
+                rbind(
+                    select(DM, USUBJID) %>%
+                        mutate(
+                            DOMAIN = 'Enrollment',
+                            SEQ = 1,
+                            STDY = 1,
+                            ENDY = 1,
+                            ONGO = NA
+                        ) %>%
+                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO),
+                    select(AE, USUBJID, AESTDY, AEENDY, AESEQ, AEONGO) %>%
+                        mutate(
+                            DOMAIN = 'Adverse Events'
+                        ) %>%
+                        rename(
+                            STDY = AESTDY,
+                            ENDY = AEENDY,
+                            SEQ = AESEQ,
+                            ONGO = AEONGO
+                        ) %>%
+                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO),
+                    select(CM, USUBJID, CMSTDY, CMENDY, CMSEQ, CMONGO) %>%
+                        mutate(
+                            DOMAIN = 'Concomitant Medications'
+                        ) %>%
+                        rename(
+                            STDY = CMSTDY,
+                            ENDY = CMENDY,
+                            SEQ = CMSEQ,
+                            ONGO = CMONGO
+                        ) %>%
+                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO),
+                    filter(SV, VISIT == 'Visit 1') %>%
+                        mutate(
+                            DOMAIN = 'Randomization',
+                            SEQ = 1,
+                            STDY = SVDY,
+                            ENDY = SVDY,
+                            ONGO = NA
+                        ) %>%
+                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO),
+                    filter(SV, VISIT == 'End of Study') %>%
+                        mutate(
+                            DOMAIN = 'Study Completion',
+                            SEQ = 1,
+                            STDY = SVDY,
+                            ENDY = SVDY,
+                            ONGO = NA
+                        ) %>%
+                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO)
+                )
+            ) %>%
         arrange(USUBJID, DOMAIN, SEQ)
         write.csv(
             ADTIMELINES,

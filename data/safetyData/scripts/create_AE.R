@@ -23,6 +23,9 @@ set.seed(2357)
     AEOUT <- c('RECOVERED', 'RESOLVED, RECOVERED', 'RESOLVED WITHOUT SEQUELAE', 'RESOLVED WITH SEQUELAE')
     AEOUTprobs <- c(.4, .3, .2, .1)
     
+    AEONGO <- c('N', 'Y')
+    AEONGOprobs <- c(.5, .5)
+
     for (i in 1:nrow(DM)) {
         id <- DM[i,]
         id$nAEs <- sample(AEsample, 1)
@@ -39,6 +42,7 @@ set.seed(2357)
                 sampledAEs[j,'AESEV'] = sample(AESEV, 1, prob = AESEVprobs)
                 sampledAEs[j,'AEREL'] = sample(AEREL, 1, prob = AERELprobs)
                 sampledAEs[j,'AEOUT'] = sample(AEOUT, 1, prob = AEOUTprobs)
+                sampledAEs[j,'AEONGO'] = sample(AEONGO, 1, prob = AEONGOprobs)
             }
             
             AE <- plyr::rbind.fill(AE, merge(id, sampledAEs, all = TRUE))
