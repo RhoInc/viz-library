@@ -17,6 +17,9 @@ set.seed(2357)
     CMROUTE <- c('orally', 'intravenously', 'subcutaneously', 'sublingually', 'topically')
     CMROUTEprobs <- c(.6, .1, .1, .1, .1)
     
+    CMONGO <- c('N', 'Y')
+    CMONGOprobs <- c(.5, .5)
+    
     for (i in 1:nrow(DM)) {
         id <- DM[i,]
         id$nCMs <- sample(CMsample, 1)
@@ -32,8 +35,9 @@ set.seed(2357)
                 sampledCMs[j,'CMINDC'] = "I'm not a doctor, I'm a data guru."
                 sampledCMs[j,'CMDOSE'] = sample(CMDOSE, 1, prob = CMDOSEprobs)
                 sampledCMs[j,'CMROUTE'] = sample(CMROUTE, 1, prob = CMROUTEprobs)
+                sampledCMs[j,'CMONGO'] = sample(CMONGO, 1, prob = CMONGOprobs)
             }
-            
+
             CM <- plyr::rbind.fill(CM, merge(id, sampledCMs, all = TRUE))
         }
     }
