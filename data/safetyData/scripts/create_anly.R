@@ -36,7 +36,7 @@ library(dplyr)
                 row.names = FALSE,
                 na = ''
             )
-            
+
     ### ADTIMELINES
         ADTIMELINES = DM %>%
             full_join(
@@ -92,6 +92,9 @@ library(dplyr)
                         select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO)
                 )
             ) %>%
+        mutate(
+            DETAILS = paste('This mark definitely represents the', DOMAIN, 'domain', sep = ' ')
+        ) %>%
         arrange(USUBJID, DOMAIN, SEQ)
         write.csv(
             ADTIMELINES,
