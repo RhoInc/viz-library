@@ -1,4 +1,4 @@
-"USUBJID","SITEID","SITE","AGE","SEX","RACE","ARM","RFSTDTC","SAFFL","DOMAIN","STDY","ENDY","SEQ","ONGO","DETAILS"
+"USUBJID","SITEID","SITE","AGE","SEX","RACE","ARM","RFSTDTC","SAFFL","DOMAIN","STDY","ENDY","SEQ","ONGO","TOOLTIP"
 "01-001","01","Site 01","30","F","Other/Mixed","Placebo","2015-05-21","Y","Adverse Events","57","86","1","N","This mark definitely represents the Adverse Events domain"
 "01-001","01","Site 01","30","F","Other/Mixed","Placebo","2015-05-21","Y","Concomitant Medications","57","86","1","Y","This mark definitely represents the Concomitant Medications domain"
 "01-001","01","Site 01","30","F","Other/Mixed","Placebo","2015-05-21","Y","Enrollment","1","1","1",,"This mark definitely represents the Enrollment domain"
