@@ -93,7 +93,7 @@ library(dplyr)
                 )
             ) %>%
         mutate(
-            DETAILS = paste('This mark definitely represents the', DOMAIN, 'domain', sep = ' ')
+            TOOLTIP = paste('This mark definitely represents the', DOMAIN, 'domain', sep = ' ')
         ) %>%
         arrange(USUBJID, DOMAIN, SEQ)
         write.csv(
