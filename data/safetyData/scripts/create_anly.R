@@ -41,55 +41,71 @@ library(dplyr)
         ADTIMELINES = DM %>%
             full_join(
                 rbind(
-                    select(DM, USUBJID) %>%
+                    select(DM, USUBJID, RFSTDTC) %>%
                         mutate(
                             DOMAIN = 'Enrollment',
                             SEQ = 1,
                             STDY = 1,
                             ENDY = 1,
+                            ENDT = RFSTDTC,
                             ONGO = NA
                         ) %>%
-                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO),
-                    select(AE, USUBJID, AESTDY, AEENDY, AESEQ, AEONGO) %>%
+                        rename(
+                            STDT = RFSTDTC
+                        ) %>%
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO),
+                    select(AE, USUBJID, AESTDT, AESTDY, AEENDT, AEENDY, AESEQ, AEONGO) %>%
                         mutate(
                             DOMAIN = 'Adverse Events'
                         ) %>%
                         rename(
+                            STDT = AESTDT,
                             STDY = AESTDY,
+                            ENDT = AEENDT,
                             ENDY = AEENDY,
                             SEQ = AESEQ,
                             ONGO = AEONGO
                         ) %>%
-                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO),
-                    select(CM, USUBJID, CMSTDY, CMENDY, CMSEQ, CMONGO) %>%
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO),
+                    select(CM, USUBJID, CMSTDT, CMSTDY, CMENDT, CMENDY, CMSEQ, CMONGO) %>%
                         mutate(
                             DOMAIN = 'Concomitant Medications'
                         ) %>%
                         rename(
+                            STDT = CMSTDT,
                             STDY = CMSTDY,
+                            ENDT = CMENDT,
                             ENDY = CMENDY,
                             SEQ = CMSEQ,
                             ONGO = CMONGO
                         ) %>%
-                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO),
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO),
                     filter(SV, VISIT == 'Visit 1') %>%
                         mutate(
                             DOMAIN = 'Randomization',
                             SEQ = 1,
                             STDY = SVDY,
                             ENDY = SVDY,
+                            ENDT = SVDT,
                             ONGO = NA
                         ) %>%
-                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO),
+                        rename(
+                            STDT = SVDT
+                        ) %>%
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO),
                     filter(SV, VISIT == 'End of Study') %>%
                         mutate(
                             DOMAIN = 'Study Completion',
                             SEQ = 1,
                             STDY = SVDY,
                             ENDY = SVDY,
+                            ENDT = SVDT,
                             ONGO = NA
                         ) %>%
-                        select(USUBJID, DOMAIN, STDY, ENDY, SEQ, ONGO)
+                        rename(
+                            STDT = SVDT
+                        ) %>%
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO)
                 )
             ) %>%
         mutate(
