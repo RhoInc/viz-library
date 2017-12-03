@@ -1,4 +1,4 @@
-"VSCAT","VSTEST","VSSTNRLO","VSSTNRHI","VSSTRESU","USUBJID","VISITNUM","VISIT","LBDY","LBDT","VSSTRESN"
+"VSCAT","VSTEST","VSSTNRLO","VSSTNRHI","VSSTRESU","USUBJID","VISITNUM","VISIT","VSDY","VSDT","VSSTRESN"
 "Vital Signs","Diastolic Blood Pressure","60","80","mmHg","01-001","0","Screening","1","2015-05-21",69.95298005409
 "Vital Signs","Heart Rate","50","80","beats/minute","01-001","0","Screening","1","2015-05-21",57.7842089427715
 "Vital Signs","Respiratory Rate","16","20","breaths/minute","01-001","0","Screening","1","2015-05-21",15.9761668039934

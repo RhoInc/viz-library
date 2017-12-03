@@ -96,9 +96,9 @@ exports.makeExampleIndex = function(ex) {
         .append("span")
         .html(
           d =>
-            (d == "data" || d == "results" || d == "code"
+            d == "data" || d == "results" || d == "code"
               ? "<a href='" + ex[d] + "'>" + ex[d] + "</a>"
-              : ex[d])
+              : ex[d]
         );
 
       // parse any extra readme content
@@ -127,9 +127,8 @@ exports.makeExampleIndex = function(ex) {
         ex.paths.example +
         '" width=960></div>';
       var exampleExt = ex.paths.example.split(".").pop();
-      var exampleContent_html = exampleExt == "html"
-        ? webExampleContent
-        : staticExampleContent;
+      var exampleContent_html =
+        exampleExt == "html" ? webExampleContent : staticExampleContent;
 
       window.d3
         .select("body")

@@ -1,8 +1,8 @@
-.Rout
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.svn
+*.Rout
+*.Rproj.user
+*.Rhistory
+*.RData
+*.Ruserdata
+*.svn
 node_modules
 local
