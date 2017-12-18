@@ -16,28 +16,20 @@ var dataFiles = [
     cols: 5
   },
   {
-    local_path: "F:/GitHub/viz-library/data/discrete_scores.csv",
-    filename: "discrete_scores.csv",
-    ext: "csv",
-    rel_path: "./data/discrete_scores.csv",
-    rows: 78,
-    cols: 2
-  },
-  {
-    local_path: "F:/GitHub/viz-library/data/elements.csv",
-    filename: "elements.csv",
-    ext: "csv",
-    rel_path: "./data/elements.csv",
-    rows: 103,
-    cols: 10
-  },
-  {
     local_path: "F:/GitHub/viz-library/data/climate_data.csv",
     filename: "climate_data.csv",
     ext: "csv",
     rel_path: "./data/climate_data.csv",
     rows: 95,
     cols: 10
+  },
+  {
+    local_path: "F:/GitHub/viz-library/data/discrete_scores.csv",
+    filename: "discrete_scores.csv",
+    ext: "csv",
+    rel_path: "./data/discrete_scores.csv",
+    rows: 78,
+    cols: 2
   },
   {
     local_path: "F:/GitHub/viz-library/data/hys_law.csv",
@@ -56,6 +48,22 @@ var dataFiles = [
     cols: 5
   },
   {
+    local_path: "F:/GitHub/viz-library/data/elements.csv",
+    filename: "elements.csv",
+    ext: "csv",
+    rel_path: "./data/elements.csv",
+    rows: 103,
+    cols: 10
+  },
+  {
+    local_path: "F:/GitHub/viz-library/data/queries/queries.csv",
+    filename: "queries.csv",
+    ext: "csv",
+    rel_path: "./data/queries/queries.csv",
+    rows: 5000,
+    cols: 11
+  },
+  {
     local_path: "F:/GitHub/viz-library/data/queries/forms.csv",
     filename: "forms.csv",
     ext: "csv",
@@ -70,14 +78,6 @@ var dataFiles = [
     rel_path: "./data/queries/fields.csv",
     rows: 55,
     cols: 3
-  },
-  {
-    local_path: "F:/GitHub/viz-library/data/queries/queries.csv",
-    filename: "queries.csv",
-    ext: "csv",
-    rel_path: "./data/queries/queries.csv",
-    rows: 5000,
-    cols: 11
   },
   {
     local_path: "F:/GitHub/viz-library/data/safetyData-queries/ADAE.csv",
@@ -104,6 +104,14 @@ var dataFiles = [
     cols: 23
   },
   {
+    local_path: "F:/GitHub/viz-library/data/safetyData/ADTIMELINES.csv",
+    filename: "ADTIMELINES.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/ADTIMELINES.csv",
+    rows: 1067,
+    cols: 17
+  },
+  {
     local_path: "F:/GitHub/viz-library/data/safetyData/ADBDS.csv",
     filename: "ADBDS.csv",
     ext: "csv",
@@ -120,12 +128,12 @@ var dataFiles = [
     cols: 21
   },
   {
-    local_path: "F:/GitHub/viz-library/data/safetyData/ADTIMELINES.csv",
-    filename: "ADTIMELINES.csv",
+    local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/AE.csv",
+    filename: "AE.csv",
     ext: "csv",
-    rel_path: "./data/safetyData/ADTIMELINES.csv",
-    rows: 1067,
-    cols: 17
+    rel_path: "./data/safetyData/SDTM/AE.csv",
+    rows: 356,
+    cols: 15
   },
   {
     local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/CM.csv",
@@ -136,14 +144,6 @@ var dataFiles = [
     cols: 13
   },
   {
-    local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/LB.csv",
-    filename: "LB.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/SDTM/LB.csv",
-    rows: 17280,
-    cols: 11
-  },
-  {
     local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/DM.csv",
     filename: "DM.csv",
     ext: "csv",
@@ -152,12 +152,12 @@ var dataFiles = [
     cols: 9
   },
   {
-    local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/SV.csv",
-    filename: "SV.csv",
+    local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/LB.csv",
+    filename: "LB.csv",
     ext: "csv",
-    rel_path: "./data/safetyData/SDTM/SV.csv",
-    rows: 1080,
-    cols: 5
+    rel_path: "./data/safetyData/SDTM/LB.csv",
+    rows: 17280,
+    cols: 11
   },
   {
     local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/VS.csv",
@@ -168,12 +168,12 @@ var dataFiles = [
     cols: 11
   },
   {
-    local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/AE.csv",
-    filename: "AE.csv",
+    local_path: "F:/GitHub/viz-library/data/safetyData/SDTM/SV.csv",
+    filename: "SV.csv",
     ext: "csv",
-    rel_path: "./data/safetyData/SDTM/AE.csv",
-    rows: 356,
-    cols: 15
+    rel_path: "./data/safetyData/SDTM/SV.csv",
+    rows: 1080,
+    cols: 5
   },
   {
     local_path: "F:/GitHub/viz-library/data/safetyData/raw/adverseEvents.csv",
