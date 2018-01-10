@@ -96,10 +96,18 @@ var dataFiles = [
     cols: 20
   },
   {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/testData/ADTIMELINES_missingAdded.csv",
-    filename: "ADTIMELINES_missingAdded.csv",
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/testData/ADTIMELINES_noDays.csv",
+    filename: "ADTIMELINES_noDays.csv",
     ext: "csv",
-    rel_path: "./data/testData/ADTIMELINES_missingAdded.csv",
+    rel_path: "./data/testData/ADTIMELINES_noDays.csv",
+    rows: 1067,
+    cols: 17
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/testData/ADTIMELINES_partialMissing.csv",
+    filename: "ADTIMELINES_partialMissing.csv",
+    ext: "csv",
+    rel_path: "./data/testData/ADTIMELINES_partialMissing.csv",
     rows: 1067,
     cols: 17
   },
@@ -112,20 +120,20 @@ var dataFiles = [
     cols: 23
   },
   {
-    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/ADBDS.csv",
-    filename: "ADBDS.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/ADBDS.csv",
-    rows: 22695,
-    cols: 19
-  },
-  {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/ADCM.csv",
     filename: "ADCM.csv",
     ext: "csv",
     rel_path: "./data/safetyData/ADCM.csv",
     rows: 337,
     cols: 21
+  },
+  {
+    local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/ADBDS.csv",
+    filename: "ADBDS.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/ADBDS.csv",
+    rows: 22695,
+    cols: 19
   },
   {
     local_path: "/Users/jwildfire/Sites/github/viz-library/data/safetyData/ADTIMELINES.csv",
