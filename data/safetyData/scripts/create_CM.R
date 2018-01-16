@@ -53,7 +53,7 @@ set.seed(2357)
         group_by(USUBJID) %>%
         mutate(CMSEQ = cumsum(one)) %>%
         ungroup() %>%
-        select(-one)
+        select(USUBJID, CMSEQ, CMSTDT, CMSTDY, CMENDT, CMENDY, CMTRT, PREFTERM, ATCTEXT2, CMONGO, CMDOSE, CMROUTE, CMINDC)
     write.csv(
         CM,
         '../SDTM/CM.csv',

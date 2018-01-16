@@ -60,7 +60,7 @@ set.seed(2357)
         group_by(USUBJID) %>%
         mutate(AESEQ = cumsum(one)) %>%
         ungroup() %>%
-        select(-one)
+        select(USUBJID, AESEQ, AESTDT, AESTDY, AEENDT, AEENDY, AETERM, AEDECOD, AEBODSYS, AESER, AEONGO, AESEV, AEREL, AEOUT)
     write.csv(
         AE,
         '../SDTM/AE.csv',

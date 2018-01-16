@@ -24,7 +24,8 @@ set.seed(2357)
     }
 
     LB <- LB %>%
-        arrange(USUBJID, VISITNUM, LBTEST)
+        arrange(USUBJID, VISITNUM, LBTEST) %>%
+        select(USUBJID, VISIT, VISITNUM, LBDT, LBDY, LBCAT, LBTEST, LBSTRESU, LBSTRESN, LBSTNRLO, LBSTNRHI)
 
     write.csv(
         LB,

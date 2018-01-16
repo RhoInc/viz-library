@@ -13,7 +13,10 @@ library(dplyr)
         ADAE <- full_join(DM, AE) %>%
             arrange(USUBJID, AESEQ) %>%
             rename(
+                ASEQ = AESEQ,
+                ASTDT = AESTDT,
                 ASTDY = AESTDY,
+                AENDT = AEENDT,
                 AENDY = AEENDY
             )
             write.csv(
@@ -27,8 +30,11 @@ library(dplyr)
         ADCM <- full_join(DM, CM) %>%
             arrange(USUBJID, CMSEQ) %>%
             rename(
+                ASEQ = CMSEQ,
+                ASTDT = CMSTDT,
                 ASTDY = CMSTDY,
-                CMNDY = CMENDY
+                AENDT = CMENDT,
+                AENDY = CMENDY
             )
             write.csv(
                 ADCM,
@@ -133,7 +139,7 @@ library(dplyr)
                 return(name)
         })
         LBVS <- plyr::rbind.fill(LB,VS) %>%
-            rename(VISITN = VISITNUM)
+            mutate(VISITN = VISITNUM)
         ADBDS <- full_join(DM, LBVS) %>%
             arrange(USUBJID, VISITN, CAT, TEST
         )

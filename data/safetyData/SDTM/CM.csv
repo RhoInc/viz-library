@@ -1,292 +1,292 @@
-"USUBJID","CMTRT","PREFTERM","ATCTEXT2","CMSTDY","CMENDY","CMINDC","CMDOSE","CMROUTE","CMONGO","CMSTDT","CMENDT","CMSEQ"
-"01-001","Restoril","temazepam","CENTRAL NERVOUS SYSTEM DRUGS",57,86,"I'm not a doctor, I'm a data guru.",2,"sublingually","Y",2015-07-16,2015-08-14,1
-"01-003","ANTARA","fenofibrate micronized","HEART AND CIRCULATORY DRUGS",113,343,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-12-04,2016-07-21,1
-"01-003","Optipranolol","metipranolol soln","TOPICAL PRODUCTS",126,269,"I'm not a doctor, I'm a data guru.",3,"orally","N",2015-12-17,2016-05-08,2
-"01-003","LITHIUM CITRATE","lithium citrate","CENTRAL NERVOUS SYSTEM DRUGS",182,339,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-02-11,2016-07-17,3
-"01-004","NORVIR","ritonavir","ANTI-INFECTIVE AGENTS",173,343,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2015-07-04,2015-12-21,1
-"01-009","FEMARA","letrozole","CANCER DRUGS",81,139,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-02-10,2016-04-08,1
-"01-009","ECONAZOLE","econazole","TOPICAL PRODUCTS",95,316,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2016-02-24,2016-10-02,2
-"01-009","PEDIATRIC MULTIVITAMINS/FLUORIDE/IRON","pediatric multivitamins/fluoride/iron","SUPPLEMENTS",220,312,"I'm not a doctor, I'm a data guru.",1,"subcutaneously","Y",2016-06-28,2016-09-28,3
-"01-012","ISONIAZID TABS","isoniazid tabs","ANTI-INFECTIVE AGENTS",6,18,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-04-24,2015-05-06,1
-"01-012","Ativan","lorazepam","CENTRAL NERVOUS SYSTEM DRUGS",88,298,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-07-15,2016-02-10,2
-"01-012","Coreg","carvedilol","HEART AND CIRCULATORY DRUGS",305,313,"I'm not a doctor, I'm a data guru.",1,"sublingually","Y",2016-02-17,2016-02-25,3
-"01-013","MENEST","esterified estrogens","HORMONES, DIABETES AND RELATED DRUGS",83,158,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-10-05,2015-12-19,1
-"01-013","RESTORIL 7.5 mg","temazepam","CENTRAL NERVOUS SYSTEM DRUGS",215,311,"I'm not a doctor, I'm a data guru.",5,"intravenously","N",2016-02-14,2016-05-20,2
-"01-013","PHENYTEK","phenytoin sodium extended","NEUROMUSCULAR DRUGS",247,281,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-03-17,2016-04-20,3
-"01-014","SPECTRACEF","cefditoren","ANTI-INFECTIVE AGENTS",75,149,"I'm not a doctor, I'm a data guru.",3,"orally","N",2016-03-13,2016-05-26,1
-"01-014","Modicon","norethindrone/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",150,253,"I'm not a doctor, I'm a data guru.",1,"subcutaneously","Y",2016-05-27,2016-09-07,2
-"01-014","Proamatine","midodrine","HEART AND CIRCULATORY DRUGS",214,217,"I'm not a doctor, I'm a data guru.",4,"intravenously","N",2016-07-30,2016-08-02,3
-"01-014","Betagan","levobunolol soln","TOPICAL PRODUCTS",237,302,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-08-22,2016-10-26,4
-"01-016","Valium","diazepam","CENTRAL NERVOUS SYSTEM DRUGS",32,108,"I'm not a doctor, I'm a data guru.",3,"subcutaneously","N",2016-01-21,2016-04-06,1
-"01-016","NILANDRON","nilutamide","CANCER DRUGS",88,306,"I'm not a doctor, I'm a data guru.",3,"orally","N",2016-03-17,2016-10-21,2
-"01-016","DIFFERIN","adapalene","TOPICAL PRODUCTS",125,287,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2016-04-23,2016-10-02,3
-"01-016","Keflex","cephalexin","ANTI-INFECTIVE AGENTS",260,313,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-09-05,2016-10-28,4
-"01-017","LITHIUM CITRATE","lithium citrate","CENTRAL NERVOUS SYSTEM DRUGS",90,212,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2015-05-12,2015-09-11,1
-"01-017","EPIVIR-HBV","lamivudine","ANTI-INFECTIVE AGENTS",262,266,"I'm not a doctor, I'm a data guru.",5,"topically","Y",2015-10-31,2015-11-04,2
-"01-019","SINGuLAIR","montelukast","RESPIRATORY AGENTS",33,107,"I'm not a doctor, I'm a data guru.",1,"topically","N",2015-07-28,2015-10-10,1
-"01-019","Sandimmune","cyclosporine","MISCELLANEOUS CATEGORIES",157,287,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-11-29,2016-04-07,2
-"01-019","Mysoline","primidone","NEUROMUSCULAR DRUGS",166,206,"I'm not a doctor, I'm a data guru.",1,"intravenously","N",2015-12-08,2016-01-17,3
-"01-019","Ciloxan","ciprofloxacin soln","TOPICAL PRODUCTS",224,263,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2016-02-04,2016-03-14,4
-"01-020","SuPRAx","cefixime","ANTI-INFECTIVE AGENTS",160,252,"I'm not a doctor, I'm a data guru.",4,"topically","Y",2015-10-01,2016-01-01,1
-"01-020","ERYTHROMYCIN ETHYLSUCCINATE","erythromycin ethylsuccinate","ANTI-INFECTIVE AGENTS",177,233,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2015-10-18,2015-12-13,2
-"01-020","LuNESTA","eszopiclone","CENTRAL NERVOUS SYSTEM DRUGS",246,250,"I'm not a doctor, I'm a data guru.",5,"orally","Y",2015-12-26,2015-12-30,3
-"01-020","DILAuDID-5","hydromorphone","PAIN RELIEF DRUGS",297,312,"I'm not a doctor, I'm a data guru.",4,"orally","N",2016-02-15,2016-03-01,4
-"01-021","ORTHO TRI-CYCLEN LO","norgestimate/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",26,104,"I'm not a doctor, I'm a data guru.",3,"subcutaneously","N",2015-10-29,2016-01-15,1
-"01-021","Modicon","norethindrone/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",89,303,"I'm not a doctor, I'm a data guru.",3,"orally","N",2015-12-31,2016-08-01,2
-"01-021","OxyIR","oxycodone caps","PAIN RELIEF DRUGS",110,233,"I'm not a doctor, I'm a data guru.",4,"sublingually","N",2016-01-21,2016-05-23,3
-"01-021","Lidex","fluocinonide","TOPICAL PRODUCTS",119,168,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","N",2016-01-30,2016-03-19,4
-"01-023","Mysoline","primidone","NEUROMUSCULAR DRUGS",153,322,"I'm not a doctor, I'm a data guru.",1,"orally","N",2016-03-01,2016-08-17,1
-"01-023","ANTARA","fenofibrate micronized","HEART AND CIRCULATORY DRUGS",163,355,"I'm not a doctor, I'm a data guru.",5,"subcutaneously","N",2016-03-11,2016-09-19,2
-"01-023","Feldene","piroxicam","PAIN RELIEF DRUGS",186,196,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-04-03,2016-04-13,3
-"01-023","ZITHROMAx packets, 1 g","azithromycin","ANTI-INFECTIVE AGENTS",216,353,"I'm not a doctor, I'm a data guru.",1,"topically","N",2016-05-03,2016-09-17,4
-"01-024","TRIZIVIR","abacavir/lamivudine/zidovudine","ANTI-INFECTIVE AGENTS",17,130,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-04-15,2015-08-06,1
-"01-024","K-PHOS","potassium phosphate monobasic","SUPPLEMENTS",163,350,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-09-08,2016-03-13,2
-"01-024","CLINDESSE","clindamycin crm","GENITOURINARY DRUGS",255,286,"I'm not a doctor, I'm a data guru.",5,"topically","Y",2015-12-09,2016-01-09,3
-"01-024","Temovate","clobetasol","TOPICAL PRODUCTS",267,360,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-12-21,2016-03-23,4
-"01-024","PREMPRO","conjugated estrogens/medroxyprogesterone","HORMONES, DIABETES AND RELATED DRUGS",289,293,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-01-12,2016-01-16,5
-"01-026","DOXEPIN","doxepin","CENTRAL NERVOUS SYSTEM DRUGS",133,135,"I'm not a doctor, I'm a data guru.",1,"topically","Y",2015-07-01,2015-07-03,1
-"01-026","LAMICTAL Starter Kit","lamotrigine","NEUROMUSCULAR DRUGS",191,203,"I'm not a doctor, I'm a data guru.",3,"orally","N",2015-08-28,2015-09-09,2
-"01-026","Calan","verapamil","HEART AND CIRCULATORY DRUGS",357,360,"I'm not a doctor, I'm a data guru.",5,"orally","Y",2016-02-10,2016-02-13,3
-"01-026","Ciloxan","ciprofloxacin soln","TOPICAL PRODUCTS",358,358,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-02-11,2016-02-11,4
-"01-027","ABILIFY","aripiprazole","CENTRAL NERVOUS SYSTEM DRUGS",10,100,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-03-17,2015-06-15,1
-"01-027","Norpramin","desipramine","CENTRAL NERVOUS SYSTEM DRUGS",23,48,"I'm not a doctor, I'm a data guru.",3,"orally","N",2015-03-30,2015-04-24,2
-"01-027","Prelone","prednisolone syrup","HORMONES, DIABETES AND RELATED DRUGS",137,159,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-07-22,2015-08-13,3
-"01-027","HALOPERIDOL LACTATE ORAL SOLN","haloperidol lactate oral soln","CENTRAL NERVOUS SYSTEM DRUGS",255,345,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-11-17,2016-02-15,4
-"01-028","Lamictal","lamotrigine","NEUROMUSCULAR DRUGS",53,166,"I'm not a doctor, I'm a data guru.",5,"sublingually","N",2015-07-23,2015-11-13,1
-"01-028","Elocon","mometasone","TOPICAL PRODUCTS",114,329,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-09-22,2016-04-24,2
-"02-002","Drysol","aluminum chloride soln","TOPICAL PRODUCTS",294,344,"I'm not a doctor, I'm a data guru.",3,"intravenously","N",2016-07-10,2016-08-29,1
-"02-003","DILAuDID-5","hydromorphone","PAIN RELIEF DRUGS",13,353,"I'm not a doctor, I'm a data guru.",5,"orally","Y",2015-05-09,2016-04-13,1
-"02-003","ACETAZOLAMIDE","acetazolamide","HEART AND CIRCULATORY DRUGS",267,308,"I'm not a doctor, I'm a data guru.",5,"intravenously","Y",2016-01-18,2016-02-28,2
-"02-007","EPIVIR","lamivudine","ANTI-INFECTIVE AGENTS",7,222,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2015-11-24,2016-06-26,1
-"02-007","xanax","alprazolam","CENTRAL NERVOUS SYSTEM DRUGS",174,274,"I'm not a doctor, I'm a data guru.",5,"intravenously","Y",2016-05-09,2016-08-17,2
-"02-007","Ortho Tri-Cyclen","norgestimate/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",189,246,"I'm not a doctor, I'm a data guru.",3,"orally","N",2016-05-24,2016-07-20,3
-"02-007","Duoneb","ipratropium/albuterol sulfate","RESPIRATORY AGENTS",210,320,"I'm not a doctor, I'm a data guru.",3,"sublingually","Y",2016-06-14,2016-10-02,4
-"02-009","Pravachol","pravastatin","HEART AND CIRCULATORY DRUGS",4,185,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2015-08-20,2016-02-17,1
-"02-009","HuMuLIN 50/50","insulin isophane/regular","HORMONES, DIABETES AND RELATED DRUGS",35,53,"I'm not a doctor, I'm a data guru.",5,"intravenously","Y",2015-09-20,2015-10-08,2
-"02-009","uniretic","moexipril/hydrochlorothiazide","HEART AND CIRCULATORY DRUGS",159,196,"I'm not a doctor, I'm a data guru.",1,"orally","N",2016-01-22,2016-02-28,3
-"02-009","Zebeta","bisoprolol","HEART AND CIRCULATORY DRUGS",246,363,"I'm not a doctor, I'm a data guru.",4,"topically","N",2016-04-18,2016-08-13,4
-"02-010","EMCYT","estramustine","CANCER DRUGS",15,355,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-01-26,2016-01-01,1
-"02-010","REGRANEx","becaplermin","TOPICAL PRODUCTS",68,220,"I'm not a doctor, I'm a data guru.",2,"intravenously","Y",2015-03-20,2015-08-19,2
-"02-010","LEuKERAN","chlorambucil","CANCER DRUGS",174,266,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-07-04,2015-10-04,3
-"02-012","REGRANEx","becaplermin","TOPICAL PRODUCTS",169,227,"I'm not a doctor, I'm a data guru.",2,"intravenously","N",2016-03-25,2016-05-22,1
-"02-013","ACTOS","pioglitazone","HORMONES, DIABETES AND RELATED DRUGS",72,240,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-05-19,2015-11-03,1
-"02-013","Demulen","ethynodiol/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",174,314,"I'm not a doctor, I'm a data guru.",3,"subcutaneously","Y",2015-08-29,2016-01-16,2
-"02-013","ALBENZA","albendazole","ANTI-INFECTIVE AGENTS",306,332,"I'm not a doctor, I'm a data guru.",3,"orally","N",2016-01-08,2016-02-03,3
-"02-013","MALARONE","atovaquone/proguanil","ANTI-INFECTIVE AGENTS",318,339,"I'm not a doctor, I'm a data guru.",1,"subcutaneously","Y",2016-01-20,2016-02-10,4
-"02-013","METROGEL 1%","metronidazole","TOPICAL PRODUCTS",354,363,"I'm not a doctor, I'm a data guru.",4,"topically","Y",2016-02-25,2016-03-05,5
-"02-014","Ativan","lorazepam","CENTRAL NERVOUS SYSTEM DRUGS",134,191,"I'm not a doctor, I'm a data guru.",1,"topically","N",2015-08-24,2015-10-20,1
-"02-014","EMCYT","estramustine","CANCER DRUGS",177,244,"I'm not a doctor, I'm a data guru.",2,"intravenously","Y",2015-10-06,2015-12-12,2
-"02-014","ExELON caps, soln","rivastigmine","CENTRAL NERVOUS SYSTEM DRUGS",262,331,"I'm not a doctor, I'm a data guru.",1,"intravenously","N",2015-12-30,2016-03-08,3
-"02-014","NuVARING","etonogestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",305,320,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-02-11,2016-02-26,4
-"02-016","ANDROxY","fluoxymesterone","HORMONES, DIABETES AND RELATED DRUGS",32,302,"I'm not a doctor, I'm a data guru.",3,"topically","N",2015-03-27,2015-12-22,1
-"02-016","CABERGOLINE","cabergoline","HORMONES, DIABETES AND RELATED DRUGS",63,115,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-04-27,2015-06-18,2
-"02-016","Buspar","buspirone","CENTRAL NERVOUS SYSTEM DRUGS",179,217,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2015-08-21,2015-09-28,3
-"02-016","APTIVuS","tipranavir","ANTI-INFECTIVE AGENTS",226,364,"I'm not a doctor, I'm a data guru.",3,"subcutaneously","Y",2015-10-07,2016-02-22,4
-"02-016","Diflucan","fluconazole","ANTI-INFECTIVE AGENTS",240,339,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-10-21,2016-01-28,5
-"02-017","CELONTIN","methsuximide","NEUROMUSCULAR DRUGS",19,108,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-04-24,2015-07-22,1
-"02-017","NYSTATIN SUSP","nystatin susp","TOPICAL PRODUCTS",46,243,"I'm not a doctor, I'm a data guru.",5,"intravenously","N",2015-05-21,2015-12-04,2
-"02-017","ANTARA","fenofibrate micronized","HEART AND CIRCULATORY DRUGS",276,339,"I'm not a doctor, I'm a data guru.",4,"orally","N",2016-01-06,2016-03-09,3
-"02-017","Naprosyn","naproxen","PAIN RELIEF DRUGS",335,349,"I'm not a doctor, I'm a data guru.",3,"topically","Y",2016-03-05,2016-03-19,4
-"02-017","ExELON caps, soln","rivastigmine","CENTRAL NERVOUS SYSTEM DRUGS",354,358,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-03-24,2016-03-28,5
-"02-018","CONDYLOx","podofilox","TOPICAL PRODUCTS",45,360,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-01-06,2016-11-16,1
-"02-018","Levlite","levonorgestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",255,327,"I'm not a doctor, I'm a data guru.",2,"sublingually","N",2016-08-03,2016-10-14,2
-"02-019","Altace","ramipril caps","HEART AND CIRCULATORY DRUGS",161,203,"I'm not a doctor, I'm a data guru.",3,"sublingually","Y",2015-07-27,2015-09-07,1
-"02-019","GABITRIL","tiagabine","NEUROMUSCULAR DRUGS",267,357,"I'm not a doctor, I'm a data guru.",2,"subcutaneously","N",2015-11-10,2016-02-08,2
-"02-019","EPIVIR-HBV","lamivudine","ANTI-INFECTIVE AGENTS",349,351,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-01-31,2016-02-02,3
-"02-020","DILAuDID-5","hydromorphone","PAIN RELIEF DRUGS",122,306,"I'm not a doctor, I'm a data guru.",3,"intravenously","Y",2015-08-11,2016-02-11,1
-"02-021","MEPHYTON","phytonadione","SUPPLEMENTS",111,316,"I'm not a doctor, I'm a data guru.",3,"sublingually","N",2015-11-01,2016-05-24,1
-"02-021","TAZORAC","tazarotene","TOPICAL PRODUCTS",206,240,"I'm not a doctor, I'm a data guru.",2,"intravenously","Y",2016-02-04,2016-03-09,2
-"02-021","Benzamycin","erythromycin/benzoyl peroxide","TOPICAL PRODUCTS",227,291,"I'm not a doctor, I'm a data guru.",3,"intravenously","N",2016-02-25,2016-04-29,3
-"02-024","HYDRALAZINE","hydralazine","HEART AND CIRCULATORY DRUGS",227,232,"I'm not a doctor, I'm a data guru.",2,"intravenously","Y",2015-10-13,2015-10-18,1
-"02-025","ATRIPLA","efavirenz/emtricitabine/tenofovir","ANTI-INFECTIVE AGENTS",301,316,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-07-23,2016-08-07,1
-"02-026","Cardizem","diltiazem","HEART AND CIRCULATORY DRUGS",8,309,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-07-19,2016-05-15,1
-"02-026","Bactroban","mupirocin oint","TOPICAL PRODUCTS",77,176,"I'm not a doctor, I'm a data guru.",4,"topically","N",2015-09-26,2016-01-03,2
-"02-026","DIASTAT","diazepam","NEUROMUSCULAR DRUGS",180,243,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2016-01-07,2016-03-10,3
-"02-026","Cutivate","fluticasone propionate","TOPICAL PRODUCTS",295,351,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2016-05-01,2016-06-26,4
-"02-027","Pepcid","famotidine","GASTROINTESTINAL DRUGS",225,252,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-11-13,2015-12-10,1
-"02-027","Silvadene","silver sulfadiazine","TOPICAL PRODUCTS",235,313,"I'm not a doctor, I'm a data guru.",5,"sublingually","Y",2015-11-23,2016-02-09,2
-"02-029","Tenormin","atenolol","HEART AND CIRCULATORY DRUGS",3,178,"I'm not a doctor, I'm a data guru.",1,"sublingually","N",2015-10-24,2016-04-16,1
-"02-029","Vistaril","hydroxyzine pamoate","CENTRAL NERVOUS SYSTEM DRUGS",172,335,"I'm not a doctor, I'm a data guru.",3,"sublingually","Y",2016-04-10,2016-09-20,2
-"03-001","ACETAZOLAMIDE","acetazolamide","HEART AND CIRCULATORY DRUGS",284,302,"I'm not a doctor, I'm a data guru.",1,"orally","N",2016-09-22,2016-10-10,1
-"03-001","Bicitra","sodium citrate/citric acid","GENITOURINARY DRUGS",333,359,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-11-10,2016-12-06,2
-"03-003","ASPIRIN/CODEINE","aspirin/codeine","PAIN RELIEF DRUGS",365,365,"I'm not a doctor, I'm a data guru.",4,"topically","Y",2016-08-31,2016-08-31,1
-"03-004","Agrylin","anagrelide","BLOOD MODIFYING DRUGS",33,316,"I'm not a doctor, I'm a data guru.",1,"sublingually","Y",2015-06-28,2016-04-06,1
-"03-004","Precose","acarbose","HORMONES, DIABETES AND RELATED DRUGS",205,272,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-12-17,2016-02-22,2
-"03-004","TRAZODONE","trazodone","CENTRAL NERVOUS SYSTEM DRUGS",230,342,"I'm not a doctor, I'm a data guru.",3,"orally","N",2016-01-11,2016-05-02,3
-"03-005","Climara","estradiol patches","HORMONES, DIABETES AND RELATED DRUGS",110,198,"I'm not a doctor, I'm a data guru.",3,"orally","N",2016-03-21,2016-06-17,1
-"03-005","SODIUM FLUORIDE","sodium fluoride","SUPPLEMENTS",130,138,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-04-10,2016-04-18,2
-"03-005","Lariam","mefloquine","ANTI-INFECTIVE AGENTS",164,326,"I'm not a doctor, I'm a data guru.",5,"subcutaneously","Y",2016-05-14,2016-10-23,3
-"03-005","PREMPRO","conjugated estrogens/medroxyprogesterone","HORMONES, DIABETES AND RELATED DRUGS",284,315,"I'm not a doctor, I'm a data guru.",5,"topically","Y",2016-09-11,2016-10-12,4
-"03-005","Pediazole","erythromycin/sulfisoxazole","ANTI-INFECTIVE AGENTS",288,341,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-09-15,2016-11-07,5
-"03-007","TRIAMCINOLONE","triamcinolone","TOPICAL PRODUCTS",194,365,"I'm not a doctor, I'm a data guru.",4,"intravenously","Y",2015-09-26,2016-03-15,1
-"03-007","VIGAMOx","moxifloxacin","TOPICAL PRODUCTS",278,349,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-12-19,2016-02-28,2
-"03-007","DIASTAT","diazepam","NEUROMUSCULAR DRUGS",359,361,"I'm not a doctor, I'm a data guru.",5,"sublingually","Y",2016-03-09,2016-03-11,3
-"03-010","Nordette","levonorgestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",58,266,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-01-11,2016-08-06,1
-"03-010","HYDRALAZINE","hydralazine","HEART AND CIRCULATORY DRUGS",332,361,"I'm not a doctor, I'm a data guru.",5,"subcutaneously","Y",2016-10-11,2016-11-09,2
-"03-011","DuETACT","pioglitazone/glimepiride","HORMONES, DIABETES AND RELATED DRUGS",76,130,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-04-21,2015-06-14,1
-"03-011","TRuSOPT","dorzolamide","TOPICAL PRODUCTS",239,323,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-10-01,2015-12-24,2
-"03-011","PROPYLTHIOURACIL","propylthiouracil","HORMONES, DIABETES AND RELATED DRUGS",281,356,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2015-11-12,2016-01-26,3
-"03-012","HuMALOG","insulin lispro","HORMONES, DIABETES AND RELATED DRUGS",74,176,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","N",2015-10-31,2016-02-10,1
-"03-012","Carafate","sucralfate tabs","GASTROINTESTINAL DRUGS",217,335,"I'm not a doctor, I'm a data guru.",2,"subcutaneously","Y",2016-03-22,2016-07-18,2
-"03-012","Cosopt","dorzolamide/timolol maleate soln","TOPICAL PRODUCTS",321,358,"I'm not a doctor, I'm a data guru.",4,"orally","N",2016-07-04,2016-08-10,3
-"03-013","Prelone","prednisolone syrup","HORMONES, DIABETES AND RELATED DRUGS",344,361,"I'm not a doctor, I'm a data guru.",3,"topically","N",2016-10-05,2016-10-22,1
-"03-014","Flagyl","metronidazole tabs","ANTI-INFECTIVE AGENTS",57,266,"I'm not a doctor, I'm a data guru.",4,"sublingually","Y",2015-04-04,2015-10-30,1
-"03-015","MYLERAN","busulfan","CANCER DRUGS",95,238,"I'm not a doctor, I'm a data guru.",5,"intravenously","N",2015-09-29,2016-02-19,1
-"03-016","ARIMIDEx","anastrozole","CANCER DRUGS",173,308,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2016-01-09,2016-05-23,1
-"03-016","EMTRIVA","emtricitabine","ANTI-INFECTIVE AGENTS",263,321,"I'm not a doctor, I'm a data guru.",1,"orally","N",2016-04-08,2016-06-05,2
-"03-016","PREMARIN","conjugated estrogens","HORMONES, DIABETES AND RELATED DRUGS",341,365,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-06-25,2016-07-19,3
-"03-017","KETOCONAZOLE CRM","ketoconazole crm","TOPICAL PRODUCTS",58,89,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-06-30,2015-07-31,1
-"03-017","AMOXICILLIN","amoxicillin","ANTI-INFECTIVE AGENTS",101,147,"I'm not a doctor, I'm a data guru.",1,"topically","Y",2015-08-12,2015-09-27,2
-"03-017","DICLOXACILLIN","dicloxacillin","ANTI-INFECTIVE AGENTS",188,321,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-11-07,2016-03-19,3
-"03-017","LAMISIL granules","terbinafine","ANTI-INFECTIVE AGENTS",254,362,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-01-12,2016-04-29,4
-"03-017","ACETIC ACID","acetic acid","TOPICAL PRODUCTS",320,352,"I'm not a doctor, I'm a data guru.",3,"orally","N",2016-03-18,2016-04-19,5
-"03-018","REYATAZ","atazanavir","ANTI-INFECTIVE AGENTS",78,177,"I'm not a doctor, I'm a data guru.",2,"sublingually","Y",2015-07-14,2015-10-21,1
-"03-018","METHAZOLAMIDE","methazolamide","HEART AND CIRCULATORY DRUGS",105,257,"I'm not a doctor, I'm a data guru.",1,"intravenously","N",2015-08-10,2016-01-09,2
-"03-018","RILuTEK","riluzole","NEUROMUSCULAR DRUGS",134,301,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-09-08,2016-02-22,3
-"03-019","Bactroban","mupirocin oint","TOPICAL PRODUCTS",81,96,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-08-18,2015-09-02,1
-"03-019","Levsin","hyoscyamine","GASTROINTESTINAL DRUGS",149,332,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-10-25,2016-04-25,2
-"03-019","Cutivate","fluticasone propionate","TOPICAL PRODUCTS",190,351,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-12-05,2016-05-14,3
-"03-019","Cosopt","dorzolamide/timolol maleate soln","TOPICAL PRODUCTS",201,307,"I'm not a doctor, I'm a data guru.",5,"orally","Y",2015-12-16,2016-03-31,4
-"03-019","RENVELA","sevelamer carbonate","GASTROINTESTINAL DRUGS",311,344,"I'm not a doctor, I'm a data guru.",2,"topically","N",2016-04-04,2016-05-07,5
-"03-020","DDAVP","desmopressin nasal","HORMONES, DIABETES AND RELATED DRUGS",87,204,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-09-26,2016-01-21,1
-"03-020","Anaprox","naproxen sodium","PAIN RELIEF DRUGS",127,301,"I'm not a doctor, I'm a data guru.",1,"sublingually","Y",2015-11-05,2016-04-27,2
-"03-020","CEENu","lomustine","CANCER DRUGS",137,204,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2015-11-15,2016-01-21,3
-"03-020","Naprosyn","naproxen","PAIN RELIEF DRUGS",322,326,"I'm not a doctor, I'm a data guru.",5,"orally","Y",2016-05-18,2016-05-22,4
-"03-021","Questran, Questran Light","cholestyramine","HEART AND CIRCULATORY DRUGS",22,101,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-12-03,2016-02-20,1
-"03-021","DIFLORASONE","diflorasone","TOPICAL PRODUCTS",119,356,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","Y",2016-03-09,2016-11-01,2
-"03-021","LOTREL 5/40, 10/40","amlodipine/benazepril","HEART AND CIRCULATORY DRUGS",263,321,"I'm not a doctor, I'm a data guru.",5,"intravenously","N",2016-07-31,2016-09-27,3
-"03-021","Mircette","desogestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",303,327,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-09-09,2016-10-03,4
-"03-022","KETOCONAZOLE CRM","ketoconazole crm","TOPICAL PRODUCTS",114,171,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-09-04,2015-10-31,1
-"03-022","PERPHENAZINE","perphenazine","CENTRAL NERVOUS SYSTEM DRUGS",251,300,"I'm not a doctor, I'm a data guru.",4,"orally","N",2016-01-19,2016-03-08,2
-"03-023","Ativan","lorazepam","CENTRAL NERVOUS SYSTEM DRUGS",226,277,"I'm not a doctor, I'm a data guru.",1,"sublingually","N",2015-09-03,2015-10-24,1
-"03-024","Isopto Homatropine","homatropine soln","TOPICAL PRODUCTS",198,364,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-10-09,2016-03-23,1
-"03-024","PuLMICORT RESPuLES","budesonide","RESPIRATORY AGENTS",269,331,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-12-19,2016-02-19,2
-"03-026","Bleph-10","sulfacetamide sodium soln","TOPICAL PRODUCTS",244,309,"I'm not a doctor, I'm a data guru.",3,"subcutaneously","Y",2015-12-29,2016-03-03,1
-"03-026","Topicort","desoximetasone","TOPICAL PRODUCTS",250,348,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-01-04,2016-04-11,2
-"03-027","TRANSDERM-SCOP","scopolamine","GASTROINTESTINAL DRUGS",39,289,"I'm not a doctor, I'm a data guru.",3,"sublingually","Y",2015-06-20,2016-02-25,1
-"03-027","NYSTATIN SUSP","nystatin susp","TOPICAL PRODUCTS",98,200,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","Y",2015-08-18,2015-11-28,2
-"03-027","SKELAxIN","metaxalone","NEUROMUSCULAR DRUGS",177,331,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-11-05,2016-04-07,3
-"03-027","DOXYCYCLINE HYCLATE","doxycycline hyclate","ANTI-INFECTIVE AGENTS",296,298,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-03-03,2016-03-05,4
-"03-029","Retrovir","zidovudine","ANTI-INFECTIVE AGENTS",242,249,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-11-05,2015-11-12,1
-"04-003","ATRIPLA","efavirenz/emtricitabine/tenofovir","ANTI-INFECTIVE AGENTS",81,134,"I'm not a doctor, I'm a data guru.",3,"orally","N",2015-09-08,2015-10-31,1
-"04-003","PREMARIN crm","conjugated estrogens","GENITOURINARY DRUGS",144,188,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-11-10,2015-12-24,2
-"04-003","ACTIVELLA","estradiol/norethindrone acetate","HORMONES, DIABETES AND RELATED DRUGS",227,306,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-02-01,2016-04-20,3
-"04-003","RISPERDAL soln","risperidone","CENTRAL NERVOUS SYSTEM DRUGS",258,320,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-03-03,2016-05-04,4
-"04-003","MESNEx tabs","mesna","CANCER DRUGS",289,289,"I'm not a doctor, I'm a data guru.",3,"intravenously","N",2016-04-03,2016-04-03,5
-"04-004","PHOSLO","calcium acetate","GASTROINTESTINAL DRUGS",25,345,"I'm not a doctor, I'm a data guru.",2,"intravenously","Y",2015-12-11,2016-10-26,1
-"04-004","Cleocin","clindamycin crm","GENITOURINARY DRUGS",209,330,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2016-06-12,2016-10-11,2
-"04-004","Flonase","fluticasone","RESPIRATORY AGENTS",239,247,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2016-07-12,2016-07-20,3
-"04-004","Coumadin","warfarin","BLOOD MODIFYING DRUGS",242,249,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-07-15,2016-07-22,4
-"04-005","Midrin","acetaminophen/isometheptene/dichloralphenazone","PAIN RELIEF DRUGS",202,354,"I'm not a doctor, I'm a data guru.",1,"orally","N",2016-02-20,2016-07-21,1
-"04-005","Flexeril","cyclobenzaprine","NEUROMUSCULAR DRUGS",208,235,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-02-26,2016-03-24,2
-"04-005","ARICEPT ODT","donepezil","CENTRAL NERVOUS SYSTEM DRUGS",283,290,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-05-11,2016-05-18,3
-"04-007","IBUPROFEN","ibuprofen","PAIN RELIEF DRUGS",180,187,"I'm not a doctor, I'm a data guru.",1,"topically","Y",2016-05-11,2016-05-18,1
-"04-007","CIMETIDINE","cimetidine","GASTROINTESTINAL DRUGS",294,320,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2016-09-02,2016-09-28,2
-"04-008","Monopril HCT","fosinopril/hydrochlorothiazide","HEART AND CIRCULATORY DRUGS",232,234,"I'm not a doctor, I'm a data guru.",2,"sublingually","Y",2016-02-24,2016-02-26,1
-"04-008","Macrobid","nitrofurantoin monohydrate/macrocrystals","GENITOURINARY DRUGS",267,279,"I'm not a doctor, I'm a data guru.",5,"topically","N",2016-03-30,2016-04-11,2
-"04-009","Sectral","acebutolol","HEART AND CIRCULATORY DRUGS",91,312,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-07-09,2016-02-15,1
-"04-009","Questran, Questran Light","cholestyramine","HEART AND CIRCULATORY DRUGS",353,354,"I'm not a doctor, I'm a data guru.",4,"intravenously","N",2016-03-27,2016-03-28,2
-"04-010","TAMOXIFEN","tamoxifen","CANCER DRUGS",90,232,"I'm not a doctor, I'm a data guru.",3,"orally","N",2015-04-21,2015-09-10,1
-"04-010","Levsin","hyoscyamine","GASTROINTESTINAL DRUGS",96,252,"I'm not a doctor, I'm a data guru.",4,"sublingually","N",2015-04-27,2015-09-30,2
-"04-010","Restoril","temazepam","CENTRAL NERVOUS SYSTEM DRUGS",211,292,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2015-08-20,2015-11-09,3
-"04-011","ELIDEL","pimecrolimus","TOPICAL PRODUCTS",49,105,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2016-01-13,2016-03-09,1
-"04-011","Ogen","estropipate","HORMONES, DIABETES AND RELATED DRUGS",143,233,"I'm not a doctor, I'm a data guru.",1,"subcutaneously","Y",2016-04-16,2016-07-15,2
-"04-011","Levlite","levonorgestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",166,327,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","Y",2016-05-09,2016-10-17,3
-"04-012","VAGIFEM","estradiol vaginal tabs","GENITOURINARY DRUGS",2,230,"I'm not a doctor, I'm a data guru.",3,"topically","Y",2015-08-17,2016-04-01,1
-"04-012","Cosopt","dorzolamide/timolol maleate soln","TOPICAL PRODUCTS",313,350,"I'm not a doctor, I'm a data guru.",4,"intravenously","Y",2016-06-23,2016-07-30,2
-"04-012","SuPRAx","cefixime","ANTI-INFECTIVE AGENTS",345,350,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-07-25,2016-07-30,3
-"04-013","TAMIFLu","oseltamivir","ANTI-INFECTIVE AGENTS",346,354,"I'm not a doctor, I'm a data guru.",4,"orally","N",2016-10-16,2016-10-24,1
-"04-014","CHLOROTHIAZIDE","chlorothiazide","HEART AND CIRCULATORY DRUGS",76,341,"I'm not a doctor, I'm a data guru.",2,"topically","Y",2015-07-06,2016-03-27,1
-"04-014","Cipro","ciprofloxacin tabs","ANTI-INFECTIVE AGENTS",162,166,"I'm not a doctor, I'm a data guru.",3,"sublingually","N",2015-09-30,2015-10-04,2
-"04-014","Mavik","trandolapril","HEART AND CIRCULATORY DRUGS",202,337,"I'm not a doctor, I'm a data guru.",1,"sublingually","N",2015-11-09,2016-03-23,3
-"04-014","SOLARAZE","diclofenac sodium","TOPICAL PRODUCTS",226,329,"I'm not a doctor, I'm a data guru.",1,"intravenously","Y",2015-12-03,2016-03-15,4
-"04-015","Ativan","lorazepam","CENTRAL NERVOUS SYSTEM DRUGS",49,89,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","Y",2015-07-12,2015-08-21,1
-"04-015","LOXAPINE","loxapine","CENTRAL NERVOUS SYSTEM DRUGS",266,333,"I'm not a doctor, I'm a data guru.",4,"topically","N",2016-02-14,2016-04-21,2
-"04-015","Norvasc","amlodipine","HEART AND CIRCULATORY DRUGS",319,335,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-04-07,2016-04-23,3
-"04-016","PHOSLO","calcium acetate","GASTROINTESTINAL DRUGS",206,352,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","N",2016-07-05,2016-11-28,1
-"04-016","SENSIPAR","cinacalcet","HORMONES, DIABETES AND RELATED DRUGS",250,273,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2016-08-18,2016-09-10,2
-"04-016","LEVEMIR","insulin detemir","HORMONES, DIABETES AND RELATED DRUGS",253,291,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-08-21,2016-09-28,3
-"04-016","Tenex","guanfacine","HEART AND CIRCULATORY DRUGS",279,279,"I'm not a doctor, I'm a data guru.",4,"topically","N",2016-09-16,2016-09-16,4
-"04-020","DETROL","tolterodine","GENITOURINARY DRUGS",59,307,"I'm not a doctor, I'm a data guru.",2,"sublingually","N",2015-03-20,2015-11-23,1
-"04-020","Tigan","trimethobenzamide caps","GASTROINTESTINAL DRUGS",156,330,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","N",2015-06-25,2015-12-16,2
-"04-020","ESTRASORB","estradiol","HORMONES, DIABETES AND RELATED DRUGS",208,283,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-08-16,2015-10-30,3
-"04-021","Clinoril","sulindac","PAIN RELIEF DRUGS",244,310,"I'm not a doctor, I'm a data guru.",1,"topically","N",2016-05-14,2016-07-19,1
-"04-021","Grifulvin V","griseofulvin microsize susp","ANTI-INFECTIVE AGENTS",277,299,"I'm not a doctor, I'm a data guru.",5,"orally","Y",2016-06-16,2016-07-08,2
-"04-021","EPZICOM","abacavir/lamivudine","ANTI-INFECTIVE AGENTS",283,286,"I'm not a doctor, I'm a data guru.",4,"intravenously","Y",2016-06-22,2016-06-25,3
-"04-021","COMBIPATCH","estradiol/norethindrone acetate","HORMONES, DIABETES AND RELATED DRUGS",350,358,"I'm not a doctor, I'm a data guru.",2,"intravenously","Y",2016-08-28,2016-09-05,4
-"04-023","CLINDESSE","clindamycin crm","GENITOURINARY DRUGS",133,214,"I'm not a doctor, I'm a data guru.",5,"intravenously","N",2016-05-07,2016-07-27,1
-"04-024","Optipranolol","metipranolol soln","TOPICAL PRODUCTS",329,347,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","Y",2016-08-27,2016-09-14,1
-"04-025","MIGRANAL","dihydroergotamine","PAIN RELIEF DRUGS",66,101,"I'm not a doctor, I'm a data guru.",1,"intravenously","Y",2015-07-09,2015-08-13,1
-"04-026","Robaxin","methocarbamol","NEUROMUSCULAR DRUGS",84,237,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2015-10-30,2016-03-31,1
-"04-026","HuMuLIN N","insulin isophane","HORMONES, DIABETES AND RELATED DRUGS",176,278,"I'm not a doctor, I'm a data guru.",2,"topically","Y",2016-01-30,2016-05-11,2
-"04-026","Westcort","hydrocortisone valerate","TOPICAL PRODUCTS",216,318,"I'm not a doctor, I'm a data guru.",4,"sublingually","Y",2016-03-10,2016-06-20,3
-"04-027","RAPAMuNE","sirolimus","MISCELLANEOUS CATEGORIES",35,75,"I'm not a doctor, I'm a data guru.",1,"orally","N",2015-08-06,2015-09-15,1
-"04-027","Ceftin","cefuroxime","ANTI-INFECTIVE AGENTS",102,123,"I'm not a doctor, I'm a data guru.",2,"topically","Y",2015-10-12,2015-11-02,2
-"04-027","Lotensin","benazepril","HEART AND CIRCULATORY DRUGS",118,140,"I'm not a doctor, I'm a data guru.",4,"intravenously","Y",2015-10-28,2015-11-19,3
-"04-028","ZERIT","stavudine","ANTI-INFECTIVE AGENTS",26,292,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2015-02-08,2015-11-01,1
-"04-029","Megace","megestrol","CANCER DRUGS",95,341,"I'm not a doctor, I'm a data guru.",1,"subcutaneously","Y",2015-04-28,2015-12-30,1
-"04-029","Ziac","bisoprolol/hydrochlorothiazide","HEART AND CIRCULATORY DRUGS",359,365,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-01-17,2016-01-23,2
-"04-030","ALDARA","imiquimod","TOPICAL PRODUCTS",103,238,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-09-26,2016-02-08,1
-"04-030","LuMIGAN","bimatoprost","TOPICAL PRODUCTS",240,243,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-02-10,2016-02-13,2
-"04-030","TRAVATAN","travoprost","TOPICAL PRODUCTS",265,312,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2016-03-06,2016-04-22,3
-"05-001","Zonegran","zonisamide","NEUROMUSCULAR DRUGS",143,322,"I'm not a doctor, I'm a data guru.",5,"topically","N",2015-06-28,2015-12-24,1
-"05-001","ERYTHROMYCIN FILMTABS","erythromycin base","ANTI-INFECTIVE AGENTS",244,267,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2015-10-07,2015-10-30,2
-"05-001","Loestrin","norethindrone acetate/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",337,355,"I'm not a doctor, I'm a data guru.",4,"sublingually","N",2016-01-08,2016-01-26,3
-"05-001","CYTOMEL","liothyronine","HORMONES, DIABETES AND RELATED DRUGS",339,340,"I'm not a doctor, I'm a data guru.",5,"intravenously","Y",2016-01-10,2016-01-11,4
-"05-003","Pediazole","erythromycin/sulfisoxazole","ANTI-INFECTIVE AGENTS",14,230,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-05-06,2015-12-08,1
-"05-003","KETOCONAZOLE","ketoconazole","ANTI-INFECTIVE AGENTS",129,199,"I'm not a doctor, I'm a data guru.",2,"topically","Y",2015-08-29,2015-11-07,2
-"05-003","ESTRASORB","estradiol","HORMONES, DIABETES AND RELATED DRUGS",131,175,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2015-08-31,2015-10-14,3
-"05-003","DEXAMETHASONE SODIUM PHOSPHATE SOLN","dexamethasone sodium phosphate soln","TOPICAL PRODUCTS",136,184,"I'm not a doctor, I'm a data guru.",2,"orally","N",2015-09-05,2015-10-23,4
-"05-003","OPTIVAR","azelastine","TOPICAL PRODUCTS",191,212,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-10-30,2015-11-20,5
-"05-004","NYSTATIN TABS","nystatin tabs","ANTI-INFECTIVE AGENTS",302,315,"I'm not a doctor, I'm a data guru.",4,"intravenously","Y",2016-10-02,2016-10-15,1
-"05-004","Zebeta","bisoprolol","HEART AND CIRCULATORY DRUGS",318,355,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-10-18,2016-11-24,2
-"05-005","DEPAKOTE SPRINKLES","divalproex","NEUROMUSCULAR DRUGS",45,232,"I'm not a doctor, I'm a data guru.",1,"subcutaneously","Y",2015-12-13,2016-06-17,1
-"05-005","NITROLINGuAL","nitroglycerin","HEART AND CIRCULATORY DRUGS",216,295,"I'm not a doctor, I'm a data guru.",3,"subcutaneously","N",2016-06-01,2016-08-19,2
-"05-006","ExFORGE","amlodipine/valsartan","HEART AND CIRCULATORY DRUGS",1,201,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-04-25,2015-11-11,1
-"05-006","OXYBUTYNIN","oxybutynin","GENITOURINARY DRUGS",17,217,"I'm not a doctor, I'm a data guru.",3,"subcutaneously","Y",2015-05-11,2015-11-27,2
-"05-006","Mycostatin","nystatin","TOPICAL PRODUCTS",144,162,"I'm not a doctor, I'm a data guru.",1,"sublingually","Y",2015-09-15,2015-10-03,3
-"05-006","TOPAMAx","topiramate","NEUROMUSCULAR DRUGS",327,349,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-03-16,2016-04-07,4
-"05-008","COMBIPATCH","estradiol/norethindrone acetate","HORMONES, DIABETES AND RELATED DRUGS",168,291,"I'm not a doctor, I'm a data guru.",3,"intravenously","Y",2016-04-27,2016-08-28,1
-"05-009","AMOxIL drops","amoxicillin","ANTI-INFECTIVE AGENTS",134,176,"I'm not a doctor, I'm a data guru.",5,"subcutaneously","Y",2016-04-07,2016-05-19,1
-"05-011","Ortho Tri-Cyclen","norgestimate/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",91,192,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-02-14,2016-05-25,1
-"05-011","Minipress","prazosin","HEART AND CIRCULATORY DRUGS",209,274,"I'm not a doctor, I'm a data guru.",4,"sublingually","N",2016-06-11,2016-08-15,2
-"05-011","METHERGINE","methylergonovine","HORMONES, DIABETES AND RELATED DRUGS",232,353,"I'm not a doctor, I'm a data guru.",4,"orally","N",2016-07-04,2016-11-02,3
-"05-011","CIMETIDINE","cimetidine","GASTROINTESTINAL DRUGS",335,364,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-10-15,2016-11-13,4
-"05-011","ALBENZA","albendazole","ANTI-INFECTIVE AGENTS",360,361,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-11-09,2016-11-10,5
-"05-012","ERYTHROMYCIN GEL","erythromycin gel","TOPICAL PRODUCTS",306,333,"I'm not a doctor, I'm a data guru.",5,"orally","N",2016-04-03,2016-04-30,1
-"05-012","PREMARIN crm","conjugated estrogens","GENITOURINARY DRUGS",346,348,"I'm not a doctor, I'm a data guru.",3,"intravenously","N",2016-05-13,2016-05-15,2
-"05-013","TRuSOPT","dorzolamide","TOPICAL PRODUCTS",58,131,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2015-06-15,2015-08-27,1
-"05-013","NABUMETONE","nabumetone","PAIN RELIEF DRUGS",164,271,"I'm not a doctor, I'm a data guru.",4,"orally","N",2015-09-29,2016-01-14,2
-"05-014","AMOXICILLIN","amoxicillin","ANTI-INFECTIVE AGENTS",181,364,"I'm not a doctor, I'm a data guru.",4,"orally","N",2016-04-23,2016-10-23,1
-"05-015","Ogen","estropipate","HORMONES, DIABETES AND RELATED DRUGS",20,248,"I'm not a doctor, I'm a data guru.",5,"orally","Y",2015-11-04,2016-06-19,1
-"05-015","Cyclessa","desogestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS",233,252,"I'm not a doctor, I'm a data guru.",2,"sublingually","N",2016-06-04,2016-06-23,2
-"05-018","LuMIGAN","bimatoprost","TOPICAL PRODUCTS",126,196,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2015-11-06,2016-01-15,1
-"05-018","HuMALOG MIx 75/ 5","insulin lispro protamine/lispro","HORMONES, DIABETES AND RELATED DRUGS",310,351,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-05-08,2016-06-18,2
-"05-019","ANTABuSE","disulfiram","CENTRAL NERVOUS SYSTEM DRUGS",6,161,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2015-12-19,2016-05-22,1
-"05-019","Restoril","temazepam","CENTRAL NERVOUS SYSTEM DRUGS",23,196,"I'm not a doctor, I'm a data guru.",2,"topically","N",2016-01-05,2016-06-26,2
-"05-019","BYETTA","exenatide","HORMONES, DIABETES AND RELATED DRUGS",167,359,"I'm not a doctor, I'm a data guru.",5,"orally","Y",2016-05-28,2016-12-06,3
-"05-019","ELMIRON","pentosan","GENITOURINARY DRUGS",290,332,"I'm not a doctor, I'm a data guru.",5,"subcutaneously","Y",2016-09-28,2016-11-09,4
-"05-019","Adderall","amphetamine/dextroamphetamine mixed salts","CENTRAL NERVOUS SYSTEM DRUGS",317,345,"I'm not a doctor, I'm a data guru.",4,"sublingually","Y",2016-10-25,2016-11-22,5
-"05-020","BENZACLIN","clindamycin/benzoyl peroxide","TOPICAL PRODUCTS",10,150,"I'm not a doctor, I'm a data guru.",2,"subcutaneously","N",2015-05-23,2015-10-10,1
-"05-020","xERAC AC","aluminum chloride","TOPICAL PRODUCTS",220,289,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2015-12-19,2016-02-26,2
-"05-020","IBUPROFEN","ibuprofen","PAIN RELIEF DRUGS",304,329,"I'm not a doctor, I'm a data guru.",3,"subcutaneously","Y",2016-03-12,2016-04-06,3
-"05-021","MEPHYTON","phytonadione","SUPPLEMENTS",17,230,"I'm not a doctor, I'm a data guru.",2,"intravenously","Y",2015-05-07,2015-12-06,1
-"05-021","Plaquenil","hydroxychloroquine","ANTI-INFECTIVE AGENTS",129,213,"I'm not a doctor, I'm a data guru.",3,"topically","N",2015-08-27,2015-11-19,2
-"05-021","GEODON","ziprasidone","CENTRAL NERVOUS SYSTEM DRUGS",243,365,"I'm not a doctor, I'm a data guru.",3,"orally","N",2015-12-19,2016-04-19,3
-"05-021","LuMIGAN","bimatoprost","TOPICAL PRODUCTS",271,363,"I'm not a doctor, I'm a data guru.",5,"sublingually","N",2016-01-16,2016-04-17,4
-"05-023","PENICILLIN V POTASSIUM","penicillin v potassium","ANTI-INFECTIVE AGENTS",137,191,"I'm not a doctor, I'm a data guru.",5,"orally","N",2015-05-27,2015-07-20,1
-"05-023","TEKTuRNA","aliskiren","HEART AND CIRCULATORY DRUGS",167,168,"I'm not a doctor, I'm a data guru.",3,"orally","N",2015-06-26,2015-06-27,2
-"05-023","LEVEMIR","insulin detemir","HORMONES, DIABETES AND RELATED DRUGS",182,276,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2015-07-11,2015-10-13,3
-"05-024","Mevacor","lovastatin","HEART AND CIRCULATORY DRUGS",269,356,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-01-09,2016-04-05,1
-"05-024","DDAVP","desmopressin nasal","HORMONES, DIABETES AND RELATED DRUGS",328,357,"I'm not a doctor, I'm a data guru.",4,"subcutaneously","Y",2016-03-08,2016-04-06,2
-"05-026","INVIRASE","saquinavir","ANTI-INFECTIVE AGENTS",54,212,"I'm not a doctor, I'm a data guru.",4,"orally","N",2016-01-02,2016-06-08,1
-"05-026","Trandate","labetalol","HEART AND CIRCULATORY DRUGS",60,198,"I'm not a doctor, I'm a data guru.",3,"topically","N",2016-01-08,2016-05-25,2
-"05-026","Anafranil","clomipramine","CENTRAL NERVOUS SYSTEM DRUGS",125,364,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-03-13,2016-11-07,3
-"05-026","Precose","acarbose","HORMONES, DIABETES AND RELATED DRUGS",154,240,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-04-11,2016-07-06,4
-"05-026","Lopressor","metoprolol tartrate","HEART AND CIRCULATORY DRUGS",168,281,"I'm not a doctor, I'm a data guru.",2,"orally","Y",2016-04-25,2016-08-16,5
-"05-027","Myambutol","ethambutol","ANTI-INFECTIVE AGENTS",15,42,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2015-02-09,2015-03-08,1
-"05-027","Pepcid","famotidine","GASTROINTESTINAL DRUGS",160,310,"I'm not a doctor, I'm a data guru.",3,"orally","Y",2015-07-04,2015-12-01,2
-"05-027","NOVOLIN 70/30","insulin isophane/regular","HORMONES, DIABETES AND RELATED DRUGS",341,354,"I'm not a doctor, I'm a data guru.",5,"sublingually","Y",2016-01-01,2016-01-14,3
-"05-029","NYSTATIN TABS","nystatin tabs","ANTI-INFECTIVE AGENTS",162,233,"I'm not a doctor, I'm a data guru.",4,"orally","Y",2016-05-11,2016-07-21,1
-"05-029","AMOXICILLIN","amoxicillin","ANTI-INFECTIVE AGENTS",322,348,"I'm not a doctor, I'm a data guru.",1,"orally","Y",2016-10-18,2016-11-13,2
-"05-030","LAMICTAL Starter Kit","lamotrigine","NEUROMUSCULAR DRUGS",222,312,"I'm not a doctor, I'm a data guru.",2,"orally","N",2016-05-10,2016-08-08,1
+"USUBJID","CMSEQ","CMSTDT","CMSTDY","CMENDT","CMENDY","CMTRT","PREFTERM","ATCTEXT2","CMONGO","CMDOSE","CMROUTE","CMINDC"
+"01-001",1,2015-07-16,57,2015-08-14,86,"Restoril","temazepam","CENTRAL NERVOUS SYSTEM DRUGS","Y",2,"sublingually","I'm not a doctor, I'm a data guru."
+"01-003",1,2015-12-04,113,2016-07-21,343,"ANTARA","fenofibrate micronized","HEART AND CIRCULATORY DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"01-003",2,2015-12-17,126,2016-05-08,269,"Optipranolol","metipranolol soln","TOPICAL PRODUCTS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"01-003",3,2016-02-11,182,2016-07-17,339,"LITHIUM CITRATE","lithium citrate","CENTRAL NERVOUS SYSTEM DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"01-004",1,2015-07-04,173,2015-12-21,343,"NORVIR","ritonavir","ANTI-INFECTIVE AGENTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"01-009",1,2016-02-10,81,2016-04-08,139,"FEMARA","letrozole","CANCER DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"01-009",2,2016-02-24,95,2016-10-02,316,"ECONAZOLE","econazole","TOPICAL PRODUCTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"01-009",3,2016-06-28,220,2016-09-28,312,"PEDIATRIC MULTIVITAMINS/FLUORIDE/IRON","pediatric multivitamins/fluoride/iron","SUPPLEMENTS","Y",1,"subcutaneously","I'm not a doctor, I'm a data guru."
+"01-012",1,2015-04-24,6,2015-05-06,18,"ISONIAZID TABS","isoniazid tabs","ANTI-INFECTIVE AGENTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"01-012",2,2015-07-15,88,2016-02-10,298,"Ativan","lorazepam","CENTRAL NERVOUS SYSTEM DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"01-012",3,2016-02-17,305,2016-02-25,313,"Coreg","carvedilol","HEART AND CIRCULATORY DRUGS","Y",1,"sublingually","I'm not a doctor, I'm a data guru."
+"01-013",1,2015-10-05,83,2015-12-19,158,"MENEST","esterified estrogens","HORMONES, DIABETES AND RELATED DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"01-013",2,2016-02-14,215,2016-05-20,311,"RESTORIL 7.5 mg","temazepam","CENTRAL NERVOUS SYSTEM DRUGS","N",5,"intravenously","I'm not a doctor, I'm a data guru."
+"01-013",3,2016-03-17,247,2016-04-20,281,"PHENYTEK","phenytoin sodium extended","NEUROMUSCULAR DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"01-014",1,2016-03-13,75,2016-05-26,149,"SPECTRACEF","cefditoren","ANTI-INFECTIVE AGENTS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"01-014",2,2016-05-27,150,2016-09-07,253,"Modicon","norethindrone/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","Y",1,"subcutaneously","I'm not a doctor, I'm a data guru."
+"01-014",3,2016-07-30,214,2016-08-02,217,"Proamatine","midodrine","HEART AND CIRCULATORY DRUGS","N",4,"intravenously","I'm not a doctor, I'm a data guru."
+"01-014",4,2016-08-22,237,2016-10-26,302,"Betagan","levobunolol soln","TOPICAL PRODUCTS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"01-016",1,2016-01-21,32,2016-04-06,108,"Valium","diazepam","CENTRAL NERVOUS SYSTEM DRUGS","N",3,"subcutaneously","I'm not a doctor, I'm a data guru."
+"01-016",2,2016-03-17,88,2016-10-21,306,"NILANDRON","nilutamide","CANCER DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"01-016",3,2016-04-23,125,2016-10-02,287,"DIFFERIN","adapalene","TOPICAL PRODUCTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"01-016",4,2016-09-05,260,2016-10-28,313,"Keflex","cephalexin","ANTI-INFECTIVE AGENTS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"01-017",1,2015-05-12,90,2015-09-11,212,"LITHIUM CITRATE","lithium citrate","CENTRAL NERVOUS SYSTEM DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"01-017",2,2015-10-31,262,2015-11-04,266,"EPIVIR-HBV","lamivudine","ANTI-INFECTIVE AGENTS","Y",5,"topically","I'm not a doctor, I'm a data guru."
+"01-019",1,2015-07-28,33,2015-10-10,107,"SINGuLAIR","montelukast","RESPIRATORY AGENTS","N",1,"topically","I'm not a doctor, I'm a data guru."
+"01-019",2,2015-11-29,157,2016-04-07,287,"Sandimmune","cyclosporine","MISCELLANEOUS CATEGORIES","N",5,"orally","I'm not a doctor, I'm a data guru."
+"01-019",3,2015-12-08,166,2016-01-17,206,"Mysoline","primidone","NEUROMUSCULAR DRUGS","N",1,"intravenously","I'm not a doctor, I'm a data guru."
+"01-019",4,2016-02-04,224,2016-03-14,263,"Ciloxan","ciprofloxacin soln","TOPICAL PRODUCTS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"01-020",1,2015-10-01,160,2016-01-01,252,"SuPRAx","cefixime","ANTI-INFECTIVE AGENTS","Y",4,"topically","I'm not a doctor, I'm a data guru."
+"01-020",2,2015-10-18,177,2015-12-13,233,"ERYTHROMYCIN ETHYLSUCCINATE","erythromycin ethylsuccinate","ANTI-INFECTIVE AGENTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"01-020",3,2015-12-26,246,2015-12-30,250,"LuNESTA","eszopiclone","CENTRAL NERVOUS SYSTEM DRUGS","Y",5,"orally","I'm not a doctor, I'm a data guru."
+"01-020",4,2016-02-15,297,2016-03-01,312,"DILAuDID-5","hydromorphone","PAIN RELIEF DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"01-021",1,2015-10-29,26,2016-01-15,104,"ORTHO TRI-CYCLEN LO","norgestimate/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",3,"subcutaneously","I'm not a doctor, I'm a data guru."
+"01-021",2,2015-12-31,89,2016-08-01,303,"Modicon","norethindrone/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"01-021",3,2016-01-21,110,2016-05-23,233,"OxyIR","oxycodone caps","PAIN RELIEF DRUGS","N",4,"sublingually","I'm not a doctor, I'm a data guru."
+"01-021",4,2016-01-30,119,2016-03-19,168,"Lidex","fluocinonide","TOPICAL PRODUCTS","N",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"01-023",1,2016-03-01,153,2016-08-17,322,"Mysoline","primidone","NEUROMUSCULAR DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"01-023",2,2016-03-11,163,2016-09-19,355,"ANTARA","fenofibrate micronized","HEART AND CIRCULATORY DRUGS","N",5,"subcutaneously","I'm not a doctor, I'm a data guru."
+"01-023",3,2016-04-03,186,2016-04-13,196,"Feldene","piroxicam","PAIN RELIEF DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"01-023",4,2016-05-03,216,2016-09-17,353,"ZITHROMAx packets, 1 g","azithromycin","ANTI-INFECTIVE AGENTS","N",1,"topically","I'm not a doctor, I'm a data guru."
+"01-024",1,2015-04-15,17,2015-08-06,130,"TRIZIVIR","abacavir/lamivudine/zidovudine","ANTI-INFECTIVE AGENTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"01-024",2,2015-09-08,163,2016-03-13,350,"K-PHOS","potassium phosphate monobasic","SUPPLEMENTS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"01-024",3,2015-12-09,255,2016-01-09,286,"CLINDESSE","clindamycin crm","GENITOURINARY DRUGS","Y",5,"topically","I'm not a doctor, I'm a data guru."
+"01-024",4,2015-12-21,267,2016-03-23,360,"Temovate","clobetasol","TOPICAL PRODUCTS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"01-024",5,2016-01-12,289,2016-01-16,293,"PREMPRO","conjugated estrogens/medroxyprogesterone","HORMONES, DIABETES AND RELATED DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"01-026",1,2015-07-01,133,2015-07-03,135,"DOXEPIN","doxepin","CENTRAL NERVOUS SYSTEM DRUGS","Y",1,"topically","I'm not a doctor, I'm a data guru."
+"01-026",2,2015-08-28,191,2015-09-09,203,"LAMICTAL Starter Kit","lamotrigine","NEUROMUSCULAR DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"01-026",3,2016-02-10,357,2016-02-13,360,"Calan","verapamil","HEART AND CIRCULATORY DRUGS","Y",5,"orally","I'm not a doctor, I'm a data guru."
+"01-026",4,2016-02-11,358,2016-02-11,358,"Ciloxan","ciprofloxacin soln","TOPICAL PRODUCTS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"01-027",1,2015-03-17,10,2015-06-15,100,"ABILIFY","aripiprazole","CENTRAL NERVOUS SYSTEM DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"01-027",2,2015-03-30,23,2015-04-24,48,"Norpramin","desipramine","CENTRAL NERVOUS SYSTEM DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"01-027",3,2015-07-22,137,2015-08-13,159,"Prelone","prednisolone syrup","HORMONES, DIABETES AND RELATED DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"01-027",4,2015-11-17,255,2016-02-15,345,"HALOPERIDOL LACTATE ORAL SOLN","haloperidol lactate oral soln","CENTRAL NERVOUS SYSTEM DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"01-028",1,2015-07-23,53,2015-11-13,166,"Lamictal","lamotrigine","NEUROMUSCULAR DRUGS","N",5,"sublingually","I'm not a doctor, I'm a data guru."
+"01-028",2,2015-09-22,114,2016-04-24,329,"Elocon","mometasone","TOPICAL PRODUCTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"02-002",1,2016-07-10,294,2016-08-29,344,"Drysol","aluminum chloride soln","TOPICAL PRODUCTS","N",3,"intravenously","I'm not a doctor, I'm a data guru."
+"02-003",1,2015-05-09,13,2016-04-13,353,"DILAuDID-5","hydromorphone","PAIN RELIEF DRUGS","Y",5,"orally","I'm not a doctor, I'm a data guru."
+"02-003",2,2016-01-18,267,2016-02-28,308,"ACETAZOLAMIDE","acetazolamide","HEART AND CIRCULATORY DRUGS","Y",5,"intravenously","I'm not a doctor, I'm a data guru."
+"02-007",1,2015-11-24,7,2016-06-26,222,"EPIVIR","lamivudine","ANTI-INFECTIVE AGENTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"02-007",2,2016-05-09,174,2016-08-17,274,"xanax","alprazolam","CENTRAL NERVOUS SYSTEM DRUGS","Y",5,"intravenously","I'm not a doctor, I'm a data guru."
+"02-007",3,2016-05-24,189,2016-07-20,246,"Ortho Tri-Cyclen","norgestimate/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"02-007",4,2016-06-14,210,2016-10-02,320,"Duoneb","ipratropium/albuterol sulfate","RESPIRATORY AGENTS","Y",3,"sublingually","I'm not a doctor, I'm a data guru."
+"02-009",1,2015-08-20,4,2016-02-17,185,"Pravachol","pravastatin","HEART AND CIRCULATORY DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"02-009",2,2015-09-20,35,2015-10-08,53,"HuMuLIN 50/50","insulin isophane/regular","HORMONES, DIABETES AND RELATED DRUGS","Y",5,"intravenously","I'm not a doctor, I'm a data guru."
+"02-009",3,2016-01-22,159,2016-02-28,196,"uniretic","moexipril/hydrochlorothiazide","HEART AND CIRCULATORY DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"02-009",4,2016-04-18,246,2016-08-13,363,"Zebeta","bisoprolol","HEART AND CIRCULATORY DRUGS","N",4,"topically","I'm not a doctor, I'm a data guru."
+"02-010",1,2015-01-26,15,2016-01-01,355,"EMCYT","estramustine","CANCER DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"02-010",2,2015-03-20,68,2015-08-19,220,"REGRANEx","becaplermin","TOPICAL PRODUCTS","Y",2,"intravenously","I'm not a doctor, I'm a data guru."
+"02-010",3,2015-07-04,174,2015-10-04,266,"LEuKERAN","chlorambucil","CANCER DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"02-012",1,2016-03-25,169,2016-05-22,227,"REGRANEx","becaplermin","TOPICAL PRODUCTS","N",2,"intravenously","I'm not a doctor, I'm a data guru."
+"02-013",1,2015-05-19,72,2015-11-03,240,"ACTOS","pioglitazone","HORMONES, DIABETES AND RELATED DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"02-013",2,2015-08-29,174,2016-01-16,314,"Demulen","ethynodiol/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","Y",3,"subcutaneously","I'm not a doctor, I'm a data guru."
+"02-013",3,2016-01-08,306,2016-02-03,332,"ALBENZA","albendazole","ANTI-INFECTIVE AGENTS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"02-013",4,2016-01-20,318,2016-02-10,339,"MALARONE","atovaquone/proguanil","ANTI-INFECTIVE AGENTS","Y",1,"subcutaneously","I'm not a doctor, I'm a data guru."
+"02-013",5,2016-02-25,354,2016-03-05,363,"METROGEL 1%","metronidazole","TOPICAL PRODUCTS","Y",4,"topically","I'm not a doctor, I'm a data guru."
+"02-014",1,2015-08-24,134,2015-10-20,191,"Ativan","lorazepam","CENTRAL NERVOUS SYSTEM DRUGS","N",1,"topically","I'm not a doctor, I'm a data guru."
+"02-014",2,2015-10-06,177,2015-12-12,244,"EMCYT","estramustine","CANCER DRUGS","Y",2,"intravenously","I'm not a doctor, I'm a data guru."
+"02-014",3,2015-12-30,262,2016-03-08,331,"ExELON caps, soln","rivastigmine","CENTRAL NERVOUS SYSTEM DRUGS","N",1,"intravenously","I'm not a doctor, I'm a data guru."
+"02-014",4,2016-02-11,305,2016-02-26,320,"NuVARING","etonogestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"02-016",1,2015-03-27,32,2015-12-22,302,"ANDROxY","fluoxymesterone","HORMONES, DIABETES AND RELATED DRUGS","N",3,"topically","I'm not a doctor, I'm a data guru."
+"02-016",2,2015-04-27,63,2015-06-18,115,"CABERGOLINE","cabergoline","HORMONES, DIABETES AND RELATED DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"02-016",3,2015-08-21,179,2015-09-28,217,"Buspar","buspirone","CENTRAL NERVOUS SYSTEM DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"02-016",4,2015-10-07,226,2016-02-22,364,"APTIVuS","tipranavir","ANTI-INFECTIVE AGENTS","Y",3,"subcutaneously","I'm not a doctor, I'm a data guru."
+"02-016",5,2015-10-21,240,2016-01-28,339,"Diflucan","fluconazole","ANTI-INFECTIVE AGENTS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"02-017",1,2015-04-24,19,2015-07-22,108,"CELONTIN","methsuximide","NEUROMUSCULAR DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"02-017",2,2015-05-21,46,2015-12-04,243,"NYSTATIN SUSP","nystatin susp","TOPICAL PRODUCTS","N",5,"intravenously","I'm not a doctor, I'm a data guru."
+"02-017",3,2016-01-06,276,2016-03-09,339,"ANTARA","fenofibrate micronized","HEART AND CIRCULATORY DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"02-017",4,2016-03-05,335,2016-03-19,349,"Naprosyn","naproxen","PAIN RELIEF DRUGS","Y",3,"topically","I'm not a doctor, I'm a data guru."
+"02-017",5,2016-03-24,354,2016-03-28,358,"ExELON caps, soln","rivastigmine","CENTRAL NERVOUS SYSTEM DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"02-018",1,2016-01-06,45,2016-11-16,360,"CONDYLOx","podofilox","TOPICAL PRODUCTS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"02-018",2,2016-08-03,255,2016-10-14,327,"Levlite","levonorgestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",2,"sublingually","I'm not a doctor, I'm a data guru."
+"02-019",1,2015-07-27,161,2015-09-07,203,"Altace","ramipril caps","HEART AND CIRCULATORY DRUGS","Y",3,"sublingually","I'm not a doctor, I'm a data guru."
+"02-019",2,2015-11-10,267,2016-02-08,357,"GABITRIL","tiagabine","NEUROMUSCULAR DRUGS","N",2,"subcutaneously","I'm not a doctor, I'm a data guru."
+"02-019",3,2016-01-31,349,2016-02-02,351,"EPIVIR-HBV","lamivudine","ANTI-INFECTIVE AGENTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"02-020",1,2015-08-11,122,2016-02-11,306,"DILAuDID-5","hydromorphone","PAIN RELIEF DRUGS","Y",3,"intravenously","I'm not a doctor, I'm a data guru."
+"02-021",1,2015-11-01,111,2016-05-24,316,"MEPHYTON","phytonadione","SUPPLEMENTS","N",3,"sublingually","I'm not a doctor, I'm a data guru."
+"02-021",2,2016-02-04,206,2016-03-09,240,"TAZORAC","tazarotene","TOPICAL PRODUCTS","Y",2,"intravenously","I'm not a doctor, I'm a data guru."
+"02-021",3,2016-02-25,227,2016-04-29,291,"Benzamycin","erythromycin/benzoyl peroxide","TOPICAL PRODUCTS","N",3,"intravenously","I'm not a doctor, I'm a data guru."
+"02-024",1,2015-10-13,227,2015-10-18,232,"HYDRALAZINE","hydralazine","HEART AND CIRCULATORY DRUGS","Y",2,"intravenously","I'm not a doctor, I'm a data guru."
+"02-025",1,2016-07-23,301,2016-08-07,316,"ATRIPLA","efavirenz/emtricitabine/tenofovir","ANTI-INFECTIVE AGENTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"02-026",1,2015-07-19,8,2016-05-15,309,"Cardizem","diltiazem","HEART AND CIRCULATORY DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"02-026",2,2015-09-26,77,2016-01-03,176,"Bactroban","mupirocin oint","TOPICAL PRODUCTS","N",4,"topically","I'm not a doctor, I'm a data guru."
+"02-026",3,2016-01-07,180,2016-03-10,243,"DIASTAT","diazepam","NEUROMUSCULAR DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"02-026",4,2016-05-01,295,2016-06-26,351,"Cutivate","fluticasone propionate","TOPICAL PRODUCTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"02-027",1,2015-11-13,225,2015-12-10,252,"Pepcid","famotidine","GASTROINTESTINAL DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"02-027",2,2015-11-23,235,2016-02-09,313,"Silvadene","silver sulfadiazine","TOPICAL PRODUCTS","Y",5,"sublingually","I'm not a doctor, I'm a data guru."
+"02-029",1,2015-10-24,3,2016-04-16,178,"Tenormin","atenolol","HEART AND CIRCULATORY DRUGS","N",1,"sublingually","I'm not a doctor, I'm a data guru."
+"02-029",2,2016-04-10,172,2016-09-20,335,"Vistaril","hydroxyzine pamoate","CENTRAL NERVOUS SYSTEM DRUGS","Y",3,"sublingually","I'm not a doctor, I'm a data guru."
+"03-001",1,2016-09-22,284,2016-10-10,302,"ACETAZOLAMIDE","acetazolamide","HEART AND CIRCULATORY DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"03-001",2,2016-11-10,333,2016-12-06,359,"Bicitra","sodium citrate/citric acid","GENITOURINARY DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"03-003",1,2016-08-31,365,2016-08-31,365,"ASPIRIN/CODEINE","aspirin/codeine","PAIN RELIEF DRUGS","Y",4,"topically","I'm not a doctor, I'm a data guru."
+"03-004",1,2015-06-28,33,2016-04-06,316,"Agrylin","anagrelide","BLOOD MODIFYING DRUGS","Y",1,"sublingually","I'm not a doctor, I'm a data guru."
+"03-004",2,2015-12-17,205,2016-02-22,272,"Precose","acarbose","HORMONES, DIABETES AND RELATED DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"03-004",3,2016-01-11,230,2016-05-02,342,"TRAZODONE","trazodone","CENTRAL NERVOUS SYSTEM DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"03-005",1,2016-03-21,110,2016-06-17,198,"Climara","estradiol patches","HORMONES, DIABETES AND RELATED DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"03-005",2,2016-04-10,130,2016-04-18,138,"SODIUM FLUORIDE","sodium fluoride","SUPPLEMENTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"03-005",3,2016-05-14,164,2016-10-23,326,"Lariam","mefloquine","ANTI-INFECTIVE AGENTS","Y",5,"subcutaneously","I'm not a doctor, I'm a data guru."
+"03-005",4,2016-09-11,284,2016-10-12,315,"PREMPRO","conjugated estrogens/medroxyprogesterone","HORMONES, DIABETES AND RELATED DRUGS","Y",5,"topically","I'm not a doctor, I'm a data guru."
+"03-005",5,2016-09-15,288,2016-11-07,341,"Pediazole","erythromycin/sulfisoxazole","ANTI-INFECTIVE AGENTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"03-007",1,2015-09-26,194,2016-03-15,365,"TRIAMCINOLONE","triamcinolone","TOPICAL PRODUCTS","Y",4,"intravenously","I'm not a doctor, I'm a data guru."
+"03-007",2,2015-12-19,278,2016-02-28,349,"VIGAMOx","moxifloxacin","TOPICAL PRODUCTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"03-007",3,2016-03-09,359,2016-03-11,361,"DIASTAT","diazepam","NEUROMUSCULAR DRUGS","Y",5,"sublingually","I'm not a doctor, I'm a data guru."
+"03-010",1,2016-01-11,58,2016-08-06,266,"Nordette","levonorgestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"03-010",2,2016-10-11,332,2016-11-09,361,"HYDRALAZINE","hydralazine","HEART AND CIRCULATORY DRUGS","Y",5,"subcutaneously","I'm not a doctor, I'm a data guru."
+"03-011",1,2015-04-21,76,2015-06-14,130,"DuETACT","pioglitazone/glimepiride","HORMONES, DIABETES AND RELATED DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"03-011",2,2015-10-01,239,2015-12-24,323,"TRuSOPT","dorzolamide","TOPICAL PRODUCTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"03-011",3,2015-11-12,281,2016-01-26,356,"PROPYLTHIOURACIL","propylthiouracil","HORMONES, DIABETES AND RELATED DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"03-012",1,2015-10-31,74,2016-02-10,176,"HuMALOG","insulin lispro","HORMONES, DIABETES AND RELATED DRUGS","N",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"03-012",2,2016-03-22,217,2016-07-18,335,"Carafate","sucralfate tabs","GASTROINTESTINAL DRUGS","Y",2,"subcutaneously","I'm not a doctor, I'm a data guru."
+"03-012",3,2016-07-04,321,2016-08-10,358,"Cosopt","dorzolamide/timolol maleate soln","TOPICAL PRODUCTS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"03-013",1,2016-10-05,344,2016-10-22,361,"Prelone","prednisolone syrup","HORMONES, DIABETES AND RELATED DRUGS","N",3,"topically","I'm not a doctor, I'm a data guru."
+"03-014",1,2015-04-04,57,2015-10-30,266,"Flagyl","metronidazole tabs","ANTI-INFECTIVE AGENTS","Y",4,"sublingually","I'm not a doctor, I'm a data guru."
+"03-015",1,2015-09-29,95,2016-02-19,238,"MYLERAN","busulfan","CANCER DRUGS","N",5,"intravenously","I'm not a doctor, I'm a data guru."
+"03-016",1,2016-01-09,173,2016-05-23,308,"ARIMIDEx","anastrozole","CANCER DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"03-016",2,2016-04-08,263,2016-06-05,321,"EMTRIVA","emtricitabine","ANTI-INFECTIVE AGENTS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"03-016",3,2016-06-25,341,2016-07-19,365,"PREMARIN","conjugated estrogens","HORMONES, DIABETES AND RELATED DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"03-017",1,2015-06-30,58,2015-07-31,89,"KETOCONAZOLE CRM","ketoconazole crm","TOPICAL PRODUCTS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"03-017",2,2015-08-12,101,2015-09-27,147,"AMOXICILLIN","amoxicillin","ANTI-INFECTIVE AGENTS","Y",1,"topically","I'm not a doctor, I'm a data guru."
+"03-017",3,2015-11-07,188,2016-03-19,321,"DICLOXACILLIN","dicloxacillin","ANTI-INFECTIVE AGENTS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"03-017",4,2016-01-12,254,2016-04-29,362,"LAMISIL granules","terbinafine","ANTI-INFECTIVE AGENTS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"03-017",5,2016-03-18,320,2016-04-19,352,"ACETIC ACID","acetic acid","TOPICAL PRODUCTS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"03-018",1,2015-07-14,78,2015-10-21,177,"REYATAZ","atazanavir","ANTI-INFECTIVE AGENTS","Y",2,"sublingually","I'm not a doctor, I'm a data guru."
+"03-018",2,2015-08-10,105,2016-01-09,257,"METHAZOLAMIDE","methazolamide","HEART AND CIRCULATORY DRUGS","N",1,"intravenously","I'm not a doctor, I'm a data guru."
+"03-018",3,2015-09-08,134,2016-02-22,301,"RILuTEK","riluzole","NEUROMUSCULAR DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"03-019",1,2015-08-18,81,2015-09-02,96,"Bactroban","mupirocin oint","TOPICAL PRODUCTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"03-019",2,2015-10-25,149,2016-04-25,332,"Levsin","hyoscyamine","GASTROINTESTINAL DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"03-019",3,2015-12-05,190,2016-05-14,351,"Cutivate","fluticasone propionate","TOPICAL PRODUCTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"03-019",4,2015-12-16,201,2016-03-31,307,"Cosopt","dorzolamide/timolol maleate soln","TOPICAL PRODUCTS","Y",5,"orally","I'm not a doctor, I'm a data guru."
+"03-019",5,2016-04-04,311,2016-05-07,344,"RENVELA","sevelamer carbonate","GASTROINTESTINAL DRUGS","N",2,"topically","I'm not a doctor, I'm a data guru."
+"03-020",1,2015-09-26,87,2016-01-21,204,"DDAVP","desmopressin nasal","HORMONES, DIABETES AND RELATED DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"03-020",2,2015-11-05,127,2016-04-27,301,"Anaprox","naproxen sodium","PAIN RELIEF DRUGS","Y",1,"sublingually","I'm not a doctor, I'm a data guru."
+"03-020",3,2015-11-15,137,2016-01-21,204,"CEENu","lomustine","CANCER DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"03-020",4,2016-05-18,322,2016-05-22,326,"Naprosyn","naproxen","PAIN RELIEF DRUGS","Y",5,"orally","I'm not a doctor, I'm a data guru."
+"03-021",1,2015-12-03,22,2016-02-20,101,"Questran, Questran Light","cholestyramine","HEART AND CIRCULATORY DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"03-021",2,2016-03-09,119,2016-11-01,356,"DIFLORASONE","diflorasone","TOPICAL PRODUCTS","Y",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"03-021",3,2016-07-31,263,2016-09-27,321,"LOTREL 5/40, 10/40","amlodipine/benazepril","HEART AND CIRCULATORY DRUGS","N",5,"intravenously","I'm not a doctor, I'm a data guru."
+"03-021",4,2016-09-09,303,2016-10-03,327,"Mircette","desogestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"03-022",1,2015-09-04,114,2015-10-31,171,"KETOCONAZOLE CRM","ketoconazole crm","TOPICAL PRODUCTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"03-022",2,2016-01-19,251,2016-03-08,300,"PERPHENAZINE","perphenazine","CENTRAL NERVOUS SYSTEM DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"03-023",1,2015-09-03,226,2015-10-24,277,"Ativan","lorazepam","CENTRAL NERVOUS SYSTEM DRUGS","N",1,"sublingually","I'm not a doctor, I'm a data guru."
+"03-024",1,2015-10-09,198,2016-03-23,364,"Isopto Homatropine","homatropine soln","TOPICAL PRODUCTS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"03-024",2,2015-12-19,269,2016-02-19,331,"PuLMICORT RESPuLES","budesonide","RESPIRATORY AGENTS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"03-026",1,2015-12-29,244,2016-03-03,309,"Bleph-10","sulfacetamide sodium soln","TOPICAL PRODUCTS","Y",3,"subcutaneously","I'm not a doctor, I'm a data guru."
+"03-026",2,2016-01-04,250,2016-04-11,348,"Topicort","desoximetasone","TOPICAL PRODUCTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"03-027",1,2015-06-20,39,2016-02-25,289,"TRANSDERM-SCOP","scopolamine","GASTROINTESTINAL DRUGS","Y",3,"sublingually","I'm not a doctor, I'm a data guru."
+"03-027",2,2015-08-18,98,2015-11-28,200,"NYSTATIN SUSP","nystatin susp","TOPICAL PRODUCTS","Y",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"03-027",3,2015-11-05,177,2016-04-07,331,"SKELAxIN","metaxalone","NEUROMUSCULAR DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"03-027",4,2016-03-03,296,2016-03-05,298,"DOXYCYCLINE HYCLATE","doxycycline hyclate","ANTI-INFECTIVE AGENTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"03-029",1,2015-11-05,242,2015-11-12,249,"Retrovir","zidovudine","ANTI-INFECTIVE AGENTS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"04-003",1,2015-09-08,81,2015-10-31,134,"ATRIPLA","efavirenz/emtricitabine/tenofovir","ANTI-INFECTIVE AGENTS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"04-003",2,2015-11-10,144,2015-12-24,188,"PREMARIN crm","conjugated estrogens","GENITOURINARY DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"04-003",3,2016-02-01,227,2016-04-20,306,"ACTIVELLA","estradiol/norethindrone acetate","HORMONES, DIABETES AND RELATED DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"04-003",4,2016-03-03,258,2016-05-04,320,"RISPERDAL soln","risperidone","CENTRAL NERVOUS SYSTEM DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"04-003",5,2016-04-03,289,2016-04-03,289,"MESNEx tabs","mesna","CANCER DRUGS","N",3,"intravenously","I'm not a doctor, I'm a data guru."
+"04-004",1,2015-12-11,25,2016-10-26,345,"PHOSLO","calcium acetate","GASTROINTESTINAL DRUGS","Y",2,"intravenously","I'm not a doctor, I'm a data guru."
+"04-004",2,2016-06-12,209,2016-10-11,330,"Cleocin","clindamycin crm","GENITOURINARY DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"04-004",3,2016-07-12,239,2016-07-20,247,"Flonase","fluticasone","RESPIRATORY AGENTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"04-004",4,2016-07-15,242,2016-07-22,249,"Coumadin","warfarin","BLOOD MODIFYING DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"04-005",1,2016-02-20,202,2016-07-21,354,"Midrin","acetaminophen/isometheptene/dichloralphenazone","PAIN RELIEF DRUGS","N",1,"orally","I'm not a doctor, I'm a data guru."
+"04-005",2,2016-02-26,208,2016-03-24,235,"Flexeril","cyclobenzaprine","NEUROMUSCULAR DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"04-005",3,2016-05-11,283,2016-05-18,290,"ARICEPT ODT","donepezil","CENTRAL NERVOUS SYSTEM DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"04-007",1,2016-05-11,180,2016-05-18,187,"IBUPROFEN","ibuprofen","PAIN RELIEF DRUGS","Y",1,"topically","I'm not a doctor, I'm a data guru."
+"04-007",2,2016-09-02,294,2016-09-28,320,"CIMETIDINE","cimetidine","GASTROINTESTINAL DRUGS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"04-008",1,2016-02-24,232,2016-02-26,234,"Monopril HCT","fosinopril/hydrochlorothiazide","HEART AND CIRCULATORY DRUGS","Y",2,"sublingually","I'm not a doctor, I'm a data guru."
+"04-008",2,2016-03-30,267,2016-04-11,279,"Macrobid","nitrofurantoin monohydrate/macrocrystals","GENITOURINARY DRUGS","N",5,"topically","I'm not a doctor, I'm a data guru."
+"04-009",1,2015-07-09,91,2016-02-15,312,"Sectral","acebutolol","HEART AND CIRCULATORY DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"04-009",2,2016-03-27,353,2016-03-28,354,"Questran, Questran Light","cholestyramine","HEART AND CIRCULATORY DRUGS","N",4,"intravenously","I'm not a doctor, I'm a data guru."
+"04-010",1,2015-04-21,90,2015-09-10,232,"TAMOXIFEN","tamoxifen","CANCER DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"04-010",2,2015-04-27,96,2015-09-30,252,"Levsin","hyoscyamine","GASTROINTESTINAL DRUGS","N",4,"sublingually","I'm not a doctor, I'm a data guru."
+"04-010",3,2015-08-20,211,2015-11-09,292,"Restoril","temazepam","CENTRAL NERVOUS SYSTEM DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"04-011",1,2016-01-13,49,2016-03-09,105,"ELIDEL","pimecrolimus","TOPICAL PRODUCTS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"04-011",2,2016-04-16,143,2016-07-15,233,"Ogen","estropipate","HORMONES, DIABETES AND RELATED DRUGS","Y",1,"subcutaneously","I'm not a doctor, I'm a data guru."
+"04-011",3,2016-05-09,166,2016-10-17,327,"Levlite","levonorgestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","Y",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"04-012",1,2015-08-17,2,2016-04-01,230,"VAGIFEM","estradiol vaginal tabs","GENITOURINARY DRUGS","Y",3,"topically","I'm not a doctor, I'm a data guru."
+"04-012",2,2016-06-23,313,2016-07-30,350,"Cosopt","dorzolamide/timolol maleate soln","TOPICAL PRODUCTS","Y",4,"intravenously","I'm not a doctor, I'm a data guru."
+"04-012",3,2016-07-25,345,2016-07-30,350,"SuPRAx","cefixime","ANTI-INFECTIVE AGENTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"04-013",1,2016-10-16,346,2016-10-24,354,"TAMIFLu","oseltamivir","ANTI-INFECTIVE AGENTS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"04-014",1,2015-07-06,76,2016-03-27,341,"CHLOROTHIAZIDE","chlorothiazide","HEART AND CIRCULATORY DRUGS","Y",2,"topically","I'm not a doctor, I'm a data guru."
+"04-014",2,2015-09-30,162,2015-10-04,166,"Cipro","ciprofloxacin tabs","ANTI-INFECTIVE AGENTS","N",3,"sublingually","I'm not a doctor, I'm a data guru."
+"04-014",3,2015-11-09,202,2016-03-23,337,"Mavik","trandolapril","HEART AND CIRCULATORY DRUGS","N",1,"sublingually","I'm not a doctor, I'm a data guru."
+"04-014",4,2015-12-03,226,2016-03-15,329,"SOLARAZE","diclofenac sodium","TOPICAL PRODUCTS","Y",1,"intravenously","I'm not a doctor, I'm a data guru."
+"04-015",1,2015-07-12,49,2015-08-21,89,"Ativan","lorazepam","CENTRAL NERVOUS SYSTEM DRUGS","Y",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"04-015",2,2016-02-14,266,2016-04-21,333,"LOXAPINE","loxapine","CENTRAL NERVOUS SYSTEM DRUGS","N",4,"topically","I'm not a doctor, I'm a data guru."
+"04-015",3,2016-04-07,319,2016-04-23,335,"Norvasc","amlodipine","HEART AND CIRCULATORY DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"04-016",1,2016-07-05,206,2016-11-28,352,"PHOSLO","calcium acetate","GASTROINTESTINAL DRUGS","N",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"04-016",2,2016-08-18,250,2016-09-10,273,"SENSIPAR","cinacalcet","HORMONES, DIABETES AND RELATED DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"04-016",3,2016-08-21,253,2016-09-28,291,"LEVEMIR","insulin detemir","HORMONES, DIABETES AND RELATED DRUGS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"04-016",4,2016-09-16,279,2016-09-16,279,"Tenex","guanfacine","HEART AND CIRCULATORY DRUGS","N",4,"topically","I'm not a doctor, I'm a data guru."
+"04-020",1,2015-03-20,59,2015-11-23,307,"DETROL","tolterodine","GENITOURINARY DRUGS","N",2,"sublingually","I'm not a doctor, I'm a data guru."
+"04-020",2,2015-06-25,156,2015-12-16,330,"Tigan","trimethobenzamide caps","GASTROINTESTINAL DRUGS","N",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"04-020",3,2015-08-16,208,2015-10-30,283,"ESTRASORB","estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"04-021",1,2016-05-14,244,2016-07-19,310,"Clinoril","sulindac","PAIN RELIEF DRUGS","N",1,"topically","I'm not a doctor, I'm a data guru."
+"04-021",2,2016-06-16,277,2016-07-08,299,"Grifulvin V","griseofulvin microsize susp","ANTI-INFECTIVE AGENTS","Y",5,"orally","I'm not a doctor, I'm a data guru."
+"04-021",3,2016-06-22,283,2016-06-25,286,"EPZICOM","abacavir/lamivudine","ANTI-INFECTIVE AGENTS","Y",4,"intravenously","I'm not a doctor, I'm a data guru."
+"04-021",4,2016-08-28,350,2016-09-05,358,"COMBIPATCH","estradiol/norethindrone acetate","HORMONES, DIABETES AND RELATED DRUGS","Y",2,"intravenously","I'm not a doctor, I'm a data guru."
+"04-023",1,2016-05-07,133,2016-07-27,214,"CLINDESSE","clindamycin crm","GENITOURINARY DRUGS","N",5,"intravenously","I'm not a doctor, I'm a data guru."
+"04-024",1,2016-08-27,329,2016-09-14,347,"Optipranolol","metipranolol soln","TOPICAL PRODUCTS","Y",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"04-025",1,2015-07-09,66,2015-08-13,101,"MIGRANAL","dihydroergotamine","PAIN RELIEF DRUGS","Y",1,"intravenously","I'm not a doctor, I'm a data guru."
+"04-026",1,2015-10-30,84,2016-03-31,237,"Robaxin","methocarbamol","NEUROMUSCULAR DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"04-026",2,2016-01-30,176,2016-05-11,278,"HuMuLIN N","insulin isophane","HORMONES, DIABETES AND RELATED DRUGS","Y",2,"topically","I'm not a doctor, I'm a data guru."
+"04-026",3,2016-03-10,216,2016-06-20,318,"Westcort","hydrocortisone valerate","TOPICAL PRODUCTS","Y",4,"sublingually","I'm not a doctor, I'm a data guru."
+"04-027",1,2015-08-06,35,2015-09-15,75,"RAPAMuNE","sirolimus","MISCELLANEOUS CATEGORIES","N",1,"orally","I'm not a doctor, I'm a data guru."
+"04-027",2,2015-10-12,102,2015-11-02,123,"Ceftin","cefuroxime","ANTI-INFECTIVE AGENTS","Y",2,"topically","I'm not a doctor, I'm a data guru."
+"04-027",3,2015-10-28,118,2015-11-19,140,"Lotensin","benazepril","HEART AND CIRCULATORY DRUGS","Y",4,"intravenously","I'm not a doctor, I'm a data guru."
+"04-028",1,2015-02-08,26,2015-11-01,292,"ZERIT","stavudine","ANTI-INFECTIVE AGENTS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"04-029",1,2015-04-28,95,2015-12-30,341,"Megace","megestrol","CANCER DRUGS","Y",1,"subcutaneously","I'm not a doctor, I'm a data guru."
+"04-029",2,2016-01-17,359,2016-01-23,365,"Ziac","bisoprolol/hydrochlorothiazide","HEART AND CIRCULATORY DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"04-030",1,2015-09-26,103,2016-02-08,238,"ALDARA","imiquimod","TOPICAL PRODUCTS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"04-030",2,2016-02-10,240,2016-02-13,243,"LuMIGAN","bimatoprost","TOPICAL PRODUCTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"04-030",3,2016-03-06,265,2016-04-22,312,"TRAVATAN","travoprost","TOPICAL PRODUCTS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"05-001",1,2015-06-28,143,2015-12-24,322,"Zonegran","zonisamide","NEUROMUSCULAR DRUGS","N",5,"topically","I'm not a doctor, I'm a data guru."
+"05-001",2,2015-10-07,244,2015-10-30,267,"ERYTHROMYCIN FILMTABS","erythromycin base","ANTI-INFECTIVE AGENTS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"05-001",3,2016-01-08,337,2016-01-26,355,"Loestrin","norethindrone acetate/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",4,"sublingually","I'm not a doctor, I'm a data guru."
+"05-001",4,2016-01-10,339,2016-01-11,340,"CYTOMEL","liothyronine","HORMONES, DIABETES AND RELATED DRUGS","Y",5,"intravenously","I'm not a doctor, I'm a data guru."
+"05-003",1,2015-05-06,14,2015-12-08,230,"Pediazole","erythromycin/sulfisoxazole","ANTI-INFECTIVE AGENTS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"05-003",2,2015-08-29,129,2015-11-07,199,"KETOCONAZOLE","ketoconazole","ANTI-INFECTIVE AGENTS","Y",2,"topically","I'm not a doctor, I'm a data guru."
+"05-003",3,2015-08-31,131,2015-10-14,175,"ESTRASORB","estradiol","HORMONES, DIABETES AND RELATED DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"05-003",4,2015-09-05,136,2015-10-23,184,"DEXAMETHASONE SODIUM PHOSPHATE SOLN","dexamethasone sodium phosphate soln","TOPICAL PRODUCTS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"05-003",5,2015-10-30,191,2015-11-20,212,"OPTIVAR","azelastine","TOPICAL PRODUCTS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"05-004",1,2016-10-02,302,2016-10-15,315,"NYSTATIN TABS","nystatin tabs","ANTI-INFECTIVE AGENTS","Y",4,"intravenously","I'm not a doctor, I'm a data guru."
+"05-004",2,2016-10-18,318,2016-11-24,355,"Zebeta","bisoprolol","HEART AND CIRCULATORY DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"05-005",1,2015-12-13,45,2016-06-17,232,"DEPAKOTE SPRINKLES","divalproex","NEUROMUSCULAR DRUGS","Y",1,"subcutaneously","I'm not a doctor, I'm a data guru."
+"05-005",2,2016-06-01,216,2016-08-19,295,"NITROLINGuAL","nitroglycerin","HEART AND CIRCULATORY DRUGS","N",3,"subcutaneously","I'm not a doctor, I'm a data guru."
+"05-006",1,2015-04-25,1,2015-11-11,201,"ExFORGE","amlodipine/valsartan","HEART AND CIRCULATORY DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"05-006",2,2015-05-11,17,2015-11-27,217,"OXYBUTYNIN","oxybutynin","GENITOURINARY DRUGS","Y",3,"subcutaneously","I'm not a doctor, I'm a data guru."
+"05-006",3,2015-09-15,144,2015-10-03,162,"Mycostatin","nystatin","TOPICAL PRODUCTS","Y",1,"sublingually","I'm not a doctor, I'm a data guru."
+"05-006",4,2016-03-16,327,2016-04-07,349,"TOPAMAx","topiramate","NEUROMUSCULAR DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"05-008",1,2016-04-27,168,2016-08-28,291,"COMBIPATCH","estradiol/norethindrone acetate","HORMONES, DIABETES AND RELATED DRUGS","Y",3,"intravenously","I'm not a doctor, I'm a data guru."
+"05-009",1,2016-04-07,134,2016-05-19,176,"AMOxIL drops","amoxicillin","ANTI-INFECTIVE AGENTS","Y",5,"subcutaneously","I'm not a doctor, I'm a data guru."
+"05-011",1,2016-02-14,91,2016-05-25,192,"Ortho Tri-Cyclen","norgestimate/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"05-011",2,2016-06-11,209,2016-08-15,274,"Minipress","prazosin","HEART AND CIRCULATORY DRUGS","N",4,"sublingually","I'm not a doctor, I'm a data guru."
+"05-011",3,2016-07-04,232,2016-11-02,353,"METHERGINE","methylergonovine","HORMONES, DIABETES AND RELATED DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"05-011",4,2016-10-15,335,2016-11-13,364,"CIMETIDINE","cimetidine","GASTROINTESTINAL DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"05-011",5,2016-11-09,360,2016-11-10,361,"ALBENZA","albendazole","ANTI-INFECTIVE AGENTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"05-012",1,2016-04-03,306,2016-04-30,333,"ERYTHROMYCIN GEL","erythromycin gel","TOPICAL PRODUCTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"05-012",2,2016-05-13,346,2016-05-15,348,"PREMARIN crm","conjugated estrogens","GENITOURINARY DRUGS","N",3,"intravenously","I'm not a doctor, I'm a data guru."
+"05-013",1,2015-06-15,58,2015-08-27,131,"TRuSOPT","dorzolamide","TOPICAL PRODUCTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"05-013",2,2015-09-29,164,2016-01-14,271,"NABUMETONE","nabumetone","PAIN RELIEF DRUGS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"05-014",1,2016-04-23,181,2016-10-23,364,"AMOXICILLIN","amoxicillin","ANTI-INFECTIVE AGENTS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"05-015",1,2015-11-04,20,2016-06-19,248,"Ogen","estropipate","HORMONES, DIABETES AND RELATED DRUGS","Y",5,"orally","I'm not a doctor, I'm a data guru."
+"05-015",2,2016-06-04,233,2016-06-23,252,"Cyclessa","desogestrel/ethinyl estradiol","HORMONES, DIABETES AND RELATED DRUGS","N",2,"sublingually","I'm not a doctor, I'm a data guru."
+"05-018",1,2015-11-06,126,2016-01-15,196,"LuMIGAN","bimatoprost","TOPICAL PRODUCTS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"05-018",2,2016-05-08,310,2016-06-18,351,"HuMALOG MIx 75/ 5","insulin lispro protamine/lispro","HORMONES, DIABETES AND RELATED DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"05-019",1,2015-12-19,6,2016-05-22,161,"ANTABuSE","disulfiram","CENTRAL NERVOUS SYSTEM DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"05-019",2,2016-01-05,23,2016-06-26,196,"Restoril","temazepam","CENTRAL NERVOUS SYSTEM DRUGS","N",2,"topically","I'm not a doctor, I'm a data guru."
+"05-019",3,2016-05-28,167,2016-12-06,359,"BYETTA","exenatide","HORMONES, DIABETES AND RELATED DRUGS","Y",5,"orally","I'm not a doctor, I'm a data guru."
+"05-019",4,2016-09-28,290,2016-11-09,332,"ELMIRON","pentosan","GENITOURINARY DRUGS","Y",5,"subcutaneously","I'm not a doctor, I'm a data guru."
+"05-019",5,2016-10-25,317,2016-11-22,345,"Adderall","amphetamine/dextroamphetamine mixed salts","CENTRAL NERVOUS SYSTEM DRUGS","Y",4,"sublingually","I'm not a doctor, I'm a data guru."
+"05-020",1,2015-05-23,10,2015-10-10,150,"BENZACLIN","clindamycin/benzoyl peroxide","TOPICAL PRODUCTS","N",2,"subcutaneously","I'm not a doctor, I'm a data guru."
+"05-020",2,2015-12-19,220,2016-02-26,289,"xERAC AC","aluminum chloride","TOPICAL PRODUCTS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"05-020",3,2016-03-12,304,2016-04-06,329,"IBUPROFEN","ibuprofen","PAIN RELIEF DRUGS","Y",3,"subcutaneously","I'm not a doctor, I'm a data guru."
+"05-021",1,2015-05-07,17,2015-12-06,230,"MEPHYTON","phytonadione","SUPPLEMENTS","Y",2,"intravenously","I'm not a doctor, I'm a data guru."
+"05-021",2,2015-08-27,129,2015-11-19,213,"Plaquenil","hydroxychloroquine","ANTI-INFECTIVE AGENTS","N",3,"topically","I'm not a doctor, I'm a data guru."
+"05-021",3,2015-12-19,243,2016-04-19,365,"GEODON","ziprasidone","CENTRAL NERVOUS SYSTEM DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"05-021",4,2016-01-16,271,2016-04-17,363,"LuMIGAN","bimatoprost","TOPICAL PRODUCTS","N",5,"sublingually","I'm not a doctor, I'm a data guru."
+"05-023",1,2015-05-27,137,2015-07-20,191,"PENICILLIN V POTASSIUM","penicillin v potassium","ANTI-INFECTIVE AGENTS","N",5,"orally","I'm not a doctor, I'm a data guru."
+"05-023",2,2015-06-26,167,2015-06-27,168,"TEKTuRNA","aliskiren","HEART AND CIRCULATORY DRUGS","N",3,"orally","I'm not a doctor, I'm a data guru."
+"05-023",3,2015-07-11,182,2015-10-13,276,"LEVEMIR","insulin detemir","HORMONES, DIABETES AND RELATED DRUGS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"05-024",1,2016-01-09,269,2016-04-05,356,"Mevacor","lovastatin","HEART AND CIRCULATORY DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"05-024",2,2016-03-08,328,2016-04-06,357,"DDAVP","desmopressin nasal","HORMONES, DIABETES AND RELATED DRUGS","Y",4,"subcutaneously","I'm not a doctor, I'm a data guru."
+"05-026",1,2016-01-02,54,2016-06-08,212,"INVIRASE","saquinavir","ANTI-INFECTIVE AGENTS","N",4,"orally","I'm not a doctor, I'm a data guru."
+"05-026",2,2016-01-08,60,2016-05-25,198,"Trandate","labetalol","HEART AND CIRCULATORY DRUGS","N",3,"topically","I'm not a doctor, I'm a data guru."
+"05-026",3,2016-03-13,125,2016-11-07,364,"Anafranil","clomipramine","CENTRAL NERVOUS SYSTEM DRUGS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"05-026",4,2016-04-11,154,2016-07-06,240,"Precose","acarbose","HORMONES, DIABETES AND RELATED DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."
+"05-026",5,2016-04-25,168,2016-08-16,281,"Lopressor","metoprolol tartrate","HEART AND CIRCULATORY DRUGS","Y",2,"orally","I'm not a doctor, I'm a data guru."
+"05-027",1,2015-02-09,15,2015-03-08,42,"Myambutol","ethambutol","ANTI-INFECTIVE AGENTS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"05-027",2,2015-07-04,160,2015-12-01,310,"Pepcid","famotidine","GASTROINTESTINAL DRUGS","Y",3,"orally","I'm not a doctor, I'm a data guru."
+"05-027",3,2016-01-01,341,2016-01-14,354,"NOVOLIN 70/30","insulin isophane/regular","HORMONES, DIABETES AND RELATED DRUGS","Y",5,"sublingually","I'm not a doctor, I'm a data guru."
+"05-029",1,2016-05-11,162,2016-07-21,233,"NYSTATIN TABS","nystatin tabs","ANTI-INFECTIVE AGENTS","Y",4,"orally","I'm not a doctor, I'm a data guru."
+"05-029",2,2016-10-18,322,2016-11-13,348,"AMOXICILLIN","amoxicillin","ANTI-INFECTIVE AGENTS","Y",1,"orally","I'm not a doctor, I'm a data guru."
+"05-030",1,2016-05-10,222,2016-08-08,312,"LAMICTAL Starter Kit","lamotrigine","NEUROMUSCULAR DRUGS","N",2,"orally","I'm not a doctor, I'm a data guru."

@@ -31,7 +31,8 @@ set.seed(2357)
     }
 
     VS <- VS %>%
-        arrange(USUBJID, VISITNUM, VSTEST)
+        arrange(USUBJID, VISITNUM, VSTEST) %>%
+        select(USUBJID, VISIT, VISITNUM, VSDT, VSDY, VSCAT, VSTEST, VSSTRESU, VSSTRESN, VSSTNRLO, VSSTNRHI)
 
     write.csv(
         VS,

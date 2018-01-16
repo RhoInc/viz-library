@@ -34,7 +34,7 @@ set.seed(2357)
         mutate(
             SVDT = as.Date(RFSTDTC) + SVDY - 1
         ) %>%
-        select(-SAFFL, -RFSTDTC)
+        select(USUBJID, VISIT, VISITNUM, SVDT, SVDY)
     write.csv(
         SV,
         '../SDTM/SV.csv',
