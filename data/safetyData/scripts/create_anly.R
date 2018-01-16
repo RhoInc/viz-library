@@ -18,6 +18,9 @@ library(dplyr)
                 ASTDY = AESTDY,
                 AENDT = AEENDT,
                 AENDY = AEENDY
+            ) %>%
+            mutate(
+                AESEQ = ASEQ
             )
             write.csv(
                 ADAE,
@@ -35,6 +38,9 @@ library(dplyr)
                 ASTDY = CMSTDY,
                 AENDT = CMENDT,
                 AENDY = CMENDY
+            ) %>%
+            mutate(
+                CMSEQ = ASEQ
             )
             write.csv(
                 ADCM,
