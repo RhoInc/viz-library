@@ -4,6 +4,7 @@ set.seed(2357)
 ### Input data
     SV <- read.csv('../SDTM/SV.csv', colClasses = 'character') %>% rename(LBDT = SVDT, LBDY = SVDY)
     labs <- read.csv('../raw/labs.csv', colClasses = 'character') %>% select(-SEX)
+    visits <- read.csv('../raw/scheduleOfEvents.csv', colClasses = 'character')
 
 ### Output data
     LB <- NULL
@@ -17,9 +18,9 @@ set.seed(2357)
             LBSTNRHI <- as.numeric(lb_vis[j,'LBSTNRHI'])
             mean <- (LBSTNRHI + LBSTNRLO)/2
             std <- (LBSTNRHI - LBSTNRLO)/2
-            lb_vis[j,'LBSTRESN'] <- max(rnorm(1, mean, std), 0)
+            lb_vis[j,'LBSTRESN'] <- ifelse(runif(1) > .02, max(rnorm(1, mean, std), 0), NA)
         }
-        
+
         LB <- plyr::rbind.fill(LB, lb_vis)
     }
 
