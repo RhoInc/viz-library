@@ -3,6 +3,7 @@ set.seed(2357)
 
 ### Input data
     SV <- read.csv('../SDTM/SV.csv', colClasses = 'character') %>% rename(VSDT = SVDT, VSDY = SVDY)
+    visits <- read.csv('../raw/scheduleOfEvents.csv', colClasses = 'character')
     vitals <- read.csv('../raw/vitalSigns.csv', colClasses = 'character') %>%
         select(-VSAGELO, -VSAGEHI) %>%
         mutate(one = 1) %>%
@@ -30,7 +31,18 @@ set.seed(2357)
         VS <- plyr::rbind.fill(VS, vs_vis)
     }
 
+    visits_vitals <- merge(visits, vitals, all = TRUE) %>%
+        sample_n(nrow(visits)*nrow(vitals)/10) %>%
+        mutate(VISIT_VSTEST = paste(VISIT, VSTEST, sep = '_'))
+
     VS <- VS %>%
+        mutate(
+            VSSTRESN = ifelse(
+                !paste(VISIT, VSTEST, sep = '_') %in% visits_vitals$VISIT_VSTEST,
+                    VSSTRESN,
+                    NA
+            )
+        ) %>%
         arrange(USUBJID, VISITNUM, VSTEST) %>%
         select(USUBJID, VISIT, VISITNUM, VSDT, VSDY, VSCAT, VSTEST, VSSTRESU, VSSTRESN, VSSTNRLO, VSSTNRHI)
 

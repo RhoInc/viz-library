@@ -23,7 +23,18 @@ set.seed(2357)
         LB <- plyr::rbind.fill(LB, lb_vis)
     }
 
+    visits_labs <- merge(visits, labs, all = TRUE) %>%
+        sample_n(nrow(visits)*nrow(labs)/10) %>%
+        mutate(VISIT_LBTEST = paste(VISIT, LBTEST, sep = '_'))
+
     LB <- LB %>%
+        mutate(
+            LBSTRESN = ifelse(
+                !paste(VISIT, LBTEST, sep = '_') %in% visits_labs$VISIT_LBTEST,
+                    LBSTRESN,
+                    NA
+            )
+        ) %>%
         arrange(USUBJID, VISITNUM, LBTEST) %>%
         select(USUBJID, VISIT, VISITNUM, LBDT, LBDY, LBCAT, LBTEST, LBSTRESU, LBSTRESN, LBSTNRLO, LBSTNRHI)
 

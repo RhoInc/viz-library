@@ -132,7 +132,7 @@ var dataFiles = [
     filename: "ADBDS.csv",
     ext: "csv",
     rel_path: "./data/safetyData/ADBDS.csv",
-    rows: 22695,
+    rows: 24669,
     cols: 20
   },
   {
@@ -148,7 +148,7 @@ var dataFiles = [
     filename: "ADTIMELINES.csv",
     ext: "csv",
     rel_path: "./data/safetyData/ADTIMELINES.csv",
-    rows: 1067,
+    rows: 1054,
     cols: 17
   },
   {
@@ -220,7 +220,7 @@ var dataFiles = [
     filename: "LB.csv",
     ext: "csv",
     rel_path: "./data/safetyData/SDTM/LB.csv",
-    rows: 17280,
+    rows: 18784,
     cols: 11
   },
   {
@@ -228,7 +228,7 @@ var dataFiles = [
     filename: "SV.csv",
     ext: "csv",
     rel_path: "./data/safetyData/SDTM/SV.csv",
-    rows: 1080,
+    rows: 1174,
     cols: 5
   },
   {
@@ -236,7 +236,7 @@ var dataFiles = [
     filename: "VS.csv",
     ext: "csv",
     rel_path: "./data/safetyData/SDTM/VS.csv",
-    rows: 5400,
+    rows: 5870,
     cols: 11
   }
 ];
