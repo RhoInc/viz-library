@@ -67,10 +67,9 @@ examples.forEach(function(ex) {
       var attrMatch = lines.filter(function(line) {
         return c.regex.test(line);
       });
-      ex[c.value] =
-        attrMatch.length == 1
-          ? attrMatch[0].match(/([^(**)]+$)/)[0].trim()
-          : null;
+      ex[c.value] = attrMatch.length == 1
+        ? attrMatch[0].match(/([^(**)]+$)/)[0].trim()
+        : null;
     });
 
     //parse langauges and libraries to arrays
@@ -99,8 +98,8 @@ examples.forEach(function(ex) {
   ex.paths.example = ex.results
     ? ex.results
     : webExampleN > -1
-      ? ex.files[webExampleN]
-      : imgExampleN > -1 ? ex.files[imgExampleN] : null;
+        ? ex.files[webExampleN]
+        : imgExampleN > -1 ? ex.files[imgExampleN] : null;
 
   //Make thumbnails
   var imgs = ex.files

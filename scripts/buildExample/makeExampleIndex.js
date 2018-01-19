@@ -127,8 +127,9 @@ exports.makeExampleIndex = function(ex) {
         ex.paths.example +
         '" width=960></div>';
       var exampleExt = ex.paths.example.split(".").pop();
-      var exampleContent_html =
-        exampleExt == "html" ? webExampleContent : staticExampleContent;
+      var exampleContent_html = exampleExt == "html"
+        ? webExampleContent
+        : staticExampleContent;
 
       window.d3
         .select("body")
