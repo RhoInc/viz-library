@@ -80,20 +80,20 @@ var dataFiles = [
     cols: 11
   },
   {
-    local_path: "C:/Users/schildre/GitHub/viz-library/data/testData/ADBDS_missingData.csv",
-    filename: "ADBDS_missingData.csv",
-    ext: "csv",
-    rel_path: "./data/testData/ADBDS_missingData.csv",
-    rows: 22695,
-    cols: 19
-  },
-  {
     local_path: "C:/Users/schildre/GitHub/viz-library/data/testData/ADTIMELINES_noDays.csv",
     filename: "ADTIMELINES_noDays.csv",
     ext: "csv",
     rel_path: "./data/testData/ADTIMELINES_noDays.csv",
     rows: 1067,
     cols: 17
+  },
+  {
+    local_path: "C:/Users/schildre/GitHub/viz-library/data/testData/ADBDS_missingData.csv",
+    filename: "ADBDS_missingData.csv",
+    ext: "csv",
+    rel_path: "./data/testData/ADBDS_missingData.csv",
+    rows: 22695,
+    cols: 19
   },
   {
     local_path: "C:/Users/schildre/GitHub/viz-library/data/testData/ADTIMELINES_partialMissing.csv",
