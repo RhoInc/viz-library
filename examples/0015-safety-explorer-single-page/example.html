@@ -9,7 +9,8 @@
         <title>Safety Explorer Suite</title>
 
         <script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'></script>
-        <script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>
+        <!--script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script-->
+        <script src="../../../../github/webcharts/build/webcharts.js"></script>
         <script src="https://rawgit.com/RhoInc/aeexplorer/master/build/aeTable.js"></script>
         <script src="https://rawgit.com/RhoInc/ae-timelines/master/build/aeTimelines.js"></script>
         <script src="https://rawgit.com/RhoInc/safety-histogram/master/build/safetyHistogram.js"></script>
@@ -58,6 +59,6 @@
     }
     var ses = safetyExplorerSuite.createExplorer('body', settings);
     ses.init(paths, loadcsv=true)
-
+    console.log(ses)
     </script>
 </html>
