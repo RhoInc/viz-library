@@ -33,7 +33,7 @@ exports.makeExampleIndex = function(ex) {
   var fs = require("fs"),
     d3 = require("d3"),
     jsdom = require("jsdom"),
-    showdown = require("showdown");
+    //showdown = require("showdown");
 
   var stub = fs
     .readFileSync("./scripts/buildExample/indexStub.html")

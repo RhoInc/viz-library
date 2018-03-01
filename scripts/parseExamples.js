@@ -14,95 +14,62 @@ var examples = fs
     return { dir: f };
   });
 
-//regex expressions to look for in readme
-var chartAttributes = [
-  { value: "title", regex: /^\*\*Title:\*\*/ },
-  { value: "languages", regex: /^\*\*Languages:\*\*/ },
-  { value: "libraries", regex: /^\*\*Libraries:\*\*/ },
-  { value: "description", regex: /^\*\*Description:\*\*/ },
-  { value: "data", regex: /^\*\*Data:\*\*/ },
-  { value: "code", regex: /^\*\*Code:\*\*/ },
-  { value: "results", regex: /^\*\*Results:\*\*/ },
-  { value: "tags", regex: /^\*\*Tags:\*\*/ }
-];
-
+/* parse each example */
 examples.forEach(function(ex) {
-  ////get list of files////
+  /****************************
+  *** File/path management
+  *****************************/
   ex.files = fs.readdirSync(exampleRoot + "/" + ex.dir).filter(function(f) {
     return f.charAt(0) != ".";
   });
 
   ////get paths of required files////
   ex.paths = {};
-
-  //root path
-  ex.paths.root = exampleRoot + "/" + ex.dir + "/";
-
-  //readme.md
-  var readmeN = ex.files
-    .map(function(f) {
-      return f.toLowerCase();
-    })
-    .indexOf("readme.md");
-  ex.paths.readme = readmeN > -1 ? ex.files[readmeN] : null;
-
-  //index.html
+  ex.paths.root = exampleRoot + "/" + ex.dir + "/";   //root path
   ex.paths.index = "index.html";
-
-  //thumb.png
   ex.paths.thumb = "thumb.png";
 
-  //get readme.md text
-  ex.readme = {};
+  /****************************
+  *** Pull package.json into an object, do some error checking and create index.html
+  *****************************/
 
-  //Pull in the raw readme data and look for attributes
-  if (ex.paths.readme) {
+  var packageN = ex.files
+    .map(function(f) {
+      return f.toLowerCase();
+    })
+    .indexOf("package.json");
+
+  ex.paths.package = packageN > -1 ? ex.files[packageN] : null;
+  if (ex.paths.package) {
     var lines = fs
-      .readFileSync(ex.paths.root + ex.paths.readme, "utf8")
+      .readFileSync(ex.paths.root + ex.paths.package, "utf8")
       .toString()
-      .split("\n");
+    ex.package = JSON.parse(lines)
 
-    //look for chart attributes in the readme
-    chartAttributes.forEach(function(c) {
-      var attrMatch = lines.filter(function(line) {
-        return c.regex.test(line);
-      });
-      ex[c.value] =
-        attrMatch.length == 1
-          ? attrMatch[0].match(/([^(**)]+$)/)[0].trim()
-          : null;
-    });
+    //make sure that required fields are found
+    var requiredProperties = ["homepage","main","name","version"]
+    requiredProperties.forEach(function(p){
+      if(!ex.package[p]){
+        console.error("ERROR: Can't create index.html "+ex.paths.root+" since `"+p+"` is missing in package.json." )
+        return
+      }
+    })
 
-    //parse langauges and libraries to arrays
-    ex.langages = ex.languages.split(",").map(d => d.trim());
-    ex.libraries = ex.libraries.split(",").map(d => d.trim());
+    //make sure that main isn't set to index.html
+    if(ex.package["main"].toLowerCase() == "index.html"){
+      console.error("ERROR: Can't create index.html "+ex.paths.root+" since `main` is set to index.html." )
+      return
+    }
+
+    //create index.html for the example
+    makeindex.makeExampleIndex(ex)
+  }else{
+    console.error("ERROR: Can't create index.html "+ex.paths.root+" since no package.json was found." )
   }
 
-  //
-  ////get paths of data and code////
-  ex.paths.data = ex.data;
-  ex.paths.code = ex.code;
-
-  //example
-  var webExampleN = ex.files
-    .map(function(f) {
-      return f.toLowerCase();
-    })
-    .indexOf("example.html");
-
-  var imgExampleN = ex.files
-    .map(function(f) {
-      return f.toLowerCase();
-    })
-    .indexOf("example.png");
-
-  ex.paths.example = ex.results
-    ? ex.results
-    : webExampleN > -1
-      ? ex.files[webExampleN]
-      : imgExampleN > -1 ? ex.files[imgExampleN] : null;
-
-  //Make thumbnails
+  /****************************
+  *** Make thumbnails
+  *****************************/
   var imgs = ex.files
     .map(function(f) {
       return f.toLowerCase();
@@ -128,15 +95,6 @@ examples.forEach(function(ex) {
         .write(thumbFile); // save
     });
   }
-
-  //Make example pages (unless readme says not to)
-  var makeIndexRegex = /(\[comment\]: <> \(---NO AUTO INDEX---\))/;
-  var makeIndexLines = lines.filter(function(line) {
-    return makeIndexRegex.test(line);
-  });
-  ex.makeIndex = makeIndexLines.length == 0;
-
-  if (ex.makeIndex) makeindex.makeExampleIndex(ex);
 });
 
 //write examples to disk
