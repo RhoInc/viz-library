@@ -22,6 +22,7 @@ exports.makeExampleIndex = function(ex) {
   /****************************************
    *** Combine the header and the vizualization
    *****************************************/
+   console.log(ex)
   var exampleExt = ex.package.homepage.split(".").pop();
   console.log(exampleExt.slice(0));
   if (["jpeg", "jpg", "png"].indexOf(exampleExt.slice(0)) > -1) {
@@ -64,23 +65,45 @@ exports.makeExampleIndex = function(ex) {
   //Add details about the chart
   var details = dom.window.d3.select("div#vl-ex-details");
 
+  var lowerFiles = ex.files.map(m=>m.toLowerCase())
+  var readmeIndex = lowerFiles.indexOf("readme.md")
+  if(readmeIndex>=0){
+    details
+      .select("ul.vl-ex-tags")
+      .append("li")
+      .attr("class","vl-ex-md")
+      .append("a")
+      .property("href",ex.files[readmeIndex])
+  }
+
   if (ex.package.dataDependecies.length > 0) {
     details
-      .select("li.vl-ex-data a")
+      .select("ul.vl-ex-tags")
+      .append("li")
+      .attr("class","vl-ex-data")
+      .append("a")
       .property("href", ex.package.dataDependecies[0]);
-  } else {
-    details.select("li.vl-ex-data").remove();
+      //add support for multiple data files
   }
 
   if (ex.package.repository) {
     details
-      .select("li.vl-ex-repo a")
+      .select("ul.vl-ex-tags")
+      .append("li")
+      .attr("class","vl-ex-repo")
+      .append("a")
       .property("href", ex.package.repository.replace("github:","https://www.github.com/"));
-  } else {
-    details.select("li.vl-ex-repo").remove();
   }
 
-  details.select("li.vl-ex-code a").property("href", ex.package.main);
+  if (ex.package.main) {
+    details
+      .select("ul.vl-ex-tags")
+      .append("li")
+      .attr("class","vl-ex-code")
+      .append("a")
+      .property("href", ex.package.main);
+  }
+  //details.select("li.vl-ex-code a").property("href", ex.package.main);
   details
     .select("p.vl-ex-description")
     .html("<b>" + cleanName + "</b> - " + ex.package.description);

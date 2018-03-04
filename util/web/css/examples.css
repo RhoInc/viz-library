@@ -80,6 +80,11 @@ ul.vl-ex-tags li a{
   text-decoration: none;
 }
 
+ul.vl-ex-tags li.vl-ex-md a:before{
+  font-family: Fontawesome;
+  content: "\f15b";
+}
+
 ul.vl-ex-tags li.vl-ex-repo a:before{
   font-family: Fontawesome;
   content: "\f09b";
