@@ -3,6 +3,7 @@
   "main": "webCodebookDemo.js",
   "name": "web-codebook-demo",
   "label":"Web Codebook Demo",
+  "repository":"github:Rhoinc/web-codebook",
   "version": "1.0.0",
   "description": "This page provides a simple demonstration of the web-codebook data summary tool.",
   "author": "Rho, Inc.",

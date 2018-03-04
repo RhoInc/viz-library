@@ -76,6 +76,24 @@ ul.vl-ex-tags li{
   border:2px solid black;
   background:white;
 }
+ul.vl-ex-tags li a{
+  text-decoration: none;
+}
+
+ul.vl-ex-tags li.vl-ex-repo a:before{
+  font-family: Fontawesome;
+  content: "\f09b";
+}
+
+ul.vl-ex-tags li.vl-ex-code a:before{
+  font-family: Fontawesome;
+  content: "\f121";
+}
+
+ul.vl-ex-tags li.vl-ex-data a:before{
+  font-family: Fontawesome;
+  content: "\f0ce";
+}
 
 ul.vl-ex-tags li.tag{
 background:#ffffb3;

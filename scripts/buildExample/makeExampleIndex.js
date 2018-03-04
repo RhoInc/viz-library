@@ -66,13 +66,21 @@ exports.makeExampleIndex = function(ex) {
 
   if (ex.package.dataDependecies.length > 0) {
     details
-      .select("li a.vl-ex-data")
+      .select("li.vl-ex-data a")
       .property("href", ex.package.dataDependecies[0]);
   } else {
-    details.select("li a.vl-ex-data").remove();
+    details.select("li.vl-ex-data").remove();
   }
 
-  details.select("li a.vl-ex-code").property("href", ex.package.main);
+  if (ex.package.repository) {
+    details
+      .select("li.vl-ex-repo a")
+      .property("href", ex.package.repository.replace("github:","https://www.github.com/"));
+  } else {
+    details.select("li.vl-ex-repo a").remove();
+  }
+
+  details.select("li.vl-ex-code a").property("href", ex.package.main);
   details
     .select("p.vl-ex-description")
     .html("<b>" + cleanName + "</b> - " + ex.package.description);
