@@ -4,7 +4,7 @@ Input: an Example Object created by parseExamples.js
 Output: an index.html file saved in the example folder
 */
 
-exports.makeExampleIndex = function(ex) {
+exports.makeExampleIndex = function(ex, examples) {
   var fs = require("fs"),
     d3 = require("d3");
 
@@ -22,9 +22,7 @@ exports.makeExampleIndex = function(ex) {
   /****************************************
    *** Combine the header and the vizualization
    *****************************************/
-   console.log(ex)
   var exampleExt = ex.package.homepage.split(".").pop();
-  console.log(exampleExt.slice(0));
   if (["jpeg", "jpg", "png"].indexOf(exampleExt.slice(0)) > -1) {
     //If the visualization is an image, use the stub html as the base for the index page
     ex.index = stub;
@@ -61,6 +59,26 @@ exports.makeExampleIndex = function(ex) {
   var cleanName = ex.package.label || ex.package.name;
   var header = dom.window.d3.select(".vl-ex-header");
   header.select("li.title").html(cleanName);
+
+  //update the next/back arrows
+  var chartIndex = examples.indexOf(ex)
+  console.log(chartIndex)
+  if(chartIndex < examples.length){
+    header.select("li.next-arrow a")
+    .property("href","../"+examples[chartIndex+1].dir)
+  }else{
+    header.select("li.next-arrow")
+    .classed("disabled",true)
+  }
+
+  if(chartIndex>0){
+    header.select("li.back-arrow a")
+    .property("href","../"+examples[chartIndex-1].dir)
+  }else{
+    header.select("li.back-arrow")
+    .classed("disabled",true)
+  }
+
 
   //Add details about the chart
   var details = dom.window.d3.select("div#vl-ex-details");

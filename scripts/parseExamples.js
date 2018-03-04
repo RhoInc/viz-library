@@ -72,7 +72,7 @@ examples.forEach(function(ex) {
     }
 
     //create index.html for the example
-    makeindex.makeExampleIndex(ex);
+    makeindex.makeExampleIndex(ex,examples);
   } else {
     console.error(
       "ERROR: Can't create index.html " +

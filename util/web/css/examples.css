@@ -47,6 +47,51 @@ ul.vl-ex-header li.info{
   font-size:1em;
 }
 
+ul.vl-ex-header li.arrow{
+  border:1px solid black;
+  padding:0 0.4em;
+  height:1.5em;
+  line-height: 1.5em;
+}
+
+ul.vl-ex-header li.arrow.disabled{
+  background:#ccc;
+}
+
+ul.vl-ex-header li.arrow.disabled a{
+  pointer-events: none;
+  cursor: default;
+}
+
+ul.vl-ex-header li.arrow a{
+  text-decoration:none;
+}
+
+ul.vl-ex-header li.right{
+  float:right;
+}
+
+ul.vl-ex-header li.back-arrow {
+  border-top-left-radius:0.3em;
+  border-bottom-left-radius:0.3em;
+}
+
+ul.vl-ex-header li.back-arrow a::before {
+  font-family: Fontawesome;
+  content: "\f104";
+}
+
+ul.vl-ex-header li.next-arrow {
+  border-top-right-radius:0.3em;
+  border-bottom-right-radius:0.3em;
+}
+
+ul.vl-ex-header li.next-arrow a::before {
+  font-family: Fontawesome;
+  content: "\f105";
+}
+
+
 /*****************************
 ** Example Data
 ******************************/
@@ -80,22 +125,22 @@ ul.vl-ex-tags li a{
   text-decoration: none;
 }
 
-ul.vl-ex-tags li.vl-ex-md a:before{
+ul.vl-ex-tags li.vl-ex-md a::before{
   font-family: Fontawesome;
   content: "\f15b";
 }
 
-ul.vl-ex-tags li.vl-ex-repo a:before{
+ul.vl-ex-tags li.vl-ex-repo a::before{
   font-family: Fontawesome;
   content: "\f09b";
 }
 
-ul.vl-ex-tags li.vl-ex-code a:before{
+ul.vl-ex-tags li.vl-ex-code a::before{
   font-family: Fontawesome;
   content: "\f121";
 }
 
-ul.vl-ex-tags li.vl-ex-data a:before{
+ul.vl-ex-tags li.vl-ex-data a::before{
   font-family: Fontawesome;
   content: "\f0ce";
 }
