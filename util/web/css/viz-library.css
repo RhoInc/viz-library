@@ -112,6 +112,18 @@ ul.nav-tabs li.active a, ul.nav-tabs li.active:hover a{
 	color:black;
 }
 
+ul.nav-tabs li.title{
+	background-color:white;
+	border:0px;
+	padding-bottom:4px;
+	#font-size:18px;
+	vertical-align: middle;
+}
+
+ul.nav-tabs li.title img{
+	height:20;
+	width:20;
+}
 /* Sections */
 .section  div.instructions {
 	font-size:0.8em;

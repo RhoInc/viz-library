@@ -1,0 +1,28 @@
+<div class="head">
+  <link rel="stylesheet" href="../../util/web/css/examples.css">
+  <ul class = 'vl-ex-header'>
+      <li class = "icon"><img src="../../util/web/img/rho.png"></li>
+      <li class = "site crumb"><a href="../../"><span>Graphics</span></a></li>
+      <li class = 'crumb'>Example</li>
+      <li class = 'title'></li>
+      <li class = 'info' title="Click to toggle chart details" onclick="toggleDetails()">&#9432;</li>
+  </ul>
+  <div id='vl-ex-details' style="display:none;">
+    <p class="vl-ex-description"></p>
+
+    <ul class="vl-ex-tags">
+      <li><a class="vl-ex-code" href="">Code</a></li>
+      <li><a class="vl-ex-data" href="">Data</a></li>
+    </ul>
+  </div>
+  <script>
+    function toggleDetails(){
+      var details = document.getElementById("vl-ex-details");
+      if (details.style.display === "none") {
+          details.style.display = "block";
+      } else {
+          details.style.display = "none";
+        }
+    }
+  </script>
+</div>
