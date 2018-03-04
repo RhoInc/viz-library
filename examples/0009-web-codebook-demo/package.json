@@ -1,0 +1,17 @@
+{
+  "homepage":"example.html",
+  "main": "webCodebookDemo.js",
+  "name": "web-codebook-demo",
+  "label":"Web Codebook Demo",
+  "version": "1.0.0",
+  "description": "This page provides a simple demonstration of the web-codebook data summary tool.",
+  "author": "Rho, Inc.",
+  "license": "MIT",
+  "keywords":["javascript","interactive","codebook","data summary"],
+  "dependencies": {
+    "d3": "~3",
+    "webcharts":"~1",
+    "web-codebook":"~1"
+  },
+  "dataDependecies":["../../data/safetyData/ADAE.csv"]
+}

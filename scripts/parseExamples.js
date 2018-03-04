@@ -17,21 +17,21 @@ var examples = fs
 /* parse each example */
 examples.forEach(function(ex) {
   /****************************
-  *** File/path management
-  *****************************/
+   *** File/path management
+   *****************************/
   ex.files = fs.readdirSync(exampleRoot + "/" + ex.dir).filter(function(f) {
     return f.charAt(0) != ".";
   });
 
   ////get paths of required files////
   ex.paths = {};
-  ex.paths.root = exampleRoot + "/" + ex.dir + "/";   //root path
+  ex.paths.root = exampleRoot + "/" + ex.dir + "/"; //root path
   ex.paths.index = "index.html";
   ex.paths.thumb = "thumb.png";
 
   /****************************
-  *** Pull package.json into an object, do some error checking and create index.html
-  *****************************/
+   *** Pull package.json into an object, do some error checking and create index.html
+   *****************************/
 
   var packageN = ex.files
     .map(function(f) {
@@ -43,33 +43,47 @@ examples.forEach(function(ex) {
   if (ex.paths.package) {
     var lines = fs
       .readFileSync(ex.paths.root + ex.paths.package, "utf8")
-      .toString()
-    ex.package = JSON.parse(lines)
+      .toString();
+    ex.package = JSON.parse(lines);
 
     //make sure that required fields are found
-    var requiredProperties = ["homepage","main","name","version"]
-    requiredProperties.forEach(function(p){
-      if(!ex.package[p]){
-        console.error("ERROR: Can't create index.html "+ex.paths.root+" since `"+p+"` is missing in package.json." )
-        return
+    var requiredProperties = ["homepage", "main", "name", "version"];
+    requiredProperties.forEach(function(p) {
+      if (!ex.package[p]) {
+        console.error(
+          "ERROR: Can't create index.html " +
+            ex.paths.root +
+            " since `" +
+            p +
+            "` is missing in package.json."
+        );
+        return;
       }
-    })
+    });
 
     //make sure that main isn't set to index.html
-    if(ex.package["main"].toLowerCase() == "index.html"){
-      console.error("ERROR: Can't create index.html "+ex.paths.root+" since `main` is set to index.html." )
-      return
+    if (ex.package["main"].toLowerCase() == "index.html") {
+      console.error(
+        "ERROR: Can't create index.html " +
+          ex.paths.root +
+          " since `main` is set to index.html."
+      );
+      return;
     }
 
     //create index.html for the example
-    makeindex.makeExampleIndex(ex)
-  }else{
-    console.error("ERROR: Can't create index.html "+ex.paths.root+" since no package.json was found." )
+    makeindex.makeExampleIndex(ex);
+  } else {
+    console.error(
+      "ERROR: Can't create index.html " +
+        ex.paths.root +
+        " since no package.json was found."
+    );
   }
 
   /****************************
-  *** Make thumbnails
-  *****************************/
+   *** Make thumbnails
+   *****************************/
   var imgs = ex.files
     .map(function(f) {
       return f.toLowerCase();

@@ -43,8 +43,9 @@ ul.vl-ex-header li.icon img{
 ul.vl-ex-header li.info{
   cursor:pointer;
   padding-left:0.2em;
+  color:blue;
+  font-size:1em;
 }
-
 
 /*****************************
 ** Example Data
@@ -77,5 +78,13 @@ ul.vl-ex-tags li{
 }
 
 ul.vl-ex-tags li.tag{
-background:#ffeda0;
+background:#ffffb3;
+}
+
+ul.vl-ex-tags li.dep{
+background:#bebada;
+}
+
+ul.vl-ex-tags li.rdep{
+background:#80b1d3;
 }

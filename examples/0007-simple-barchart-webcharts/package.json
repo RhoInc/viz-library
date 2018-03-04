@@ -2,7 +2,7 @@
   "homepage":"example.html",
   "main": "simpleBarChart.js",
   "name": "simple-barchart-webcharts",
-  "label":"Simple Barchart (webcharts)",
+  "label":"Simple Barchart (Webcharts)",
   "version": "1.0.0",
   "description": "This is a simple bar chart showing counts of medals won by country at the 2012 summer Olympics. Made with Webcharts.",
   "author": "Rho, Inc.",
