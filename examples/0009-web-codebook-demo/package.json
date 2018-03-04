@@ -12,7 +12,7 @@
   "dependencies": {
     "d3": "~3",
     "webcharts":"~1",
-    "web-codebook":"~1"
+    "webcodebook":"~1"
   },
   "dataDependecies":["../../data/safetyData/ADAE.csv"]
 }

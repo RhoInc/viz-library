@@ -96,7 +96,8 @@ ul.vl-ex-tags li.vl-ex-data a:before{
 }
 
 ul.vl-ex-tags li.tag{
-background:#ffffb3;
+background:#444;
+color:white;
 }
 
 ul.vl-ex-tags li.dep{

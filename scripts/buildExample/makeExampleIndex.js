@@ -77,7 +77,7 @@ exports.makeExampleIndex = function(ex) {
       .select("li.vl-ex-repo a")
       .property("href", ex.package.repository.replace("github:","https://www.github.com/"));
   } else {
-    details.select("li.vl-ex-repo a").remove();
+    details.select("li.vl-ex-repo").remove();
   }
 
   details.select("li.vl-ex-code a").property("href", ex.package.main);
@@ -100,7 +100,10 @@ exports.makeExampleIndex = function(ex) {
       .enter()
       .append("li")
       .attr("class", "dep")
-      .text(d => d.library+" "+d.version);
+      .append("a")
+      .text(d => d.library+" "+d.version)
+      .property("href",d=>"https://www.npmjs.com/package/"+d.library)
+
   }
 
   if(ex.package.rDependencies){
@@ -119,7 +122,9 @@ exports.makeExampleIndex = function(ex) {
       .enter()
       .append("li")
       .attr("class", "rdep")
-      .text(d => d.library+" "+d.version);
+      .append("a")
+      .text(d => d.library+" "+d.version)
+      .property("href",d=>"https://cran.r-project.org/web/packages/"+d.library)
   }
 
   details
