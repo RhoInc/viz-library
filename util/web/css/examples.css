@@ -19,7 +19,7 @@ ul.vl-ex-header li {
 
 ul.vl-ex-header li.crumb:after {
   padding: 0 0.2em 0 0.2em;
-    content: ":";
+  content: "/";
 }
 
 ul.vl-ex-header li.site a{
@@ -97,10 +97,10 @@ ul.vl-ex-header li.next-arrow a::before {
 ******************************/
 
 div#vl-ex-details{
-    background:#ccc;
     border:1px solid #999;
     border-radius:.3em;
     padding:0.5em;
+		margin-bottom:1em;
 }
 
 p.vl-ex-description{
@@ -115,12 +115,13 @@ ul.vl-ex-tags{
 
 ul.vl-ex-tags li{
   display:inline-block;
-  padding: 0.3em 0.5em;
-  margin:0 0.3em 0 0;
+  padding: 0.3em 0.7em;
+  margin:0.1em 0.3em 0.1em 0;
   border-radius:0.3em;
   border:2px solid black;
   background:white;
 }
+
 ul.vl-ex-tags li a{
   text-decoration: none;
 }
@@ -146,14 +147,34 @@ ul.vl-ex-tags li.vl-ex-data a::before{
 }
 
 ul.vl-ex-tags li.tag{
-background:#444;
-color:white;
+	background:#ddd;
+	color:black;
 }
 
 ul.vl-ex-tags li.dep{
-background:#bebada;
+	position:relative;
+	padding-right:1.3em;
+}
+
+ul.vl-ex-tags li.dep::after{
+	content:"npm";
+	font-size:0.5em;
+	position:absolute;
+	top:2px;
+	right:2px;
+	color:#444;
 }
 
 ul.vl-ex-tags li.rdep{
-background:#80b1d3;
+	position:relative;
+	padding-left:1em;
+}
+
+ul.vl-ex-tags li.rdep::after{
+	content:"R";
+	font-size:0.6em;
+	position:absolute;
+	top:2px;
+	right:2px;
+	color:#444;
 }

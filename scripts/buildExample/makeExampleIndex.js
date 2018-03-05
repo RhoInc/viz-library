@@ -38,6 +38,7 @@ exports.makeExampleIndex = function(ex, examples) {
     ex.index.slice(0, insertionPoint) +
     exampleHeaderStub +
     ex.index.slice(insertionPoint);
+
   /****************************************
    *** Add example meta data to the header using JSDOM
    *****************************************/
@@ -49,6 +50,11 @@ exports.makeExampleIndex = function(ex, examples) {
   const { JSDOM } = jsdom;
   const dom = new JSDOM(ex.index, { runScripts: "dangerously" });
   dom.window.d3 = d3.select(dom.window.document);
+
+  //Add image to stub if needed
+  if (["jpeg", "jpg", "png"].indexOf(exampleExt.slice(0)) > -1) {
+    dom.window.d3.select(".example").select("img").property("src",ex.package.homepage)
+  }
 
   //Add meta data about the chart to the header
   function toTitleCase(str) {
@@ -62,7 +68,6 @@ exports.makeExampleIndex = function(ex, examples) {
 
   //update the next/back arrows
   var chartIndex = examples.indexOf(ex)
-  console.log(chartIndex)
   if(chartIndex < examples.length){
     header.select("li.next-arrow a")
     .property("href","../"+examples[chartIndex+1].dir)
@@ -142,13 +147,12 @@ exports.makeExampleIndex = function(ex, examples) {
       .append("li")
       .attr("class", "dep")
       .append("a")
-      .text(d => d.library+" "+d.version)
+      .text(d => d.library+(d.version ?" "+d.version:""))
       .property("href",d=>"https://www.npmjs.com/package/"+d.library)
 
   }
 
   if(ex.package.rDependencies){
-    console.log(ex.package.rDependencies)
     var rDependencies = Object.keys(ex.package.rDependencies).map(function(m){
       return{
         library:m,
@@ -164,7 +168,7 @@ exports.makeExampleIndex = function(ex, examples) {
       .append("li")
       .attr("class", "rdep")
       .append("a")
-      .text(d => d.library+" "+d.version)
+      .text(d => d.library+(d.version ?" "+d.version:""))
       .property("href",d=>"https://cran.r-project.org/web/packages/"+d.library)
   }
 
@@ -177,7 +181,6 @@ exports.makeExampleIndex = function(ex, examples) {
     .attr("class", "tag")
     .text(d => d);
 
-  console.log(dom.window.document.querySelector("body").outerHTML); // "Hello world"
   /*****************************************
    *** Output index.html
    *****************************************/

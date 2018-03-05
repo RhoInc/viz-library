@@ -1,0 +1,20 @@
+{
+  "homepage":"0001-density-lattice.png",
+  "main": "0001-density-lattice.R",
+  "name": "density-plot",
+  "label":"Density Plot with Lattice",
+  "version": "1.0.0",
+  "description": "Customized density plot created using lattice combining paneling, grouping, custom annotations and some simple data manipulation.",
+  "author": "Rho, Inc.",
+  "license": "MIT",
+  "keywords":["density plot", "lattice", "r", "groups", "means","annotated", "faceted"],
+  "rDependencies": {
+    "dplyr":null,
+    "tidyr":null,
+    "lattice":null,
+    "latticeExtra":null,
+    "ggplot2":null,
+    "datasets":null
+  },
+  "dataDependecies":["../../data/ChickWeight.csv"]
+}
