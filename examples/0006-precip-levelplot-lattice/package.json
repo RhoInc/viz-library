@@ -1,0 +1,17 @@
+{
+  "homepage":"0006-precip-levelplot-lattice.png",
+  "main": "0006-precip-levelplot-lattice.R",
+  "name": "precip-levelplot-lattice",
+  "label":"Orderered Precipitation Heatmap",
+  "version": "1.0.0",
+  "description": "Heatmap with ordered columns and rows using monthly precipitation data.",
+  "author": "Rho, Inc.",
+  "license": "MIT",
+  "keywords":["R", "Ordered", "heatmap", "annotation"],
+  "rDependencies": {
+    "lattice":null,
+    "RColorBrewer":null,
+    "seriation":null
+  },
+  "dataDependecies":["Precipitations.csv"]
+}

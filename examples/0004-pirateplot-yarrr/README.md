@@ -14,9 +14,7 @@
 
 **Results:** 0004-pirateplot-yarrr.png
 
-[comment]: <> (---END OF HEADER---)
-
-*Agustin Calatroni, October 11, 2016* 
+*Agustin Calatroni, October 11, 2016*
 
 ### What is a pirateplot()?
 
