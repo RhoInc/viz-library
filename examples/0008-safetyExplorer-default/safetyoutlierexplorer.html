@@ -6,7 +6,6 @@
             content = 'text/html; charset = utf-8'>
 
         <title>Safety Explorer - Default</title>
-        <div id = 'title'>Safety Explorer - Default</div>
 
         <script type = 'text/javascript'
             src = 'https://d3js.org/d3.v3.min.js'></script>
@@ -14,38 +13,32 @@
             src = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/build/webcharts.js'></script>
         <script type = 'text/javascript'
             src = 'https://cdn.rawgit.com/RhoInc/safety-outlier-explorer/v2.0.1/build/safetyOutlierExplorer.js'></script>
+          <script type = 'text/javascript'
+                src = 'safetyoutlierexplorer.js'></script>
 
         <link type = 'text/css'
             rel = 'stylesheet'
             href = 'https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css'>
         <link type = 'text/css'
-            href = '../safetyExplorer.css'
+            href = 'safetyExplorer.css'
             rel = 'stylesheet'>
 
-        <ul class = 'nav nav-tabs'>
-            <li role = 'presentation'><a href = '../ae-table'>AE Table</a></li>
-            <li role = 'presentation'><a href = '../ae-timelines'>AE Timelines</a></li>
-            <li role = 'presentation'><a href = '../safety-results-over-time'>Results over Time</a></li>
-            <li role = 'presentation'><a href = '../safety-histogram'>Histogram</a></li>
-            <li role = 'presentation' class = 'active'><a href = '../safety-outlier-explorer'>Outlier Explorer</a></li>
-            <li role = 'presentation'><a href = '../safety-shift-plot'>Shift Plot</a></li>
-        </ul>
+
     </head>
 
     <body>
+      <ul class = 'nav nav-tabs'>
+          <li role = 'presentation'><a href = 'aetable.html'>AE Table</a></li>
+          <li role = 'presentation'><a href = 'aetimelines.html'>AE Timelines</a></li>
+          <li role = 'presentation'><a href = 'safetyresultsovertime.html'>Results over Time</a></li>
+          <li role = 'presentation'><a href = 'safetyhistogram.html'>Histogram</a></li>
+          <li role = 'presentation' class = 'active'><a href = 'safetyoutlierexplorer.html'>Outlier Explorer</a></li>
+          <li role = 'presentation'><a href = 'safetyshiftplot.html'>Shift Plot</a></li>
+      </ul>
         <div class = 'safetyExplorerChart'
             id = 'safety-outlier-explorer'>
             <div class = 'header'></div>
             <div class = 'content'></div>
         </div>
     </body>
-
-    <script>
-        const settings = {};
-
-        d3.csv('../../../data/safetyData/ADBDS.csv', function(data) {
-            safetyOutlierExplorer('#safety-outlier-explorer .content', settings)
-                .init(data);
-        });
-    </script>
 </html>

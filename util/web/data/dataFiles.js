@@ -138,12 +138,12 @@ var dataFiles = [
   },
   {
     local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/ADTIMELINES.csv",
-    filename: "ADTIMELINES.csv",
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/ADBDS.csv",
+    filename: "ADBDS.csv",
     ext: "csv",
-    rel_path: "./data/safetyData/ADTIMELINES.csv",
-    rows: 1054,
-    cols: 17
+    rel_path: "./data/safetyData/ADBDS.csv",
+    rows: 24669,
+    cols: 20
   },
   {
     local_path:
@@ -156,12 +156,57 @@ var dataFiles = [
   },
   {
     local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/ADBDS.csv",
-    filename: "ADBDS.csv",
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/ADTIMELINES.csv",
+    filename: "ADTIMELINES.csv",
     ext: "csv",
-    rel_path: "./data/safetyData/ADBDS.csv",
-    rows: 24669,
-    cols: 20
+    rel_path: "./data/safetyData/ADTIMELINES.csv",
+    rows: 1054,
+    cols: 17
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/adverseEvents.csv",
+    filename: "adverseEvents.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/raw/adverseEvents.csv",
+    rows: 765,
+    cols: 4
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/labs.csv",
+    filename: "labs.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/raw/labs.csv",
+    rows: 16,
+    cols: 6
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/medications.csv",
+    filename: "medications.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/raw/medications.csv",
+    rows: 654,
+    cols: 3
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/scheduleOfEvents.csv",
+    filename: "scheduleOfEvents.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/raw/scheduleOfEvents.csv",
+    rows: 8,
+    cols: 4
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/vitalSigns.csv",
+    filename: "vitalSigns.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/raw/vitalSigns.csv",
+    rows: 27,
+    cols: 7
   },
   {
     local_path:
@@ -192,15 +237,6 @@ var dataFiles = [
   },
   {
     local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/SDTM/SV.csv",
-    filename: "SV.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/SDTM/SV.csv",
-    rows: 1174,
-    cols: 5
-  },
-  {
-    local_path:
       "/Users/jeremy/Sites/github/viz-library/data/safetyData/SDTM/LB.csv",
     filename: "LB.csv",
     ext: "csv",
@@ -210,56 +246,20 @@ var dataFiles = [
   },
   {
     local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/SDTM/SV.csv",
+    filename: "SV.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/SDTM/SV.csv",
+    rows: 1174,
+    cols: 5
+  },
+  {
+    local_path:
       "/Users/jeremy/Sites/github/viz-library/data/safetyData/SDTM/VS.csv",
     filename: "VS.csv",
     ext: "csv",
     rel_path: "./data/safetyData/SDTM/VS.csv",
     rows: 5870,
     cols: 11
-  },
-  {
-    local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/adverseEvents.csv",
-    filename: "adverseEvents.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/raw/adverseEvents.csv",
-    rows: 765,
-    cols: 4
-  },
-  {
-    local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/labs.csv",
-    filename: "labs.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/raw/labs.csv",
-    rows: 16,
-    cols: 6
-  },
-  {
-    local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/scheduleOfEvents.csv",
-    filename: "scheduleOfEvents.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/raw/scheduleOfEvents.csv",
-    rows: 8,
-    cols: 4
-  },
-  {
-    local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/medications.csv",
-    filename: "medications.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/raw/medications.csv",
-    rows: 654,
-    cols: 3
-  },
-  {
-    local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/vitalSigns.csv",
-    filename: "vitalSigns.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/raw/vitalSigns.csv",
-    rows: 27,
-    cols: 7
   }
 ];

@@ -53,7 +53,10 @@ exports.makeExampleIndex = function(ex, examples) {
 
   //Add image to stub if needed
   if (["jpeg", "jpg", "png"].indexOf(exampleExt.slice(0)) > -1) {
-    dom.window.d3.select(".example").select("img").property("src",ex.package.homepage)
+    dom.window.d3
+      .select(".example")
+      .select("img")
+      .property("src", ex.package.homepage);
   }
 
   //Add meta data about the chart to the header
@@ -67,62 +70,67 @@ exports.makeExampleIndex = function(ex, examples) {
   header.select("li.title").html(cleanName);
 
   //update the next/back arrows
-  var chartIndex = examples.indexOf(ex)
-  if(chartIndex < examples.length){
-    header.select("li.next-arrow a")
-    .property("href","../"+examples[chartIndex+1].dir)
-  }else{
-    header.select("li.next-arrow")
-    .classed("disabled",true)
+  var chartIndex = examples.indexOf(ex);
+  if (chartIndex < examples.length) {
+    header
+      .select("li.next-arrow a")
+      .property("href", "../" + examples[chartIndex + 1].dir);
+  } else {
+    header.select("li.next-arrow").classed("disabled", true);
   }
 
-  if(chartIndex>0){
-    header.select("li.back-arrow a")
-    .property("href","../"+examples[chartIndex-1].dir)
-  }else{
-    header.select("li.back-arrow")
-    .classed("disabled",true)
+  if (chartIndex > 0) {
+    header
+      .select("li.back-arrow a")
+      .property("href", "../" + examples[chartIndex - 1].dir);
+  } else {
+    header.select("li.back-arrow").classed("disabled", true);
   }
-
 
   //Add details about the chart
   var details = dom.window.d3.select("div#vl-ex-details");
 
-  var lowerFiles = ex.files.map(m=>m.toLowerCase())
-  var readmeIndex = lowerFiles.indexOf("readme.md")
-  if(readmeIndex>=0){
+  var lowerFiles = ex.files.map(m => m.toLowerCase());
+  var readmeIndex = lowerFiles.indexOf("readme.md");
+  if (readmeIndex >= 0) {
     details
       .select("ul.vl-ex-tags")
       .append("li")
-      .attr("class","vl-ex-md")
+      .attr("class", "vl-ex-md")
       .append("a")
-      .property("href",ex.files[readmeIndex])
+      .property("href", ex.files[readmeIndex]);
   }
 
   if (ex.package.dataDependecies.length > 0) {
     details
       .select("ul.vl-ex-tags")
+      .selectAll("li.vl-ex-data")
+      .data(ex.package.dataDependecies)
+      .enter()
       .append("li")
-      .attr("class","vl-ex-data")
+      .attr("class", "vl-ex-data")
       .append("a")
-      .property("href", ex.package.dataDependecies[0]);
-      //add support for multiple data files
+      .property("href", d=>d);
+    //add support for multiple data files
   }
 
   if (ex.package.repository) {
     details
       .select("ul.vl-ex-tags")
       .append("li")
-      .attr("class","vl-ex-repo")
+      .attr("class", "vl-ex-repo")
       .append("a")
-      .property("href", ex.package.repository.replace("github:","https://www.github.com/"));
+      .property(
+        "href",
+        ex.package.repository.replace("github:", "https://www.github.com/")
+      );
   }
 
   if (ex.package.main) {
     details
       .select("ul.vl-ex-tags")
       .append("li")
-      .attr("class","vl-ex-code")
+      .attr("class", "vl-ex-code")
       .append("a")
       .property("href", ex.package.main);
   }
@@ -131,13 +139,13 @@ exports.makeExampleIndex = function(ex, examples) {
     .select("p.vl-ex-description")
     .html("<b>" + cleanName + "</b> - " + ex.package.description);
 
-  if(ex.package.dependencies){
-    var dependencies = Object.keys(ex.package.dependencies).map(function(m){
-      return{
-        library:m,
-        version:ex.package.dependencies[m]
-      }
-    })
+  if (ex.package.dependencies) {
+    var dependencies = Object.keys(ex.package.dependencies).map(function(m) {
+      return {
+        library: m,
+        version: ex.package.dependencies[m]
+      };
+    });
 
     details
       .select("ul.vl-ex-tags")
@@ -147,18 +155,17 @@ exports.makeExampleIndex = function(ex, examples) {
       .append("li")
       .attr("class", "dep")
       .append("a")
-      .text(d => d.library+(d.version ?" "+d.version:""))
-      .property("href",d=>"https://www.npmjs.com/package/"+d.library)
-
+      .text(d => d.library + (d.version ? " " + d.version : ""))
+      .property("href", d => "https://www.npmjs.com/package/" + d.library);
   }
 
-  if(ex.package.rDependencies){
-    var rDependencies = Object.keys(ex.package.rDependencies).map(function(m){
-      return{
-        library:m,
-        version:ex.package.rDependencies[m]
-      }
-    })
+  if (ex.package.rDependencies) {
+    var rDependencies = Object.keys(ex.package.rDependencies).map(function(m) {
+      return {
+        library: m,
+        version: ex.package.rDependencies[m]
+      };
+    });
 
     details
       .select("ul.vl-ex-tags")
@@ -168,8 +175,11 @@ exports.makeExampleIndex = function(ex, examples) {
       .append("li")
       .attr("class", "rdep")
       .append("a")
-      .text(d => d.library+(d.version ?" "+d.version:""))
-      .property("href",d=>"https://cran.r-project.org/web/packages/"+d.library)
+      .text(d => d.library + (d.version ? " " + d.version : ""))
+      .property(
+        "href",
+        d => "https://cran.r-project.org/web/packages/" + d.library
+      );
   }
 
   details
