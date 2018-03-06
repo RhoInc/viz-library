@@ -19,5 +19,7 @@
     "safetyResultsOverTime":"2.0.1",
     "safetyShiftPlot":"2.0.2"
   },
-  "dataDependecies":["../../../data/safetyData/ADAE.csv","../../../data/safetyData/ADBDS.csv"]
+  "dataDependecies":[
+    "../../../data/safetyData/ADAE.csv",
+    "../../../data/safetyData/ADBDS.csv"]
 }
