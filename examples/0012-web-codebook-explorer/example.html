@@ -4,37 +4,15 @@
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>
-<script src="https://rawgit.com/RhoInc/web-codebook/030c9c99581392a3df74c57ac56f0ed59b089c74/build/webcodebook.js"></script>
+<script src="https://rawgit.com/RhoInc/web-codebook/master/build/webcodebook.js"></script>
 
 <link rel="stylesheet" href="https://rawgit.com/RhoInc/Webcharts/master/css/webcharts.css">
-<link rel="stylesheet" href="https://rawgit.com/RhoInc/web-codebook/030c9c99581392a3df74c57ac56f0ed59b089c74/css/webcodebook.css">
-
+<link rel="stylesheet" href="https://rawgit.com/RhoInc/web-codebook/master/css/webcodebook.css">
 </head>
 
 <body>
-	<div style="position:absolute;top:1em;right:1em;"><a href="https://github.com/RhoInc/web-codebook"><img src="GitHub-Mark-32px.png" height="16" width="16"></a></div>
 	<div class="controls"></div>
 	<div class="explorer"></div>
 </body>
-
-<script>
-var settings = {
-	labelColumn:"label",
-	files:
-    [{label: "Chick Weight", path: "../../data/ChickWeight.csv", settings: {}}
-    ,{label: "Discrete Scores", path: "../../data/discrete_scores.csv", settings: {}}
-    ,{label: "Fields", path: "../../data/queries/fields.csv", settings: {}}
-    ,{label: "Forms", path: "../../data/queries/forms.csv", settings: {}}
-    ,{label: "Queries", path: "../../data/queries/queries.csv", settings: {}}
-    ,{label: "AEs with Queries", path: "../../data/safetyData-queries/ADAE.csv", settings: {}}
-    ,{label: "Labs/Vitals with Queries", path: "../../data/safetyData-queries/ADBDS.csv", settings: {}}
-    ,{label: "AEs", path: "../../data/safetyData/ADAE.csv", settings: {}}
-    ,{label: "Labs/Vitals", path: "../../data/safetyData/ADBDS.csv", settings: {}}
-    ,{label: "Demographics", path: "../../data/safetyData/DM.csv", settings: {}}
-    ,{label: "Schedule Of Events", path: "../../data/safetyData/scheduleOfEvents.csv", settings: {}}
-    ,{label: "Vital Signs", path: "../../data/safetyData/vitalSigns.csv", settings: {}}
-    ]};
-
-  var explorer = webcodebook.createExplorer(".explorer", settings).init();
-
-</script></html>
+<script src="codebookExplorer.js"></script>
+</html>
