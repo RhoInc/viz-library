@@ -71,7 +71,7 @@ exports.makeExampleIndex = function(ex, examples) {
 
   //update the next/back arrows
   var chartIndex = examples.indexOf(ex);
-  if (chartIndex < examples.length) {
+  if (chartIndex < examples.length-1) {
     header
       .select("li.next-arrow a")
       .property("href", "../" + examples[chartIndex + 1].dir);

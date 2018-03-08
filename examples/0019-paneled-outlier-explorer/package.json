@@ -1,0 +1,18 @@
+{
+  "homepage":"example.html",
+  "main": "paneledOutlierExplorer.js",
+  "name": "paneled-outlier-explorer",
+  "label":" Brushable paneled outlier explorer",
+  "repository":"github:Rhoinc/paneled-outlier-explorer",
+  "version": "1.0.0",
+  "description": "Example of the a brushable paneled outlier explorer that allows brushing of lines and points.",
+  "author": "Rho, Inc.",
+  "license": "MIT",
+  "keywords":["javascript","interactive", "webcharts",  "outliers", "brushable", "paneled"],
+  "dependencies": {
+    "d3": "~3",
+    "webcharts":"~1",
+    "paneledOutlierExplorer":"~1"
+  },
+  "dataDependecies":["../../data/hys_law.csv"]
+}
