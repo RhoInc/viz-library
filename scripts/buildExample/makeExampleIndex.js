@@ -71,7 +71,7 @@ exports.makeExampleIndex = function(ex, examples) {
 
   //update the next/back arrows
   var chartIndex = examples.indexOf(ex);
-  if (chartIndex < examples.length-1) {
+  if (chartIndex < examples.length - 1) {
     header
       .select("li.next-arrow a")
       .property("href", "../" + examples[chartIndex + 1].dir);
@@ -110,7 +110,7 @@ exports.makeExampleIndex = function(ex, examples) {
       .append("li")
       .attr("class", "vl-ex-data")
       .append("a")
-      .property("href", d=>d);
+      .property("href", d => d);
     //add support for multiple data files
   }
 
