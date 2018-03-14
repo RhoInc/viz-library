@@ -6,19 +6,14 @@
  ----------------------------------------------------- */
 
 export default function buildFilters(meta, measures, parentElement) {
-  meta.forEach(metum => {
-      metum.dependencyKeys = Object.keys(metum.package)
-          .filter(key => /dependencies/i.test(key));
-      metum.languages = metum.dependencyKeys
-          .map(key => key.replace(/dependencies/i, '').replace(/^$/, 'javascript'));
-      metum.libraries = metum.dependencyKeys
-          .map(key => metum.package[key])
-          .map(key => Object.keys(key));
-      console.log(metum.libraries);
-      //console.log(dependencies);
-      //metum.libraries = Object.keys(metum.package.dependencies)
-  });
-
+    meta.forEach(metum => {
+        const main = metum.package.main;
+        metum.languages = main.split('.')[main.split('.').length - 1].toLowerCase();
+        const dependencies = metum.languages === 'js'
+            ? 'dependencies'
+            : metum.languages[0] + 'Dependencies';
+        metum.libraries = Object.keys(metum.package[dependencies]);
+    });
   measures = measures.map(function(m) {
     return m.length ? { colName: m, label: m } : m;
   });
@@ -44,7 +39,6 @@ export default function buildFilters(meta, measures, parentElement) {
       // gets a list of values for the measure
       var measureName = d.colName;
       var valueArrays = meta.map(metaRow => metaRow[measureName]);
-        console.log(valueArrays);
       var allValues = [].concat.apply([], valueArrays);
       var uniqueValues = d3.set(allValues).values();
       return d3.merge([["All"], uniqueValues]);
@@ -60,7 +54,6 @@ export default function buildFilters(meta, measures, parentElement) {
     selects.each(function(e) {
       var value = this.value;
       var measure = e.colName;
-      console.log(value + "=" + measure);
       if (value != "All")
         elements
           .filter(function(d) {
