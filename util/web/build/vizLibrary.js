@@ -12,9 +12,25 @@
  ----------------------------------------------------- */
 
 function buildFilters(meta, measures, parentElement) {
-  console.log(examples);
+  meta.forEach(function (metum) {
+    metum.dependencyKeys = Object.keys(metum.package).filter(function (key) {
+      return (/dependencies/i.test(key)
+      );
+    });
+    metum.languages = metum.dependencyKeys.map(function (key) {
+      return key.replace(/dependencies/i, '').replace(/^$/, 'javascript');
+    });
+    metum.libraries = metum.dependencyKeys.map(function (key) {
+      return metum.package[key];
+    }).map(function (key) {
+      return Object.keys(key);
+    });
+    console.log(metum.libraries);
+    //console.log(dependencies);
+    //metum.libraries = Object.keys(metum.package.dependencies)
+  });
+
   measures = measures.map(function (m) {
-    console.log(m.length);
     return m.length ? { colName: m, label: m } : m;
   });
 
@@ -32,6 +48,7 @@ function buildFilters(meta, measures, parentElement) {
     var valueArrays = meta.map(function (metaRow) {
       return metaRow[measureName];
     });
+    console.log(valueArrays);
     var allValues = [].concat.apply([], valueArrays);
     var uniqueValues = d3.set(allValues).values();
     return d3.merge([["All"], uniqueValues]);

@@ -6,9 +6,20 @@
  ----------------------------------------------------- */
 
 export default function buildFilters(meta, measures, parentElement) {
-  console.log(examples);
+  meta.forEach(metum => {
+      metum.dependencyKeys = Object.keys(metum.package)
+          .filter(key => /dependencies/i.test(key));
+      metum.languages = metum.dependencyKeys
+          .map(key => key.replace(/dependencies/i, '').replace(/^$/, 'javascript'));
+      metum.libraries = metum.dependencyKeys
+          .map(key => metum.package[key])
+          .map(key => Object.keys(key));
+      console.log(metum.libraries);
+      //console.log(dependencies);
+      //metum.libraries = Object.keys(metum.package.dependencies)
+  });
+
   measures = measures.map(function(m) {
-    console.log(m.length);
     return m.length ? { colName: m, label: m } : m;
   });
 
@@ -33,6 +44,7 @@ export default function buildFilters(meta, measures, parentElement) {
       // gets a list of values for the measure
       var measureName = d.colName;
       var valueArrays = meta.map(metaRow => metaRow[measureName]);
+        console.log(valueArrays);
       var allValues = [].concat.apply([], valueArrays);
       var uniqueValues = d3.set(allValues).values();
       return d3.merge([["All"], uniqueValues]);
