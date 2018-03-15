@@ -1,52 +1,39 @@
 <html lang="en"><head>
-  <title>Stacked Dot Plot #1</title>
+  <title></title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="../../util/web/css/examples.css">
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
 </head>
+<body><div class="head">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../util/web/css/examples.css">
+  <ul class="vl-ex-header">
+      <li class="icon"><a href="../../"><img src="../../util/web/img/rho.png"></a></li>
+      <li class="site crumb"><a href="../../"><span>Graphics</span></a></li>
+      <li class="crumb">Example</li>
+      <li class="title">Stacked Dot Plot (ggplot)</li>
+      <li class="info" title="Click to toggle chart details" onclick="toggleDetails()">ⓘ</li>
+      <li class="arrow next-arrow right"><a href="../0003-dotplot-lattice"></a></li>
+      <li class="arrow back-arrow right"><a href="../0001-density-lattice"></a></li>
+  </ul>
+  <div id="vl-ex-details" style="display:none;">
+    <p class="vl-ex-description"><b>Stacked Dot Plot (ggplot)</b> - Stacked dot plot created using ggplot2 combining paneling, custom annotations and some simple data manipulation.</p>
 
-<body>
-	<div class="viz-example-header section">
-    <span class="home">
-      <a href="../../">🏠</a>
-    </span>
-    <span class="close">✖</span>
-    <h1>Stacked Dot Plot #1</h1>
-	  <ul class="tags"><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Languages&nbsp;</span><span>R</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Libraries&nbsp;</span><span>ggplot2</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Tags&nbsp;</span><span>dotplot, r, ggplot2, facet, median, highlight, stack points, discrete</span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Data&nbsp;</span><span><a href="../../data/discrete_scores.csv">../../data/discrete_scores.csv</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Results&nbsp;</span><span><a href="0002-dotplot-ggplot.png">0002-dotplot-ggplot.png</a></span></li><li><span class="label" style="font-size: 0.7em; color: rgb(170, 170, 170);" padding-right="0.2em">Code&nbsp;</span><span><a href="0002-dotplot-ggplot.R">0002-dotplot-ggplot.R</a></span></li></ul>
-    <div class="description">Stacked dot plot created using ggplot2 combining paneling, custom annotations and some simple data manipulation.<a class="expandDetails">View README.md.</a></div>
+    <ul class="vl-ex-tags"><li class="vl-ex-data"><a href="../../data/discrete_scores.csv"></a></li><li class="vl-ex-code"><a href="0002-dotplot-ggplot.R"></a></li><li class="rdep"><a href="https://cran.r-project.org/web/packages/dplyr">dplyr</a></li><li class="rdep"><a href="https://cran.r-project.org/web/packages/tidyr">tidyr</a></li><li class="rdep"><a href="https://cran.r-project.org/web/packages/ggplot2">ggplot2</a></li><li class="tag">dotplot</li><li class="tag">R</li><li class="tag">ggplot2</li><li class="tag">facet</li><li class="tag">median</li><li class="tag">highlight</li><li class="tag">stacked points</li><li class="tag">discrete</li></ul>
   </div>
-  <div class="viz-example-body">
-    <div class="viz-example-details section hidden">
-      <div class="wrap">
-        <span class="close">✖</span>
-        <h2>Readme.md</h2>
-        <div class="detail-content"><p><em>B Krouse, 2017-01-20</em></p></div>
-      </div>
-    </div>
-	  <div class="viz-example-chart section"><div class="exampleImg"><img src="0002-dotplot-ggplot.png" width="960"></div></div>
+  <script>
+    function toggleDetails(){
+      var details = document.getElementById("vl-ex-details");
+      if (details.style.display === "none") {
+          details.style.display = "block";
+      } else {
+          details.style.display = "none";
+        }
+    }
+  </script>
+</div>
+
+  <div class="example">
+    <img width="960" src="0002-dotplot-ggplot.png">
   </div>
 
-<script defer="">
-
-  /*show/hide events*/
-  d3.select(".viz-example-header .close").on("click",function(){
-    d3.select(".viz-example-header").classed("hidden",true)
-    d3.select(".viz-example-details").classed("hidden",true)
-    d3.select(".viz-example-body").style("height","100%")
-  })
-
-  d3.select(".viz-example-details .close").on("click",function(){
-    d3.select(".viz-example-details").classed("hidden",true)
-  })
-
-  d3.select(".expandDetails").on("click",function(){
-    d3.select(".viz-example-details").classed("hidden",false)
-  })
-</script>
 
 </body></html>

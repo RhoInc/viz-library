@@ -1,0 +1,25 @@
+{
+  "homepage":"aetimelines.html",
+  "main": "aetimelines.js",
+  "name": "safetyExplorer-default",
+  "label":"Safety Explorer - Default Configuration",
+  "repository":"github:Rhoinc/safety-explorer-suite",
+  "version": "1.0.0",
+  "description": "The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials.  This instance demonstrates each graphic with default settings.",
+  "author": "Rho, Inc.",
+  "license": "MIT",
+  "keywords":["javascript","interactive", "webcharts", "adverse events", "safety explorer"],
+  "dependencies": {
+    "d3": "~3",
+    "webcharts":"~1.9",
+    "aetable":"3.0.1",
+    "aetimelines":"2.0.1",
+    "safetyhistogram":"2.0.1",
+    "safetyOutlierExplorer":"2.0.1",
+    "safetyResultsOverTime":"2.0.1",
+    "safetyShiftPlot":"2.0.2"
+  },
+  "dataDependecies":[
+    "../../../data/safetyData/ADAE.csv",
+    "../../../data/safetyData/ADBDS.csv"]
+}

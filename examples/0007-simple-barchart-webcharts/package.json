@@ -1,0 +1,17 @@
+{
+  "homepage":"example.html",
+  "main": "simpleBarChart.js",
+  "name": "simple-barchart-webcharts",
+  "label":"Simple Barchart (Webcharts)",
+  "repository":"github:Rhoinc/webcharts",
+  "version": "1.0.0",
+  "description": "This is a simple bar chart showing counts of medals won by country at the 2012 summer Olympics. Made with Webcharts.",
+  "author": "Rho, Inc.",
+  "license": "MIT",
+  "keywords":["javascript","interactive","bar chart"],
+  "dependencies": {
+    "d3": "~3",
+    "webcharts":"~1"
+  },
+  "dataDependecies":["OlympicMedals2012.csv"]
+}

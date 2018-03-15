@@ -21,7 +21,7 @@ var settings = {
   gridlines: "x"
 };
 
-var medalChart = webCharts.createChart("body", settings);
+var medalChart = webCharts.createChart(".chart", settings);
 
 d3.csv("OlympicMedals2012.csv", function(error, data) {
   //just keep the countries with the 10 most medals

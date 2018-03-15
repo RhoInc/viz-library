@@ -2,8 +2,6 @@
     <html>
     <head>
         <title>Paneled Outlier Explorer</title>
-        <div id = 'title'>Paneled Outlier Explorer</div>
-        <div id = 'subtitle'></div>
         <meta http-equiv = 'Content-Type' content = 'text/html; charset = utf-8'>
 
         <script type = 'text/javascript' src = 'https://d3js.org/d3.v3.min.js'></script>
@@ -18,15 +16,6 @@
         </div>
     </body>
 
-    <script type = 'text/javascript'>
-        let settings = {
-            measure_col: 'VSTEST',
-            time_col: 'VSDY',
-            value_col: 'VSSTRESN'
-        };
-        let chart = paneledOutlierExplorer('#container', {});
-        d3.csv('../../data/hys_law.csv', function(data) {
-            chart.init(data);
-        });
-    </script>
+    <script type = 'text/javascript' src = 'paneledOutlierExplorer.js'></script>
+
 </html>

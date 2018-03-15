@@ -1,153 +1,202 @@
 /*
-
-Create an index.html file for a given example
+This function create an index.html file for a given example
 Input: an Example Object created by parseExamples.js
 Output: an index.html file saved in the example folder
-
 */
 
-/*
-var exampleRoot = "./examples"
-var sampleExample = {
-	"dir":"0007-simple-barchart-webcharts",
-	"files":[
-		"OlympicMedals2012.csv",
-		"README.md",
-		"example.html",
-		"simpleBarChart.js",
-		"thumb.png",
-		"thumbnail.png"
-	],
-	"readme":{"index":1,"path":"./examples/0007-simple-barchart-webcharts/README.md"},
-	"code":{"path":"./examples/0007-simple-barchart-webcharts/simpleBarChart.js"},
-	"index":{"path":"./examples/0007-simple-barchart-webcharts/index.html"},
-	"title":"Simple Interactive Bar Chart",
-	"languages":"javascript",
-	"libraries":"webcharts",
-	"description":"This is a simple bar chart showing counts of medals won by country at the 2012 summer Olympics. Made with Webcharts.",
-	"tags":"interactive, bar chart",
-	"data":"OlympicMedals2012.csv"
-}*/
-
-exports.makeExampleIndex = function(ex) {
+exports.makeExampleIndex = function(ex, examples) {
   var fs = require("fs"),
-    d3 = require("d3"),
-    jsdom = require("jsdom"),
-    showdown = require("showdown");
+    d3 = require("d3");
 
+  /****************************************
+   *** Load placeholder files
+   *****************************************/
   var stub = fs
     .readFileSync("./scripts/buildExample/indexStub.html")
     .toString();
-  var readme = fs
-    .readFileSync(ex.paths.root + "/" + ex.paths.readme)
-    .toString();
-  var code = fs.readFileSync(ex.paths.root + "/" + ex.paths.code).toString();
 
+  var exampleHeaderStub = fs
+    .readFileSync("./scripts/buildExample/exampleHeaderStub.html")
+    .toString();
+
+  /****************************************
+   *** Combine the header and the vizualization
+   *****************************************/
+  var exampleExt = ex.package.homepage.split(".").pop();
+  if (["jpeg", "jpg", "png"].indexOf(exampleExt.slice(0)) > -1) {
+    //If the visualization is an image, use the stub html as the base for the index page
+    ex.index = stub;
+  } else if (["html", "htm"].indexOf(exampleExt.slice(0)) > -1) {
+    //If the visualization is a webpage, use it as the base for the index page
+    ex.index = fs.readFileSync(ex.paths.root + ex.package.homepage).toString();
+  }
+  //console.log(ex.index)
+
+  // add the headerstub immediately after the <body> tag
+  var insertionPoint = ex.index.search("<body>") + 6;
+  ex.index =
+    ex.index.slice(0, insertionPoint) +
+    exampleHeaderStub +
+    ex.index.slice(insertionPoint);
+
+  /****************************************
+   *** Add example meta data to the header using JSDOM
+   *****************************************/
   // pass the html stub to jsDom
   // via https://mango-is.com/blog/engineering/pre-render-d3-js-charts-at-server-side/
   // and https://bl.ocks.org/tomgp/c99a699587b5c5465228
 
-  jsdom.env({
-    html: stub,
-    features: { QuerySelector: true }, //you need query selector for D3 to work
-    done: function(err, window) {
-      window.d3 = d3.select(window.document); //get d3 into the dom
+  const jsdom = require("jsdom");
+  const { JSDOM } = jsdom;
+  const dom = new JSDOM(ex.index, { runScripts: "dangerously" });
+  dom.window.d3 = d3.select(dom.window.document);
 
-      // page header
-      window.document.title = ex.title;
+  //Add image to stub if needed
+  if (["jpeg", "jpg", "png"].indexOf(exampleExt.slice(0)) > -1) {
+    dom.window.d3
+      .select(".example")
+      .select("img")
+      .property("src", ex.package.homepage);
+  }
 
-      // Add the header - parse the README.md header
-      var header = window.d3.select(".viz-example-header");
-      header.select("h1").text(ex.title);
-      header.select("div.description").text(ex.description);
+  //Add meta data about the chart to the header
+  function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+  }
+  var cleanName = ex.package.label || ex.package.name;
+  var header = dom.window.d3.select(".vl-ex-header");
+  header.select("li.title").html(cleanName);
 
-      // Add the details
-      //add sections
-      var detailVars = [
-        "languages",
-        "libraries",
-        "tags",
-        "data",
-        "results",
-        "code"
-      ];
+  //update the next/back arrows
+  var chartIndex = examples.indexOf(ex);
+  if (chartIndex < examples.length - 1) {
+    header
+      .select("li.next-arrow a")
+      .property("href", "../" + examples[chartIndex + 1].dir);
+  } else {
+    header.select("li.next-arrow").classed("disabled", true);
+  }
 
-      var detailInfo = header
-        .select("ul.tags")
-        .selectAll("li")
-        .data(detailVars)
-        .enter()
-        .append("li");
+  if (chartIndex > 0) {
+    header
+      .select("li.back-arrow a")
+      .property("href", "../" + examples[chartIndex - 1].dir);
+  } else {
+    header.select("li.back-arrow").classed("disabled", true);
+  }
 
-      //via http://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
-      function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-      }
+  //Add details about the chart
+  var details = dom.window.d3.select("div#vl-ex-details");
 
-      detailInfo
-        .append("span")
-        .attr("class", "label")
-        .html(d => capitalizeFirstLetter(d) + "&nbsp;")
-        .style("font-size", "0.7em")
-        .style("color", "#aaa")
-        .attr("padding-right", "0.2em");
+  var lowerFiles = ex.files.map(m => m.toLowerCase());
+  var readmeIndex = lowerFiles.indexOf("readme.md");
+  if (readmeIndex >= 0) {
+    details
+      .select("ul.vl-ex-tags")
+      .append("li")
+      .attr("class", "vl-ex-md")
+      .append("a")
+      .property("href", ex.files[readmeIndex]);
+  }
 
-      detailInfo
-        .append("span")
-        .html(
-          d =>
-            d == "data" || d == "results" || d == "code"
-              ? "<a href='" + ex[d] + "'>" + ex[d] + "</a>"
-              : ex[d]
-        );
+  if (ex.package.dataDependecies.length > 0) {
+    details
+      .select("ul.vl-ex-tags")
+      .selectAll("li.vl-ex-data")
+      .data(ex.package.dataDependecies)
+      .enter()
+      .append("li")
+      .attr("class", "vl-ex-data")
+      .append("a")
+      .property("href", d => d);
+    //add support for multiple data files
+  }
 
-      // parse any extra readme content
-      var detailRegex = /(\[comment\]: <> \(---END OF HEADER---\))[\s\S]*$/;
-      var detailContent_markdown = readme.match(detailRegex)[0];
-      var converter = new showdown.Converter();
-      ex.details = converter.makeHtml(detailContent_markdown);
-      var details = window.d3
-        .select(".viz-example-details .detail-content")
-        .html(ex.details);
-      if (ex.details) {
-        header
-          .select("div.description")
-          .append("a")
-          .attr("class", "expandDetails")
-          .text("View README.md.");
-      }
-
-      // Show the example
-      var webExampleContent =
-        '<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin allow-top-navigation" src=' +
-        ex.paths.example +
-        ' marginwidth="0" marginheight="0"></iframe>';
-      var staticExampleContent =
-        '<div class="exampleImg"><img src="' +
-        ex.paths.example +
-        '" width=960></div>';
-      var exampleExt = ex.paths.example.split(".").pop();
-      var exampleContent_html =
-        exampleExt == "html" ? webExampleContent : staticExampleContent;
-
-      window.d3
-        .select("body")
-        .style("overflow-y", exampleExt == "html" ? "hidden" : null);
-
-      window.d3.select(".viz-example-chart").html(exampleContent_html);
-
-      /*
-      // Show the code - parse the code file.
-      window.d3.select("code").text(code);
-      */
-      //write the index file
-      console.log("Created example for : " + ex.dir);
-      fs.writeFileSync(
-        ex.paths.root + "/" + ex.paths.index,
-        window.document.documentElement.outerHTML
+  if (ex.package.repository) {
+    details
+      .select("ul.vl-ex-tags")
+      .append("li")
+      .attr("class", "vl-ex-repo")
+      .append("a")
+      .property(
+        "href",
+        ex.package.repository.replace("github:", "https://www.github.com/")
       );
-    }
-  });
-};
+  }
 
-//makeExampleIndex(sampleExample)
+  if (ex.package.main) {
+    details
+      .select("ul.vl-ex-tags")
+      .append("li")
+      .attr("class", "vl-ex-code")
+      .append("a")
+      .property("href", ex.package.main);
+  }
+  //details.select("li.vl-ex-code a").property("href", ex.package.main);
+  details
+    .select("p.vl-ex-description")
+    .html("<b>" + cleanName + "</b> - " + ex.package.description);
+
+  if (ex.package.dependencies) {
+    var dependencies = Object.keys(ex.package.dependencies).map(function(m) {
+      return {
+        library: m,
+        version: ex.package.dependencies[m]
+      };
+    });
+
+    details
+      .select("ul.vl-ex-tags")
+      .selectAll("li.dep")
+      .data(dependencies)
+      .enter()
+      .append("li")
+      .attr("class", "dep")
+      .append("a")
+      .text(d => d.library + (d.version ? " " + d.version : ""))
+      .property("href", d => "https://www.npmjs.com/package/" + d.library);
+  }
+
+  if (ex.package.rDependencies) {
+    var rDependencies = Object.keys(ex.package.rDependencies).map(function(m) {
+      return {
+        library: m,
+        version: ex.package.rDependencies[m]
+      };
+    });
+
+    details
+      .select("ul.vl-ex-tags")
+      .selectAll("li.rdep")
+      .data(rDependencies)
+      .enter()
+      .append("li")
+      .attr("class", "rdep")
+      .append("a")
+      .text(d => d.library + (d.version ? " " + d.version : ""))
+      .property(
+        "href",
+        d => "https://cran.r-project.org/web/packages/" + d.library
+      );
+  }
+
+  details
+    .select("ul.vl-ex-tags")
+    .selectAll("li.tag")
+    .data(ex.package.keywords)
+    .enter()
+    .append("li")
+    .attr("class", "tag")
+    .text(d => d);
+
+  /*****************************************
+   *** Output index.html
+   *****************************************/
+  console.log("Created example for : " + ex.dir);
+  fs.writeFileSync(
+    ex.paths.root + "/" + ex.paths.index,
+    dom.window.document.documentElement.outerHTML
+  );
+};

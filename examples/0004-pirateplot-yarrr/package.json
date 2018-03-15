@@ -1,0 +1,17 @@
+{
+  "homepage":"0004-pirateplot-yarrr.png",
+  "main": "0004-pirateplot-yarrr.R",
+  "name": "pirate-plot",
+  "label":"Pirate plot using Yarrr",
+  "version": "1.0.0",
+  "description": "Combines a box-and-whisker plot with overlaid density plots to show clear comparisons of distributions across groups; a good choice for  displaying the relationship between 1 or two categorical independent variables, and one continuous dependent variable.",
+  "author": "Rho, Inc.",
+  "license": "MIT",
+  "keywords":["boxplot", "violinplot", "r", "lattice", "facet", "median", "colors", "jitter", "discrete"],
+  "rDependencies": {
+    "dplyr":null,
+    "tidyr":null,
+    "yarrr":null
+  },
+  "dataDependecies":["https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv"]
+}

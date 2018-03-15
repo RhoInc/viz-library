@@ -3,14 +3,17 @@
   "version": "0.6.0",
   "description": "Examples of statistical graphics created at Rho",
   "main": "./index.html",
+  "module": "./util/web/src/index.js",
   "scripts": {
-    "build":"npm run scrape-all && npm run build-web",
-    "build-web": "npm run format && rollup -c ./scripts/rollup.config.js | babel > ./util/web/build/vizLibrary.js",
+    "build": "npm run scrape-all && npm run build-web",
+    "build-web": "npm run format && npm run bundle",
+    "bundle": "rollup -c ./scripts/rollup.config.js",
     "format": "prettier --write \"./scripts/**/*.js\" && prettier --write \"./util/**/*.js\"",
-    "scrape-all":"npm run scrape-examples && npm run scrape-dataFiles",
-    "scrape-examples":"node ./scripts/parseExamples",
-    "scrape-dataFiles":"node ./scripts/buildDataList/parseDataFiles.js",
-    "test": "node ./testing/test.js"
+    "scrape-all": "npm run scrape-examples && npm run scrape-dataFiles",
+    "scrape-examples": "node ./scripts/parseExamples",
+    "scrape-dataFiles": "node ./scripts/buildDataList/parseDataFiles.js",
+    "test": "node ./testing/test.js",
+    "watch": "rollup -c ./scripts/rollup.config.js -w"
   },
   "author": "Rho, Inc.",
   "license": "MIT",
@@ -18,12 +21,15 @@
     "d3": "^3.5.14"
   },
   "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "csvtojson": "~1",
     "jimp": "^0.2.27",
-    "babel-cli": "^6.5.1",
-    "babel-preset-es2015-rollup": "^1.1.1",
-    "rollup": "^0.25.3",
-    "rollup-plugin-babel": "^2.3.9",
-    "csvtojson":"~1",
-    "prettier":"~1"
+    "jsdom": "~11",
+    "prettier": "^1.7.4",
+    "rollup": "^0.50.1",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-watch": "^4.3.1"
   }
 }

@@ -15,13 +15,22 @@ export default function buildPubList(meta, parentElement) {
   var wraps = items.append("div").attr("class", "pub-wrap");
 
   //title
-  wraps.append("p").attr("class", "title").text(d => d.title);
+  wraps
+    .append("p")
+    .attr("class", "title")
+    .text(d => d.title);
 
   //description
-  wraps.append("p").attr("class", "description").text(d => d.text);
+  wraps
+    .append("p")
+    .attr("class", "description")
+    .text(d => d.text);
 
   //author
-  wraps.append("p").attr("class", "author").text(d => d.keyValues[0].value);
+  wraps
+    .append("p")
+    .attr("class", "author")
+    .text(d => d.keyValues[0].value);
 
   //tags
   function cap1(string) {

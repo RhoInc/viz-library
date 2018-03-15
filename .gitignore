@@ -4,5 +4,6 @@
 *.RData
 *.Ruserdata
 *.svn
+*.DS_Store
 node_modules
 local
