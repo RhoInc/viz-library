@@ -6,14 +6,15 @@
  ----------------------------------------------------- */
 
 export default function buildFilters(meta, measures, parentElement) {
-    meta.forEach(metum => {
-        const main = metum.package.main;
-        metum.languages = main.split('.')[main.split('.').length - 1].toLowerCase();
-        const dependencies = metum.languages === 'js'
-            ? 'dependencies'
-            : metum.languages[0] + 'Dependencies';
-        metum.libraries = Object.keys(metum.package[dependencies]);
-    });
+  meta.forEach(metum => {
+    const main = metum.package.main;
+    metum.languages = main.split(".")[main.split(".").length - 1].toLowerCase();
+    const dependencies =
+      metum.languages === "js"
+        ? "dependencies"
+        : metum.languages[0] + "Dependencies";
+    metum.libraries = Object.keys(metum.package[dependencies]);
+  });
   measures = measures.map(function(m) {
     return m.length ? { colName: m, label: m } : m;
   });

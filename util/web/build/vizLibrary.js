@@ -14,8 +14,8 @@
 function buildFilters(meta, measures, parentElement) {
   meta.forEach(function (metum) {
     var main = metum.package.main;
-    metum.languages = main.split('.')[main.split('.').length - 1].toLowerCase();
-    var dependencies = metum.languages === 'js' ? 'dependencies' : metum.languages[0] + 'Dependencies';
+    metum.languages = main.split(".")[main.split(".").length - 1].toLowerCase();
+    var dependencies = metum.languages === "js" ? "dependencies" : metum.languages[0] + "Dependencies";
     metum.libraries = Object.keys(metum.package[dependencies]);
   });
   measures = measures.map(function (m) {
@@ -137,7 +137,7 @@ function dataPreview(dataFiles) {
     rows.filter(function (e) {
       return e == d;
     }).classed("selected", true);
-    var label = d3.select(".data-preview").select("strong").text("First 10 rows of " + d.rel_path);
+    var label = d3.select(".data-preview").select("strong").text("A listing of " + d.rel_path + ":");
 
     label.append("button").text("Clear Preview").on("click", function () {
       rows.classed("selected", false);
@@ -146,12 +146,9 @@ function dataPreview(dataFiles) {
     });
 
     d3.csv(d.rel_path, function (error, data) {
-      var sub = data.filter(function (d, i) {
-        return i < 10;
-      });
       d3.select(".data-preview").select(".data-table").selectAll("*").remove();
       var preview = webCharts.createTable(".data-preview .data-table", {});
-      preview.init(sub);
+      preview.init(data);
     });
   });
 

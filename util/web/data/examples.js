@@ -322,7 +322,7 @@ var examples = [
       ],
       dependencies: {
         d3: "~3",
-        webcharts: "~1",
+        webcharts: "~1.9",
         aetable: "3.0.1",
         aetimelines: "2.0.1",
         safetyhistogram: "2.0.1",
@@ -345,8 +345,8 @@ var examples = [
       "GitHub-Mark-32px.png",
       "index.html",
       "package.json",
-      "screen.PNG",
-      "thumb.PNG",
+      "screen.png",
+      "thumb.png",
       "webCodebookDemo.js"
     ],
     paths: {
