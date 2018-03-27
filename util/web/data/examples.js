@@ -322,7 +322,7 @@ var examples = [
       ],
       dependencies: {
         d3: "~3",
-        webcharts: "~1",
+        webcharts: "~1.9",
         aetable: "3.0.1",
         aetimelines: "2.0.1",
         safetyhistogram: "2.0.1",

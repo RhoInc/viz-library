@@ -40,7 +40,7 @@ export default function dataPreview(dataFiles) {
       var label = d3
         .select(".data-preview")
         .select("strong")
-        .text("First 10 rows of " + d.rel_path);
+        .text("A listing of " + d.rel_path + ":");
 
       label
         .append("button")
@@ -59,16 +59,13 @@ export default function dataPreview(dataFiles) {
         });
 
       d3.csv(d.rel_path, function(error, data) {
-        var sub = data.filter(function(d, i) {
-          return i < 10;
-        });
         d3
           .select(".data-preview")
           .select(".data-table")
           .selectAll("*")
           .remove();
         var preview = webCharts.createTable(".data-preview .data-table", {});
-        preview.init(sub);
+        preview.init(data);
       });
     });
 
