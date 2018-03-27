@@ -3,7 +3,7 @@
   "main": "index.js",
   "name": "scatter-plot-matrix",
   "label":"Interactive Scatter Plot Lattice with Vital Signs Data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A paneled series of scatter plots plotting every measure against every other measure",
   "author": "Rho, Inc.",
   "license": "MIT",

@@ -102,21 +102,21 @@ var dataFiles = [
   },
   {
     local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/testData/ADTIMELINES_noDays.csv",
-    filename: "ADTIMELINES_noDays.csv",
-    ext: "csv",
-    rel_path: "./data/testData/ADTIMELINES_noDays.csv",
-    rows: 1067,
-    cols: 17
-  },
-  {
-    local_path:
       "/Users/jeremy/Sites/github/viz-library/data/testData/ADBDS_missingData.csv",
     filename: "ADBDS_missingData.csv",
     ext: "csv",
     rel_path: "./data/testData/ADBDS_missingData.csv",
     rows: 22695,
     cols: 19
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/testData/ADTIMELINES_noDays.csv",
+    filename: "ADTIMELINES_noDays.csv",
+    ext: "csv",
+    rel_path: "./data/testData/ADTIMELINES_noDays.csv",
+    rows: 1067,
+    cols: 17
   },
   {
     local_path:
@@ -138,21 +138,21 @@ var dataFiles = [
   },
   {
     local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/ADCM.csv",
-    filename: "ADCM.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/ADCM.csv",
-    rows: 337,
-    cols: 22
-  },
-  {
-    local_path:
       "/Users/jeremy/Sites/github/viz-library/data/safetyData/ADBDS.csv",
     filename: "ADBDS.csv",
     ext: "csv",
     rel_path: "./data/safetyData/ADBDS.csv",
     rows: 24669,
     cols: 20
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/ADCM.csv",
+    filename: "ADCM.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/ADCM.csv",
+    rows: 337,
+    cols: 22
   },
   {
     local_path:
@@ -174,21 +174,21 @@ var dataFiles = [
   },
   {
     local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/SDTM/CM.csv",
-    filename: "CM.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/SDTM/CM.csv",
-    rows: 291,
-    cols: 13
-  },
-  {
-    local_path:
       "/Users/jeremy/Sites/github/viz-library/data/safetyData/SDTM/DM.csv",
     filename: "DM.csv",
     ext: "csv",
     rel_path: "./data/safetyData/SDTM/DM.csv",
     rows: 150,
     cols: 9
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/SDTM/CM.csv",
+    filename: "CM.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/SDTM/CM.csv",
+    rows: 291,
+    cols: 13
   },
   {
     local_path:
