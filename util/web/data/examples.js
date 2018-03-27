@@ -526,8 +526,8 @@ var examples = [
     files: [
       "example.html",
       "index.html",
+      "initQueryOverview.js",
       "package.json",
-      "queryOverview.js",
       "screen.png",
       "thumb.png"
     ],
@@ -539,11 +539,11 @@ var examples = [
     },
     package: {
       homepage: "example.html",
-      main: "queryOverview.js",
+      main: "initQueryOverview.js",
       name: "query-overview",
       label: "Query Overview",
       repository: "github:Rhoinc/query-overview",
-      version: "1.0.0",
+      version: "1.0.1",
       description:
         "Explore clinical trial query data using the query-overview library.",
       author: "Rho, Inc.",
@@ -553,7 +553,7 @@ var examples = [
       dataDependecies: ["../../data/queries/queries.csv"]
     },
     index:
-      '<html lang="en">\n<title>Web Codebook - Explorer</title>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8">\n\n<script src="https://d3js.org/d3.v3.min.js"></script>\n<script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>\n<script src="https://cdn.rawgit.com/RhoInc/query-overview/master/build/queryOverview.js"></script>\n\n<link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css">\n\n</head>\n\n<body><div class="head">\n  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">\n  <link rel="stylesheet" href="../../util/web/css/examples.css">\n  <ul class = \'vl-ex-header\'>\n      <li class = "icon"><a href="../../"><img src="../../util/web/img/rho.png"></a></li>\n      <li class = "site crumb"><a href="../../"><span>Graphics</span></a></li>\n      <li class = \'crumb\'>Example</li>\n      <li class = \'title\'></li>\n      <li class = \'info\' title="Click to toggle chart details" onclick="toggleDetails()">&#9432;</li>\n      <li class = \'arrow next-arrow right\'><a href=""></a></li>\n      <li class = \'arrow back-arrow right\'><a href=""></a></li>\n  </ul>\n  <div id=\'vl-ex-details\' style="display:none;">\n    <p class="vl-ex-description"></p>\n\n    <ul class="vl-ex-tags"></ul>\n  </div>\n  <script>\n    function toggleDetails(){\n      var details = document.getElementById("vl-ex-details");\n      if (details.style.display === "none") {\n          details.style.display = "block";\n      } else {\n          details.style.display = "none";\n        }\n    }\n  </script>\n</div>\n\n\t<div class="chart"></div>\n</body>\n<script src="queryoverview.js"></script>\n</html>\n'
+      '<html lang="en">\n<title>Web Codebook - Explorer</title>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8">\n\n<script src="https://d3js.org/d3.v3.min.js"></script>\n<script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>\n<script src="https://cdn.rawgit.com/RhoInc/query-overview/master/build/queryOverview.js"></script>\n\n<link rel="stylesheet" href="https://cdn.rawgit.com/RhoInc/Webcharts/master/css/webcharts.css">\n\n</head>\n\n<body><div class="head">\n  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">\n  <link rel="stylesheet" href="../../util/web/css/examples.css">\n  <ul class = \'vl-ex-header\'>\n      <li class = "icon"><a href="../../"><img src="../../util/web/img/rho.png"></a></li>\n      <li class = "site crumb"><a href="../../"><span>Graphics</span></a></li>\n      <li class = \'crumb\'>Example</li>\n      <li class = \'title\'></li>\n      <li class = \'info\' title="Click to toggle chart details" onclick="toggleDetails()">&#9432;</li>\n      <li class = \'arrow next-arrow right\'><a href=""></a></li>\n      <li class = \'arrow back-arrow right\'><a href=""></a></li>\n  </ul>\n  <div id=\'vl-ex-details\' style="display:none;">\n    <p class="vl-ex-description"></p>\n\n    <ul class="vl-ex-tags"></ul>\n  </div>\n  <script>\n    function toggleDetails(){\n      var details = document.getElementById("vl-ex-details");\n      if (details.style.display === "none") {\n          details.style.display = "block";\n      } else {\n          details.style.display = "none";\n        }\n    }\n  </script>\n</div>\n\n\t<div class="chart"></div>\n</body>\n<script src="initQueryOverview.js"></script>\n</html>\n'
   },
   {
     dir: "0015-safety-explorer-single-page",
