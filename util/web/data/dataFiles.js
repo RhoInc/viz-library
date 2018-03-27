@@ -219,21 +219,21 @@ var dataFiles = [
   },
   {
     local_path:
-      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/labs.csv",
-    filename: "labs.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/raw/labs.csv",
-    rows: 16,
-    cols: 6
-  },
-  {
-    local_path:
       "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/adverseEvents.csv",
     filename: "adverseEvents.csv",
     ext: "csv",
     rel_path: "./data/safetyData/raw/adverseEvents.csv",
     rows: 765,
     cols: 4
+  },
+  {
+    local_path:
+      "/Users/jeremy/Sites/github/viz-library/data/safetyData/raw/labs.csv",
+    filename: "labs.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/raw/labs.csv",
+    rows: 16,
+    cols: 6
   },
   {
     local_path:

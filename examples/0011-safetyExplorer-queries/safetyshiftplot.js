@@ -10,7 +10,7 @@ const settings =
     ,   {value_col: 'QUERYFL', label: 'Open Query?'}]
 };
 
-d3.csv('../../../data/safetyData-queries/ADBDS.csv', function(data) {
+d3.csv('../../data/safetyData-queries/ADBDS.csv', function(data) {
     safetyShiftPlot('#safety-shift-plot .content', settings)
         .init(data);
 });

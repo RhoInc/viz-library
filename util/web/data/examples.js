@@ -308,7 +308,7 @@ var examples = [
       name: "safetyExplorer-default",
       label: "Safety Explorer - Default Configuration",
       repository: "github:Rhoinc/safety-explorer-suite",
-      version: "1.0.0",
+      version: "1.0.1",
       description:
         "The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials.  This instance demonstrates each graphic with default settings.",
       author: "Rho, Inc.",
@@ -450,7 +450,7 @@ var examples = [
       name: "safetyExplorer-queries",
       label: "Safety Explorer with Query Data",
       repository: "github:Rhoinc/safety-explorer-suite",
-      version: "1.0.0",
+      version: "1.0.1",
       description:
         "The safety explorer is a collection of interactive graphics visualizing adverse event, lab, and vital sign data captured in clinical trials. This instance demonstrates customized versions of each graphic including added filters and/or highlights for query data.",
       author: "Rho, Inc.",
