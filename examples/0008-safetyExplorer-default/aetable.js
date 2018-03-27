@@ -7,7 +7,7 @@ const settings = {
     }
 };
 
-d3.csv('../../../data/safetyData/ADAE.csv', function(data) {
+d3.csv('../../data/safetyData/ADAE.csv', function(data) {
     aeTable.createChart('#ae-table .content', settings)
         .init(data);
 });
