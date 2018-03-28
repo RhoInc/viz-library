@@ -19,7 +19,7 @@ var settings =
     ,   {value_col: 'RACE', label: 'Race'}
     ,   {value_col: 'QUERYFL', label: 'Open Query?'}]
     };
-d3.csv('../../../data/safetyData-queries/ADBDS.csv', function(data) {
+d3.csv('../../data/safetyData-queries/ADBDS.csv', function(data) {
     safetyResultsOverTime('#safety-results-over-time .content', settings)
         .init(data);
 });
