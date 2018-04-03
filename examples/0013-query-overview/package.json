@@ -1,10 +1,10 @@
 {
   "homepage":"example.html",
-  "main": "queryOverview.js",
+  "main": "initQueryOverview.js",
   "name": "query-overview",
   "label":"Query Overview",
   "repository":"github:Rhoinc/query-overview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Explore clinical trial query data using the query-overview library.",
   "author": "Rho, Inc.",
   "license": "MIT",

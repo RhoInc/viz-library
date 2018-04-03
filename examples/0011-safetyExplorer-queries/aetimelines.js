@@ -43,7 +43,7 @@ var settings =
 
         ]};
 
-    d3.csv('../../../data/safetyData-queries/ADAE.csv', function(data) {
+    d3.csv('../../data/safetyData-queries/ADAE.csv', function(data) {
         aeTimelines('#ae-timelines .content', settings)
             .init(data);
     });

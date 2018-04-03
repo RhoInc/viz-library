@@ -20,6 +20,6 @@ var settings =
             {value_col: 'QUERYDETAILS', label: 'Query Details'}]
         };
 
-    d3.csv('../../../data/safetyData-queries/ADBDS.csv', function(data) {
+    d3.csv('../../data/safetyData-queries/ADBDS.csv', function(data) {
         safetyHistogram('div.content', settings).init(data);
     });

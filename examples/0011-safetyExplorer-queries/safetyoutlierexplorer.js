@@ -47,7 +47,7 @@ var settings =
     ,multiples_sizing: {width: 250,height: 75}
 };
 
-    d3.csv('../../../data/safetyData-queries/ADBDS.csv', function(data) {
+    d3.csv('../../data/safetyData-queries/ADBDS.csv', function(data) {
         safetyOutlierExplorer('#safety-outlier-explorer .content', settings)
             .init(data);
     });
