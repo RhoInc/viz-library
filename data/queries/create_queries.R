@@ -1,7 +1,6 @@
 library(tidyverse)
 set.seed(2357)
 nQueries <- 5000
-
 #-------------------------------------------------------------------------------------------------#
 # Input data
 #-------------------------------------------------------------------------------------------------#
@@ -14,21 +13,24 @@ nQueries <- 5000
     markingGroupProbs <- c(.7, .2, .1)
     sites <- 1:5
     visits <- 1:10
-    queryDates <- seq(as.Date('2015/1/1'), as.Date('2016/12/31'), 1)
+    queryDates <- seq(as.Date('2015-01-01'), as.Date('2016-12-31'), 1)
 
 #-------------------------------------------------------------------------------------------------#
 # Sample fields
 #-------------------------------------------------------------------------------------------------#
 
     queries <- data.frame(
-            Datastr = rep('', nQueries),
+            `Datastr` = rep('', nQueries),
             `Field Name` = rep('', nQueries),
             `Query Status` = rep('', nQueries),
             `Query Open By: Marking Group` = rep('', nQueries),
             `Site Name` = rep('', nQueries),
-            ID = rep('', nQueries),
+            `ID` = rep('', nQueries),
             `Visit/Folder` = rep('', nQueries),
             `Query Open Date` = rep(Sys.Date(), nQueries),
+            `Query Close Date` = rep(Sys.Date(), nQueries),
+            `Query Age` = rep(0, nQueries),
+            `Query Age Category` = rep('', nQueries),
         stringsAsFactors = FALSE,
         check.names = FALSE
     )
@@ -43,6 +45,20 @@ nQueries <- 5000
         queries[i,6] <- paste(strsplit(queries[i,5], ' ')[[1]][[2]], formatC(sample(1:25, 1), width = 3, format = 'd', flag = '0'), sep = '-')
         queries[i,7] <- paste('Visit', ifelse(queries[i,1] %in% c('SCRN', 'DM'), 1, sample(visits, 1)))
         queries[i,8] <- sample(queryDates, 1)
+        queries[i,9] <- sample(seq(queries[i,8], as.Date('2016-12-31'), 1), 1)
+        queries[i,10] <- ifelse(
+            queries[i,3] %in% c('Closed', 'Cancelled'),
+                as.numeric(queries[i,9] - queries[i,8]),
+                as.numeric(as.Date('2016-12-31') - queries[i,8])
+        )
+        if (!queries[i,3] %in% c('Closed', 'Cancelled'))
+            queries[i,9] = NA
+        queries[i,11] <- case_when(
+            queries[i,10] <=  28 ~ '0-4 weeks',
+            queries[i,10] <=  56 ~ '4-8 weeks',
+            queries[i,10] <= 112 ~ '8-16 weeks',
+            TRUE                 ~ '>16 weeks'
+        )
     }
 
     queries$`Query Text` <- 'query text'
