@@ -60,15 +60,17 @@ library(dplyr)
                             STDY = 1,
                             ENDY = 1,
                             ENDT = RFSTDTC,
-                            ONGO = NA
+                            ONGO = NA,
+                            OFFSET = 0
                         ) %>%
                         rename(
                             STDT = RFSTDTC
                         ) %>%
-                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO),
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO, OFFSET),
                     select(AE, USUBJID, AESTDT, AESTDY, AEENDT, AEENDY, AESEQ, AEONGO) %>%
                         mutate(
-                            DOMAIN = 'Adverse Events'
+                            DOMAIN = 'Adverse Events',
+                            OFFSET = 1
                         ) %>%
                         rename(
                             STDT = AESTDT,
@@ -78,10 +80,11 @@ library(dplyr)
                             SEQ = AESEQ,
                             ONGO = AEONGO
                         ) %>%
-                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO),
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO, OFFSET),
                     select(CM, USUBJID, CMSTDT, CMSTDY, CMENDT, CMENDY, CMSEQ, CMONGO) %>%
                         mutate(
-                            DOMAIN = 'Concomitant Medications'
+                            DOMAIN = 'Concomitant Medications',
+                            OFFSET = 2
                         ) %>%
                         rename(
                             STDT = CMSTDT,
@@ -91,7 +94,7 @@ library(dplyr)
                             SEQ = CMSEQ,
                             ONGO = CMONGO
                         ) %>%
-                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO),
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO, OFFSET),
                     filter(SV, VISIT == 'Visit 1') %>%
                         mutate(
                             DOMAIN = 'Randomization',
@@ -99,12 +102,13 @@ library(dplyr)
                             STDY = SVDY,
                             ENDY = SVDY,
                             ENDT = SVDT,
-                            ONGO = NA
+                            ONGO = NA,
+                            OFFSET = 0
                         ) %>%
                         rename(
                             STDT = SVDT
                         ) %>%
-                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO),
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO, OFFSET),
                     filter(SV, VISIT == 'End of Study') %>%
                         mutate(
                             DOMAIN = 'Study Completion',
@@ -112,12 +116,13 @@ library(dplyr)
                             STDY = SVDY,
                             ENDY = SVDY,
                             ENDT = SVDT,
-                            ONGO = NA
+                            ONGO = NA,
+                            OFFSET = 0
                         ) %>%
                         rename(
                             STDT = SVDT
                         ) %>%
-                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO)
+                        select(USUBJID, DOMAIN, STDT, STDY, ENDT, ENDY, SEQ, ONGO, OFFSET)
                 )
             ) %>%
         mutate(

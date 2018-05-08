@@ -1,13 +1,5 @@
 var dataFiles = [
   {
-    local_path: "C:/Users/schildre/GitHub/viz-library/data/cars.csv",
-    filename: "cars.csv",
-    ext: "csv",
-    rel_path: "./data/cars.csv",
-    rows: 32,
-    cols: 12
-  },
-  {
     local_path: "C:/Users/schildre/GitHub/viz-library/data/ChickWeight.csv",
     filename: "ChickWeight.csv",
     ext: "csv",
@@ -16,12 +8,12 @@ var dataFiles = [
     cols: 5
   },
   {
-    local_path: "C:/Users/schildre/GitHub/viz-library/data/climate_data.csv",
-    filename: "climate_data.csv",
+    local_path: "C:/Users/schildre/GitHub/viz-library/data/cars.csv",
+    filename: "cars.csv",
     ext: "csv",
-    rel_path: "./data/climate_data.csv",
-    rows: 95,
-    cols: 10
+    rel_path: "./data/cars.csv",
+    rows: 32,
+    cols: 12
   },
   {
     local_path: "C:/Users/schildre/GitHub/viz-library/data/discrete_scores.csv",
@@ -32,11 +24,11 @@ var dataFiles = [
     cols: 2
   },
   {
-    local_path: "C:/Users/schildre/GitHub/viz-library/data/elements.csv",
-    filename: "elements.csv",
+    local_path: "C:/Users/schildre/GitHub/viz-library/data/climate_data.csv",
+    filename: "climate_data.csv",
     ext: "csv",
-    rel_path: "./data/elements.csv",
-    rows: 103,
+    rel_path: "./data/climate_data.csv",
+    rows: 95,
     cols: 10
   },
   {
@@ -46,6 +38,14 @@ var dataFiles = [
     rel_path: "./data/iris.csv",
     rows: 150,
     cols: 5
+  },
+  {
+    local_path: "C:/Users/schildre/GitHub/viz-library/data/elements.csv",
+    filename: "elements.csv",
+    ext: "csv",
+    rel_path: "./data/elements.csv",
+    rows: 103,
+    cols: 10
   },
   {
     local_path: "C:/Users/schildre/GitHub/viz-library/data/hys_law.csv",
@@ -64,14 +64,6 @@ var dataFiles = [
     cols: 3
   },
   {
-    local_path: "C:/Users/schildre/GitHub/viz-library/data/queries/forms.csv",
-    filename: "forms.csv",
-    ext: "csv",
-    rel_path: "./data/queries/forms.csv",
-    rows: 11,
-    cols: 2
-  },
-  {
     local_path: "C:/Users/schildre/GitHub/viz-library/data/queries/queries.csv",
     filename: "queries.csv",
     ext: "csv",
@@ -80,22 +72,12 @@ var dataFiles = [
     cols: 11
   },
   {
-    local_path:
-      "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADAE.csv",
-    filename: "ADAE.csv",
+    local_path: "C:/Users/schildre/GitHub/viz-library/data/queries/forms.csv",
+    filename: "forms.csv",
     ext: "csv",
-    rel_path: "./data/safetyData-queries/ADAE.csv",
-    rows: 392,
-    cols: 25
-  },
-  {
-    local_path:
-      "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADBDS.csv",
-    filename: "ADBDS.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData-queries/ADBDS.csv",
-    rows: 22695,
-    cols: 22
+    rel_path: "./data/queries/forms.csv",
+    rows: 11,
+    cols: 2
   },
   {
     local_path:
@@ -125,12 +107,22 @@ var dataFiles = [
     cols: 19
   },
   {
-    local_path: "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADAE.csv",
+    local_path:
+      "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADBDS.csv",
+    filename: "ADBDS.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData-queries/ADBDS.csv",
+    rows: 22695,
+    cols: 22
+  },
+  {
+    local_path:
+      "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADAE.csv",
     filename: "ADAE.csv",
     ext: "csv",
-    rel_path: "./data/safetyData/ADAE.csv",
+    rel_path: "./data/safetyData-queries/ADAE.csv",
     rows: 392,
-    cols: 23
+    cols: 25
   },
   {
     local_path:
@@ -140,6 +132,14 @@ var dataFiles = [
     rel_path: "./data/safetyData/ADBDS.csv",
     rows: 24669,
     cols: 20
+  },
+  {
+    local_path: "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADAE.csv",
+    filename: "ADAE.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/ADAE.csv",
+    rows: 392,
+    cols: 23
   },
   {
     local_path: "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADCM.csv",
@@ -156,7 +156,7 @@ var dataFiles = [
     ext: "csv",
     rel_path: "./data/safetyData/ADTIMELINES.csv",
     rows: 1054,
-    cols: 17
+    cols: 18
   },
   {
     local_path:
@@ -166,24 +166,6 @@ var dataFiles = [
     rel_path: "./data/safetyData/variableMetaData.csv",
     rows: 103,
     cols: 10
-  },
-  {
-    local_path:
-      "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/labs.csv",
-    filename: "labs.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/raw/labs.csv",
-    rows: 16,
-    cols: 6
-  },
-  {
-    local_path:
-      "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/medications.csv",
-    filename: "medications.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/raw/medications.csv",
-    rows: 654,
-    cols: 3
   },
   {
     local_path:
@@ -205,21 +187,30 @@ var dataFiles = [
   },
   {
     local_path:
+      "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/medications.csv",
+    filename: "medications.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/raw/medications.csv",
+    rows: 654,
+    cols: 3
+  },
+  {
+    local_path:
+      "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/labs.csv",
+    filename: "labs.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/raw/labs.csv",
+    rows: 16,
+    cols: 6
+  },
+  {
+    local_path:
       "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/vitalSigns.csv",
     filename: "vitalSigns.csv",
     ext: "csv",
     rel_path: "./data/safetyData/raw/vitalSigns.csv",
     rows: 27,
     cols: 7
-  },
-  {
-    local_path:
-      "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/CM.csv",
-    filename: "CM.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/SDTM/CM.csv",
-    rows: 291,
-    cols: 13
   },
   {
     local_path:
@@ -232,6 +223,15 @@ var dataFiles = [
   },
   {
     local_path:
+      "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/CM.csv",
+    filename: "CM.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/SDTM/CM.csv",
+    rows: 291,
+    cols: 13
+  },
+  {
+    local_path:
       "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/DM.csv",
     filename: "DM.csv",
     ext: "csv",
@@ -241,21 +241,21 @@ var dataFiles = [
   },
   {
     local_path:
-      "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/SV.csv",
-    filename: "SV.csv",
-    ext: "csv",
-    rel_path: "./data/safetyData/SDTM/SV.csv",
-    rows: 1174,
-    cols: 5
-  },
-  {
-    local_path:
       "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/LB.csv",
     filename: "LB.csv",
     ext: "csv",
     rel_path: "./data/safetyData/SDTM/LB.csv",
     rows: 18784,
     cols: 11
+  },
+  {
+    local_path:
+      "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/SV.csv",
+    filename: "SV.csv",
+    ext: "csv",
+    rel_path: "./data/safetyData/SDTM/SV.csv",
+    rows: 1174,
+    cols: 5
   },
   {
     local_path:
