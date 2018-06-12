@@ -47,20 +47,17 @@ export default function dataPreview(dataFiles) {
         .text("Clear Preview")
         .on("click", function() {
           rows.classed("selected", false);
-          d3
-            .select(".data-preview")
+          d3.select(".data-preview")
             .select("strong")
             .html("Click &#128269; to preview a data set");
-          d3
-            .select(".data-preview")
+          d3.select(".data-preview")
             .select(".data-table")
             .selectAll("*")
             .remove();
         });
 
       d3.csv(d.rel_path, function(error, data) {
-        d3
-          .select(".data-preview")
+        d3.select(".data-preview")
           .select(".data-table")
           .selectAll("*")
           .remove();
