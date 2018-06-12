@@ -56,12 +56,20 @@
     <script src='./util/web/build/vizLibrary.js'></script>
 
     <script>
+      //hide some broken gists
+      var brokengists = ["b7d6d39778d6a5f396490d31fbc1015d","5633141e5b73e8521b719ac0a2f8d24f","1a45f4ec2d66110838f0","5316a6fe925c022fff14","4eada00334f32c03f062","449b369b3a1f12cd696f"]
+      var gists = gists.filter(function(g){
+        return brokengists.indexOf(g.id) == -1
+      })
+
       // Load page content
       vizLibrary.buildFilters(examples,["languages","libraries"],".controls")
       vizLibrary.buildExampleList(examples,".examples")
       vizLibrary.dataPreview(dataFiles)
       vizLibrary.buildGistList(gists,".gists")
       vizLibrary.buildPubList(publications,".pubs")
+
+
       // Show/Hide with nav
       d3.selectAll(".nav li.presentation")
       .on("click",function(){

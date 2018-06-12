@@ -58,11 +58,11 @@ function buildFilters(meta, measures, parentElement) {
 }
 
 /* -----------------------------------------------------
- Takes an array of metadata object (see sample input) and 
+ Takes an array of metadata object (see sample input) and
  a valid css selector (`parentDiv`)  and renders divs
  styled for for the example gallery (see sample output)
 
-Sample Input for `meta`: 
+Sample Input for `meta`:
 	[
 		{
 			"id":"0001-density-lattice",
@@ -71,12 +71,12 @@ Sample Input for `meta`:
 			"technology":"R",
 			"url":"/0001-density-lattice",
 			"thumbnail":"default", //or "placeholder"
-			"description":"This is a sweet description" 
+			"description":"This is a sweet description"
 		},
 		... //add more objects here as desired
 	]
 
-Sample Output rendered to DOM (one per object in meta: 
+Sample Output rendered to DOM (one per object in meta:
 <div class="media-tile">
     <a href="./examples/0001-density-lattice">
         <img src="./examples/0001-density-lattice/thumbnail.png" width="300" height="200" alt="0001-density-lattice">
@@ -112,7 +112,7 @@ function buildExampleList(meta, parentElement) {
     items.append("a").attr("class", "text-wrap").attr("href", function (d) {
         return d.url;
     }).append("p").append("span").attr("class", "media-title").text(function (d) {
-        return d.title;
+        return d.package.label;
     });
 }
 
