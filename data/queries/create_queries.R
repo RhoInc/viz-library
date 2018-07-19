@@ -54,6 +54,7 @@ nQueries <- 5000
         if (!queries[i,3] %in% c('Closed', 'Cancelled'))
             queries[i,9] = NA
         queries[i,11] <- case_when(
+            queries[i,3] %in% c('Closed', 'Cancelled') ~ queries[i,3],
             queries[i,10] <=  28 ~ '0-4 weeks',
             queries[i,10] <=  56 ~ '4-8 weeks',
             queries[i,10] <= 112 ~ '8-16 weeks',
@@ -62,7 +63,7 @@ nQueries <- 5000
     }
 
     queries$`Query Text` <- 'query text'
-    
+
     queries1 <- queries %>%
         left_join(forms) %>%
         left_join(fields)
