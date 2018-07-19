@@ -9,6 +9,50 @@ library(dplyr)
     VS <- read.csv('../SDTM/VS.csv', colClasses = 'character')
 
 ### Output data
+    ### ADSL
+        ADSL <- DM %>%
+            left_join(
+                SV %>%
+                    filter(VISIT == 'Visit 1') %>%
+                    select(USUBJID, SVDT, SVDY) %>%
+                    rename(
+                        RANDDT = SVDT,
+                        RANDDY = SVDY
+                    )
+            ) %>%
+            left_join(
+                SV %>%
+                    filter(VISIT == 'End of Study') %>%
+                    select(USUBJID, SVDT, SVDY) %>%
+                    rename(
+                        COMPLDT = SVDT,
+                        COMPLDY = SVDY
+                    )
+            ) %>%
+            left_join(
+                AE %>%
+                    select(USUBJID) %>%
+                    distinct() %>%
+                    mutate(ANYAEFL = 'Y')
+            ) %>%
+            left_join(
+                CM %>%
+                    select(USUBJID) %>%
+                    distinct() %>%
+                    mutate(ANYCMFL = 'Y')
+            ) %>%
+            mutate(
+                ANYAEFL = ifelse(is.na(ANYAEFL), 'N', 'Y'),
+                ANYCMFL = ifelse(is.na(ANYCMFL), 'N', 'Y')
+            ) %>%
+            arrange(USUBJID)
+        write.csv(
+            ADSL,
+            '../ADSL.csv',
+            row.names = FALSE,
+            na = ''
+        )
+
     ### ADAE
         ADAE <- full_join(DM, AE) %>%
             arrange(USUBJID, AESEQ) %>%
@@ -50,7 +94,7 @@ library(dplyr)
             )
 
     ### ADTIMELINES
-        ADTIMELINES = DM %>%
+        ADTIMELINES <- DM %>%
             full_join(
                 rbind(
                     select(DM, USUBJID, RFSTDTC) %>%
@@ -136,20 +180,80 @@ library(dplyr)
             na = ''
         )
 
+    ### ADLB
+        ADLB <- LB %>%
+            left_join(ADSL) %>%
+            rename(
+                PARAMCAT = LBCAT,
+                AVISIT = VISIT,
+                AVISITN = VISITNUM,
+                AVAL = LBSTRESN,
+                ANRLO = LBSTNRLO,
+                ANRHI = LBSTNRHI,
+                ADT = LBDT,
+                ADY = LBDY
+            ) %>%
+            mutate(
+                PARAM = ifelse(
+                    LBSTRESU != '',
+                        paste0(LBTEST, ' (', LBSTRESU, ')'),
+                        LBTEST
+                )
+            ) %>%
+            select(names(ADSL), AVISIT, AVISITN, ADT, ADY, PARAMCAT, PARAM, AVAL, ANRLO, ANRHI) %>%
+            arrange(USUBJID, AVISITN, PARAMCAT, PARAM)
+        write.csv(
+            ADLB,
+            '../ADLB.csv',
+            row.names = FALSE,
+            na = ''
+        )
+
+    ### ADVS
+        ADVS <- VS %>%
+            left_join(ADSL) %>%
+            rename(
+                PARAMCAT = VSCAT,
+                AVISIT = VISIT,
+                AVISITN = VISITNUM,
+                AVAL = VSSTRESN,
+                ANRLO = VSSTNRLO,
+                ANRHI = VSSTNRHI,
+                ADT = VSDT,
+                ADY = VSDY
+            ) %>%
+            mutate(
+                PARAM = ifelse(
+                    VSSTRESU != '',
+                        paste0(VSTEST, ' (', VSSTRESU, ')'),
+                        VSTEST
+                )
+            ) %>%
+            select(names(ADSL), AVISIT, AVISITN, ADT, ADY, PARAMCAT, PARAM, AVAL, ANRLO, ANRHI) %>%
+            arrange(USUBJID, AVISITN, PARAMCAT, PARAM)
+        write.csv(
+            ADVS,
+            '../ADVS.csv',
+            row.names = FALSE,
+            na = ''
+        )
+
     ### ADBDS
-        names(LB) <- sapply(names(LB), function(name) {
+        lb <- LB
+        names(lb) <- sapply(names(lb), function(name) {
             if (grepl('LB', name))
                 return(substring(name, 3))
             else
                 return(name)
         })
-        names(VS) <- sapply(names(VS), function(name) {
+        vs <- VS
+        names(vs) <- sapply(names(vs), function(name) {
             if (grepl('VS', name))
                 return(substring(name, 3))
             else
                 return(name)
         })
-        LBVS <- plyr::rbind.fill(LB,VS) %>%
+        LBVS <- plyr::rbind.fill(lb,vs) %>%
             mutate(VISITN = VISITNUM)
         ADBDS <- full_join(DM, LBVS) %>%
             arrange(USUBJID, VISITN, CAT, TEST
