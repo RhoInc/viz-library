@@ -82,7 +82,11 @@ var examples = [
         "stacked points",
         "discrete"
       ],
-      rDependencies: { dplyr: null, tidyr: null, ggplot2: null },
+      rDependencies: {
+        dplyr: null,
+        tidyr: null,
+        ggplot2: null
+      },
       dataDependecies: ["../../data/discrete_scores.csv"]
     },
     index:
@@ -124,7 +128,11 @@ var examples = [
         "stacked points",
         "discrete"
       ],
-      rDependencies: { dplyr: null, tidyr: null, ggplot2: null },
+      rDependencies: {
+        dplyr: null,
+        tidyr: null,
+        ggplot2: null
+      },
       dataDependecies: ["../../data/discrete_scores.csv"]
     },
     index:
@@ -167,7 +175,11 @@ var examples = [
         "jitter",
         "discrete"
       ],
-      rDependencies: { dplyr: null, tidyr: null, yarrr: null },
+      rDependencies: {
+        dplyr: null,
+        tidyr: null,
+        yarrr: null
+      },
       dataDependecies: [
         "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv"
       ]
@@ -202,7 +214,9 @@ var examples = [
       author: "Rho, Inc.",
       license: "MIT",
       keywords: ["R", "multivariate", "time series", "heatmap", "monthly"],
-      rDependencies: { mvtsplot: null },
+      rDependencies: {
+        mvtsplot: null
+      },
       dataDependecies: ["blsunemployment.csv"]
     },
     index:
@@ -235,7 +249,11 @@ var examples = [
       author: "Rho, Inc.",
       license: "MIT",
       keywords: ["R", "Ordered", "heatmap", "annotation"],
-      rDependencies: { lattice: null, RColorBrewer: null, seriation: null },
+      rDependencies: {
+        lattice: null,
+        RColorBrewer: null,
+        seriation: null
+      },
       dataDependecies: ["Precipitations.csv"]
     },
     index:
@@ -269,7 +287,10 @@ var examples = [
       author: "Rho, Inc.",
       license: "MIT",
       keywords: ["javascript", "interactive", "bar chart"],
-      dependencies: { d3: "~3", webcharts: "~1" },
+      dependencies: {
+        d3: "~3",
+        webcharts: "~1"
+      },
       dataDependecies: ["OlympicMedals2012.csv"]
     },
     index:
@@ -367,7 +388,11 @@ var examples = [
       author: "Rho, Inc.",
       license: "MIT",
       keywords: ["javascript", "interactive", "codebook", "data summary"],
-      dependencies: { d3: "~3", webcharts: "~1", webcodebook: "~1" },
+      dependencies: {
+        d3: "~3",
+        webcharts: "~1",
+        webcodebook: "~1"
+      },
       dataDependecies: ["../../data/safetyData/ADAE.csv"]
     },
     index:
@@ -515,7 +540,11 @@ var examples = [
         "data summary",
         "file explorer"
       ],
-      dependencies: { d3: "~3", webcharts: "~1", webcodebook: "~1" },
+      dependencies: {
+        d3: "~3",
+        webcharts: "~1",
+        webcodebook: "~1"
+      },
       dataDependecies: []
     },
     index:
@@ -549,7 +578,11 @@ var examples = [
       author: "Rho, Inc.",
       license: "MIT",
       keywords: ["javascript", "interactive, queries"],
-      dependencies: { d3: "~3", webcharts: "~1", queryoverview: "~1" },
+      dependencies: {
+        d3: "~3",
+        webcharts: "~1",
+        queryoverview: "~1"
+      },
       dataDependecies: ["../../data/queries/queries.csv"]
     },
     index:
@@ -729,7 +762,9 @@ var examples = [
         "matrix",
         "bivariate"
       ],
-      dependencies: { d3: "~3" },
+      dependencies: {
+        d3: "~3"
+      },
       dataDependecies: [
         "../../data/iris.csv",
         "../../data/safetyData/SDTM/VS.csv",
@@ -774,7 +809,11 @@ var examples = [
         "brushable",
         "paneled"
       ],
-      dependencies: { d3: "~3", webcharts: "~1", paneledOutlierExplorer: "~1" },
+      dependencies: {
+        d3: "~3",
+        webcharts: "~1",
+        paneledOutlierExplorer: "~1"
+      },
       dataDependecies: ["../../data/hys_law.csv"]
     },
     index:
@@ -809,7 +848,10 @@ var examples = [
       author: "Rho, Inc.",
       license: "MIT",
       keywords: ["javascript", "interactive", "webcharts", "table"],
-      dependencies: { d3: "~3", webcharts: "^1.9" },
+      dependencies: {
+        d3: "~3",
+        webcharts: "^1.9"
+      },
       dataDependecies: ["../../data/elements.csv"]
     },
     index:
@@ -843,7 +885,10 @@ var examples = [
       author: "Rho, Inc.",
       license: "MIT",
       keywords: ["javascript", "interactive", "webcharts", "table", "destroy"],
-      dependencies: { d3: "~3", webcharts: "^1.9" },
+      dependencies: {
+        d3: "~3",
+        webcharts: "^1.9"
+      },
       dataDependecies: ["../../data/elements.csv"]
     },
     index:
@@ -882,7 +927,11 @@ var examples = [
         "timelines",
         "clinical trials"
       ],
-      dependencies: { d3: "~3", webcharts: "~1", clinicalTimelines: "~1" },
+      dependencies: {
+        d3: "~3",
+        webcharts: "~1",
+        clinicalTimelines: "~1"
+      },
       dataDependecies: ["../../data/safetyData/ADTIMELINES.csv"]
     },
     index:
