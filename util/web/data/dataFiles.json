@@ -8,20 +8,20 @@
         "cols": 12
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/climate_data.csv",
-        "filename": "climate_data.csv",
-        "ext": "csv",
-        "rel_path": "./data/climate_data.csv",
-        "rows": 95,
-        "cols": 10
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/ChickWeight.csv",
         "filename": "ChickWeight.csv",
         "ext": "csv",
         "rel_path": "./data/ChickWeight.csv",
         "rows": 578,
         "cols": 5
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/climate_data.csv",
+        "filename": "climate_data.csv",
+        "ext": "csv",
+        "rel_path": "./data/climate_data.csv",
+        "rows": 95,
+        "cols": 10
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/discrete_scores.csv",
@@ -32,20 +32,20 @@
         "cols": 2
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/elements.csv",
-        "filename": "elements.csv",
-        "ext": "csv",
-        "rel_path": "./data/elements.csv",
-        "rows": 103,
-        "cols": 10
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/hys_law.csv",
         "filename": "hys_law.csv",
         "ext": "csv",
         "rel_path": "./data/hys_law.csv",
         "rows": 320,
         "cols": 18
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/elements.csv",
+        "filename": "elements.csv",
+        "ext": "csv",
+        "rel_path": "./data/elements.csv",
+        "rows": 103,
+        "cols": 10
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/iris.csv",
@@ -88,12 +88,20 @@
         "cols": 14
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/testData/ADBDS_missingData.csv",
-        "filename": "ADBDS_missingData.csv",
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADAE.csv",
+        "filename": "ADAE.csv",
         "ext": "csv",
-        "rel_path": "./data/testData/ADBDS_missingData.csv",
+        "rel_path": "./data/safetyData-queries/ADAE.csv",
+        "rows": 392,
+        "cols": 25
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADBDS.csv",
+        "filename": "ADBDS.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData-queries/ADBDS.csv",
         "rows": 22695,
-        "cols": 19
+        "cols": 22
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/testData/ADTIMELINES_noDays.csv",
@@ -112,20 +120,12 @@
         "cols": 17
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADAE.csv",
-        "filename": "ADAE.csv",
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/testData/ADBDS_missingData.csv",
+        "filename": "ADBDS_missingData.csv",
         "ext": "csv",
-        "rel_path": "./data/safetyData-queries/ADAE.csv",
-        "rows": 392,
-        "cols": 25
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADBDS.csv",
-        "filename": "ADBDS.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData-queries/ADBDS.csv",
+        "rel_path": "./data/testData/ADBDS_missingData.csv",
         "rows": 22695,
-        "cols": 22
+        "cols": 19
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ae.csv",
@@ -134,14 +134,6 @@
         "rel_path": "./data/CDISCPILOT01/SDTM/ae.csv",
         "rows": 1191,
         "cols": 35
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/cm.csv",
-        "filename": "cm.csv",
-        "ext": "csv",
-        "rel_path": "./data/CDISCPILOT01/SDTM/cm.csv",
-        "rows": 7510,
-        "cols": 21
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/dm.csv",
@@ -208,20 +200,20 @@
         "cols": 20
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/sc.csv",
-        "filename": "sc.csv",
-        "ext": "csv",
-        "rel_path": "./data/CDISCPILOT01/SDTM/sc.csv",
-        "rows": 254,
-        "cols": 14
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/relrec.csv",
         "filename": "relrec.csv",
         "ext": "csv",
         "rel_path": "./data/CDISCPILOT01/SDTM/relrec.csv",
         "rows": 234,
         "cols": 7
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/sc.csv",
+        "filename": "sc.csv",
+        "ext": "csv",
+        "rel_path": "./data/CDISCPILOT01/SDTM/sc.csv",
+        "rows": 254,
+        "cols": 14
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/se.csv",
@@ -272,14 +264,6 @@
         "cols": 8
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ta.csv",
-        "filename": "ta.csv",
-        "ext": "csv",
-        "rel_path": "./data/CDISCPILOT01/SDTM/ta.csv",
-        "rows": 8,
-        "cols": 10
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/te.csv",
         "filename": "te.csv",
         "ext": "csv",
@@ -320,6 +304,22 @@
         "cols": 24
     },
     {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ta.csv",
+        "filename": "ta.csv",
+        "ext": "csv",
+        "rel_path": "./data/CDISCPILOT01/SDTM/ta.csv",
+        "rows": 8,
+        "cols": 10
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/cm.csv",
+        "filename": "cm.csv",
+        "ext": "csv",
+        "rel_path": "./data/CDISCPILOT01/SDTM/cm.csv",
+        "rows": 7510,
+        "cols": 21
+    },
+    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADAE.csv",
         "filename": "ADAE.csv",
         "ext": "csv",
@@ -344,20 +344,20 @@
         "cols": 22
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADSL.csv",
-        "filename": "ADSL.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/ADSL.csv",
-        "rows": 150,
-        "cols": 15
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADLB.csv",
         "filename": "ADLB.csv",
         "ext": "csv",
         "rel_path": "./data/safetyData/ADLB.csv",
         "rows": 18784,
         "cols": 24
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADSL.csv",
+        "filename": "ADSL.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/ADSL.csv",
+        "rows": 150,
+        "cols": 15
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADTIMELINES.csv",

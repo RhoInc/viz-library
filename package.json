@@ -6,13 +6,14 @@
   "module": "./util/web/src/index.js",
   "scripts": {
     "build": "npm run scrape-all && npm run build-web",
-    "build-web": "npm run format && npm run bundle",
+    "build-web": "npm run bundle && npm run format-all",
     "bundle": "rollup -c ./scripts/rollup.config.js",
-    "format": "prettier --print-width=100 --tab-width=4 --single-quote --write \"./scripts/**/*.js\" && prettier --write \"./util/**/*.js\"",
+    "format-all": "npm run format-scripts && npm run format-util",
+    "format-scripts": "prettier --print-width=100 --tab-width=4 --single-quote --write \"./scripts/**/*.js\"",
+    "format-util": "prettier --print-width=100 --tab-width=4 --single-quote --write \"./util/**/*.js\"",
     "scrape-all": "npm run scrape-examples && npm run scrape-dataFiles",
     "scrape-examples": "node ./scripts/parseExamples",
     "scrape-dataFiles": "node ./scripts/buildDataList/parseDataFiles.js",
-    "test": "node ./testing/test.js",
     "watch": "rollup -c ./scripts/rollup.config.js -w"
   },
   "author": "Rho, Inc.",

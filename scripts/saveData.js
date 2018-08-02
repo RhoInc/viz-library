@@ -14,7 +14,7 @@ module.exports = {
 
         //save to .js
         var outJS = `${path}.js`;
-        var js_data = 'var examples = ' + json_data;
+        var js_data = `var ${type} = ` + json_data;
         fs.writeFile(outJS, js_data, err => {
             if (err) console.log(err);
             console.log(`Saved ${type} summary to ${outJS}`);
