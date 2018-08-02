@@ -8,7 +8,7 @@
     "build": "npm run scrape-all && npm run build-web",
     "build-web": "npm run format && npm run bundle",
     "bundle": "rollup -c ./scripts/rollup.config.js",
-    "format": "prettier --write \"./scripts/**/*.js\" && prettier --write \"./util/**/*.js\"",
+    "format": "prettier --print-width=100 --tab-width=4 --single-quote --write \"./scripts/**/*.js\" && prettier --write \"./util/**/*.js\"",
     "scrape-all": "npm run scrape-examples && npm run scrape-dataFiles",
     "scrape-examples": "node ./scripts/parseExamples",
     "scrape-dataFiles": "node ./scripts/buildDataList/parseDataFiles.js",
