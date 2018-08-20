@@ -31,6 +31,8 @@ nQueries <- 5000
             `Query Close Date` = rep(Sys.Date(), nQueries),
             `Query Age` = rep(0, nQueries),
             `Query Age Category` = rep('', nQueries),
+            `Query Open Time` = rep(0, nQueries),
+            `Query Open Category` = rep(0, nQueries),
         stringsAsFactors = FALSE,
         check.names = FALSE
     )
@@ -60,6 +62,15 @@ nQueries <- 5000
             queries[i,10] <= 112 ~ '8-16 weeks',
             TRUE                 ~ '>16 weeks'
         )
+        queries[i,12] <- as.numeric(as.Date('2016-12-31') -  queries[i,8]) # pretend like it's Dec. 31 in 2016
+        queries[i,13] <- case_when(
+          queries[i,3] %in% c('Closed', 'Cancelled') ~ queries[i,3],
+          queries[i,12] <=  7 ~ '7 days',
+          queries[i,12] <=  14 ~ '14 days',
+          queries[i,12] <= 30 ~ '30 days',
+          TRUE                 ~ '> 30 days'
+        )
+
     }
 
     queries$`Query Text` <- 'query text'
