@@ -20,25 +20,25 @@ nQueries <- 5000
 #-------------------------------------------------------------------------------------------------#
 
     queries <- data.frame(
-            `Datastr` = rep('', nQueries),
-            `Field Name` = rep('', nQueries),
-            `Query Status` = rep('', nQueries),
-            `Query Open By: Marking Group` = rep('', nQueries),
-            `Site Name` = rep('', nQueries),
-            `ID` = rep('', nQueries),
-            `Visit/Folder` = rep('', nQueries),
-            `Query Open Date` = rep(Sys.Date(), nQueries),
-            `Query Close Date` = rep(Sys.Date(), nQueries),
-            `Query Age` = rep(0, nQueries),
-            `Query Age Category` = rep('', nQueries),
-            `Query Open Time` = rep(0, nQueries),
-            `Query Open Category` = rep(0, nQueries),
+            `formoid` = rep('', nQueries),
+            `fieldname` = rep('', nQueries),
+            `querystatus` = rep('', nQueries),
+            `markinggroup` = rep('', nQueries),
+            `sitename` = rep('', nQueries),
+            `subjectnameoridentifier ` = rep('', nQueries),
+            `folderoid` = rep('', nQueries),
+            `queryopendt` = rep(Sys.Date(), nQueries),
+            `queryresolvedt` = rep(Sys.Date(), nQueries),
+            `qdays` = rep(0, nQueries),
+            `queryagecategory` = rep('', nQueries), #actually derived in renderer
+            `open_time` = rep(0, nQueries),
+            `queryOpencategory` = rep(0, nQueries),
         stringsAsFactors = FALSE,
         check.names = FALSE
     )
 
     for (i in 1:nQueries) {
-        query <- select(fields[sample(nrow(fields), 1),], -Field)
+        query <- fields[sample(nrow(fields), 1),] # no need for select() with -Field because data no longer contains a field var for explaining field
         queries[i,1] <- query[1,1]
         queries[i,2] <- query[1,2]
         queries[i,3] <- sample(statuses, 1, prob = statusProbs)
@@ -73,7 +73,7 @@ nQueries <- 5000
 
     }
 
-    queries$`Query Text` <- 'query text'
+    queries$`querytext` <- 'query text'
 
     queries1 <- queries %>%
         left_join(forms) %>%
