@@ -1,4 +1,4 @@
-subjectnameoridentifier,status,SubjFreezeFlg,sitename,folderinstance,ecrfpagename,is_partial_entry,answer_query_ct,open_query_ct,needs_verification,is_verified,needs_signature,is_signed,ready_for_freeze,is_frozen,is_locked,subset1,subset2,subset3,DATA_PAGE_VERIFIED
+subjectnameoridentifier,status,subjfreezeflg,sitename,folderinstancename,ecrfpagename,is_partial_entry,answer_query_ct,open_query_ct,needs_verification,is_verified,needs_signature,is_signed,ready_for_freeze,is_frozen,is_locked,subset1,subset2,subset3,verified
 101201,Screen Failure,Not Ready For Freeze,101-RhoTest,Root Folder,CHKN,0,,,0,0,0,0,0,0,0,,,,0
 101201,Screen Failure,Not Ready For Freeze,101-RhoTest,Root Folder,ROLL,1,,,1,0,0,0,0,0,0,,,,0
 101201,Screen Failure,Not Ready For Freeze,101-RhoTest,Root Folder,SUBJ,1,,,1,0,0,0,0,0,0,,,,0
