@@ -8,31 +8,31 @@ set.seed(2357)
 ### Output data
     AE <- NULL
     AEsample <- 0:5
-    
+
     AESTDY <- 1:365
-    
+
     AESER <- c('N', 'Y')
     AESERprobs <- c(.9, .1)
-    
+
     AESEV <- c('MILD', 'MODERATE', 'SEVERE')
     AESEVprobs <- c(.6, .3, .1)
-    
+
     AEREL <- c('NOT RELATED', 'UNLIKELY RELATED', 'POSSIBLY RELATED', 'PROBABLY RELATED', 'DEFINITELY RELATED')
     AERELprobs <- c(.3, .25, .2, .15, .1)
-    
+
     AEOUT <- c('RECOVERED', 'RESOLVED, RECOVERED', 'RESOLVED WITHOUT SEQUELAE', 'RESOLVED WITH SEQUELAE')
     AEOUTprobs <- c(.4, .3, .2, .1)
-    
+
     AEONGO <- c('N', 'Y')
     AEONGOprobs <- c(.5, .5)
 
     for (i in 1:nrow(DM)) {
         id <- DM[i,]
         id$nAEs <- sample(AEsample, 1)
-        
+
         if (id$nAEs & id$SAFFL == 'Y') {
             sampledAEs <- AEs[sample(nrow(AEs), id$nAEs),]
-            
+
             for (j in 1:nrow(sampledAEs)) {
                 sampledAEs[j,'AESTDY'] = sample(AESTDY, 1)
                 sampledAEs[j,'AEENDY'] = ifelse(sampledAEs[j,'AESTDY'] < 365,
@@ -44,7 +44,7 @@ set.seed(2357)
                 sampledAEs[j,'AEOUT'] = sample(AEOUT, 1, prob = AEOUTprobs)
                 sampledAEs[j,'AEONGO'] = sample(AEONGO, 1, prob = AEONGOprobs)
             }
-            
+
             AE <- plyr::rbind.fill(AE, merge(id, sampledAEs, all = TRUE))
         }
     }

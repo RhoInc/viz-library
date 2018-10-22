@@ -2,7 +2,14 @@ library(tidyverse)
 set.seed(2357)
 
 ### Input data
-    SV <- read.csv('../SDTM/SV.csv', colClasses = 'character') %>% rename(VSDT = SVDT, VSDY = SVDY)
+    SV <- read.csv('../SDTM/SV.csv', colClasses = 'character') %>%
+        rename(
+            VSDT = SVDT,
+            VSDY = SVDY
+        ) %>%
+        filter(
+            SVSTATUS == 'Completed'
+        )
     vitals <- read.csv('../raw/vitalSigns.csv', colClasses = 'character') %>%
         select(-VSAGELO, -VSAGEHI) %>%
         mutate(one = 1) %>%

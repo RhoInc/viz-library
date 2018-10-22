@@ -2,7 +2,14 @@ library(tidyverse)
 set.seed(2357)
 
 ### Input data
-    SV <- read.csv('../SDTM/SV.csv', colClasses = 'character') %>% rename(LBDT = SVDT, LBDY = SVDY)
+    SV <- read.csv('../SDTM/SV.csv', colClasses = 'character') %>%
+        rename(
+            LBDT = SVDT,
+            LBDY = SVDY
+        ) %>%
+        filter(
+            SVSTATUS == 'Completed'
+        )
     labs <- read.csv('../raw/labs.csv', colClasses = 'character') %>% select(-SEX)
     visits <- read.csv('../raw/scheduleOfEvents.csv', colClasses = 'character')
 

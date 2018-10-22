@@ -1,0 +1,12 @@
+formoid,ecrfpagename
+SCRN,Screening
+DM,Demography
+MH,Medical History
+VS,Vital Signs
+HEMA,Hematology
+CHEM,Chemistry
+CM,Concomitant Medications
+AE,Adverse Events
+SAE,Serious Adverse Events
+PREG,Pregnancy
+DV,Protocol Deviations
