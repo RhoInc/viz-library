@@ -5,15 +5,15 @@
   "main": "./index.html",
   "module": "./util/web/src/index.js",
   "scripts": {
-    "build": "npm run scrape-all && npm run build-web",
-    "build-web": "npm run bundle && npm run format-all",
+    "build": "npm audit fix && npm run scrape && npm run build-web",
+    "build-web": "npm run bundle && npm run format",
     "bundle": "rollup -c ./scripts/rollup.config.js",
-    "format-all": "npm run format-scripts && npm run format-util",
+    "format": "npm run format-scripts && npm run format-util",
     "format-scripts": "prettier --print-width=100 --tab-width=4 --single-quote --write \"./scripts/**/*.js\"",
     "format-util": "prettier --print-width=100 --tab-width=4 --single-quote --write \"./util/**/*.js\"",
-    "scrape-all": "npm run scrape-examples && npm run scrape-dataFiles",
-    "scrape-examples": "node ./scripts/parseExamples",
+    "scrape": "npm run scrape-examples && npm run scrape-dataFiles",
     "scrape-dataFiles": "node ./scripts/buildDataList/parseDataFiles.js",
+    "scrape-examples": "node ./scripts/parseExamples",
     "watch": "rollup -c ./scripts/rollup.config.js -w"
   },
   "author": "Rho, Inc.",
@@ -29,8 +29,7 @@
     "jimp": "^0.2.27",
     "jsdom": "^11.9.0",
     "prettier": "^1.12.1",
-    "rollup": "^0.50.1",
-    "rollup-plugin-babel": "^3.0.4",
-    "rollup-watch": "^4.3.1"
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^3.0.4"
   }
 }

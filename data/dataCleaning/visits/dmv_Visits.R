@@ -9,27 +9,27 @@ set.seed(2357)
     visit_metadata <- list(
         list(
             order = 1,
-            status = 'Expected',
-            description = 'Visit expected in the future',
-            color = 'blue'
+            status = 'Completed',
+            description = 'Visit entered into EDC system',
+            color = '#33a02c'
         ),
         list(
             order = 2,
-            status = 'Completed',
-            description = 'Visit entered into EDC system',
-            color = 'green'
+            status = 'Expected',
+            description = 'Visit expected in the future',
+            color = '#1f78b4'
         ),
         list(
             order = 3,
             status = 'Overdue',
             description = 'Visit due but not entered into EDC system',
-            color = 'orange'
+            color = '#cc4c02'
         ),
         list(
             order = 4,
             status = 'Missed',
             description = 'Visit missed',
-            color = 'red'
+            color = '#a50f15'
         ),
         list(
             order = 5,

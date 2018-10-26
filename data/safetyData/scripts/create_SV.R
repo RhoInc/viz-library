@@ -56,9 +56,6 @@ set.seed(2357)
         )
 
     SV1 <- SV %>%
-        filter(
-            !(VISIT == 'End of Study' & USUBJID %in% earlyTerminators$USUBJID)
-        ) %>%
         rbind(unscheduledVisits) %>%
         rbind(earlyTerminators) %>%
         arrange(USUBJID, VISITNUM) %>%

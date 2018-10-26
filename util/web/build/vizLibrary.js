@@ -8,11 +8,11 @@
     'use strict';
 
     /* -----------------------------------------------------
- Takes a meta data and an array of properties for which
- standard filters (<select> elements) are created. Measures
- can take the form [attr1, attr2] or
- [{colName:"attr1",label:"Attribute #1"},{colName:"attr2",label:"Attribute #2"}]
- ----------------------------------------------------- */
+     Takes a meta data and an array of properties for which
+     standard filters (<select> elements) are created. Measures
+     can take the form [attr1, attr2] or
+     [{colName:"attr1",label:"Attribute #1"},{colName:"attr2",label:"Attribute #2"}]
+     ----------------------------------------------------- */
 
     function buildFilters(meta, measures, parentElement) {
         meta.forEach(function(metum) {
@@ -79,36 +79,36 @@
     }
 
     /* -----------------------------------------------------
- Takes an array of metadata object (see sample input) and
- a valid css selector (`parentDiv`)  and renders divs
- styled for for the example gallery (see sample output)
+     Takes an array of metadata object (see sample input) and
+     a valid css selector (`parentDiv`)  and renders divs
+     styled for for the example gallery (see sample output)
 
-Sample Input for `meta`:
-	[
-		{
-			"id":"0001-density-lattice",
-			"title": "Custom Density Plot Example"
-			"repository":"lattice",
-			"technology":"R",
-			"url":"/0001-density-lattice",
-			"thumbnail":"default", //or "placeholder"
-			"description":"This is a sweet description"
-		},
-		... //add more objects here as desired
-	]
+    Sample Input for `meta`:
+    	[
+    		{
+    			"id":"0001-density-lattice",
+    			"title": "Custom Density Plot Example"
+    			"repository":"lattice",
+    			"technology":"R",
+    			"url":"/0001-density-lattice",
+    			"thumbnail":"default", //or "placeholder"
+    			"description":"This is a sweet description"
+    		},
+    		... //add more objects here as desired
+    	]
 
-Sample Output rendered to DOM (one per object in meta:
-<div class="media-tile">
-    <a href="./examples/0001-density-lattice">
-        <img src="./examples/0001-density-lattice/thumbnail.png" width="300" height="200" alt="0001-density-lattice">
-    </a>
-    <a href="./examples/0001-density-lattice" class="text-wrap">
-        <p>
-            <span class="media-title">Custom Density Plot Example</span>
-        </p>
-    </a>
-</div>
-   ---------------------------------------------------- */
+    Sample Output rendered to DOM (one per object in meta:
+    <div class="media-tile">
+        <a href="./examples/0001-density-lattice">
+            <img src="./examples/0001-density-lattice/thumbnail.png" width="300" height="200" alt="0001-density-lattice">
+        </a>
+        <a href="./examples/0001-density-lattice" class="text-wrap">
+            <p>
+                <span class="media-title">Custom Density Plot Example</span>
+            </p>
+        </a>
+    </div>
+       ---------------------------------------------------- */
 
     function buildExampleList(meta, parentElement) {
         var parentDiv = d3.select(parentElement);
