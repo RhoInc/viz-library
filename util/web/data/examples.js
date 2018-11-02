@@ -662,6 +662,8 @@ var examples = [
         files: [
             'example.html',
             'index.html',
+            'node_modules',
+            'package-lock.json',
             'package.json',
             'populationExplorer.js',
             'primary_outcome_determination_24NOV.csv',
@@ -687,11 +689,11 @@ var examples = [
             license: 'MIT',
             keywords: ['javascript', 'interactive', 'data explorer'],
             dependencies: {
+                bootstrap: '^4.1.3',
                 d3: '~3',
-                jquery: '1.12.3',
-                'jquery-ui': '1.11.4',
-                bootstrap: '2.3.2',
-                populationExplorer: '~1'
+                jquery: '^3.3.1',
+                'jquery-ui': '^1.12.1',
+                'population-explorer': '~1'
             },
             dataDependecies: ['primary_outcome_determination_24NOV.csv']
         },

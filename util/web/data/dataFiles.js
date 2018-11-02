@@ -1,5 +1,21 @@
 var dataFiles = [
     {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/ChickWeight.csv',
+        filename: 'ChickWeight.csv',
+        ext: 'csv',
+        rel_path: './data/ChickWeight.csv',
+        rows: 578,
+        cols: 5
+    },
+    {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/cars.csv',
+        filename: 'cars.csv',
+        ext: 'csv',
+        rel_path: './data/cars.csv',
+        rows: 32,
+        cols: 12
+    },
+    {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/discrete_scores.csv',
         filename: 'discrete_scores.csv',
         ext: 'csv',
@@ -16,20 +32,12 @@ var dataFiles = [
         cols: 10
     },
     {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/cars.csv',
-        filename: 'cars.csv',
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/hys_law.csv',
+        filename: 'hys_law.csv',
         ext: 'csv',
-        rel_path: './data/cars.csv',
-        rows: 32,
-        cols: 12
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/ChickWeight.csv',
-        filename: 'ChickWeight.csv',
-        ext: 'csv',
-        rel_path: './data/ChickWeight.csv',
-        rows: 578,
-        cols: 5
+        rel_path: './data/hys_law.csv',
+        rows: 320,
+        cols: 18
     },
     {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/elements.csv',
@@ -38,14 +46,6 @@ var dataFiles = [
         rel_path: './data/elements.csv',
         rows: 103,
         cols: 10
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/hys_law.csv',
-        filename: 'hys_law.csv',
-        ext: 'csv',
-        rel_path: './data/hys_law.csv',
-        rows: 320,
-        cols: 18
     },
     {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/iris.csv',
@@ -96,20 +96,20 @@ var dataFiles = [
         cols: 22
     },
     {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/testData/ADTIMELINES_noDays.csv',
-        filename: 'ADTIMELINES_noDays.csv',
-        ext: 'csv',
-        rel_path: './data/testData/ADTIMELINES_noDays.csv',
-        rows: 1067,
-        cols: 17
-    },
-    {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/testData/ADBDS_missingData.csv',
         filename: 'ADBDS_missingData.csv',
         ext: 'csv',
         rel_path: './data/testData/ADBDS_missingData.csv',
         rows: 22695,
         cols: 19
+    },
+    {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/testData/ADTIMELINES_noDays.csv',
+        filename: 'ADTIMELINES_noDays.csv',
+        ext: 'csv',
+        rel_path: './data/testData/ADTIMELINES_noDays.csv',
+        rows: 1067,
+        cols: 17
     },
     {
         local_path:
@@ -225,6 +225,14 @@ var dataFiles = [
         cols: 9
     },
     {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/suppdm.csv',
+        filename: 'suppdm.csv',
+        ext: 'csv',
+        rel_path: './data/CDISCPILOT01/SDTM/suppdm.csv',
+        rows: 1197,
+        cols: 10
+    },
+    {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/suppae.csv',
         filename: 'suppae.csv',
         ext: 'csv',
@@ -241,12 +249,12 @@ var dataFiles = [
         cols: 10
     },
     {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/suppdm.csv',
-        filename: 'suppdm.csv',
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/sv.csv',
+        filename: 'sv.csv',
         ext: 'csv',
-        rel_path: './data/CDISCPILOT01/SDTM/suppdm.csv',
-        rows: 1197,
-        cols: 10
+        rel_path: './data/CDISCPILOT01/SDTM/sv.csv',
+        rows: 3559,
+        cols: 8
     },
     {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/supplb.csv',
@@ -257,12 +265,12 @@ var dataFiles = [
         cols: 10
     },
     {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/sv.csv',
-        filename: 'sv.csv',
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/ta.csv',
+        filename: 'ta.csv',
         ext: 'csv',
-        rel_path: './data/CDISCPILOT01/SDTM/sv.csv',
-        rows: 3559,
-        cols: 8
+        rel_path: './data/CDISCPILOT01/SDTM/ta.csv',
+        rows: 8,
+        cols: 10
     },
     {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/te.csv',
@@ -273,12 +281,12 @@ var dataFiles = [
         cols: 7
     },
     {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/ta.csv',
-        filename: 'ta.csv',
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/ts.csv',
+        filename: 'ts.csv',
         ext: 'csv',
-        rel_path: './data/CDISCPILOT01/SDTM/ta.csv',
-        rows: 8,
-        cols: 10
+        rel_path: './data/CDISCPILOT01/SDTM/ts.csv',
+        rows: 33,
+        cols: 6
     },
     {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/ti.csv',
@@ -286,14 +294,6 @@ var dataFiles = [
         ext: 'csv',
         rel_path: './data/CDISCPILOT01/SDTM/ti.csv',
         rows: 31,
-        cols: 6
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/CDISCPILOT01/SDTM/ts.csv',
-        filename: 'ts.csv',
-        ext: 'csv',
-        rel_path: './data/CDISCPILOT01/SDTM/ts.csv',
-        rows: 33,
         cols: 6
     },
     {
@@ -401,14 +401,6 @@ var dataFiles = [
         cols: 23
     },
     {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/ADVS.csv',
-        filename: 'ADVS.csv',
-        ext: 'csv',
-        rel_path: './data/safetyData/ADVS.csv',
-        rows: 3155,
-        cols: 29
-    },
-    {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/ADSL.csv',
         filename: 'ADSL.csv',
         ext: 'csv',
@@ -417,60 +409,20 @@ var dataFiles = [
         cols: 20
     },
     {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/ADVS.csv',
+        filename: 'ADVS.csv',
+        ext: 'csv',
+        rel_path: './data/safetyData/ADVS.csv',
+        rows: 3155,
+        cols: 29
+    },
+    {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/variableMetaData.csv',
         filename: 'variableMetaData.csv',
         ext: 'csv',
         rel_path: './data/safetyData/variableMetaData.csv',
         rows: 103,
         cols: 10
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/AE.csv',
-        filename: 'AE.csv',
-        ext: 'csv',
-        rel_path: './data/safetyData/SDTM/AE.csv',
-        rows: 357,
-        cols: 14
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/CM.csv',
-        filename: 'CM.csv',
-        ext: 'csv',
-        rel_path: './data/safetyData/SDTM/CM.csv',
-        rows: 307,
-        cols: 13
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/LB.csv',
-        filename: 'LB.csv',
-        ext: 'csv',
-        rel_path: './data/safetyData/SDTM/LB.csv',
-        rows: 10096,
-        cols: 11
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/DM.csv',
-        filename: 'DM.csv',
-        ext: 'csv',
-        rel_path: './data/safetyData/SDTM/DM.csv',
-        rows: 150,
-        cols: 14
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/VS.csv',
-        filename: 'VS.csv',
-        ext: 'csv',
-        rel_path: './data/safetyData/SDTM/VS.csv',
-        rows: 3155,
-        cols: 11
-    },
-    {
-        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/SV.csv',
-        filename: 'SV.csv',
-        ext: 'csv',
-        rel_path: './data/safetyData/SDTM/SV.csv',
-        rows: 1202,
-        cols: 6
     },
     {
         local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/raw/adverseEvents.csv',
@@ -511,5 +463,53 @@ var dataFiles = [
         rel_path: './data/safetyData/raw/vitalSigns.csv',
         rows: 27,
         cols: 7
+    },
+    {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/AE.csv',
+        filename: 'AE.csv',
+        ext: 'csv',
+        rel_path: './data/safetyData/SDTM/AE.csv',
+        rows: 357,
+        cols: 14
+    },
+    {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/CM.csv',
+        filename: 'CM.csv',
+        ext: 'csv',
+        rel_path: './data/safetyData/SDTM/CM.csv',
+        rows: 307,
+        cols: 13
+    },
+    {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/DM.csv',
+        filename: 'DM.csv',
+        ext: 'csv',
+        rel_path: './data/safetyData/SDTM/DM.csv',
+        rows: 150,
+        cols: 14
+    },
+    {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/LB.csv',
+        filename: 'LB.csv',
+        ext: 'csv',
+        rel_path: './data/safetyData/SDTM/LB.csv',
+        rows: 10096,
+        cols: 11
+    },
+    {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/SV.csv',
+        filename: 'SV.csv',
+        ext: 'csv',
+        rel_path: './data/safetyData/SDTM/SV.csv',
+        rows: 1202,
+        cols: 6
+    },
+    {
+        local_path: 'C:/Users/Spencer/GitHub/viz-library/data/safetyData/SDTM/VS.csv',
+        filename: 'VS.csv',
+        ext: 'csv',
+        rel_path: './data/safetyData/SDTM/VS.csv',
+        rows: 3155,
+        cols: 11
     }
 ];
