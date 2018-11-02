@@ -8,40 +8,46 @@ set.seed(2357)
 ### Encodings
     visit_metadata <- list(
         list(
-            order = 1,
             status = 'Completed',
+            order = 1,
+            status_color = '#33a02c',
             description = 'Visit entered into EDC system',
-            color = '#33a02c'
+            text_color = 'black'
         ),
         list(
-            order = 2,
             status = 'Expected',
+            order = 2,
+            status_color = '#1f78b4',
             description = 'Visit expected in the future',
-            color = '#1f78b4'
+            text_color = '#1f78b4'
         ),
         list(
-            order = 3,
             status = 'Overdue',
+            order = 3,
+            status_color = '#cc4c02',
             description = 'Visit due but not entered into EDC system',
-            color = '#cc4c02'
+            text_color = '#cc4c02'
         ),
         list(
-            order = 4,
             status = 'Missed',
+            order = 4,
+            status_color = '#a50f15',
             description = 'Visit missed',
-            color = '#a50f15'
+            text_color = '#a50f15'
         ),
         list(
-            order = 5,
             status = 'Terminated',
+            order = 5,
+            status_color = 'gray',
             description = 'Subject terminated prior to visit',
-            color = 'gray'
+            text_color = 'gray'
         ),
         list(
-            order = 6,
             status = 'Failed',
+            order = 6,
+            status_color = 'gray',
             description = 'Subject failed screening',
-            color = 'gray'
+            text_color = 'gray'
         )
     )
 
@@ -65,12 +71,13 @@ set.seed(2357)
     # Attach visit metadata as columns in data frame.
     for (i in 1:nrow(dmv_Visits)) {
         visit_metadatum <- visit_metadata[
-            which(sapply(visit_metadata, '[[', 2) == dmv_Visits[i,'visit_status'])
+            which(sapply(visit_metadata, '[[', 1) == dmv_Visits[i,'visit_status'])
         ][[1]]
 
         dmv_Visits[i,'visit_status_order'] = visit_metadatum$order
+        dmv_Visits[i,'visit_status_color'] = visit_metadatum$status_color
         dmv_Visits[i,'visit_status_description'] = visit_metadatum$description
-        dmv_Visits[i,'visit_status_color'] = visit_metadatum$color
+        dmv_Visits[i,'visit_text_color'] = visit_metadatum$text_color
     }
 
     # Derive additional variables.
@@ -105,8 +112,9 @@ set.seed(2357)
             visit_status,
             visit_status_order,
             visit_status_color,
-            visit_text,
             visit_status_description,
+            visit_text,
+            visit_text_color,
             subset1,
             subset2,
             subset3,
