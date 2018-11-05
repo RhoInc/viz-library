@@ -662,7 +662,6 @@ var examples = [
         files: [
             'example.html',
             'index.html',
-            'node_modules',
             'package-lock.json',
             'package.json',
             'populationExplorer.js',

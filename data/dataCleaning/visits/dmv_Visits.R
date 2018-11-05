@@ -12,7 +12,7 @@ set.seed(2357)
             order = 1,
             status_color = '#33a02c',
             description = 'Visit entered into EDC system',
-            text_color = 'black'
+            text_color = '#33a02c'
         ),
         list(
             status = 'Expected',
