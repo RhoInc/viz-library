@@ -1,6 +1,7 @@
 library(tidyverse)
 set.seed(2357)
 nQueries <- 5000
+
 #-------------------------------------------------------------------------------------------------#
 # Input data
 #-------------------------------------------------------------------------------------------------#
@@ -20,19 +21,19 @@ nQueries <- 5000
 #-------------------------------------------------------------------------------------------------#
 
     queries <- data.frame(
-            `formoid` = rep('', nQueries),
-            `fieldname` = rep('', nQueries),
-            `querystatus` = rep('', nQueries),
-            `markinggroup` = rep('', nQueries),
-            `sitename` = rep('', nQueries),
-            `subjectnameoridentifier ` = rep('', nQueries),
-            `folderoid` = rep('', nQueries),
-            `queryopendt` = rep(Sys.Date(), nQueries),
-            `queryresolvedt` = rep(Sys.Date(), nQueries),
-            `qdays` = rep(0, nQueries),
-            `queryagecategory` = rep('', nQueries), #actually derived in renderer
-            `open_time` = rep(0, nQueries),
-            `queryOpencategory` = rep(0, nQueries),
+            `formoid` = rep('', nQueries), # 1
+            `fieldname` = rep('', nQueries), # 2
+            `querystatus` = rep('', nQueries), # 3
+            `markinggroup` = rep('', nQueries), # 4
+            `sitename` = rep('', nQueries), # 5
+            `subjectnameoridentifier ` = rep('', nQueries), # 6
+            `folderoid` = rep('', nQueries), # 7
+            `queryopendt` = rep(Sys.Date(), nQueries), # 8
+            `queryresolvedt` = rep(Sys.Date(), nQueries), # 9
+            `qdays` = rep(0, nQueries), # 10
+            `queryage` = rep('', nQueries), # 11 - also derived in renderer
+            `rdays` = rep(0, nQueries), # 12
+            `queryrecency` = rep(0, nQueries), # 13 - also derived in renderer
         stringsAsFactors = FALSE,
         check.names = FALSE
     )
@@ -43,9 +44,19 @@ nQueries <- 5000
         queries[i,2] <- query[1,2]
         queries[i,3] <- sample(statuses, 1, prob = statusProbs)
         queries[i,4] <- sample(markingGroups, 1, prob = markingGroupProbs)
-        queries[i,5] <- paste('Site', formatC(sample(sites, 1), width = 2, format = 'd', flag = '0'))
-        queries[i,6] <- paste(strsplit(queries[i,5], ' ')[[1]][[2]], formatC(sample(1:25, 1), width = 3, format = 'd', flag = '0'), sep = '-')
-        queries[i,7] <- paste('Visit', ifelse(queries[i,1] %in% c('SCRN', 'DM'), 1, sample(visits, 1)))
+        queries[i,5] <- paste(
+            'Site',
+            formatC(sample(sites, 1), width = 2, format = 'd', flag = '0')
+        )
+        queries[i,6] <- paste(
+            strsplit(queries[i,5], ' ')[[1]][[2]],
+            formatC(sample(1:25, 1), width = 3, format = 'd', flag = '0'),
+            sep = '-'
+        )
+        queries[i,7] <- paste(
+            'Visit',
+            ifelse(queries[i,1] %in% c('SCRN', 'DM'), 1, sample(visits, 1))
+        )
         queries[i,8] <- sample(queryDates, 1)
         queries[i,9] <- sample(seq(queries[i,8], as.Date('2016-12-31'), 1), 1)
         queries[i,10] <- ifelse(
@@ -62,13 +73,13 @@ nQueries <- 5000
             queries[i,10] <= 112 ~ '8-16 weeks',
             TRUE                 ~ '>16 weeks'
         )
-        queries[i,12] <- as.numeric(as.Date('2016-12-31') -  queries[i,8]) # pretend like it's Dec. 31 in 2016
+        queries[i,12] <- as.numeric(as.Date('2016-12-31') - queries[i,8]) # pretend like it's Dec. 31 in 2016
         queries[i,13] <- case_when(
-          queries[i,3] %in% c('Closed', 'Cancelled') ~ queries[i,3],
-          queries[i,12] <=  7 ~ '7 days',
-          queries[i,12] <=  14 ~ '14 days',
-          queries[i,12] <= 30 ~ '30 days',
-          TRUE                 ~ '> 30 days'
+            queries[i,3] %in% c('Closed', 'Cancelled') ~ queries[i,3],
+            queries[i,12] <=  7 ~ '7 days',
+            queries[i,12] <=  14 ~ '14 days',
+            queries[i,12] <= 30 ~ '30 days',
+            TRUE                 ~ '> 30 days'
         )
 
     }

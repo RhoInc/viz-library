@@ -10,44 +10,38 @@ set.seed(2357)
         list(
             status = 'Completed',
             order = 1,
-            status_color = '#33a02c',
-            description = 'Visit entered into EDC system',
-            text_color = '#33a02c'
+            status_color = '#4daf4a',
+            description = 'Visit entered into EDC system'
         ),
         list(
             status = 'Expected',
             order = 2,
-            status_color = '#1f78b4',
-            description = 'Visit expected in the future',
-            text_color = '#1f78b4'
+            status_color = '#377eb8',
+            description = 'Visit expected in the future'
         ),
         list(
             status = 'Overdue',
             order = 3,
-            status_color = '#cc4c02',
-            description = 'Visit due but not entered into EDC system',
-            text_color = '#cc4c02'
+            status_color = '#ff7f00',
+            description = 'Visit due but not entered into EDC system'
         ),
         list(
             status = 'Missed',
             order = 4,
-            status_color = '#a50f15',
-            description = 'Visit missed',
-            text_color = '#a50f15'
+            status_color = '#e41a1c',
+            description = 'Visit missed'
         ),
         list(
             status = 'Terminated',
             order = 5,
-            status_color = 'gray',
-            description = 'Subject terminated prior to visit',
-            text_color = 'gray'
+            status_color = '#999999',
+            description = 'Subject terminated prior to visit'
         ),
         list(
             status = 'Failed',
             order = 6,
-            status_color = 'gray',
-            description = 'Subject failed screening',
-            text_color = 'gray'
+            status_color = '#999999',
+            description = 'Subject failed screening'
         )
     )
 
@@ -77,7 +71,6 @@ set.seed(2357)
         dmv_Visits[i,'visit_status_order'] = visit_metadatum$order
         dmv_Visits[i,'visit_status_color'] = visit_metadatum$status_color
         dmv_Visits[i,'visit_status_description'] = visit_metadatum$description
-        dmv_Visits[i,'visit_text_color'] = visit_metadatum$text_color
     }
 
     # Derive additional variables.
@@ -114,7 +107,6 @@ set.seed(2357)
             visit_status_color,
             visit_status_description,
             visit_text,
-            visit_text_color,
             subset1,
             subset2,
             subset3,
