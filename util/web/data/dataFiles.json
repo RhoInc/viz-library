@@ -1,5 +1,13 @@
 [
     {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/climate_data.csv",
+        "filename": "climate_data.csv",
+        "ext": "csv",
+        "rel_path": "./data/climate_data.csv",
+        "rows": 95,
+        "cols": 10
+    },
+    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/cars.csv",
         "filename": "cars.csv",
         "ext": "csv",
@@ -48,27 +56,11 @@
         "cols": 5
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/climate_data.csv",
-        "filename": "climate_data.csv",
-        "ext": "csv",
-        "rel_path": "./data/climate_data.csv",
-        "rows": 95,
-        "cols": 10
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/queries/fields.csv",
         "filename": "fields.csv",
         "ext": "csv",
         "rel_path": "./data/queries/fields.csv",
         "rows": 55,
-        "cols": 2
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/queries/forms.csv",
-        "filename": "forms.csv",
-        "ext": "csv",
-        "rel_path": "./data/queries/forms.csv",
-        "rows": 11,
         "cols": 2
     },
     {
@@ -80,12 +72,12 @@
         "cols": 15
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADAE.csv",
-        "filename": "ADAE.csv",
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/queries/forms.csv",
+        "filename": "forms.csv",
         "ext": "csv",
-        "rel_path": "./data/safetyData-queries/ADAE.csv",
-        "rows": 392,
-        "cols": 25
+        "rel_path": "./data/queries/forms.csv",
+        "rows": 11,
+        "cols": 2
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADBDS.csv",
@@ -96,20 +88,20 @@
         "cols": 22
     },
     {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData-queries/ADAE.csv",
+        "filename": "ADAE.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData-queries/ADAE.csv",
+        "rows": 392,
+        "cols": 25
+    },
+    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/testData/ADBDS_missingData.csv",
         "filename": "ADBDS_missingData.csv",
         "ext": "csv",
         "rel_path": "./data/testData/ADBDS_missingData.csv",
         "rows": 22695,
         "cols": 19
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/testData/ADTIMELINES_noDays.csv",
-        "filename": "ADTIMELINES_noDays.csv",
-        "ext": "csv",
-        "rel_path": "./data/testData/ADTIMELINES_noDays.csv",
-        "rows": 1067,
-        "cols": 17
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/testData/ADTIMELINES_partialMissing.csv",
@@ -120,60 +112,12 @@
         "cols": 17
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/dmc_DataPage.csv",
-        "filename": "dmc_DataPage.csv",
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/testData/ADTIMELINES_noDays.csv",
+        "filename": "ADTIMELINES_noDays.csv",
         "ext": "csv",
-        "rel_path": "./data/dataCleaning/dmc_DataPage.csv",
-        "rows": 23125,
-        "cols": 20
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/visits/dmv_Visits.csv",
-        "filename": "dmv_Visits.csv",
-        "ext": "csv",
-        "rel_path": "./data/dataCleaning/visits/dmv_Visits.csv",
-        "rows": 1202,
-        "cols": 18
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/forms/dmc_DataPage.csv",
-        "filename": "dmc_DataPage.csv",
-        "ext": "csv",
-        "rel_path": "./data/dataCleaning/forms/dmc_DataPage.csv",
-        "rows": 23125,
-        "cols": 20
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/queries/queries.csv",
-        "filename": "queries.csv",
-        "ext": "csv",
-        "rel_path": "./data/dataCleaning/queries/queries.csv",
-        "rows": 5000,
-        "cols": 15
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/queries/forms.csv",
-        "filename": "forms.csv",
-        "ext": "csv",
-        "rel_path": "./data/dataCleaning/queries/forms.csv",
-        "rows": 11,
-        "cols": 2
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/queries/fields.csv",
-        "filename": "fields.csv",
-        "ext": "csv",
-        "rel_path": "./data/dataCleaning/queries/fields.csv",
-        "rows": 55,
-        "cols": 2
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ae.csv",
-        "filename": "ae.csv",
-        "ext": "csv",
-        "rel_path": "./data/CDISCPILOT01/SDTM/ae.csv",
-        "rows": 1191,
-        "cols": 35
+        "rel_path": "./data/testData/ADTIMELINES_noDays.csv",
+        "rows": 1067,
+        "cols": 17
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/cm.csv",
@@ -192,12 +136,28 @@
         "cols": 25
     },
     {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ae.csv",
+        "filename": "ae.csv",
+        "ext": "csv",
+        "rel_path": "./data/CDISCPILOT01/SDTM/ae.csv",
+        "rows": 1191,
+        "cols": 35
+    },
+    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ds.csv",
         "filename": "ds.csv",
         "ext": "csv",
         "rel_path": "./data/CDISCPILOT01/SDTM/ds.csv",
         "rows": 596,
         "cols": 13
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ex.csv",
+        "filename": "ex.csv",
+        "ext": "csv",
+        "rel_path": "./data/CDISCPILOT01/SDTM/ex.csv",
+        "rows": 591,
+        "cols": 17
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/lb.csv",
@@ -216,6 +176,14 @@
         "cols": 7
     },
     {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/meta_var.csv",
+        "filename": "meta_var.csv",
+        "ext": "csv",
+        "rel_path": "./data/CDISCPILOT01/SDTM/meta_var.csv",
+        "rows": 313,
+        "cols": 10
+    },
+    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/mh.csv",
         "filename": "mh.csv",
         "ext": "csv",
@@ -230,14 +198,6 @@
         "rel_path": "./data/CDISCPILOT01/SDTM/qs.csv",
         "rows": 121749,
         "cols": 20
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/meta_var.csv",
-        "filename": "meta_var.csv",
-        "ext": "csv",
-        "rel_path": "./data/CDISCPILOT01/SDTM/meta_var.csv",
-        "rows": 313,
-        "cols": 10
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/relrec.csv",
@@ -288,20 +248,20 @@
         "cols": 10
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/supplb.csv",
-        "filename": "supplb.csv",
-        "ext": "csv",
-        "rel_path": "./data/CDISCPILOT01/SDTM/supplb.csv",
-        "rows": 64403,
-        "cols": 10
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/sv.csv",
         "filename": "sv.csv",
         "ext": "csv",
         "rel_path": "./data/CDISCPILOT01/SDTM/sv.csv",
         "rows": 3559,
         "cols": 8
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/supplb.csv",
+        "filename": "supplb.csv",
+        "ext": "csv",
+        "rel_path": "./data/CDISCPILOT01/SDTM/supplb.csv",
+        "rows": 64403,
+        "cols": 10
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ta.csv",
@@ -312,20 +272,20 @@
         "cols": 10
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ex.csv",
-        "filename": "ex.csv",
-        "ext": "csv",
-        "rel_path": "./data/CDISCPILOT01/SDTM/ex.csv",
-        "rows": 591,
-        "cols": 17
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/te.csv",
         "filename": "te.csv",
         "ext": "csv",
         "rel_path": "./data/CDISCPILOT01/SDTM/te.csv",
         "rows": 7,
         "cols": 7
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ti.csv",
+        "filename": "ti.csv",
+        "ext": "csv",
+        "rel_path": "./data/CDISCPILOT01/SDTM/ti.csv",
+        "rows": 31,
+        "cols": 6
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ts.csv",
@@ -352,12 +312,68 @@
         "cols": 24
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/CDISCPILOT01/SDTM/ti.csv",
-        "filename": "ti.csv",
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/dmc_DataPage.csv",
+        "filename": "dmc_DataPage.csv",
         "ext": "csv",
-        "rel_path": "./data/CDISCPILOT01/SDTM/ti.csv",
-        "rows": 31,
-        "cols": 6
+        "rel_path": "./data/dataCleaning/dmc_DataPage.csv",
+        "rows": 23125,
+        "cols": 21
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/queries/fields.csv",
+        "filename": "fields.csv",
+        "ext": "csv",
+        "rel_path": "./data/dataCleaning/queries/fields.csv",
+        "rows": 55,
+        "cols": 2
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/queries/forms.csv",
+        "filename": "forms.csv",
+        "ext": "csv",
+        "rel_path": "./data/dataCleaning/queries/forms.csv",
+        "rows": 11,
+        "cols": 2
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/queries/queries.csv",
+        "filename": "queries.csv",
+        "ext": "csv",
+        "rel_path": "./data/dataCleaning/queries/queries.csv",
+        "rows": 5000,
+        "cols": 17
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/visits/dmv_Visits.csv",
+        "filename": "dmv_Visits.csv",
+        "ext": "csv",
+        "rel_path": "./data/dataCleaning/visits/dmv_Visits.csv",
+        "rows": 1202,
+        "cols": 17
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/dataCleaning/forms/dmc_DataPage.csv",
+        "filename": "dmc_DataPage.csv",
+        "ext": "csv",
+        "rel_path": "./data/dataCleaning/forms/dmc_DataPage.csv",
+        "rows": 23125,
+        "cols": 20
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADAE.csv",
+        "filename": "ADAE.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/ADAE.csv",
+        "rows": 393,
+        "cols": 28
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADLB.csv",
+        "filename": "ADLB.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/ADLB.csv",
+        "rows": 10096,
+        "cols": 29
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADBDS.csv",
@@ -376,36 +392,12 @@
         "cols": 27
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADAE.csv",
-        "filename": "ADAE.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/ADAE.csv",
-        "rows": 393,
-        "cols": 28
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADVS.csv",
-        "filename": "ADVS.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/ADVS.csv",
-        "rows": 3155,
-        "cols": 29
-    },
-    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADSL.csv",
         "filename": "ADSL.csv",
         "ext": "csv",
         "rel_path": "./data/safetyData/ADSL.csv",
         "rows": 150,
         "cols": 20
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/variableMetaData.csv",
-        "filename": "variableMetaData.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/variableMetaData.csv",
-        "rows": 103,
-        "cols": 10
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADTIMELINES.csv",
@@ -416,68 +408,20 @@
         "cols": 23
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADLB.csv",
-        "filename": "ADLB.csv",
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/ADVS.csv",
+        "filename": "ADVS.csv",
         "ext": "csv",
-        "rel_path": "./data/safetyData/ADLB.csv",
-        "rows": 10096,
+        "rel_path": "./data/safetyData/ADVS.csv",
+        "rows": 3155,
         "cols": 29
     },
     {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/adverseEvents.csv",
-        "filename": "adverseEvents.csv",
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/variableMetaData.csv",
+        "filename": "variableMetaData.csv",
         "ext": "csv",
-        "rel_path": "./data/safetyData/raw/adverseEvents.csv",
-        "rows": 765,
-        "cols": 4
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/labs.csv",
-        "filename": "labs.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/raw/labs.csv",
-        "rows": 16,
-        "cols": 6
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/medications.csv",
-        "filename": "medications.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/raw/medications.csv",
-        "rows": 654,
-        "cols": 3
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/scheduleOfEvents.csv",
-        "filename": "scheduleOfEvents.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/raw/scheduleOfEvents.csv",
-        "rows": 8,
-        "cols": 4
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/vitalSigns.csv",
-        "filename": "vitalSigns.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/raw/vitalSigns.csv",
-        "rows": 27,
-        "cols": 7
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/DM.csv",
-        "filename": "DM.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/SDTM/DM.csv",
-        "rows": 150,
-        "cols": 14
-    },
-    {
-        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/AE.csv",
-        "filename": "AE.csv",
-        "ext": "csv",
-        "rel_path": "./data/safetyData/SDTM/AE.csv",
-        "rows": 357,
-        "cols": 14
+        "rel_path": "./data/safetyData/variableMetaData.csv",
+        "rows": 103,
+        "cols": 10
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/CM.csv",
@@ -488,12 +432,28 @@
         "cols": 13
     },
     {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/AE.csv",
+        "filename": "AE.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/SDTM/AE.csv",
+        "rows": 357,
+        "cols": 14
+    },
+    {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/SV.csv",
         "filename": "SV.csv",
         "ext": "csv",
         "rel_path": "./data/safetyData/SDTM/SV.csv",
         "rows": 1202,
         "cols": 6
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/DM.csv",
+        "filename": "DM.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/SDTM/DM.csv",
+        "rows": 150,
+        "cols": 14
     },
     {
         "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/SDTM/LB.csv",
@@ -510,5 +470,45 @@
         "rel_path": "./data/safetyData/SDTM/VS.csv",
         "rows": 3155,
         "cols": 11
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/medications.csv",
+        "filename": "medications.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/raw/medications.csv",
+        "rows": 654,
+        "cols": 3
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/labs.csv",
+        "filename": "labs.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/raw/labs.csv",
+        "rows": 16,
+        "cols": 6
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/adverseEvents.csv",
+        "filename": "adverseEvents.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/raw/adverseEvents.csv",
+        "rows": 765,
+        "cols": 4
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/scheduleOfEvents.csv",
+        "filename": "scheduleOfEvents.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/raw/scheduleOfEvents.csv",
+        "rows": 8,
+        "cols": 4
+    },
+    {
+        "local_path": "C:/Users/schildre/GitHub/viz-library/data/safetyData/raw/vitalSigns.csv",
+        "filename": "vitalSigns.csv",
+        "ext": "csv",
+        "rel_path": "./data/safetyData/raw/vitalSigns.csv",
+        "rows": 27,
+        "cols": 7
     }
 ]
