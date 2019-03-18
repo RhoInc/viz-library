@@ -1,3 +1,0 @@
-This chart demonstrates hexagonal binning with a linked table for a 5,000 record flow cytometry data set. Click a hex to see the underlying data. 
-
-Created using [webcharts](https://github.com/RhoInc/Webcharts), [webcharts-wrapper-boilerplate](https://github.com/RhoInc/webcharts-wrapper-boilerplate) and the d3.js [hexbin plugin](https://github.com/d3/d3-plugins/tree/master/hexbin). Also includes optional [data tables](https://datatables.net/) integration. 

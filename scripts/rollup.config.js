@@ -6,7 +6,7 @@ module.exports = {
   input: pkg.module,
   output: {
     name: "vizLibrary",
-    file: "./util/web/build/vizLibrary.js",
+    file: "./build/vizLibrary.js",
     format: "umd",
     globals: {
       d3: "d3",

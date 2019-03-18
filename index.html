@@ -5,20 +5,12 @@
         <script src='https://d3js.org/d3.v3.min.js'></script>
         <script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-        <link rel='stylesheet' href='./util/web/css/viz-library.css'>
+        <link rel='stylesheet' href='main.css'>
     </head>
 
     <body>
       <div class="head">
-        <h1><img src="util/web/img/rho.png"> Graphics</h1>
-        <ul class = 'nav nav-tabs'>
-            <li class = 'presentation active'><a>Examples</a></li>
-            <li class = 'presentation'><a>Data</a></li>
-            <li class = 'presentation'><a>Prototypes</a></li>
-            <li class = 'presentation'><a>Publications</a></li>
-            <li class = 'link right'><a class="mail" href="mailto://graphics@rhoworld.com"></a></li>
-            <li class = 'link right'><a class="github" href="https://github.com/RhoInc/"></a></li>
-        </ul>
+        <h1><img src="./img/rho.png"> Graphics</h1>
       </div>
 
       <div class="section" id="Examples">
@@ -26,66 +18,11 @@
         <div class="controls"></div>
         <div class="examples"></div>
       </div>
-
-      <div class="section hidden" id="Data">
-      <div class="instructions">We've saved some data sets for use in examples. You can preview them below.</div>
-        <div class="wrap">
-          <table class="section file-list"></table>
-          <div class="section data-preview">
-            <strong>Click &#128269; to preview a data set.</strong>
-            <div class="data-table"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section hidden" id="Prototypes">
-        <div class="instructions"> Here are some older examples (originally created as github gists) that we haven't fully documented yet. (Don't be surprised if there are some 🐜s) </div>
-        <div class="gists"></div>
-      </div>
-
-      <div class="section hidden" id="Publications">
-        <div class="instructions"> Here is a list of the group's publications including papers, posters, and presentations. </div>
-        <div class="pubs"></div>
-      </div>
-
     </body>
-    <script src='./util/web/data/examples.js'></script>
-    <script src='./util/web/data/gists.js'></script>
-    <script src='./util/web/data/dataFiles.js'></script>
-    <script src='./util/web/data/publications.js'></script>
-    <script src='./util/web/build/vizLibrary.js'></script>
+    <script src='examples.js'></script>
+    <script src='./build/vizLibrary.js'></script>
 
     <script>
-      //hide some broken gists
-      var brokengists = ["b7d6d39778d6a5f396490d31fbc1015d","5633141e5b73e8521b719ac0a2f8d24f","1a45f4ec2d66110838f0","5316a6fe925c022fff14","4eada00334f32c03f062","449b369b3a1f12cd696f"]
-      var gists = gists.filter(function(g){
-        return brokengists.indexOf(g.id) == -1
-      })
-
-      // Load page content
-      vizLibrary.buildFilters(examples,["languages","libraries"],".controls")
       vizLibrary.buildExampleList(examples,".examples")
-      vizLibrary.dataPreview(dataFiles)
-      vizLibrary.buildGistList(gists,".gists")
-      vizLibrary.buildPubList(publications,".pubs")
-
-
-      // Show/Hide with nav
-      d3.selectAll(".nav li.presentation")
-      .on("click",function(){
-        if(!d3.select(this).classed("active")){
-          //update the nav
-          d3.selectAll(".nav li").classed("active",false)
-          d3.select(this).classed("active",true)
-
-          //show/hide page content
-          var section = d3.select(this).select("a").text()
-          console.log(section)
-          d3.selectAll(".section").classed("hidden",true)
-          d3.select("#"+section).classed("hidden",false)
-
-        }
-      })
-
     </script>
 </html>

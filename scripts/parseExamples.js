@@ -114,4 +114,6 @@ examples.forEach(function(ex) {
 //write examples to disk
 var json_data = JSON.stringify(examples);
 var js_data = "var examples =" + json_data;
-fs.writeFile("./util/web/data/examples.js", js_data);
+fs.writeFile("examples.js", js_data, error => {
+  if (error) console.error("Couldn't create examples.js\n" + error);
+});

@@ -1,1 +1,0 @@
-This chart shows participant trajectories for lab measures, vital signs and other related measures for a simulated clinical trial. Click a line to see all measures for a participant.This page was created using [webcharts](https://github.com/RhoInc/Webcharts) and the associated [Safety Outlier Explorer](https://github.com/RhoInc/safety-outlier-explorer/). 
