@@ -26,16 +26,18 @@ read({ prompt: "Username: " }, function(er, username) {
         )
           .then(responses => Promise.all(responses.map(res => res.json())))
           .then(examples => {
-            var example_urls = examples.map(function(ex) {
+            var example_paths = examples.map(function(ex) {
               return ex.length == undefined
                 ? []
                 : ex
                     .filter(f => (f.name == "index.html") | (f.type == "dir"))
-                    .map(f => f.html_url);
+                    .map(f => (f.type == "dir" ? "/" + f.name : "/"));
             });
 
             repos.forEach(function(repo, i) {
-              repo.examples_urls = example_urls[i];
+              repo.examples = example_paths[i].map(
+                m => "https://rhoinc.github.io/" + repo.name + "/test-page" + m
+              );
               console.log(
                 "Found " + repo.examples.length + " examples for " + repo.name
               );

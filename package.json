@@ -20,7 +20,8 @@
     "d3": "^3.5.14",
     "read": "^1.0.7",
     "url-exists": "^1.0.3",
-    "valid-url": "^1.0.9"
+    "valid-url": "^1.0.9",
+    "webshot": "^0.18.0"
   },
   "devDependencies": {
     "ping": "^0.2.2",
