@@ -35,9 +35,18 @@ read({ prompt: "Username: " }, function(er, username) {
             });
 
             repos.forEach(function(repo, i) {
-              repo.examples = example_paths[i].map(
-                m => "https://rhoinc.github.io/" + repo.name + "/test-page" + m
-              );
+              repo.examples = example_paths[i].map(function(m, i) {
+                return {
+                  example_url:
+                    "https://rhoinc.github.io/" + repo.name + "/test-page" + m,
+                  src_url:
+                    "https://www.github.com/rhoinc/" +
+                    repo.name +
+                    "/tree/master/test-page" +
+                    m,
+                  img_url: "./img/" + repo.name + "-" + i + ".png"
+                };
+              });
               console.log(
                 "Found " + repo.examples.length + " examples for " + repo.name
               );
@@ -50,11 +59,16 @@ read({ prompt: "Username: " }, function(er, username) {
       })
       .then(function(repo_examples) {
         fs.writeFile(
-          "../data/examples.json",
+          "./data/examples.json",
           JSON.stringify(repo_examples, null, 4),
           error => {
-            if (error) console.log(error);
-            console.log("All repos successfully saved to .data/examples.json!");
+            if (error) {
+              console.log(error);
+            } else {
+              console.log(
+                "All repos successfully saved to ./data/examples.json!"
+              );
+            }
           }
         );
       });
