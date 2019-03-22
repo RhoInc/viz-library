@@ -20,7 +20,7 @@ export default function makeControl() {
   wrap.append("span").text("|");
   var by_repo = wrap
     .append("div")
-    .text("Library")
+    .text("Repository")
     .attr("class", "by-repo")
     .on("click", function() {
       d3
