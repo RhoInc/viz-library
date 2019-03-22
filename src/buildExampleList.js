@@ -1,43 +1,23 @@
-export default function buildExampleIndex(location, data) {
-  var wrap = d3.select(location);
-  var list = wrap.append("ul").attr("class", "repo-list");
-  var items = list
-    .selectAll("li")
-    .data(data)
-    .enter()
-    .append("li")
-    .style("display", d => (d.examples.length == 0 ? "None" : null));
-  items
-    .append("a")
-    .attr("href", d => d.html_url)
-    .html("<i class='fab fa-github'></i>")
-    .style("padding-right", ".5em");
-  items
-    .append("span")
-    .html(
-      d =>
-        "<strong>" + d.name + "</strong> <small>" + d.description + "</small>"
-    );
+import makeControl from "./exampleList/makeControl.js";
+import makeList from "./exampleList/makeList.js";
 
-  var example_lists = items.append("ul").attr("class", "example-list");
-  var examples = example_lists
-    .selectAll("li")
-    .data(d => d.examples)
-    .enter()
-    .append("li")
-    .attr("class", "repo");
+export default function buildExampleList(location, data) {
+  var page = {};
 
-  examples
-    .append("a")
-    .attr("href", d => d.example_url)
-    .append("img")
-    .attr("src", d => d.img_url)
-    .attr("height", 90)
-    .attr("width", 120);
+  //prep data
+  page.location = location;
+  page.repo_data = data;
+  var all_examples = d3.merge(data.map(m => m.examples));
+  page.org_data = [
+    {
+      name: "Rho Inc",
+      description: "Interactive graphics from Rho",
+      html_url: "https://www.github.com/rhoinc",
+      examples: all_examples
+    }
+  ];
 
-  examples
-    .append("a")
-    .attr("class", "src-link")
-    .html('<i class="fas fa-cog"></i>')
-    .attr("href", d => d.src_url);
+  //initialize page
+  makeControl.call(page);
+  makeList.call(page, "orgs");
 }

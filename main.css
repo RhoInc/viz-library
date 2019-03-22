@@ -82,7 +82,7 @@ ul.example-list {
 ul.example-list li{
 	border:2px solid #999;
 	display: inline-block;
-	margin-left:1em;
+	margin:0.3em;
 }
 
 li.repo{
@@ -98,6 +98,19 @@ li.repo{
 	display:none;
 }
 
+.src-link.offset {
+	margin-right:20px
+}
+
 li.repo:hover .src-link{
 	display:block;
+}
+
+.controls div{
+	display:inline-block;
+	cursor:pointer;
+}
+
+.controls div.selected{
+	font-weight: bold ;
 }
