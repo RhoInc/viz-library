@@ -23,10 +23,9 @@
     <script src='./build/vizLibrary.js'></script>
 
     <script>
-    d3.json('./data/examples.json',function(error,json){
-      var examples = json.sort(function(a,b){return b.examples.length - a.examples.length})
-      vizLibrary.buildExampleList(".examples",examples)
-    })
-
+      d3.json('./data/examples.json',function(error,json){
+        var examples = json.sort(function(a,b){return b.examples.length - a.examples.length})
+        vizLibrary.buildExampleList(".examples",examples)
+      })
     </script>
 </html>

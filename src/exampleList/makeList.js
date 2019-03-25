@@ -4,7 +4,6 @@ export default function makeList(type) {
   var data = type == "orgs" ? page.org_data : page.repo_data;
   var wrap = d3.select(page.location);
 
-  console.log(wrap.select("ul.repo-list"));
   var overwrite = wrap.select("ul.repo-list")[0][0]
     ? !wrap.select("ul.repo-list").classed(type)
     : true;
@@ -42,22 +41,25 @@ export default function makeList(type) {
 
     examples
       .append("a")
+      .attr("target", '_blank')
       .attr("href", d => d.example_url)
       .append("img")
       .attr("src", d => d.img_url)
-      .attr("height", 90)
-      .attr("width", 120);
+      .attr("width", 1920/8)
+      .attr("height", 1080/8);
 
     examples
       .append("a")
       .attr("class", "src-link offset")
       .html('<i class="fas fa-external-link-alt"></i>')
+      .attr("target", '_blank')
       .attr("href", d => d.example_url);
 
     examples
       .append("a")
       .attr("class", "src-link")
       .html('<i class="fas fa-cog"></i>')
+      .attr("target", '_blank')
       .attr("href", d => d.src_url);
   }
 }
