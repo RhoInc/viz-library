@@ -4,63 +4,86 @@
 	(global.vizLibrary = factory());
 }(this, (function () { 'use strict';
 
-/* -----------------------------------------------------
- Takes an array of metadata object (see sample input) and
- a valid css selector (`parentDiv`)  and renders divs
- styled for for the example gallery (see sample output)
+function makeList(type) {
+  //type should be "orgs" or "repos"
+  var page = this;
+  var data = type == "orgs" ? page.org_data : page.repo_data;
+  var wrap = d3.select(page.location);
 
-Sample Input for `meta`:
-	[
-		{
-			"id":"0001-density-lattice",
-			"title": "Custom Density Plot Example"
-			"repository":"lattice",
-			"technology":"R",
-			"url":"/0001-density-lattice",
-			"thumbnail":"default", //or "placeholder"
-			"description":"This is a sweet description"
-		},
-		... //add more objects here as desired
-	]
+  var overwrite = wrap.select("ul.repo-list")[0][0] ? !wrap.select("ul.repo-list").classed(type) : true;
+  if (overwrite) {
+    // clear list
+    wrap.select("ul.repo-list").remove();
 
-Sample Output rendered to DOM (one per object in meta:
-<div class="media-tile">
-    <a href="./examples/0001-density-lattice">
-        <img src="./examples/0001-density-lattice/thumbnail.png" width="300" height="200" alt="0001-density-lattice">
-    </a>
-    <a href="./examples/0001-density-lattice" class="text-wrap">
-        <p>
-            <span class="media-title">Custom Density Plot Example</span>
-        </p>
-    </a>
-</div>
-   ---------------------------------------------------- */
+    //make new list
+    var list = wrap.append("ul").attr("class", "repo-list " + type);
+    var items = list.selectAll("li").data(data).enter().append("li");
 
-function buildExampleList(meta, parentElement) {
-    var parentDiv = d3.select(parentElement);
-    var wrap = parentDiv.append("div").attr("class", "media-list");
-    var items = wrap.selectAll("div").data(meta).enter().append("div").attr("class", "media-tile");
-
-    //append image
     items.append("a").attr("href", function (d) {
-        return "./examples/" + d.dir;
-    }).append("img").attr({
-        width: 300,
-        height: 200,
-        alt: function alt(d) {
-            return d.id;
-        },
-        src: function src(d) {
-            return "./examples/" + d.dir + "/thumb.png";
-        }
+      return d.html_url;
+    }).html("<i class='fab fa-github'></i>").style("padding-right", ".5em");
+    items.append("span").html(function (d) {
+      return "<strong>" + d.name + "</strong> <small>" + d.description + "</small>";
     });
 
-    //append text title
-    items.append("a").attr("class", "text-wrap").attr("href", function (d) {
-        return d.url;
-    }).append("p").append("span").attr("class", "media-title").text(function (d) {
-        return d.package.label;
+    var example_lists = items.append("ul").attr("class", "example-list");
+    var examples = example_lists.selectAll("li").data(function (d) {
+      return d.examples;
+    }).enter().append("li").attr("class", "repo");
+
+    examples.append("a").attr("target", '_blank').attr("href", function (d) {
+      return d.example_url;
+    }).append("img").attr("src", function (d) {
+      return d.img_url;
+    }).attr("width", 1920 / 8).attr("height", 1080 / 8);
+
+    examples.append("a").attr("class", "src-link offset").html('<i class="fas fa-external-link-alt"></i>').attr("target", '_blank').attr("href", function (d) {
+      return d.example_url;
     });
+
+    examples.append("a").attr("class", "src-link").html('<i class="fas fa-cog"></i>').attr("target", '_blank').attr("href", function (d) {
+      return d.src_url;
+    });
+  }
+}
+
+function makeControl() {
+  var page = this;
+  var wrap = d3.select(".controls");
+
+  wrap.append("small").text("Sort by ");
+  var by_example = wrap.append("div").text("Organization").attr("class", "by-org selected").on("click", function () {
+    d3.select(".controls").selectAll("div").classed("selected", false);
+    d3.select(this).classed("selected", true);
+    makeList.call(page, "orgs");
+  });
+  wrap.append("span").text("|");
+  var by_repo = wrap.append("div").text("Repository").attr("class", "by-repo").on("click", function () {
+    d3.select(".controls").selectAll("div").classed("selected", false);
+    d3.select(this).classed("selected", true);
+    makeList.call(page, "repos");
+  });
+}
+
+function buildExampleList(location, data) {
+  var page = {};
+
+  //prep data
+  page.location = location;
+  page.repo_data = data;
+  var all_examples = d3.merge(data.map(function (m) {
+    return m.examples;
+  }));
+  page.org_data = [{
+    name: "Rho Inc",
+    description: "Interactive graphics from Rho",
+    html_url: "https://www.github.com/rhoinc",
+    examples: all_examples
+  }];
+
+  //initialize page
+  makeControl.call(page);
+  makeList.call(page, "orgs");
 }
 
 var index = {
