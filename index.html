@@ -3,7 +3,6 @@
     <head>
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
         <script src='https://d3js.org/d3.v3.min.js'></script>
-        <script src="https://rawgit.com/RhoInc/Webcharts/master/build/webcharts.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel='stylesheet' href='main.css'>
     </head>
@@ -23,10 +22,9 @@
     <script src='./build/vizLibrary.js'></script>
 
     <script>
-    d3.json('../data/examples.json',function(error,json){
-      var examples = json.sort(function(a,b){return b.examples.length - a.examples.length})
-      vizLibrary.buildExampleList(".examples",examples)
-    })
-
+      d3.json('./data/examples.json',function(error,json){
+        var examples = json.sort(function(a,b){return b.examples.length - a.examples.length})
+        vizLibrary.buildExampleList(".examples",examples)
+      })
     </script>
 </html>

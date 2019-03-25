@@ -10,7 +10,6 @@ function makeList(type) {
   var data = type == "orgs" ? page.org_data : page.repo_data;
   var wrap = d3.select(page.location);
 
-  console.log(wrap.select("ul.repo-list"));
   var overwrite = wrap.select("ul.repo-list")[0][0] ? !wrap.select("ul.repo-list").classed(type) : true;
   if (overwrite) {
     // clear list
@@ -32,17 +31,17 @@ function makeList(type) {
       return d.examples;
     }).enter().append("li").attr("class", "repo");
 
-    examples.append("a").attr("href", function (d) {
+    examples.append("a").attr("target", '_blank').attr("href", function (d) {
       return d.example_url;
     }).append("img").attr("src", function (d) {
       return d.img_url;
-    }).attr("height", 90).attr("width", 120);
+    }).attr("width", 1920 / 8).attr("height", 1080 / 8);
 
-    examples.append("a").attr("class", "src-link offset").html('<i class="fas fa-external-link-alt"></i>').attr("href", function (d) {
+    examples.append("a").attr("class", "src-link offset").html('<i class="fas fa-external-link-alt"></i>').attr("target", '_blank').attr("href", function (d) {
       return d.example_url;
     });
 
-    examples.append("a").attr("class", "src-link").html('<i class="fas fa-cog"></i>').attr("href", function (d) {
+    examples.append("a").attr("class", "src-link").html('<i class="fas fa-cog"></i>').attr("target", '_blank').attr("href", function (d) {
       return d.src_url;
     });
   }

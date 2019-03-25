@@ -425,7 +425,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -499,7 +499,7 @@
         "deployments_url": "https://api.github.com/repos/RhoInc/blog/deployments",
         "created_at": "2019-01-30T18:10:32Z",
         "updated_at": "2019-02-27T17:44:53Z",
-        "pushed_at": "2019-02-27T17:44:47Z",
+        "pushed_at": "2019-03-22T20:36:52Z",
         "git_url": "git://github.com/RhoInc/blog.git",
         "ssh_url": "git@github.com:RhoInc/blog.git",
         "clone_url": "https://github.com/RhoInc/blog.git",
@@ -530,7 +530,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -635,8 +635,8 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -956,8 +956,8 @@
         "watchers": 28,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -1394,8 +1394,8 @@
         "watchers": 1,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -1467,14 +1467,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/data-library/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/data-library/deployments",
         "created_at": "2018-12-19T20:36:57Z",
-        "updated_at": "2019-02-28T17:41:12Z",
-        "pushed_at": "2019-02-28T17:41:10Z",
+        "updated_at": "2019-03-22T17:02:43Z",
+        "pushed_at": "2019-03-22T17:02:40Z",
         "git_url": "git://github.com/RhoInc/data-library.git",
         "ssh_url": "git@github.com:RhoInc/data-library.git",
         "clone_url": "https://github.com/RhoInc/data-library.git",
         "svn_url": "https://github.com/RhoInc/data-library",
         "homepage": null,
-        "size": 10123,
+        "size": 10135,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "JavaScript",
@@ -1486,7 +1486,7 @@
         "forks_count": 0,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 4,
+        "open_issues_count": 5,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -1495,11 +1495,11 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 4,
+        "open_issues": 5,
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -1604,8 +1604,8 @@
         "watchers": 37,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -1709,8 +1709,8 @@
         "watchers": 1,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -1814,7 +1814,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -1919,7 +1919,7 @@
         "watchers": 3,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -2024,8 +2024,8 @@
         "watchers": 2,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -2666,7 +2666,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -2740,13 +2740,13 @@
         "deployments_url": "https://api.github.com/repos/RhoInc/query-overview/deployments",
         "created_at": "2016-06-10T12:11:09Z",
         "updated_at": "2019-01-29T21:14:22Z",
-        "pushed_at": "2019-03-21T20:49:30Z",
+        "pushed_at": "2019-03-22T17:05:21Z",
         "git_url": "git://github.com/RhoInc/query-overview.git",
         "ssh_url": "git@github.com:RhoInc/query-overview.git",
         "clone_url": "https://github.com/RhoInc/query-overview.git",
         "svn_url": "https://github.com/RhoInc/query-overview",
         "homepage": "https://rhoinc.github.io/viz-library/examples/0013-query-overview/example.html",
-        "size": 607,
+        "size": 630,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "JavaScript",
@@ -2758,7 +2758,7 @@
         "forks_count": 1,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 14,
+        "open_issues_count": 16,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -2767,7 +2767,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 1,
-        "open_issues": 14,
+        "open_issues": 16,
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
@@ -2882,8 +2882,8 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -2987,8 +2987,8 @@
         "watchers": 6,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -4172,7 +4172,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -4907,8 +4907,8 @@
         "watchers": 2,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -5123,7 +5123,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -5197,13 +5197,13 @@
         "deployments_url": "https://api.github.com/repos/RhoInc/viz-library/deployments",
         "created_at": "2016-08-26T19:52:27Z",
         "updated_at": "2019-03-21T14:37:27Z",
-        "pushed_at": "2019-03-21T20:49:15Z",
+        "pushed_at": "2019-03-22T20:33:37Z",
         "git_url": "git://github.com/RhoInc/viz-library.git",
         "ssh_url": "git@github.com:RhoInc/viz-library.git",
         "clone_url": "https://github.com/RhoInc/viz-library.git",
         "svn_url": "https://github.com/RhoInc/viz-library",
         "homepage": "https://rhoinc.github.io/viz-library/",
-        "size": 42654,
+        "size": 42665,
         "stargazers_count": 5,
         "watchers_count": 5,
         "language": "JavaScript",
@@ -5215,7 +5215,7 @@
         "forks_count": 3,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 14,
+        "open_issues_count": 15,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -5224,7 +5224,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 3,
-        "open_issues": 14,
+        "open_issues": 15,
         "watchers": 5,
         "default_branch": "master",
         "permissions": {
@@ -5407,13 +5407,13 @@
         "deployments_url": "https://api.github.com/repos/RhoInc/web-codebook/deployments",
         "created_at": "2016-08-18T19:20:34Z",
         "updated_at": "2018-10-24T17:36:41Z",
-        "pushed_at": "2018-10-24T17:36:52Z",
+        "pushed_at": "2019-03-22T19:06:53Z",
         "git_url": "git://github.com/RhoInc/web-codebook.git",
         "ssh_url": "git@github.com:RhoInc/web-codebook.git",
         "clone_url": "https://github.com/RhoInc/web-codebook.git",
         "svn_url": "https://github.com/RhoInc/web-codebook",
         "homepage": "https://rhoinc.github.io/viz-library/examples/0009-web-codebook-demo/example.html",
-        "size": 1013,
+        "size": 1001,
         "stargazers_count": 4,
         "watchers_count": 4,
         "language": "JavaScript",
@@ -5425,7 +5425,7 @@
         "forks_count": 1,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 25,
+        "open_issues_count": 27,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -5434,7 +5434,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 1,
-        "open_issues": 25,
+        "open_issues": 27,
         "watchers": 4,
         "default_branch": "master",
         "permissions": {
@@ -5670,7 +5670,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
