@@ -5,36 +5,36 @@
   "main": "./index.html",
   "module": "./src/index.js",
   "scripts": {
-    "build": "npm run scrape-examples && npm run build-web",
+    "build": "npm run scrape-examples && npm run take-screenshots && npm run build-web",
     "build-web": "npm run format && npm run bundle",
     "bundle": "rollup -c ./scripts/rollup.config.js",
     "format": "prettier --write \"./scripts/**/*.js\" && prettier --write \"./src/**/*.js\"",
     "scrape-examples": "node ./scripts/scrapeExamples",
-    "test": "node ./testing/test.js",
+    "take-screenshots": "node ./scripts/takeScreenshots",
     "watch": "rollup -c ./scripts/rollup.config.js -w"
   },
   "author": "Rho, Inc.",
   "license": "MIT",
   "dependencies": {
-    "base-64": "^0.1.0",
-    "d3": "^3.5.14",
-    "read": "^1.0.7",
-    "url-exists": "^1.0.3",
-    "valid-url": "^1.0.9",
-    "webshot": "^0.18.0"
+    "d3": "^3.5.14"
   },
   "devDependencies": {
-    "ping": "^0.2.2",
-    "node-fetch": "^2.3.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
+    "base-64": "^0.1.0",
+    "capture-website": "^0.3.0",
     "csvtojson": "^1.1.12",
     "jimp": "^0.2.27",
     "jsdom": "^11.9.0",
+    "node-fetch": "^2.3.0",
+    "ping": "^0.2.2",
     "prettier": "^1.12.1",
+    "read": "^1.0.7",
     "rollup": "^0.50.1",
     "rollup-plugin-babel": "^3.0.4",
-    "rollup-watch": "^4.3.1"
+    "rollup-watch": "^4.3.1",
+    "url-exists": "^1.0.3",
+    "valid-url": "^1.0.9"
   }
 }
