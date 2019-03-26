@@ -5,10 +5,10 @@
   "main": "./index.html",
   "module": "./src/index.js",
   "scripts": {
-    "build": "npm run scrape-examples && npm run take-new-screenshots && npm run build-web",
-    "build-web": "npm run format && npm run bundle",
+    "build": "npm run scrape-examples && npm run take-new-screenshots && npm run build-web && npm run format",
+    "build-web": "npm run bundle && npm run format",
     "bundle": "rollup -c ./scripts/rollup.config.js",
-    "format": "prettier --write \"./scripts/**/*.js\" && prettier --write \"./src/**/*.js\"",
+    "format": "prettier --write \"./scripts/**/*.js\" && prettier --write \"./src/**/*.js\" && prettier --write ./build/vizLibrary.js",
     "scrape-examples": "node ./scripts/scrapeExamples",
     "take-new-screenshots": "node ./scripts/takeScreenshots",
     "overwrite-screenshots": "node ./scripts/takeScreenshots -o",
