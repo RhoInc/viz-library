@@ -53,15 +53,17 @@ export default function makeList(type) {
     var urls = exampleContainers
       .append("a")
       .attr("class", "src-link offset")
-      .html('<i class="fas fa-external-link-alt"></i>')
+      .html('<i class="fa fa-external-link"></i>')
       .attr("target", "_blank")
+      .attr("title", "Open example in new tab.")
       .attr("href", d => d.example_url);
 
     var code = exampleContainers
       .append("a")
       .attr("class", "src-link")
-      .html('<i class="fas fa-cog"></i>')
+      .html('<i class="fa fa-cog"></i>')
       .attr("target", "_blank")
+      .attr("title", "Open example code in new tab.")
       .attr("href", d => d.src_url);
 
     var spanDivs = exampleContainers

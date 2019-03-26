@@ -38,11 +38,11 @@ function makeList(type) {
       return d.img_url;
     }).attr("width", 1920 / 10).attr("height", 1080 / 10);
 
-    var urls = exampleContainers.append("a").attr("class", "src-link offset").html('<i class="fas fa-external-link-alt"></i>').attr("target", "_blank").attr("href", function (d) {
+    var urls = exampleContainers.append("a").attr("class", "src-link offset").html('<i class="fa fa-external-link"></i>').attr("target", "_blank").attr("title", "Open example in new tab.").attr("href", function (d) {
       return d.example_url;
     });
 
-    var code = exampleContainers.append("a").attr("class", "src-link").html('<i class="fas fa-cog"></i>').attr("target", "_blank").attr("href", function (d) {
+    var code = exampleContainers.append("a").attr("class", "src-link").html('<i class="fa fa-cog"></i>').attr("target", "_blank").attr("title", "Open example code in new tab.").attr("href", function (d) {
       return d.src_url;
     });
 
