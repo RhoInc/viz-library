@@ -16,10 +16,11 @@ function makeList(type) {
     wrap.select("ul.repo-list").remove();
 
     //make new list
+    console.log(data);
     var list = wrap.append("ul").attr("class", "repo-list " + type);
     var items = list.selectAll("li").data(data).enter().append("li");
 
-    items.append("a").attr("href", function (d) {
+    items.append("a").attr("target", "_blank").attr("href", function (d) {
       return d.html_url;
     }).html("<i class='fab fa-github'></i>").style("padding-right", ".5em");
     items.append("span").html(function (d) {
@@ -27,22 +28,26 @@ function makeList(type) {
     });
 
     var example_lists = items.append("ul").attr("class", "example-list");
-    var examples = example_lists.selectAll("li").data(function (d) {
+    var exampleContainers = example_lists.selectAll("li").data(function (d) {
       return d.examples;
     }).enter().append("li").attr("class", "repo");
 
-    examples.append("a").attr("target", '_blank').attr("href", function (d) {
+    var images = exampleContainers.append("a").attr("target", "_blank").attr("href", function (d) {
       return d.example_url;
     }).append("img").attr("src", function (d) {
       return d.img_url;
-    }).attr("width", 1920 / 8).attr("height", 1080 / 8);
+    }).attr("width", 1920 / 10).attr("height", 1080 / 10);
 
-    examples.append("a").attr("class", "src-link offset").html('<i class="fas fa-external-link-alt"></i>').attr("target", '_blank').attr("href", function (d) {
+    var urls = exampleContainers.append("a").attr("class", "src-link offset").html('<i class="fa fa-external-link"></i>').attr("target", "_blank").attr("title", "Open example in new tab.").attr("href", function (d) {
       return d.example_url;
     });
 
-    examples.append("a").attr("class", "src-link").html('<i class="fas fa-cog"></i>').attr("target", '_blank').attr("href", function (d) {
+    var code = exampleContainers.append("a").attr("class", "src-link").html('<i class="fa fa-cog"></i>').attr("target", "_blank").attr("title", "Open example code in new tab.").attr("href", function (d) {
       return d.src_url;
+    });
+
+    var spanDivs = exampleContainers.append("div").classed("example-description", true).text(function (d) {
+      return d.repo + (d.folder !== "test-page" ? ": " + d.folder : "");
     });
   }
 }

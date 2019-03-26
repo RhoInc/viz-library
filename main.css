@@ -1,83 +1,53 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
 
-/* Genreal formatting */
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif
+}
+.w3-bar,h1,button {
+    font-family: "Montserrat", sans-serif
+}
+
+.w3-twothird{
+  text-align:justify;
+}
+
+.fa-anchor,.fa-coffee {
+    font-size:200px
+}
+.rho-blue {
+    background: #326195;
+    color: white;
+}
+.rho-green {
+    background: #6ebe4b;
+    color: black;
+}
+.rho-logo {
+    margin-top: 84px;
+    margin-left: 48px;
+}
+
+header{
+  margin-top:50px;
+  padding-top:1em;
+  padding-bottom:1em;
+  color: #326195; /* Rho Blue */
+
+}
+
 .hidden{
 	display:none;
 }
 
-html,body{
-	height: 100%;
-	font-size: 14px;
-
-}
-
-body{
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
-body > * {
-    width: 98%;
-    margin: 0 .5%;
-    padding: 0 .5%;
-}
-
-h1,h2,h3,h4,h5,h6{
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-bottom:0;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-h1{
-	font-size: 3rem;
-	font-weight: lighter;
-}
-h2{
-	font-size: 2rem;
-	font-weight: lighter;
-	border-top: 1px solid #bbb;
-	border-bottom: 1px solid #bbb;
-	width:100%
-}
-
-h2 small{
-	font-size:0.5em
-}
-h3{
-	font-size: 1.5rem;
-}
-h4{
-	font-size: 1.25rem;
-}
-h5{
-	font-size: 1.13rem;
-}
-h6{
-	font-size: 1.0rem;
-	font-weight: bold;
-}
-
-p{
-	margin:0
-}
-
-/* header */
-.head{
-	text-align:center;
-	margin-bottom:1em
-}
-
-small{
-	color:#333;
-}
-
 /* example list */
-ul.repo-list{
+ul.repo-list, ul.example-list {
 	list-style:none;
 	padding:0em;
 }
-ul.example-list {
-	list-style: none;
-	padding:1em 0;
+ul.repo-list.orgs ul.example-list {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 ul.example-list li{
@@ -103,13 +73,36 @@ li.repo{
 	margin-right:20px
 }
 
-li.repo:hover .src-link{
+li.repo:hover .src-link,
+li.repo:hover .src-repo,
+li.repo:hover .example-description {
 	display:block;
+}
+
+.example-description {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.controls{
+	font-size:12pt;
+	margin-left:1em;
 }
 
 .controls div{
 	display:inline-block;
 	cursor:pointer;
+	color:blue;
+	padding:0em .2em;
 }
 
 .controls div.selected{
