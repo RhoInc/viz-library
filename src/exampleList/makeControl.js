@@ -10,8 +10,7 @@ export default function makeControl() {
     .text("Organization")
     .attr("class", "by-org selected")
     .on("click", function() {
-      d3
-        .select(".controls")
+      d3.select(".controls")
         .selectAll("div")
         .classed("selected", false);
       d3.select(this).classed("selected", true);
@@ -23,8 +22,7 @@ export default function makeControl() {
     .text("Repository")
     .attr("class", "by-repo")
     .on("click", function() {
-      d3
-        .select(".controls")
+      d3.select(".controls")
         .selectAll("div")
         .classed("selected", false);
       d3.select(this).classed("selected", true);

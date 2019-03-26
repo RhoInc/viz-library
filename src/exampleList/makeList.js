@@ -41,25 +41,25 @@ export default function makeList(type) {
 
     examples
       .append("a")
-      .attr("target", '_blank')
+      .attr("target", "_blank")
       .attr("href", d => d.example_url)
       .append("img")
       .attr("src", d => d.img_url)
-      .attr("width", 1920/8)
-      .attr("height", 1080/8);
+      .attr("width", 1920 / 8)
+      .attr("height", 1080 / 8);
 
     examples
       .append("a")
       .attr("class", "src-link offset")
       .html('<i class="fas fa-external-link-alt"></i>')
-      .attr("target", '_blank')
+      .attr("target", "_blank")
       .attr("href", d => d.example_url);
 
     examples
       .append("a")
       .attr("class", "src-link")
       .html('<i class="fas fa-cog"></i>')
-      .attr("target", '_blank')
+      .attr("target", "_blank")
       .attr("href", d => d.src_url);
   }
 }

@@ -31,17 +31,17 @@ function makeList(type) {
       return d.examples;
     }).enter().append("li").attr("class", "repo");
 
-    examples.append("a").attr("target", '_blank').attr("href", function (d) {
+    examples.append("a").attr("target", "_blank").attr("href", function (d) {
       return d.example_url;
     }).append("img").attr("src", function (d) {
       return d.img_url;
     }).attr("width", 1920 / 8).attr("height", 1080 / 8);
 
-    examples.append("a").attr("class", "src-link offset").html('<i class="fas fa-external-link-alt"></i>').attr("target", '_blank').attr("href", function (d) {
+    examples.append("a").attr("class", "src-link offset").html('<i class="fas fa-external-link-alt"></i>').attr("target", "_blank").attr("href", function (d) {
       return d.example_url;
     });
 
-    examples.append("a").attr("class", "src-link").html('<i class="fas fa-cog"></i>').attr("target", '_blank').attr("href", function (d) {
+    examples.append("a").attr("class", "src-link").html('<i class="fas fa-cog"></i>').attr("target", "_blank").attr("href", function (d) {
       return d.src_url;
     });
   }

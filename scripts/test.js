@@ -1,8 +1,8 @@
-const captureWebsite = require('capture-website');
+const captureWebsite = require("capture-website");
 
 (async () => {
-    await captureWebsite.file(
-        'http://rhoinc.github.io/Webcharts/test-page/createChart/',
-        'webcharts.createChart.png'
-    );
+  await captureWebsite.file(
+    "http://rhoinc.github.io/Webcharts/test-page/createChart/",
+    "webcharts.createChart.png"
+  );
 })();
