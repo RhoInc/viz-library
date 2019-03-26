@@ -26,14 +26,13 @@
     "capture-website": "^0.3.0",
     "csvtojson": "^1.1.12",
     "jimp": "^0.2.27",
-    "jsdom": "^11.9.0",
+    "jsdom": "^11.12.0",
     "node-fetch": "^2.3.0",
     "ping": "^0.2.2",
-    "prettier": "^1.12.1",
+    "prettier": "^1.16.4",
     "read": "^1.0.7",
     "rollup": "^0.50.1",
-    "rollup-plugin-babel": "^3.0.4",
-    "rollup-watch": "^4.3.1",
+    "rollup-plugin-babel": "^3.0.7",
     "url-exists": "^1.0.3",
     "valid-url": "^1.0.9"
   }
