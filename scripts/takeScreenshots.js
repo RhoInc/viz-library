@@ -1,4 +1,5 @@
 const captureWebsite = require("capture-website");
+const fs = require("fs");
 const options = {
   width: 1920,
   height: 1080,
@@ -7,6 +8,9 @@ const options = {
   quality: 0.1,
   delay: 3
 };
+
+const overwrite = process.argv[2] == "-o";
+console.log("Overwriting?" + overwrite);
 
 async function makeExampleList() {
   const examples = await require("../data/examples.json")
@@ -19,8 +23,16 @@ async function makeExampleList() {
         };
       }); // return's each example's URL and screenshot filename
     }) // returns each repo's example list
-    .reduce((acc, val) => acc.concat(val), []); // flattens repo array to one item per example
-
+    .reduce((acc, val) => acc.concat(val), []) // flattens repo array to one item per example
+    .filter(function(example) {
+      //overwrite exsiting screenshots if -o flag is set
+      var path = `./img/${example.filename}.png`;
+      if (fs.existsSync(path)) {
+        return overwrite ? true : false;
+      } else {
+        return true;
+      }
+    });
   return examples;
 }
 
