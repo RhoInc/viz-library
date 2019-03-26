@@ -40,11 +40,15 @@ header{
 }
 
 /* example list */
-ul.repo-list, ul.example-list{
+ul.repo-list, ul.example-list {
 	list-style:none;
 	padding:0em;
 }
-
+ul.repo-list.orgs ul.example-list {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 
 ul.example-list li{
 	border:2px solid #999;
@@ -69,10 +73,26 @@ li.repo{
 	margin-right:20px
 }
 
-li.repo:hover .src-link{
+li.repo:hover .src-link,
+li.repo:hover .src-repo,
+li.repo:hover .example-description {
 	display:block;
 }
 
+.example-description {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
 .controls{
 	font-size:12pt;
 	margin-left:1em;

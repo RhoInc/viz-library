@@ -104,9 +104,11 @@
         },
         "examples": [
             {
+                "repo": "ae-timelines",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/ae-timelines/test-page/",
                 "src_url": "https://www.github.com/rhoinc/ae-timelines/tree/master/test-page/",
-                "img_url": "./img/ae-timelines-0.png"
+                "img_url": "./img/ae-timelines-0.jpg"
             }
         ]
     },
@@ -215,9 +217,11 @@
         },
         "examples": [
             {
+                "repo": "aeexplorer",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/aeexplorer/test-page/",
                 "src_url": "https://www.github.com/rhoinc/aeexplorer/tree/master/test-page/",
-                "img_url": "./img/aeexplorer-0.png"
+                "img_url": "./img/aeexplorer-0.jpg"
             }
         ]
     },
@@ -425,7 +429,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -530,7 +534,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -635,8 +639,8 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -851,9 +855,11 @@
         },
         "examples": [
             {
+                "repo": "clinical-timelines",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/clinical-timelines/test-page/",
                 "src_url": "https://www.github.com/rhoinc/clinical-timelines/tree/master/test-page/",
-                "img_url": "./img/clinical-timelines-0.png"
+                "img_url": "./img/clinical-timelines-0.jpg"
             }
         ]
     },
@@ -956,8 +962,8 @@
         "watchers": 28,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -1067,9 +1073,11 @@
         },
         "examples": [
             {
+                "repo": "crf-heat-map",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/crf-heat-map/test-page/",
                 "src_url": "https://www.github.com/rhoinc/crf-heat-map/tree/master/test-page/",
-                "img_url": "./img/crf-heat-map-0.png"
+                "img_url": "./img/crf-heat-map-0.jpg"
             }
         ]
     },
@@ -1178,9 +1186,11 @@
         },
         "examples": [
             {
+                "repo": "dashboard-charts",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/dashboard-charts/test-page/",
                 "src_url": "https://www.github.com/rhoinc/dashboard-charts/tree/master/test-page/",
-                "img_url": "./img/dashboard-charts-0.png"
+                "img_url": "./img/dashboard-charts-0.jpg"
             }
         ]
     },
@@ -1289,9 +1299,11 @@
         },
         "examples": [
             {
+                "repo": "dashboard-framework",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/dashboard-framework/test-page/",
                 "src_url": "https://www.github.com/rhoinc/dashboard-framework/tree/master/test-page/",
-                "img_url": "./img/dashboard-framework-0.png"
+                "img_url": "./img/dashboard-framework-0.jpg"
             }
         ]
     },
@@ -1394,8 +1406,8 @@
         "watchers": 1,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -1499,7 +1511,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -1604,8 +1616,8 @@
         "watchers": 37,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -1709,8 +1721,8 @@
         "watchers": 1,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -1814,7 +1826,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -1919,7 +1931,7 @@
         "watchers": 3,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -2024,8 +2036,8 @@
         "watchers": 2,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -2345,9 +2357,11 @@
         },
         "examples": [
             {
+                "repo": "paneled-outlier-explorer",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/paneled-outlier-explorer/test-page/",
                 "src_url": "https://www.github.com/rhoinc/paneled-outlier-explorer/tree/master/test-page/",
-                "img_url": "./img/paneled-outlier-explorer-0.png"
+                "img_url": "./img/paneled-outlier-explorer-0.jpg"
             }
         ]
     },
@@ -2456,9 +2470,11 @@
         },
         "examples": [
             {
+                "repo": "participant-visit-listing",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/participant-visit-listing/test-page/",
                 "src_url": "https://www.github.com/rhoinc/participant-visit-listing/tree/master/test-page/",
-                "img_url": "./img/participant-visit-listing-0.png"
+                "img_url": "./img/participant-visit-listing-0.jpg"
             }
         ]
     },
@@ -2567,9 +2583,11 @@
         },
         "examples": [
             {
+                "repo": "PopulationExplorer",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/PopulationExplorer/test-page/",
                 "src_url": "https://www.github.com/rhoinc/PopulationExplorer/tree/master/test-page/",
-                "img_url": "./img/PopulationExplorer-0.png"
+                "img_url": "./img/PopulationExplorer-0.jpg"
             }
         ]
     },
@@ -2672,7 +2690,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -2783,9 +2801,11 @@
         },
         "examples": [
             {
+                "repo": "query-overview",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/query-overview/test-page/",
                 "src_url": "https://www.github.com/rhoinc/query-overview/tree/master/test-page/",
-                "img_url": "./img/query-overview-0.png"
+                "img_url": "./img/query-overview-0.jpg"
             }
         ]
     },
@@ -2888,8 +2908,8 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -2993,8 +3013,8 @@
         "watchers": 6,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -3104,9 +3124,11 @@
         },
         "examples": [
             {
+                "repo": "safety-explorer-suite",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/safety-explorer-suite/test-page/",
                 "src_url": "https://www.github.com/rhoinc/safety-explorer-suite/tree/master/test-page/",
-                "img_url": "./img/safety-explorer-suite-0.png"
+                "img_url": "./img/safety-explorer-suite-0.jpg"
             }
         ]
     },
@@ -3215,9 +3237,11 @@
         },
         "examples": [
             {
+                "repo": "safety-histogram",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/safety-histogram/test-page/",
                 "src_url": "https://www.github.com/rhoinc/safety-histogram/tree/master/test-page/",
-                "img_url": "./img/safety-histogram-0.png"
+                "img_url": "./img/safety-histogram-0.jpg"
             }
         ]
     },
@@ -3326,14 +3350,18 @@
         },
         "examples": [
             {
+                "repo": "safety-outlier-explorer",
+                "folder": "hyslaw",
                 "example_url": "https://rhoinc.github.io/safety-outlier-explorer/test-page/hyslaw",
                 "src_url": "https://www.github.com/rhoinc/safety-outlier-explorer/tree/master/test-page/hyslaw",
-                "img_url": "./img/safety-outlier-explorer-0.png"
+                "img_url": "./img/safety-outlier-explorer-0.jpg"
             },
             {
+                "repo": "safety-outlier-explorer",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/safety-outlier-explorer/test-page/",
                 "src_url": "https://www.github.com/rhoinc/safety-outlier-explorer/tree/master/test-page/",
-                "img_url": "./img/safety-outlier-explorer-1.png"
+                "img_url": "./img/safety-outlier-explorer-1.jpg"
             }
         ]
     },
@@ -3442,9 +3470,11 @@
         },
         "examples": [
             {
+                "repo": "safety-results-over-time",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/safety-results-over-time/test-page/",
                 "src_url": "https://www.github.com/rhoinc/safety-results-over-time/tree/master/test-page/",
-                "img_url": "./img/safety-results-over-time-0.png"
+                "img_url": "./img/safety-results-over-time-0.jpg"
             }
         ]
     },
@@ -3553,9 +3583,11 @@
         },
         "examples": [
             {
+                "repo": "safety-shift-plot",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/safety-shift-plot/test-page/",
                 "src_url": "https://www.github.com/rhoinc/safety-shift-plot/tree/master/test-page/",
-                "img_url": "./img/safety-shift-plot-0.png"
+                "img_url": "./img/safety-shift-plot-0.jpg"
             }
         ]
     },
@@ -4183,7 +4215,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -4918,8 +4950,8 @@
         "watchers": 2,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
-            "push": true,
+            "admin": false,
+            "push": false,
             "pull": true
         },
         "examples": []
@@ -5029,9 +5061,11 @@
         },
         "examples": [
             {
+                "repo": "spike-histogram",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/spike-histogram/test-page/",
                 "src_url": "https://www.github.com/rhoinc/spike-histogram/tree/master/test-page/",
-                "img_url": "./img/spike-histogram-0.png"
+                "img_url": "./img/spike-histogram-0.jpg"
             }
         ]
     },
@@ -5134,7 +5168,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },
@@ -5208,13 +5242,13 @@
         "deployments_url": "https://api.github.com/repos/RhoInc/viz-library/deployments",
         "created_at": "2016-08-26T19:52:27Z",
         "updated_at": "2019-03-21T14:37:27Z",
-        "pushed_at": "2019-03-25T21:20:17Z",
+        "pushed_at": "2019-03-26T16:26:44Z",
         "git_url": "git://github.com/RhoInc/viz-library.git",
         "ssh_url": "git@github.com:RhoInc/viz-library.git",
         "clone_url": "https://github.com/RhoInc/viz-library.git",
         "svn_url": "https://github.com/RhoInc/viz-library",
         "homepage": "https://rhoinc.github.io/viz-library/",
-        "size": 49438,
+        "size": 58112,
         "stargazers_count": 5,
         "watchers_count": 5,
         "language": "JavaScript",
@@ -5226,7 +5260,7 @@
         "forks_count": 3,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 13,
+        "open_issues_count": 15,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -5235,7 +5269,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 3,
-        "open_issues": 13,
+        "open_issues": 15,
         "watchers": 5,
         "default_branch": "master",
         "permissions": {
@@ -5455,9 +5489,11 @@
         },
         "examples": [
             {
+                "repo": "web-codebook",
+                "folder": "test-page",
                 "example_url": "https://rhoinc.github.io/web-codebook/test-page/",
                 "src_url": "https://www.github.com/rhoinc/web-codebook/tree/master/test-page/",
-                "img_url": "./img/web-codebook-0.png"
+                "img_url": "./img/web-codebook-0.jpg"
             }
         ]
     },
@@ -5547,7 +5583,7 @@
         "forks_count": 4,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 52,
+        "open_issues_count": 53,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -5556,7 +5592,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 4,
-        "open_issues": 52,
+        "open_issues": 53,
         "watchers": 26,
         "default_branch": "master",
         "permissions": {
@@ -5566,19 +5602,25 @@
         },
         "examples": [
             {
+                "repo": "Webcharts",
+                "folder": "createChart",
                 "example_url": "https://rhoinc.github.io/Webcharts/test-page/createChart",
                 "src_url": "https://www.github.com/rhoinc/Webcharts/tree/master/test-page/createChart",
-                "img_url": "./img/Webcharts-0.png"
+                "img_url": "./img/Webcharts-0.jpg"
             },
             {
+                "repo": "Webcharts",
+                "folder": "createTable",
                 "example_url": "https://rhoinc.github.io/Webcharts/test-page/createTable",
                 "src_url": "https://www.github.com/rhoinc/Webcharts/tree/master/test-page/createTable",
-                "img_url": "./img/Webcharts-1.png"
+                "img_url": "./img/Webcharts-1.jpg"
             },
             {
+                "repo": "Webcharts",
+                "folder": "multiply",
                 "example_url": "https://rhoinc.github.io/Webcharts/test-page/multiply",
                 "src_url": "https://www.github.com/rhoinc/Webcharts/tree/master/test-page/multiply",
-                "img_url": "./img/Webcharts-2.png"
+                "img_url": "./img/Webcharts-2.jpg"
             }
         ]
     },
@@ -5681,7 +5723,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": true,
+            "admin": false,
             "push": true,
             "pull": true
         },

@@ -12,6 +12,7 @@ export default function makeList(type) {
     wrap.select("ul.repo-list").remove();
 
     //make new list
+    console.log(data);
     var list = wrap.append("ul").attr("class", "repo-list " + type);
     var items = list
       .selectAll("li")
@@ -21,6 +22,7 @@ export default function makeList(type) {
 
     items
       .append("a")
+      .attr("target", "_blank")
       .attr("href", d => d.html_url)
       .html("<i class='fab fa-github'></i>")
       .style("padding-right", ".5em");
@@ -32,14 +34,14 @@ export default function makeList(type) {
       );
 
     var example_lists = items.append("ul").attr("class", "example-list");
-    var examples = example_lists
+    var exampleContainers = example_lists
       .selectAll("li")
       .data(d => d.examples)
       .enter()
       .append("li")
       .attr("class", "repo");
 
-    examples
+    var images = exampleContainers
       .append("a")
       .attr("target", "_blank")
       .attr("href", d => d.example_url)
@@ -48,18 +50,23 @@ export default function makeList(type) {
       .attr("width", 1920 / 10)
       .attr("height", 1080 / 10);
 
-    examples
+    var urls = exampleContainers
       .append("a")
       .attr("class", "src-link offset")
       .html('<i class="fas fa-external-link-alt"></i>')
       .attr("target", "_blank")
       .attr("href", d => d.example_url);
 
-    examples
+    var code = exampleContainers
       .append("a")
       .attr("class", "src-link")
       .html('<i class="fas fa-cog"></i>')
       .attr("target", "_blank")
       .attr("href", d => d.src_url);
+
+    var spanDivs = exampleContainers
+      .append("div")
+      .classed("example-description", true)
+      .text(d => d.repo + (d.folder !== "test-page" ? ": " + d.folder : ""));
   }
 }

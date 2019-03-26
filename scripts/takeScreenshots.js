@@ -3,6 +3,8 @@ const options = {
   width: 1920,
   height: 1080,
   overwrite: true,
+  type: "jpeg",
+  quality: 0.1,
   delay: 3
 };
 
@@ -26,12 +28,12 @@ async function takeScreenshots() {
   const examples = await makeExampleList();
 
   for (const example of examples) {
-    await captureWebsite.file(
-      example.url,
-      `./img/${example.filename}.png`,
-      options
-    ); // gotta await each call to captureWebsite.file(); Promise.all() throws some weird Node process errors
-    console.log(`Captured ${example.filename}.png in ./img!`);
+    const filename = `./img/${example.filename}.${options.type.replace(
+      "peg",
+      "pg"
+    )}`;
+    await captureWebsite.file(example.url, filename, options); // gotta await each call to captureWebsite.file(); Promise.all() throws some weird Node process errors
+    console.log(`Captured ${filename}!`);
   }
 }
 

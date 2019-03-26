@@ -6,8 +6,18 @@ let base64 = require("base-64");
 var read = require("read");
 global.Headers = fetch.Headers;
 
-read({ prompt: "Username: " }, function(er, username) {
-  read({ prompt: "Password: ", silent: true }, function(er, password) {
+read({ prompt: "Username: " }, function(error, username) {
+  if (error) {
+    console.log("Error: " + error);
+    return;
+  }
+
+  read({ prompt: "Password: ", silent: true }, function(error, password) {
+    if (error) {
+      console.log("Error: " + error);
+      return;
+    }
+
     var url = "https://api.github.com/users/RhoInc/repos?per_page=1000";
     let headers = new Headers();
     headers.append(
@@ -36,15 +46,26 @@ read({ prompt: "Username: " }, function(er, username) {
 
             repos.forEach(function(repo, i) {
               repo.examples = example_paths[i].map(function(m, i) {
+                const example_url =
+                  "https://rhoinc.github.io/" + repo.name + "/test-page" + m;
+                const folders = example_url.split("/");
+                const folder =
+                  m !== "/"
+                    ? folders[folders.length - 1]
+                    : folders[folders.length - 2];
+                console.log(repo.name + ": " + folder);
+                const src_url =
+                  "https://www.github.com/rhoinc/" +
+                  repo.name +
+                  "/tree/master/test-page" +
+                  m;
+                const img_url = "./img/" + repo.name + "-" + i + ".jpg";
                 return {
-                  example_url:
-                    "https://rhoinc.github.io/" + repo.name + "/test-page" + m,
-                  src_url:
-                    "https://www.github.com/rhoinc/" +
-                    repo.name +
-                    "/tree/master/test-page" +
-                    m,
-                  img_url: "./img/" + repo.name + "-" + i + ".png"
+                  repo: repo.name,
+                  folder,
+                  example_url,
+                  src_url,
+                  img_url
                 };
               });
               console.log(
@@ -53,7 +74,8 @@ read({ prompt: "Username: " }, function(er, username) {
             });
 
             return repos;
-          });
+          })
+          .catch(err => console.log(err));
 
         return repos_examples;
       })
@@ -71,6 +93,7 @@ read({ prompt: "Username: " }, function(er, username) {
             }
           }
         );
-      });
+      })
+      .catch(err => console.log(err));
   });
 });
