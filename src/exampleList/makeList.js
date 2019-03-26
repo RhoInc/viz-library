@@ -45,8 +45,8 @@ export default function makeList(type) {
       .attr("href", d => d.example_url)
       .append("img")
       .attr("src", d => d.img_url)
-      .attr("width", 1920 / 8)
-      .attr("height", 1080 / 8);
+      .attr("width", 1920 / 10)
+      .attr("height", 1080 / 10);
 
     examples
       .append("a")

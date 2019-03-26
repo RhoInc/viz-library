@@ -35,7 +35,7 @@ function makeList(type) {
       return d.example_url;
     }).append("img").attr("src", function (d) {
       return d.img_url;
-    }).attr("width", 1920 / 8).attr("height", 1080 / 8);
+    }).attr("width", 1920 / 10).attr("height", 1080 / 10);
 
     examples.append("a").attr("class", "src-link offset").html('<i class="fas fa-external-link-alt"></i>').attr("target", "_blank").attr("href", function (d) {
       return d.example_url;
