@@ -101,10 +101,15 @@ li.repo:hover .example-description {
 .controls div{
 	display:inline-block;
 	cursor:pointer;
-	color:blue;
 	padding:0em .2em;
+  color:#999;
+}
+
+.controls div:hover{
+	font-style:underline;
 }
 
 .controls div.selected{
+  color:blue;
 	font-weight: bold ;
 }

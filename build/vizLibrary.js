@@ -35,11 +35,15 @@
         .attr("href", function(d) {
           return d.html_url;
         })
-        .html("<i class='fab fa-github'></i>")
+        .html("<i class='fa fa-github'></i>")
         .style("padding-right", ".5em");
       items.append("span").html(function(d) {
         return (
-          "<strong>" + d.name + "</strong> <small>" + d.description + "</small>"
+          "<strong>" +
+          d.name +
+          "</strong> <small>" +
+          (d.description == null ? "" : d.description) +
+          "</small>"
         );
       });
 
@@ -89,6 +93,10 @@
       var spanDivs = exampleContainers
         .append("div")
         .classed("example-description", true)
+        .append("a")
+        .attr("href", function(d) {
+          return d.example_url;
+        })
         .text(function(d) {
           return d.repo + (d.folder !== "test-page" ? ": " + d.folder : "");
         });

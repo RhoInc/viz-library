@@ -24,13 +24,17 @@ export default function makeList(type) {
       .append("a")
       .attr("target", "_blank")
       .attr("href", d => d.html_url)
-      .html("<i class='fab fa-github'></i>")
+      .html("<i class='fa fa-github'></i>")
       .style("padding-right", ".5em");
     items
       .append("span")
       .html(
         d =>
-          "<strong>" + d.name + "</strong> <small>" + d.description + "</small>"
+          "<strong>" +
+          d.name +
+          "</strong> <small>" +
+          (d.description == null ? "" : d.description) +
+          "</small>"
       );
 
     var example_lists = items.append("ul").attr("class", "example-list");
@@ -69,6 +73,8 @@ export default function makeList(type) {
     var spanDivs = exampleContainers
       .append("div")
       .classed("example-description", true)
+      .append("a")
+      .attr("href", d => d.example_url)
       .text(d => d.repo + (d.folder !== "test-page" ? ": " + d.folder : ""));
   }
 }

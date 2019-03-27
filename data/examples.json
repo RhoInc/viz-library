@@ -429,7 +429,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },
@@ -534,7 +534,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },
@@ -639,8 +639,8 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -962,8 +962,8 @@
         "watchers": 28,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -1406,8 +1406,8 @@
         "watchers": 1,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -1498,7 +1498,7 @@
         "forks_count": 0,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 6,
+        "open_issues_count": 8,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -1507,11 +1507,11 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 6,
+        "open_issues": 8,
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },
@@ -1616,8 +1616,8 @@
         "watchers": 37,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -1721,8 +1721,8 @@
         "watchers": 1,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -1813,7 +1813,7 @@
         "forks_count": 0,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 4,
+        "open_issues_count": 5,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -1822,11 +1822,11 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 4,
+        "open_issues": 5,
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },
@@ -1931,7 +1931,7 @@
         "watchers": 3,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },
@@ -2036,8 +2036,8 @@
         "watchers": 2,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -2677,7 +2677,7 @@
         "forks_count": 0,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 1,
+        "open_issues_count": 2,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -2686,11 +2686,11 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 1,
+        "open_issues": 2,
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },
@@ -2764,13 +2764,13 @@
         "deployments_url": "https://api.github.com/repos/RhoInc/query-overview/deployments",
         "created_at": "2016-06-10T12:11:09Z",
         "updated_at": "2019-01-29T21:14:22Z",
-        "pushed_at": "2019-03-25T12:16:46Z",
+        "pushed_at": "2019-03-27T16:54:33Z",
         "git_url": "git://github.com/RhoInc/query-overview.git",
         "ssh_url": "git@github.com:RhoInc/query-overview.git",
         "clone_url": "https://github.com/RhoInc/query-overview.git",
         "svn_url": "https://github.com/RhoInc/query-overview",
         "homepage": "https://rhoinc.github.io/viz-library/examples/0013-query-overview/example.html",
-        "size": 636,
+        "size": 693,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "JavaScript",
@@ -2782,7 +2782,7 @@
         "forks_count": 1,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 16,
+        "open_issues_count": 18,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -2791,7 +2791,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 1,
-        "open_issues": 16,
+        "open_issues": 18,
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
@@ -2908,8 +2908,8 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -3013,8 +3013,8 @@
         "watchers": 6,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -4183,14 +4183,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/sas-ct-gov-aes/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/sas-ct-gov-aes/deployments",
         "created_at": "2017-09-26T20:52:55Z",
-        "updated_at": "2018-08-09T19:35:35Z",
-        "pushed_at": "2018-08-09T19:35:34Z",
+        "updated_at": "2019-03-27T15:08:46Z",
+        "pushed_at": "2019-03-27T15:08:45Z",
         "git_url": "git://github.com/RhoInc/sas-ct-gov-aes.git",
         "ssh_url": "git@github.com:RhoInc/sas-ct-gov-aes.git",
         "clone_url": "https://github.com/RhoInc/sas-ct-gov-aes.git",
         "svn_url": "https://github.com/RhoInc/sas-ct-gov-aes",
         "homepage": null,
-        "size": 11,
+        "size": 19,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "SAS",
@@ -4215,7 +4215,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },
@@ -4950,8 +4950,8 @@
         "watchers": 2,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
-            "push": false,
+            "admin": true,
+            "push": true,
             "pull": true
         },
         "examples": []
@@ -5168,7 +5168,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },
@@ -5242,13 +5242,13 @@
         "deployments_url": "https://api.github.com/repos/RhoInc/viz-library/deployments",
         "created_at": "2016-08-26T19:52:27Z",
         "updated_at": "2019-03-21T14:37:27Z",
-        "pushed_at": "2019-03-26T16:26:44Z",
+        "pushed_at": "2019-03-26T21:21:47Z",
         "git_url": "git://github.com/RhoInc/viz-library.git",
         "ssh_url": "git@github.com:RhoInc/viz-library.git",
         "clone_url": "https://github.com/RhoInc/viz-library.git",
         "svn_url": "https://github.com/RhoInc/viz-library",
         "homepage": "https://rhoinc.github.io/viz-library/",
-        "size": 58112,
+        "size": 59440,
         "stargazers_count": 5,
         "watchers_count": 5,
         "language": "JavaScript",
@@ -5260,7 +5260,7 @@
         "forks_count": 3,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 15,
+        "open_issues_count": 14,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -5269,7 +5269,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 3,
-        "open_issues": 15,
+        "open_issues": 14,
         "watchers": 5,
         "default_branch": "master",
         "permissions": {
@@ -5564,14 +5564,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/Webcharts/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/Webcharts/deployments",
         "created_at": "2015-03-24T15:23:12Z",
-        "updated_at": "2019-03-11T14:52:24Z",
-        "pushed_at": "2019-03-21T16:31:01Z",
+        "updated_at": "2019-03-27T17:56:09Z",
+        "pushed_at": "2019-03-27T17:57:04Z",
         "git_url": "git://github.com/RhoInc/Webcharts.git",
         "ssh_url": "git@github.com:RhoInc/Webcharts.git",
         "clone_url": "https://github.com/RhoInc/Webcharts.git",
         "svn_url": "https://github.com/RhoInc/Webcharts",
         "homepage": "",
-        "size": 30356,
+        "size": 30329,
         "stargazers_count": 26,
         "watchers_count": 26,
         "language": "JavaScript",
@@ -5583,7 +5583,7 @@
         "forks_count": 4,
         "mirror_url": null,
         "archived": false,
-        "open_issues_count": 53,
+        "open_issues_count": 47,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -5592,7 +5592,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 4,
-        "open_issues": 53,
+        "open_issues": 47,
         "watchers": 26,
         "default_branch": "master",
         "permissions": {
@@ -5617,10 +5617,24 @@
             },
             {
                 "repo": "Webcharts",
+                "folder": "destroyTable",
+                "example_url": "https://rhoinc.github.io/Webcharts/test-page/destroyTable",
+                "src_url": "https://www.github.com/rhoinc/Webcharts/tree/master/test-page/destroyTable",
+                "img_url": "./img/Webcharts-2.jpg"
+            },
+            {
+                "repo": "Webcharts",
                 "folder": "multiply",
                 "example_url": "https://rhoinc.github.io/Webcharts/test-page/multiply",
                 "src_url": "https://www.github.com/rhoinc/Webcharts/tree/master/test-page/multiply",
-                "img_url": "./img/Webcharts-2.jpg"
+                "img_url": "./img/Webcharts-3.jpg"
+            },
+            {
+                "repo": "Webcharts",
+                "folder": "simpleBarchart",
+                "example_url": "https://rhoinc.github.io/Webcharts/test-page/simpleBarchart",
+                "src_url": "https://www.github.com/rhoinc/Webcharts/tree/master/test-page/simpleBarchart",
+                "img_url": "./img/Webcharts-4.jpg"
             }
         ]
     },
@@ -5723,7 +5737,7 @@
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
-            "admin": false,
+            "admin": true,
             "push": true,
             "pull": true
         },

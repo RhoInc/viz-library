@@ -10,7 +10,7 @@ const options = {
 };
 
 const overwrite = process.argv[2] == "-o";
-console.log("Overwriting?" + overwrite);
+console.log("Overwriting? " + overwrite);
 
 async function makeExampleList() {
   const examples = await require("../data/examples.json")
@@ -26,10 +26,12 @@ async function makeExampleList() {
     .reduce((acc, val) => acc.concat(val), []) // flattens repo array to one item per example
     .filter(function(example) {
       //overwrite exsiting screenshots if -o flag is set
-      var path = `./img/${example.filename}.png`;
+      var path = `./img/${example.filename}.jpg`;
       if (fs.existsSync(path)) {
+        console.log(path + " exists");
         return overwrite ? true : false;
       } else {
+        console.log(path + " doesn't exist");
         return true;
       }
     });
