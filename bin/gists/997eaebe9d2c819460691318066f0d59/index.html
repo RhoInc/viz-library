@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="chart"></div>
+</body>
+<script src="https://fb.me/react-0.14.7.js"></script>
+<script src="https://fb.me/react-dom-0.14.7.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://graphics.rhoworld.com/src/webcharts/webcharts.v1.5.0.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RhoInc/ae-timelines@v1.2.1/build/aeTimeline-chf.js"></script>   
+<!--script src="../../ae-timelines/build/aeTimeline-chf.js"></script-->
+<script>
+// path to data file
+var dataFile = 'ae_explorer.csv';
+// props for React component in the format provided by ChartFoundry
+var props = {
+    id: 'id',
+    chartProperties: {
+        legend_order: ['MILD', 'MODERATE', 'SEVERE', 'NA'],
+        legend_location:"right",
+        colors: ['green', '#ffff33', 'red', '#444'],
+        date_format:"%Y-%m-%d"
+    },
+    dataMappings: {
+        stdy_col: 'AESTDY', // Overwrites default value
+        endy_col: 'AEENDY' // Overwrites default value
+    },
+    template: { chartProperties: {}, dataMappings: {}, controls: [] }
+};
+
+d3.csv(dataFile, function (data){
+    // add data to props
+    props.data = data;
+
+    // render to DOM
+    ReactDOM.render(
+        React.createElement(aeTimelines, props),
+        document.getElementById('chart')
+    );
+});
+</script>
+</html>

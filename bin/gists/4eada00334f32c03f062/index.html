@@ -1,0 +1,37 @@
+<html lang="en">
+<title>Webcharts Template - Testing Grounds</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RhoInc/Webcharts@master/css/webcharts.css">
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RhoInc/Webcharts@master/build/webcharts.js"></script>
+<script src="https://rawgit.com/RhoInc/Webcharts-templates/master/build/webcharts-templates.js"></script>
+<script src="https://rawgit.com/RhoInc/Webcharts-templates/master/lib/simpleHistogram.js"></script>
+
+</head>
+
+<body style="padding:1em;">
+</body>
+<script>	
+	//load the template
+	webCharts.loadTemplates({name:"simpleHistogram",tmpl:simpleHistogram})
+
+  	//Custom Controls
+	var controls = webCharts.createControls('body', {	
+		location: 'top', 
+		inputs:[
+			{type: "subsetter", value_col: "POS", label: "Filter by Position"},
+			{type: "subsetter", value_col: "Team", label: "Filter by Team"}
+		]
+	})
+  
+  //initialize the chart
+	var myHist = webCharts.createTemplatedChart("body", {start_value:"AB"}, controls, "simpleHistogram")
+	
+	//load data and render the histogram
+	d3.csv('baseball.csv', function(error, data){
+  		myHist.init(data);
+	});
+</script>
+</html>
