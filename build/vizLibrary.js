@@ -2,8 +2,8 @@
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
     : typeof define === "function" && define.amd
-      ? define(factory)
-      : (global.vizLibrary = factory());
+    ? define(factory)
+    : (global.vizLibrary = factory());
 })(this, function() {
   "use strict";
 
@@ -113,8 +113,7 @@
       .text("Organization")
       .attr("class", "by-org selected")
       .on("click", function() {
-        d3
-          .select(".controls")
+        d3.select(".controls")
           .selectAll("div")
           .classed("selected", false);
         d3.select(this).classed("selected", true);
@@ -126,8 +125,7 @@
       .text("Repository")
       .attr("class", "by-repo")
       .on("click", function() {
-        d3
-          .select(".controls")
+        d3.select(".controls")
           .selectAll("div")
           .classed("selected", false);
         d3.select(this).classed("selected", true);
