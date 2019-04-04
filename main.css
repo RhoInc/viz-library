@@ -3,8 +3,27 @@
 body,h1,h2,h3,h4,h5,h6 {
     font-family: "Lato", sans-serif
 }
+
 .w3-bar,h1,button {
     font-family: "Montserrat", sans-serif
+}
+
+header .pre-head {
+  margin-top:16px;
+  font-size:24px;
+  vertical-align:text-bottom;
+}
+
+ header .pre-head img {
+  margin-right:.1em;
+  margin-bottom:.2em;
+}
+
+
+ header h1 {
+  margin-top:0;
+  line-height: 1;
+  margin-bottom:16px;
 }
 
 .w3-twothird{
