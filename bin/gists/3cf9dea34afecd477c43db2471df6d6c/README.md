@@ -1,1 +1,0 @@
-This example shows how to destroy a webchart and it's associated controls using the `chart.destroy` method introduced in v1.7. The example was created using [webcharts](https://github.com/RhoInc/Webcharts/) and builds upon [this example](http://bl.ocks.org/nbryant/5d973a0dd9965fcf5026)

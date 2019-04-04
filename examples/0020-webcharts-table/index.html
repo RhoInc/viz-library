@@ -1,79 +1,11 @@
-<html lang="en"><head><title>Webcharts - Table</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RhoInc/Webcharts@7d83615038d5270d180684ecf6c87bde03ac0d33/css/webcharts.css">
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/SheetJS/js-xlsx@1a8f9726/dist/xlsx.full.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/RhoInc/Webcharts@7d83615038d5270d180684ecf6c87bde03ac0d33/build/webcharts.js"></script>
-
-<style>
-.controls{
-  background:#ccc;
-  border:1px solid black;
-  border-radius:.2em;
-  padding:.5em;
-  width:inherit;
-  display:inline-block;
-  padding-bottom:1em;
-}
-
-.controls > div > input{
-  display:block
-}
-
-.controls > div{
-  display:inline-block;
-  vertical-align: top;
-  padding-left:1em;
-  padding-right:1em;
-}
-</style>
-
+<html lang="en"><head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-
-<body><div class="head">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../util/web/css/examples.css">
-  <ul class="vl-ex-header">
-      <li class="icon"><a href="../../"><img src="../../util/web/img/rho.png"></a></li>
-      <li class="site crumb"><a href="../../"><span>Graphics</span></a></li>
-      <li class="crumb">Example</li>
-      <li class="title">Webcharts Table</li>
-      <li class="info" title="Click to toggle chart details" onclick="toggleDetails()">ⓘ</li>
-      <li class="arrow next-arrow right"><a href="../0021-webcharts-destroy-table"></a></li>
-      <li class="arrow back-arrow right"><a href="../0019-paneled-outlier-explorer"></a></li>
-  </ul>
-  <div id="vl-ex-details" style="display:none;">
-    <p class="vl-ex-description"><b>Webcharts Table</b> - This is a simple listing of elemental data. Created using the improved table functionality in webcharts v1.9.0</p>
-
-    <ul class="vl-ex-tags"><li class="vl-ex-data"><a href="../../data/elements.csv"></a></li><li class="vl-ex-repo"><a href="https://www.github.com/Rhoinc/webcharts"></a></li><li class="vl-ex-code"><a href="simpleTable.js"></a></li><li class="dep"><a href="https://www.npmjs.com/package/d3">d3 ~3</a></li><li class="dep"><a href="https://www.npmjs.com/package/webcharts">webcharts ^1.9</a></li><li class="tag">javascript</li><li class="tag">interactive</li><li class="tag">webcharts</li><li class="tag">table</li></ul>
-  </div>
+<body>
+  This page has moved. You will be redirected to the <a href="https://rhoinc.github.io/webcharts/test-page/createTable">new location</a> momentarily ...
+</body>
   <script>
-    function toggleDetails(){
-      var details = document.getElementById("vl-ex-details");
-      if (details.style.display === "none") {
-          details.style.display = "block";
-      } else {
-          details.style.display = "none";
-        }
-    }
+    window.location.replace("https://rhoinc.github.io/webcharts/test-page/createTable");
   </script>
-</div>
-
-  <div class="controls">
-    <div>Pagination? <input class="pagination" type="checkbox" checked=""> </div>
-    <div># of items per page: <input class="items" value="10"></div>
-    <div># of page links: <input class="pages" value="5"></div>
-    <div>Apply CSS?: <input class="applyCSS" type="checkbox" checked=""></div>
-    <div>Searchable: <input class="searchable" type="checkbox" checked=""></div>
-    <div>Sortable: <input class="sortable" type="checkbox" checked=""></div>
-    <div>Exportable: <input class="exportable" type="checkbox" checked=""></div>
-    <div><button class="randomize-columns">Randomize columns</button></div>
-    <div><button class="randomize-headers">Randomize headers</button></div>
-
-  </div>
-  <div class="chart"></div>
-
-<script src="simpleTable.js" defer=""></script>
-
-</body></html>
+</html>

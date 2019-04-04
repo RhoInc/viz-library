@@ -1,1 +1,0 @@
-This chart plots grams of protein against grams of carbohydrates for a selection of foods. Hover over a point to show details about that food. The chart is created with [Webcharts.js](https://github.com/RhoInc/Webcharts/) and the (admittedly messy) dataset is sourced from [this](http://introcs.cs.princeton.edu/java/data/) convenient list of real-world datasets.

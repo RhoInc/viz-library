@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif
+}
+
+.w3-bar,h1,button {
+    font-family: "Montserrat", sans-serif
+}
+
+header .pre-head {
+  margin-top:16px;
+  font-size:24px;
+  vertical-align:text-bottom;
+}
+
+ header .pre-head img {
+  margin-right:.1em;
+  margin-bottom:.2em;
+}
+
+
+ header h1 {
+  margin-top:0;
+  line-height: 1;
+  margin-bottom:16px;
+}
+
+.w3-twothird{
+  text-align:justify;
+}
+
+.fa-anchor,.fa-coffee {
+    font-size:200px
+}
+.rho-blue {
+    background: #326195;
+    color: white;
+}
+.rho-green {
+    background: #6ebe4b;
+    color: black;
+}
+.rho-logo {
+    margin-top: 84px;
+    margin-left: 48px;
+}
+
+header{
+  margin-top:50px;
+  padding-top:1em;
+  padding-bottom:1em;
+  color: #326195; /* Rho Blue */
+
+}
+
+.hidden{
+	display:none;
+}
+
+/* example list */
+ul.repo-list, ul.example-list {
+	list-style:none;
+	padding:0em;
+}
+ul.repo-list.orgs ul.example-list {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+ul.example-list li{
+	border:2px solid #999;
+	display: inline-block;
+	margin:0.3em;
+}
+
+li.repo{
+	position:relative;
+}
+
+.src-link {
+  position: absolute;
+	bottom:0;
+	right:0;
+  opacity: .5;
+	padding:0.2em;
+	display:none;
+}
+
+.src-link.offset {
+	margin-right:20px
+}
+
+li.repo:hover .src-link,
+li.repo:hover .src-repo,
+li.repo:hover .example-description {
+	display:block;
+}
+
+.example-description {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.controls{
+	font-size:12pt;
+	margin-left:1em;
+}
+
+.controls div{
+	display:inline-block;
+	cursor:pointer;
+	padding:0em .2em;
+  color:#999;
+}
+
+.controls div:hover{
+	font-style:underline;
+}
+
+.controls div.selected{
+  color:blue;
+	font-weight: bold ;
+}

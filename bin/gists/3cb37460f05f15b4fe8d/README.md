@@ -1,1 +1,0 @@
-A ludicrously simple table generated with [Webcharts](https://github.com/RhoInc/Webcharts). Data sourced from [here](http://introcs.cs.princeton.edu/java/data/).

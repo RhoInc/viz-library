@@ -1,1 +1,0 @@
-This chart shows population averages for lab measures, vital signs and other related measures for a simulated clinical trial. This page was created using [webcharts](https://github.com/RhoInc/Webcharts) and the associated [Safety Outlier Explorer](https://github.com/RhoInc/safety-results-over-time/). 

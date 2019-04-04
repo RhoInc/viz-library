@@ -1,29 +1,29 @@
-import babel from 'rollup-plugin-babel';
+import babel from "rollup-plugin-babel";
 
-var pkg = require('../package.json');
+var pkg = require("../package.json");
 
 module.exports = {
-    input: pkg.module,
-    output: {
-        name: 'vizLibrary',
-        file: './util/web/build/vizLibrary.js',
-        format: 'umd',
-        globals: {
-            d3: 'd3',
-            webcharts: 'webCharts'
-        }
-    },
-    external: (function() {
-        var dependencies = pkg.dependencies;
+  input: pkg.module,
+  output: {
+    name: "vizLibrary",
+    file: "./build/vizLibrary.js",
+    format: "umd",
+    globals: {
+      d3: "d3",
+      webcharts: "webCharts"
+    }
+  },
+  external: (function() {
+    var dependencies = pkg.dependencies;
 
-        return Object.keys(dependencies);
-    })(),
-    plugins: [
-        babel({
-            exclude: 'node_modules/**',
-            presets: [['env', { modules: false }]],
-            plugins: ['external-helpers'],
-            babelrc: false
-        })
-    ]
+    return Object.keys(dependencies);
+  })(),
+  plugins: [
+    babel({
+      exclude: "node_modules/**",
+      presets: [["env", { modules: false }]],
+      plugins: ["external-helpers"],
+      babelrc: false
+    })
+  ]
 };

@@ -1,91 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <title>Rho Graphics - Visualizations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./img/favicon.ico">
         <script src='https://d3js.org/d3.v3.min.js'></script>
-        <script src="https://cdn.jsdelivr.net/gh/RhoInc/Webcharts@master/build/webcharts.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-        <link rel='stylesheet' href='./util/web/css/viz-library.css'>
+        <script src='https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js'></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./main.css">
     </head>
 
     <body>
-      <div class="head">
-        <h1><img src="util/web/img/rho.png"> Graphics</h1>
-        <ul class = 'nav nav-tabs'>
-            <li class = 'presentation active'><a>Examples</a></li>
-            <li class = 'presentation'><a>Data</a></li>
-            <li class = 'presentation'><a>Prototypes</a></li>
-            <li class = 'presentation'><a>Publications</a></li>
-            <li class = 'link right'><a class="mail" href="mailto://graphics@rhoworld.com"></a></li>
-            <li class = 'link right'><a class="github" href="https://github.com/RhoInc/"></a></li>
-        </ul>
-      </div>
+      <div class="w3-top">
+          <div class="w3-bar rho-green w3-card w3-left-align w3-large">
+              <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 
-      <div class="section" id="Examples">
-        <div class="instructions">This page contains examples of statistical graphics created at <a href="http://www.rhoworld.com">Rho</a>. These examples are fully reproducible and <a href="http://www.github.com/RhoInc/">open source</a> to support sharing and learning. </div>
-        <div class="controls"></div>
-        <div class="examples"></div>
-      </div>
-
-      <div class="section hidden" id="Data">
-      <div class="instructions">We've saved some data sets for use in examples. You can preview them below.</div>
-        <div class="wrap">
-          <table class="section file-list"></table>
-          <div class="section data-preview">
-            <strong>Click &#128269; to preview a data set.</strong>
-            <div class="data-table"></div>
+              <a href="https://rhoinc.github.io/graphics/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+              <a href="https://rhoinc.github.io/publication-library/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
+              <a href="https://rhoinc.github.io/viz-library/" class="w3-bar-item w3-button w3-padding-large w3-white">Visualizations</a>
+              <a href="https://rhoinc.github.io/data-library/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Data</a>
+              <a href="https://rhoinc.github.io/blog/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
+              <a href="https://www.github.com/RhoInc" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa fa-github"></i></a>
           </div>
+
+          <!-- Navbar on small screens -->
+          <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+              <a href="https://rhoinc.github.io/graphics/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+              <a href="https://rhoinc.github.io/publication-library/" class="w3-bar-item w3-button w3-padding-large">Publications</a>
+              <a href="https://rhoinc.github.io/data-library/" class="w3-bar-item w3-button w3-padding-large">Data</a>
+              <a href="https://rhoinc.github.io/blog/" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+              <a href="https://www.github.com/RhoInc" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-github"></i></a>
+          </div>
+      </div>
+
+      <!-- Header -->
+      <header class="w3-container rho-blue w3-center">
+        <div class="pre-head"><img src="./img/logo-transparent.png" height="24px" width="24px"></img>Graphics</div>
+        <h1 class="w3-jumbo">Visualization Library</h1>
+      </header>
+
+      <div class="w3-row-padding w3-padding-16 w3-container" style="position:relative">
+          <img style="z-index:-100;left:0;top:0;width:100%;height:100%;position:absolute;opacity:.1;" src="./img/examples.png">
+          <div class="w3-content">
+                  <h1>About</h1>
+                  <h5>This page contains examples of statistical graphics created at <a href="http://www.rhoworld.com">Rho</a>. These examples are fully reproducible and <a href="http://www.github.com/RhoInc/">open source</a> to support sharing and learning.</h5>
+          </div>
+      </div>
+
+      <div class="w3-row-padding w3-padding-16 w3-container" style="position:relative">
+        <div class="section w3-content" id="Examples">
+          <h1>Visualizations <span class="controls"></span></h1>
+
+          <div class="examples"></div>
         </div>
       </div>
 
-      <div class="section hidden" id="Prototypes">
-        <div class="instructions"> Here are some older examples (originally created as github gists) that we haven't fully documented yet. (Don't be surprised if there are some 🐜s) </div>
-        <div class="gists"></div>
-      </div>
-
-      <div class="section hidden" id="Publications">
-        <div class="instructions"> Here is a list of the group's publications including papers, posters, and presentations. </div>
-        <div class="pubs"></div>
-      </div>
-
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-center w3-opacity">
+            <div class="w3-xlarge w3-padding-32">
+                <a href = 'https://www.facebook.com/Rho-447248761980030/'><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                <a href = 'https://www.instagram.com/rhoworld/'><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                <a href = 'https://twitter.com/rhoworld/'><i class="fa fa-twitter w3-hover-opacity"></i></a>
+                <a href = 'https://www.linkedin.com/company/rho/'><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            </div>
+            <div class="footer">
+                <p><i class="fa fa-envelope-o"></i> <a href="mailto:graphics@rhoworld.com"><span>graphics@rhoworld.com</span></a></p>
+                <p>&#169; <a href="http://www.rhoworld.com">Rho, Inc.</a> 2016-2019 - <a href="http://www.rhoworld.com/rho/terms-conditions">Terms and Conditions</a></p>
+            </div>
+        </footer>
     </body>
-    <script src='./util/web/data/examples.js'></script>
-    <script src='./util/web/data/gists.js'></script>
-    <script src='./util/web/data/dataFiles.js'></script>
-    <script src='./util/web/data/publications.js'></script>
-    <script src='./util/web/build/vizLibrary.js'></script>
+    <script src='examples.js'></script>
+    <script src='./build/vizLibrary.js'></script>
 
     <script>
-      //hide some broken gists
-      var brokengists = ["b7d6d39778d6a5f396490d31fbc1015d","5633141e5b73e8521b719ac0a2f8d24f","1a45f4ec2d66110838f0","5316a6fe925c022fff14","4eada00334f32c03f062","449b369b3a1f12cd696f"]
-      var gists = gists.filter(function(g){
-        return brokengists.indexOf(g.id) == -1
+      d3.json('./data/examples.json',function(error,json){
+        var examples = json.sort(function(a,b){return b.examples.length - a.examples.length})
+        vizLibrary.buildExampleList(".examples",examples)
       })
 
-      // Load page content
-      vizLibrary.buildFilters(examples,["languages","libraries"],".controls")
-      vizLibrary.buildExampleList(examples,".examples")
-      vizLibrary.dataPreview(dataFiles)
-      vizLibrary.buildGistList(gists,".gists")
-      vizLibrary.buildPubList(publications,".pubs")
-
-
-      // Show/Hide with nav
-      d3.selectAll(".nav li.presentation")
-      .on("click",function(){
-        if(!d3.select(this).classed("active")){
-          //update the nav
-          d3.selectAll(".nav li").classed("active",false)
-          d3.select(this).classed("active",true)
-
-          //show/hide page content
-          var section = d3.select(this).select("a").text()
-          console.log(section)
-          d3.selectAll(".section").classed("hidden",true)
-          d3.select("#"+section).classed("hidden",false)
-
-        }
-      })
-
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+          } else {
+              x.className = x.className.replace(" w3-show", "");
+          }
+      }
     </script>
 </html>

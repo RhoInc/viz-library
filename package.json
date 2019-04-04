@@ -1,19 +1,17 @@
 {
   "name": "viz-library",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "Examples of statistical graphics created at Rho",
   "main": "./index.html",
-  "module": "./util/web/src/index.js",
+  "module": "./src/index.js",
   "scripts": {
-    "build": "npm audit fix && npm run scrape && npm run build-web",
+    "build": "npm audit fix && npm run scrape-examples && npm run take-new-screenshots && npm run build-web && npm run format",
     "build-web": "npm run bundle && npm run format",
     "bundle": "rollup -c ./scripts/rollup.config.js",
-    "format": "npm run format-scripts && npm run format-util",
-    "format-scripts": "prettier --print-width=100 --tab-width=4 --single-quote --write \"./scripts/**/*.js\"",
-    "format-util": "prettier --print-width=100 --tab-width=4 --single-quote --write \"./util/**/*.js\"",
-    "scrape": "npm run scrape-examples && npm run scrape-dataFiles",
-    "scrape-dataFiles": "node ./scripts/buildDataList/parseDataFiles.js",
-    "scrape-examples": "node ./scripts/parseExamples",
+    "format": "prettier --write \"./scripts/**/*.js\" && prettier --write \"./src/**/*.js\" && prettier --write ./build/vizLibrary.js",
+    "scrape-examples": "node ./scripts/scrapeExamples",
+    "take-new-screenshots": "node ./scripts/takeScreenshots",
+    "overwrite-screenshots": "node ./scripts/takeScreenshots -o",
     "watch": "rollup -c ./scripts/rollup.config.js -w"
   },
   "author": "Rho, Inc.",
@@ -23,13 +21,20 @@
   },
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "csvtojson": "~1",
+    "base-64": "^0.1.0",
+    "capture-website": "^0.3.0",
+    "csvtojson": "^1.1.12",
     "jimp": "^0.2.27",
-    "jsdom": "^11.9.0",
-    "prettier": "^1.12.1",
-    "rollup": "^0.66.6",
-    "rollup-plugin-babel": "^3.0.4"
+    "jsdom": "^11.12.0",
+    "node-fetch": "^2.3.0",
+    "ping": "^0.2.2",
+    "prettier": "^1.16.4",
+    "read": "^1.0.7",
+    "rollup": "^0.50.1",
+    "rollup-plugin-babel": "^3.0.7",
+    "url-exists": "^1.0.3",
+    "valid-url": "^1.0.9"
   }
 }

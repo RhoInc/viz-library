@@ -1,1 +1,0 @@
-dotplot, r, lattice, facet, median, highlight, stack points, discrete 
