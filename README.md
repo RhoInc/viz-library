@@ -1,3 +1,2 @@
 # viz-library - Reproducible Visualizations from Rho
-
-The purpose of this library is to showcase examples of statistical graphics created at Rho.  Examples are automatically pulled from the `\test-page` directories in all of our github repos - to create a new page, just add an example in the appropriate repo. 
+This library hosts a [webpage](https://rhoinc.github.io/viz-library/) showing examples of statistical graphics created at Rho.  Examples are automatically pulled from the `\test-page` directories in our [github repos](https://www.github.com/rhoinc), so to create a new page, just add an example in the appropriate repo and call `npm run build` to update this page. 
