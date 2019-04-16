@@ -9,7 +9,7 @@ let headers = new Headers();
 var url = "https://api.github.com/users/RhoInc/repos?per_page=1000";
 const pw = process.argv[2];
 
-function scrapeAll(url, headers){
+function scrapeAll(url, headers) {
   //get list of repos
   var repos = fetch(url, { headers: headers })
     .then(response => response.json())
@@ -83,9 +83,12 @@ function scrapeAll(url, headers){
 }
 
 if (pw) {
-    headers.append('Authorization', 'Basic ' + base64.encode('jwildfire@gmail.com' + ':' + pw));
-    scrapeAll(url, headers)
-}else{
+  headers.append(
+    "Authorization",
+    "Basic " + base64.encode("jwildfire@gmail.com" + ":" + pw)
+  );
+  scrapeAll(url, headers);
+} else {
   read({ prompt: "Username: " }, function(error, username) {
     if (error) {
       console.log("Error: " + error);
@@ -103,7 +106,7 @@ if (pw) {
         "Basic " + base64.encode(username + ":" + password)
       );
 
-      scrapeAll(url, headers)
+      scrapeAll(url, headers);
     });
   });
 }
