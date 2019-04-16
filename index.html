@@ -80,6 +80,11 @@
         vizLibrary.buildExampleList(".examples",examples)
       })
 
+      d3.json('./data/lastUpdate.json',function(error,json){
+        console.log(json)
+          d3.select("footer").append("p").text("Last Update: "+json.date)
+      })
+
       // Used to toggle the menu on small screens when clicking on the menu button
       function myFunction() {
           var x = document.getElementById("navDemo");
