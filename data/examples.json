@@ -86,7 +86,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 4,
+        "open_issues_count": 5,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -95,7 +95,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 4,
+        "open_issues": 5,
         "watchers": 4,
         "default_branch": "master",
         "permissions": {
@@ -2374,7 +2374,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 20,
+        "open_issues_count": 21,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -2383,7 +2383,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 20,
+        "open_issues": 21,
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
@@ -3383,7 +3383,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 10,
+        "open_issues_count": 11,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -3392,7 +3392,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 1,
-        "open_issues": 10,
+        "open_issues": 11,
         "watchers": 1,
         "default_branch": "master",
         "permissions": {
@@ -3618,7 +3618,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 17,
+        "open_issues_count": 18,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -3627,7 +3627,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 17,
+        "open_issues": 18,
         "watchers": 1,
         "default_branch": "master",
         "permissions": {
@@ -3931,7 +3931,7 @@
         "clone_url": "https://github.com/RhoInc/sas-beeswarm.git",
         "svn_url": "https://github.com/RhoInc/sas-beeswarm",
         "homepage": "",
-        "size": 289,
+        "size": 292,
         "stargazers_count": 5,
         "watchers_count": 5,
         "language": "SAS",
@@ -5424,14 +5424,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/viz-library/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/viz-library/deployments",
         "created_at": "2016-08-26T19:52:27Z",
-        "updated_at": "2019-08-08T17:11:24Z",
-        "pushed_at": "2019-08-08T17:11:22Z",
+        "updated_at": "2019-08-08T17:20:08Z",
+        "pushed_at": "2019-08-08T17:20:06Z",
         "git_url": "git://github.com/RhoInc/viz-library.git",
         "ssh_url": "git@github.com:RhoInc/viz-library.git",
         "clone_url": "https://github.com/RhoInc/viz-library.git",
         "svn_url": "https://github.com/RhoInc/viz-library",
         "homepage": "https://rhoinc.github.io/viz-library/",
-        "size": 61245,
+        "size": 61256,
         "stargazers_count": 5,
         "watchers_count": 5,
         "language": "HTML",
