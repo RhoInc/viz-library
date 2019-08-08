@@ -845,7 +845,7 @@
         "clone_url": "https://github.com/RhoInc/clinical-timelines.git",
         "svn_url": "https://github.com/RhoInc/clinical-timelines",
         "homepage": "https://rhoinc.github.io/clinical-timelines/test-page/",
-        "size": 1854,
+        "size": 1921,
         "stargazers_count": 3,
         "watchers_count": 3,
         "language": "JavaScript",
@@ -3712,7 +3712,7 @@
         "releases_url": "https://api.github.com/repos/RhoInc/safetyexploreR/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/safetyexploreR/deployments",
         "created_at": "2017-01-09T20:24:25Z",
-        "updated_at": "2019-07-15T19:55:53Z",
+        "updated_at": "2019-08-08T01:44:39Z",
         "pushed_at": "2018-08-09T19:33:43Z",
         "git_url": "git://github.com/RhoInc/safetyexploreR.git",
         "ssh_url": "git@github.com:RhoInc/safetyexploreR.git",
@@ -3924,8 +3924,8 @@
         "releases_url": "https://api.github.com/repos/RhoInc/sas-beeswarm/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/sas-beeswarm/deployments",
         "created_at": "2015-02-12T14:35:22Z",
-        "updated_at": "2019-01-26T12:37:09Z",
-        "pushed_at": "2017-05-12T14:28:56Z",
+        "updated_at": "2019-08-08T17:08:25Z",
+        "pushed_at": "2019-08-08T17:08:23Z",
         "git_url": "git://github.com/RhoInc/sas-beeswarm.git",
         "ssh_url": "git@github.com:RhoInc/sas-beeswarm.git",
         "clone_url": "https://github.com/RhoInc/sas-beeswarm.git",
@@ -3961,7 +3961,15 @@
             "push": true,
             "pull": true
         },
-        "examples": []
+        "examples": [
+            {
+                "repo": "sas-beeswarm",
+                "folder": "test-page",
+                "example_url": "https://rhoinc.github.io/sas-beeswarm/test-page/",
+                "src_url": "https://www.github.com/rhoinc/sas-beeswarm/tree/master/test-page/",
+                "img_url": "./img/sas-beeswarm-0.jpg"
+            }
+        ]
     },
     {
         "id": 66598906,
@@ -5416,14 +5424,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/viz-library/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/viz-library/deployments",
         "created_at": "2016-08-26T19:52:27Z",
-        "updated_at": "2019-08-06T19:25:20Z",
-        "pushed_at": "2019-08-06T19:25:19Z",
+        "updated_at": "2019-08-07T19:24:45Z",
+        "pushed_at": "2019-08-07T19:24:43Z",
         "git_url": "git://github.com/RhoInc/viz-library.git",
         "ssh_url": "git@github.com:RhoInc/viz-library.git",
         "clone_url": "https://github.com/RhoInc/viz-library.git",
         "svn_url": "https://github.com/RhoInc/viz-library",
         "homepage": "https://rhoinc.github.io/viz-library/",
-        "size": 61244,
+        "size": 61245,
         "stargazers_count": 5,
         "watchers_count": 5,
         "language": "HTML",
