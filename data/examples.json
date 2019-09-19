@@ -1065,7 +1065,7 @@
         "clone_url": "https://github.com/RhoInc/crf-heat-map.git",
         "svn_url": "https://github.com/RhoInc/crf-heat-map",
         "homepage": "https://rhoinc.github.io/crf-heat-map/test-page/",
-        "size": 4058,
+        "size": 4085,
         "stargazers_count": 1,
         "watchers_count": 1,
         "language": "JavaScript",
@@ -1866,14 +1866,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/graphics/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/graphics/deployments",
         "created_at": "2018-12-19T20:42:02Z",
-        "updated_at": "2019-09-18T06:51:14Z",
-        "pushed_at": "2019-09-18T06:51:12Z",
+        "updated_at": "2019-09-19T06:52:29Z",
+        "pushed_at": "2019-09-19T06:52:27Z",
         "git_url": "git://github.com/RhoInc/graphics.git",
         "ssh_url": "git@github.com:RhoInc/graphics.git",
         "clone_url": "https://github.com/RhoInc/graphics.git",
         "svn_url": "https://github.com/RhoInc/graphics",
         "homepage": "https://rhoinc.github.io/graphics/",
-        "size": 14017,
+        "size": 14018,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "JavaScript",
@@ -2510,8 +2510,8 @@
         "releases_url": "https://api.github.com/repos/RhoInc/participant-visit-listing/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/participant-visit-listing/deployments",
         "created_at": "2018-08-09T15:18:06Z",
-        "updated_at": "2019-08-28T13:36:15Z",
-        "pushed_at": "2019-09-12T15:24:44Z",
+        "updated_at": "2019-09-19T15:09:17Z",
+        "pushed_at": "2019-09-19T15:12:01Z",
         "git_url": "git://github.com/RhoInc/participant-visit-listing.git",
         "ssh_url": "git@github.com:RhoInc/participant-visit-listing.git",
         "clone_url": "https://github.com/RhoInc/participant-visit-listing.git",
@@ -2530,7 +2530,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 14,
+        "open_issues_count": 8,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -2539,7 +2539,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 14,
+        "open_issues": 8,
         "watchers": 2,
         "default_branch": "master",
         "permissions": {
@@ -3170,14 +3170,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/safety-explorer-suite/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/safety-explorer-suite/deployments",
         "created_at": "2017-05-11T00:46:56Z",
-        "updated_at": "2019-08-23T15:29:03Z",
-        "pushed_at": "2019-08-20T15:49:08Z",
+        "updated_at": "2019-09-19T13:41:15Z",
+        "pushed_at": "2019-09-19T13:41:19Z",
         "git_url": "git://github.com/RhoInc/safety-explorer-suite.git",
         "ssh_url": "git@github.com:RhoInc/safety-explorer-suite.git",
         "clone_url": "https://github.com/RhoInc/safety-explorer-suite.git",
         "svn_url": "https://github.com/RhoInc/safety-explorer-suite",
         "homepage": "https://rhoinc.github.io/safety-explorer-suite/",
-        "size": 6176,
+        "size": 6177,
         "stargazers_count": 3,
         "watchers_count": 3,
         "language": "JavaScript",
@@ -3190,7 +3190,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 13,
+        "open_issues_count": 6,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -3199,7 +3199,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 13,
+        "open_issues": 6,
         "watchers": 3,
         "default_branch": "master",
         "permissions": {
@@ -3217,10 +3217,17 @@
             },
             {
                 "repo": "safety-explorer-suite",
+                "folder": "linked-participants",
+                "example_url": "https://rhoinc.github.io/safety-explorer-suite/test-page/linked-participants",
+                "src_url": "https://www.github.com/rhoinc/safety-explorer-suite/tree/master/test-page/linked-participants",
+                "img_url": "./img/safety-explorer-suite-1.jpg"
+            },
+            {
+                "repo": "safety-explorer-suite",
                 "folder": "queries",
                 "example_url": "https://rhoinc.github.io/safety-explorer-suite/test-page/queries",
                 "src_url": "https://www.github.com/rhoinc/safety-explorer-suite/tree/master/test-page/queries",
-                "img_url": "./img/safety-explorer-suite-1.jpg"
+                "img_url": "./img/safety-explorer-suite-2.jpg"
             }
         ]
     },
@@ -5466,17 +5473,17 @@
         "releases_url": "https://api.github.com/repos/RhoInc/study-overview/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/study-overview/deployments",
         "created_at": "2019-09-16T20:12:06Z",
-        "updated_at": "2019-09-16T20:12:09Z",
-        "pushed_at": "2019-09-16T20:12:07Z",
+        "updated_at": "2019-09-19T13:34:53Z",
+        "pushed_at": "2019-09-19T13:34:51Z",
         "git_url": "git://github.com/RhoInc/study-overview.git",
         "ssh_url": "git@github.com:RhoInc/study-overview.git",
         "clone_url": "https://github.com/RhoInc/study-overview.git",
         "svn_url": "https://github.com/RhoInc/study-overview",
         "homepage": null,
-        "size": 1,
+        "size": 20,
         "stargazers_count": 0,
         "watchers_count": 0,
-        "language": null,
+        "language": "JavaScript",
         "has_issues": true,
         "has_projects": true,
         "has_downloads": true,
@@ -5503,7 +5510,15 @@
             "push": true,
             "pull": true
         },
-        "examples": []
+        "examples": [
+            {
+                "repo": "study-overview",
+                "folder": "test-page",
+                "example_url": "https://rhoinc.github.io/study-overview/test-page/",
+                "src_url": "https://www.github.com/rhoinc/study-overview/tree/master/test-page/",
+                "img_url": "./img/study-overview-0.jpg"
+            }
+        ]
     },
     {
         "id": 66675370,
@@ -5572,14 +5587,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/viz-library/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/viz-library/deployments",
         "created_at": "2016-08-26T19:52:27Z",
-        "updated_at": "2019-09-17T19:43:38Z",
-        "pushed_at": "2019-09-17T19:43:36Z",
+        "updated_at": "2019-09-18T19:43:45Z",
+        "pushed_at": "2019-09-18T19:43:43Z",
         "git_url": "git://github.com/RhoInc/viz-library.git",
         "ssh_url": "git@github.com:RhoInc/viz-library.git",
         "clone_url": "https://github.com/RhoInc/viz-library.git",
         "svn_url": "https://github.com/RhoInc/viz-library",
         "homepage": "https://rhoinc.github.io/viz-library/",
-        "size": 61406,
+        "size": 61407,
         "stargazers_count": 5,
         "watchers_count": 5,
         "language": "HTML",
