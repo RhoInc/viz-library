@@ -1866,14 +1866,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/graphics/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/graphics/deployments",
         "created_at": "2018-12-19T20:42:02Z",
-        "updated_at": "2020-02-02T08:06:40Z",
-        "pushed_at": "2020-02-02T08:06:38Z",
+        "updated_at": "2020-02-03T08:06:50Z",
+        "pushed_at": "2020-02-03T08:06:48Z",
         "git_url": "git://github.com/RhoInc/graphics.git",
         "ssh_url": "git@github.com:RhoInc/graphics.git",
         "clone_url": "https://github.com/RhoInc/graphics.git",
         "svn_url": "https://github.com/RhoInc/graphics",
         "homepage": "https://rhoinc.github.io/graphics/",
-        "size": 14296,
+        "size": 14297,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "JavaScript",
@@ -2184,14 +2184,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/nested-data-explorer/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/nested-data-explorer/deployments",
         "created_at": "2020-01-24T13:16:47Z",
-        "updated_at": "2020-01-31T14:16:49Z",
-        "pushed_at": "2020-01-31T14:18:57Z",
+        "updated_at": "2020-02-03T17:46:21Z",
+        "pushed_at": "2020-02-03T17:46:19Z",
         "git_url": "git://github.com/RhoInc/nested-data-explorer.git",
         "ssh_url": "git@github.com:RhoInc/nested-data-explorer.git",
         "clone_url": "https://github.com/RhoInc/nested-data-explorer.git",
         "svn_url": "https://github.com/RhoInc/nested-data-explorer",
         "homepage": null,
-        "size": 195,
+        "size": 197,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "JavaScript",
@@ -2204,7 +2204,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 7,
+        "open_issues_count": 9,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -2213,7 +2213,7 @@
             "node_id": "MDc6TGljZW5zZTEz"
         },
         "forks": 0,
-        "open_issues": 7,
+        "open_issues": 9,
         "watchers": 0,
         "default_branch": "master",
         "permissions": {
@@ -2238,17 +2238,24 @@
             },
             {
                 "repo": "nested-data-explorer",
+                "folder": "labs",
+                "example_url": "https://rhoinc.github.io/nested-data-explorer/test-page/labs",
+                "src_url": "https://www.github.com/rhoinc/nested-data-explorer/tree/master/test-page/labs",
+                "img_url": "./img/nested-data-explorer-2.jpg"
+            },
+            {
+                "repo": "nested-data-explorer",
                 "folder": "nba",
                 "example_url": "https://rhoinc.github.io/nested-data-explorer/test-page/nba",
                 "src_url": "https://www.github.com/rhoinc/nested-data-explorer/tree/master/test-page/nba",
-                "img_url": "./img/nested-data-explorer-2.jpg"
+                "img_url": "./img/nested-data-explorer-3.jpg"
             },
             {
                 "repo": "nested-data-explorer",
                 "folder": "presidents",
                 "example_url": "https://rhoinc.github.io/nested-data-explorer/test-page/presidents",
                 "src_url": "https://www.github.com/rhoinc/nested-data-explorer/tree/master/test-page/presidents",
-                "img_url": "./img/nested-data-explorer-3.jpg"
+                "img_url": "./img/nested-data-explorer-4.jpg"
             }
         ]
     },
@@ -5956,14 +5963,14 @@
         "releases_url": "https://api.github.com/repos/RhoInc/viz-library/releases{/id}",
         "deployments_url": "https://api.github.com/repos/RhoInc/viz-library/deployments",
         "created_at": "2016-08-26T19:52:27Z",
-        "updated_at": "2020-02-01T20:50:55Z",
-        "pushed_at": "2020-02-01T20:50:53Z",
+        "updated_at": "2020-02-02T20:51:48Z",
+        "pushed_at": "2020-02-02T20:51:45Z",
         "git_url": "git://github.com/RhoInc/viz-library.git",
         "ssh_url": "git@github.com:RhoInc/viz-library.git",
         "clone_url": "https://github.com/RhoInc/viz-library.git",
         "svn_url": "https://github.com/RhoInc/viz-library",
         "homepage": "https://rhoinc.github.io/viz-library/",
-        "size": 63759,
+        "size": 63760,
         "stargazers_count": 5,
         "watchers_count": 5,
         "language": "HTML",
